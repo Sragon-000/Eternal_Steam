@@ -6,6 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/HordeDemo/Scenes/HordeDemo.unity
+    guid: 8c6e83f69622546e08b4a2766d084bb3
+  - enabled: 1
+    path: Assets/HordeDemo/Scenes/HordeWideFront.unity
+    guid: cd268c1e372654b7c94c95a991ec7258
+  - enabled: 1
+    path: Assets/HordeDemo/Scenes/HordePincer.unity
+    guid: 2b7595aab97e54bfb8ab28c01bb18d47
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   m_configObjects:

@@ -9,7 +9,9 @@ public static class VerifyHordeDemo
     {
         if (!Application.isPlaying) throw new InvalidOperationException("Run in Play mode.");
         var s = UnityEngine.Object.FindFirstObjectByType<HordeSimulation>();
+        if (s.MapKind != HordeMapKind.Lane) throw new InvalidOperationException("Run this legacy regression on the Lane map.");
         s.ClearTowers();
+        s.SelectTower(HordeTowerKind.MachineGun);
         s.ResetEnemies();
         Assert(!s.TryPlaceTower(Vector3.zero), "Path placement rejected");
         Assert(!s.TryPlaceTower(new Vector3(100, 0, 8)), "Outside placement rejected");
@@ -28,15 +30,17 @@ public static class VerifyHordeDemo
         for (int i = 0; i < HordeSimulation.Capacity; i++) spawn.Invoke(s, null);
         Assert(s.Alive == 4000 && s.AtCapacity, "Enemy capacity reached");
         index.Invoke(s, new object[] { 0f });
+        s.ToggleSpawning();
         attack.Invoke(s, new object[] { 1f });
         Assert(s.Killed > 0 && !s.AtCapacity, "Turrets kill targets and release slots");
         Assert(s.Spawned == s.Alive + s.Killed + s.Escaped, "Accounting after attack");
         index.Invoke(s, new object[] { 100f });
-        Assert(s.Alive == 0, "Exit removes all remaining enemies");
+        Assert(s.Defeated && s.Health == 0, "Exit damage triggers defeat");
         int kills = s.Killed;
         attack.Invoke(s, new object[] { 1f });
         Assert(s.Killed == kills, "No attacks against removed targets");
-        Assert(s.Spawned == s.Killed + s.Escaped, "Accounting after exit");
+        Assert(s.Spawned == s.Alive + s.Killed + s.Escaped, "Accounting after exit");
+        s.ResetEnemies();
         spawn.Invoke(s, null);
         Assert(s.Alive == 1, "Freed slot reused");
         s.ResetEnemies();

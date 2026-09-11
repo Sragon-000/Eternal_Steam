@@ -1,18 +1,59 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements">
   <ui:Style src="HordeHud.uss" />
   <ui:VisualElement class="root" picking-mode="Ignore">
-    <ui:VisualElement name="hud" class="hud">
-      <ui:Label text="ETERNAL STEAM / HORDE PROTOTYPE" class="title" />
-      <ui:Label name="stats" class="stats" text="Starting simulation..." />
-      <ui:VisualElement class="controls">
-        <ui:Button name="low" text="50/s" class="button" />
-        <ui:Button name="medium" text="100/s" class="button" />
-        <ui:Button name="high" text="300/s" class="button" />
-        <ui:Button name="pause" text="Pause spawns" class="button" />
-        <ui:Button name="reset" text="Reset enemies" class="button" />
-        <ui:Button name="clear" text="Clear turrets" class="button" />
+    <ui:ScrollView name="hud" class="hud" horizontal-scroller-visibility="Hidden" vertical-scroller-visibility="Auto">
+      <ui:Label text="이터널 스팀" class="title" />
+      <ui:Label name="wallet" class="wallet" text="부품 0 / 기지 1레벨" />
+      <ui:Label text="전장 선택" class="section-title" />
+      <ui:VisualElement class="controls maps">
+        <ui:Button name="lane" text="01 / 통로" class="button" />
+        <ui:Button name="wide" text="02 / 넓은 전선" class="button" />
+        <ui:Button name="pincer" text="03 / 협공" class="button" />
       </ui:VisualElement>
-      <ui:Label name="hint" class="hint" text="Click on the blue banks to place a turret" />
-    </ui:VisualElement>
+      <ui:VisualElement name="lobby">
+        <ui:Label text="출격 준비" class="section-title" />
+        <ui:Label text="스테이지 선택 → 포탑 배치 → 전투 시작" class="hint" />
+        <ui:Label name="progress" class="hint" />
+        <ui:VisualElement class="stack">
+          <ui:Button name="stage1" class="button start" />
+          <ui:Button name="stage2" class="button start" />
+          <ui:Button name="stage3" class="button start" />
+        </ui:VisualElement>
+        <ui:Label text="포탑 설치 한도 강화" class="section-title" />
+        <ui:VisualElement class="stack">
+          <ui:Button name="upgrade0" class="button" />
+          <ui:Button name="upgrade1" class="button" />
+          <ui:Button name="upgrade2" class="button" />
+          <ui:Button name="upgrade3" class="button" />
+        </ui:VisualElement>
+        <ui:Label text="종류별 최대 16개 · 기본 배치 포함
+부품으로 설치 한도를 1개씩 늘립니다." class="hint" />
+      </ui:VisualElement>
+      <ui:VisualElement name="battle" class="hidden">
+      <ui:Label name="stats" class="stats" text="전투 준비 중..." />
+      <ui:ProgressBar name="health" class="health" low-value="0" high-value="1000" value="1000" title="플레이어 체력 1000 / 1000" />
+      <ui:Label text="포탑 선택 · 설치 수 / 한도" class="section-title" />
+      <ui:VisualElement class="controls weapons">
+        <ui:Button name="machinegun" text="기관총 / 연사" class="button" />
+        <ui:Button name="cannon" text="대포 / 폭발" class="button" />
+        <ui:Button name="frost" text="냉각 / 감속" class="button" />
+        <ui:Button name="arrow" text="화살 / 관통" class="button" />
+      </ui:VisualElement>
+      <ui:Label text="적 출현 속도" class="section-title" />
+      <ui:VisualElement class="controls">
+        <ui:Button name="low" text="초당 50마리" class="button" />
+        <ui:Button name="medium" text="초당 100마리" class="button" />
+        <ui:Button name="high" text="초당 300마리" class="button" />
+      </ui:VisualElement>
+      <ui:VisualElement class="stack actions">
+        <ui:Button name="pause" text="전투 시작" class="button start" />
+        <ui:Button name="reset" text="다시 준비" class="button" />
+        <ui:Button name="clear" text="포탑 모두 철거" class="button danger" />
+        <ui:Button name="returnLobby" text="로비로" class="button" />
+      </ui:VisualElement>
+      <ui:Label name="hint" class="hint" text="파란 바닥을 클릭한 뒤 공격 방향을 정하세요." />
+      </ui:VisualElement>
+    </ui:ScrollView>
+    <ui:ProgressBar name="combatHealth" class="health combat-health hidden" picking-mode="Ignore" low-value="0" high-value="1000" value="1000" title="플레이어 체력 1,000 / 1,000" />
   </ui:VisualElement>
 </ui:UXML>
