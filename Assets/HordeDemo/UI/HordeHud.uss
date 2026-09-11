@@ -1,0 +1,10 @@
+.root { flex-grow: 1; }
+.hud { position: absolute; left: 20px; top: 20px; padding: 16px 20px; background-color: rgba(13, 23, 35, 0.94); border-left-width: 3px; border-left-color: rgb(81, 212, 239); border-top-right-radius: 8px; border-bottom-right-radius: 8px; }
+.title { color: rgb(114, 222, 241); font-size: 14px; -unity-font-style: bold; margin-bottom: 8px; }
+.stats { color: rgb(244, 246, 250); font-size: 17px; white-space: normal; margin-bottom: 10px; }
+.hint { color: rgb(197, 209, 223); font-size: 14px; margin-top: 10px; }
+.controls { flex-direction: row; }
+.button { color: rgb(225, 237, 249); background-color: rgb(40, 62, 82); border-width: 0; padding: 7px 12px; margin-right: 7px; border-radius: 4px; font-size: 14px; -unity-text-align: middle-center; }
+.button:hover { background-color: rgb(57, 94, 121); }
+.button:active { background-color: rgb(39, 128, 152); }
+.button:focus { border-width: 1px; border-color: rgb(114, 222, 241); }
