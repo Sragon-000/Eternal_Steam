@@ -7,15 +7,15 @@ using EternalSteam.Demo;
 
 public static class CreateHordeMaps
 {
-    const string Folder = "Assets/HordeDemo/";
+    const string Folder = "Assets/EternalSteam/Scene/Demo/";
     public static string Main()
     {
         if (EditorApplication.isPlaying) throw new InvalidOperationException("Stop Play first.");
         if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().isDirty) throw new InvalidOperationException("Save the active scene first.");
-        string original = Folder + "Scenes/HordeDemo.unity";
+        string original = Folder + "HordeDemo.unity";
         foreach (var kind in new[] { HordeMapKind.WideFront, HordeMapKind.Pincer })
         {
-            string path = Folder + "Scenes/" + HordeMapLayout.SceneName(kind) + ".unity";
+            string path = Folder + "" + HordeMapLayout.SceneName(kind) + ".unity";
             if (System.IO.File.Exists(path)) throw new InvalidOperationException("Scene already exists: " + path);
         }
         foreach (var kind in new[] { HordeMapKind.WideFront, HordeMapKind.Pincer })
@@ -52,14 +52,23 @@ public static class CreateHordeMaps
                     Arrow(new Vector3(x, 0.08f, -25), new Vector3(1, 0, 0.45f).normalized);
                 }
             }
-            EditorSceneManager.SaveScene(scene, Folder + "Scenes/" + HordeMapLayout.SceneName(kind) + ".unity");
+            EditorSceneManager.SaveScene(scene, Folder + "" + HordeMapLayout.SceneName(kind) + ".unity");
         }
-        var paths = new[] { original, Folder + "Scenes/HordeWideFront.unity", Folder + "Scenes/HordePincer.unity" };
+        var paths = new[] { original, Folder + "HordeWideFront.unity", Folder + "HordePincer.unity" };
         var existing = EditorBuildSettings.scenes.Where(s => !paths.Contains(s.path));
         EditorBuildSettings.scenes = paths.Select(p => new EditorBuildSettingsScene(p, true)).Concat(existing).ToArray();
         AssetDatabase.SaveAssets();
         EditorSceneManager.OpenScene(paths[1]);
         return "Created WideFront and Pincer; registered all three demo scenes for runtime switching.";
+    }
+
+    public static string DemoMaterialPath(string name)
+    {
+        string folder = name == "Tower" || name == "Barrel" ? "Content/Buildings/HordeTowers/Art/Materials"
+            : name == "Enemy" ? "Content/Enemies/HordeEnemy/Art/Materials"
+            : name == "Tracer" || name == "ValidPlacement" || name == "InvalidPlacement" ? "Shared/Materials/Demo"
+            : "Content/Environments/HordeMaps/Art/Materials";
+        return "Assets/EternalSteam/" + folder + "/" + name + ".mat";
     }
 
     static void Box(string name, Vector3 position, Vector3 scale, string material)
@@ -68,14 +77,14 @@ public static class CreateHordeMaps
         go.name = name;
         go.transform.position = position;
         go.transform.localScale = scale;
-        go.GetComponent<Renderer>().sharedMaterial = AssetDatabase.LoadAssetAtPath<Material>(Folder + "Materials/" + material + ".mat");
+        go.GetComponent<Renderer>().sharedMaterial = AssetDatabase.LoadAssetAtPath<Material>(DemoMaterialPath(material));
         UnityEngine.Object.DestroyImmediate(go.GetComponent<Collider>());
     }
 
     static void Arrow(Vector3 origin, Vector3 direction)
     {
         var line = new GameObject("Advance direction").AddComponent<LineRenderer>();
-        line.sharedMaterial = AssetDatabase.LoadAssetAtPath<Material>(Folder + "Materials/Markings.mat");
+        line.sharedMaterial = AssetDatabase.LoadAssetAtPath<Material>(DemoMaterialPath("Markings"));
         line.widthMultiplier = 0.12f;
         line.positionCount = 5;
         var tip = origin + direction * 3;

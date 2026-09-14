@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 961be35588064450ea724446c223c99b, type: 3}
+  m_Name: SingleTower
+  m_EditorClassIdentifier: EternalSteam.Runtime::EternalSteam.BuildingDefinition
+  Id: sample.tower
+  DisplayName: "\uB2E8\uC77C \uACF5\uACA9 \uD3EC\uD0D1"
+  Category: 0
+  Footprint: {x: 1, y: 1}
+  Recoverable: 1
+  ViewPrefab: {fileID: 3260795617678083207, guid: 33f1a5a1aab9846d98899380f01636ae, type: 3}
+  Modules:
+  - {fileID: 11400000, guid: afdcc093e97c44b948d375c3f23ecfed, type: 2}
+  - {fileID: 11400000, guid: 4fb9db81759ee43ed80781f493613cbd, type: 2}

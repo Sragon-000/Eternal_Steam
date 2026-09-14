@@ -1,0 +1,7 @@
+{
+  "name": "EternalSteam.Sandbox",
+  "references": [
+    "EternalSteam.Runtime",
+    "Unity.InputSystem"
+  ]
+}

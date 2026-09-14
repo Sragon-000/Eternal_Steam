@@ -1,0 +1,36 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <ui:Style src="FoundationHud.uss" />
+    <ui:VisualElement name="workspace" class="workspace" picking-mode="Ignore">
+        <ui:ScrollView name="sidebar" class="sidebar">
+            <ui:Label text="ETERNAL STEAM" class="title" />
+            <ui:Label text="FOUNDATION / 공통 기반 검증" class="subtitle" />
+            <ui:Label name="phase" class="section" />
+            <ui:Label text="초록 격자에 건물을 놓고 확정하세요. 포탑의 기본 공격 방향은 화면 위쪽입니다." class="note" />
+            <ui:Label text="건물 카탈로그" class="section" />
+            <ui:VisualElement name="catalog" />
+            <ui:VisualElement class="row">
+                <ui:Button name="install" text="설치" />
+                <ui:Button name="recover" text="회수" />
+                <ui:Button name="confirm" text="확정" class="primary" />
+                <ui:Button name="cancel" text="취소" />
+            </ui:VisualElement>
+            <ui:Label name="selection" class="note" />
+            <ui:VisualElement name="selectionActions">
+                <ui:Button name="direction" text="공격 방향 설정" />
+                <ui:VisualElement class="row">
+                    <ui:Button name="ground" text="지상" />
+                    <ui:Button name="air" text="공중" />
+                    <ui:Button name="both" text="모두" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:Button name="move" text="선택한 임시 건물 이동" />
+            <ui:Button name="remove" text="선택한 임시 건물 제거" />
+            <ui:Label text="작업 목록 · 클릭하여 선택/해제" class="section" />
+            <ui:VisualElement name="pending" />
+            <ui:Button name="start" text="전투 시작" class="primary" />
+            <ui:Button name="reset" text="검증 초기화" />
+            <ui:Label text="검증용 적 8개 / 지상·공중 각 4개. 30초 뒤 남은 적은 통과 처리합니다. 수치와 종료 조건은 이 씬만의 테스트 설정입니다." class="note" />
+            <ui:Label name="message" class="message" />
+        </ui:ScrollView>
+    </ui:VisualElement>
+</ui:UXML>

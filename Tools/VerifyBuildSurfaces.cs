@@ -15,7 +15,7 @@ public static class VerifyBuildSurfaces
         var reports = new List<string>();
         foreach (HordeMapKind kind in Enum.GetValues(typeof(HordeMapKind)))
         {
-            string path = "Assets/HordeDemo/Scenes/" + HordeMapLayout.SceneName(kind) + ".unity";
+            string path = "Assets/EternalSteam/Scene/Demo/" + HordeMapLayout.SceneName(kind) + ".unity";
             var scene = SceneManager.GetSceneByPath(path);
             bool opened = !scene.IsValid() || !scene.isLoaded;
             if (opened) scene = EditorSceneManager.OpenScene(path, OpenSceneMode.Additive);

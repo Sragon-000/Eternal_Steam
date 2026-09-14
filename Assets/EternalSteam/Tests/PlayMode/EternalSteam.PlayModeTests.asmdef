@@ -1,0 +1,10 @@
+{
+  "name": "EternalSteam.PlayModeTests",
+  "references": [
+    "EternalSteam.Runtime",
+    "EternalSteam.Sandbox"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ]
+}

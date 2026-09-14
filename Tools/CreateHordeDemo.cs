@@ -11,14 +11,16 @@ public static class CreateHordeDemo
 {
     public static string Main()
     {
-        const string folder = "Assets/HordeDemo";
-        const string scenePath = folder + "/Scenes/HordeDemo.unity";
+        const string folder = "Assets/EternalSteam";
+        const string scenePath = folder + "/Scene/Demo/HordeDemo.unity";
         if (EditorApplication.isPlaying) throw new InvalidOperationException("Stop Play mode first.");
         if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().isDirty)
             throw new InvalidOperationException("Active scene has unsaved changes; save it before generating a demo.");
         if (File.Exists(scenePath)) throw new InvalidOperationException("Demo already exists; open it rather than overwriting it.");
-        if (!AssetDatabase.IsValidFolder(folder + "/Materials")) AssetDatabase.CreateFolder(folder, "Materials");
-        if (!AssetDatabase.IsValidFolder(folder + "/Scenes")) AssetDatabase.CreateFolder(folder, "Scenes");
+        Directory.CreateDirectory(folder + "/Scene/Demo");
+        Directory.CreateDirectory(folder + "/Content/Enemies/HordeEnemy/Art");
+        Directory.CreateDirectory(folder + "/Settings/UI");
+        AssetDatabase.Refresh();
         var scene = EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Single);
         var ground = Material("Ground", new Color(0.075f, 0.11f, 0.16f));
         var lane = Material("Lane", new Color(0.16f, 0.20f, 0.26f));
@@ -59,18 +61,18 @@ public static class CreateHordeDemo
         var capsule = GameObject.CreatePrimitive(PrimitiveType.Capsule);
         var mesh = UnityEngine.Object.Instantiate(capsule.GetComponent<MeshFilter>().sharedMesh);
         UnityEngine.Object.DestroyImmediate(capsule);
-        AssetDatabase.CreateAsset(mesh, folder + "/EnemyCapsule.asset");
+        AssetDatabase.CreateAsset(mesh, folder + "/Content/Enemies/HordeEnemy/Art/EnemyCapsule.asset");
         var simulation = new GameObject("Horde Simulation").AddComponent<HordeSimulation>();
         simulation.Configure(camera, mesh, enemy, tower, barrel, tracer, valid, invalid);
         var settings = ScriptableObject.CreateInstance<PanelSettings>();
         settings.scaleMode = PanelScaleMode.ScaleWithScreenSize;
         settings.referenceResolution = new Vector2Int(1600, 900);
         settings.match = 0.5f;
-        AssetDatabase.CreateAsset(settings, folder + "/UI/HordePanelSettings.asset");
+        AssetDatabase.CreateAsset(settings, folder + "/Settings/UI/HordePanelSettings.asset");
         var hudObject = new GameObject("Demo HUD");
         var document = hudObject.AddComponent<UIDocument>();
         document.panelSettings = settings;
-        document.visualTreeAsset = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>(folder + "/UI/HordeHud.uxml");
+        document.visualTreeAsset = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>(folder + "/Shared/UI/Demo/HordeHud.uxml");
         hudObject.AddComponent<HordeHud>().Configure(simulation);
         EditorUtility.SetDirty(simulation);
         EditorSceneManager.SaveScene(scene, scenePath);
@@ -88,8 +90,20 @@ public static class CreateHordeDemo
         var material = new Material(shader) { name = name };
         material.SetColor("_BaseColor", color);
         if (!unlit) material.SetFloat("_Smoothness", 0.2f);
-        AssetDatabase.CreateAsset(material, "Assets/HordeDemo/Materials/" + name + ".mat");
+        var path = DemoMaterialPath(name);
+        Directory.CreateDirectory(Path.GetDirectoryName(path));
+        AssetDatabase.Refresh();
+        AssetDatabase.CreateAsset(material, path);
         return material;
+    }
+
+    public static string DemoMaterialPath(string name)
+    {
+        string folder = name == "Tower" || name == "Barrel" ? "Content/Buildings/HordeTowers/Art/Materials"
+            : name == "Enemy" ? "Content/Enemies/HordeEnemy/Art/Materials"
+            : name == "Tracer" || name == "ValidPlacement" || name == "InvalidPlacement" ? "Shared/Materials/Demo"
+            : "Content/Environments/HordeMaps/Art/Materials";
+        return "Assets/EternalSteam/" + folder + "/" + name + ".mat";
     }
 
     static void Box(string name, Vector3 position, Vector3 scale, Material material)

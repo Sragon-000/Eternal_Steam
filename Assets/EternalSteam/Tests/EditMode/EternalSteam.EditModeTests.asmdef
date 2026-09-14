@@ -1,0 +1,13 @@
+{
+  "name": "EternalSteam.EditModeTests",
+  "references": [
+    "EternalSteam.Runtime",
+    "EternalSteam.Sandbox"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "EternalSteam.Editor",
+  "references": [
+    "EternalSteam.Runtime",
+    "EternalSteam.Sandbox"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ]
+}

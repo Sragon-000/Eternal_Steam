@@ -1,0 +1,5 @@
+{
+  "name": "EternalSteam.Runtime",
+  "rootNamespace": "EternalSteam",
+  "references": ["Unity.InputSystem"]
+}

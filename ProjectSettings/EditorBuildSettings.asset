@@ -6,16 +6,16 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/HordeDemo/Scenes/HordeDemo.unity
+    path: Assets/EternalSteam/Scene/Demo/HordeDemo.unity
     guid: 8c6e83f69622546e08b4a2766d084bb3
   - enabled: 1
-    path: Assets/HordeDemo/Scenes/HordeWideFront.unity
+    path: Assets/EternalSteam/Scene/Demo/HordeWideFront.unity
     guid: cd268c1e372654b7c94c95a991ec7258
   - enabled: 1
-    path: Assets/HordeDemo/Scenes/HordePincer.unity
+    path: Assets/EternalSteam/Scene/Demo/HordePincer.unity
     guid: 2b7595aab97e54bfb8ab28c01bb18d47
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/EternalSteam/Scene/Tests/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}

@@ -15,7 +15,7 @@
 2. Unity Hub에서 **Unity 6000.3.14f1**을 설치합니다.
 3. Unity Hub의 **Add**로 `Assets`, `Packages`, `ProjectSettings`가 있는 저장소 루트를 등록합니다.
 4. 프로젝트를 열고 최초 패키지 다운로드와 임포트가 끝날 때까지 기다립니다.
-5. `Assets/HordeDemo/Scenes/HordeDemo.unity`를 열고 **Play**를 누릅니다.
+5. `Assets/EternalSteam/Scene/Demo/HordeDemo.unity`를 열고 **Play**를 누릅니다.
 
 처음에는 로비로 시작합니다. 맵과 해금된 스테이지를 선택하면 적 없이 설치 단계로 이동합니다. 파란 구역을 클릭해 위치를 잡고, 마우스로 사격 방향과 거리를 정한 뒤 다시 클릭하면 포탑이 설치됩니다. 가까운 설정은 넓게, 먼 설정은 좁게 탄이 퍼집니다. 우클릭 또는 Esc로 취소할 수 있습니다. 포탑은 설치 방향을 유지하며 전투 시작 후 적 유무와 관계없이 기관총처럼 한 발씩 연사합니다.
 
@@ -31,7 +31,7 @@
 | 02 / Wide front | `HordeWideFront.unity` | 86×64 평원, 40 유닛 폭의 정면에서 진격, 기본 포탑 6개 |
 | 03 / Pincer | `HordePincer.unity` | 86×64 협공 전장, 위아래에서 합류하는 적 무리, 기본 포탑 6개 |
 
-모든 씬은 `Assets/HordeDemo/Scenes/`에 있습니다. 추가 맵은 초당 300마리 설정으로 시작 버튼을 기다립니다.
+모든 씬은 `Assets/EternalSteam/Scene/Demo/`에 있습니다. 추가 맵은 초당 300마리 설정으로 시작 버튼을 기다립니다.
 
 동시 적 최대 4,000마리, 포탑 최대 64개입니다. 기관총(단일 연사), 포(범위 처치), 냉각 포탑(이동 감속)을 선택해 배치할 수 있습니다. 플레이어 체력은 1,000이며, 적이 출구를 통과할 때마다 1씩 감소합니다. 체력이 0이면 전투가 멈추고 **재도전**로 배치를 유지한 채 다시 준비할 수 있습니다. 로컬 재화와 클리어 기록을 저장합니다. 기지 레벨·포탑 공격력 강화와 적끼리의 물리 충돌은 아직 구현하지 않습니다.
 
@@ -99,22 +99,19 @@ AI Navigation·Timeline·Multiplayer Center 등도 패키지 목록에 있지만
 
 ```text
 Assets/
-├─ HordeDemo/
-│  ├─ Scenes/                 # 통로·넓은 전선·협공 씬
-│  ├─ Scripts/                # 전투·맵·설치·재화 로직
-│  ├─ UI/                     # HUD 코드, UXML, USS, PanelSettings
-│  │  └─ Fonts/               # 한글 원본 글꼴과 라이선스
-│  ├─ Materials/              # 바닥·적·포탑·사선·설치 표시 재질
-│  └─ EnemyCapsule.asset      # 적 인스턴싱에 사용하는 메시
-├─ Settings/                 # PC/Mobile URP 및 Volume 설정
-├─ Scenes/SampleScene.unity   # 템플릿 씬
-├─ TutorialInfo/              # Unity 템플릿 안내 자료
-└─ InputSystem_Actions.inputactions
-Packages/                    # 직접 의존성과 잠금 파일
-ProjectSettings/             # 프로젝트·빌드 씬 설정
-Tools/                       # CLI용 생성·검증 스크립트
-Docs/                        # 조작 안내·기획 문서·스크린샷
-README.md                    # 실행 안내와 이 구성 보고서
+├─ EternalSteam/
+│  ├─ Scene/          # Demo, Tests: 모든 관리 대상 씬
+│  ├─ Code/           # Building, Placement, Combat, LegacyDemo, Editor
+│  ├─ Content/        # Buildings, Enemies, Environments
+│  ├─ Shared/         # Fonts, Materials, UI
+│  ├─ Settings/       # Rendering, Input, UI, Catalogs
+│  └─ Tests/          # EditMode, PlayMode, Sandbox, Templates
+└─ _Recovery/         # 사용자 로컬 복구 자료: 자동 이전 대상에서 제외
+Packages/
+ProjectSettings/
+Tools/                # CLI 생성·검증 도구
+Docs/                 # 기획·사용법·검증 결과
+README.md
 ```
 
 `Library`, `Temp`, `Logs`, `UserSettings`는 로컬 자동 생성 파일입니다. `Assets/_Recovery`는 로컬 복구 파일로 이번 보고서 업로드에 포함하지 않습니다. Git에 등록하는 에셋은 대응하는 `.meta` 파일도 함께 관리합니다.
@@ -127,7 +124,7 @@ README.md                    # 실행 안내와 이 구성 보고서
 | `HordeWideFront.unity` | 넓은 전선 | 86 × 64 | 6개 |
 | `HordePincer.unity` | 협공 | 86 × 64 | 6개 |
 
-세 데모 씬은 `Assets/HordeDemo/Scenes/`에 있습니다. 빌드 설정에는 이 세 씬과 템플릿 `SampleScene`이 등록되어 있으며, 첫 번째는 `HordeDemo`입니다. 게임 내 전장 선택은 세 데모 씬만 사용합니다.
+세 데모 씬은 `Assets/EternalSteam/Scene/Demo/`에 있습니다. 빌드 설정에는 이 세 씬과 템플릿 `SampleScene`이 등록되어 있으며, 첫 번째는 `HordeDemo`입니다. 게임 내 전장 선택은 세 데모 씬만 사용합니다.
 
 로비·준비·전투·결과는 별도 씬이 아니라 **각 전장 안에서 상태와 UI를 전환**하는 구조입니다.
 
@@ -142,14 +139,14 @@ README.md                    # 실행 안내와 이 구성 보고서
 
 | 파일 | 역할과 연결 |
 | --- | --- |
-| [HordeSimulation.cs](Assets/HordeDemo/Scripts/HordeSimulation.cs) | 적 생성·이동·체력·공격·설치·스테이지 판정·카메라를 관리하는 중심 컴포넌트. 결과 확정 시 `HordeProgress`에 보상 요청 |
-| [HordeMapLayout.cs](Assets/HordeDemo/Scripts/HordeMapLayout.cs) | 맵 크기, 설치 구역, 출발·도착 경로, 기본 포탑 위치, 그리드 스냅 정의 |
-| [HordeBuildGrid.cs](Assets/HordeDemo/Scripts/HordeBuildGrid.cs) | 배치 구역의 그리드 표시용 메시 생성 |
-| [HordeTowerKind.cs](Assets/HordeDemo/Scripts/HordeTowerKind.cs) | 4종 포탑 식별자와 피해량·발사 간격·색상·한글 설명 |
-| [HordeProgress.cs](Assets/HordeDemo/Scripts/HordeProgress.cs) | 부품, 맵별 클리어 기록, 설치 한도 강화, 보상과 로컬 저장 |
-| [HordeHud.cs](Assets/HordeDemo/UI/HordeHud.cs) | 버튼 이벤트, 전투 상태 표시, 한도 구매, UI 숨김·복원과 카메라 영역 연결 |
-| [HordeHud.uxml](Assets/HordeDemo/UI/HordeHud.uxml) | 로비·준비·결과 메뉴와 전투 전용 체력 바의 요소 구조 |
-| [HordeHud.uss](Assets/HordeDemo/UI/HordeHud.uss) | 한글 글꼴, 색상, 크기, 구역 간격, 스크롤, 표시 상태 |
+| [HordeSimulation.cs](Assets/EternalSteam/Code/LegacyDemo/HordeSimulation.cs) | 적 생성·이동·체력·공격·설치·스테이지 판정·카메라를 관리하는 중심 컴포넌트. 결과 확정 시 `HordeProgress`에 보상 요청 |
+| [HordeMapLayout.cs](Assets/EternalSteam/Code/LegacyDemo/HordeMapLayout.cs) | 맵 크기, 설치 구역, 출발·도착 경로, 기본 포탑 위치, 그리드 스냅 정의 |
+| [HordeBuildGrid.cs](Assets/EternalSteam/Code/LegacyDemo/HordeBuildGrid.cs) | 배치 구역의 그리드 표시용 메시 생성 |
+| [HordeTowerKind.cs](Assets/EternalSteam/Code/LegacyDemo/HordeTowerKind.cs) | 4종 포탑 식별자와 피해량·발사 간격·색상·한글 설명 |
+| [HordeProgress.cs](Assets/EternalSteam/Code/LegacyDemo/HordeProgress.cs) | 부품, 맵별 클리어 기록, 설치 한도 강화, 보상과 로컬 저장 |
+| [HordeHud.cs](Assets/EternalSteam/Code/LegacyDemo/UI/HordeHud.cs) | 버튼 이벤트, 전투 상태 표시, 한도 구매, UI 숨김·복원과 카메라 영역 연결 |
+| [HordeHud.uxml](Assets/EternalSteam/Shared/UI/Demo/HordeHud.uxml) | 로비·준비·결과 메뉴와 전투 전용 체력 바의 요소 구조 |
+| [HordeHud.uss](Assets/EternalSteam/Shared/UI/Demo/HordeHud.uss) | 한글 글꼴, 색상, 크기, 구역 간격, 스크롤, 표시 상태 |
 | `HordePanelSettings.asset` | 런타임 UI 패널 설정 |
 
 버튼 입력은 `HordeHud → HordeSimulation`으로 전달됩니다. 전투는 `HordeMapLayout`과 `HordeTowerStats`의 값을 사용하며, 클리어·구매 결과는 `HordeProgress → PlayerPrefs`에 저장합니다. HUD는 이 상태를 읽어 화면에 표시합니다. 프로토타입이므로 전투 로직은 중심 컴포넌트에 모여 있으며, 별도 서버나 복잡한 서비스 계층은 없습니다.
@@ -239,3 +236,12 @@ unity command run_script --file Tools/VerifyCapacityUpgrade.cs --entry VerifyCap
 현재 강화는 **포탑 설치 개수 증가만** 구현되어 있습니다. 기지 레벨 상승, 공격력 강화, 특수 스킬트리, 신규 포탑 해금은 아직 없습니다. 정식 모델·투사체 애니메이션·고급 VFX·사운드·네트워크 플레이도 후속 범위입니다. 별도 로비 씬 분리나 대규모 구조 변경 없이, 현재 전투와 보상 반복을 검증하는 수준을 유지합니다.
 
 [로비·재화·성장 개발 계획](Docs/로비_재화_성장_개발계획.md)은 아이디어와 후속 범위를 포함합니다. 현재 구현 여부와 수치는 위 구성 보고서 및 실제 코드가 기준입니다.
+
+
+## 모듈식 공통 기반 (1단계)
+
+`Assets/EternalSteam/Scene/Tests/FoundationSandbox.unity`를 열고 Play하면 별도 검증 씬을 실행합니다. 카탈로그에서 건물을 선택하고 설치 → 격자 클릭(복수 가능) → 확정으로 배치합니다. 건물을 선택해 공격 방향과 지상·공중 필터를 변경할 수 있습니다. 회수는 선택 후 일괄 확정합니다. 기존 `HordeDemo` 세 맵과 저장 규칙은 유지합니다.
+
+건물은 `BuildingDefinition`과 선택적인 체력·공격 모듈 에셋으로 조합합니다. 새 정의를 `SampleCatalog`에 등록하면 UI 목록에 자동 반영됩니다. 상세 계약과 테스트는 [공통 기반 개발 안내](Docs/공통_기반_개발_안내.md)를 참고하세요.
+
+폴더 배치 기준은 [폴더 구조](Docs/폴더_구조.md)를 참고하세요.

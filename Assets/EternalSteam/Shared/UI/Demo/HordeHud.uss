@@ -1,0 +1,38 @@
+.root { flex-grow: 1; -unity-font-definition: url("project://database/Assets/EternalSteam/Shared/Fonts/NotoSansCJKkr-Regular.otf"); }
+.hidden { display: none; }
+.combat-hidden { visibility: hidden; }
+.lobby-stages { margin-top: 20px; }
+.hud { position: absolute; left: 0; top: 0; bottom: 0; width: 32%; max-width: 400px; padding: 22px 18px; background-color: rgb(13, 23, 35); border-right-width: 2px; border-right-color: rgb(81, 212, 239); }
+.title { color: rgb(242, 248, 255); font-size: 24px; -unity-font-style: bold; margin-bottom: 16px; white-space: normal; }
+.stats { color: rgb(244, 246, 250); font-size: 18px; white-space: normal; margin-bottom: 14px; margin-top: 12px; }
+.hint { color: rgb(203, 214, 226); font-size: 16px; margin-top: 12px; white-space: normal; margin-bottom: 8px; }
+.controls { flex-direction: row; flex-wrap: wrap; }
+.button { color: rgb(225, 237, 249); background-color: rgb(40, 62, 82); border-width: 1px; padding: 9px 12px; margin-right: 7px; margin-bottom: 8px; flex-shrink: 1; max-width: 100%; white-space: normal; border-radius: 4px; font-size: 16px; -unity-text-align: middle-center; min-height: 42px; border-color: rgb(66, 87, 108); }
+.button:hover { background-color: rgb(57, 94, 121); }
+.button:active { background-color: rgb(39, 128, 152); }
+.button:focus { border-width: 1px; border-color: rgb(114, 222, 241); }
+.maps { margin-bottom: 10px; }
+.button.selected { background-color: rgb(27, 92, 117); border-color: rgb(112, 220, 240); -unity-font-style: bold; }
+.button.start { background-color: rgb(31, 104, 78); border-color: rgb(83, 166, 129); -unity-font-style: bold; }
+.weapons { margin-top: 7px; margin-bottom: 5px; }
+.health { height: 30px; margin-bottom: 3px; }
+.health .unity-progress-bar__background { background-color: rgb(44, 53, 64); border-width: 0; }
+.health .unity-progress-bar__progress { background-color: rgb(35, 130, 87); border-width: 0; }
+.health .unity-progress-bar__title { color: white; font-size: 15px; -unity-font-style: bold; }
+.health.critical .unity-progress-bar__progress { background-color: rgb(180, 46, 48); }
+.button:disabled { opacity: 1; background-color: rgb(27, 36, 47); color: rgb(151, 166, 181); border-color: rgb(43, 56, 70); }
+.combat-health { position: absolute; top: 16px; left: 30%; right: 30%; height: 34px; }
+.combat-health .unity-progress-bar__title { font-size: 18px; }
+.wallet { font-size: 18px; color: rgb(127, 232, 210); background-color: rgb(24, 44, 54); padding: 12px; margin-bottom: 12px; white-space: normal; -unity-font-style: bold; }
+.section-title { font-size: 16px; color: rgb(144, 192, 211); margin-top: 18px; margin-bottom: 9px; -unity-font-style: bold; white-space: normal; }
+.button.danger { color: rgb(249, 179, 166); }
+.stack { margin-top: 8px; }
+.stack > .button { margin-right: 0; -unity-text-align: middle-left; }
+.actions { margin-top: 20px; }
+.actions > .start { min-height: 50px; font-size: 19px; -unity-text-align: middle-center; }
+
+.hud .unity-scroller { width: 12px; }
+.hud .unity-scroller__low-button { display: none; }
+.hud .unity-scroller__high-button { display: none; }
+.hud .unity-base-slider__tracker { background-color: rgb(23, 37, 50); border-width: 0; }
+.hud .unity-base-slider__dragger { background-color: rgb(84, 119, 139); border-width: 0; border-radius: 5px; }

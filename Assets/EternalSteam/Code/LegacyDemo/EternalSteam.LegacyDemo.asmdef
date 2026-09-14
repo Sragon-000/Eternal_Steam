@@ -1,0 +1,6 @@
+{
+  "name": "EternalSteam.LegacyDemo",
+  "references": [
+    "Unity.InputSystem"
+  ]
+}
