@@ -14,7 +14,7 @@ public static class VerifyTowerRoles
         if (!Application.isPlaying) throw new Exception("Run in Play mode.");
         s = UnityEngine.Object.FindFirstObjectByType<HordeSimulation>();
         var original = s.MapKind;
-        enemies = (Array)typeof(HordeSimulation).GetField("enemies", Private).GetValue(s);
+        enemies = (Array)typeof(HordeEnemyWorld).GetField("enemies", Private).GetValue(typeof(HordeSimulation).GetField("enemyWorld", Private).GetValue(s));
         try
         {
             s.ConfigureMap(HordeMapKind.Lane);

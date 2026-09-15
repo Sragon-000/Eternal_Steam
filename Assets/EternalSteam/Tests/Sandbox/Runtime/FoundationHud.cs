@@ -12,6 +12,7 @@ namespace EternalSteam
         VisualElement root;
         readonly List<Button> catalogButtons = new();
         int previousRemaining = -1;
+        float nextResourceRefresh;
         SandboxPhase previousPhase;
 
         void Start()
@@ -27,6 +28,7 @@ namespace EternalSteam
             Bind("cancel", () => { Sample.Session.Cancel(); Input.ClearSelection(); Input.Message = "작업을 취소했습니다."; });
             Bind("move", () => { Input.Moving = true; Input.Message = "이동할 격자를 클릭하세요."; });
             Bind("remove", () => { if (Input.SelectedPendingId.HasValue) Sample.Session.Placement.Remove(Input.SelectedPendingId.Value); Input.SelectedPendingId = null; });
+            Bind("upgrade", () => { if(Input.SelectedId.HasValue) { bool success=Sample.Session.Upgrade(Input.SelectedId.Value,out var reason); Input.Message=success?"강화했습니다.":reason; } });
             Bind("direction", () => { if (Input.SelectedId.HasValue) Sample.Session.BeginDirection(Input.SelectedId.Value); });
             Bind("ground", () => SetTargets(TargetKind.Ground));
             Bind("air", () => SetTargets(TargetKind.Air));
@@ -60,7 +62,7 @@ namespace EternalSteam
             if (Sample.Session == null) { root.Q<Label>("message").text = Sample.Error; return; }
             var session = Sample.Session;
             bool editing = session.Mode != EditMode.None;
-            root.Q<Label>("phase").text = session.Phase == SandboxPhase.Preparation ? "01 / 준비" : session.Phase == SandboxPhase.Combat ? $"02 / 전투 · 남은 적 {Sample.Remaining}" : $"03 / 결과 · 처치 {8-Sample.Escaped} · 통과 {Sample.Escaped}";
+            root.Q<Label>("phase").text = session.Phase == SandboxPhase.Preparation ? "01 / 준비" : session.Phase == SandboxPhase.Combat ? $"02 / 전투 · 남은 적 {Sample.Remaining}" : session.Defeated ? "03 / 패배 · 넥서스 파괴" : $"03 / 결과 · 처치 {8-Sample.Escaped} · 통과 {Sample.Escaped}";
             Visible("install", session.CanEdit && !editing); Visible("recover", session.CanEdit && !editing);
             Visible("confirm", session.CanEdit && editing); Visible("cancel", session.CanEdit && editing);
             root.Q<Button>("confirm").SetEnabled(session.Mode == EditMode.Direction || session.Placement.Pending.Count > 0 || session.Recovery.Selected.Count > 0);
@@ -73,9 +75,12 @@ namespace EternalSteam
             }
             BuildingInstance selected = null;
             if (Input.SelectedId.HasValue) session.World.TryGet(Input.SelectedId.Value, out selected);
-            var attack = selected?.Module<AttackModule>();
+            var attack = selected?.Module<IAttackControl>();
+            var upgrade = selected?.Module<IUpgradeControl>();
+            Visible("upgrade",session.CanEdit && !editing && upgrade != null);
+            root.Q<Label>("economy").text=Sample.ExtendedScenario ? $"넥서스 Lv.{Sample.Nexus.LevelCap} · 에너지 {Sample.Resources.Amount("sample.energy"):0}/{Sample.Resources.Capacity("sample.energy"):0} · 부품 {Sample.Resources.Amount("sample.parts"):0}" : "";
             string targetLabel = attack == null ? "" : attack.Kinds == TargetKind.Ground ? "지상" : attack.Kinds == TargetKind.Air ? "공중" : "지상·공중";
-            root.Q<Label>("selection").text = selected == null ? "격자의 건물을 클릭하면 선택됩니다." : selected.DisplayName + (attack == null ? " / 공격 기능 없음" : " / 대상 " + targetLabel);
+            root.Q<Label>("selection").text = selected == null ? "격자의 건물을 클릭하면 선택됩니다." : selected.DisplayName + (upgrade == null ? "" : $" Lv.{upgrade.Level}") + (attack == null ? " / 공격 기능 없음" : " / 대상 " + targetLabel);
             Visible("selectionActions", session.CanEdit && !editing && attack != null);
             Visible("move", session.Mode == EditMode.Placement && Input.SelectedPendingId.HasValue);
             Visible("remove", session.Mode == EditMode.Placement && Input.SelectedPendingId.HasValue);
@@ -98,8 +103,8 @@ namespace EternalSteam
         void Update()
         {
             if (root == null || Sample.Session == null) return;
-            if (previousPhase != Sample.Session.Phase || previousRemaining != Sample.Remaining)
-            { previousPhase = Sample.Session.Phase; previousRemaining = Sample.Remaining; Refresh(); }
+            if (previousPhase != Sample.Session.Phase || previousRemaining != Sample.Remaining || (Sample.ExtendedScenario && Time.unscaledTime >= nextResourceRefresh))
+            { nextResourceRefresh = Time.unscaledTime+0.5f; previousPhase = Sample.Session.Phase; previousRemaining = Sample.Remaining; Refresh(); }
         }
         void OnDestroy() { if (Input != null) Input.Changed -= Refresh; }
     }

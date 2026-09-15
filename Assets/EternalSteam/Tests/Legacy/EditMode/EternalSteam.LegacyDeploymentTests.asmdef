@@ -1,0 +1,6 @@
+{
+  "name": "EternalSteam.LegacyDeploymentTests",
+  "references": ["EternalSteam.LegacyDefinitions", "EternalSteam.LegacyDeployment", "EternalSteam.LegacyPresentation"],
+  "optionalUnityReferences": ["TestAssemblies"],
+  "includePlatforms": ["Editor"]
+}

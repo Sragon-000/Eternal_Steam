@@ -1,0 +1,1 @@
+{"name":"EternalSteam.OpenWorldEditor","includePlatforms":["Editor"],"references":["EternalSteam.OpenWorldSandbox","EternalSteam.Runtime","EternalSteam.LegacyDefinitions","EternalSteam.LegacyDeployment","EternalSteam.LegacyBuildings","EternalSteam.LegacyPresentation"]}

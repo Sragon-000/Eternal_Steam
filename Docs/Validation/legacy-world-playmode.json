@@ -1,0 +1,41 @@
+{
+  "status": "completed",
+  "duration": 1.22,
+  "summary": {
+    "total": 4,
+    "passed": 4,
+    "failed": 0,
+    "skipped": 0,
+    "inconclusive": 0
+  },
+  "results": [
+    {
+      "FullName": "EternalSteam.Tests.ExtensionPlayTests.ExtendedCatalogUpgradeEconomyAndNexusLossWorkThroughScene",
+      "Status": "Passed",
+      "Duration": 0.6327105,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Tests.FoundationPlayTests.BatchPlacementRecoveryAndResetLeaveNoState",
+      "Status": "Passed",
+      "Duration": 0.1938331,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Tests.FoundationPlayTests.DirectionPreviewAndModuleFreeCatalogItemWorkThroughUi",
+      "Status": "Passed",
+      "Duration": 0.1891137,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Tests.FoundationPlayTests.RuntimeCatalogAdditionNeedsNoUiCodeAndCombatCompletes",
+      "Status": "Passed",
+      "Duration": 0.188117,
+      "Message": null,
+      "StackTrace": null
+    }
+  ]
+}

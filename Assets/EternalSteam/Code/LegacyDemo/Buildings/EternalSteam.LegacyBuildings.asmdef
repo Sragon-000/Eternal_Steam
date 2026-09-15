@@ -1,0 +1,10 @@
+{
+  "name": "EternalSteam.LegacyBuildings",
+  "references": [
+    "EternalSteam.Runtime",
+    "EternalSteam.LegacyDefinitions",
+    "EternalSteam.LegacyDeployment",
+    "EternalSteam.LegacyPresentation",
+    "EternalSteam.LegacyCombat"
+  ]
+}

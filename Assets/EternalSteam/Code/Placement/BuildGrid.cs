@@ -54,15 +54,17 @@ namespace EternalSteam
         readonly HashSet<Vector2Int> blocked = new();
         public RectInt Bounds { get; }
         public float CellSize { get; }
+        public Vector3 Origin { get; }
         public int ReservationCount => reservations.Count;
         public int OccupiedCount => occupied.Count;
-        public BuildGrid(RectInt bounds, float cellSize)
+        public BuildGrid(RectInt bounds, float cellSize, Vector3 origin = default)
         {
             if (bounds.width <= 0 || bounds.height <= 0 || !float.IsFinite(cellSize) || cellSize <= 0) throw new ArgumentException("Invalid grid.");
-            Bounds = bounds; CellSize = cellSize;
+            if (!float.IsFinite(origin.x) || !float.IsFinite(origin.y) || !float.IsFinite(origin.z)) throw new ArgumentException("Invalid grid origin.");
+            Bounds = bounds; CellSize = cellSize; Origin = origin;
         }
-        public Vector2Int WorldToCell(Vector3 position) => new(Mathf.FloorToInt(position.x / CellSize), Mathf.FloorToInt(position.z / CellSize));
-        public Vector3 Center(Vector2Int cell, Vector2Int size) => new((cell.x + size.x * 0.5f) * CellSize, 0, (cell.y + size.y * 0.5f) * CellSize);
+        public Vector2Int WorldToCell(Vector3 position) => new(Mathf.FloorToInt((position.x - Origin.x) / CellSize), Mathf.FloorToInt((position.z - Origin.z) / CellSize));
+        public Vector3 Center(Vector2Int cell, Vector2Int size) => Origin + new Vector3((cell.x + size.x * 0.5f) * CellSize, 0, (cell.y + size.y * 0.5f) * CellSize);
         public IEnumerable<Vector2Int> Cells(Vector2Int cell, Vector2Int size)
         {
             for (int z = 0; z < size.y; z++) for (int x = 0; x < size.x; x++) yield return cell + new Vector2Int(x, z);

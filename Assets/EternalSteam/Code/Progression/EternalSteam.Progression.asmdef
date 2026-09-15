@@ -1,0 +1,7 @@
+{
+  "name": "EternalSteam.Progression",
+  "rootNamespace": "EternalSteam",
+  "references": [
+    "EternalSteam.Runtime"
+  ]
+}

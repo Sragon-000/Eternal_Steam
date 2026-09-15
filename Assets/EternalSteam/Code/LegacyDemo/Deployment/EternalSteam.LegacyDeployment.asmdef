@@ -1,0 +1,7 @@
+{
+  "name": "EternalSteam.LegacyDeployment",
+  "rootNamespace": "EternalSteam.Demo",
+  "references": [
+    "EternalSteam.LegacyDefinitions"
+  ]
+}

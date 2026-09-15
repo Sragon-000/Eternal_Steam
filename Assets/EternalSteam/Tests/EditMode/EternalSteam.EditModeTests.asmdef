@@ -2,7 +2,12 @@
   "name": "EternalSteam.EditModeTests",
   "references": [
     "EternalSteam.Runtime",
-    "EternalSteam.Sandbox"
+    "EternalSteam.Sandbox",
+    "EternalSteam.Combat",
+    "EternalSteam.Progression",
+    "EternalSteam.Economy",
+    "EternalSteam.Movement",
+    "EternalSteam.Presentation"
   ],
   "optionalUnityReferences": [
     "TestAssemblies"

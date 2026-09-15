@@ -2,6 +2,11 @@
   "name": "EternalSteam.Sandbox",
   "references": [
     "EternalSteam.Runtime",
-    "Unity.InputSystem"
+    "Unity.InputSystem",
+    "EternalSteam.Combat",
+    "EternalSteam.Progression",
+    "EternalSteam.Economy",
+    "EternalSteam.Movement",
+    "EternalSteam.Presentation"
   ]
 }

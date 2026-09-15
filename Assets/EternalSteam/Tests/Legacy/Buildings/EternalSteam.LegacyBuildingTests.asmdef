@@ -1,0 +1,6 @@
+{
+  "name": "EternalSteam.LegacyBuildingTests",
+  "references": ["EternalSteam.Runtime", "EternalSteam.LegacyDefinitions", "EternalSteam.LegacyBuildings"],
+  "optionalUnityReferences": ["TestAssemblies"],
+  "includePlatforms": ["Editor"]
+}

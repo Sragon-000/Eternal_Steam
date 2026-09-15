@@ -8,6 +8,8 @@ namespace EternalSteam
     {
         public abstract IBuildingModule CreateRuntime();
         public virtual void Validate(List<string> errors) { }
+        public virtual bool Provides(Type capability) => false;
+        public virtual void ValidateComposition(BuildingDefinition definition, List<string> errors) { }
     }
 
     public interface IBuildingModule : IDisposable
@@ -20,7 +22,12 @@ namespace EternalSteam
     public sealed class BuildingServices
     {
         public ITargetQuery Targets { get; }
-        public BuildingServices(ITargetQuery targets) { Targets = targets; }
+        public IBaseObjective Nexus { get; }
+        public ILevelLimit LevelLimit { get; }
+        public IResourceBank Resources { get; }
+        public IMovementObstacles Obstacles { get; }
+        public BuildingServices(ITargetQuery targets, IBaseObjective nexus = null, IResourceBank resources = null, IMovementObstacles obstacles = null, ILevelLimit levelLimit = null)
+        { Targets = targets; Nexus = nexus; LevelLimit = levelLimit ?? nexus; Resources = resources; Obstacles = obstacles; }
     }
 
     public sealed class BuildingInstance : IDisposable
@@ -39,7 +46,11 @@ namespace EternalSteam
         public bool Disposed { get; private set; }
         public bool EditingDirection { get; private set; }
         public event Action<BuildingInstance> Destroyed;
+        public event Action<BuildingInstance> Destroying;
         public event Action<Vector3> Shot;
+        public event Action DirectionChanged;
+        public event Action<Vector3> Projectile;
+        public void ReportProjectile(Vector3 position) => Projectile?.Invoke(position);
 
         public BuildingInstance(int id, BuildingDefinition definition, Vector2Int cell, Vector3 position, BuildingServices services)
         {
@@ -95,12 +106,13 @@ namespace EternalSteam
                 throw new ArgumentException("Direction must be finite and nonzero.");
             Direction = direction.normalized;
             EditingDirection = false;
-            Module<AttackModule>()?.ClearTarget();
+            DirectionChanged?.Invoke();
         }
         public void ReportShot(Vector3 position) => Shot?.Invoke(position);
         public void Destroy()
         {
             if (Disposed) return;
+            Destroying?.Invoke(this);
             var callback = Destroyed;
             Dispose();
             callback?.Invoke(this);
@@ -112,7 +124,10 @@ namespace EternalSteam
             Active = false;
             for (int i = modules.Count - 1; i >= 0; i--) modules[i].Dispose();
             Shot = null;
+            DirectionChanged = null;
+            Projectile = null;
             Destroyed = null;
+            Destroying = null;
         }
     }
 }

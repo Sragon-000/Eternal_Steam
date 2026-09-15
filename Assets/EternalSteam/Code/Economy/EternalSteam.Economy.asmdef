@@ -1,0 +1,7 @@
+{
+  "name": "EternalSteam.Economy",
+  "rootNamespace": "EternalSteam",
+  "references": [
+    "EternalSteam.Runtime"
+  ]
+}

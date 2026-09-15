@@ -33,3 +33,5 @@ Button:disabled { color: #839399; background-color: #253239; }
 .row { flex-direction: row; }
 .row > Button { flex-grow: 1; margin-right: 4px; }
 .hidden { display: none; }
+
+.catalog { max-height: 240px; flex-shrink: 0; }

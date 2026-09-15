@@ -21,6 +21,8 @@ namespace EternalSteam
     public sealed class SandboxSession : ISandboxCommands, IDisposable
     {
         readonly IEditPolicy editPolicy;
+        readonly IDefeatCondition nexus;
+        public bool Defeated => nexus?.Defeated == true;
         readonly List<BuildingInstance> tickBuffer = new();
         BuildingInstance directionBuilding;
         public BuildingWorld World { get; }
@@ -31,13 +33,19 @@ namespace EternalSteam
         public Vector3 PreviewDirection { get; private set; } = Vector3.forward;
         public int? DirectionBuildingId => directionBuilding?.Id;
         public bool CanEdit => editPolicy.Allows(Phase);
-        public SandboxSession(BuildingWorld world, IEditPolicy policy)
-        { World = world; editPolicy = policy; Placement = new PlacementSession(world); Recovery = new RecoverySession(world); }
+        public SandboxSession(BuildingWorld world, IEditPolicy policy, IDefeatCondition nexus = null)
+        { World = world; editPolicy = policy; this.nexus = nexus; if(nexus != null) nexus.Lost += OnNexusLost; Placement = new PlacementSession(world); Recovery = new RecoverySession(world); }
+        void OnNexusLost() { Cancel(); Phase = SandboxPhase.Result; }
+        public bool Upgrade(int id, out string reason)
+        {
+            reason = "준비 단계에서 강화 가능한 건물을 선택하세요.";
+            return CanEdit && Mode == EditMode.None && World.TryGet(id,out var building) && building.Module<IUpgradeControl>() is IUpgradeControl upgrade && upgrade.TryUpgrade(out reason);
+        }
         public void BeginPlacement() { if (CanEdit && Mode == EditMode.None) Mode = EditMode.Placement; }
         public void BeginRecovery() { if (CanEdit && Mode == EditMode.None) Mode = EditMode.Recovery; }
         public bool BeginDirection(int id)
         {
-            if (!CanEdit || Mode != EditMode.None || !World.TryGet(id, out directionBuilding) || directionBuilding.Module<AttackModule>() == null) return false;
+            if (!CanEdit || Mode != EditMode.None || !World.TryGet(id, out directionBuilding) || directionBuilding.Module<IAttackControl>() == null) return false;
             Mode = EditMode.Direction;
             PreviewDirection = directionBuilding.Direction;
             directionBuilding.BeginDirectionEdit();
@@ -61,7 +69,7 @@ namespace EternalSteam
         public void SetTargets(int id, TargetKind kinds)
         {
             if (!CanEdit || Mode != EditMode.None || !World.TryGet(id, out var building)) return;
-            if (building.Module<AttackModule>() is AttackModule attack) attack.Kinds = kinds;
+            if (building.Module<IAttackControl>() is IAttackControl attack) attack.Kinds = kinds;
         }
         public PlacementResult Confirm()
         {
@@ -99,9 +107,9 @@ namespace EternalSteam
         {
             if (Phase != SandboxPhase.Combat) return;
             tickBuffer.Clear(); tickBuffer.AddRange(World.Buildings);
-            foreach (var building in tickBuffer) building.Tick(dt);
+            foreach (var building in tickBuffer) { if (Phase != SandboxPhase.Combat) break; building.Tick(dt); }
         }
         public void CompleteCombat() { if (Phase == SandboxPhase.Combat) Phase = SandboxPhase.Result; }
-        public void Dispose() { Cancel(); World.Dispose(); }
+        public void Dispose() { if(nexus != null) nexus.Lost -= OnNexusLost; Cancel(); World.Dispose(); }
     }
 }

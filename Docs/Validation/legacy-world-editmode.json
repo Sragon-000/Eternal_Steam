@@ -1,0 +1,83 @@
+{
+  "status": "completed",
+  "duration": 0.03,
+  "summary": {
+    "total": 10,
+    "passed": 10,
+    "failed": 0,
+    "skipped": 0,
+    "inconclusive": 0
+  },
+  "results": [
+    {
+      "FullName": "EternalSteam.Demo.Tests.HordeBuildingTests.AdapterDoesNotReferenceSimulationAssembly",
+      "Status": "Passed",
+      "Duration": 0.0028774,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Demo.Tests.HordeBuildingTests.AllCellsMatchOriginalPlacementFootprintRule(Lane)",
+      "Status": "Passed",
+      "Duration": 0.008057,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Demo.Tests.HordeBuildingTests.AllCellsMatchOriginalPlacementFootprintRule(WideFront)",
+      "Status": "Passed",
+      "Duration": 0.0066356,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Demo.Tests.HordeBuildingTests.AllCellsMatchOriginalPlacementFootprintRule(Pincer)",
+      "Status": "Passed",
+      "Duration": 0.00597,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Demo.Tests.HordeBuildingTests.FailedCreationRollsBackWorldLegacyListAndReservations(False)",
+      "Status": "Passed",
+      "Duration": 0.0021136,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Demo.Tests.HordeBuildingTests.FailedCreationRollsBackWorldLegacyListAndReservations(True)",
+      "Status": "Passed",
+      "Duration": 0.0002729,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Demo.Tests.HordeBuildingTests.InvalidDirectionRangeAndKindCannotLeaveState",
+      "Status": "Passed",
+      "Duration": 0.0003821,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Demo.Tests.HordeBuildingTests.OffsetGridPreservesDefaultCentersAndLegacyEvenCenters",
+      "Status": "Passed",
+      "Duration": 0.0008246,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Demo.Tests.HordeBuildingTests.PhaseAndCapacityAreRecheckedBeforeCommit",
+      "Status": "Passed",
+      "Duration": 0.000323,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Demo.Tests.HordeBuildingTests.PlacementSharesOccupancyLifetimeAndStableDefinitionId",
+      "Status": "Passed",
+      "Duration": 0.0004657,
+      "Message": null,
+      "StackTrace": null
+    }
+  ]
+}

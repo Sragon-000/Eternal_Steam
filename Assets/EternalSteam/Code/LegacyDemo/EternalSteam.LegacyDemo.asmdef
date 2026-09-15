@@ -1,6 +1,12 @@
 {
   "name": "EternalSteam.LegacyDemo",
   "references": [
-    "Unity.InputSystem"
+    "Unity.InputSystem",
+    "EternalSteam.LegacyDefinitions",
+    "EternalSteam.LegacyDeployment",
+    "EternalSteam.LegacyPresentation",
+    "EternalSteam.Runtime",
+    "EternalSteam.LegacyBuildings",
+    "EternalSteam.LegacyCombat"
   ]
 }

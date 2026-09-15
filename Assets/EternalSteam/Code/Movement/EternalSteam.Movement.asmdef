@@ -1,0 +1,7 @@
+{
+  "name": "EternalSteam.Movement",
+  "rootNamespace": "EternalSteam",
+  "references": [
+    "EternalSteam.Runtime"
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "status": "completed",
+  "duration": 0.03,
+  "summary": {
+    "total": 8,
+    "passed": 8,
+    "failed": 0,
+    "skipped": 0,
+    "inconclusive": 0
+  },
+  "results": [
+    {
+      "FullName": "EternalSteam.Demo.Tests.HordeDeploymentTests.AimingBeyondMapClampsRangeWhileIdleOutsideMapIsHidden",
+      "Status": "Passed",
+      "Duration": 0.0068063,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Demo.Tests.HordeDeploymentTests.CameraFramingRejectsNonfiniteViewportAndFitsBothMapSizes",
+      "Status": "Passed",
+      "Duration": 0.0029763,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Demo.Tests.HordeDeploymentTests.CombatAndUiBlockingCannotCommit(False,False)",
+      "Status": "Passed",
+      "Duration": 0.0004086,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Demo.Tests.HordeDeploymentTests.CombatAndUiBlockingCannotCommit(True,True)",
+      "Status": "Passed",
+      "Duration": 2.51E-05,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Demo.Tests.HordeDeploymentTests.DeploymentHasNoSimulationOrInputSystemDependency",
+      "Status": "Passed",
+      "Duration": 0.0015167,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Demo.Tests.HordeDeploymentTests.FailedPlacementKeepsEditAndCancellationNeedsNoPointer",
+      "Status": "Passed",
+      "Duration": 0.0001948,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Demo.Tests.HordeDeploymentTests.InvalidGridCannotBeginAndConfirmationRevalidatesThroughCommand",
+      "Status": "Passed",
+      "Duration": 0.0001268,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Demo.Tests.HordeDeploymentTests.TwoClicksCommitSnappedPositionAndPointerDirection",
+      "Status": "Passed",
+      "Duration": 0.0002397,
+      "Message": null,
+      "StackTrace": null
+    }
+  ]
+}

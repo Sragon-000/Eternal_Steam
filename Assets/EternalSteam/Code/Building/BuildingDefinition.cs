@@ -17,6 +17,13 @@ namespace EternalSteam
         public GameObject ViewPrefab;
         public List<BuildingModuleDefinition> Modules = new();
 
+        public bool Provides<T>()
+        {
+            if (Modules == null) return false;
+            foreach (var module in Modules) if (module != null && module.Provides(typeof(T))) return true;
+            return false;
+        }
+
         public List<string> Validate()
         {
             var errors = new List<string>();
@@ -31,6 +38,7 @@ namespace EternalSteam
                 if (module == null) { errors.Add("Missing module reference."); continue; }
                 if (!types.Add(module.GetType())) errors.Add("Duplicate module type: " + module.GetType().Name);
                 module.Validate(errors);
+                module.ValidateComposition(this, errors);
             }
             return errors;
         }

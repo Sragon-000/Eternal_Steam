@@ -1,0 +1,18 @@
+.workspace { flex-grow: 1; color: #e8f1f0; -unity-font-definition: url("project://database/Assets/EternalSteam/Shared/Fonts/NotoSansCJKkr-Regular.otf"); }
+.panel { width: 290px; max-height: 100%; padding: 18px; background-color: rgba(14, 25, 30, 0.96); border-right-width: 1px; border-right-color: #45646a; }
+.title { font-size: 23px; -unity-font-style: bold; margin-bottom: 4px; }
+.subtitle { font-size: 12px; color: #9ab9b4; margin-bottom: 16px; }
+.section { font-size: 14px; -unity-font-style: bold; margin-top: 14px; margin-bottom: 5px; }
+.note { white-space: normal; font-size: 12px; color: #bbcdcf; margin-top: 6px; margin-bottom: 6px; }
+.mode { color: #80dfc1; margin-bottom: 6px; }
+.message { color: #ffdc9f; white-space: normal; margin-top: 15px; font-size: 13px; }
+Button { background-color: #29424a; color: #edf6f3; border-width: 1px; border-color: #4f7175; border-radius: 4px; height: 32px; margin-top: 3px; margin-bottom: 3px; }
+Button:hover { background-color: #3a6267; }
+Button.selected { background-color: #356a5d; border-color: #93e7c8; }
+TextField { margin-top: 4px; margin-bottom: 6px; }
+.unity-text-field__input { background-color: #172c33; color: #ffffff; padding: 8px; border-width: 1px; border-color: #718d93; }
+
+.unity-scroller { width: 10px; }
+.unity-scroller__low-button, .unity-scroller__high-button { display: none; }
+.unity-base-slider__tracker { background-color: #172c33; }
+.unity-base-slider__dragger { background-color: #58777c; border-radius: 4px; }

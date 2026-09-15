@@ -1,0 +1,9 @@
+{
+    "unity": "6000.3.14f1",
+    "device": "Apple M4 Pro",
+    "scope": "Editor main-thread controlled MoveAndIndex + UpdateTowers + DrawEnemies submission; excludes UI, Editor frame, GPU, reset and spawn; Lane, four fixed starting positions with MG/Cannon/Frost/Arrow; seeded in-range distribution",
+    "seed": 731,
+    "capacity": 4000,
+    "samples": 600,
+    "dt": 0.01666666753590107
+,"runs":[{"medianMs":0.4354,"p95Ms":0.5324,"allocatedBytes":0,"initialAlive":4000,"finalAlive":3211,"killed":789,"checksum":"0C112205DFD935D9"},{"medianMs":0.4342,"p95Ms":0.5268,"allocatedBytes":0,"initialAlive":4000,"finalAlive":3211,"killed":789,"checksum":"0C112205DFD935D9"},{"medianMs":0.4345,"p95Ms":0.5228,"allocatedBytes":0,"initialAlive":4000,"finalAlive":3211,"killed":789,"checksum":"0C112205DFD935D9"}]}

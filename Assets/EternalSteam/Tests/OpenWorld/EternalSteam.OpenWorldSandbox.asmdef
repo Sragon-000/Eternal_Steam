@@ -1,0 +1,4 @@
+{
+ "name":"EternalSteam.OpenWorldSandbox",
+ "references":["EternalSteam.Runtime","EternalSteam.LegacyDefinitions","EternalSteam.LegacyDeployment","EternalSteam.LegacyBuildings","EternalSteam.LegacyCombat","EternalSteam.LegacyPresentation","Unity.InputSystem"]
+}

@@ -28,7 +28,14 @@ namespace EternalSteam
             shot.positionCount = 2;
             shot.enabled = false;
             building.Shot += ShowShot;
+            building.Projectile += ShowProjectile;
             SetState(false, false);
+        }
+        void ShowProjectile(Vector3 position)
+        {
+            shot.SetPosition(0, position-Vector3.forward*0.2f);
+            shot.SetPosition(1, position+Vector3.forward*0.2f);
+            shotTime=0.05f; shot.enabled=true;
         }
         void ShowShot(Vector3 position)
         {
@@ -58,7 +65,7 @@ namespace EternalSteam
         public void ShowRange(bool visible, Vector3 direction)
         {
             if (attackPivot != null) attackPivot.rotation = Quaternion.LookRotation(instance.Direction);
-            var attack = instance.Module<AttackModule>();
+            var attack = instance.Module<IAttackControl>();
             sector.enabled = visible && attack != null;
             if (!sector.enabled) return;
             sector.positionCount = 35;
@@ -68,7 +75,7 @@ namespace EternalSteam
                 sector.SetPosition(i + 1, origin + Quaternion.AngleAxis(Mathf.Lerp(-attack.Angle * 0.5f, attack.Angle * 0.5f, i / 32f), Vector3.up) * direction * attack.Range);
             sector.SetPosition(34, origin);
         }
-        void OnDestroy() { if (instance != null) instance.Shot -= ShowShot; }
+        void OnDestroy() { if (instance != null) { instance.Shot -= ShowShot; instance.Projectile -= ShowProjectile; } }
         public static LineRenderer MakeLine(string name, Transform parent, Material material, float width)
         {
             var child = new GameObject(name);

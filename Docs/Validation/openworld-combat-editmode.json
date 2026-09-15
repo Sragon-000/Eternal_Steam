@@ -1,0 +1,111 @@
+{
+  "status": "completed",
+  "duration": 0.02,
+  "summary": {
+    "total": 14,
+    "passed": 14,
+    "failed": 0,
+    "skipped": 0,
+    "inconclusive": 0
+  },
+  "results": [
+    {
+      "FullName": "LegacyCombatTests.AreaIncludesRadiusBoundaryAndSkipsAlreadyDeadSlots",
+      "Status": "Passed",
+      "Duration": 0.0050195,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "LegacyCombatTests.CapacityIsIndependentOfStageLimits",
+      "Status": "Passed",
+      "Duration": 0.0002958,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "LegacyCombatTests.CombatAssemblyDoesNotReferenceSimulationOrPresentation",
+      "Status": "Passed",
+      "Duration": 0.0009807,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "LegacyCombatTests.CustomSpawnFollowsTerrainAndCanEscapeWithoutDefeat",
+      "Status": "Passed",
+      "Duration": 0.0041564,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "LegacyCombatTests.CustomSpawnRejectsInvalidValuesWithoutConsumingSlots",
+      "Status": "Passed",
+      "Duration": 0.0001787,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "LegacyCombatTests.EscapeStopsMovementImmediatelyAtDefeat",
+      "Status": "Passed",
+      "Duration": 0.0002558,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "LegacyCombatTests.FrostFiltersSectorAndIntegratesPartialSlowExpiry",
+      "Status": "Passed",
+      "Duration": 0.000339,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "LegacyCombatTests.PiercingHitsEveryForwardTargetOnceIncludingRangeBoundary",
+      "Status": "Passed",
+      "Duration": 0.0010239,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "LegacyCombatTests.RayUsesNearestAlongAndPreservesExclusiveFarBoundary",
+      "Status": "Passed",
+      "Duration": 0.0002713,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "LegacyCombatTests.ResetReplaysSeedAndClearsIndex(Lane)",
+      "Status": "Passed",
+      "Duration": 0.000402,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "LegacyCombatTests.ResetReplaysSeedAndClearsIndex(WideFront)",
+      "Status": "Passed",
+      "Duration": 7.45E-05,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "LegacyCombatTests.ResetReplaysSeedAndClearsIndex(Pincer)",
+      "Status": "Passed",
+      "Duration": 6.87E-05,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "LegacyCombatTests.ReusedSlotStartsWithFreshHealthAndSlowState",
+      "Status": "Passed",
+      "Duration": 0.0001296,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "LegacyCombatTests.WorldsAndDamageRemainIndependent",
+      "Status": "Passed",
+      "Duration": 0.0001382,
+      "Message": null,
+      "StackTrace": null
+    }
+  ]
+}

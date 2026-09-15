@@ -1,0 +1,7 @@
+{
+  "name": "EternalSteam.LegacyCombat",
+  "rootNamespace": "EternalSteam.Demo",
+  "references": [
+    "EternalSteam.LegacyDefinitions"
+  ]
+}

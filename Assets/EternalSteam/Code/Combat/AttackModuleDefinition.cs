@@ -12,12 +12,22 @@ namespace EternalSteam
         public float Interval = 0.5f;
         public float Damage = 10;
         public TargetKind Targets = TargetKind.All;
-        public override IBuildingModule CreateRuntime() => new AttackModule(Range, Angle, Interval, Damage, Targets, new NearestTargetSelector(), new InstantDamage());
+        public AttackExecutionDefinition Execution;
+        public List<HitEffectDefinition> Effects = new();
+        public override IBuildingModule CreateRuntime()
+        {
+            var effects = new IHitEffect[Effects.Count];
+            for (int i=0;i<effects.Length;i++) effects[i]=Effects[i].CreateRuntime();
+            return new AttackModule(Range,Angle,Interval,Damage,Targets,new NearestTargetSelector(),Execution == null ? new InstantDamage() : Execution.CreateRuntime(),effects);
+        }
         public override void Validate(List<string> errors)
         {
             if (!float.IsFinite(Range) || Range <= 0 || !float.IsFinite(Angle) || Angle < 0 || Angle > 360
                 || !float.IsFinite(Interval) || Interval <= 0 || !float.IsFinite(Damage) || Damage <= 0)
                 errors.Add("Attack range/interval/damage must be positive; angle must be 0–360; all must be finite.");
+            Execution?.Validate(errors);
+            if (Effects == null) errors.Add("Effect list is missing.");
+            else foreach(var effect in Effects) { if(effect == null) errors.Add("Missing hit effect."); else effect.Validate(errors); }
             if (Targets == 0 || (Targets & ~TargetKind.All) != 0) errors.Add("Choose ground, air or both targets.");
         }
     }
@@ -26,9 +36,6 @@ namespace EternalSteam
     {
         bool Select(ITargetQuery query, Vector3 position, Vector3 direction, float range, float angle, TargetKind kinds, out TargetInfo target);
     }
-    public interface IAttackExecution { void Execute(TargetInfo target, float damage); }
-    public sealed class InstantDamage : IAttackExecution
-    { public void Execute(TargetInfo target, float damage) => target.Receiver.ApplyDamage(damage); }
     public static class Sector
     {
         public static bool Contains(Vector3 origin, Vector3 forward, float range, float angle, TargetKind kinds, TargetInfo target)
@@ -64,11 +71,12 @@ namespace EternalSteam
             return found;
         }
     }
-    public sealed class AttackModule : IBuildingModule
+    public sealed class AttackModule : IBuildingModule, IAttackControl
     {
         readonly ITargetSelector selector;
         readonly IAttackExecution execution;
         readonly float interval, damage;
+        readonly IHitEffect[] effects;
         BuildingInstance owner;
         ITargetQuery query;
         float cooldown;
@@ -77,14 +85,15 @@ namespace EternalSteam
         public float Angle { get; }
         public TargetHandle? CurrentTarget { get; private set; }
         public TargetKind Kinds { get => kinds; set { kinds = value; ClearTarget(); } }
-        public AttackModule(float range, float angle, float interval, float damage, TargetKind kinds, ITargetSelector selector, IAttackExecution execution)
-        { Range = range; Angle = angle; this.interval = interval; this.damage = damage; this.kinds = kinds; this.selector = selector; this.execution = execution; }
+        public AttackModule(float range, float angle, float interval, float damage, TargetKind kinds, ITargetSelector selector, IAttackExecution execution, IHitEffect[] effects = null)
+        { Range = range; Angle = angle; this.interval = interval; this.damage = damage; this.kinds = kinds; this.selector = selector; this.execution = execution; this.effects = effects ?? Array.Empty<IHitEffect>(); }
         public void Initialize(BuildingInstance owner, BuildingServices services)
-        { this.owner = owner; query = services.Targets ?? throw new InvalidOperationException("Attack requires ITargetQuery."); }
+        { this.owner = owner; query = services.Targets ?? throw new InvalidOperationException("Attack requires ITargetQuery."); owner.DirectionChanged += ClearTarget; }
         public void Activate() { }
         public void ClearTarget() => CurrentTarget = null;
         public void Tick(float dt)
         {
+            execution.Tick(dt);
             cooldown = Mathf.Max(0, cooldown - dt);
             TargetInfo target = default;
             if (CurrentTarget.HasValue && (!query.TryGet(CurrentTarget.Value, out target)
@@ -98,9 +107,8 @@ namespace EternalSteam
             if (!query.TryGet(CurrentTarget.Value, out target) || !Sector.Contains(owner.Position, owner.Direction, Range, Angle, kinds, target))
             { ClearTarget(); return; }
             cooldown = interval;
-            execution.Execute(target, damage);
-            owner.ReportShot(target.Position);
+            execution.Execute(new AttackContext(owner, query, kinds, Range, Angle, effects), target, damage * (owner.Module<IDamageModifier>()?.DamageMultiplier ?? 1));
         }
-        public void Dispose() => ClearTarget();
+        public void Dispose() { if(owner != null) owner.DirectionChanged -= ClearTarget; ClearTarget(); execution.Dispose(); }
     }
 }

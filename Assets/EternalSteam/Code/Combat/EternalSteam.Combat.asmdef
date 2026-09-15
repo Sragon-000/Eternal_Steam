@@ -1,0 +1,7 @@
+{
+  "name": "EternalSteam.Combat",
+  "rootNamespace": "EternalSteam",
+  "references": [
+    "EternalSteam.Runtime"
+  ]
+}

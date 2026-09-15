@@ -1,0 +1,6 @@
+{
+  "name": "EternalSteam.LegacyCombatTests",
+  "references": ["EternalSteam.LegacyDefinitions", "EternalSteam.LegacyCombat"],
+  "optionalUnityReferences": ["TestAssemblies"],
+  "includePlatforms": ["Editor"]
+}

@@ -63,8 +63,9 @@ namespace EternalSteam
             building.Dispose();
             factory.Remove(building);
         }
-        public void Dispose()
+        public void Clear()
         { foreach (int id in new List<int>(buildings.Keys)) Remove(id); }
+        public void Dispose() => Clear();
     }
     public sealed class PlacementSession : IDisposable
     {

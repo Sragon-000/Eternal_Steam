@@ -1,0 +1,20 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+ <ui:Style src="OpenWorldHud.uss" />
+ <ui:VisualElement class="workspace" picking-mode="Ignore">
+  <ui:ScrollView name="panel" class="panel">
+   <ui:Label text="테스트 그라운드" class="title" />
+   <ui:Label text="SCENE LAYOUT / COMBAT TEST" class="subtitle" />
+   <ui:Label name="mode" class="mode" />
+   <ui:Label name="counts" class="note" />
+   <ui:Label text="토대·포탑은 씬에 저장된 배치입니다.&#10;편집: Play 종료 → Eternal Steam → Open World → 씬 배치 편집" class="note" />
+   <ui:Label text="적 소환" class="section" />
+   <ui:TextField name="amount" value="100" max-length="8" />
+   <ui:Button name="spawn" text="입력한 수량 소환" />
+   <ui:Label text="1~4,000마리 · 화면 중심 왼쪽에서 생성&#10;토대는 통과하고 지형을 따라 이동합니다." class="note" />
+   <ui:Button name="run" text="전투 실행" />
+   <ui:Button name="reset" text="적 초기화" />
+   <ui:Label text="WASD 이동 / 휠 확대·축소" class="note" />
+   <ui:Label name="message" class="message" />
+  </ui:ScrollView>
+ </ui:VisualElement>
+</ui:UXML>

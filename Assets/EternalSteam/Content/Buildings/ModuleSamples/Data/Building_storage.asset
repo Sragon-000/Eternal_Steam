@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 961be35588064450ea724446c223c99b, type: 3}
+  m_Name: Building_storage
+  m_EditorClassIdentifier: EternalSteam.Runtime::EternalSteam.BuildingDefinition
+  Id: sample.modules.storage
+  DisplayName: "\uC5D0\uB108\uC9C0 \uC800\uC7A5\uC18C"
+  Category: 1
+  Footprint: {x: 1, y: 1}
+  Recoverable: 1
+  ViewPrefab: {fileID: 6671557177882542825, guid: 02cfc7b605a3b49058b0cab658a5536e, type: 3}
+  Modules:
+  - {fileID: 11400000, guid: 765539d349ea144059113b497c8f267c, type: 2}
+  - {fileID: 11400000, guid: 97ae5b067b9a74562858e512b7d07a2f, type: 2}

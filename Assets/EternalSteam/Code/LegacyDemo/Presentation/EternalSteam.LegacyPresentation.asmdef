@@ -1,0 +1,10 @@
+{
+  "name": "EternalSteam.LegacyPresentation",
+  "rootNamespace": "EternalSteam.Demo",
+  "references": [
+    "EternalSteam.LegacyDefinitions",
+    "EternalSteam.LegacyDeployment",
+    "Unity.InputSystem",
+    "EternalSteam.LegacyCombat"
+  ]
+}

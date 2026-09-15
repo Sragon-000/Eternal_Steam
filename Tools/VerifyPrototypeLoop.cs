@@ -1,12 +1,13 @@
 using System;
 using System.Reflection;
+using System.Threading.Tasks;
 using EternalSteam.Demo;
 using UnityEngine;
 using UnityEngine.UIElements;
 
 public static class VerifyPrototypeLoop
 {
-    public static string Main()
+    public static async Task<string> Main()
     {
         var sim = UnityEngine.Object.FindFirstObjectByType<HordeSimulation>();
         if (sim == null) throw new Exception("Play mode required");
@@ -31,6 +32,7 @@ public static class VerifyPrototypeLoop
             check(!sim.Deploy(2), "Locked stage");
             Click("stage1");
             check(!sim.InLobby && !sim.WaveStarted, "Deploy waits for start");
+            await Task.Delay(100); // Allow HUD.Update to refresh preparation controls after deploying.
             Click("arrow");
             check(sim.SelectedTower == HordeTowerKind.Arrow, "Arrow selection");
             Call("Spawn");
@@ -39,7 +41,7 @@ public static class VerifyPrototypeLoop
             Call("ApplyDamage", 0, 10);
             check(sim.Killed == 1, "Health depletion");
             sim.ResetEnemies();
-            var enemies = (Array)typeof(HordeSimulation).GetField("enemies", flags).GetValue(sim);
+            var enemies = (Array)typeof(HordeEnemyWorld).GetField("enemies", flags).GetValue(typeof(HordeSimulation).GetField("enemyWorld", flags).GetValue(sim));
             Vector3[] positions = { new Vector3(3, 0, 0), new Vector3(7, 0, 0), new Vector3(-3, 0, 0), new Vector3(15, 0, 0), new Vector3(5, 0, 3) };
             for (int i = 0; i < positions.Length; i++)
             {

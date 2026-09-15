@@ -139,17 +139,17 @@ README.md
 
 | 파일 | 역할과 연결 |
 | --- | --- |
-| [HordeSimulation.cs](Assets/EternalSteam/Code/LegacyDemo/HordeSimulation.cs) | 적 생성·이동·체력·공격·설치·스테이지 판정·카메라를 관리하는 중심 컴포넌트. 결과 확정 시 `HordeProgress`에 보상 요청 |
-| [HordeMapLayout.cs](Assets/EternalSteam/Code/LegacyDemo/HordeMapLayout.cs) | 맵 크기, 설치 구역, 출발·도착 경로, 기본 포탑 위치, 그리드 스냅 정의 |
+| [HordeSimulation.cs](Assets/EternalSteam/Code/LegacyDemo/HordeSimulation.cs) | 분리한 전투·배치·표현을 연결하고 출현 예산·스테이지·UI 명령을 관리. 결과 확정 시 `HordeProgress`에 보상 요청 |
+| [HordeMapLayout.cs](Assets/EternalSteam/Code/LegacyDemo/Definitions/HordeMapLayout.cs) | 맵 크기, 설치 구역, 출발·도착 경로, 기본 포탑 위치, 그리드 스냅 정의 |
 | [HordeBuildGrid.cs](Assets/EternalSteam/Code/LegacyDemo/HordeBuildGrid.cs) | 배치 구역의 그리드 표시용 메시 생성 |
-| [HordeTowerKind.cs](Assets/EternalSteam/Code/LegacyDemo/HordeTowerKind.cs) | 4종 포탑 식별자와 피해량·발사 간격·색상·한글 설명 |
+| [HordeTowerKind.cs](Assets/EternalSteam/Code/LegacyDemo/Definitions/HordeTowerKind.cs) | 4종 포탑 식별자와 피해량·발사 간격·색상·한글 설명 |
 | [HordeProgress.cs](Assets/EternalSteam/Code/LegacyDemo/HordeProgress.cs) | 부품, 맵별 클리어 기록, 설치 한도 강화, 보상과 로컬 저장 |
 | [HordeHud.cs](Assets/EternalSteam/Code/LegacyDemo/UI/HordeHud.cs) | 버튼 이벤트, 전투 상태 표시, 한도 구매, UI 숨김·복원과 카메라 영역 연결 |
 | [HordeHud.uxml](Assets/EternalSteam/Shared/UI/Demo/HordeHud.uxml) | 로비·준비·결과 메뉴와 전투 전용 체력 바의 요소 구조 |
 | [HordeHud.uss](Assets/EternalSteam/Shared/UI/Demo/HordeHud.uss) | 한글 글꼴, 색상, 크기, 구역 간격, 스크롤, 표시 상태 |
 | `HordePanelSettings.asset` | 런타임 UI 패널 설정 |
 
-버튼 입력은 `HordeHud → HordeSimulation`으로 전달됩니다. 전투는 `HordeMapLayout`과 `HordeTowerStats`의 값을 사용하며, 클리어·구매 결과는 `HordeProgress → PlayerPrefs`에 저장합니다. HUD는 이 상태를 읽어 화면에 표시합니다. 프로토타입이므로 전투 로직은 중심 컴포넌트에 모여 있으며, 별도 서버나 복잡한 서비스 계층은 없습니다.
+버튼 입력은 `HordeHud → HordeSimulation`으로 전달됩니다. 전투는 `HordeMapLayout`과 `HordeTowerStats`의 값을 사용하며, 클리어·구매 결과는 `HordeProgress → PlayerPrefs`에 저장합니다. HUD는 이 상태를 읽어 화면에 표시합니다. 적 상태·피해 판정은 `LegacyDemo/Combat`, 포탑 공격 연결은 `Buildings/HordeTowerCombat`, 표현은 `HordeTowerEffects`와 `Presentation/HordeEnemyRenderer`에 분리했습니다. [전투 모듈 경계와 검증](Docs/레거시_전투_분리.md)을 참고하세요.
 
 ### 5. 적·스테이지·클리어 규칙
 
@@ -226,7 +226,9 @@ unity command run_script --file Tools/VerifyCapacityUpgrade.cs --entry VerifyCap
 
 | 변경할 내용 | 우선 확인할 위치 |
 | --- | --- |
-| 적 수·체력·전투 판정 | `HordeSimulation.cs`의 `StageCounts`, `Spawn`, `StageCleared` |
+| 스테이지 수량·결과 | `HordeSimulation.cs`의 `StageCounts`, `StageCleared` |
+| 적 체력·이동·슬롯 | `LegacyDemo/Combat/HordeEnemyWorld.cs` |
+| 공격 피해 판정 | `LegacyDemo/Combat/HordeAttackResolver.cs` |
 | 맵 크기·설치 구역·진격 경로 | `HordeMapLayout.cs`와 해당 씬. 씬 바닥 수정도 함께 확인 |
 | 포탑 피해·발사 간격 | `HordeTowerKind.cs`의 `HordeTowerStats` |
 | 부품 보상·한도·강화 비용 | `HordeProgress.cs` |
@@ -245,3 +247,15 @@ unity command run_script --file Tools/VerifyCapacityUpgrade.cs --entry VerifyCap
 건물은 `BuildingDefinition`과 선택적인 체력·공격 모듈 에셋으로 조합합니다. 새 정의를 `SampleCatalog`에 등록하면 UI 목록에 자동 반영됩니다. 상세 계약과 테스트는 [공통 기반 개발 안내](Docs/공통_기반_개발_안내.md)를 참고하세요.
 
 폴더 배치 기준은 [폴더 구조](Docs/폴더_구조.md)를 참고하세요.
+
+## 선택 모듈 확장
+
+`Assets/EternalSteam/Scene/Tests/ModuleSandbox.unity`에서 광역·관통·연쇄·투사체, 특수 효과, 넥서스·강화, 자원과 이동 방벽을 시험할 수 있습니다. Inspector 조합과 검증용 규칙은 [선택 모듈 확장 안내](Docs/선택_모듈_확장_안내.md)를 참고하세요.
+
+기존 데모의 입력·카메라·배치 편집·미리보기 분리 구조와 호환 검증은 [레거시 배치 분리](Docs/레거시_배치_분리.md)를 참고하세요.
+
+기존 데모의 설치·점유·포탑 생성은 [공통 건물 월드에 연결](Docs/레거시_공통_건물_연결.md)되어 있으며, 기존 4종 공격과 저장 동작은 유지합니다.
+
+## Terrain 기반 테스트 공간
+
+[OpenWorldSandbox](Assets/EternalSteam/Scene/Tests/OpenWorldSandbox.unity)를 열면 Terrain만 있는 빈 배치 상태로 시작합니다. 토대·포탑 프리팹은 준비되어 있습니다. Play 후 게임 UI에서 토대 설치 → 포탑 종류 → 토대 칸 → 공격 방향 순으로 설치합니다. 수정 버튼으로 포탑을 회수하고, WASD·휠로 카메라를 움직이며 적을 소환합니다. [사용 안내와 개발 경계](Docs/오픈월드_테스트_공간.md).

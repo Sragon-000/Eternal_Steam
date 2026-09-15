@@ -1,0 +1,97 @@
+{
+  "status": "completed",
+  "duration": 0.02,
+  "summary": {
+    "total": 12,
+    "passed": 12,
+    "failed": 0,
+    "skipped": 0,
+    "inconclusive": 0
+  },
+  "results": [
+    {
+      "FullName": "LegacyCombatTests.AreaIncludesRadiusBoundaryAndSkipsAlreadyDeadSlots",
+      "Status": "Passed",
+      "Duration": 0.0059148,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "LegacyCombatTests.CapacityIsIndependentOfStageLimits",
+      "Status": "Passed",
+      "Duration": 0.000399,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "LegacyCombatTests.CombatAssemblyDoesNotReferenceSimulationOrPresentation",
+      "Status": "Passed",
+      "Duration": 0.0012373,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "LegacyCombatTests.EscapeStopsMovementImmediatelyAtDefeat",
+      "Status": "Passed",
+      "Duration": 0.0003077,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "LegacyCombatTests.FrostFiltersSectorAndIntegratesPartialSlowExpiry",
+      "Status": "Passed",
+      "Duration": 0.0006691,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "LegacyCombatTests.PiercingHitsEveryForwardTargetOnceIncludingRangeBoundary",
+      "Status": "Passed",
+      "Duration": 0.0012645,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "LegacyCombatTests.RayUsesNearestAlongAndPreservesExclusiveFarBoundary",
+      "Status": "Passed",
+      "Duration": 0.0003686,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "LegacyCombatTests.ResetReplaysSeedAndClearsIndex(Lane)",
+      "Status": "Passed",
+      "Duration": 0.000629,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "LegacyCombatTests.ResetReplaysSeedAndClearsIndex(WideFront)",
+      "Status": "Passed",
+      "Duration": 0.000107,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "LegacyCombatTests.ResetReplaysSeedAndClearsIndex(Pincer)",
+      "Status": "Passed",
+      "Duration": 9.01E-05,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "LegacyCombatTests.ReusedSlotStartsWithFreshHealthAndSlowState",
+      "Status": "Passed",
+      "Duration": 0.0003749,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "LegacyCombatTests.WorldsAndDamageRemainIndependent",
+      "Status": "Passed",
+      "Duration": 0.0001506,
+      "Message": null,
+      "StackTrace": null
+    }
+  ]
+}

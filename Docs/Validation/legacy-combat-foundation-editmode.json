@@ -1,0 +1,223 @@
+{
+  "status": "completed",
+  "duration": 0.05,
+  "summary": {
+    "total": 30,
+    "passed": 30,
+    "failed": 0,
+    "skipped": 0,
+    "inconclusive": 0
+  },
+  "results": [
+    {
+      "FullName": "EternalSteam.Tests.ArchitectureTests.AttackAcceptsIndependentDamageProviderAndUnsubscribesDirectionHandler",
+      "Status": "Passed",
+      "Duration": 0.0097495,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Tests.ArchitectureTests.NexusAcceptsReplacementDamageCapabilityAtValidationAndRuntime",
+      "Status": "Passed",
+      "Duration": 0.0019773,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Tests.ArchitectureTests.RuntimeAndFeatureAssembliesEnforceOneWayDependencies",
+      "Status": "Passed",
+      "Duration": 0.0011851,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Tests.ArchitectureTests.UpgradesUseIndependentLevelPolicyAndHealthReceiver",
+      "Status": "Passed",
+      "Duration": 0.0012291,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Tests.ExtensionTests.AreaFiltersAirAndSectorWhileHittingNeighbours",
+      "Status": "Passed",
+      "Duration": 0.0011556,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Tests.ExtensionTests.ChainDoesNotRepeatAndUsesDeterministicNearestHop",
+      "Status": "Passed",
+      "Duration": 0.0009793,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Tests.ExtensionTests.FailedBatchRollsBackNexusStorageAndObstacleRegistration",
+      "Status": "Passed",
+      "Duration": 0.0022112,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Tests.ExtensionTests.MissingReferencesAndNexusCompositionAreRejected",
+      "Status": "Passed",
+      "Duration": 0.0009491,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Tests.ExtensionTests.NexusLossImmediatelyEndsSessionAndUnsubscribesOnDispose",
+      "Status": "Passed",
+      "Duration": 0.0013658,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Tests.ExtensionTests.NexusUnlocksUpgradesAndDestructionSignalsOnceButDisposalDoesNot",
+      "Status": "Passed",
+      "Duration": 0.0003684,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Tests.ExtensionTests.PiercingUsesOrderedWidthLimitedHits",
+      "Status": "Passed",
+      "Duration": 0.0008885,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Tests.ExtensionTests.ProductionWaitsForStorageAndConversionIsAtomic",
+      "Status": "Passed",
+      "Duration": 0.0003681,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Tests.ExtensionTests.ProjectileCannotHitReusedSlotAndDisposeCancelsFlights",
+      "Status": "Passed",
+      "Duration": 0.0007378,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Tests.ExtensionTests.ProjectileDelaysDamageAndFollowsBeyondRange",
+      "Status": "Passed",
+      "Duration": 0.0002183,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Tests.ExtensionTests.RemovingOptionalModulesRemovesDependenciesAndMovementRegistration",
+      "Status": "Passed",
+      "Duration": 0.0002181,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Tests.ExtensionTests.StatusDurationsAreIndependentAndSettingsAreCopied",
+      "Status": "Passed",
+      "Duration": 0.0006672,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Tests.FoundationTests.DefinitionsDoNotShareRuntimeStateOrLiveSettings",
+      "Status": "Passed",
+      "Duration": 0.0010272,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Tests.FoundationTests.DirectionEditIsTransactionalAndPhasePolicyGuardsCommands",
+      "Status": "Passed",
+      "Duration": 0.0011561,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Tests.FoundationTests.FactoryFailureRollsBackWithoutLosingPendingWork(False)",
+      "Status": "Passed",
+      "Duration": 0.0004065,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Tests.FoundationTests.FactoryFailureRollsBackWithoutLosingPendingWork(True)",
+      "Status": "Passed",
+      "Duration": 6.74E-05,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Tests.FoundationTests.ModuleRemovalAndCatalogValidation",
+      "Status": "Passed",
+      "Duration": 0.00072,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Tests.FoundationTests.MultiCellBoundsAndCenter",
+      "Status": "Passed",
+      "Duration": 0.0003663,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Tests.FoundationTests.NonRecoverableAndDestroyedBuildings",
+      "Status": "Passed",
+      "Duration": 0.0002985,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Tests.FoundationTests.RecoveryPreservesActivityUntilCommitAndBlocksStaleBatch",
+      "Status": "Passed",
+      "Duration": 0.0004733,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Tests.FoundationTests.RecycledSlotCannotResolveOldHandle",
+      "Status": "Passed",
+      "Duration": 0.001084,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Tests.FoundationTests.ReservationsSurviveSelectionAndFailedMove",
+      "Status": "Passed",
+      "Duration": 0.0004568,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Tests.FoundationTests.RevalidationRejectsWholeBatchAndKeepsReservations",
+      "Status": "Passed",
+      "Duration": 0.0002378,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Tests.FoundationTests.SectorIncludesBoundariesAndIgnoresHeight",
+      "Status": "Passed",
+      "Duration": 0.0001934,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Tests.FoundationTests.TargetKindsAndEqualDistanceTieBreak",
+      "Status": "Passed",
+      "Duration": 0.0003806,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Tests.FoundationTests.TargetLockRetainsCloserArrivalAndReacquiresOnRemoval",
+      "Status": "Passed",
+      "Duration": 0.0002399,
+      "Message": null,
+      "StackTrace": null
+    }
+  ]
+}

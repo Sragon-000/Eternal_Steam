@@ -36,7 +36,7 @@ public static class VerifyDirectionalHorde
             var tracer = (LineRenderer)tower.GetType().GetField("tracer").GetValue(tower);
             var shotDirection = (tracer.GetPosition(1) - head.position).normalized;
             s.ResetEnemies();
-            var enemies = (Array)typeof(HordeSimulation).GetField("enemies", Private).GetValue(s);
+            var enemies = (Array)typeof(HordeEnemyWorld).GetField("enemies", Private).GetValue(typeof(HordeSimulation).GetField("enemyWorld", Private).GetValue(s));
             SetEnemy(s, enemies, 0, new Vector3(0, 0.55f, -12)); // Behind
             SetEnemy(s, enemies, 1, new Vector3(10, 0.55f, -6)); // Outside spread
             SetEnemy(s, enemies, 2, new Vector3(0, 0.55f, 16)); // Beyond range

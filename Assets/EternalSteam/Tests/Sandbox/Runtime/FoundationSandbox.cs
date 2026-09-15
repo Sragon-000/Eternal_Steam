@@ -7,6 +7,9 @@ namespace EternalSteam
     public sealed class FoundationSandbox : MonoBehaviour
     {
         public BuildingCatalog Catalog;
+        public bool ExtendedScenario;
+        public NexusState Nexus { get; private set; }
+        public ResourceBank Resources { get; private set; }
         public Material SurfaceMaterial;
         public Material LineMaterial;
         public Camera ViewCamera;
@@ -16,6 +19,7 @@ namespace EternalSteam
         readonly List<BuildingDefinition> available = new();
         readonly List<SampleTarget> targets = new();
         TargetRegistry registry;
+        MovementObstacles obstacles;
         Transform sceneRoot;
         float combatTime;
         public int Remaining { get; private set; }
@@ -35,11 +39,13 @@ namespace EternalSteam
             Error = null;
             available.AddRange(Catalog.Buildings);
             registry = new TargetRegistry();
+            Nexus = new NexusState(); Resources = new ResourceBank();
             sceneRoot = new GameObject("Sample runtime").transform;
             sceneRoot.SetParent(transform);
             var grid = new BuildGrid(new RectInt(-6, -5, 12, 5), 2);
-            Factory = new UnityBuildingFactory(sceneRoot, new BuildingServices(registry), grid.CellSize, LineMaterial);
-            Session = new SandboxSession(new BuildingWorld(grid, Factory), new PreparationOnly());
+            obstacles = new MovementObstacles(grid.CellSize);
+            Factory = new UnityBuildingFactory(sceneRoot, new BuildingServices(registry, Nexus, Resources, obstacles), grid.CellSize, LineMaterial);
+            Session = new SandboxSession(new BuildingWorld(grid, Factory), new PreparationOnly(), Nexus);
             for (int z = grid.Bounds.yMin; z < grid.Bounds.yMax; z++)
                 for (int x = grid.Bounds.xMin; x < grid.Bounds.xMax; x++)
                 {
@@ -58,7 +64,7 @@ namespace EternalSteam
             for (int i = 0; i < 8; i++)
             {
                 var position = new Vector3((i % 4 - 1.5f) * 3, i < 4 ? 0.7f : 2.5f, i < 4 ? 4 : 8);
-                var target = new SampleTarget { Position = position, Kind = i < 4 ? TargetKind.Ground : TargetKind.Air };
+                var target = new SampleTarget { Position = position, Kind = i < 4 ? TargetKind.Ground : TargetKind.Air, Armor = ExtendedScenario ? 0.2f : 0 };
                 target.Handle = registry.Register(i, position, target.Kind, target);
                 target.View = GameObject.CreatePrimitive(i < 4 ? PrimitiveType.Capsule : PrimitiveType.Sphere);
                 target.View.transform.SetParent(sceneRoot); target.View.transform.position = position;
@@ -79,9 +85,27 @@ namespace EternalSteam
             foreach (var target in targets)
             {
                 if (target.Resolved) continue;
+                target.Status.Tick(Time.deltaTime);
+                if (ExtendedScenario && target.Alive)
+                {
+                    var next = target.Position + Vector3.back * (0.6f * target.Status.MovementMultiplier * Time.deltaTime);
+                    var obstacle = target.Kind == TargetKind.Ground ? obstacles.At(next) : null;
+                    if(obstacle == null) target.Position = next;
+                    else if(target.Status.MovementMultiplier>0) obstacle.Module<IDamageReceiver>()?.ApplyDamage(8*Time.deltaTime);
+                    registry.Move(target.Handle,target.Position); target.View.transform.position=target.Position;
+                }
                 if (!target.Alive || combatTime >= 30)
                 {
-                    if (target.Alive) Escaped++;
+                    if (target.Alive)
+                    {
+                        Escaped++;
+                        if(ExtendedScenario)
+                        {
+                            BuildingInstance nexusBuilding=null;
+                            foreach(var building in Session.World.Buildings) if(building.Module<ILevelAuthority>()!=null) { nexusBuilding=building; break; }
+                            nexusBuilding?.Module<IDamageReceiver>()?.ApplyDamage(25);
+                        }
+                    }
                     target.Resolved = true;
                     registry.Unregister(target.Handle);
                     target.View.SetActive(false);
@@ -91,16 +115,19 @@ namespace EternalSteam
             if (Remaining == 0) Session.CompleteCombat();
         }
         void OnDestroy() { Session?.Dispose(); }
-        sealed class SampleTarget : IDamageReceiver
+        sealed class SampleTarget : IDamageReceiver, IStatusReceiver
         {
             public float Health = 30;
+            public float Armor;
+            public readonly StatusState Status = new();
+            public void ApplyStatus(StatusKind kind,float strength,float duration) => Status.ApplyStatus(kind,strength,duration);
             public Vector3 Position;
             public TargetKind Kind;
             public TargetHandle Handle;
             public GameObject View;
             public bool Resolved;
             public bool Alive => Health > 0 && !Resolved;
-            public void ApplyDamage(float amount) { if (Alive) Health = Mathf.Max(0, Health - amount); }
+            public void ApplyDamage(float amount) { if (Alive) Health = Mathf.Max(0, Health - amount * (1-Mathf.Max(0,Armor-Status.ArmorReduction))); }
         }
     }
 }
