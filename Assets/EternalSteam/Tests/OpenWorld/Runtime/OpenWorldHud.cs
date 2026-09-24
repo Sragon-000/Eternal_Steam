@@ -19,6 +19,7 @@ namespace EternalSteam.OpenWorld
         ResourceStockView stockView;
         MapProgressView progressView;
         BasePowerView powerView;
+        public OpenWorldMinimap Minimap {get;private set;}
         bool confirmingNewGame;
         void Start()
         {
@@ -53,6 +54,7 @@ namespace EternalSteam.OpenWorld
             Bind("new-game-confirm",()=>Sandbox.Persistence?.NewGame());
             Bind("new-game-cancel",()=>confirmingNewGame=false);
             Bind("run",()=>{if(Input.IsEditing||Sandbox.Content.Defeated||Sandbox.Persistence?.Blocked==true)return;bool next=Sandbox.Assault!=null?Sandbox.Clock.Paused:!Sandbox.Running;Input.Cancel();Sandbox.Running=next;if(Sandbox.Assault!=null)Sandbox.Clock.Paused=!next;});
+            Minimap=new OpenWorldMinimap(root,Sandbox);
             stockView=new ResourceStockView(root.Q<Label>("resources"),Sandbox.Content.Resources,Sandbox.ContentCatalog);
             clockView=new WorldClockView(root);
             progressView=new MapProgressView(root,Sandbox);powerView=new BasePowerView(root,Sandbox);
@@ -78,7 +80,7 @@ namespace EternalSteam.OpenWorld
             var body=root.Q(name+"-body");var container=root.Q(name+"-panel");
             Bind(name+"-fold",()=>{bool folded=!container.ClassListContains("folded");container.EnableInClassList("folded",folded);body.style.display=folded?DisplayStyle.None:DisplayStyle.Flex;root.Q<Button>(name+"-fold").text=folded?"▼ 펼치기":"▲ 접기";});
         }
-        void OnDestroy()=>quantity?.Dispose();
+        void OnDestroy(){quantity?.Dispose();Minimap?.Dispose();}
         void Bind(string name,System.Action action)
         {var b=root.Q<Button>(name);b.focusable=false;b.clicked+=()=>{quantity.EndEdit();action();Refresh();};}
         public void Refresh()
@@ -130,10 +132,11 @@ namespace EternalSteam.OpenWorld
             var pointer=mouse==null?Vector2.negativeInfinity:RuntimePanelUtils.ScreenToPanel(root.panel,new Vector2(mouse.position.x.ReadValue(),Screen.height-mouse.position.y.ReadValue()));
             // The tabs protrude above the body; include their bounds in UI hit blocking.
             bool over=((Inventory.Visible&&panel.worldBound.Contains(pointer))||root.Q("categories").parent.worldBound.Contains(pointer))||testPanel.worldBound.Contains(pointer)||root.Q("clock-panel").worldBound.Contains(pointer)||root.Q("resource-panel").worldBound.Contains(pointer);
+            over|=Minimap?.Interacting==true;Minimap?.Refresh(Time.unscaledTimeAsDouble);
             Input.PointerOverUI=over;Sandbox.CameraRig.BlockPointer=over||Input.Dragging;
             if(mouse!=null&&mouse.leftButton.wasPressedThisFrame&&!amount.worldBound.Contains(pointer))quantity.EndEdit();
             if(Keyboard.current?.escapeKey.wasPressedThisFrame??false)quantity.EndEdit();
-            Sandbox.CameraRig.BlockKeyboard=quantity.Editing||Input.Dragging;Refresh();
+            Sandbox.CameraRig.BlockKeyboard=quantity.Editing||Input.Dragging||Minimap?.Interacting==true;Refresh();
         }
     }
 }

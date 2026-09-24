@@ -11,9 +11,15 @@ namespace EternalSteam.OpenWorld
         public bool BlockKeyboard, BlockPointer;
         public void Pan(Vector2 input,float seconds)
         {
-            Focus+=new Vector3(input.x,0,input.y)*(Zoom*1.2f*seconds);
+            MoveFocus(Focus+new Vector3(input.x,0,input.y)*(Zoom*1.2f*seconds));
+        }
+        public void MoveFocus(Vector3 point)
+        {
+            if(!float.IsFinite(point.x)||!float.IsFinite(point.z))return;
+            Focus=point;
             var p=Ground.transform.position;var size=Ground.terrainData.size;
             Focus.x=Mathf.Clamp(Focus.x,p.x+8,p.x+size.x-8);Focus.z=Mathf.Clamp(Focus.z,p.z+8,p.z+size.z-8);
+            Focus.y=Ground.SampleHeight(Focus)+p.y;
         }
         public void ChangeZoom(float steps) => Zoom=Mathf.Clamp(Zoom*Mathf.Exp(-steps*.12f),10,70);
         void LateUpdate()

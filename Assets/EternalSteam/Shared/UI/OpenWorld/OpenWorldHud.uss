@@ -41,3 +41,6 @@ TextField { margin-top: 4px; margin-bottom: 6px; }
 .inventory-panel.folded { height: 0; border-width: 0; }
 .test-panel.folded { bottom: auto; }
 .test-body { flex-grow: 1; flex-shrink: 1; min-height: 0; }
+
+.minimap { width: 190px; height: 190px; align-self: center; flex-shrink: 0; overflow: hidden; }
+.minimap-hidden { display: none; }

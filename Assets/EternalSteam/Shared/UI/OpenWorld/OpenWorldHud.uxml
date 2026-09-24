@@ -34,6 +34,13 @@
   <ui:VisualElement name="test-panel" class="test-panel">
    <ui:VisualElement class="row"><ui:Label text="테스트 공간" class="title grow" /><ui:Button name="test-fold" text="▲ 접기" /></ui:VisualElement>
    <ui:ScrollView name="test-body" class="test-body">
+   <ui:VisualElement class="row"><ui:Label text="미니맵 · N ↑" class="note grow" /><ui:Button name="minimap-fold" text="▲ 접기" /></ui:VisualElement>
+   <ui:VisualElement name="minimap-body">
+    <world:MinimapElement name="minimap" class="minimap" />
+    <ui:Label text="클릭·드래그로 카메라 이동
+노랑: 기지 · 청록: 건물 · 빨강: 적
+자홍: 보스 · 흰 테두리: 화면 범위" class="note" />
+   </ui:VisualElement>
    <ui:VisualElement name="save-controls">
     <ui:Label name="save-status" class="note" />
     <ui:Button name="save" text="안전 저장" /><ui:Button name="load" text="마지막 저장 이어하기" />
