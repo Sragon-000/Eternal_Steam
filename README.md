@@ -11,7 +11,7 @@
 1. 저장소를 복제합니다.
 
    ```sh
-   git clone https://github.com/imset3/Eternal_Steam.git
+   git clone https://github.com/Sragon-000/Eternal_Steam.git
    ```
 
 2. Unity Hub에서 `Assets`, `Packages`, `ProjectSettings`가 있는 프로젝트 폴더를 등록합니다.
