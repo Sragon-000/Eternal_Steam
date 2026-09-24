@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/VerifyNexusConstruction.cs",
+      "entry": "VerifyNexusConstruction.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 195,
+      "executeMs": 21,
+      "assemblyName": "PipelineRunScript_VerifyNexusConstruction_060782fdf443477bb08355b0c35edf3c",
+      "success": true,
+      "result": "PASS: nexus catalog, no/pending/confirmed area, cancellation, inclusive XZ edge and rotated corners, out-of-range add/move, successful foundation, dependent recovery blocked, grouped recovery, missing nexus commit rollback."
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7802,
+      "projectPath": "/private/tmp/eternal-foundation-validation"
+    },
+    "success": true
+  },
+  "errors": [],
+  "warnings": []
+}

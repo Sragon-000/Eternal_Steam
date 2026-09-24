@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 961be35588064450ea724446c223c99b, type: 3}
+  m_Name: defense.arc
+  m_EditorClassIdentifier: EternalSteam.Runtime::EternalSteam.BuildingDefinition
+  Id: defense.arc
+  DisplayName: "\uC544\uD06C \uBE14\uB798\uC2A4\uD130"
+  Category: 0
+  Footprint: {x: 2, y: 2}
+  Recoverable: 1
+  Placement: {fileID: 11400000, guid: 5176c58317ff9406b8c8e829132641a4, type: 2}
+  ViewPrefab: {fileID: 6345874026734927109, guid: c6c23a6a8d4e44fb4b935ebc453759f8, type: 3}
+  Modules:
+  - {fileID: 11400000, guid: 2ce6fea0a59b64739a32d026dd9669be, type: 2}
+  - {fileID: 11400000, guid: 3b154638af1b74309879e8adf321cf8f, type: 2}
+  - {fileID: 11400000, guid: a3f7254157d5e4374867781a204e957e, type: 2}
+  - {fileID: 11400000, guid: 54d7a58e1f4334f35b00c7417c45c312, type: 2}
+  - {fileID: 11400000, guid: 6a2065d08b07d4854a4d9f2ee15f1b8d, type: 2}

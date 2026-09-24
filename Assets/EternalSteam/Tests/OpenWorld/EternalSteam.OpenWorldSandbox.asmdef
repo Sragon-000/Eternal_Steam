@@ -1,4 +1,16 @@
 {
- "name":"EternalSteam.OpenWorldSandbox",
- "references":["EternalSteam.Runtime","EternalSteam.LegacyDefinitions","EternalSteam.LegacyDeployment","EternalSteam.LegacyBuildings","EternalSteam.LegacyCombat","EternalSteam.LegacyPresentation","Unity.InputSystem"]
+  "name": "EternalSteam.OpenWorldSandbox",
+  "references": [
+    "EternalSteam.Runtime",
+    "EternalSteam.LegacyDefinitions",
+    "EternalSteam.LegacyDeployment",
+    "EternalSteam.LegacyBuildings",
+    "EternalSteam.LegacyCombat",
+    "EternalSteam.LegacyPresentation",
+    "Unity.InputSystem",
+    "EternalSteam.Combat",
+    "EternalSteam.Economy",
+    "EternalSteam.Progression",
+    "EternalSteam.Presentation"
+  ]
 }

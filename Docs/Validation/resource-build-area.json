@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/VerifyResourceBuildArea.cs",
+      "entry": "VerifyResourceBuildArea.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 711,
+      "executeMs": 21,
+      "assemblyName": "PipelineRunScript_VerifyResourceBuildArea_922e7a69aaf44fd9873bee8e34ba8546",
+      "success": true,
+      "result": "PASS: 7 resource profiles, absent/pending nexus, outside/corner boundary, inside commit, dependency-safe recovery, alternate nexus coverage, grouped recovery/cancel, commit revalidation and reservation preservation."
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7802,
+      "projectPath": "/private/tmp/eternal-foundation-validation"
+    },
+    "success": true
+  },
+  "errors": [],
+  "warnings": []
+}

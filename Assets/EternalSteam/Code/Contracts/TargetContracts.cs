@@ -24,6 +24,7 @@ namespace EternalSteam
         public TargetInfo(TargetHandle handle, Vector3 position, TargetKind kind, IDamageReceiver receiver)
         { Handle = handle; Position = position; Kind = kind; Receiver = receiver; }
     }
+    public interface ITargetQueryCapacity { int Capacity {get;} }
     public interface ITargetQuery
     {
         bool TryGet(TargetHandle handle, out TargetInfo target);

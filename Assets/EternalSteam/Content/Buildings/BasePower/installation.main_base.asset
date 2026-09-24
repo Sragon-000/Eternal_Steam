@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 961be35588064450ea724446c223c99b, type: 3}
+  m_Name: installation.main_base
+  m_EditorClassIdentifier: EternalSteam.Runtime::EternalSteam.BuildingDefinition
+  Id: installation.main_base
+  DisplayName: "\uBA54\uC778 \uAE30\uC9C0"
+  Category: 2
+  Footprint: {x: 4, y: 4}
+  Recoverable: 0
+  Placement: {fileID: 11400000, guid: f2993a3f544644a7ba34e10858e126ab, type: 2}
+  ViewPrefab: {fileID: 3996905522038697115, guid: ad0b33a6a9d2f4f109ec04cfc1a24281, type: 3}
+  Modules:
+  - {fileID: 11400000, guid: c440e74140bd3416fb42a50e860d835a, type: 2}
+  - {fileID: 11400000, guid: 6a4c24925d7254a948871007e7c0fafe, type: 2}
+  - {fileID: 11400000, guid: 9fa81be34e45a4dbba7afde16b1db9ce, type: 2}
+  - {fileID: 11400000, guid: 660c3f1815d704607afad34efefd1b6e, type: 2}
+  - {fileID: 11400000, guid: aa9476c8ddca24ecfb7e4f99db617c93, type: 2}
+  - {fileID: 11400000, guid: 88a0f55d4592f4da790e2fa41be62817, type: 2}

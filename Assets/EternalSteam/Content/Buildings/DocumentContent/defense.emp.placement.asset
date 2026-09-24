@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e67ae76fd17245399c994d0e3fc6f5bd, type: 3}
+  m_Name: defense.emp.placement
+  m_EditorClassIdentifier: EternalSteam.Runtime::EternalSteam.BuildingPlacementDefinition
+  Surface: 2
+  RequiredNexusLevel: 8
+  VerificationSettings: 1
+  RequiresBuildArea: 1
+  SnapCells: 1

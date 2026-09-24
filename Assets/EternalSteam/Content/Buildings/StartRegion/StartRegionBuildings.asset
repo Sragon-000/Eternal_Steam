@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ab4f7d7349764b958f11d5efd4160b0, type: 3}
+  m_Name: StartRegionBuildings
+  m_EditorClassIdentifier: EternalSteam.Runtime::EternalSteam.BuildingCatalog
+  Buildings:
+  - {fileID: 11400000, guid: 92aa2b425c02b480fbfb828d62211fc4, type: 2}
+  - {fileID: 11400000, guid: 3a82d3920817c4b31b5498ec55760c2a, type: 2}
+  - {fileID: 11400000, guid: 8171857f33b414fb3b244cf8e9b0ab3a, type: 2}
+  - {fileID: 11400000, guid: bf6c986376f6d4867b34fff0f888d45d, type: 2}
+  - {fileID: 11400000, guid: a3df58eef804c4a64bf49f39592fec84, type: 2}
+  - {fileID: 11400000, guid: b00b3a56b4ed44ea4969f617372fa61b, type: 2}
+  - {fileID: 11400000, guid: c88a5da878dda49188eaaace9c34b062, type: 2}
+  - {fileID: 11400000, guid: 73d1a8e45b5494901aca44829d62fa1a, type: 2}
+  - {fileID: 11400000, guid: a6e31d022700348d28f337d84901b22d, type: 2}
+  - {fileID: 11400000, guid: 4a5f814414e624207ae764e79f6ec530, type: 2}
+  - {fileID: 11400000, guid: 58177d17f50984d9a821dd971c20faea, type: 2}
+  - {fileID: 11400000, guid: 472da96e3cc0a46e783c1d81244d8356, type: 2}
+  - {fileID: 11400000, guid: 222e7327838ff4a5698e41531f533f60, type: 2}
+  - {fileID: 11400000, guid: a9031c52357ab481db5a665e6a3e968e, type: 2}
+  - {fileID: 11400000, guid: 554265d7f865b494494eee5f591ac6d5, type: 2}
+  - {fileID: 11400000, guid: 74a8fefe5c402439a8a1ac41e6a3e6ab, type: 2}
+  - {fileID: 11400000, guid: 4334a66e3ce5847a394952b80bbd8364, type: 2}
+  - {fileID: 11400000, guid: c4b7f637b6ae94d55afd1b47d7b6825c, type: 2}
+  - {fileID: 11400000, guid: d3a31eb1d1b134884a1cdaf79e85d0f3, type: 2}

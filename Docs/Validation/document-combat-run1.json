@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/BenchmarkDocumentCombat.cs",
+      "entry": "BenchmarkDocumentCombat.Run1"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 634,
+      "executeMs": 12952,
+      "assemblyName": "PipelineRunScript_BenchmarkDocumentCombat_e1d2be3b68bb4022b3d1b4feb7b45c68",
+      "success": true,
+      "result": "CPU-only fixed dt=1/60; warmup 30 + 720 samples (12s), 3 repetitions. No rendering/UI. Heap delta is retained managed heap change, NOT allocated bytes.\n4000 run 1: move/status median 0.62 p95 0.69 ms; 9 weapons median 0.00 p95 0.01 ms max 1.65; hit events 8648; heap delta 4096 B, GC0 collections 0\n10000 run 1: move/status median 1.53 p95 1.62 ms; 9 weapons median 0.00 p95 0.01 ms max 3.72; hit events 11315; heap delta 0 B, GC0 collections 0\n100000 run 1: move/status median 14.87 p95 15.24 ms; 9 weapons median 0.00 p95 0.01 ms max 14.56; hit events 12709; heap delta 0 B, GC0 collections 0\n"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7802,
+      "projectPath": "/private/tmp/eternal-foundation-validation"
+    },
+    "success": true
+  },
+  "errors": [],
+  "warnings": []
+}

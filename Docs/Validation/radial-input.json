@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/VerifyNexusGroundInput.cs",
+      "entry": "VerifyNexusGroundInput.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 610,
+      "executeMs": 44,
+      "assemblyName": "PipelineRunScript_VerifyNexusGroundInput_864572ada3f542da8c6c0e13e0b30ed9",
+      "success": true,
+      "result": "PASS: actual sandbox input, nexus click commit, 9-cell ground tower single-click/confirm, deferred recovery cancel/commit, legacy ground tower single-click placement and recovery, no foundations required."
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7801,
+      "projectPath": "/private/tmp/eternal-foundation-validation"
+    },
+    "success": true
+  },
+  "errors": [],
+  "warnings": []
+}

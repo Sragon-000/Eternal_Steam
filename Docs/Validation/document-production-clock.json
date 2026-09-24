@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/VerifyProductionClock.cs",
+      "entry": "VerifyProductionClock.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 14,
+      "executeMs": 4602,
+      "assemblyName": "PipelineRunScript_VerifyProductionClock_a915c8fab2404a3ab2b43fa8e931522c",
+      "success": true,
+      "result": "PASS: confirmed resource auto-produces during preparation without starting combat; editing freezes production."
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7802,
+      "projectPath": "/private/tmp/eternal-foundation-validation"
+    },
+    "success": true
+  },
+  "errors": [],
+  "warnings": []
+}

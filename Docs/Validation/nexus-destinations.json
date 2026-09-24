@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/VerifyNexusDestinations.cs",
+      "entry": "VerifyNexusDestinations.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 1509,
+      "executeMs": 20,
+      "assemblyName": "PipelineRunScript_VerifyNexusDestinations_c332ab2d9f5f4e468002af302b92f2b6",
+      "success": true,
+      "result": "PASS: missing/pending nexus rejected; confirmed nexus without foundation spawns; nearest and ID tie; existing enemy retarget; no nexus hold and pending preservation; reinstall resume; air height and legacy movement defaults."
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7801,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    },
+    "success": true
+  },
+  "errors": [],
+  "warnings": []
+}

@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/VerifyTileWorldMountainRiver.cs",
+      "entry": "VerifyTileWorldMountainRiver.EditMode"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 79,
+      "executeMs": 12,
+      "assemblyName": "PipelineRunScript_VerifyTileWorldMountainRiver_60bf02c2db2b4b739a9ce30f6a9d6355",
+      "success": true,
+      "result": "PASS EditMode: 330 persisted clusters, 45-degree/2m grid, 825 safe samples, 1479 excluded samples, peak 21.00m, height cache max error 0.0003m, river/mountain/exterior rejection, cross-river route rejection."
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7801,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    },
+    "success": true
+  },
+  "errors": [],
+  "warnings": []
+}

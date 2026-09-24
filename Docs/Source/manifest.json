@@ -1,0 +1,86 @@
+{
+  "archived_on": "2026-09-20",
+  "scope": "Attachments explicitly supplied in this conversation; current files at provided paths. Earlier revisions cannot be verified.",
+  "files": [
+    {
+      "name": "건물.md",
+      "source_path": "/Users/limseth/Downloads/건물.md",
+      "archive_path": "Attachments/건물.md",
+      "bytes": 6380,
+      "sha256": "4d2baa7a5b3a3c58e52927947598aa499134d36d719cc31d49ec554261b46809"
+    },
+    {
+      "name": "방어_건물.md",
+      "source_path": "/Users/limseth/Downloads/방어_건물.md",
+      "archive_path": "Attachments/방어_건물.md",
+      "bytes": 6102,
+      "sha256": "5b199513da599f5d2aa7503267ee69553d3fc339d1701b386bc5a0995390dfa7"
+    },
+    {
+      "name": "기타_건물.md",
+      "source_path": "/Users/limseth/Downloads/기타_건물.md",
+      "archive_path": "Attachments/기타_건물.md",
+      "bytes": 1078,
+      "sha256": "443ee807af6013a6722de7c33eb45fed30cb54c4a085997b6f71f60872ffa205"
+    },
+    {
+      "name": "배치 수정 임시 UI.md",
+      "source_path": "/Users/limseth/Downloads/배치 수정 임시 UI.md",
+      "archive_path": "Attachments/배치 수정 임시 UI.md",
+      "bytes": 1717,
+      "sha256": "bdae7ecf395d3c5611ca9e2a6914a9d3b1c50756ceb64d3b54111bd9ef312759"
+    },
+    {
+      "name": "IMG_0516.png",
+      "source_path": "/Users/limseth/Downloads/IMG_0516.png",
+      "archive_path": "Attachments/IMG_0516.png",
+      "bytes": 185920,
+      "sha256": "f56f553dea7f8f82f1c928ee9f70120957709b58e5ab7297a4605fd90aabc494"
+    },
+    {
+      "name": "자원_건물.md",
+      "source_path": "/Users/limseth/Downloads/자원_건물.md",
+      "archive_path": "Attachments/자원_건물.md",
+      "bytes": 1229,
+      "sha256": "b3f22e6c048906ab6f1e3568675041bd54893a97e040150ca47f56a932918823"
+    },
+    {
+      "name": "방어_건물_종류.md",
+      "source_path": "/Users/limseth/Downloads/방어_건물_종류.md",
+      "archive_path": "Attachments/방어_건물_종류.md",
+      "bytes": 8384,
+      "sha256": "ae946b4fe5697ff558c82605f0102dd1b4aa10c968ed5e4cea50fd3574d4d761"
+    },
+    {
+      "name": "일정 계획.md",
+      "source_path": "/Users/limseth/Downloads/일정 계획.md",
+      "archive_path": "Attachments/일정 계획.md",
+      "bytes": 1553,
+      "sha256": "a2771f7d983a9b22c6babc09e197b053d3a1d38b554ca865ae784c2651e09887"
+    },
+    {
+      "name": "4. 기지.md",
+      "source_path": "/Users/limseth/Downloads/4. 기지.md",
+      "archive_path": "Attachments/4. 기지.md",
+      "bytes": 34708,
+      "sha256": "c05a66d3cbbd1e14db5b1c8cc725200afc80a097da40bcbfbca3f4ccf921aae8",
+      "archived_on": "2026-09-20"
+    },
+    {
+      "name": "7. 맵 진행 및 에너지 오브 시스템.md",
+      "source_path": "/Users/limseth/Downloads/7. 맵 진행 및 에너지 오브 시스템.md",
+      "archive_path": "Attachments/7. 맵 진행 및 에너지 오브 시스템.md",
+      "bytes": 22127,
+      "sha256": "e459a347ff18c9882c8dcd85a8689e1206ada54104e9d615cd2f4f65929d9199",
+      "archived_on": "2026-09-20"
+    },
+    {
+      "name": "4.1 추가 사항.md",
+      "source_path": "/Users/limseth/Downloads/4.1 추가 사항.md",
+      "archive_path": "Attachments/4.1 추가 사항.md",
+      "bytes": 2107,
+      "sha256": "4e863784f79c37e94571ac7cfcbfff69e0881b2ffdc1d81a03c4a112f33e5d79",
+      "archived_on": "2026-09-20"
+    }
+  ]
+}

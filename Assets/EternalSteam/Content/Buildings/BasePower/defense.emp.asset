@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 961be35588064450ea724446c223c99b, type: 3}
+  m_Name: defense.emp
+  m_EditorClassIdentifier: EternalSteam.Runtime::EternalSteam.BuildingDefinition
+  Id: defense.emp
+  DisplayName: "EMP \uD384\uC2A4 \uD0C0\uC6CC"
+  Category: 0
+  Footprint: {x: 3, y: 3}
+  Recoverable: 1
+  Placement: {fileID: 11400000, guid: dee49100a088b4b95b69449a2216338a, type: 2}
+  ViewPrefab: {fileID: 6879771265029704506, guid: ba82a1444468a44a79e3131fe1a83e80, type: 3}
+  Modules:
+  - {fileID: 11400000, guid: 59f184d53db7748e8b5643b7f6dd1c53, type: 2}
+  - {fileID: 11400000, guid: 54f5c73c4fd11437bb4ae5b94ab17c03, type: 2}
+  - {fileID: 11400000, guid: 0bc149846dd854018aa0521e5664f250, type: 2}
+  - {fileID: 11400000, guid: bec11e8f477ad4764a0836da73a70f50, type: 2}
+  - {fileID: 11400000, guid: 56a18738b5d414c429054421993f9d87, type: 2}
+  - {fileID: 11400000, guid: a9d05ff3c8f2940e491074e55c787cdf, type: 2}

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16cb6960387b4fb083259ecec2b65e0a, type: 3}
+  m_Name: region.adjacent
+  m_EditorClassIdentifier: EternalSteam.Runtime::EternalSteam.RegionDefinition
+  Id: region.adjacent
+  DisplayName: "\uC778\uC811 \uC9C0\uC5ED B"
+  Bounds:
+    serializedVersion: 2
+    x: -0.000015258789
+    y: -136.57285
+    width: 136.57285
+    height: 273.1457
+  ResourceId: verification.copper
+  VerificationSettings: 1

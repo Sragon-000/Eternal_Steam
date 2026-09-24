@@ -55,16 +55,20 @@ namespace EternalSteam
         public RectInt Bounds { get; }
         public float CellSize { get; }
         public Vector3 Origin { get; }
+        public Quaternion Rotation { get; }
+        public float Yaw { get; }
         public int ReservationCount => reservations.Count;
         public int OccupiedCount => occupied.Count;
-        public BuildGrid(RectInt bounds, float cellSize, Vector3 origin = default)
+        public BuildGrid(RectInt bounds, float cellSize, Vector3 origin = default, float yaw = 0)
         {
             if (bounds.width <= 0 || bounds.height <= 0 || !float.IsFinite(cellSize) || cellSize <= 0) throw new ArgumentException("Invalid grid.");
             if (!float.IsFinite(origin.x) || !float.IsFinite(origin.y) || !float.IsFinite(origin.z)) throw new ArgumentException("Invalid grid origin.");
-            Bounds = bounds; CellSize = cellSize; Origin = origin;
+            if (!float.IsFinite(yaw)) throw new ArgumentException("Invalid grid rotation.");
+            Bounds = bounds; CellSize = cellSize; Origin = origin; Yaw = yaw; Rotation = Quaternion.Euler(0,yaw,0);
         }
-        public Vector2Int WorldToCell(Vector3 position) => new(Mathf.FloorToInt((position.x - Origin.x) / CellSize), Mathf.FloorToInt((position.z - Origin.z) / CellSize));
-        public Vector3 Center(Vector2Int cell, Vector2Int size) => Origin + new Vector3((cell.x + size.x * 0.5f) * CellSize, 0, (cell.y + size.y * 0.5f) * CellSize);
+        public Vector2Int WorldToCell(Vector3 position)
+        { var local = Quaternion.Inverse(Rotation) * (position - Origin); return new Vector2Int(Mathf.FloorToInt(local.x / CellSize), Mathf.FloorToInt(local.z / CellSize)); }
+        public Vector3 Center(Vector2Int cell, Vector2Int size) => Origin + Rotation * new Vector3((cell.x + size.x * 0.5f) * CellSize, 0, (cell.y + size.y * 0.5f) * CellSize);
         public IEnumerable<Vector2Int> Cells(Vector2Int cell, Vector2Int size)
         {
             for (int z = 0; z < size.y; z++) for (int x = 0; x < size.x; x++) yield return cell + new Vector2Int(x, z);

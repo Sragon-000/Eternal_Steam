@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/VerifyDocumentContent.cs",
+      "entry": "VerifyDocumentContent.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 214,
+      "executeMs": 135,
+      "assemblyName": "PipelineRunScript_VerifyDocumentContent_08ed56813d44468180a03b995d8f0a62",
+      "success": true,
+      "result": "PASS: 16 catalog definitions, 7 resource entries, unlock gate, all 7 production intervals, pending inactivity, deferred recovery/cancel, all 9 weapon damage/control compositions, 1/4/9-cell reservations, upgrade limits, generic tower + foundation cleanup."
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7802,
+      "projectPath": "/private/tmp/eternal-foundation-validation"
+    },
+    "success": true
+  },
+  "errors": [],
+  "warnings": []
+}

@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/VerifyNexusFootprint.cs",
+      "entry": "VerifyNexusFootprint.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 314,
+      "executeMs": 18,
+      "assemblyName": "PipelineRunScript_VerifyNexusFootprint_b1d4fa94f8e941b1aa2e2cd354673090",
+      "success": true,
+      "result": "PASS: nexus 4x4 cells, 8m snapping on positive/negative coordinates, shared 45-degree foundation grid, matching adjacent edges, 8x8m model/collider, flat-ground base top alignment."
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7801,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    },
+    "success": true
+  },
+  "errors": [],
+  "warnings": []
+}

@@ -14,6 +14,7 @@ namespace EternalSteam
         public BuildingCategory Category;
         public Vector2Int Footprint = Vector2Int.one;
         public bool Recoverable = true;
+        public BuildingPlacementDefinition Placement;
         public GameObject ViewPrefab;
         public List<BuildingModuleDefinition> Modules = new();
 
@@ -31,6 +32,7 @@ namespace EternalSteam
             if (string.IsNullOrWhiteSpace(DisplayName)) errors.Add("Display name is required.");
             if (Footprint.x <= 0 || Footprint.y <= 0) errors.Add("Footprint must be positive.");
             if (ViewPrefab == null) errors.Add("View prefab is required.");
+            if(Placement!=null && (Placement.RequiredNexusLevel<1 || Placement.SnapCells<1 || !Enum.IsDefined(typeof(BuildingSurface),Placement.Surface)))errors.Add("Invalid placement or unlock profile.");
             var types = new HashSet<Type>();
             if (Modules == null) errors.Add("Module list is missing.");
             else foreach (var module in Modules)

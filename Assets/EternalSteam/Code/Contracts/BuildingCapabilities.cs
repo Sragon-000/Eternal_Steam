@@ -2,6 +2,9 @@ using System;
 using UnityEngine;
 namespace EternalSteam
 {
+    public interface ICampaignMainLevel {int MainLevel {get;} bool TryUpgrade(int expectedLevel);}
+    public interface ICombatPermission {bool AllowsCombat {get;}}
+    public static class CombatPermission {public static bool Allows(BuildingInstance building)=>building.Module<ICombatPermission>()?.AllowsCombat??true;}
     public interface IDamageModifier { float DamageMultiplier { get; } }
     public interface IHealthScaling { void SetMaximumMultiplier(float multiplier); }
     public interface ILevelProvider { int Level { get; } }

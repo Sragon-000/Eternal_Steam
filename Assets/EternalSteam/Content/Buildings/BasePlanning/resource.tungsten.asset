@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 961be35588064450ea724446c223c99b, type: 3}
+  m_Name: resource.tungsten
+  m_EditorClassIdentifier: EternalSteam.Runtime::EternalSteam.BuildingDefinition
+  Id: resource.tungsten
+  DisplayName: "\uD145\uC2A4\uD150 \uC0DD\uC131\uAE30"
+  Category: 1
+  Footprint: {x: 1, y: 1}
+  Recoverable: 1
+  Placement: {fileID: 11400000, guid: 54321ef290a214441a73d9bc5e53ede1, type: 2}
+  ViewPrefab: {fileID: 4244130860257088941, guid: e0046eab2a63d417883e45b0d259bbd9, type: 3}
+  Modules:
+  - {fileID: 11400000, guid: be9caedf2d57b4f9fa2245f88b7b9975, type: 2}
+  - {fileID: 11400000, guid: 4f8a5495ff14e42a0a142454b76c183c, type: 2}
+  - {fileID: 11400000, guid: 104d8d6ad604a49869d577fee4e6e894, type: 2}

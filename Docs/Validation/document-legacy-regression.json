@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/VerifyFoundationRegression.cs",
+      "entry": "VerifyFoundationRegression.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 26,
+      "executeMs": 740,
+      "assemblyName": "PipelineRunScript_VerifyFoundationRegression_a04bde2af0b647128f50d02156c2aa8b",
+      "success": true,
+      "result": "PASS: 3 maps; lobby/deploy/start/escape-clear/reward-once/save/unlock/next-stage/defeat/retry/capacity-save. Test profile isolated."
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7802,
+      "projectPath": "/private/tmp/eternal-foundation-validation"
+    },
+    "success": true
+  },
+  "errors": [],
+  "warnings": []
+}

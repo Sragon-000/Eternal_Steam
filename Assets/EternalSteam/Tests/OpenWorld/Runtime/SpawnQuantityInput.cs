@@ -16,7 +16,7 @@ namespace EternalSteam.OpenWorld
             this.root=root;this.field=field;lastValid=field.value;
             field.Query<VisualElement>().ForEach(element=>{if(element.focusable)focusables.Add(element);});
             if(field.focusable&&!focusables.Contains(field))focusables.Add(field);
-            field.maxLength=4;
+            field.maxLength=9;
             field.RegisterCallback<PointerDownEvent>(OnPointer,TrickleDown.TrickleDown);
             field.RegisterCallback<KeyDownEvent>(OnKey,TrickleDown.TrickleDown);
             field.RegisterValueChangedCallback(OnValue);

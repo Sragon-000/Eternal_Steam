@@ -24,6 +24,7 @@ namespace EternalSteam.Demo
         static void DestroyView(GameObject view) { if(Application.isPlaying) UnityEngine.Object.Destroy(view); else UnityEngine.Object.DestroyImmediate(view); }
         public HordeTower CreateAuthoredView(Vector3 position,Vector3 direction,float range,HordeTowerKind kind)
         { var view=Create(position,direction,range,kind,map());view.root.transform.SetParent(parent,true);view.root.SetActive(true);return view; }
+        public GameObject ViewOf(BuildingInstance building) => staged.TryGetValue(building.Id,out var tower) ? tower.root : null;
         public GameObject Template { get; }
         public HordeTowerFactory(Transform parent,List<HordeTower> towers,Func<HordeMapKind> map,Material barrel,Material tracer,Material valid,Material[] types,Material[] effects)
         {

@@ -1,0 +1,29 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/VerifyDocumentConstruction.cs",
+      "entry": "VerifyDocumentConstruction.Main",
+      "timeout_ms": "60000"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 143,
+      "executeMs": 257,
+      "assemblyName": "PipelineRunScript_VerifyDocumentConstruction_dd8757d197dd4faf96cf201060aae363",
+      "success": false,
+      "error": "Runtime Error",
+      "errorDetails": "Exception: UI foundation\n  at VerifyDocumentConstruction+<>c__DisplayClass1_0.<Main>g__Click|0 (System.String name) [0x00090] in /Users/limseth/Projects/Eternal_Steam/Eternal_Steam/Tools/VerifyDocumentConstruction.cs:16 \n  at VerifyDocumentConstruction.Main () [0x0031b] in /Users/limseth/Projects/Eternal_Steam/Eternal_Steam/Tools/VerifyDocumentConstruction.cs:24 \n  at Unity.Pipeline.Editor.Commands.Scripts.RunScriptCommand.RunEphemeral (System.String file, System.String entry, Newtonsoft.Json.Linq.JArray args, System.String[] references, System.String[] defines, System.Boolean pdb, System.Boolean dryRun, System.Int32 timeoutMs, System.Diagnostics.Stopwatch total) [0x00492] in ./Library/PackageCache/com.unity.pipeline@9bb4172c603c/Editor/Commands/Scripts/RunScriptCommand.cs:252 "
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7801,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    },
+    "success": true
+  },
+  "errors": [],
+  "warnings": []
+}

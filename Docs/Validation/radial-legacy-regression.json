@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/VerifyLegacyCombatPresentation.cs",
+      "entry": "VerifyLegacyCombatPresentation.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 69,
+      "executeMs": 830,
+      "assemblyName": "PipelineRunScript_VerifyLegacyCombatPresentation_668ca39e7ae94369985fcc497e44e72a",
+      "success": true,
+      "result": "PASS: 3 maps, four attack kinds, preparation silence, unconditional fire, tracer range/cone, frost/blast geometry, cooldown, reset."
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7801,
+      "projectPath": "/private/tmp/eternal-foundation-validation"
+    },
+    "success": true
+  },
+  "errors": [],
+  "warnings": []
+}

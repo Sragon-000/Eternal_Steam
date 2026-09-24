@@ -1,1 +1,17 @@
-{"name":"EternalSteam.OpenWorldEditor","includePlatforms":["Editor"],"references":["EternalSteam.OpenWorldSandbox","EternalSteam.Runtime","EternalSteam.LegacyDefinitions","EternalSteam.LegacyDeployment","EternalSteam.LegacyBuildings","EternalSteam.LegacyPresentation"]}
+{
+  "name": "EternalSteam.OpenWorldEditor",
+  "includePlatforms": [
+    "Editor"
+  ],
+  "references": [
+    "EternalSteam.OpenWorldSandbox",
+    "EternalSteam.Runtime",
+    "EternalSteam.LegacyDefinitions",
+    "EternalSteam.LegacyDeployment",
+    "EternalSteam.LegacyBuildings",
+    "EternalSteam.LegacyPresentation",
+    "EternalSteam.Combat",
+    "EternalSteam.Economy",
+    "EternalSteam.Progression"
+  ]
+}

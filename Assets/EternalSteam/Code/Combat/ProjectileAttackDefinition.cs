@@ -10,9 +10,10 @@ namespace EternalSteam
         public override IAttackExecution CreateRuntime() => new Runtime(Speed,Lifetime);
         public override void Validate(List<string> errors)
         { if (!float.IsFinite(Speed) || Speed<=0 || !float.IsFinite(Lifetime) || Lifetime<=0) errors.Add("Projectile speed/lifetime must be positive and finite."); }
-        sealed class Runtime : IAttackExecution
+        sealed class Runtime : IAttackExecution,IPendingExecution
         {
             struct Flight { public AttackContext Context; public TargetHandle Target; public Vector3 Position; public float Damage, Age; }
+            public bool HasPendingExecution=>flights.Count>0;
             readonly float speed,lifetime; readonly List<Flight> flights=new();
             public Runtime(float speed,float lifetime) { this.speed=speed; this.lifetime=lifetime; }
             public void Execute(AttackContext context,TargetInfo target,float damage)

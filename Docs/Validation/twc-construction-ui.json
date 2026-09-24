@@ -1,0 +1,28 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/VerifyTileWorldConstructionUI.cs",
+      "entry": "VerifyTileWorldConstructionUI.Main",
+      "timeout_ms": "60000"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 81,
+      "executeMs": 7818,
+      "assemblyName": "PipelineRunScript_VerifyTileWorldConstructionUI_44fe81240a2c44caa046ad4bfebfd146",
+      "success": true,
+      "result": "PASS: category order/default/filter/empty/reopen, edit toggle cancels foundation/tower ghosts and reservations, edit-confirm enabled states, empty confirm, tower/foundation deferred click recovery, deselection/cancel, foundation with towers and empty foundation commit, removed auxiliary buttons, cleanup."
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7801,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    },
+    "success": true
+  },
+  "errors": [],
+  "warnings": []
+}

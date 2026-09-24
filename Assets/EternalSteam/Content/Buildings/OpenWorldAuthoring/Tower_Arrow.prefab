@@ -408,6 +408,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: EternalSteam.OpenWorldSandbox::EternalSteam.OpenWorld.SceneTower
   Kind: 3
   Range: 22
+  Health: {fileID: 11400000, guid: c6ca52e5c32da46a79a31b8d63d50fa6, type: 2}
+  CombatBody: {fileID: 11400000, guid: b80093ffddf6b4d45b41580e9f78c05b, type: 2}
+  Rotation: {fileID: 11400000, guid: 9020f223aefea4f9c9098f368eaeef92, type: 2}
+  Upgrade: {fileID: 11400000, guid: 77265e2cf68ba4083a800879491919d3, type: 2}
   Head: {fileID: 8247603714711404086}
   Tracer: {fileID: 537527429570623191}
   Impact: {fileID: 0}

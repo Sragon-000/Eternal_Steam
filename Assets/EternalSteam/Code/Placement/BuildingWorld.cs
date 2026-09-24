@@ -17,39 +17,45 @@ namespace EternalSteam
         readonly IBuildingFactory factory;
         int nextId;
         public BuildGrid Grid { get; }
-        public IReadOnlyCollection<BuildingInstance> Buildings => buildings.Values;
+        public Dictionary<int,BuildingInstance>.ValueCollection Buildings => buildings.Values;
         public BuildingWorld(BuildGrid grid, IBuildingFactory factory) { Grid = grid; this.factory = factory; }
         public int AllocateId() => ++nextId;
         public bool TryGet(int id, out BuildingInstance building) => buildings.TryGetValue(id, out building);
         internal PlacementResult Install(IReadOnlyList<PlacementRequest> requests)
+            => InstallBatch(new[] { (this, requests) });
+        // Stage every world before activating any: a cross-foundation edit is one transaction.
+        internal static PlacementResult InstallBatch(IReadOnlyList<(BuildingWorld World, IReadOnlyList<PlacementRequest> Requests)> batches)
         {
-            var staged = new List<BuildingInstance>();
+            var staged = new List<(BuildingWorld World, BuildingInstance Building)>();
             try
             {
-                foreach (var request in requests)
+                foreach (var batch in batches)
+                    foreach (var request in batch.Requests)
+                    {
+                        var world = batch.World;
+                        var building = world.factory.Stage(world.AllocateId(), request, world.Grid.Center(request.Cell, request.Footprint));
+                        if (building == null) throw new InvalidOperationException("Building factory returned null.");
+                        staged.Add((world, building));
+                        building.ConfirmDirection(request.Direction);
+                    }
+                foreach (var item in staged)
                 {
-                    var building = factory.Stage(AllocateId(), request, Grid.Center(request.Cell, request.Footprint));
-                    staged.Add(building ?? throw new InvalidOperationException("Building factory returned null."));
-                    building.ConfirmDirection(request.Direction);
+                    item.World.buildings.Add(item.Building.Id, item.Building);
+                    item.World.Grid.Occupy(item.Building);
+                    item.Building.Destroyed += item.World.OnDestroyed;
                 }
-                foreach (var building in staged)
-                {
-                    buildings.Add(building.Id, building);
-                    Grid.Occupy(building);
-                    building.Destroyed += OnDestroyed;
-                }
-                foreach (var building in staged) { building.Activate(); factory.Activate(building); }
+                foreach (var item in staged) { item.Building.Activate(); item.World.factory.Activate(item.Building); }
                 return PlacementResult.Ok;
             }
             catch (Exception exception)
             {
-                foreach (var building in staged)
+                foreach (var item in staged)
                 {
-                    building.Destroyed -= OnDestroyed;
-                    buildings.Remove(building.Id);
-                    Grid.Release(building);
-                    building.Dispose();
-                    factory.Remove(building);
+                    item.Building.Destroyed -= item.World.OnDestroyed;
+                    item.World.buildings.Remove(item.Building.Id);
+                    item.World.Grid.Release(item.Building);
+                    item.Building.Dispose();
+                    item.World.factory.Remove(item.Building);
                 }
                 return new PlacementResult("creation", "생성 실패 — 임시 배치를 유지합니다: " + exception.Message);
             }
@@ -125,13 +131,21 @@ namespace EternalSteam
             world.Grid.ReleaseReservation(request);
             pending.Remove(request);
         }
-        public PlacementResult Confirm()
+        public PlacementResult Confirm() => ConfirmTogether(new[] { this });
+        public static PlacementResult ConfirmTogether(IReadOnlyList<PlacementSession> sessions)
         {
-            if (pending.Count == 0) return new PlacementResult("empty", "임시 건물이 없습니다.");
-            foreach (var request in pending)
-            { var result = Validate(request); if (!result.Success) return result; }
-            var installed = world.Install(pending);
-            if (installed.Success) Cancel();
+            var batches = new List<(BuildingWorld, IReadOnlyList<PlacementRequest>)>();
+            var unique = new HashSet<BuildingWorld>();
+            foreach (var session in sessions)
+            {
+                if (!unique.Add(session.world)) return new PlacementResult("duplicate-world", "같은 월드의 중복 작업입니다.");
+                foreach (var request in session.pending)
+                { var result = session.Validate(request); if (!result.Success) return result; }
+                if (session.pending.Count > 0) batches.Add((session.world, session.pending));
+            }
+            if (batches.Count == 0) return new PlacementResult("empty", "임시 건물이 없습니다.");
+            var installed = BuildingWorld.InstallBatch(batches);
+            if (installed.Success) foreach (var session in sessions) session.Cancel();
             return installed;
         }
         public void Cancel()
@@ -154,14 +168,22 @@ namespace EternalSteam
             return selected.Add(id);
         }
         public void Deselect(int id) => selected.Remove(id);
-        public PlacementResult Confirm()
+        public PlacementResult Validate()
         {
-            if (selected.Count == 0) return new PlacementResult("empty", "회수 대상을 선택하세요.");
             foreach (int id in selected)
                 if (!world.TryGet(id, out var building) || building.Disposed || !building.Recoverable)
                     return new PlacementResult("recovery-invalid", "회수 대상이 없어졌거나 회수할 수 없습니다. 목록에서 해제하세요.");
-            foreach (int id in selected) world.Remove(id);
-            selected.Clear();
+            return PlacementResult.Ok;
+        }
+        public PlacementResult Confirm() => ConfirmTogether(new[] { this });
+        public static PlacementResult ConfirmTogether(IReadOnlyList<RecoverySession> sessions)
+        {
+            int count = 0;
+            foreach (var session in sessions)
+            { var result = session.Validate(); if (!result.Success) return result; count += session.selected.Count; }
+            if (count == 0) return new PlacementResult("empty", "회수 대상을 선택하세요.");
+            foreach (var session in sessions)
+            { foreach (int id in session.selected) session.world.Remove(id); session.selected.Clear(); }
             return PlacementResult.Ok;
         }
         public void Cancel() => selected.Clear();

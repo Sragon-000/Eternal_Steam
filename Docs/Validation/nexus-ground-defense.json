@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/VerifyNexusGroundDefense.cs",
+      "entry": "VerifyNexusGroundDefense.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 664,
+      "executeMs": 269,
+      "assemblyName": "PipelineRunScript_VerifyNexusGroundDefense_2ce901fc8f9d4b6fb104908f1f56ad08",
+      "success": true,
+      "result": "PASS: confirmed-only grid, 9 new and 4 legacy ground towers, 1/4/9-cell occupancy, range/duplicate checks, prepare silence/combat damage, deferred recovery, nexus dependency, optional foundation compatibility, cross-surface pending collision and cleanup."
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7802,
+      "projectPath": "/private/tmp/eternal-foundation-validation"
+    },
+    "success": true
+  },
+  "errors": [],
+  "warnings": []
+}

@@ -16,8 +16,8 @@ namespace EternalSteam
     {
         BuildingInstance owner;
         readonly float baseMaximum;
-        public float Maximum { get; private set; }
-        public float Current { get; private set; }
+        [Saved(.00001)] public float Maximum { get; private set; }
+        [Saved(.00001)] public float Current { get; private set; }
         public bool Alive => Current > 0 && owner != null && !owner.Disposed;
         public HealthModule(float maximum) { baseMaximum = Maximum = Current = maximum; }
         public void SetMaximumMultiplier(float multiplier)
@@ -31,7 +31,9 @@ namespace EternalSteam
         public void ApplyDamage(float amount)
         {
             if (!Alive || !owner.Active || amount <= 0 || !float.IsFinite(amount)) return;
+            float applied=Mathf.Min(Current,amount);
             Current = Mathf.Max(0, Current - amount);
+            owner.ReportDamage(applied);
             if (Current == 0) owner.Destroy();
         }
         public void Dispose() { }

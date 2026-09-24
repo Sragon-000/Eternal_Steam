@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/VerifyTileWorldMountainRiver.cs",
+      "entry": "VerifyTileWorldMountainRiver.PlayMode"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 1453,
+      "executeMs": 30,
+      "assemblyName": "PipelineRunScript_VerifyTileWorldMountainRiver_17819f31c1a64dae86e2755a418c4fa6",
+      "success": true,
+      "result": "PASS PlayMode: foundation placement/lookup, 512 enemies spawned, 10 simulated seconds, 473 live enemies remain on valid ground/routes at correct height. Cleanup performed."
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7801,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    },
+    "success": true
+  },
+  "errors": [],
+  "warnings": []
+}

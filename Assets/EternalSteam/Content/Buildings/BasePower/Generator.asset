@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 961be35588064450ea724446c223c99b, type: 3}
+  m_Name: Generator
+  m_EditorClassIdentifier: EternalSteam.Runtime::EternalSteam.BuildingDefinition
+  Id: resource.power_generator
+  DisplayName: "\uC804\uB825 \uBC1C\uC804\uAE30"
+  Category: 1
+  Footprint: {x: 1, y: 1}
+  Recoverable: 1
+  Placement: {fileID: 11400000, guid: 97470906539114ae8b12544133866a9a, type: 2}
+  ViewPrefab: {fileID: 7069324970092863207, guid: a21006d818dae4570898f70083992087, type: 3}
+  Modules:
+  - {fileID: 11400000, guid: 08b03a8464b734c27a4e9395141a31b5, type: 2}
+  - {fileID: 11400000, guid: 2e152798225b142de8cbb6a15b4ea094, type: 2}
+  - {fileID: 11400000, guid: 675c5dbeefd1049f8b7b1d2c3d72afa6, type: 2}

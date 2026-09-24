@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/VerifyBuildingInventoryUI.cs",
+      "entry": "VerifyBuildingInventoryUI.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 702,
+      "executeMs": 3286,
+      "assemblyName": "PipelineRunScript_VerifyBuildingInventoryUI_181c368dc45345df87d292d60e2ea93e",
+      "success": true,
+      "result": "PASS: category order/default/filter/empty/reopen, edit toggle cancels foundation/tower ghosts and reservations, edit-confirm enabled states, empty confirm, tower/foundation deferred click recovery, deselection/cancel, foundation with towers and empty foundation commit, removed auxiliary buttons, nine items wrap after eight, cleanup."
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7802,
+      "projectPath": "/private/tmp/eternal-foundation-validation"
+    },
+    "success": true
+  },
+  "errors": [],
+  "warnings": []
+}

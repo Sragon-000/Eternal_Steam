@@ -71,7 +71,7 @@ namespace EternalSteam
             return found;
         }
     }
-    public sealed class AttackModule : IBuildingModule, IAttackControl
+    public sealed class AttackModule : IBuildingModule, ICombatModule, IAttackControl, IUnpoweredCombat, IPendingExecution
     {
         readonly ITargetSelector selector;
         readonly IAttackExecution execution;
@@ -79,18 +79,24 @@ namespace EternalSteam
         readonly IHitEffect[] effects;
         BuildingInstance owner;
         ITargetQuery query;
-        float cooldown;
+        [Saved] float cooldown;
+        public bool HasPendingExecution=>execution is IPendingExecution pending&&pending.HasPendingExecution;
         TargetKind kinds;
         public float Range { get; }
         public float Angle { get; }
         public TargetHandle? CurrentTarget { get; private set; }
-        public TargetKind Kinds { get => kinds; set { kinds = value; ClearTarget(); } }
+        public TargetKind Kinds { get => kinds; set {
+            kinds = value;
+            if (CurrentTarget.HasValue && query != null && (!query.TryGet(CurrentTarget.Value,out var target)
+                || !Sector.Contains(owner.Position,owner.Direction,Range,Angle,kinds,target))) ClearTarget();
+        } }
         public AttackModule(float range, float angle, float interval, float damage, TargetKind kinds, ITargetSelector selector, IAttackExecution execution, IHitEffect[] effects = null)
         { Range = range; Angle = angle; this.interval = interval; this.damage = damage; this.kinds = kinds; this.selector = selector; this.execution = execution; this.effects = effects ?? Array.Empty<IHitEffect>(); }
         public void Initialize(BuildingInstance owner, BuildingServices services)
         { this.owner = owner; query = services.Targets ?? throw new InvalidOperationException("Attack requires ITargetQuery."); owner.DirectionChanged += ClearTarget; }
         public void Activate() { }
         public void ClearTarget() => CurrentTarget = null;
+        public void TickUnpowered(float dt){execution.Tick(dt);}
         public void Tick(float dt)
         {
             execution.Tick(dt);

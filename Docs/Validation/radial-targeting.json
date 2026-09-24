@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/VerifyRadialTargeting.cs",
+      "entry": "VerifyRadialTargeting.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 814,
+      "executeMs": 8,
+      "assemblyName": "PipelineRunScript_VerifyRadialTargeting_707f4515b2eb48ae9a4abfe1d48649bd",
+      "success": true,
+      "result": "PASS: all 9 weapons acquire rear targets, automatic aim, no empty-range attacks including EMP, inclusive radius/outside boundary, target retention and cooldown preservation; all 4 legacy adapters auto-aim and apply original damage/slow types."
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7802,
+      "projectPath": "/private/tmp/eternal-foundation-validation"
+    },
+    "success": true
+  },
+  "errors": [],
+  "warnings": []
+}

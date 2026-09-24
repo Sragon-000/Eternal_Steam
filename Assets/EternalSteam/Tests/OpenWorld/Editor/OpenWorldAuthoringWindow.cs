@@ -39,8 +39,9 @@ namespace EternalSteam.OpenWorld.Editor
             if(!Physics.Raycast(HandleUtility.GUIPointToWorldRay(e.mousePosition),out var hit,2000))return;
             var point=hit.point;Handles.color=tool==WorldTool.Recover?Color.red:Color.cyan;
             var key=FoundationPlacement.Key(point);
-            var center=tool==WorldTool.Foundation?new Vector3(key.x*8+4,point.y+.1f,key.y*8+4):new Vector3(Mathf.Floor(point.x/2)*2+1,point.y+.1f,Mathf.Floor(point.z/2)*2+1);
-            Handles.DrawWireCube(center,new Vector3(tool==WorldTool.Foundation?8:2,.1f,tool==WorldTool.Foundation?8:2));
+            var center=WorldGridGeometry.Center(WorldGridGeometry.Cell(point,tool==WorldTool.Foundation?8:2),tool==WorldTool.Foundation?8:2,point.y+.1f);
+            using(new Handles.DrawingScope(Matrix4x4.TRS(center,WorldGridGeometry.Rotation,Vector3.one)))
+                Handles.DrawWireCube(Vector3.zero,new Vector3(tool==WorldTool.Foundation?8:2,.1f,tool==WorldTool.Foundation?8:2));
             if(anchor.HasValue)Handles.DrawLine(anchor.Value+Vector3.up*.2f,point+Vector3.up*.2f);
             if(e.type==EventType.MouseDown&&e.button==0){
                 string reason;

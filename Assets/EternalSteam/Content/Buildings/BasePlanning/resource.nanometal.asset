@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 961be35588064450ea724446c223c99b, type: 3}
+  m_Name: resource.nanometal
+  m_EditorClassIdentifier: EternalSteam.Runtime::EternalSteam.BuildingDefinition
+  Id: resource.nanometal
+  DisplayName: "\uB098\uB178\uBA54\uD0C8 \uC0DD\uC131\uAE30"
+  Category: 1
+  Footprint: {x: 1, y: 1}
+  Recoverable: 1
+  Placement: {fileID: 11400000, guid: c2f51bc2db8d04d0bb5c2529e4b8faf4, type: 2}
+  ViewPrefab: {fileID: 1934721574249178319, guid: aeef917dc437f4288a70f6a94c810067, type: 3}
+  Modules:
+  - {fileID: 11400000, guid: 8b98a20a6884b401d8bef67ccf5e3d93, type: 2}
+  - {fileID: 11400000, guid: 64095ed863c1346cdb5188df28efa175, type: 2}
+  - {fileID: 11400000, guid: e6d5ec240fcef4532a79a77d92f70f6d, type: 2}

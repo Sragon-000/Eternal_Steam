@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 961be35588064450ea724446c223c99b, type: 3}
+  m_Name: defense.tesla
+  m_EditorClassIdentifier: EternalSteam.Runtime::EternalSteam.BuildingDefinition
+  Id: defense.tesla
+  DisplayName: "\uD14C\uC2AC\uB77C \uD0C0\uC6CC"
+  Category: 0
+  Footprint: {x: 1, y: 1}
+  Recoverable: 1
+  Placement: {fileID: 11400000, guid: ac937322b66984142b0b01398e280161, type: 2}
+  ViewPrefab: {fileID: 6749383607129181470, guid: 0efcde57e7f90452ea6f6f3898610de8, type: 3}
+  Modules:
+  - {fileID: 11400000, guid: e3c4e9bba96304ab59982564cd9ad220, type: 2}
+  - {fileID: 11400000, guid: 2787814f493b140cdb9c5dfd80b152fa, type: 2}
+  - {fileID: 11400000, guid: ecda62fb1b9ea47b79ecfbbaf3910bd7, type: 2}
+  - {fileID: 11400000, guid: adf9e49c89fca4606b4dc255f383ae04, type: 2}
+  - {fileID: 11400000, guid: 4aa7cf50712194b0cb5bf5bf491e9dc0, type: 2}

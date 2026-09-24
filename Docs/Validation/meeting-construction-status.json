@@ -1,0 +1,45 @@
+{
+  "date": "2026-09-17",
+  "project": "original Eternal_Steam",
+  "gameBuild": false,
+  "compiler": "Unity bundled Roslyn; original Bee references; output in /tmp only",
+  "compiledAssemblies": [
+    "Runtime",
+    "Combat",
+    "Economy",
+    "Progression",
+    "Presentation",
+    "LegacyBuildings",
+    "OpenWorldSandbox",
+    "OpenWorldEditor"
+  ],
+  "compiledTools": [
+    "ApplyMeetingConstruction",
+    "VerifyMeetingConstruction"
+  ],
+  "compileErrors": 0,
+  "playModeTests": {
+    "VerifyMeetingConstruction": "PASS",
+    "VerifyNexusGroundInput": "PASS",
+    "VerifySelectedTowerRange": "PASS",
+    "VerifyRadialTargeting": "PASS",
+    "VerifyWorldGridVisibility": "PASS",
+    "sceneRestart": "PASS"
+  },
+  "sceneAndAssets": "created via original Editor; StartRegionSandbox.unity",
+  "performance": "Full load comparison not measured; single 3-chunk rebuild observation 3.3863ms, not a baseline",
+  "blocker": null,
+  "excluded": [
+    "power",
+    "energy"
+  ],
+  "worldGridVisibility": "editing only; no hidden rebuild",
+  "remaining": [
+    "independent base rounds",
+    "regional nexus production",
+    "building-attacking enemies",
+    "versioned save",
+    "full legacy map flow regression",
+    "load performance comparison"
+  ]
+}

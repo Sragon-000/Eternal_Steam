@@ -17,9 +17,9 @@ namespace EternalSteam
             if(!float.IsFinite(InputAmount) || InputAmount<0 || (InputAmount>0 && string.IsNullOrWhiteSpace(InputId)) || string.IsNullOrWhiteSpace(OutputId)
                 || !float.IsFinite(OutputAmount) || OutputAmount<=0 || !float.IsFinite(Interval) || Interval<=0) errors.Add("Invalid production recipe.");
         }
-        sealed class Runtime:IBuildingModule
+        sealed class Runtime:IBuildingModule,IOperationalModule
         {
-            readonly string input,output; readonly float cost,gain,interval; float elapsed; IResourceBank bank;
+            readonly string input,output; readonly float cost,gain,interval; [Saved(0)] float elapsed; IResourceBank bank;
             public Runtime(string input,float cost,string output,float gain,float interval) { this.input=input; this.cost=cost; this.output=output; this.gain=gain; this.interval=interval; }
             public void Initialize(BuildingInstance owner,BuildingServices services)=>bank=services.Resources??throw new InvalidOperationException("Production requires ResourceBank.");
             public void Activate() { }

@@ -6,8 +6,8 @@ namespace EternalSteam.Demo
 {
     public sealed class HordeEnemyRenderer : IDisposable
     {
-        const int Capacity = HordeEnemyWorld.Capacity;
         readonly HordeEnemyWorld world;
+        public int HighlightId=-1,HighlightGeneration;
         readonly Bounds bounds;
         readonly Mesh enemyMesh;
         readonly Material enemyMaterial, slowedMaterial;
@@ -35,10 +35,10 @@ namespace EternalSteam.Demo
                 worldBounds = bounds
             };
             int count = 0;
-            for (int i = 0; i < Capacity; i++)
+            for (int i = 0; i < world.MaxCount; i++)
             {
                 if (!world.GetEnemy(i).alive || (world.GetEnemy(i).slowTime > 0) != slowed) continue;
-                matrices[count++] = Matrix4x4.TRS(world.GetEnemy(i).position, Quaternion.identity, new Vector3(0.38f, 0.52f, 0.38f));
+                matrices[count++] = Matrix4x4.TRS(world.GetEnemy(i).position, Quaternion.identity, new Vector3(0.38f, 0.52f, 0.38f)*(i==HighlightId&&world.Generation(i)==HighlightGeneration?3:1));
                 if (count != matrices.Length) continue;
                 Graphics.RenderMeshInstanced(rp, enemyMesh, 0, matrices, count);
                 count = 0;

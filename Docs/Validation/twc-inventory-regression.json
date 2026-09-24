@@ -1,0 +1,29 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/VerifyBuildingInventoryUI.cs",
+      "entry": "VerifyBuildingInventoryUI.Main",
+      "timeout_ms": "60000"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 51,
+      "executeMs": 7950,
+      "assemblyName": "PipelineRunScript_VerifyBuildingInventoryUI_929fd4ca050e49e5b2ef4a87ae7d6f65",
+      "success": false,
+      "error": "Runtime Error",
+      "errorDetails": "Exception: First eight on same row\n  at VerifyBuildingInventoryUI.Main () [0x0201a] in /Users/limseth/Projects/Eternal_Steam/Eternal_Steam/Tools/VerifyBuildingInventoryUI.cs:59 \n  at Unity.Pipeline.Editor.Commands.Scripts.RunScriptCommand.RunEphemeral (System.String file, System.String entry, Newtonsoft.Json.Linq.JArray args, System.String[] references, System.String[] defines, System.Boolean pdb, System.Boolean dryRun, System.Int32 timeoutMs, System.Diagnostics.Stopwatch total) [0x00492] in ./Library/PackageCache/com.unity.pipeline@9bb4172c603c/Editor/Commands/Scripts/RunScriptCommand.cs:252 "
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7801,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    },
+    "success": true
+  },
+  "errors": [],
+  "warnings": []
+}

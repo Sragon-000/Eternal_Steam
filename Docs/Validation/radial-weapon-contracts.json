@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/VerifyWeaponContracts.cs",
+      "entry": "VerifyWeaponContracts.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 106,
+      "executeMs": 6,
+      "assemblyName": "PipelineRunScript_VerifyWeaponContracts_40d3cf5bfe7d4fd1aa5d45eddfe82e45",
+      "success": true,
+      "result": "PASS: 7 composed weapon contracts, burst count/rest, target tracking reset, chain delay/20% retention/revisit, three-hit piercing, multi-projectile splash, EMP, air filters, overheat source, stun/action gate, 3 burn ticks, generation reuse."
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7801,
+      "projectPath": "/private/tmp/eternal-foundation-validation"
+    },
+    "success": true
+  },
+  "errors": [],
+  "warnings": []
+}

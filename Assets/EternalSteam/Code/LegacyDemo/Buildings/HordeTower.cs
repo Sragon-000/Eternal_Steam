@@ -8,8 +8,10 @@ namespace EternalSteam.Demo
             public Transform head;
             public LineRenderer tracer;
             public float range;
+            public bool showIdleCoverage=true;
             public float halfAngle;
             public int shot;
+            public int targetId=-1,targetGeneration;
             public float cooldown;
             public float tracerTime;
             public HordeTowerKind kind;

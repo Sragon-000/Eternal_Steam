@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/VerifyQuantityFocus.cs",
+      "entry": "VerifyQuantityFocus.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 31,
+      "executeMs": 797,
+      "assemblyName": "PipelineRunScript_VerifyQuantityFocus_2bc8d0f0b58a464090f516d148efceea",
+      "success": true,
+      "result": "PASS: W camera with no input focus, explicit pointer typing, letter/paste rejection, digit input, Enter/world-click/spawn release, exact 25 spawn."
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7802,
+      "projectPath": "/private/tmp/eternal-foundation-validation"
+    },
+    "success": true
+  },
+  "errors": [],
+  "warnings": []
+}

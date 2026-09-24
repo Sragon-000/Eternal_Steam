@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 961be35588064450ea724446c223c99b, type: 3}
+  m_Name: resource.iron
+  m_EditorClassIdentifier: EternalSteam.Runtime::EternalSteam.BuildingDefinition
+  Id: resource.iron
+  DisplayName: "\uCCA0 \uC0DD\uC131\uAE30"
+  Category: 1
+  Footprint: {x: 1, y: 1}
+  Recoverable: 1
+  Placement: {fileID: 11400000, guid: 415adca7f0d394b58ba5ee355e0f0d03, type: 2}
+  ViewPrefab: {fileID: 8106832077862806280, guid: 481cbd76db90644d78509680b8933c37, type: 3}
+  Modules:
+  - {fileID: 11400000, guid: ae956334b5516403fa0644944bce7304, type: 2}
+  - {fileID: 11400000, guid: 08b03a8464b734c27a4e9395141a31b5, type: 2}
+  - {fileID: 11400000, guid: 2e152798225b142de8cbb6a15b4ea094, type: 2}

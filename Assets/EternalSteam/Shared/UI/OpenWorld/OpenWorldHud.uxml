@@ -1,25 +1,83 @@
-<ui:UXML xmlns:ui="UnityEngine.UIElements">
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:world="EternalSteam.OpenWorld">
  <ui:Style src="OpenWorldHud.uss" />
  <ui:VisualElement class="workspace" picking-mode="Ignore">
-  <ui:ScrollView name="panel" class="panel">
-   <ui:Label text="테스트 그라운드" class="title" />
-   <ui:Label text="ETERNAL STEAM / OPEN WORLD" class="subtitle" />
+  <ui:VisualElement name="resource-panel" class="resource-panel">
+   <ui:VisualElement class="row"><ui:Label text="보유 자원" class="resource-title grow" /><ui:Button name="resource-fold" text="▲ 접기" /></ui:VisualElement>
+   <ui:VisualElement name="resource-body">
+   <ui:Label name="resources" text="자원 건물 설치 후 생산량이 표시됩니다." class="resource-stock" />
+   <ui:Label name="base-power" class="note" />
+   <ui:VisualElement name="map-progress">
+    <ui:Label name="map-energy" class="note" />
+    <ui:Label name="map-stage" class="note" />
+    <ui:Button name="orb-craft" text="완벽한 에너지 오브 제작" />
+   </ui:VisualElement>
+  </ui:VisualElement>
+  </ui:VisualElement>
+  <ui:VisualElement name="clock-panel" class="clock-panel">
+   <ui:VisualElement class="row"><ui:Label name="clock-date" text="1일차 · 낮" class="title grow" /><ui:Button name="clock-fold" text="▲ 접기" /></ui:VisualElement>
+   <ui:VisualElement name="clock-body">
+   <world:DayNightDial name="day-night-dial" class="day-night-dial" picking-mode="Ignore" turns="0">
+    <ui:Label text="낮" class="dial-day" picking-mode="Ignore" />
+    <ui:Label text="밤" class="dial-night" picking-mode="Ignore" />
+   </world:DayNightDial>
+   <ui:Label name="clock-remaining" class="note" />
+   <ui:VisualElement name="clock-dev">
+    <ui:Label text="개발자 · 날짜 유지 전환" class="note" />
+    <ui:VisualElement class="row">
+     <ui:Button name="clock-day" text="낮으로" class="grow" />
+     <ui:Button name="clock-night" text="밤으로" class="grow" />
+    </ui:VisualElement>
+    <ui:Button name="clock-pause" text="시간 정지" />
+   </ui:VisualElement>
+  </ui:VisualElement>
+  </ui:VisualElement>
+  <ui:VisualElement name="test-panel" class="test-panel">
+   <ui:VisualElement class="row"><ui:Label text="테스트 공간" class="title grow" /><ui:Button name="test-fold" text="▲ 접기" /></ui:VisualElement>
+   <ui:ScrollView name="test-body" class="test-body">
+   <ui:VisualElement name="save-controls">
+    <ui:Label name="save-status" class="note" />
+    <ui:Button name="save" text="안전 저장" /><ui:Button name="load" text="마지막 저장 이어하기" />
+    <ui:Button name="new-game" text="새 게임" />
+    <ui:VisualElement name="new-game-confirmation"><ui:Label text="현재 진행을 보관하고 새로 시작할까요?" class="note" /><ui:Button name="new-game-confirm" text="새 게임 시작" /><ui:Button name="new-game-cancel" text="취소" /></ui:VisualElement>
+   </ui:VisualElement>
    <ui:Label name="mode" class="mode" />
    <ui:Label name="counts" class="note" />
-   <ui:Label text="01  토대와 포탑" class="section" />
-   <ui:Button name="foundation" text="토대 설치 · 8×8m" />
-   <ui:VisualElement name="towers" />
-   <ui:Button name="edit" text="수정 · 포탑 회수" />
-   <ui:Button name="explore" text="편집 종료" />
-   <ui:Label text="토대 설치 → 포탑 종류 선택 → 토대 칸 클릭 → 공격 방향 클릭&#10;수정 모드에서 포탑 칸을 클릭하면 회수" class="note" />
-   <ui:Label text="02  적 소환" class="section" />
-   <ui:TextField name="amount" value="100" max-length="4" />
-   <ui:Button name="spawn" text="입력한 수량 소환" />
-   <ui:Label text="1~4,000마리 · 화면 중심의 왼쪽에서 생성&#10;오른쪽으로 이동하며 토대는 통과합니다." class="note" />
-   <ui:Button name="run" text="전투 실행" />
-   <ui:Button name="reset" text="적 초기화" />
-   <ui:Label text="WASD  카메라 이동 / 휠  확대·축소&#10;우클릭·Esc  설치 취소 / 편집 시 전투 정지" class="note" />
-   <ui:Label name="message" class="message" />
+   <ui:TextField name="amount" value="100" max-length="9" />
+   <ui:Label text="총 최대 1억 · 동시 최대 10만" class="note" />
+   <ui:Toggle name="spawn-air" label="공중 적" focusable="false" />
+   <ui:Button name="spawn" text="적 소환" />
+   <ui:VisualElement class="row">
+    <ui:Button name="run" text="전투 실행" class="grow" />
+    <ui:Button name="reset" text="적 초기화" class="grow" />
+   </ui:VisualElement>
+   <ui:Button name="inventory-toggle" text="건물 인벤토리 닫기" />
+   <ui:Button name="upgrade" text="선택 건물 강화 (검증용 무료)" />
+   <ui:Label name="content-stats" class="note" />
+   <ui:Label name="device-power" class="note" />
+   <ui:Label text="WASD 이동 · 휠 확대/축소" class="note" />
   </ui:ScrollView>
+  </ui:VisualElement>
+  <ui:VisualElement name="panel" class="inventory-panel">
+   <ui:VisualElement class="inventory-header">
+    <ui:VisualElement name="categories" class="row">
+     <ui:Button name="category-defense" text="방어" class="tab" />
+     <ui:Button name="category-resource" text="자원" class="tab" />
+     <ui:Button name="category-other" text="기타" class="tab" />
+     <ui:Button name="category-installation" text="설치" class="tab" />
+    </ui:VisualElement>
+    <ui:VisualElement class="grow" picking-mode="Ignore" />
+    <ui:Button name="inventory-fold" text="▼ 접기" class="action" />
+    <ui:Button name="edit" text="수정" class="action" />
+    <ui:Button name="confirm" text="확정" class="action primary" />
+   </ui:VisualElement>
+   <ui:ScrollView name="inventory-scroll" class="inventory-scroll">
+    <ui:VisualElement name="inventory-items" class="inventory-items" />
+    <ui:Label name="inventory-empty" text="등록된 건물이 없습니다." class="empty" />
+   </ui:ScrollView>
+   <ui:VisualElement class="inventory-footer">
+    <ui:Label name="pending" class="note" />
+    <ui:Label name="message" class="message" />
+   </ui:VisualElement>
+  </ui:VisualElement>
  </ui:VisualElement>
 </ui:UXML>

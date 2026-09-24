@@ -1,0 +1,4 @@
+StartRegionSandbox actual Editor frames, 4000 ground enemies spawned with normal spacing/terrain rules; one high-health nexus, no towers; camera zoom 70; 30 warmup + 120 frames; includes rendering and UI, no build. Full-frame GC includes Editor/UI/harness; not equivalent to combat-only GC.
+Main Thread: median 32.303, p95 43.261 ms
+PlayerLoop: median 13.331, p95 20.503 ms
+GC Allocated In Frame: median 39537.000, p95 39625.000 bytes

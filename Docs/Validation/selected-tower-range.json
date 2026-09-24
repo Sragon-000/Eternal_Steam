@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/VerifySelectedTowerRange.cs",
+      "entry": "VerifySelectedTowerRange.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 642,
+      "executeMs": 47,
+      "assemblyName": "PipelineRunScript_VerifySelectedTowerRange_abba038dcf7e4365832cd3afc3a4a785",
+      "success": true,
+      "result": "PASS: new/legacy towers hidden initially and during editing, selected radius visible, UI hover preserves selection, nexus/empty ground deselection hides radius, legacy idle/reset cannot restore all circles, placement and deferred recovery preserved."
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7801,
+      "projectPath": "/private/tmp/eternal-foundation-validation"
+    },
+    "success": true
+  },
+  "errors": [],
+  "warnings": []
+}

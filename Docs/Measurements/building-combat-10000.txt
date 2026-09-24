@@ -1,0 +1,5 @@
+CPU only, flat terrain, no rendering/UI; 101 static buildings, mixed ground/air; 30 warmup + 60 frames, dt=1/60. GC.Alloc marker event count (NOT duration as bytes).
+GC.Alloc positive control: 1 event(s)
+run 1, 10000: prepare 1.76/1.85, move+sweep 1.57/1.64, attack 0.74/0.85, TOTAL 4.05/4.21 ms median/p95; GC.Alloc 0 events, GC0 0
+run 2, 10000: prepare 1.77/1.88, move+sweep 1.60/1.69, attack 0.75/0.85, TOTAL 4.10/4.39 ms median/p95; GC.Alloc 0 events, GC0 0
+run 3, 10000: prepare 1.78/1.94, move+sweep 1.59/1.71, attack 0.74/0.85, TOTAL 4.10/4.29 ms median/p95; GC.Alloc 0 events, GC0 0

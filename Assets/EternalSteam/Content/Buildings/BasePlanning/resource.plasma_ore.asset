@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 961be35588064450ea724446c223c99b, type: 3}
+  m_Name: resource.plasma_ore
+  m_EditorClassIdentifier: EternalSteam.Runtime::EternalSteam.BuildingDefinition
+  Id: resource.plasma_ore
+  DisplayName: "\uD50C\uB77C\uC988\uB9C8 \uC0DD\uC131\uAE30"
+  Category: 1
+  Footprint: {x: 1, y: 1}
+  Recoverable: 1
+  Placement: {fileID: 11400000, guid: 1d6d90487c395442f9ccd452960cf3bb, type: 2}
+  ViewPrefab: {fileID: 2595867981620526232, guid: 1ea3295ea0b5a4a83ab3afd99715bcd4, type: 3}
+  Modules:
+  - {fileID: 11400000, guid: a76d9752196d2409facaee27c8cbb13a, type: 2}
+  - {fileID: 11400000, guid: 474d62c458ddf4979996a66a6d2ee1df, type: 2}
+  - {fileID: 11400000, guid: 9a4125faee33140c08e50c495ba65340, type: 2}

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 961be35588064450ea724446c223c99b, type: 3}
+  m_Name: defense.plasma_laser
+  m_EditorClassIdentifier: EternalSteam.Runtime::EternalSteam.BuildingDefinition
+  Id: defense.plasma_laser
+  DisplayName: "\uD50C\uB77C\uC988\uB9C8 \uB808\uC774\uC800 \uD3EC\uD0D1"
+  Category: 0
+  Footprint: {x: 1, y: 1}
+  Recoverable: 1
+  Placement: {fileID: 11400000, guid: 6dd4da6bf4f9442eb94e44d88ebf3df3, type: 2}
+  ViewPrefab: {fileID: 2047649881612220595, guid: a6003fb4c1ca348d3b1eb80b107ef571, type: 3}
+  Modules:
+  - {fileID: 11400000, guid: b8809471ff150483d90367deaa563471, type: 2}
+  - {fileID: 11400000, guid: 6e8582b799d7d49dc81eeaa33d895ff6, type: 2}
+  - {fileID: 11400000, guid: a3361894044934a3faa78371d7b43104, type: 2}
+  - {fileID: 11400000, guid: 8c8c6390f20bc45cd8e96585ea68dac4, type: 2}
+  - {fileID: 11400000, guid: 5fa9cb3f6eee64187bc1e5a88ffcfa8e, type: 2}

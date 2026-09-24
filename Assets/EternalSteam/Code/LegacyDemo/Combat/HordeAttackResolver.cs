@@ -5,9 +5,7 @@ namespace EternalSteam.Demo
 {
     public sealed class HordeAttackResolver
     {
-        const int Capacity = HordeEnemyWorld.Capacity;
-        const int GridWidth = HordeEnemyWorld.GridWidth, GridHeight = HordeEnemyWorld.GridHeight;
-        const float CellSize = HordeEnemyWorld.CellSize;
+        int GridWidth => world.IndexWidth;
         public const float ShotHalfWidth = 0.3f;
         readonly HordeEnemyWorld world;
         readonly HordeEnemyWorld.Enemy[] enemies;
@@ -22,10 +20,10 @@ namespace EternalSteam.Demo
         public int FindTarget(Vector3 origin, Vector3 forward, float range)
         {
             Vector3 end = origin + forward * range;
-            int minX = Mathf.Clamp(Mathf.FloorToInt((Mathf.Min(origin.x, end.x) - ShotHalfWidth + 44) / CellSize), 0, GridWidth - 1);
-            int maxX = Mathf.Clamp(Mathf.FloorToInt((Mathf.Max(origin.x, end.x) + ShotHalfWidth + 44) / CellSize), 0, GridWidth - 1);
-            int minZ = Mathf.Clamp(Mathf.FloorToInt((Mathf.Min(origin.z, end.z) - ShotHalfWidth + 34) / CellSize), 0, GridHeight - 1);
-            int maxZ = Mathf.Clamp(Mathf.FloorToInt((Mathf.Max(origin.z, end.z) + ShotHalfWidth + 34) / CellSize), 0, GridHeight - 1);
+            int minX = world.CellX(Mathf.Min(origin.x, end.x) - ShotHalfWidth);
+            int maxX = world.CellX(Mathf.Max(origin.x, end.x) + ShotHalfWidth);
+            int minZ = world.CellZ(Mathf.Min(origin.z, end.z) - ShotHalfWidth);
+            int maxZ = world.CellZ(Mathf.Max(origin.z, end.z) + ShotHalfWidth);
             float best = range;
             int target = -1;
             for (int z = minZ; z <= maxZ; z++)
@@ -44,27 +42,27 @@ namespace EternalSteam.Demo
             return target;
         }
 
-        public void ApplyPiercingShot(Vector3 origin, Vector3 direction, float range)
+        public void ApplyPiercingShot(Vector3 origin, Vector3 direction, float range,float minimumDistance=1.2f)
         {
             // A single ray per shot keeps the prototype cheap and cannot hit a slot twice.
-            for (int i = 0; i < Capacity; i++)
+            for (int i = 0; i < world.MaxCount; i++)
             {
                 if (!enemies[i].alive) continue;
                 Vector3 delta = enemies[i].position - origin;
                 delta.y = 0;
                 float along = Vector3.Dot(delta, direction);
                 float lateral = Mathf.Abs(delta.x * direction.z - delta.z * direction.x);
-                if (along >= 1.2f && along <= range && delta.sqrMagnitude <= range * range && lateral <= ShotHalfWidth)
+                if (along >= minimumDistance && along <= range && delta.sqrMagnitude <= range * range && lateral <= ShotHalfWidth)
                     ApplyDamage(i, HordeTowerStats.Damage(HordeTowerKind.Arrow));
             }
         }
 
         public void ApplyFrostCone(Vector3 origin, Vector3 direction, float range, float halfAngle)
         {
-            int minX = Mathf.Clamp(Mathf.FloorToInt((origin.x - range + 44) / CellSize), 0, GridWidth - 1);
-            int maxX = Mathf.Clamp(Mathf.FloorToInt((origin.x + range + 44) / CellSize), 0, GridWidth - 1);
-            int minZ = Mathf.Clamp(Mathf.FloorToInt((origin.z - range + 34) / CellSize), 0, GridHeight - 1);
-            int maxZ = Mathf.Clamp(Mathf.FloorToInt((origin.z + range + 34) / CellSize), 0, GridHeight - 1);
+            int minX = world.CellX(origin.x - range);
+            int maxX = world.CellX(origin.x + range);
+            int minZ = world.CellZ(origin.z - range);
+            int maxZ = world.CellZ(origin.z + range);
             float cosine = Mathf.Cos(halfAngle * Mathf.Deg2Rad);
             for (int z = minZ; z <= maxZ; z++)
                 for (int x = minX; x <= maxX; x++)
@@ -81,10 +79,10 @@ namespace EternalSteam.Demo
 
         public void ApplyArea(Vector3 center, float radius)
         {
-            int minX = Mathf.Clamp(Mathf.FloorToInt((center.x - radius + 44) / CellSize), 0, GridWidth - 1);
-            int maxX = Mathf.Clamp(Mathf.FloorToInt((center.x + radius + 44) / CellSize), 0, GridWidth - 1);
-            int minZ = Mathf.Clamp(Mathf.FloorToInt((center.z - radius + 34) / CellSize), 0, GridHeight - 1);
-            int maxZ = Mathf.Clamp(Mathf.FloorToInt((center.z + radius + 34) / CellSize), 0, GridHeight - 1);
+            int minX = world.CellX(center.x - radius);
+            int maxX = world.CellX(center.x + radius);
+            int minZ = world.CellZ(center.z - radius);
+            int maxZ = world.CellZ(center.z + radius);
             for (int z = minZ; z <= maxZ; z++)
                 for (int x = minX; x <= maxX; x++)
                     for (int i = heads[z * GridWidth + x]; i >= 0; i = next[i])

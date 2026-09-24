@@ -18,7 +18,7 @@ namespace EternalSteam
     {
         readonly int maximum; readonly bool requireNexus; readonly float damage,health;
         BuildingInstance owner; ILevelLimit nexus;
-        public int Level { get; private set; }=1;
+        [Saved(1,10)] public int Level { get; private set; }=1;
         public int MaximumLevel => maximum;
         public float DamageMultiplier => 1+damage*(Level-1);
         public UpgradeModule(int maximum,bool requireNexus,float damage,float health)
@@ -30,7 +30,7 @@ namespace EternalSteam
             reason=null;
             if(!owner.Active || owner.Disposed) { reason="활성 건물이 아닙니다."; return false; }
             if(Level>=maximum) { reason="최대 레벨입니다."; return false; }
-            if(requireNexus && !nexus.IsExempt(owner) && Level+1>nexus.LevelCap) { reason="넥서스를 먼저 강화하세요."; return false; }
+            if(requireNexus && !nexus.IsExempt(owner) && Level+1>nexus.LevelCap) { reason="메인 기지를 먼저 강화하세요."; return false; }
             Level++; owner.Module<IHealthScaling>()?.SetMaximumMultiplier(1+health*(Level-1)); return true;
         }
         public void Activate() { }

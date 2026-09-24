@@ -10,11 +10,11 @@ namespace EternalSteam.Demo
             tower.tracerTime = tower.impactTime = 0;
             tower.tracer.enabled = false;
             if (tower.impact != null) tower.impact.enabled = false;
-            tower.coverage.enabled = true;
+            tower.coverage.enabled = tower.showIdleCoverage;
         }
         public static void Tick(HordeTower tower, float dt, bool waveStarted, bool defeated)
         {
-            tower.coverage.enabled = !waveStarted && !defeated;
+            tower.coverage.enabled = tower.showIdleCoverage && !waveStarted && !defeated;
             tower.tracerTime -= dt;
             tower.tracer.enabled = !defeated && tower.tracerTime > 0;
             tower.impactTime -= dt;

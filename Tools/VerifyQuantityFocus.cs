@@ -15,9 +15,18 @@ public static class VerifyQuantityFocus
   settings.backgroundBehavior=InputSettings.BackgroundBehavior.IgnoreFocus;settings.editorInputBehaviorInPlayMode=InputSettings.EditorInputBehaviorInPlayMode.AllDeviceInputAlwaysGoesToGameView;
   var oldKey=Keyboard.current;var key=InputSystem.AddDevice<Keyboard>("QuantityTestKeyboard");
   var oldMouse=Mouse.current;var mouse=InputSystem.AddDevice<Mouse>("QuantityTestMouse");Vector3 saved=w.CameraRig.Focus;
+  FoundationPlacement.Platform added=null;
   void Pointer(){using(var e=PointerDownEvent.GetPooled(new Event{type=EventType.MouseDown,button=0})){e.target=field;field.SendEvent(e);}}
   void Press(KeyCode code,char c){using(var e=KeyDownEvent.GetPooled(new Event{type=EventType.KeyDown,keyCode=code,character=c})){e.target=field;field.SendEvent(e);}}
   try {
+   w.GetComponent<OpenWorldInput>().Cancel();w.ResetEnemies();
+   if(w.Foundations.Platforms.Count==0) {
+    for(int z=-4;z<=4&&added==null;z++)for(int x=-4;x<=4&&added==null;x++) {
+     var p=WorldGridGeometry.Center(new Vector2Int(x,z),8);
+     if(w.Foundations.AddFoundation(p,out _))w.Foundations.FindCell(p,out added,out _,out _);
+    }
+    Check(added!=null,"Foundation required for spawn");
+   }
    field.value="100";field.Focus();await Task.Delay(80);Check(field.isReadOnly,"Programmatic/navigation focus must not arm editing");
    var before=w.CameraRig.Focus;InputSystem.QueueStateEvent(key,new KeyboardState(Key.W));InputSystem.QueueTextEvent(key,'w');await Task.Delay(150);InputSystem.ResetDevice(key);
    Check(w.CameraRig.Focus.z>before.z,"W moves camera without clicking input");Check(field.value=="100","W does not enter quantity");
@@ -32,6 +41,6 @@ public static class VerifyQuantityFocus
    Pointer();await Task.Delay(50);var spawn=root.Q<Button>("spawn");using(var e=NavigationSubmitEvent.GetPooled()){e.target=spawn;spawn.SendEvent(e);}
    await Task.Delay(50);Check(field.isReadOnly&&!w.CameraRig.BlockKeyboard,"Spawn releases input");Check(w.Enemies.Spawned==25,"Spawn count exact");
    return "PASS: W camera with no input focus, explicit pointer typing, letter/paste rejection, digit input, Enter/world-click/spawn release, exact 25 spawn.";
-  } finally {InputSystem.RemoveDevice(key);InputSystem.RemoveDevice(mouse);oldKey?.MakeCurrent();oldMouse?.MakeCurrent();InputSystem.settings=original;UnityEngine.Object.Destroy(settings);w.ResetEnemies();w.CameraRig.Focus=saved;field.value="100";}
+  } finally {InputSystem.RemoveDevice(key);InputSystem.RemoveDevice(mouse);oldKey?.MakeCurrent();oldMouse?.MakeCurrent();InputSystem.settings=original;UnityEngine.Object.Destroy(settings);w.ResetEnemies();if(added!=null)w.Foundations.RemoveFoundation(added);w.CameraRig.Focus=saved;field.value="100";}
  }
 }

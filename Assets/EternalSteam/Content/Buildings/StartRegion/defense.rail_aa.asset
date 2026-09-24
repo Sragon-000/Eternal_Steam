@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 961be35588064450ea724446c223c99b, type: 3}
+  m_Name: defense.rail_aa
+  m_EditorClassIdentifier: EternalSteam.Runtime::EternalSteam.BuildingDefinition
+  Id: defense.rail_aa
+  DisplayName: "\uB808\uC77C \uB300\uACF5\uD3EC"
+  Category: 0
+  Footprint: {x: 1, y: 1}
+  Recoverable: 1
+  Placement: {fileID: 11400000, guid: 16b9205dbeee94749bf92d0a8ddd5f11, type: 2}
+  ViewPrefab: {fileID: 4439757914993499224, guid: 3089e18d979984c5b8b65eb6f165a6e3, type: 3}
+  Modules:
+  - {fileID: 11400000, guid: d0f7b376d299c4a9faae53676ee4722a, type: 2}
+  - {fileID: 11400000, guid: 6572ca6ef67634bd4991b3043666ae0a, type: 2}
+  - {fileID: 11400000, guid: 6f684aa999d1a414ba7319db8351ce51, type: 2}
+  - {fileID: 11400000, guid: 16eea5178abee4d6f90d069327068e01, type: 2}
+  - {fileID: 11400000, guid: 64b0547da1a7044db8fecc0ded3847b9, type: 2}
