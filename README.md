@@ -213,6 +213,7 @@ unity command run_script --file Tools/VerifyStartLoop.cs \
 | BELTFED - Roguelike Factory Defense | 생산·전력·방어의 연결, 기지 확장과 방어 부담 | [사용자 제공 트레일러](https://www.youtube.com/watch?v=n4RiVblVQ90) · [등록 및 검토 관점](Docs/References/BELTFED.md) |
 
 레퍼런스 등록과 기능 채택은 별도입니다. BELTFED의 소개는 공식 상점 설명을 확인했으며 영상 장면별 분석은 아직 하지 않았습니다.
+두 레퍼런스를 바탕으로 논의한 방향과 캐릭터 없는 시작 경험은 [레퍼런스 방향과 시작 경험](Docs/References/레퍼런스_방향과_시작_경험.md)에 기록했습니다. 적의 물량 압박과 생산·전력·방어의 결합은 대화에서 나온 방향이며, 세부 규칙은 아직 기획 중입니다.
 
 ## 기획 원본과 문서
 
