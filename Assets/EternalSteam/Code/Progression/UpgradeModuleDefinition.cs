@@ -25,12 +25,17 @@ namespace EternalSteam
         { this.maximum=maximum; this.requireNexus=requireNexus; this.damage=damage; this.health=health; }
         public void Initialize(BuildingInstance owner,BuildingServices services)
         { this.owner=owner; nexus=services.LevelLimit; if(requireNexus && nexus==null) throw new InvalidOperationException("Limited upgrades require ILevelLimit."); }
-        public bool TryUpgrade(out string reason)
+        public bool CanUpgrade(out string reason)
         {
             reason=null;
-            if(!owner.Active || owner.Disposed) { reason="활성 건물이 아닙니다."; return false; }
+            if(owner==null || !owner.Active || owner.Disposed) { reason="활성 건물이 아닙니다."; return false; }
             if(Level>=maximum) { reason="최대 레벨입니다."; return false; }
             if(requireNexus && !nexus.IsExempt(owner) && Level+1>nexus.LevelCap) { reason="메인 기지를 먼저 강화하세요."; return false; }
+            return true;
+        }
+        public bool TryUpgrade(out string reason)
+        {
+            if(!CanUpgrade(out reason))return false;
             Level++; owner.Module<IHealthScaling>()?.SetMaximumMultiplier(1+health*(Level-1)); return true;
         }
         public void Activate() { }

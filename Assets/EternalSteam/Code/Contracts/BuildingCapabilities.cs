@@ -11,6 +11,7 @@ namespace EternalSteam
     public interface IUpgradeControl : ILevelProvider
     {
         int MaximumLevel { get; }
+        bool CanUpgrade(out string reason);
         bool TryUpgrade(out string reason);
     }
     public interface IAttackControl

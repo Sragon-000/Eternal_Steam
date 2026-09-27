@@ -15,15 +15,18 @@ namespace EternalSteam.OpenWorld
         public Vector2 Focus,Boss;
         public bool HasBoss,HasViewport;
         public bool Interacting {get;private set;}
+        int capturedPointer=-1;
         public event Action<Vector2> Navigate;
         public MinimapElement()
         {
             focusable=false;generateVisualContent+=Draw;
-            RegisterCallback<PointerDownEvent>(e=>{if(e.button!=0)return;Interacting=true;this.CapturePointer(e.pointerId);Move(e.localPosition);e.StopPropagation();});
+            RegisterCallback<PointerDownEvent>(e=>{if(e.button!=0)return;CancelInteraction();Interacting=true;capturedPointer=e.pointerId;this.CapturePointer(e.pointerId);Move(e.localPosition);e.StopPropagation();});
             RegisterCallback<PointerMoveEvent>(e=>{if(!Interacting||!this.HasPointerCapture(e.pointerId))return;Move(e.localPosition);e.StopPropagation();});
-            RegisterCallback<PointerUpEvent>(e=>{if(!Interacting||e.button!=0)return;Interacting=false;this.ReleasePointer(e.pointerId);e.StopPropagation();});
-            RegisterCallback<PointerCaptureOutEvent>(_=>Interacting=false);
+            RegisterCallback<PointerUpEvent>(e=>{if(!Interacting||e.button!=0)return;CancelInteraction();e.StopPropagation();});
+            RegisterCallback<PointerCaptureOutEvent>(_=>{Interacting=false;capturedPointer=-1;});
+            RegisterCallback<DetachFromPanelEvent>(_=>CancelInteraction());
         }
+        public void CancelInteraction(){int pointer=capturedPointer;capturedPointer=-1;Interacting=false;if(pointer>=0&&this.HasPointerCapture(pointer))this.ReleasePointer(pointer);}
         void Move(Vector3 point){var r=contentRect;if(r.width<=0||r.height<=0)return;Navigate?.Invoke(new Vector2(Mathf.Clamp01((point.x-r.x)/r.width),Mathf.Clamp01((point.y-r.y)/r.height)));}
         Vector2 Pixel(Vector2 p)=>contentRect.position+Vector2.Scale(p,contentRect.size);
         static bool Inside(Vector2 p)=>p.x>=0&&p.x<=1&&p.y>=0&&p.y<=1;

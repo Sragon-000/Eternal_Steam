@@ -23,6 +23,11 @@ public static class VerifyMinimap
         click.type=EventType.MouseUp;using(var evt=PointerUpEvent.GetPooled(click)){evt.target=map;map.SendEvent(evt);}Check(!map.Interacting,"Pointer released");
         Check(s.GetComponent<OpenWorldInput>().IsEditing&&s.GetComponent<OpenWorldInput>().Edits.Count==0&&buildings==s.Content.GroundWorld.Buildings.Count,"Navigation does not edit buildings");
         var fold=root.Q<Button>("minimap-fold");var invoke=typeof(Clickable).GetMethod("Invoke",BindingFlags.Instance|BindingFlags.NonPublic);invoke.Invoke(fold.clickable,new object[]{null});Check(root.Q("minimap-body").ClassListContains("minimap-hidden"),"Fold");invoke.Invoke(fold.clickable,new object[]{null});Check(!root.Q("minimap-body").ClassListContains("minimap-hidden"),"Unfold");
+        bool developerWasHidden=root.Q("test-body").ClassListContains("is-hidden");root.Q("test-body").AddToClassList("is-hidden");
+        int refreshes=hud.Minimap.ObjectRefreshCount;hud.Minimap.Refresh(10000.5);Check(hud.Minimap.ObjectRefreshCount==refreshes+1,"Developer fold does not freeze independent map");root.Q("test-body").EnableInClassList("is-hidden",developerWasHidden);
+        click.type=EventType.MouseDown;using(var evt=PointerDownEvent.GetPooled(click)){evt.target=map;map.SendEvent(evt);}Check(map.Interacting,"Capture before fold");
+        invoke.Invoke(fold.clickable,new object[]{null});Check(!map.Interacting,"Fold releases capture immediately");refreshes=hud.Minimap.ObjectRefreshCount;
+        hud.Minimap.Refresh(10000.8);Check(hud.Minimap.ObjectRefreshCount==refreshes,"Hidden map skips data refresh");invoke.Invoke(fold.clickable,new object[]{null});
         s.GetComponent<OpenWorldInput>().Cancel();s.CameraRig.MoveFocus(original);
         for(int i=0;i<100;i++)s.Enemies.TrySpawn(original,original,0,10);hud.Minimap.Refresh(10001);Check(map.Density.Sum()==s.Enemies.Alive,"All live enemies represented in bounded density cells");s.Enemies.Reset();hud.Minimap.Refresh(10002);Check(map.Density.Sum()==0,"Dead/reset enemies removed");
         return "PASS north-up/corner mapping, actual 45-degree map, main marker, camera footprint, zoom-preserving navigation, pointer capture/release, editing isolation, fold and enemy density/reset.";

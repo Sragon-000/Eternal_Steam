@@ -31,13 +31,17 @@ namespace EternalSteam.OpenWorld
         public void MovePointer(Vector2 screen,Vector3? world,bool overUI=false)=>drag?.Move(screen,world,overUI);
         public void EndPointer(Vector2 screen,Vector3? world,bool overUI=false)=>drag?.Release(screen,world,overUI);
         public void AbortPointer()=>drag?.Abort();
-        GameObject preview;
-        LineRenderer directionLine;
+        [SerializeField] GameObject preview;
+        [SerializeField] Material inactivePreviewMaterial;
+        [SerializeField] LineRenderer invalidPattern;
+        public LineRenderer DragRectangle;
+        public string PlacementHint {get;private set;}="";
+        [SerializeField] LineRenderer directionLine;
         public void BeginEditing()
         {
             if((Sandbox.Content?.Defeated==true||Sandbox.Persistence?.Blocked==true))return;
             if(IsEditing)return;
-            ClearRangeSelection();Tool=WorldTool.Edit;if(Sandbox.Assault==null)Sandbox.Running=false;Sandbox.WorldGrid?.SetVisible(true);
+            ClearRangeSelection();Tool=WorldTool.Edit;if(Sandbox.Assault==null)Sandbox.Running=false;Sandbox.WorldGrid?.SetVisible(true);Sandbox.BuildAreaHologram?.SetVisible(true);
             Sandbox.Message="기존 건물 클릭: 회수 예정 선택/해제 · 좌클릭 드래그: 사각형 선택 · 새 배치는 목록에서 선택하세요.";
         }
         public void Select(WorldTool tool,HordeTowerKind kind=HordeTowerKind.MachineGun)
@@ -53,14 +57,14 @@ namespace EternalSteam.OpenWorld
         {
             Edits=new WorldEditSession(Sandbox.Foundations,Sandbox.LineMaterial,Sandbox.Content){legacyGroundTowers=Sandbox.Towers};
             drag=new ConstructionDragEditor(this,Sandbox,Edits);
-            preview=GameObject.CreatePrimitive(PrimitiveType.Cube);preview.name="45 degree construction preview";
-            preview.GetComponent<Collider>().enabled=false;preview.SetActive(false);
-            directionLine=HordeVisualPrimitives.MakeLine("Circular range preview",transform,Sandbox.ValidMaterial,.12f,35);directionLine.enabled=false;
+            if(preview==null||invalidPattern==null||directionLine==null||inactivePreviewMaterial==null)
+                throw new System.InvalidOperationException("Assign construction preview, pattern, range and material from the saved scene hierarchy.");
+            preview.SetActive(false);invalidPattern.enabled=false;directionLine.enabled=false;
         }
         public void Cancel()
         {
-            AbortPointer();ClearRangeSelection();SelectedDefinition=null;Edits?.Cancel();
-            Tool=WorldTool.Explore;Sandbox.WorldGrid?.SetVisible(false);Moving=false;SelectedPending=null;SelectedFoundation=null;
+            AbortPointer();ClearRangeSelection();SelectedDefinition=null;Edits?.Cancel();PlacementHint="";if(preview!=null)preview.SetActive(false);
+            Tool=WorldTool.Explore;Sandbox.Content?.ShowBuildAreas(false);Sandbox.WorldGrid?.SetVisible(false);Sandbox.BuildAreaHologram?.SetVisible(false);Moving=false;SelectedPending=null;SelectedFoundation=null;
             Sandbox.Message="WASD 이동 · 휠 확대/축소 · 3D 토대 격자 45°";
         }
         public bool Confirm()
@@ -124,8 +128,10 @@ namespace EternalSteam.OpenWorld
         }
         void Update()
         {
-            Sandbox.Content?.ShowBuildAreas(IsEditing);
+            Sandbox.Content?.ShowBuildAreas(IsEditing&&Sandbox.BuildAreaHologram==null);
+            Sandbox.BuildAreaHologram?.SetVisible(IsEditing);
             Sandbox.WorldGrid?.SetVisible(IsEditing);
+            PlacementHint="";if(preview!=null)preview.SetActive(false);
             var mouse=Mouse.current;if(mouse==null||Edits==null)return;
             if((Keyboard.current?.escapeKey.wasPressedThisFrame??false)||mouse.rightButton.wasPressedThisFrame){Cancel();return;}
             preview.SetActive(false);directionLine.enabled=false;
@@ -144,16 +150,33 @@ namespace EternalSteam.OpenWorld
             }
             if(!Dragging)drag?.PreviewWall(worldPoint,PointerOverUI);
             if(PointerOverUI||!hasHit)return;
-            Vector3 center=hit.point;bool valid=false;Quaternion rotation=WorldGridGeometry.Rotation;
+            Vector3 center=hit.point;bool valid=false,inactive=false;Quaternion rotation=WorldGridGeometry.Rotation;
             if(Tool!=WorldTool.Explore && Tool!=WorldTool.Edit) {
                 if(Tool==WorldTool.Content&&SelectedDefinition!=null){
-                    if(Sandbox.Content.Resolve(SelectedDefinition,hit.point,out var session,out var world,out var cell,out _)){
-                        center=world.Grid.Center(cell,SelectedDefinition.Footprint);var req=new PlacementRequest(-1,SelectedDefinition,cell);valid=session.Validate(req).Success;
+                    valid=Edits.PreviewContent(SelectedDefinition,hit.point,out _,out var world,out var cell,out var reason);
+                    if(world!=null){
+                        center=world.Grid.Center(cell,SelectedDefinition.Footprint);
                         if(world==Sandbox.Content.GroundWorld){if(Sandbox.Content.CheckGround(cell,SelectedDefinition.Footprint,out float h,out _))center.y=h+.05f;else center.y=Sandbox.Ground.SampleHeight(center)+Sandbox.Ground.transform.position.y;}
                     }
+                    var placement=SelectedDefinition.Placement;
+                    bool needsArea=placement!=null&&(placement.RequiresOperationalArea||(Sandbox.Content.Bases.AnyNormalBaseCoverage&&placement.RequiresOwnerBase));
+                    inactive=valid&&needsArea&&!Sandbox.Content.Bases.Covers(center,(Vector2)SelectedDefinition.Footprint,WorldGridGeometry.Rotation,Sandbox.Content.Bases.SelectedBaseId);
+                    bool lostOwner=placement!=null&&placement.RequiresOwnerBase&&!Sandbox.Content.Bases.AnyNormalBaseCoverage&&
+                        (Sandbox.Content.Bases.SelectedBaseId==null||!Sandbox.Content.Bases.Bases.TryGetValue(Sandbox.Content.Bases.SelectedBaseId,out var owner)||!owner.Active);
+                    inactive|=valid&&lostOwner;
+                    PlacementHint=!valid?"설치 불가: "+(reason??"설치 위치를 확인하세요."):inactive?"설치 가능 · 비작동 (가동 영역 또는 소속 기지 없음)":needsArea?"설치 가능 · 가동 영역 충족 (전력 등은 확정 후 판정)":"설치 가능";
                     preview.transform.localScale=new Vector3(SelectedDefinition.Footprint.x*2-.1f,.12f,SelectedDefinition.Footprint.y*2-.1f);
                 }
-                else if(Tool==WorldTool.Foundation){valid=Sandbox.Foundations.CheckFoundation(hit.point,out center,out _)&&Edits.FoundationAt(hit.point)==null;preview.transform.localScale=new Vector3(7.9f,.12f,7.9f);}
+                else if(Tool==WorldTool.Foundation){valid=Edits.PreviewFoundation(hit.point,out center,out var reason);PlacementHint=valid?"설치 가능 · 토대":"설치 불가: "+reason;preview.transform.localScale=new Vector3(7.9f,.12f,7.9f);}
+                else if(Tool==WorldTool.Tower){
+                    valid=Edits.PreviewTower(hit.point,Vector3.forward,Kind,out var platform,out _,out center,out var reason);
+                    if(platform!=null)rotation=platform.World.Grid.Rotation;
+                    var placement=Sandbox.Foundations.Definition(Kind).Placement;
+                    bool needsArea=placement!=null&&(placement.RequiresOperationalArea||(Sandbox.Content.Bases.AnyNormalBaseCoverage&&placement.RequiresOwnerBase));
+                    inactive=valid&&needsArea&&!Sandbox.Content.Bases.Covers(center,Vector2.one,rotation,Sandbox.Content.Bases.SelectedBaseId);
+                    PlacementHint=!valid?"설치 불가: "+reason:inactive?"설치 가능 · 비작동 (가동 영역 밖)":"설치 가능 · 가동 조건은 확정 후 판정";
+                    preview.transform.localScale=new Vector3(1.8f,.12f,1.8f);
+                }
                 else {
                     if(Sandbox.Foundations.FindTowerCell(hit.point,out var p,out var cell,out center)) {
                         rotation=p.World.Grid.Rotation;
@@ -162,10 +185,13 @@ namespace EternalSteam.OpenWorld
                     preview.transform.localScale=new Vector3(1.8f,.12f,1.8f);
                 }
                 preview.transform.SetPositionAndRotation(center+Vector3.up*.09f,rotation);
-                preview.GetComponent<Renderer>().sharedMaterial=valid?Sandbox.ValidMaterial:Sandbox.InvalidMaterial;preview.SetActive(true);
+                preview.GetComponent<Renderer>().sharedMaterial=!valid?Sandbox.InvalidMaterial:inactive?inactivePreviewMaterial:Sandbox.ValidMaterial;preview.SetActive(true);
+                invalidPattern.enabled=!valid;
+                if(!valid){var half=preview.transform.localScale*.5f;var a=center+rotation*new Vector3(-half.x,.2f,-half.z);var b=center+rotation*new Vector3(half.x,.2f,half.z);var c=center+rotation*new Vector3(-half.x,.2f,half.z);var d=center+rotation*new Vector3(half.x,.2f,-half.z);invalidPattern.SetPosition(0,a);invalidPattern.SetPosition(1,b);invalidPattern.SetPosition(2,c);invalidPattern.SetPosition(3,d);}
             }
 
         }
+        public void ClearSelection(){if(!IsEditing)ClearRangeSelection();}
         void ClearRangeSelection(){SelectedContent=null;SelectedTower=null;if(directionLine!=null)directionLine.enabled=false;}
         void LateUpdate()
         {
@@ -176,7 +202,7 @@ namespace EternalSteam.OpenWorld
             else if(SelectedTower?.root!=null&&SelectedTower.building!=null&&!SelectedTower.building.Disposed)RangeCircle(SelectedTower.root.transform.position,SelectedTower.range);
         }
         void OnApplicationFocus(bool focused){if(!focused)AbortPointer();}
-        void OnDisable()=>AbortPointer();
-        void OnDestroy(){drag?.Dispose();Edits?.Dispose();if(preview!=null)Destroy(preview);}
+        void OnDisable(){PlacementHint="";AbortPointer();if(Sandbox!=null){Sandbox.WorldGrid?.SetVisible(false);Sandbox.BuildAreaHologram?.SetVisible(false);Sandbox.Content?.ShowBuildAreas(false);}if(preview!=null)preview.SetActive(false);}
+        void OnDestroy(){drag?.Dispose();Edits?.Dispose();}
     }
 }

@@ -1,0 +1,44 @@
+[
+  {
+    "scene": "StartRegionBeforeBasePower.unity",
+    "newGameObjects": 25,
+    "canvas": false,
+    "persistedReferences": "PASS"
+  },
+  {
+    "scene": "StartRegionSandbox_BeforeFixedMain.unity",
+    "newGameObjects": 25,
+    "canvas": false,
+    "persistedReferences": "PASS"
+  },
+  {
+    "scene": "OpenWorldSandbox_BeforeTileWorld.unity",
+    "newGameObjects": 25,
+    "canvas": false,
+    "persistedReferences": "PASS"
+  },
+  {
+    "scene": "StartRegionSandbox_BeforeImportedMap.unity",
+    "newGameObjects": 25,
+    "canvas": false,
+    "persistedReferences": "PASS"
+  },
+  {
+    "scene": "OpenWorldSandbox.unity",
+    "newGameObjects": 202,
+    "canvas": true,
+    "persistedReferences": "PASS"
+  },
+  {
+    "scene": "StartRegionSandbox.unity",
+    "newGameObjects": 206,
+    "canvas": true,
+    "persistedReferences": "PASS"
+  },
+  {
+    "scene": "StartRegionSandbox_BeforeImportedMap 1.unity",
+    "newGameObjects": 25,
+    "canvas": false,
+    "persistedReferences": "PASS"
+  }
+]

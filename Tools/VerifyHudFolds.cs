@@ -8,11 +8,12 @@ public static class VerifyHudFolds
 {
  public static string Main(){
   var hud=UnityEngine.Object.FindFirstObjectByType<OpenWorldHud>();var root=hud.GetComponent<UIDocument>().rootVisualElement;
-  foreach(var key in new[]{"clock","resource","test"}){
+  foreach(var key in new[]{"clock","resource","test","menu","status","power"}){
+   bool initial=root.Q(key+"-body").ClassListContains("is-hidden");
    var button=root.Q<Button>(key+"-fold");typeof(Clickable).GetMethod("Invoke",System.Reflection.BindingFlags.Instance|System.Reflection.BindingFlags.NonPublic).Invoke(button.clickable,new object[]{null});
-   if(root.Q(key+"-body").style.display!=DisplayStyle.None)throw new Exception(key+" did not fold");
+   if(root.Q(key+"-body").ClassListContains("is-hidden")==initial)throw new Exception(key+" did not fold");
    typeof(Clickable).GetMethod("Invoke",System.Reflection.BindingFlags.Instance|System.Reflection.BindingFlags.NonPublic).Invoke(button.clickable,new object[]{null});
-   if(root.Q(key+"-body").style.display!=DisplayStyle.Flex)throw new Exception(key+" did not unfold");
+   if(root.Q(key+"-body").ClassListContains("is-hidden")!=initial)throw new Exception(key+" did not unfold");
   }
   hud.Input.BeginEditing();
   var sandbox=hud.Sandbox;var definition=sandbox.ContentCatalog.Buildings.Single(d=>d.Id=="resource.power_generator");bool reserved=false;
@@ -25,6 +26,6 @@ public static class VerifyHudFolds
   var fold=root.Q<Button>("inventory-fold");var invoke=typeof(Clickable).GetMethod("Invoke",System.Reflection.BindingFlags.Instance|System.Reflection.BindingFlags.NonPublic);
   invoke.Invoke(fold.clickable,new object[]{null});if(hud.Inventory.Visible||!hud.Input.IsEditing||hud.Input.Edits.Count!=before)throw new Exception("Inventory fold changed editing");
   invoke.Invoke(fold.clickable,new object[]{null});if(!hud.Inventory.Visible||hud.Input.Edits.ContentPending[0]!=pending)throw new Exception("Inventory unfold lost pending object");hud.Input.Cancel();if(hud.Input.Edits.Count!=0||sandbox.Content.GroundPlacement.Pending.Count!=0)throw new Exception("Cancel leaked reservations");
-  return "PASS: bound UI button callbacks folds/unfolds all three upper panel bodies; lower fold preserves an actual pending building, cancel releases reservations";
+  return "PASS: bound UI button callbacks folds/unfolds all six foldable panel bodies; lower fold preserves an actual pending building, cancel releases reservations";
  }
 }

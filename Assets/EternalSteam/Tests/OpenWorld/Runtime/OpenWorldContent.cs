@@ -92,8 +92,18 @@ namespace EternalSteam.OpenWorld
         {var d=WorldGridGeometry.ToLocal(foundation-position);return Mathf.Abs(d.x)<4+size.x-.001f&&Mathf.Abs(d.z)<4+size.y-.001f;}
         public bool CheckGround(Vector2Int cell,Vector2Int footprint,out float height,out string reason)
         {
+            height=float.MinValue;reason=null;
+            var center=GroundWorld.Grid.Center(cell,footprint);
+            if(ReservedSpawnOverlap(center,footprint)){reason="보스 스폰 3×3 구역에는 건설할 수 없습니다.";return false;}
+            if(!CheckTerrain(cell,footprint,out height,out reason))return false;
+            foreach(var p in foundations.Platforms)if(Overlap(p.View.transform.position,center,footprint)){reason="토대와 겹칩니다.";return false;}
+            return true;
+        }
+        // Terrain-only mask; occupancy, reservations and building rules remain placement queries.
+        public bool CheckTerrain(Vector2Int cell,Vector2Int footprint,out float height,out string reason)
+        {
             height=float.MinValue;reason=null;float low=float.MaxValue;
-            var center=GroundWorld.Grid.Center(cell,footprint);if(ReservedSpawnOverlap(center,footprint)){reason="보스 스폰 3×3 구역에는 건설할 수 없습니다.";return false;}var origin=terrain.transform.position;var size=terrain.terrainData.size;
+            var center=GroundWorld.Grid.Center(cell,footprint);var origin=terrain.transform.position;var size=terrain.terrainData.size;
             terrain.TryGetComponent<TileWorldGround>(out var tiles);
             for(int z=0;z<=footprint.y*2;z++)for(int x=0;x<=footprint.x*2;x++) {
                 var p=center+WorldGridGeometry.ToWorld(new Vector3(x-footprint.x,0,z-footprint.y));
@@ -104,7 +114,6 @@ namespace EternalSteam.OpenWorld
                 low=Mathf.Min(low,h);height=Mathf.Max(height,h);
             }
             if(height-low>1.2f){reason="경사가 큽니다.";return false;}
-            foreach(var p in foundations.Platforms)if(Overlap(p.View.transform.position,center,footprint)){reason="토대와 겹칩니다.";return false;}
             return true;
         }
         public void Dispose(){GroundPlacement.Dispose();GroundWorld.Dispose();foreach(var v in Views.Values)if(v!=null)UnityEngine.Object.Destroy(v);Views.Clear();if(staging!=null)UnityEngine.Object.Destroy(staging.gameObject);}

@@ -17,7 +17,8 @@ namespace EternalSteam.OpenWorld
         public CampaignProgression Campaign {get;private set;}
         public MapAssaultSettings AssaultSettings;
         public MapAssaultController Assault {get;private set;}
-        public WorldGridView WorldGrid {get;private set;}
+        public WorldGridView WorldGrid;
+        public BuildAreaHologramView BuildAreaHologram;
         public RegionDefinition[] Regions;
         public BuildingCatalog ContentCatalog;
         [Range(1,8)] public int VerificationNexusLevel=8;
@@ -65,7 +66,7 @@ namespace EternalSteam.OpenWorld
             }
             Foundations=new FoundationPlacement(Ground,transform,Towers,FoundationMaterial,BarrelMaterial,LineMaterial,ValidMaterial,types,effects,FoundationPrefab,TowerPrefabs,Content);
             Content.Attach(Foundations);Foundations.AttachGround();
-            if(MeetingConstructionRules)WorldGrid=WorldGridView.Create(transform,CameraRig,Ground,LineMaterial);
+            if(MeetingConstructionRules){if(WorldGrid==null||BuildAreaHologram==null)throw new InvalidOperationException("Assign saved WorldGrid and BuildAreaHologram scene references.");WorldGrid.Initialize(CameraRig,Ground);BuildAreaHologram.Initialize(CameraRig,Ground,Content);}
             if(SceneAuthored) {
                 foreach(var platform in GetComponentsInChildren<SceneFoundation>())Foundations.Adopt(platform);
                 foreach(var tower in GetComponentsInChildren<SceneTower>())Foundations.Adopt(tower);

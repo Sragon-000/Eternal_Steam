@@ -18,7 +18,10 @@ public static class VerifyQuantityFocus
   FoundationPlacement.Platform added=null;
   void Pointer(){using(var e=PointerDownEvent.GetPooled(new Event{type=EventType.MouseDown,button=0})){e.target=field;field.SendEvent(e);}}
   void Press(KeyCode code,char c){using(var e=KeyDownEvent.GetPooled(new Event{type=EventType.KeyDown,keyCode=code,character=c})){e.target=field;field.SendEvent(e);}}
+  bool developerFolded=root.Q("test-panel").ClassListContains("folded");
+  void ToggleDeveloper(){var b=root.Q<Button>("test-fold");typeof(Clickable).GetMethod("Invoke",System.Reflection.BindingFlags.Instance|System.Reflection.BindingFlags.NonPublic).Invoke(b.clickable,new object[]{null});}
   try {
+   if(developerFolded)ToggleDeveloper();await Task.Delay(100);
    w.GetComponent<OpenWorldInput>().Cancel();w.ResetEnemies();
    if(w.Foundations.Platforms.Count==0) {
     for(int z=-4;z<=4&&added==null;z++)for(int x=-4;x<=4&&added==null;x++) {
@@ -41,6 +44,6 @@ public static class VerifyQuantityFocus
    Pointer();await Task.Delay(50);var spawn=root.Q<Button>("spawn");using(var e=NavigationSubmitEvent.GetPooled()){e.target=spawn;spawn.SendEvent(e);}
    await Task.Delay(50);Check(field.isReadOnly&&!w.CameraRig.BlockKeyboard,"Spawn releases input");Check(w.Enemies.Spawned==25,"Spawn count exact");
    return "PASS: W camera with no input focus, explicit pointer typing, letter/paste rejection, digit input, Enter/world-click/spawn release, exact 25 spawn.";
-  } finally {InputSystem.RemoveDevice(key);InputSystem.RemoveDevice(mouse);oldKey?.MakeCurrent();oldMouse?.MakeCurrent();InputSystem.settings=original;UnityEngine.Object.Destroy(settings);w.ResetEnemies();if(added!=null)w.Foundations.RemoveFoundation(added);w.CameraRig.Focus=saved;field.value="100";}
+  } finally {if(developerFolded&&!root.Q("test-panel").ClassListContains("folded"))ToggleDeveloper();InputSystem.RemoveDevice(key);InputSystem.RemoveDevice(mouse);oldKey?.MakeCurrent();oldMouse?.MakeCurrent();InputSystem.settings=original;UnityEngine.Object.Destroy(settings);w.ResetEnemies();if(added!=null)w.Foundations.RemoveFoundation(added);w.CameraRig.Focus=saved;field.value="100";}
  }
 }

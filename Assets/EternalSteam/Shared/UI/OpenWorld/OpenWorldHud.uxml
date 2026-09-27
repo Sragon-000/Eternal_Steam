@@ -1,90 +1,88 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:world="EternalSteam.OpenWorld">
  <ui:Style src="OpenWorldHud.uss" />
- <ui:VisualElement class="workspace" picking-mode="Ignore">
-  <ui:VisualElement name="resource-panel" class="resource-panel">
-   <ui:VisualElement class="row"><ui:Label text="보유 자원" class="resource-title grow" /><ui:Button name="resource-fold" text="▲ 접기" /></ui:VisualElement>
-   <ui:VisualElement name="resource-body">
-   <ui:Label name="resources" text="자원 건물 설치 후 생산량이 표시됩니다." class="resource-stock" />
-   <ui:Label name="base-power" class="note" />
-   <ui:VisualElement name="map-progress">
-    <ui:Label name="map-energy" class="note" />
-    <ui:Label name="map-stage" class="note" />
-    <ui:Button name="orb-craft" text="완벽한 에너지 오브 제작" />
+ <ui:VisualElement name="hud-workspace" class="workspace" picking-mode="Ignore">
+  <ui:VisualElement class="top-strip" picking-mode="Ignore">
+   <ui:VisualElement name="main-health-panel" class="surface hud-surface health-panel">
+    <ui:Label text="메인 기지" class="eyebrow" />
+    <ui:Label name="main-health" class="title" />
+    <ui:ProgressBar name="main-health-bar" low-value="0" high-value="100" class="health-bar" />
+   </ui:VisualElement>
+   <ui:VisualElement name="status-panel" class="surface hud-surface status-panel">
+    <ui:VisualElement class="row"><ui:Label name="clock-date" class="title grow" /><ui:Button name="status-fold" text="▲" class="fold" tooltip="날짜·진행 상세 접기" /></ui:VisualElement>
+    <ui:VisualElement name="status-body"><ui:Label name="clock-remaining" class="note" /><ui:Label name="mode" class="mode" /></ui:VisualElement>
+   </ui:VisualElement>
+   <ui:VisualElement name="power-panel" class="surface hud-surface power-panel">
+    <ui:VisualElement class="row"><ui:Label text="기지 전력" class="eyebrow grow" /><ui:Button name="power-fold" text="▲" class="fold" tooltip="전력 상세 접기" /></ui:VisualElement>
+    <ui:Label name="base-power" class="note" />
+    <ui:VisualElement name="power-body"><ui:Label name="base-power-details" class="note" /></ui:VisualElement>
+   </ui:VisualElement>
+   <ui:VisualElement class="surface hud-surface progress-controls">
+    <ui:Button name="clock-pause" text="일시정지" class="primary" />
+    <ui:Label text="WASD 이동 · 휠 확대/축소" class="note" />
    </ui:VisualElement>
   </ui:VisualElement>
-  </ui:VisualElement>
-  <ui:VisualElement name="clock-panel" class="clock-panel">
-   <ui:VisualElement class="row"><ui:Label name="clock-date" text="1일차 · 낮" class="title grow" /><ui:Button name="clock-fold" text="▲ 접기" /></ui:VisualElement>
-   <ui:VisualElement name="clock-body">
-   <world:DayNightDial name="day-night-dial" class="day-night-dial" picking-mode="Ignore" turns="0">
-    <ui:Label text="낮" class="dial-day" picking-mode="Ignore" />
-    <ui:Label text="밤" class="dial-night" picking-mode="Ignore" />
-   </world:DayNightDial>
-   <ui:Label name="clock-remaining" class="note" />
-   <ui:VisualElement name="clock-dev">
-    <ui:Label text="개발자 · 날짜 유지 전환" class="note" />
-    <ui:VisualElement class="row">
-     <ui:Button name="clock-day" text="낮으로" class="grow" />
-     <ui:Button name="clock-night" text="밤으로" class="grow" />
+  <ui:VisualElement class="world-band" picking-mode="Ignore">
+   <ui:VisualElement class="left-rail" picking-mode="Ignore">
+    <ui:VisualElement name="clock-panel" class="surface hud-surface clock-panel">
+     <ui:VisualElement class="row"><ui:Label text="낮과 밤" class="eyebrow grow" /><ui:Button name="clock-fold" text="▲" class="fold" /></ui:VisualElement>
+     <ui:VisualElement name="clock-body">
+      <world:DayNightDial name="day-night-dial" class="day-night-dial" picking-mode="Ignore" turns="0"><ui:Label text="낮" class="dial-day" picking-mode="Ignore" /><ui:Label text="밤" class="dial-night" picking-mode="Ignore" /></world:DayNightDial>
+     </ui:VisualElement>
     </ui:VisualElement>
-    <ui:Button name="clock-pause" text="시간 정지" />
-   </ui:VisualElement>
-  </ui:VisualElement>
-  </ui:VisualElement>
-  <ui:VisualElement name="test-panel" class="test-panel">
-   <ui:VisualElement class="row"><ui:Label text="테스트 공간" class="title grow" /><ui:Button name="test-fold" text="▲ 접기" /></ui:VisualElement>
-   <ui:ScrollView name="test-body" class="test-body">
-   <ui:VisualElement class="row"><ui:Label text="미니맵 · N ↑" class="note grow" /><ui:Button name="minimap-fold" text="▲ 접기" /></ui:VisualElement>
-   <ui:VisualElement name="minimap-body">
-    <world:MinimapElement name="minimap" class="minimap" />
-    <ui:Label text="클릭·드래그로 카메라 이동
-노랑: 기지 · 청록: 건물 · 빨강: 적
-자홍: 보스 · 흰 테두리: 화면 범위" class="note" />
-   </ui:VisualElement>
-   <ui:VisualElement name="save-controls">
-    <ui:Label name="save-status" class="note" />
-    <ui:Button name="save" text="안전 저장" /><ui:Button name="load" text="마지막 저장 이어하기" />
-    <ui:Button name="new-game" text="새 게임" />
-    <ui:VisualElement name="new-game-confirmation"><ui:Label text="현재 진행을 보관하고 새로 시작할까요?" class="note" /><ui:Button name="new-game-confirm" text="새 게임 시작" /><ui:Button name="new-game-cancel" text="취소" /></ui:VisualElement>
-   </ui:VisualElement>
-   <ui:Label name="mode" class="mode" />
-   <ui:Label name="counts" class="note" />
-   <ui:TextField name="amount" value="100" max-length="9" />
-   <ui:Label text="총 최대 1억 · 동시 최대 10만" class="note" />
-   <ui:Toggle name="spawn-air" label="공중 적" focusable="false" />
-   <ui:Button name="spawn" text="적 소환" />
-   <ui:VisualElement class="row">
-    <ui:Button name="run" text="전투 실행" class="grow" />
-    <ui:Button name="reset" text="적 초기화" class="grow" />
-   </ui:VisualElement>
-   <ui:Button name="inventory-toggle" text="건물 인벤토리 닫기" />
-   <ui:Button name="upgrade" text="선택 건물 강화 (검증용 무료)" />
-   <ui:Label name="content-stats" class="note" />
-   <ui:Label name="device-power" class="note" />
-   <ui:Label text="WASD 이동 · 휠 확대/축소" class="note" />
-  </ui:ScrollView>
-  </ui:VisualElement>
-  <ui:VisualElement name="panel" class="inventory-panel">
-   <ui:VisualElement class="inventory-header">
-    <ui:VisualElement name="categories" class="row">
-     <ui:Button name="category-defense" text="방어" class="tab" />
-     <ui:Button name="category-resource" text="자원" class="tab" />
-     <ui:Button name="category-other" text="기타" class="tab" />
-     <ui:Button name="category-installation" text="설치" class="tab" />
+    <ui:VisualElement name="resource-panel" class="surface hud-surface resource-panel">
+     <ui:VisualElement class="row"><ui:Label text="보유 자원" class="eyebrow grow" /><ui:Button name="resource-fold" text="▲" class="fold" /></ui:VisualElement>
+     <ui:ScrollView name="resource-body" class="scroll-body"><ui:Label name="resources" class="resource-stock" /><ui:Button name="resources-all" text="전체 자원 보기" /></ui:ScrollView>
     </ui:VisualElement>
-    <ui:VisualElement class="grow" picking-mode="Ignore" />
-    <ui:Button name="inventory-fold" text="▼ 접기" class="action" />
-    <ui:Button name="edit" text="수정" class="action" />
-    <ui:Button name="confirm" text="확정" class="action primary" />
    </ui:VisualElement>
-   <ui:ScrollView name="inventory-scroll" class="inventory-scroll">
-    <ui:VisualElement name="inventory-items" class="inventory-items" />
-    <ui:Label name="inventory-empty" text="등록된 건물이 없습니다." class="empty" />
-   </ui:ScrollView>
-   <ui:VisualElement class="inventory-footer">
-    <ui:Label name="pending" class="note" />
-    <ui:Label name="message" class="message" />
+   <ui:VisualElement class="center-rail" picking-mode="Ignore">
+    <ui:VisualElement name="menu-panel" class="surface hud-surface menu-panel folded">
+     <ui:VisualElement class="row"><ui:Label text="진행 · 저장" class="eyebrow grow" /><ui:Button name="menu-fold" text="▼" class="fold" /></ui:VisualElement>
+     <ui:ScrollView name="menu-body" class="scroll-body is-hidden">
+      <ui:VisualElement name="map-progress"><ui:Label name="map-energy" class="note" /><ui:Label name="map-stage" class="note" /><ui:Button name="orb-craft" text="완벽한 에너지 오브 제작" /></ui:VisualElement>
+      <ui:VisualElement name="save-controls">
+       <ui:Label name="save-status" class="note" />
+       <ui:VisualElement class="row"><ui:Button name="save" text="안전 저장" class="grow" /><ui:Button name="load" text="이어하기" class="grow" /></ui:VisualElement>
+       <ui:Button name="new-game" text="새 게임" />
+       <ui:VisualElement name="new-game-confirmation"><ui:Label text="현재 진행을 보관하고 새로 시작할까요?" class="note" /><ui:Button name="new-game-confirm" text="새 게임 시작" /><ui:Button name="new-game-cancel" text="취소" /></ui:VisualElement>
+      </ui:VisualElement>
+      <ui:Button name="inventory-toggle" text="건물 목록 접기" />
+     </ui:ScrollView>
+    </ui:VisualElement>
+    <ui:VisualElement name="test-panel" class="surface hud-surface test-panel folded">
+     <ui:VisualElement class="row"><ui:Label text="개발자" class="eyebrow grow" /><ui:Button name="test-fold" text="▼" class="fold" /></ui:VisualElement>
+     <ui:ScrollView name="test-body" class="scroll-body is-hidden">
+      <ui:Label name="counts" class="note" /><ui:TextField name="amount" value="100" max-length="9" />
+      <ui:Label text="총 최대 1억 · 동시 최대 10만" class="note" /><ui:Toggle name="spawn-air" label="공중 적" focusable="false" />
+      <ui:Button name="spawn" text="적 소환" /><ui:Button name="run" text="전투 실행" /><ui:Button name="reset" text="적 초기화" />
+      <ui:VisualElement name="clock-dev"><ui:Label text="날짜 유지 전환" class="note" /><ui:VisualElement class="row"><ui:Button name="clock-day" text="낮으로" class="grow" /><ui:Button name="clock-night" text="밤으로" class="grow" /></ui:VisualElement></ui:VisualElement>
+     </ui:ScrollView>
+    </ui:VisualElement>
+   </ui:VisualElement>
+   <ui:VisualElement class="right-rail" picking-mode="Ignore">
+    <ui:VisualElement name="minimap-panel" class="surface hud-surface minimap-panel">
+     <ui:VisualElement class="row"><ui:Label text="미니맵 · N ↑" class="eyebrow grow" /><ui:Button name="minimap-fold" text="▲" class="fold" /></ui:VisualElement>
+     <ui:VisualElement name="minimap-body"><world:MinimapElement name="minimap" class="minimap" /><ui:Label text="클릭·드래그 이동 · 노랑 기지 / 청록 건물 / 빨강 적 / 자홍 보스" class="note" /></ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="selection-panel" class="surface hud-surface selection-panel is-hidden">
+     <ui:VisualElement class="row"><ui:Label text="선택 건물" class="eyebrow grow" /><ui:Button name="selection-close" text="×" class="fold" tooltip="선택 해제" /></ui:VisualElement>
+     <ui:ScrollView name="selection-body" class="scroll-body">
+      <ui:Label name="content-stats" class="title" /><ui:VisualElement name="selection-stats" />
+      <ui:Label name="device-power" class="note" />
+      <ui:VisualElement name="upgrade-controls"><ui:Label name="upgrade-status" class="note" /><ui:Button name="upgrade" text="강화" class="primary" /></ui:VisualElement>
+     </ui:ScrollView>
+    </ui:VisualElement>
    </ui:VisualElement>
   </ui:VisualElement>
+  <ui:VisualElement name="panel" class="surface hud-surface inventory-panel">
+   <ui:VisualElement name="inventory-header" class="inventory-header">
+    <ui:VisualElement name="categories" class="row"><ui:Button name="category-defense" text="방어" class="tab" /><ui:Button name="category-resource" text="자원" class="tab" /><ui:Button name="category-other" text="기타" class="tab" /><ui:Button name="category-installation" text="설치" class="tab" /></ui:VisualElement>
+    <ui:VisualElement class="grow" picking-mode="Ignore" /><ui:Button name="inventory-fold" text="▼" class="fold" />
+    <ui:Button name="edit" text="수정" class="action" /><ui:Button name="confirm" text="확정" class="action primary" /><ui:Button name="cancel" text="취소" class="action" />
+   </ui:VisualElement>
+   <ui:ScrollView name="inventory-scroll" class="inventory-scroll"><ui:VisualElement name="inventory-items" class="inventory-items" /><ui:Label name="inventory-empty" text="등록된 건물이 없습니다." class="empty" /></ui:ScrollView>
+   <ui:VisualElement class="inventory-footer"><ui:Label name="pending" class="note" /></ui:VisualElement>
+  </ui:VisualElement>
+  <ui:Label name="placement-hint" class="message is-hidden" picking-mode="Ignore" />
+  <ui:Label name="message" class="message" picking-mode="Ignore" />
  </ui:VisualElement>
 </ui:UXML>

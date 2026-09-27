@@ -15,7 +15,7 @@ public static class VerifyBuildingCombatPause
  var update=typeof(OpenWorldSandbox).GetMethod("Update",System.Reflection.BindingFlags.Instance|System.Reflection.BindingFlags.NonPublic);for(int i=0;i<20;i++)update.Invoke(s,null);Check(b.Module<HealthModule>().Current==1000&&s.Enemies.Alive==1,"Paused host cannot damage or despawn");
  s.EnemyAttacks.Attack(.1f);Check(b.Module<HealthModule>().Current==999,"Resume remaining attack interval");
  input.ClickWorld(b.Position);var hud=UnityEngine.Object.FindFirstObjectByType<OpenWorldHud>();hud.Refresh();var root=hud.GetComponent<UnityEngine.UIElements.UIDocument>().rootVisualElement;
- var label=UnityEngine.UIElements.UQueryExtensions.Q<UnityEngine.UIElements.Label>(root,"content-stats");Check(label.text.Contains("999 / 1000")&&label.text.Contains(b.DisplayName),"Selected current/max health and building name");
+ var label=UnityEngine.UIElements.UQueryExtensions.Q<UnityEngine.UIElements.Label>(root,"content-stats");Check(UnityEngine.UIElements.UQueryExtensions.Q<UnityEngine.UIElements.Label>(root,"selection-health").text.Contains("999 / 1000")&&label.text.Contains(b.DisplayName),"Selected current/max health and building name");
  return "PASS: real sandbox pause prevents damage, resume completes remaining interval, selected nexus shows name and 999 / 1000 health.";
  }finally{s.ResetEnemies();input.Cancel();foreach(var b in s.Content.GroundWorld.Buildings.ToArray())s.Content.GroundWorld.Remove(b.Id);}
  }

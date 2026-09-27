@@ -11,6 +11,8 @@
     "EternalSteam.Combat",
     "EternalSteam.Economy",
     "EternalSteam.Progression",
-    "EternalSteam.Presentation"
+    "EternalSteam.Presentation",
+    "Unity.TextMeshPro",
+    "UnityEngine.UI"
   ]
 }

@@ -20,7 +20,14 @@ namespace EternalSteam
         public float Decrease(float value)=>value*Mathf.Max(.1f,1-.1f*(Level-1));
         public int Count(int value)=>value+Mathf.FloorToInt(value*(Level-1)/10f+.00001f);
         public void Initialize(BuildingInstance owner,BuildingServices services){this.owner=owner;}
-        public bool TryUpgrade(out string reason){reason=null;if(owner==null||!owner.Active||owner.Disposed||Level>=MaximumLevel){reason="강화할 수 없습니다.";return false;}Level++;return true;}
+        public bool CanUpgrade(out string reason)
+        {
+            reason=null;
+            if(owner==null||!owner.Active||owner.Disposed){reason="활성 건물이 아닙니다.";return false;}
+            if(Level>=MaximumLevel){reason="최대 레벨입니다.";return false;}
+            return true;
+        }
+        public bool TryUpgrade(out string reason){if(!CanUpgrade(out reason))return false;Level++;return true;}
         public void Activate(){} public void Tick(float dt){} public void Dispose(){}
     }
 }

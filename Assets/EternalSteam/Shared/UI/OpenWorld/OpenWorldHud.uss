@@ -1,46 +1,65 @@
-.workspace { flex-grow: 1; color: #e8f1f0; -unity-font-definition: url("project://database/Assets/EternalSteam/Shared/Fonts/NotoSansCJKkr-Regular.otf"); }
-.inventory-panel { position: absolute; left: 8%; right: 8%; bottom: 20px; height: 270px; background-color: rgba(14,25,30,0.96); border-width: 1px; border-color: #50666d; }
-.inventory-header { flex-direction: row; height: 44px; flex-shrink: 0; margin-top: -44px; }
-.row { flex-direction: row; }
-.grow { flex-grow: 1; }
-.tab { width: 84px; height: 44px; margin: 0; border-bottom-width: 0; border-radius: 0; font-size: 16px; }
-.action { width: 84px; height: 44px; margin: 0; border-bottom-width: 0; border-radius: 0; font-size: 16px; }
-.primary { background-color: #386a5d; }
-.inventory-scroll { flex-grow: 1; padding: 12px; }
+.workspace { flex-grow: 1; padding: 12px; color: #e8f1f0; -unity-font-definition: url("project://database/Assets/EternalSteam/Shared/Fonts/NotoSansCJKkr-Regular.otf"); }
+.surface { background-color: rgba(12,24,29,0.95); border-width: 1px; border-color: #547074; border-top-color: #a58a51; border-radius: 3px; padding: 8px; }
+.row { flex-direction: row; align-items: center; }
+.grow { flex-grow: 1; min-width: 0; }
+.top-strip { flex-direction: row; flex-shrink: 0; align-items: flex-start; margin-bottom: 8px; }
+.health-panel { width: 200px; flex-shrink: 0; margin-right: 8px; }
+.status-panel { flex-grow: 1; flex-basis: 0; margin-right: 8px; }
+.power-panel { flex-grow: 1.3; flex-basis: 0; margin-right: 8px; }
+.progress-controls { width: 250px; flex-shrink: 0; }
+.world-band { flex-direction: row; flex-grow: 1; flex-shrink: 1; min-height: 0; margin-bottom: 8px; }
+.left-rail { width: 200px; flex-shrink: 0; min-height: 0; }
+.center-rail { flex-grow: 1; flex-basis: 0; min-width: 0; min-height: 0; align-items: flex-start; margin-left: 8px; margin-right: 8px; }
+.right-rail { width: 250px; flex-shrink: 0; min-height: 0; }
+.clock-panel { flex-shrink: 0; margin-bottom: 8px; }
+.resource-panel { flex-shrink: 1; min-height: 40px; }
+.scroll-body { flex-shrink: 1; min-height: 0; }
+.menu-panel, .test-panel { width: 100%; max-width: 330px; flex-shrink: 1; min-height: 40px; margin-bottom: 8px; }
+.minimap-panel { flex-shrink: 0; margin-bottom: 8px; }
+.selection-panel { flex-shrink: 1; min-height: 70px; }
+.minimap { width: 174px; height: 174px; align-self: center; flex-shrink: 0; overflow: hidden; }
+.day-night-dial { width: 120px; height: 120px; align-self: center; }
+.dial-day { position: absolute; top: 20px; left: 50px; color: #382b14; }
+.dial-night { position: absolute; bottom: 20px; left: 50px; color: #ffffff; }
+.title { font-size: 16px; -unity-font-style: bold; white-space: normal; margin-top: 3px; margin-bottom: 3px; }
+.eyebrow { font-size: 13px; -unity-font-style: bold; color: #ddc891; }
+.note { white-space: normal; font-size: 12px; color: #bbcdcf; margin-top: 3px; margin-bottom: 3px; }
+.mode { white-space: normal; color: #80dfc1; font-size: 12px; }
+.resource-stock { font-size: 14px; white-space: normal; margin-top: 6px; }
+.stat-row { font-size: 13px; white-space: normal; margin-top: 5px; margin-bottom: 5px; padding-bottom: 5px; border-bottom-width: 1px; border-bottom-color: #29424a; }
+.message { color: #ffdc9f; white-space: normal; font-size: 12px; flex-shrink: 0; margin-top: 5px; }
+.health-bar { height: 8px; margin-top: 5px; }
+.health-bar .unity-progress-bar__background { background-color: #243b40; }
+.health-bar .unity-progress-bar__progress { background-color: #46d6cc; }
+.health-bar .unity-progress-bar__title { display: none; }
+.inventory-panel { height: 195px; flex-shrink: 0; padding: 8px; }
+.inventory-panel.folded { height: auto; }
+.inventory-header { flex-direction: row; align-items: center; flex-shrink: 0; }
+.tab { width: 80px; height: 36px; margin: 0; border-radius: 0; font-size: 15px; }
+.action { width: 76px; height: 36px; font-size: 14px; }
+.inventory-scroll { flex-grow: 1; min-height: 0; padding-top: 6px; }
 .inventory-items { flex-direction: row; flex-wrap: wrap; }
-.inventory-cell { width: 12.49%; min-width: 0; flex-shrink: 0; padding: 4px; }
-.inventory-item { width: 100%; min-width: 0; height: 72px; margin: 0; white-space: normal; font-size: 13px; }
-.empty { color: #92a9ad; -unity-text-align: middle-center; height: 95px; }
-.inventory-footer { padding-left: 12px; padding-right: 12px; padding-bottom: 6px; flex-shrink: 0; }
-.test-panel { position: absolute; top: 18px; bottom: 350px; right: 18px; width: 250px; padding: 14px; background-color: rgba(14,25,30,0.92); border-width: 1px; border-color: #45646a; }
-.title { font-size: 20px; -unity-font-style: bold; margin-bottom: 8px; }
-.note { white-space: normal; font-size: 12px; color: #bbcdcf; margin-top: 4px; margin-bottom: 4px; }
-.mode { color: #80dfc1; margin-bottom: 4px; }
-.message { color: #ffdc9f; white-space: normal; font-size: 12px; }
-Button { background-color: #29424a; color: #edf6f3; border-width: 1px; border-color: #4f7175; border-radius: 3px; height: 30px; margin-top: 3px; margin-bottom: 3px; }
-Button:hover { background-color: #3a6267; }
-Button.selected { background-color: #356a5d; border-color: #93e7c8; }
-Button:disabled { opacity: 0.38; }
+.inventory-cell { width: 12.49%; min-width: 0; flex-shrink: 0; padding: 3px; }
+.inventory-item { width: 100%; min-width: 0; height: 64px; margin: 0; white-space: normal; font-size: 12px; }
+.inventory-footer { flex-shrink: 0; }
+.empty { color: #92a9ad; -unity-text-align: middle-center; height: 60px; }
+Button { background-color: #203940; color: #edf6f3; border-width: 1px; border-color: #4f7175; border-radius: 3px; height: 30px; margin: 3px; }
+Button:hover { background-color: #35595e; }
+Button.selected { background-color: #355e54; border-color: #ddc891; }
+Button:disabled { opacity: 0.4; }
+Button.primary { background-color: #23635f; border-color: #54c4bf; }
+Button.fold { width: 28px; min-width: 28px; height: 24px; flex-shrink: 0; padding: 0; margin: 0; }
 TextField { margin-top: 4px; margin-bottom: 6px; }
 .unity-text-field__input { background-color: #172c33; color: #ffffff; padding: 8px; border-width: 1px; border-color: #718d93; }
 .unity-scroller { width: 10px; }
 .unity-scroller__low-button, .unity-scroller__high-button { display: none; }
 .unity-base-slider__tracker { background-color: #172c33; }
 .unity-base-slider__dragger { background-color: #58777c; border-radius: 4px; }
-
-.clock-panel { position: absolute; left: 18px; top: 18px; width: 230px; padding: 12px; background-color: rgba(14,25,30,0.92); border-width: 1px; border-color: #45646a; }
-
-.day-night-dial { width: 140px; height: 140px; align-self: center; }
-.dial-day { position: absolute; top: 25px; left: 59px; color: rgb(56,43,20); }
-.dial-night { position: absolute; bottom: 25px; left: 59px; color: white; }
-
-.resource-panel { position: absolute; left: 270px; right: 286px; top: 18px; padding: 10px; background-color: rgba(14,25,30,0.94); border-width: 1px; border-color: #45646a; }
-.resource-title { font-size: 12px; color: #bbcdcf; margin-bottom: 4px; }
-.resource-stock { font-size: 14px; color: #edf6f3; white-space: normal; }
-
-.inventory-panel.folded { height: 0; border-width: 0; }
-.test-panel.folded { bottom: auto; }
-.test-body { flex-grow: 1; flex-shrink: 1; min-height: 0; }
-
-.minimap { width: 190px; height: 190px; align-self: center; flex-shrink: 0; overflow: hidden; }
-.minimap-hidden { display: none; }
+.workspace.compact .health-panel, .workspace.compact .left-rail { width: 180px; }
+.workspace.compact .progress-controls, .workspace.compact .right-rail { width: 230px; }
+.workspace.compact .day-night-dial { width: 100px; height: 100px; }
+.workspace.compact .dial-day, .workspace.compact .dial-night { left: 40px; }
+.workspace.compact .minimap { width: 140px; height: 140px; }
+.workspace.compact .inventory-panel { height: 170px; }
+.workspace.compact .inventory-panel.folded { height: auto; }
+.is-hidden, .minimap-hidden { display: none; }

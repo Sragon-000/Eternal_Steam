@@ -42,12 +42,17 @@ namespace EternalSteam.OpenWorld
             foreach(var collider in view.GetComponentsInChildren<Collider>())collider.enabled=false;
             foreach(var renderer in view.GetComponentsInChildren<LineRenderer>())renderer.enabled=false;
         }
+        public bool PreviewContent(BuildingDefinition definition,Vector3 point,out PlacementSession session,out BuildingWorld world,out Vector2Int cell,out string reason)
+        {
+            session=null;world=null;cell=default;reason=null;if(content==null||definition==null)return false;
+            if(!content.Resolve(definition,point,out session,out world,out cell,out reason))return false;
+            if(RecoveryCount>0){reason="회수를 먼저 확정하거나 취소하세요.";return false;}
+            if(world==content.GroundWorld)foreach(var f in foundations){var d=WorldGridGeometry.ToLocal(world.Grid.Center(cell,definition.Footprint)-WorldGridGeometry.Center(FoundationPlacement.Key(f.Point),8));if(Mathf.Abs(d.x)<4+definition.Footprint.x-.001f && Mathf.Abs(d.z)<4+definition.Footprint.y-.001f){reason="임시 토대와 겹칩니다.";return false;}}
+            var result=session.Validate(new PlacementRequest(-1,definition,cell));reason=result.Message;return result.Success;
+        }
         public bool AddContent(BuildingDefinition definition,Vector3 point,Vector3 direction,out string reason)
         {
-            reason=null;if(content==null)return false;
-            if(RecoveryCount>0){reason="회수를 먼저 확정하거나 취소하세요.";return false;}
-            if(!content.Resolve(definition,point,out var session,out var world,out var cell,out reason))return false;
-            if(world==content.GroundWorld)foreach(var f in foundations){var d=WorldGridGeometry.ToLocal(world.Grid.Center(cell,definition.Footprint)-WorldGridGeometry.Center(FoundationPlacement.Key(f.Point),8));if(Mathf.Abs(d.x)<4+definition.Footprint.x-.001f && Mathf.Abs(d.z)<4+definition.Footprint.y-.001f){reason="임시 토대와 겹칩니다.";return false;}}
+            if(!PreviewContent(definition,point,out var session,out var world,out var cell,out reason))return false;
             var result=session.Add(definition,cell,out var request);if(!result.Success){reason=result.Message;return false;}
             GameObject view=null;try {
                 request.Direction=direction;var center=world.Grid.Center(cell,request.Footprint);
@@ -71,11 +76,17 @@ namespace EternalSteam.OpenWorld
             if(!content.Views.ContainsKey(b))foreach(var tower in legacyGroundTowers)if(ReferenceEquals(tower.building,b)){if(recovering.Remove(tower,out var old))old.Dispose();else recovering.Add(tower,new ConstructionVisual(tower.root,line,2,WorldGridGeometry.Rotation,new Color(1,.5f,.1f)));break;}
             return true;
         }
+        public bool PreviewFoundation(Vector3 point,out Vector3 center,out string reason)
+        {
+            center=point;
+            if(RecoveryCount>0){reason="회수 작업을 먼저 확정하거나 취소하세요.";return false;}
+            if(!placement.CheckFoundation(point,out center,out reason))return false;
+            foreach(var p in foundations)if(FoundationPlacement.Key(p.Point)==FoundationPlacement.Key(point)) {reason="임시 토대가 예약한 자리입니다.";return false;}
+            return true;
+        }
         public bool AddFoundation(Vector3 point,out string reason)
         {
-            if(RecoveryCount>0){reason="회수 작업을 먼저 확정하거나 취소하세요.";return false;}
-            if(!placement.CheckFoundation(point,out var center,out reason))return false;
-            foreach(var p in foundations)if(FoundationPlacement.Key(p.Point)==FoundationPlacement.Key(point)) {reason="임시 토대가 예약한 자리입니다.";return false;}
+            if(!PreviewFoundation(point,out var center,out reason))return false;
             var view=placement.CreateFoundationPreview(center);DisableGhost(view);
             foundations.Add(new PendingFoundation{Point=point,View=view,Visual=new ConstructionVisual(view,line,8,WorldGridGeometry.Rotation,Color.cyan)});
             reason="토대 임시 배치 · 확정 후 포탑을 설치할 수 있습니다.";return true;
@@ -96,12 +107,19 @@ namespace EternalSteam.OpenWorld
             if(!placement.FindTowerCell(point,out var p,out var cell,out _))return null;
             return towers.Find(t=>t.Platform==p&&t.Request.Cell==cell);
         }
-        public bool AddTower(Vector3 point,Vector3 direction,HordeTowerKind kind,out string reason)
+        public bool PreviewTower(Vector3 point,Vector3 direction,HordeTowerKind kind,out FoundationPlacement.Platform p,out Vector2Int cell,out Vector3 center,out string reason)
         {
+            p=null;cell=default;center=point;
             if(RecoveryCount>0){reason="회수 작업을 먼저 확정하거나 취소하세요.";return false;}
-            if(!placement.FindTowerCell(point,out var p,out var cell,out var center)) {reason="확정된 토대의 빈 칸을 선택하세요.";return false;}
+            if(!placement.FindTowerCell(point,out p,out cell,out center)){reason="확정된 토대의 빈 칸을 선택하세요.";return false;}
             direction.y=0;if(!float.IsFinite(direction.sqrMagnitude)||direction.sqrMagnitude<.01f){reason="공격 방향을 지정하세요.";return false;}
             if(p==placement.GroundPlatform)foreach(var f in foundations){var d=WorldGridGeometry.ToLocal(center-WorldGridGeometry.Center(FoundationPlacement.Key(f.Point),8));if(Mathf.Abs(d.x)<5-.001f&&Mathf.Abs(d.z)<5-.001f){reason="임시 토대와 겹칩니다.";return false;}}
+            var result=p.Placement.Validate(new PlacementRequest(-1,placement.Definition(kind),cell));reason=result.Message;return result.Success;
+        }
+        public bool AddTower(Vector3 point,Vector3 direction,HordeTowerKind kind,out string reason)
+        {
+            if(!PreviewTower(point,direction,kind,out var p,out var cell,out var center,out reason))return false;
+            direction.y=0;
             var result=p.Placement.Add(placement.Definition(kind),cell,out var request);reason=result.Message;if(!result.Success)return false;
             GameObject view=null;
             try {

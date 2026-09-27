@@ -20,15 +20,26 @@ public static class VerifyStartLoop
   var resourceDef=s.ContentCatalog.Buildings.First(d=>d.Modules.Any(m=>m is ProductionModuleDefinition)&&d.Placement.RequiredNexusLevel==1);var resource=Install(resourceDef);var recipe=resourceDef.Modules.OfType<ProductionModuleDefinition>().Single();var stock=s.Content.Resources.Amount(recipe.OutputId);
   Check(!CombatPermission.Allows(tower),"Starts without credit");
   input.BeginEditing();var elapsed=s.Clock.RemainingSeconds;var energy=s.Assault.Energy.Extracted;s.AdvanceSimulation(1);Check(s.Clock.RemainingSeconds==elapsed&&s.Assault.Energy.Extracted==energy,"Editing freezes whole loop");
-  var hud=UnityEngine.Object.FindFirstObjectByType<OpenWorldHud>();var ui=hud.GetComponent<UIDocument>().rootVisualElement;
-  Check(hud.Inventory!=null,"HUD started");hud.Inventory.SelectCategory(BuildingCategory.Installation);Check(ui.Q<Button>("building-installation.main_base")==null,"No manual main entry");
-  hud.Inventory.SetVisible(false);Check(input.IsEditing,"Fold does not cancel edit");Check(ui.Q("inventory-scroll").style.display==DisplayStyle.None&&ui.Q<Button>("edit").hierarchy.parent!=null,"Header retained");hud.Inventory.SetVisible(true);Check(hud.Inventory.Category==BuildingCategory.Installation,"Fold preserves category");
+  var canvasHud=UnityEngine.Object.FindFirstObjectByType<CanvasWorldHud>();
+  var legacyHud=UnityEngine.Object.FindFirstObjectByType<OpenWorldHud>();
+  if(canvasHud!=null){
+   Check(canvasHud.Catalog!=null&&canvasHud.Catalog.Length>0,"Authored Canvas catalog ready");
+   Check(!canvasHud.Catalog.Any(e=>e.Definition==s.StartingBase.Definition),"No manual main entry");
+   canvasHud.Execute("category:2");var body=canvasHud.Sections.Single(e=>e.Id=="inventory").Body;
+   Check(body.activeSelf,"Inventory starts open");canvasHud.Execute("fold:inventory");
+   Check(input.IsEditing&&!body.activeSelf,"Catalog fold preserves edit transaction");
+   canvasHud.Execute("fold:inventory");Check(body.activeSelf&&canvasHud.Catalog.All(e=>e.View.gameObject.activeSelf==(e.Category==BuildingCategory.Installation)),"Category preserved on reopen");
+  }else{
+   Check(legacyHud!=null,"HUD present");var ui=legacyHud.GetComponent<UIDocument>().rootVisualElement;
+   Check(legacyHud.Inventory!=null,"Legacy HUD ready");legacyHud.Inventory.SelectCategory(BuildingCategory.Installation);Check(ui.Q<Button>("building-installation.main_base")==null,"No manual main entry");
+   legacyHud.Inventory.SetVisible(false);Check(input.IsEditing,"Fold does not cancel edit");Check(ui.Q("inventory-scroll").style.display==DisplayStyle.None,"Legacy catalog hidden");legacyHud.Inventory.SetVisible(true);Check(legacyHud.Inventory.Category==BuildingCategory.Installation,"Fold preserves category");
+  }
   input.Cancel();s.Clock.Paused=false;s.AdvanceSimulation(1.01f);Check(CombatPermission.Allows(tower)&&generator.Operational&&resource.Operational,"Forward coverage powers production/defense");Check(s.Assault.Energy.Extracted>energy,"Extraction resumes after editing");
   for(float t=0;t<recipe.Interval+.1f;t+=.1f)s.AdvanceSimulation(.1f);Check(s.Content.Resources.Amount(recipe.OutputId)>stock,"Actual production credited to resource bank");
   s.Clock.Paused=true;elapsed=s.Clock.RemainingSeconds;double balance=main.Module<PowerModule>().Stored;s.AdvanceSimulation(1);Check(s.Clock.RemainingSeconds==elapsed&&main.Module<PowerModule>().Stored==balance,"Clock pause freezes all systems");
   s.Clock.Paused=false;s.Clock.SetPhase(DayPhase.Night);s.AdvanceSimulation(.4f);Check(s.Assault.Planner.Points.Count==2,"Two valid night spawn points, actual count "+s.Assault.Planner.Points.Count);Check(s.Enemies.Alive>0,"Night enemies enter from safe exterior");
   s.Assault.Energy.RewardKill(long.MaxValue);s.AdvanceSimulation(.1f);Check(s.Assault.BossId>=0,"Actual boss spawned: "+s.Assault.BossSpawnFailure);s.Enemies.ApplyDamage(s.Assault.BossId,int.MaxValue);Check(s.Assault.Craft()&&s.Assault.Energy.PerfectOrb,"Boss kill to orb clear");
-  hud.Refresh();s.Clock.Paused=true;
+  if(canvasHud!=null)canvasHud.Refresh();else legacyHud.Refresh();s.Clock.Paused=true;
   return $"PASS: fixed model adopted, exact 11x11 forward cells, generator + resource + defense, edit/pause freeze and resume, fold state preservation, night spawns ({s.Assault.Coverage.Eligible.Count(x=>x)} eligible cells), boss and orb clear. Deterministic production update path.";
  }
 }

@@ -8,24 +8,26 @@ namespace EternalSteam.OpenWorld
         const int Cells=64;
         const float CellSize=2,Span=Cells*CellSize;
         readonly Mesh[] meshes=new Mesh[9];
-        readonly MeshRenderer[] renderers=new MeshRenderer[9];
+        [SerializeField] MeshRenderer[] renderers=new MeshRenderer[9];
+        [SerializeField] MeshFilter[] filters=new MeshFilter[9];
+        bool initialized;
         public bool Visible {get;private set;}
-        public void SetVisible(bool visible) {if(Visible==visible)return;Visible=visible;foreach(var renderer in renderers)if(renderer!=null)renderer.enabled=visible;}
+        public void SetVisible(bool visible) {if(!initialized||Visible==visible)return;Visible=visible;foreach(var renderer in renderers)if(renderer!=null)renderer.enabled=visible;}
         readonly Vector2Int[] keys=new Vector2Int[9];
         readonly List<Vector3> vertices=new();readonly List<int> indices=new();
         FreeCameraRig cameraRig;Terrain terrain;TileWorldGround tiles;
         Vector2Int current=new(int.MinValue,int.MinValue);
         public int RebuildCount {get;private set;}
-        public static WorldGridView Create(Transform parent,FreeCameraRig camera,Terrain ground,Material material) {
-            var go=new GameObject("World construction grid (9 chunks)");go.transform.SetParent(parent,false);
-            var view=go.AddComponent<WorldGridView>();view.cameraRig=camera;view.terrain=ground;ground.TryGetComponent(out view.tiles);
+        public void Initialize(FreeCameraRig camera,Terrain ground) {
+            if(initialized)return;
+            if(renderers.Length!=9||filters.Length!=9)throw new System.InvalidOperationException("Author nine grid chunks in the scene.");
+            cameraRig=camera;terrain=ground;ground.TryGetComponent(out tiles);
             for(int i=0;i<9;i++) {
-                var chunk=new GameObject("Grid chunk "+i);chunk.transform.SetParent(go.transform,false);
-                var mesh=new Mesh{name="Construction grid chunk"};mesh.MarkDynamic();view.meshes[i]=mesh;
-                chunk.AddComponent<MeshFilter>().sharedMesh=mesh;
-                var renderer=chunk.AddComponent<MeshRenderer>();view.renderers[i]=renderer;renderer.enabled=false;renderer.sharedMaterial=material;renderer.shadowCastingMode=UnityEngine.Rendering.ShadowCastingMode.Off;renderer.receiveShadows=false;
-                view.keys[i]=new Vector2Int(int.MinValue,int.MinValue);
-            }return view;
+                if(filters[i]==null||renderers[i]==null)throw new System.InvalidOperationException("Grid chunk reference missing in scene.");
+                var mesh=new Mesh{name="Construction grid chunk"};mesh.MarkDynamic();meshes[i]=mesh;
+                filters[i].sharedMesh=mesh;renderers[i].enabled=false;keys[i]=new Vector2Int(int.MinValue,int.MinValue);
+            }
+            initialized=true;
         }
         void LateUpdate() {
             if(!Visible)return;

@@ -9,7 +9,9 @@ namespace EternalSteam.OpenWorld
     {
         public OpenWorldSandbox Sandbox;
         public OpenWorldInput Input;
-        VisualElement root,panel,testPanel;
+        VisualElement root,workspace;
+        [Tooltip("기본 노출 자원 ID. 비어 있으면 전체 자원을 표시합니다.")] public string[] ResourcePriority=System.Array.Empty<string>();
+        SelectedBuildingView selectedView;
         TextField amount;
         SpawnQuantityInput quantity;
         public BuildingInventoryView Inventory {get;private set;}
@@ -19,12 +21,14 @@ namespace EternalSteam.OpenWorld
         ResourceStockView stockView;
         MapProgressView progressView;
         BasePowerView powerView;
+        OpenWorldHudActions actions;
         public OpenWorldMinimap Minimap {get;private set;}
         bool confirmingNewGame;
         void Start()
         {
-            root=GetComponent<UIDocument>().rootVisualElement;panel=root.Q("panel");testPanel=root.Q("test-panel");amount=root.Q<TextField>("amount");
+            root=GetComponent<UIDocument>().rootVisualElement;workspace=root.Q("hud-workspace");amount=root.Q<TextField>("amount");
             quantity=new SpawnQuantityInput(root,amount);
+            actions=new OpenWorldHudActions(Sandbox,Input);
             message=root.Q<Label>("message");counts=root.Q<Label>("counts");mode=root.Q<Label>("mode");run=root.Q<Button>("run");
             Inventory=new BuildingInventoryView(root,Entries(),entry=>{
                 quantity.EndEdit();
@@ -43,25 +47,29 @@ namespace EternalSteam.OpenWorld
             });
             Bind("inventory-toggle",()=>Inventory.SetVisible(!Inventory.Visible));
             Bind("inventory-fold",()=>Inventory.SetVisible(!Inventory.Visible));
-            BindFold("resource");BindFold("clock");BindFold("test");
+            BindFold("resource");BindFold("clock");BindFold("test");BindFold("menu");BindFold("status");BindFold("power");
+            Bind("cancel",()=>Input.Cancel());Bind("selection-close",()=>Input.ClearSelection());
             root.Q<Toggle>("spawn-air").RegisterValueChangedCallback(e=>Sandbox.SpawnAir=e.newValue);
             Bind("spawn",()=>{if(!Input.IsEditing && Sandbox.Spawn(amount.value)){var m=Sandbox.Message;Input.Cancel();Sandbox.Message=m;}});
             Bind("reset",()=>Sandbox.ResetEnemies());
-            Bind("upgrade",()=>{if(Input.IsEditing||Sandbox.Content.Defeated||Sandbox.Persistence?.Blocked==true)return;var building=Input.SelectedContent??Input.SelectedTower?.building;var upgrade=building?.Module<IUpgradeControl>();if(upgrade==null){Sandbox.Message="일반 상태에서 강화할 건물을 선택하세요.";return;}string reason;bool ok=Sandbox.Persistence!=null?Sandbox.Persistence.Upgrades.TryUpgrade(building,out reason):upgrade.TryUpgrade(out reason);Sandbox.Message=ok?$"강화 Lv.{upgrade.Level} · 검증용 무료":reason;if(ok)Sandbox.Persistence?.RequestAutoSave();});
+            Bind("upgrade",()=>actions.TryUpgrade());
             Bind("save",()=>Sandbox.Persistence?.Save());
             Bind("load",()=>Sandbox.Persistence?.ContinueSaved());
             Bind("new-game",()=>confirmingNewGame=true);
             Bind("new-game-confirm",()=>Sandbox.Persistence?.NewGame());
             Bind("new-game-cancel",()=>confirmingNewGame=false);
-            Bind("run",()=>{if(Input.IsEditing||Sandbox.Content.Defeated||Sandbox.Persistence?.Blocked==true)return;bool next=Sandbox.Assault!=null?Sandbox.Clock.Paused:!Sandbox.Running;Input.Cancel();Sandbox.Running=next;if(Sandbox.Assault!=null)Sandbox.Clock.Paused=!next;});
+            Bind("run",()=>actions.ToggleRun());
             Minimap=new OpenWorldMinimap(root,Sandbox);
-            stockView=new ResourceStockView(root.Q<Label>("resources"),Sandbox.Content.Resources,Sandbox.ContentCatalog);
+            stockView=new ResourceStockView(root.Q<Label>("resources"),Sandbox.Content.Resources,Sandbox.ContentCatalog,ResourcePriority);
+            selectedView=new SelectedBuildingView(root,Sandbox);
+            Bind("resources-all",()=>stockView.SetShowAll(!stockView.ShowAll));
+            root.Q("resources-all").EnableInClassList("is-hidden",!stockView.HasPriority);
             clockView=new WorldClockView(root);
             progressView=new MapProgressView(root,Sandbox);powerView=new BasePowerView(root,Sandbox);
             root.Q("clock-dev").style.display=(Application.isEditor||Debug.isDebugBuild)?DisplayStyle.Flex:DisplayStyle.None;
             Bind("clock-day",()=>{Sandbox.Clock.SetPhase(DayPhase.Day);Sandbox.Persistence?.Changed();});
             Bind("clock-night",()=>{Sandbox.Clock.SetPhase(DayPhase.Night);Sandbox.Persistence?.Changed();});
-            Bind("clock-pause",()=>Sandbox.Clock.Paused=!Sandbox.Clock.Paused);
+            Bind("clock-pause",()=>actions.ToggleProgress());
             Refresh();
         }
         IEnumerable<InventoryBuilding> Entries()
@@ -78,7 +86,7 @@ namespace EternalSteam.OpenWorld
         void BindFold(string name)
         {
             var body=root.Q(name+"-body");var container=root.Q(name+"-panel");
-            Bind(name+"-fold",()=>{bool folded=!container.ClassListContains("folded");container.EnableInClassList("folded",folded);body.style.display=folded?DisplayStyle.None:DisplayStyle.Flex;root.Q<Button>(name+"-fold").text=folded?"▼ 펼치기":"▲ 접기";});
+            Bind(name+"-fold",()=>{bool folded=!container.ClassListContains("folded");container.EnableInClassList("folded",folded);body.EnableInClassList("is-hidden",folded);root.Q<Button>(name+"-fold").text=folded?"▼":"▲";root.Q<Button>(name+"-fold").tooltip=folded?"펼치기":"접기";});
         }
         void OnDestroy(){quantity?.Dispose();Minimap?.Dispose();}
         void Bind(string name,System.Action action)
@@ -97,46 +105,62 @@ namespace EternalSteam.OpenWorld
             clockView?.Refresh(Sandbox.Clock,editing);
             root.Q<Button>("edit").EnableInClassList("selected",editing);root.Q<Button>("confirm").SetEnabled(editing);
             root.Q<Button>("edit").SetEnabled(!locked);
-            root.Q<Button>("spawn").SetEnabled(!editing&&!locked);run.SetEnabled(!editing&&!locked);
+            root.Q<Button>("spawn").SetEnabled(!editing&&!locked);
+            bool canControl=actions.CanInteract(out var controlReason);
+            run.SetEnabled(canControl);run.tooltip=controlReason;
+            root.Q<Button>("clock-pause").SetEnabled(canControl);root.Q<Button>("clock-pause").tooltip=controlReason;
+            root.Q<Button>("clock-pause").text=actions.ProgressLabel;
             root.Q<Button>("inventory-toggle").text=Inventory.Visible?"건물 인벤토리 접기":"건물 인벤토리 펼치기";
-            root.Q<Button>("inventory-fold").text=Inventory.Visible?"▼ 접기":"▲ 펼치기";
-            root.Q<Label>("pending").text=$"임시 작업 {Input.Edits?.Count??0}개 · 3D XZ 격자 / Y축 45°";
+            root.Q<Button>("inventory-fold").text=Inventory.Visible?"▼":"▲";
+            root.Q<Button>("inventory-fold").tooltip=Inventory.Visible?"카탈로그 접기":"카탈로그 펼치기";
+            root.Q("confirm").EnableInClassList("is-hidden",!editing);root.Q("cancel").EnableInClassList("is-hidden",!editing);
+            root.Q<Button>("cancel").SetEnabled(editing);
+            run.EnableInClassList("is-hidden",Sandbox.Assault!=null);
+            root.Q<Button>("resources-all").text=stockView.ShowAll?"주요 자원만 보기":"전체 자원 보기";
+            root.Q<Label>("pending").text=editing?$"수정 중 · 임시 작업 {Input.Edits?.Count??0}개":"건물을 선택해 정보를 확인하세요. 설치·회수는 수정 모드에서 진행합니다.";
             message.text=Sandbox.Message;
+            var placementHint=root.Q<Label>("placement-hint");placementHint.text=Input.PlacementHint;placementHint.EnableInClassList("is-hidden",string.IsNullOrEmpty(Input.PlacementHint));
             stockView?.Refresh();
-            var selected=Input.SelectedContent??Input.SelectedTower?.building;if(selected?.Disposed==true)selected=null;var weapon=selected?.Module<WeaponRuntime>();powerView?.Refresh(selected);
-            root.Q<Label>("content-stats").text=weapon!=null&&!selected.Disposed?$"{selected.DisplayName} Lv.{selected.Module<IUpgradeControl>()?.Level??1}\n피해 {weapon.Damage:0.#} · 사거리 {weapon.Range:0.#}m · 간격 {weapon.Interval:0.##}초":selected!=null?selected.DisplayName:$"신규 콘텐츠 검증 · 기지 Lv.{Sandbox.Content.LevelCap}";
-            if(Sandbox.Content.BaseRules){int subCount=0;foreach(var context in Sandbox.Content.Bases.Bases.Values)if(context.Nexus.Module<IBaseRole>()?.Role==BaseRole.Sub)subCount++;
-                root.Q<Label>("content-stats").text+=$"\n메인 기지 Lv.{Sandbox.Content.LevelCap} · 서브 {subCount}/{Sandbox.Content.SubLimit}";
-                if(selected?.Module<IBaseRole>() is IBaseRole role&&selected.Module<IBuildArea>() is IBuildArea area)root.Q<Label>("content-stats").text+=$"\n{(role.Role==BaseRole.Main?"메인":"서브")} Lv.{selected.Module<IUpgradeControl>()?.Level??1} · 설치 범위 {area.Radius:0}×{area.Radius:0}칸";
-            }
-            if(selected?.Module<HealthModule>() is HealthModule health)root.Q<Label>("content-stats").text+=$"\n체력 {health.Current:0.#} / {health.Maximum:0.#}";
-            if(selected?.Module<ITurretRotation>() is ITurretRotation rotation)root.Q<Label>("content-stats").text+=$"\n회전 {rotation.DegreesPerSecond:0.#}°/초";
-            if(Sandbox.MeetingConstructionRules) {
-                var chosen=selected;
-                var label=root.Q<Label>("content-stats");
-                string owner=chosen?.OwnerBaseId;
-                string state=chosen==null?"":chosen.Operational?"가동 중":(chosen.OperationBlock.HasFlag(OperationBlock.BaseLost)?"기지 없음 / 상실":"유효 범위 밖")+" · 비작동";
-                label.text+=(chosen!=null?"\n"+state:"")+"\n소속 기지 "+(owner==null?"미지정":owner.Substring(0,6));
-                var baseId=Sandbox.Content.Bases.SelectedBaseId;
-                label.text+="\n다음 배치 기지 "+(baseId==null?"없음":baseId.Substring(0,6));
-                if(chosen?.Module<IBaseIdentity>()!=null && Sandbox.Regions!=null)foreach(var region in Sandbox.Regions)if(region!=null&&region.Contains(chosen.Position)){label.text+="\n"+region.DisplayName+" · 예정 자원 "+region.ResourceId;break;}
-            }
-            root.Q<Button>("upgrade").SetEnabled(!locked&&!editing&&selected?.Module<IUpgradeControl>()!=null);
+            var selected=Input.SelectedContent??Input.SelectedTower?.building;if(selected?.Disposed==true)selected=null;
+            powerView?.Refresh(selected);selectedView.Refresh(selected,editing);
+            var main=Sandbox.Content.MainBase;var mainHealth=main?.Module<HealthModule>();
+            bool hasHealth=mainHealth!=null&&main.Active&&!main.Disposed;
+            root.Q<Label>("main-health").text=hasHealth?$"{mainHealth.Current:0.#} / {mainHealth.Maximum:0.#}":Sandbox.Content.Defeated?"메인 기지 파괴":main!=null&&main.Active&&!main.Disposed?main.DisplayName:"메인 기지 없음";
+            var bar=root.Q<ProgressBar>("main-health-bar");bar.EnableInClassList("is-hidden",!hasHealth);if(hasHealth)bar.value=100*mainHealth.Current/mainHealth.Maximum;
+            var upgradeState=actions.ReadUpgrade();var upgradeButton=root.Q<Button>("upgrade");
+            upgradeButton.SetEnabled(upgradeState.Available);upgradeButton.tooltip=upgradeState.Reason;
+            upgradeButton.text=upgradeState.Available?$"강화 Lv.{upgradeState.Level} → {upgradeState.Level+1}":"선택 건물 강화";
+            root.Q<Label>("upgrade-status").text=upgradeState.Available?(upgradeState.VerificationFree?"검증용 무료":"설정된 강화 비용 적용"):upgradeState.Reason;
             counts.text=Sandbox.Enemies==null?"":$"토대 {Sandbox.Foundations.Platforms.Count} · 포탑 {Sandbox.Towers.Count}\n적 {Sandbox.Enemies.Alive:N0} / {Sandbox.Enemies.MaxCount:N0} · 처치 {Sandbox.Enemies.Killed:N0}\n소환 대기 {Sandbox.SpawnStream.Pending:N0} · 적은 도착 후 건물 공격";
-            mode.text=Sandbox.Content.Defeated?"메인 기지 파괴 · 공략 실패":editing?"수정 중":Sandbox.Clock.Paused?"일시정지":Sandbox.Running?"전투 실행 중":"준비";
-            run.text=Sandbox.Assault!=null?(Sandbox.Clock.Paused?"계속 진행":"일시정지"):(Sandbox.Running?"일시정지":"전투 실행");
+            mode.text=actions.Mode;
+            run.text=actions.RunLabel;
+        }
+        public static bool IsShown(VisualElement element)
+        {
+            if(element?.panel==null)return false;
+            for(var current=element;current!=null;current=current.parent)
+                if(current.ClassListContains("is-hidden")||current.ClassListContains("minimap-hidden")||current.resolvedStyle.display==DisplayStyle.None||current.resolvedStyle.visibility==Visibility.Hidden)return false;
+            return true;
+        }
+        public bool IsPointerOverHud(Vector2 pointer)
+        {
+            if(root?.panel==null)return false;
+            for(var hit=root.panel.Pick(pointer);hit!=null;hit=hit.parent)
+                if(hit.ClassListContains("hud-surface")&&IsShown(hit))return true;
+            return false;
         }
         void Update()
         {
             if(root?.panel==null||Inventory==null)return;var mouse=Mouse.current;
             var pointer=mouse==null?Vector2.negativeInfinity:RuntimePanelUtils.ScreenToPanel(root.panel,new Vector2(mouse.position.x.ReadValue(),Screen.height-mouse.position.y.ReadValue()));
-            // The tabs protrude above the body; include their bounds in UI hit blocking.
-            bool over=((Inventory.Visible&&panel.worldBound.Contains(pointer))||root.Q("categories").parent.worldBound.Contains(pointer))||testPanel.worldBound.Contains(pointer)||root.Q("clock-panel").worldBound.Contains(pointer)||root.Q("resource-panel").worldBound.Contains(pointer);
-            over|=Minimap?.Interacting==true;Minimap?.Refresh(Time.unscaledTimeAsDouble);
+            workspace.EnableInClassList("compact",workspace.layout.height<760||workspace.layout.width<1200);
+            bool over=IsPointerOverHud(pointer);
+            Minimap?.Refresh(Time.unscaledTimeAsDouble);over|=Minimap?.Interacting==true;
             Input.PointerOverUI=over;Sandbox.CameraRig.BlockPointer=over||Input.Dragging;
-            if(mouse!=null&&mouse.leftButton.wasPressedThisFrame&&!amount.worldBound.Contains(pointer))quantity.EndEdit();
+            if(!IsShown(amount)||(mouse!=null&&mouse.leftButton.wasPressedThisFrame&&!amount.worldBound.Contains(pointer)))quantity.EndEdit();
             if(Keyboard.current?.escapeKey.wasPressedThisFrame??false)quantity.EndEdit();
-            Sandbox.CameraRig.BlockKeyboard=quantity.Editing||Input.Dragging||Minimap?.Interacting==true;Refresh();
+            var mapPanel=root.Q("minimap-panel");
+            Sandbox.CameraRig.BlockKeyboard=quantity.Editing||Input.Dragging||Minimap?.Interacting==true||(IsShown(mapPanel)&&mapPanel.worldBound.Contains(pointer));Refresh();
         }
     }
 }

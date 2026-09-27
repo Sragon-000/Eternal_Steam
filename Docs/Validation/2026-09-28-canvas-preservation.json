@@ -1,0 +1,37 @@
+[
+  {
+    "scene": "StartRegionBeforeBasePower.unity",
+    "existingObjectsPreserved": true,
+    "existingBlocksChanged": 3
+  },
+  {
+    "scene": "StartRegionSandbox_BeforeFixedMain.unity",
+    "existingObjectsPreserved": true,
+    "existingBlocksChanged": 3
+  },
+  {
+    "scene": "OpenWorldSandbox_BeforeTileWorld.unity",
+    "existingObjectsPreserved": true,
+    "existingBlocksChanged": 3
+  },
+  {
+    "scene": "StartRegionSandbox_BeforeImportedMap.unity",
+    "existingObjectsPreserved": true,
+    "existingBlocksChanged": 3
+  },
+  {
+    "scene": "OpenWorldSandbox.unity",
+    "existingObjectsPreserved": true,
+    "existingBlocksChanged": 5
+  },
+  {
+    "scene": "StartRegionSandbox.unity",
+    "existingObjectsPreserved": true,
+    "existingBlocksChanged": 5
+  },
+  {
+    "scene": "StartRegionSandbox_BeforeImportedMap 1.unity",
+    "existingObjectsPreserved": true,
+    "existingBlocksChanged": 3
+  }
+]

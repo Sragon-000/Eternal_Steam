@@ -16,7 +16,10 @@ public static class VerifyOpenWorldCameraInput
   Vector3 saved=s.CameraRig.Focus;
   var originalSettings=InputSystem.settings;var settings=UnityEngine.Object.Instantiate(originalSettings);
   InputSystem.settings=settings;settings.scrollDeltaBehavior=InputSettings.ScrollDeltaBehavior.UniformAcrossAllPlatforms;settings.backgroundBehavior=InputSettings.BackgroundBehavior.IgnoreFocus;settings.editorInputBehaviorInPlayMode=InputSettings.EditorInputBehaviorInPlayMode.AllDeviceInputAlwaysGoesToGameView;
+  bool developerFolded=root.Q("test-panel").ClassListContains("folded");
+  void ToggleDeveloper(){var b=root.Q<Button>("test-fold");typeof(Clickable).GetMethod("Invoke",System.Reflection.BindingFlags.Instance|System.Reflection.BindingFlags.NonPublic).Invoke(b.clickable,new object[]{null});}
   try {
+   if(developerFolded)ToggleDeveloper();await Task.Delay(100);
    (root.Q<Button>("explore") ?? root.Q<Button>("run")).Focus();await Task.Delay(100);var before=s.CameraRig.Focus;
    InputSystem.QueueStateEvent(keyboard,new KeyboardState(Key.W));await Task.Delay(200);InputSystem.ResetDevice(keyboard);
    if(s.CameraRig.Focus.z<=before.z)throw new Exception("W must move camera: pressed="+keyboard.wKey.isPressed+" block="+s.CameraRig.BlockKeyboard+" current="+(Keyboard.current==keyboard));
@@ -45,6 +48,6 @@ public static class VerifyOpenWorldCameraInput
    await Wheel(1,uiPoint);await Wheel(-1,uiPoint);
    if(s.CameraRig.Zoom!=zoom)throw new Exception("UI scroll must not zoom camera");
    return "PASS: InputSystem virtual keyboard W pans, text focus blocks WASD, normalized +/-1 wheel changes actual camera size, reverse/no-drift/fractional/multiple-step/limits, UI scroll blocked.";
-  } finally {InputSystem.ResetDevice(keyboard);s.CameraRig.Focus=saved;(root.Q<Button>("explore") ?? root.Q<Button>("run")).Focus();InputSystem.RemoveDevice(mouse);originalMouse?.MakeCurrent();s.CameraRig.Zoom=savedZoom;InputSystem.RemoveDevice(keyboard);originalKeyboard?.MakeCurrent();InputSystem.settings=originalSettings;UnityEngine.Object.Destroy(settings);}
+  } finally {if(developerFolded&&!root.Q("test-panel").ClassListContains("folded"))ToggleDeveloper();InputSystem.ResetDevice(keyboard);s.CameraRig.Focus=saved;(root.Q<Button>("explore") ?? root.Q<Button>("run")).Focus();InputSystem.RemoveDevice(mouse);originalMouse?.MakeCurrent();s.CameraRig.Zoom=savedZoom;InputSystem.RemoveDevice(keyboard);originalKeyboard?.MakeCurrent();InputSystem.settings=originalSettings;UnityEngine.Object.Destroy(settings);}
  }
 }

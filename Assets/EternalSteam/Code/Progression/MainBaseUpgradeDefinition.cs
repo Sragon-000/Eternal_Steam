@@ -13,7 +13,14 @@ namespace EternalSteam
             public int Level=>campaign.MainLevel;
             public int MaximumLevel=>CampaignProgression.MaximumLevel;
             public void Initialize(BuildingInstance owner,BuildingServices services){this.owner=owner;campaign=services.Campaign??throw new InvalidOperationException("Shared main requires campaign");}
-            public bool TryUpgrade(out string reason){reason=null;if(!owner.Active||owner.Disposed){reason="활성 메인 기지가 아닙니다.";return false;}if(!campaign.TryUpgrade(Level)){reason="최대 레벨입니다.";return false;}return true;}
+            public bool CanUpgrade(out string reason)
+            {
+                reason=null;
+                if(owner==null||!owner.Active||owner.Disposed){reason="활성 메인 기지가 아닙니다.";return false;}
+                if(Level>=MaximumLevel){reason="최대 레벨입니다.";return false;}
+                return true;
+            }
+            public bool TryUpgrade(out string reason){if(!CanUpgrade(out reason))return false;if(!campaign.TryUpgrade(Level)){reason="공유 메인 기지 레벨을 변경할 수 없습니다.";return false;}return true;}
             public void Activate(){}public void Tick(float dt){}public void Dispose(){}
         }
     }

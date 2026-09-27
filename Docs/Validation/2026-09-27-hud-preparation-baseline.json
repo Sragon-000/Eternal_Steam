@@ -1,0 +1,418 @@
+{
+  "date": "2026-09-27",
+  "scope": "Static preparation only; no Unity import, compilation, Play tests or build executed. Existing repository documents are referenced, not new user attachments.",
+  "head": "c7e945bec5dc882cad68bb9de68c97b1e3e5d0ae",
+  "unity_version": "6000.3.14f1",
+  "checks": {
+    "xml_well_formed": true,
+    "unique_named_elements": 58,
+    "literal_Q_references_resolved": true,
+    "scene_ui_panel_catalog_guids_resolved": true
+  },
+  "limitations": [
+    "Only literal Q(name) calls in listed adapters were checked; dynamic Bind/BindFold names and class queries were reviewed separately.",
+    "XML parsing does not validate Unity UXML import or USS support.",
+    "Hashes identify existing working-tree files, including untracked design documents."
+  ],
+  "ui_elements": [
+    {
+      "name": "resource-panel",
+      "type": "VisualElement"
+    },
+    {
+      "name": "resource-fold",
+      "type": "Button"
+    },
+    {
+      "name": "resource-body",
+      "type": "VisualElement"
+    },
+    {
+      "name": "resources",
+      "type": "Label"
+    },
+    {
+      "name": "base-power",
+      "type": "Label"
+    },
+    {
+      "name": "map-progress",
+      "type": "VisualElement"
+    },
+    {
+      "name": "map-energy",
+      "type": "Label"
+    },
+    {
+      "name": "map-stage",
+      "type": "Label"
+    },
+    {
+      "name": "orb-craft",
+      "type": "Button"
+    },
+    {
+      "name": "clock-panel",
+      "type": "VisualElement"
+    },
+    {
+      "name": "clock-date",
+      "type": "Label"
+    },
+    {
+      "name": "clock-fold",
+      "type": "Button"
+    },
+    {
+      "name": "clock-body",
+      "type": "VisualElement"
+    },
+    {
+      "name": "day-night-dial",
+      "type": "DayNightDial"
+    },
+    {
+      "name": "clock-remaining",
+      "type": "Label"
+    },
+    {
+      "name": "clock-dev",
+      "type": "VisualElement"
+    },
+    {
+      "name": "clock-day",
+      "type": "Button"
+    },
+    {
+      "name": "clock-night",
+      "type": "Button"
+    },
+    {
+      "name": "clock-pause",
+      "type": "Button"
+    },
+    {
+      "name": "test-panel",
+      "type": "VisualElement"
+    },
+    {
+      "name": "test-fold",
+      "type": "Button"
+    },
+    {
+      "name": "test-body",
+      "type": "ScrollView"
+    },
+    {
+      "name": "minimap-fold",
+      "type": "Button"
+    },
+    {
+      "name": "minimap-body",
+      "type": "VisualElement"
+    },
+    {
+      "name": "minimap",
+      "type": "MinimapElement"
+    },
+    {
+      "name": "save-controls",
+      "type": "VisualElement"
+    },
+    {
+      "name": "save-status",
+      "type": "Label"
+    },
+    {
+      "name": "save",
+      "type": "Button"
+    },
+    {
+      "name": "load",
+      "type": "Button"
+    },
+    {
+      "name": "new-game",
+      "type": "Button"
+    },
+    {
+      "name": "new-game-confirmation",
+      "type": "VisualElement"
+    },
+    {
+      "name": "new-game-confirm",
+      "type": "Button"
+    },
+    {
+      "name": "new-game-cancel",
+      "type": "Button"
+    },
+    {
+      "name": "mode",
+      "type": "Label"
+    },
+    {
+      "name": "counts",
+      "type": "Label"
+    },
+    {
+      "name": "amount",
+      "type": "TextField"
+    },
+    {
+      "name": "spawn-air",
+      "type": "Toggle"
+    },
+    {
+      "name": "spawn",
+      "type": "Button"
+    },
+    {
+      "name": "run",
+      "type": "Button"
+    },
+    {
+      "name": "reset",
+      "type": "Button"
+    },
+    {
+      "name": "inventory-toggle",
+      "type": "Button"
+    },
+    {
+      "name": "upgrade",
+      "type": "Button"
+    },
+    {
+      "name": "content-stats",
+      "type": "Label"
+    },
+    {
+      "name": "device-power",
+      "type": "Label"
+    },
+    {
+      "name": "panel",
+      "type": "VisualElement"
+    },
+    {
+      "name": "categories",
+      "type": "VisualElement"
+    },
+    {
+      "name": "category-defense",
+      "type": "Button"
+    },
+    {
+      "name": "category-resource",
+      "type": "Button"
+    },
+    {
+      "name": "category-other",
+      "type": "Button"
+    },
+    {
+      "name": "category-installation",
+      "type": "Button"
+    },
+    {
+      "name": "inventory-fold",
+      "type": "Button"
+    },
+    {
+      "name": "edit",
+      "type": "Button"
+    },
+    {
+      "name": "confirm",
+      "type": "Button"
+    },
+    {
+      "name": "inventory-scroll",
+      "type": "ScrollView"
+    },
+    {
+      "name": "inventory-items",
+      "type": "VisualElement"
+    },
+    {
+      "name": "inventory-empty",
+      "type": "Label"
+    },
+    {
+      "name": "pending",
+      "type": "Label"
+    },
+    {
+      "name": "message",
+      "type": "Label"
+    }
+  ],
+  "literal_queries": {
+    "OpenWorldHud": [
+      "amount",
+      "categories",
+      "clock-dev",
+      "clock-panel",
+      "confirm",
+      "content-stats",
+      "counts",
+      "edit",
+      "inventory-fold",
+      "inventory-toggle",
+      "load",
+      "message",
+      "mode",
+      "new-game-confirmation",
+      "panel",
+      "pending",
+      "reset",
+      "resource-panel",
+      "resources",
+      "run",
+      "save",
+      "save-controls",
+      "save-status",
+      "spawn",
+      "spawn-air",
+      "test-panel",
+      "upgrade"
+    ],
+    "OpenWorldMinimap": [
+      "minimap",
+      "minimap-body",
+      "minimap-fold",
+      "test-body"
+    ],
+    "BuildingInventoryView": [
+      "inventory-empty",
+      "inventory-items",
+      "inventory-scroll",
+      "panel"
+    ],
+    "ResourceStockView": [],
+    "BasePowerView": [
+      "base-power",
+      "device-power"
+    ],
+    "WorldClockView": [
+      "clock-date",
+      "clock-pause",
+      "clock-remaining",
+      "day-night-dial"
+    ],
+    "MapProgressView": [
+      "map-energy",
+      "map-progress",
+      "map-stage",
+      "orb-craft"
+    ]
+  },
+  "files": [
+    {
+      "path": "Assets/EternalSteam/Shared/UI/OpenWorld/OpenWorldHud.uxml",
+      "bytes": 5291,
+      "sha256": "f0af0634680b184832c3d8a3036c3cffb86e195042a8c35453a3b8f5a676d3e3"
+    },
+    {
+      "path": "Assets/EternalSteam/Shared/UI/OpenWorld/OpenWorldHud.uss",
+      "bytes": 3421,
+      "sha256": "b0b355a28b8abcf92ba9738460168dfba803668f906be7cd7bdc81a9a8485a99"
+    },
+    {
+      "path": "Docs/BELTFED_UI_시안_적용계획.md",
+      "bytes": 17994,
+      "sha256": "c6b284d5592fc5182548bd0b42c7a7275f48488146380ce38dd1cc2de25ba5b2"
+    },
+    {
+      "path": "Assets/EternalSteam/Scene/Tests/StartRegionSandbox.unity",
+      "bytes": 1805050,
+      "sha256": "3cd8c4e7b5a310756ab652960f792bbe55c817c3e3fdcb4eac5c8c1a4fd7c1f0"
+    },
+    {
+      "path": "Assets/EternalSteam/Settings/UI/SamplePanel.asset",
+      "bytes": 1892,
+      "sha256": "28c6ad4bfc590be6275cde4a387364ac86502a323aed4040301de98fa02ecee6"
+    },
+    {
+      "path": "Assets/EternalSteam/Content/Buildings/StartLoop/Catalog.asset",
+      "bytes": 1971,
+      "sha256": "6f61a8c6ea5f3acdeb525149e65bec0335107b73cec77032328be3e6198b9656"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/OpenWorldHud.cs",
+      "bytes": 12491,
+      "sha256": "922dd439bedccff087ba4d7092e717ca9f5e4af7fda2a5c4a5be0b3b95da8145"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/OpenWorldMinimap.cs",
+      "bytes": 4529,
+      "sha256": "b7f4931e1762e53660ae61097611ba9ceb82e61a43c2042d59758eb0d6f82ffd"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/BuildingInventoryView.cs",
+      "bytes": 3103,
+      "sha256": "9ba9c8b0fd1f40d2e8ae87990a8e795eddf321a88a1891d992cceec7f1fffc8f"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/ResourceStockView.cs",
+      "bytes": 1534,
+      "sha256": "81b68d20745f29924bff7eca6042c5c9a71a704b30817193f49964cfd3e1fcd2"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/BasePowerView.cs",
+      "bytes": 1657,
+      "sha256": "8c9639e8f09c79ff3b0acdfa48c636ff29e77b4730882c2c403d4fd3d8dce483"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/WorldClockView.cs",
+      "bytes": 1427,
+      "sha256": "56ade346935e33ad814807f50de4e04c5fedee915ea0f853f81c82fad12a209f"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/MapProgressView.cs",
+      "bytes": 2038,
+      "sha256": "493f272a8379329249fb6be92950b4352fa07e0cd7f9969a9870f57f37ee7116"
+    },
+    {
+      "path": "Tools/VerifyHudFolds.cs",
+      "bytes": 2496,
+      "sha256": "bf0c1d9043f780eb3ed859409fa4eb8269d9c7aa2ca672381bbf83c0fd9ddb83"
+    },
+    {
+      "path": "Tools/VerifyMinimap.cs",
+      "bytes": 6016,
+      "sha256": "b974bc004b91065f1fdd0ea91b5c253e7a3b50bb9562b41d0820095e3631b3df"
+    },
+    {
+      "path": "Tools/VerifyBuildingInventoryUI.cs",
+      "bytes": 8251,
+      "sha256": "b9dd329aa817a2cd0b7c7a4e2578e2e70b8dbf66cd8c07f30fdc5e50a4d01b09"
+    },
+    {
+      "path": "Tools/VerifyWorldGridVisibility.cs",
+      "bytes": 1850,
+      "sha256": "deba0c85ce27b52ed0ebdc9a9a804765800bd8a8a91887c55d1d702449b0672d"
+    },
+    {
+      "path": "Tools/VerifyStartLoop.cs",
+      "bytes": 5109,
+      "sha256": "bd1602b5112c7358f6664fda3756667851f5a82682d48e201388d46a164c5f80"
+    },
+    {
+      "path": "Docs/References/BELTFED_UI_시안_v2.png",
+      "bytes": 2051481,
+      "sha256": "d6714ec103b94be432812303ad634bd245d92d7b933876cde6762cbc38f7a83c"
+    },
+    {
+      "path": "Docs/References/BELTFED_UI_시안_v3_강화패널.png",
+      "bytes": 1983025,
+      "sha256": "3c144890f93af307770516bf994ee3f6e514bb23815f21d13f42df66d648ad1e"
+    },
+    {
+      "path": "Docs/References/BELTFED_UI_시안_v4_설치.png",
+      "bytes": 2410614,
+      "sha256": "8cd582f7694d94bd4a6b5c02924b2179ac68a4bf7a476a25d3ebf5b171fd70cb"
+    }
+  ]
+}

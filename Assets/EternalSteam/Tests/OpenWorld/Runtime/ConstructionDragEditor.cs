@@ -14,7 +14,6 @@ namespace EternalSteam.OpenWorld
         readonly WallPlacementStroke stroke;
         readonly List<BuildingSelectionItem> candidates=new();
         readonly LineRenderer rectangle;
-        readonly Material material;
         Vector2 startScreen;
         Vector3? startWorld;
         BuildingDefinition definition;
@@ -40,11 +39,9 @@ namespace EternalSteam.OpenWorld
         public ConstructionDragEditor(OpenWorldInput input,OpenWorldSandbox sandbox,WorldEditSession edits)
         {
             this.input=input;this.sandbox=sandbox;this.edits=edits;stroke=new WallPlacementStroke(edits);
-            var view=new GameObject("Drag selection rectangle");view.transform.SetParent(input.transform,false);
-            rectangle=view.AddComponent<LineRenderer>();rectangle.useWorldSpace=true;rectangle.positionCount=5;rectangle.enabled=false;
-            material=new Material(sandbox.LineMaterial);material.SetColor("_BaseColor",Color.cyan);material.SetColor("_Color",Color.cyan);
-            material.SetInt("_ZTest",(int)CompareFunction.Always);material.renderQueue=4000;rectangle.sharedMaterial=material;
-            rectangle.shadowCastingMode=ShadowCastingMode.Off;rectangle.receiveShadows=false;
+            rectangle=input.DragRectangle;
+            if(rectangle==null)throw new InvalidOperationException("Assign the saved drag selection LineRenderer.");
+            rectangle.enabled=false;
         }
         public void Begin(Vector2 screen,Vector3? world,bool forceRectangle)
         {
@@ -96,6 +93,6 @@ namespace EternalSteam.OpenWorld
         }
         void Reset(){Active=false;dragged=false;paint=false;definition=null;candidates.Clear();rectangle.enabled=false;}
         public void Abort(){wallStart=null;stroke.Cancel();Reset();}
-        public void Dispose(){Abort();UnityEngine.Object.Destroy(rectangle.gameObject);UnityEngine.Object.Destroy(material);}
+        public void Dispose(){Abort();}
     }
 }
