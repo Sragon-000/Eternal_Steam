@@ -1,0 +1,79 @@
+{
+  "responsive": {
+    "diagnostics": [],
+    "compileMs": 58,
+    "executeMs": 5,
+    "assemblyName": "PipelineRunScript_VerifyCompactCanvasHud_aa81d24e82e74b23bbb3d7c76c20d146",
+    "success": true,
+    "result": "PASS fold heights, resource reflow, stationary layout cache, minimap raycast/drag, saved callbacks and stable hierarchy; columns=6"
+  },
+  "openworld": {
+    "diagnostics": [],
+    "compileMs": 656,
+    "executeMs": 6,
+    "assemblyName": "PipelineRunScript_VerifyCompactCanvasHud_b73315961a3b4a9e8a0713ef1a3c87d9",
+    "success": true,
+    "result": "PASS fold heights, resource reflow, stationary layout cache, minimap raycast/drag, saved callbacks and stable hierarchy; columns=8"
+  },
+  "events": {
+    "diagnostics": [],
+    "compileMs": 92,
+    "executeMs": 17,
+    "assemblyName": "PipelineRunScript_VerifyCompactHudInteractions_add854b7c0c44d6fbde42fcdf26c26c9",
+    "success": true,
+    "result": "PASS EventSystem button clicks, catalog scroll, saved upgrade callback (verification-free policy)."
+  },
+  "save": {
+    "diagnostics": [],
+    "compileMs": 709,
+    "executeMs": 105,
+    "assemblyName": "PipelineRunScript_VerifySingleMapSave_f8a7844ec700449a85f337fd69b98169",
+    "success": true,
+    "result": "PASS capture/save, duplicate rejection, editing/night gates, file backup corruption recovery, death backup denial, archived fresh slot. Reload next."
+  },
+  "reload": {
+    "diagnostics": [],
+    "compileMs": 99,
+    "executeMs": 2,
+    "assemblyName": "PipelineRunScript_VerifySingleMapSave_cabe50bddc574260b796dd89a8fd0832",
+    "success": true,
+    "result": "PASS actual scene reload: exact snapshot, main model reused, paused."
+  },
+  "hud": {
+    "diagnostics": [],
+    "compileMs": 28,
+    "executeMs": 70,
+    "assemblyName": "PipelineRunScript_VerifyCanvasHud_ebe3da2405c84d96bd6a23bc73e751eb",
+    "success": true,
+    "result": "PASS Canvas command wiring, saved catalog filtering, authored construction visibility, stable control hierarchy. Visual/font/input and profiler checks remain separate."
+  },
+  "hologram": {
+    "diagnostics": [],
+    "compileMs": 33,
+    "executeMs": 21,
+    "assemblyName": "PipelineRunScript_VerifyBuildAreaHologram_a40da8bf325149758a06e4a26a6f5577",
+    "success": true,
+    "result": "PASS 121 cells; nine chunks; edit-only visibility; no colliders; stationary/hidden cache; three recycled chunks."
+  },
+  "grid": {
+    "diagnostics": [],
+    "compileMs": 26,
+    "executeMs": 46,
+    "assemblyName": "PipelineRunScript_VerifyWorldGridVisibility_46ef0958d02e40d68a27ede19fde30be",
+    "success": true,
+    "result": "PASS edit-only grid; immediate cancellation hide; no hidden/stationary rebuild; one-chunk movement recycles 3 of 9 meshes."
+  },
+  "loop": {
+    "diagnostics": [],
+    "compileMs": 107,
+    "executeMs": 57,
+    "assemblyName": "PipelineRunScript_VerifyStartLoop_2d8897e52041442e92524d5aba5ac78a",
+    "success": true,
+    "result": "PASS: fixed model adopted, exact 11x11 forward cells, generator + resource + defense, edit/pause freeze and resume, fold state preservation, night spawns (13 eligible cells), boss and orb clear. Deterministic production update path."
+  },
+  "console": {
+    "total": 0,
+    "returned": 0,
+    "logs": []
+  }
+}

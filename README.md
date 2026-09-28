@@ -4,7 +4,16 @@
 
 현재 개발 기준은 **`StartRegionSandbox`의 단일 맵 플레이 루프**입니다. 고정 메인 기지에서 시작해 생산·방어 → 맵 에너지 확보 → 보스 → 오브 제작으로 진행하며, 안전 저장·복원과 메인 기지 파괴 후 새 게임을 지원합니다. 오픈월드 전체, 맵 이동과 최종 콘텐츠가 완성된 상태는 아닙니다.
 
-최신화: **2026-09-28**. 현재 시작/오픈월드 씬에 Canvas HUD와 건설 표시 오브젝트를 실제 Hierarchy로 저장했습니다. 버튼 콜백·카탈로그·9청크·미리보기 참조를 직렬화했으며 런타임에 정적 HUD를 생성하지 않습니다. C# 컴파일·저장 참조 검사를 완료했고, Unity import·Play 화면·입력 검증은 Rosetta 2 실행 오류로 대기 중입니다. [실제 계층 적용 기록](Docs/Validation/2026-09-28-canvas-hierarchy.md)을 참고하세요. 콘텐츠 수치는 별도 언급이 없으면 검증용입니다.
+최신화: **2026-09-28**. `StartRegionSandbox`와 `OpenWorldSandbox`의 HUD·건설 표시를 실제 Canvas/uGUI Hierarchy에 저장했습니다. 정적 패널·버튼·카드·아이콘은 Play에서 재생성하지 않으며, 표시 상태와 게임 데이터만 갱신합니다.
+
+- 금속 테두리, 자원 아이콘, 낮·밤 시계와 실제 프리팹 썸네일 카드를 적용했습니다.
+- 건물 목록은 한 줄 가로 스크롤이며, 범주와 배치 선택을 각각 금색·청록색으로 표시합니다.
+- 기지 레벨이 부족한 건물은 목록에서 숨기고 직접 선택도 차단합니다. 레벨 조건을 충족하면 다시 표시합니다.
+- 선택 상세의 체력 막대와 강화 버튼, 전력 수급 표시, 중립색 설치 격자를 연결했습니다.
+
+최종 적용 후 **EditMode 89/89**, 시작 씬 Play 회귀 검사, 실제 Game 프레임 미니맵 입력 검사를 통과했습니다. 1920×1080·1024×768·3440×1440에서 화면을 확인했습니다. [적용 결과와 검증 범위](Docs/Validation/2026-09-28-reference-hud-visuals.md)를 참고하세요. 콘텐츠 수치는 별도 언급이 없으면 검증용입니다.
+
+![현재 Canvas HUD — 건물 선택 상태](Docs/Validation/ReferenceHUD/selection-1920.png)
 
 ## 바로 실행하기
 
@@ -44,6 +53,7 @@ Edit Mode의 Hierarchy에서 `GameplayCanvas`, `GameplayEventSystem`, `Construct
 | WASD | 탑뷰 카메라 이동 |
 | 마우스 휠 | 확대·축소. UI 위나 드래그 중에는 월드 줌 차단 |
 | 수정 | 배치·회수 편집 시작. 다시 누르면 임시 설치와 회수 예정을 취소 |
+| 건물 목록 스크롤바·가로 스크롤 | 한 줄 건물 카드 탐색 |
 | 인벤토리 항목 → 지면/격자 클릭 | 건물 임시 배치 |
 | 확정 | 전체 작업을 재검증한 뒤 설치 또는 회수 |
 | 취소 | 수정 중 임시 설치·회수 예약을 모두 취소하고 일반 상태로 복귀 |
@@ -105,7 +115,7 @@ Edit Mode의 Hierarchy에서 `GameplayCanvas`, `GameplayEventSystem`, `Construct
 
 ### 미니맵
 
-우상단 독립 패널에 접이식 미니맵을 배치했습니다. 아래에는 일반 상태에서 선택한 건물의 상세·강화 정보가 표시됩니다. 지도는 지형 개요, 기지·건물·적 밀집도·보스와 카메라 화면 범위를 표시하며 클릭·드래그로 이동합니다. 월드 +Z가 위쪽이고 45° 맵의 실제 외곽을 반영합니다. 별도 렌더링 카메라 없이 제한된 주기로 갱신합니다. [기존 지도 검증](Docs/미니맵_적용결과.md), [재배치 및 검증 대기 항목](Docs/Validation/2026-09-28-hud-layout.md)
+우상단 독립 패널에 접이식 미니맵을 배치했습니다. 아래에는 일반 상태에서 선택한 건물의 상세·강화 정보가 표시됩니다. 지도는 지형 개요, 기지·건물·적 밀집도·보스와 카메라 화면 범위를 표시하며 클릭·드래그로 이동합니다. 월드 +Z가 위쪽이고 45° 맵의 실제 외곽을 반영합니다. 별도 렌더링 카메라 없이 제한된 주기로 갱신합니다. [기존 지도 검증](Docs/미니맵_적용결과.md), [최신 화면·입력 검증](Docs/Validation/2026-09-28-reference-hud-visuals.md)
 
 ### 안전 저장·복원·패배
 
@@ -138,6 +148,7 @@ Assets/
 │  ├─ Scene/
 │  │  ├─ Tests/             StartRegionSandbox 및 기능 검증/복구 씬
 │  │  └─ Demo/              기존 Horde 데모 씬
+│  ├─ Shared/UI/ReferenceHUD/ 현재 HUD의 프레임·아이콘·프리팹 썸네일
 │  ├─ Shared/UI/OpenWorld/  과거 검증 HUD의 UXML/USS
 │  ├─ Shared/Fonts/         한글 폰트와 TMP fallback
 │  └─ Tests/OpenWorld/      씬 조합, 입력/UI, 저장 어댑터, Editor 저작 도구
@@ -177,15 +188,20 @@ ProjectSettings/           Unity 프로젝트 설정
 
 ## 검증과 측정
 
-**9월 28일 현재 변경은 실제 Editor/Play 검증을 완료하지 못했습니다.** C# 5개 어셈블리 및 검증 도구 컴파일, 7개 씬의 저장 참조 검사는 통과했습니다. GUI 실행 재시도와 시스템 점검에서 Rosetta 2 미설치를 확인했으며, 프로젝트 import·NUnit·실제 화면/입력 검사는 실행되지 않았습니다. [실행 시도와 남은 검사](Docs/Validation/2026-09-28-deep-editor-test.md)를 참고하세요.
+최신 [시안 후속 적용 검증](Docs/Validation/2026-09-28-reference-hud-visuals.md)은 저장된 두 씬의 시각 참조·콜백, 목록 레벨 제한, 선택 강조, 가로 스크롤, 고정 강화 조작을 포함합니다. **최종 변경 기준 EditMode 89/89, Console 오류 0개**를 확인했습니다. Play 검증은 프로그램으로 호출한 EventSystem/Pointer 이벤트와 실제 Game 프레임 raycast를 사용했으며 전체 수동 입력 QA 또는 게임 빌드 검증을 뜻하지 않습니다.
 
-Editor 실행 환경 복구 후 `CanvasHierarchyTests`, `BuildAreaCoverageTests`, `UpgradeQueryTests`를 실행하고, 신규 Play 세션에서 아래 Canvas 도구를 우선 사용합니다. 저장된 참조만 검사하려면 `python3 Tools/verify_authored_hierarchy.py`를 실행할 수 있습니다. 이 검사는 Unity import/Play를 대신하지 않습니다.
+**9월 28일 Rosetta 설치 후 Unity 6000.3.14f1에서 EditMode 89/89와 시작 씬 Play 검증 4종을 통과했습니다.** 실제 Canvas 계층·121셀 홀로그램·격자 청크 재사용·발전/생산/방어·야간 소환·보스/오브를 검사했고, 실행 중 Console 오류는 0개입니다. 후속 [Canvas 밀도 개선](Docs/Validation/2026-09-28-compact-canvas-hud.md)에서 겹침을 보완하고 5개 해상도, 이벤트 기반 버튼/스크롤/미니맵 입력과 Canvas 저장/재로드를 확인했습니다. 전체 수동 입력 QA와 성능 측정은 별도입니다. [결과와 한계](Docs/Validation/2026-09-28-deep-editor-test.md)를 참고하세요.
+
+`CanvasHierarchyTests`, `BuildAreaCoverageTests`, `UpgradeQueryTests`는 실제 Test Runner에서 통과했습니다. 저장 참조 검사는 `python3 Tools/verify_authored_hierarchy.py`로 재실행할 수 있으며 Unity import/Play 검증과 구분합니다.
 
 
 이전 9월 24일 [안전 저장 검증 기록](Docs/Validation/2026-09-24-single-map-save.md)에서 실제 씬 재로드/Play 재진입, 건물 상태 왕복, 손상·미지원 파일, 패배 후 재시작, 비용 원자성과 자동 저장을 확인했습니다. [시작 루프 검증](Docs/Validation/2026-09-24-start-loop.md)은 고정 메인과 생산/방어/보스 연결을 다룹니다.
 
 | 도구 | 주요 범위 |
 |---|---|
+| `VerifyReferenceCanvasHud.cs` | 썸네일·자원 아이콘, 선택 강조, 가로 스크롤, 고정 강화 버튼 |
+| `VerifyCatalogBaseLevel.cs` | 기지 레벨별 목록 노출·직접 선택 차단·강화 후 갱신 |
+| `VerifyHudFrame.cs` | 실제 Game 프레임 미니맵 raycast 및 로드된 `VerifyCompactCanvasHud` 검사 |
 | `VerifyCanvasHud.cs` | 현재 Canvas 명령·카탈로그 분류·접기·저장된 콜백 |
 | `VerifyBuildAreaHologram.cs` | 121셀·9청크·수정 표시·정지 캐시·취소 숨김 |
 | `VerifyWorldGridVisibility.cs` | 중립 격자 표시·숨김·청크 재사용 |
@@ -212,7 +228,7 @@ unity command run_script --file Tools/VerifyStartLoop.cs \
 
 ## 미완료·기획 대기
 
-- Rosetta 2 실행 환경 복구 후 현재 Canvas 씬의 import·NUnit·Play·한글·해상도별 입력/화면 회귀 검증.
+- Canvas 전체 상태×해상도 수동 입력 QA, 극단적인 긴 수량 표시, 개발자 입력 및 프레임/GC 성능 검증.
 
 - 실제 맵 이동·재방문·비활성 맵 생산과 캠페인 확장.
 - 재활성화의 조건/공세/보상, 9종 오브 효과, 기차와 자원 연결.

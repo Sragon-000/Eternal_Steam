@@ -7,6 +7,7 @@ namespace EternalSteam.OpenWorld
     // One authored UI Graphic; markers are mesh data, never runtime GameObjects.
     public sealed class CanvasWorldMinimap:UnityEngine.UI.MaskableGraphic,IPointerDownHandler,IDragHandler,IPointerUpHandler
     {
+        public Color LowTerrainColor=new Color(.38f,.25f,.14f),HighTerrainColor=new Color(.67f,.46f,.26f),BackgroundColor=new Color(.035f,.065f,.085f);
         struct Marker {public Vector2 Point;public bool Base;}
         readonly List<Marker> buildings=new();readonly int[] density=new int[1024];readonly Vector2[] corners=new Vector2[4];
         OpenWorldSandbox sandbox;MinimapProjection projection;Texture2D terrainImage;double nextObjects,nextView;Vector2 focus,boss;bool hasBoss,hasViewport;int pointerId=int.MinValue;
@@ -17,7 +18,7 @@ namespace EternalSteam.OpenWorld
         {
             sandbox=world;projection=MinimapProjection.ForTerrain(world.Ground);const int side=128;
             terrainImage=new Texture2D(side,side,TextureFormat.RGBA32,false){name="Minimap terrain data",filterMode=FilterMode.Bilinear};var colors=new Color32[side*side];var ground=world.Ground;var tiles=ground.GetComponent<TileWorldGround>();
-            for(int y=0;y<side;y++)for(int x=0;x<side;x++){var p=projection.ToWorld(new Vector2((x+.5f)/side,1-(y+.5f)/side));var o=ground.transform.position;var size=ground.terrainData.size;bool inside=p.x>=o.x&&p.z>=o.z&&p.x<=o.x+size.x&&p.z<=o.z+size.z;bool playable=inside&&(tiles==null||tiles.IsPlayable(p));colors[y*side+x]=playable?Color.Lerp(new Color(.15f,.29f,.24f),new Color(.56f,.58f,.42f),Mathf.Clamp01(ground.SampleHeight(p)/Mathf.Max(1,size.y)*3)):new Color(.055f,.09f,.13f);}
+            for(int y=0;y<side;y++)for(int x=0;x<side;x++){var p=projection.ToWorld(new Vector2((x+.5f)/side,1-(y+.5f)/side));var o=ground.transform.position;var size=ground.terrainData.size;bool inside=p.x>=o.x&&p.z>=o.z&&p.x<=o.x+size.x&&p.z<=o.z+size.z;bool playable=inside&&(tiles==null||tiles.IsPlayable(p));colors[y*side+x]=playable?Color.Lerp(LowTerrainColor,HighTerrainColor,Mathf.Clamp01(ground.SampleHeight(p)/Mathf.Max(1,size.y)*3)):BackgroundColor;}
             // White texel for tinted marker vertices sharing the terrain material.
             colors[0]=Color.white;terrainImage.SetPixels32(colors);terrainImage.Apply(false,true);SetMaterialDirty();SetVerticesDirty();
         }

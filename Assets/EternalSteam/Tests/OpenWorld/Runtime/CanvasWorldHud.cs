@@ -16,10 +16,17 @@ namespace EternalSteam.OpenWorld
         [Serializable] public struct TextBinding {public string Id;public TMP_Text View;}
         [Serializable] public struct ButtonBinding {public string Id;public UnityEngine.UI.Button View;}
         [Serializable] public struct Section {public string Id;public GameObject Body;}
-        [Serializable] public struct CatalogEntry {public BuildingDefinition Definition;public WorldTool Tool;public HordeTowerKind Kind;public BuildingCategory Category;public UnityEngine.UI.Button View;}
+        [Serializable] public struct CatalogEntry {public BuildingDefinition Definition;public WorldTool Tool;public HordeTowerKind Kind;public BuildingCategory Category;public UnityEngine.UI.Button View;public UnityEngine.UI.Image Icon;}
+        [Serializable] public struct ResourceIconBinding {public string Id;public RectTransform View;}
+        [Serializable] public struct PortraitBinding {public string DefinitionId;public Sprite Sprite;}
+        public ResourceIconBinding[] ResourceIcons=Array.Empty<ResourceIconBinding>();
+        public PortraitBinding[] Portraits=Array.Empty<PortraitBinding>();
+        public Sprite CardFrame,SelectedFrame,CategoryFrame;
+        public UnityEngine.UI.Image SelectionPortrait,SelectionHealthFill,PowerFill;
         public OpenWorldSandbox Sandbox;public OpenWorldInput Input;
         public TextBinding[] Texts;public ButtonBinding[] Buttons;public Section[] Sections;public CatalogEntry[] Catalog;
         public UnityEngine.UI.GridLayoutGroup CatalogLayout;
+        public CanvasHudLayout Layout;
         public TMP_InputField Amount;public CanvasWorldMinimap Minimap;public UnityEngine.UI.Image HealthFill;
         public RectTransform ClockHand;public UnityEngine.UI.GraphicRaycaster Raycaster;
         public string[] ResourcePriority=Array.Empty<string>();
@@ -42,7 +49,7 @@ namespace EternalSteam.OpenWorld
         public void Execute(string command)
         {
             if(actions==null)return;EndTyping();
-            if(command.StartsWith("fold:")){var id=command.Substring(5);if(sections.TryGetValue(id,out var body)){if(id=="minimap")Minimap.CancelInteraction();body.SetActive(!body.activeSelf);}return;}
+            if(command.StartsWith("fold:")){var id=command.Substring(5);if(sections.TryGetValue(id,out var body)){if(id=="minimap")Minimap.CancelInteraction();body.SetActive(!body.activeSelf);Layout?.Apply(true);}return;}
             if(command.StartsWith("category:")){category=int.Parse(command.Substring(9));RefreshCatalog();return;}
             if(command.StartsWith("build:")){
                 int index=int.Parse(command.Substring(6));if(!Input.IsEditing){Sandbox.Message="수정 버튼을 누른 뒤 건물을 선택하세요.";return;}
@@ -74,15 +81,25 @@ namespace EternalSteam.OpenWorld
         void RefreshCatalog()
         {
             bool locked=Sandbox.Content.Defeated||Sandbox.Persistence?.Blocked==true;
-            if(CatalogLayout!=null){float width=((RectTransform)CatalogLayout.transform).rect.width;var size=new Vector2(Mathf.Max(40,(width-30)/6),60);if(CatalogLayout.cellSize!=size)CatalogLayout.cellSize=size;}
-            foreach(var entry in Catalog){entry.View.gameObject.SetActive(category<0||(int)entry.Category==category);entry.View.interactable=Input.IsEditing&&!locked;}
+            foreach(var entry in Catalog){
+                bool available=entry.Definition==null||Sandbox.Content.MeetsBaseLevel(entry.Definition,out _);
+                bool visible=available&&(category<0||(int)entry.Category==category);
+                if(entry.View.gameObject.activeSelf!=visible)entry.View.gameObject.SetActive(visible);
+                entry.View.interactable=available&&Input.IsEditing&&!locked;
+                bool selected=Input.IsEditing&&(entry.Definition!=null?ReferenceEquals(Input.SelectedDefinition,entry.Definition):Input.Tool==entry.Tool&&(entry.Tool!=WorldTool.Tower||Input.Kind==entry.Kind));
+                if(entry.View.targetGraphic is UnityEngine.UI.Image frame&&CardFrame!=null)frame.sprite=selected?SelectedFrame:CardFrame;
+            }
+            for(int i=-1;i<4;i++)if(buttons.TryGetValue("category-"+i,out var tab)&&tab.targetGraphic is UnityEngine.UI.Image frame&&CardFrame!=null){
+                frame.sprite=category==i?CategoryFrame:CardFrame;
+                if(texts.TryGetValue("category-"+i+"-caption",out var label))label.color=category==i?new Color(1,.82f,.38f):new Color(.7f,.8f,.84f);
+            }
         }
         public void Refresh()
         {
             if(actions==null)return;bool editing=Input.IsEditing,locked=Sandbox.Content.Defeated||Sandbox.Persistence?.Blocked==true;
             Text("message",Sandbox.Message);Text("placement-hint",Input.PlacementHint);Show("placement-hint",!string.IsNullOrEmpty(Input.PlacementHint));Text("mode",actions.Mode);
             var clock=Sandbox.Clock;long seconds=(long)Math.Ceiling(clock.RemainingSeconds);
-            Text("date",$"{clock.Day}일차 · {(clock.Phase==DayPhase.Day?"낮":"밤")}");Text("remaining",$"전환까지 {seconds/60:00}:{seconds%60:00}"+(editing?" · 수정 중 정지":clock.Paused?" · 시간 정지":""));
+            Text("date",$"{clock.Day}일차 · {(clock.Phase==DayPhase.Day?"낮":"밤")}");Text("remaining",$"{(clock.Phase==DayPhase.Day?"밤":"낮")}까지 {seconds/60:00}:{seconds%60:00}");
             if(ClockHand!=null)ClockHand.localRotation=Quaternion.Euler(0,0,-360*(float)((clock.Phase==DayPhase.Day?0:.5)+clock.PhaseProgress*.5));
             Caption("pause",actions.ProgressLabel);Caption("run",actions.RunLabel);Caption("edit",editing?"수정 종료":"수정");Caption("spawn-air",Sandbox.SpawnAir?"공중 적: 켬":"공중 적: 끔");
             bool can=actions.CanInteract(out _);Enable("pause",can);Enable("run",can);Enable("edit",!locked);Enable("spawn",!editing&&!locked);Enable("reset",!locked);Enable("day",can);Enable("night",can);Enable("spawn-air",!locked);
@@ -90,8 +107,13 @@ namespace EternalSteam.OpenWorld
             Text("pending",editing?$"수정 중 · 임시 작업 {Input.Edits?.Count??0}개":"건물 선택: 상세 정보 · 수정: 설치와 회수");RefreshCatalog();
             var main=Sandbox.Content.MainBase;var hp=main?.Module<HealthModule>();bool hasHp=main!=null&&main.Active&&!main.Disposed&&hp!=null;
             Text("main-health",hasHp?$"{hp.Current:0.#} / {hp.Maximum:0.#}":Sandbox.Content.Defeated?"메인 기지 파괴":"메인 기지 없음");float healthRatio=hasHp?Mathf.Clamp01(hp.Current/Mathf.Max(1,hp.Maximum)):0;HealthFill.rectTransform.anchorMax=new Vector2(healthRatio,1);
-            buffer.Clear();for(int i=0;i<resources.Count;i++){var r=resources[i];if(!showAll&&Array.IndexOf(ResourcePriority,r.OutputId)<0)continue;buffer.Append(resourceNames[i]).Append("  ").Append(Sandbox.Content.Resources.Amount(r.OutputId).ToString("N0")).Append('\n');}
-            Text("resources",buffer.Length>0?buffer.ToString():"등록된 생산 자원이 없습니다.");Caption("resources-all",showAll?"주요 자원":"전체 자원");Enable("resources-all",hasPriority);
+            foreach(var icon in ResourceIcons){bool visible=showAll||Array.IndexOf(ResourcePriority,icon.Id)>=0;if(icon.View.gameObject.activeSelf!=visible)icon.View.gameObject.SetActive(visible);}int visibleResourceRows=0;
+            buffer.Clear();for(int i=0;i<resources.Count;i++){var r=resources[i];if(!showAll&&Array.IndexOf(ResourcePriority,r.OutputId)<0)continue;foreach(var icon in ResourceIcons)if(icon.Id==r.OutputId){icon.View.anchoredPosition=new Vector2(0,-visibleResourceRows*26-2);}
+                visibleResourceRows++;buffer.Append(resourceNames[i]).Append('\n');}
+            Text("resources",buffer.Length>0?"<line-height=26>"+buffer.ToString():"등록된 생산 자원이 없습니다.");buffer.Clear();int resourceRows=0;for(int i=0;i<resources.Count;i++){var r=resources[i];if(!showAll&&Array.IndexOf(ResourcePriority,r.OutputId)<0)continue;buffer.Append(Sandbox.Content.Resources.Amount(r.OutputId).ToString("N0")).Append('\n');resourceRows++;}
+            Text("resource-values","<line-height=26>"+buffer.ToString());
+            if(texts.TryGetValue("resources",out var resourceText)){var content=(RectTransform)resourceText.transform.parent;float h=Mathf.Max(26,resourceRows*26);if(!Mathf.Approximately(content.sizeDelta.y,h))content.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical,h);}
+            Caption("resources-all",hasPriority?(showAll?"주요 자원":"전체 자원"):"전체 자원 표시 중");Enable("resources-all",hasPriority);
             var selected=Input.SelectedContent??Input.SelectedTower?.building;if(selected?.Disposed==true)selected=null;
             Show("selection",selected!=null&&selected.Active&&!editing);if(selected!=null)RefreshSelection(selected);
             RefreshPower(selected);RefreshProgress(editing,locked);
@@ -100,26 +122,30 @@ namespace EternalSteam.OpenWorld
         }
         void RefreshSelection(BuildingInstance b)
         {
-            var level=b.Module<IUpgradeControl>();Text("selection-title",b.DisplayName+(level==null?"":$" · Lv.{level.Level}/{level.MaximumLevel}"));buffer.Clear();
+            var level=b.Module<IUpgradeControl>();Text("selection-title",b.DisplayName+(level==null?"":$"\nLv.{level.Level} / {level.MaximumLevel}"));buffer.Clear();
+            if(SelectionPortrait!=null){Sprite portrait=null;foreach(var p in Portraits)if(p.DefinitionId==b.DefinitionId){portrait=p.Sprite;break;}SelectionPortrait.sprite=portrait;SelectionPortrait.enabled=portrait!=null;}
             buffer.AppendLine(b.Operational?"가동 중":b.OperationBlock.HasFlag(OperationBlock.BaseLost)?"기지 없음 / 상실 · 비작동":"유효 범위 밖 · 비작동");
-            var hp=b.Module<HealthModule>();if(hp!=null)buffer.AppendLine($"체력 {hp.Current:0.#} / {hp.Maximum:0.#}");
+            var hp=b.Module<HealthModule>();if(SelectionHealthFill!=null){SelectionHealthFill.transform.parent.gameObject.SetActive(hp!=null);SelectionHealthFill.rectTransform.anchorMax=new Vector2(hp==null?0:Mathf.Clamp01(hp.Current/Mathf.Max(1,hp.Maximum)),1);}if(hp!=null)buffer.AppendLine($"체력 {hp.Current:0.#} / {hp.Maximum:0.#}");
             var weapon=b.Module<WeaponRuntime>();if(weapon!=null)buffer.AppendLine($"피해 {weapon.Damage:0.#}\n사거리 {weapon.Range:0.#}m\n공격 간격 {weapon.Interval:0.##}초");
             var rotation=b.Module<ITurretRotation>();if(rotation!=null)buffer.AppendLine($"회전 {rotation.DegreesPerSecond:0.#}°/초");
             var area=b.Module<IBuildArea>();if(area!=null)buffer.AppendLine(area.Shape==BuildAreaShape.Square?$"가동 영역 {area.Radius:0.#} × {area.Radius:0.#}칸":$"가동 영역 반경 {area.Radius:0.#}m");
-            if(Sandbox.MeetingConstructionRules)buffer.AppendLine("소속 기지 "+Short(b.OwnerBaseId));
-            if(b.Module<IBaseIdentity>()!=null&&Sandbox.Regions!=null)foreach(var r in Sandbox.Regions)if(r!=null&&r.Contains(b.Position)){buffer.AppendLine(r.DisplayName+" · 예정 자원 "+r.ResourceId);break;}
+            if(Sandbox.MeetingConstructionRules)buffer.AppendLine("소속 기지 "+BaseName(b.OwnerBaseId));
+            if(b.Module<IBaseIdentity>()!=null&&Sandbox.Regions!=null)foreach(var r in Sandbox.Regions)if(r!=null&&r.Contains(b.Position)){buffer.AppendLine(r.DisplayName+" · 예정 자원 "+ResourceName(r.ResourceId));break;}
             Text("selection-stats",buffer.ToString());var state=actions.ReadUpgrade();Enable("upgrade",state.Available);Show("upgrade",level!=null);
             Caption("upgrade",state.Available?$"강화 Lv.{state.Level} → {state.Level+1}":"선택 건물 강화");Text("upgrade-status",state.Available?(state.VerificationFree?"검증용 무료":"설정된 강화 비용 적용"):state.Reason);
         }
-        static string Short(string id)=>id==null?"없음":id.Substring(0,Math.Min(6,id.Length));
+        string BaseName(string id)=>id!=null&&Sandbox.Content.Bases.Bases.TryGetValue(id,out var context)?context.Nexus.DisplayName:"없음";
+        string ResourceName(string id){for(int i=0;i<resources.Count;i++)if(resources[i].OutputId==id)return resourceNames[i];return "미지정";}
         void RefreshPower(BuildingInstance selected)
         {
             var device=selected?.Module<PowerModule>();var storage=device?.Role==PowerRole.Storage?device:device?.Supply;
             if(storage==null&&Sandbox.Content.Bases.SelectedBaseId is string id&&Sandbox.Content.Bases.Bases.TryGetValue(id,out var context))storage=context.Nexus.Module<PowerModule>();
-            Text("power",storage==null?"연결된 기지 없음":$"{storage.Owner.DisplayName} [{Short(storage.Owner.OwnerBaseId)}]\n{storage.Stored:0.#} / {storage.Capacity:0.#}");
+            Text("power",storage==null?"연결된 기지 없음":$"전력  {storage.Stored:0.#} / {storage.Capacity:0.#}");
+            Text("power-rate",storage==null?"":$"{storage.Production-storage.Consumed:+0.#;-0.#;0}/s");
+            if(PowerFill!=null)PowerFill.rectTransform.anchorMax=new Vector2(storage==null?0:Mathf.Clamp01((float)(storage.Stored/Math.Max(1,storage.Capacity))),1);
             buffer.Clear();if(storage!=null)buffer.AppendLine($"생산 +{storage.Production:0.#}/s · 요청 {storage.Requested:0.#}/s\n실제 소비 {storage.Consumed:0.#}/s");
             if(Sandbox.Content.BaseRules){int subs=0;foreach(var b in Sandbox.Content.Bases.Bases.Values)if(b.Nexus.Module<IBaseRole>()?.Role==BaseRole.Sub)subs++;buffer.AppendLine($"메인 Lv.{Sandbox.Content.LevelCap} · 서브 {subs}/{Sandbox.Content.SubLimit}");}
-            if(Sandbox.MeetingConstructionRules)buffer.AppendLine("다음 배치 기지 "+Short(Sandbox.Content.Bases.SelectedBaseId));
+            if(Sandbox.MeetingConstructionRules)buffer.AppendLine("다음 배치 기지 "+BaseName(Sandbox.Content.Bases.SelectedBaseId));
             if(device!=null&&device.Role!=PowerRole.Storage)buffer.AppendLine($"전력 {(device.Role==PowerRole.Producer?"생산":"소비")} {device.Rate:0.#}/s · "+(device.Supply==null?"연결 기지 없음":device.Supplied?"공급 중":"공급 대기"));Text("power-details",buffer.ToString());
         }
         void RefreshProgress(bool editing,bool locked)

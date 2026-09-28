@@ -1,0 +1,39 @@
+{
+  "canvas": {
+    "diagnostics": [],
+    "compileMs": 533,
+    "executeMs": 60,
+    "assemblyName": "PipelineRunScript_VerifyCanvasHud_b9851b477d2b4f0cad9037f0ec3b14c1",
+    "success": true,
+    "result": "PASS Canvas command wiring, saved catalog filtering, authored construction visibility, stable control hierarchy. Visual/font/input and profiler checks remain separate."
+  },
+  "hologram": {
+    "diagnostics": [],
+    "compileMs": 81,
+    "executeMs": 20,
+    "assemblyName": "PipelineRunScript_VerifyBuildAreaHologram_a7d154a6d92b4267862f64e0854efeb1",
+    "success": true,
+    "result": "PASS 121 cells; nine chunks; edit-only visibility; no colliders; stationary/hidden cache; three recycled chunks."
+  },
+  "grid": {
+    "diagnostics": [],
+    "compileMs": 19,
+    "executeMs": 43,
+    "assemblyName": "PipelineRunScript_VerifyWorldGridVisibility_4e078cdc58bc446da6b0508afd7e0ef9",
+    "success": true,
+    "result": "PASS edit-only grid; immediate cancellation hide; no hidden/stationary rebuild; one-chunk movement recycles 3 of 9 meshes."
+  },
+  "loop": {
+    "diagnostics": [],
+    "compileMs": 77,
+    "executeMs": 61,
+    "assemblyName": "PipelineRunScript_VerifyStartLoop_cccca48f9cbd4d478de1a0664fb5cbd2",
+    "success": true,
+    "result": "PASS: fixed model adopted, exact 11x11 forward cells, generator + resource + defense, edit/pause freeze and resume, fold state preservation, night spawns (13 eligible cells), boss and orb clear. Deterministic production update path."
+  },
+  "console": {
+    "total": 0,
+    "returned": 0,
+    "logs": []
+  }
+}

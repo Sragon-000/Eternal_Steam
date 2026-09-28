@@ -54,11 +54,17 @@ namespace EternalSteam.OpenWorld
         public PlacementSession FoundationSession(BuildingWorld world)=>new PlacementSession(world,new CoverageRule(this),new UnlockRule(this),new BasePlacementRule(this));
         public void TickProduction(float dt)=>Tick(dt,false);
         public void Tick(float dt,bool combatEnabled=true){Bases.Refresh();foreach(var building in GroundWorld.Buildings)building.Tick(dt,combatEnabled);foreach(var p in foundations.Platforms)foreach(var b in p.World.Buildings)b.Tick(dt,combatEnabled);}
+        public bool MeetsBaseLevel(BuildingDefinition definition,out string reason)
+        {
+            reason=null;
+            if(definition==null){reason="건물 정의가 없습니다.";return false;}
+            if(IsMainDefinition(definition)||(definition.Placement?.RequiredNexusLevel??1)<=LevelCap)return true;
+            reason=$"기지 Lv.{definition.Placement.RequiredNexusLevel} 필요";return false;
+        }
         public bool Resolve(BuildingDefinition definition,Vector3 point,out PlacementSession session,out BuildingWorld world,out Vector2Int cell,out string reason)
         {
             session=null;world=null;cell=default;reason=null;
-            if(definition==null){reason="건물 정의가 없습니다.";return false;}
-            if(!IsMainDefinition(definition)&&(definition.Placement?.RequiredNexusLevel??1)>LevelCap){reason=$"기지 Lv.{definition.Placement.RequiredNexusLevel} 필요";return false;}
+            if(!MeetsBaseLevel(definition,out reason))return false;
             if(definition.Placement?.Surface==BuildingSurface.Ground || (definition.Placement?.Surface==BuildingSurface.GroundOrFoundation&&!foundations.FindCell(point,out _,out _,out _))){world=GroundWorld;session=GroundPlacement;cell=definition.Placement.Snap(world.Grid.WorldToCell(point));return true;}
             if(!foundations.FindCell(point,out var p,out cell,out _)){reason="확정된 토대 위에 설치하세요.";return false;}
             world=p.World;session=p.Placement;return true;
@@ -147,7 +153,7 @@ namespace EternalSteam.OpenWorld
         }
         void OnMainDestroyed(BuildingInstance b){Defeated=true;Failed?.Invoke();}
         sealed class UnlockRule:IPlacementRule
-        {readonly OpenWorldContent host;public UnlockRule(OpenWorldContent host){this.host=host;}public PlacementResult Validate(PlacementRequest p,IReadOnlyList<PlacementRequest> all,BuildGrid g)=>(host.IsMainDefinition(p.Definition)||(p.Definition.Placement?.RequiredNexusLevel??1)<=host.LevelCap)?PlacementResult.Ok:new PlacementResult("locked","기지 레벨이 부족합니다.");}
+        {readonly OpenWorldContent host;public UnlockRule(OpenWorldContent host){this.host=host;}public PlacementResult Validate(PlacementRequest p,IReadOnlyList<PlacementRequest> all,BuildGrid g)=>host.MeetsBaseLevel(p.Definition,out var reason)?PlacementResult.Ok:new PlacementResult("locked",reason);}
         sealed class Factory:IBuildingFactory
         {
             readonly OpenWorldContent host;readonly IBuildingFactory legacy;readonly HashSet<BuildingInstance> common=new();

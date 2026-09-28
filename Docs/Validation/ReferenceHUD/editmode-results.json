@@ -1,0 +1,300 @@
+{
+  "status": "completed",
+  "duration": 2.58,
+  "summary": {
+    "total": 89,
+    "passed": 89,
+    "failed": 0,
+    "skipped": 0,
+    "inconclusive": 0
+  },
+  "results": [
+    {
+      "FullName": "EternalSteam.Tests.UpgradeQueryTests.AllUpgradeKindsRejectInactiveDestroyedAndMaximumWithoutMutation(0)",
+      "Status": "Passed",
+      "Duration": 0.0012095,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Tests.UpgradeQueryTests.AllUpgradeKindsRejectInactiveDestroyedAndMaximumWithoutMutation(1)",
+      "Status": "Passed",
+      "Duration": 0.0003958,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Tests.UpgradeQueryTests.AllUpgradeKindsRejectInactiveDestroyedAndMaximumWithoutMutation(2)",
+      "Status": "Passed",
+      "Duration": 9.63e-05,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Tests.UpgradeQueryTests.BankQuoteAndRejectedCommitNeverDebit",
+      "Status": "Passed",
+      "Duration": 0.0004218,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Tests.UpgradeQueryTests.ClickRechecksFundsAndChangedCostPolicy",
+      "Status": "Passed",
+      "Duration": 0.0009078,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Tests.UpgradeQueryTests.ExplicitFreePolicyStillChecksBuildingAndLevelConditions",
+      "Status": "Passed",
+      "Duration": 0.0001926,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Tests.UpgradeQueryTests.InvalidOrMissingCostsAreNotVerificationFree",
+      "Status": "Passed",
+      "Duration": 0.0004554,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Tests.UpgradeQueryTests.PaidQueryAggregatesDuplicateCostsAndCommitDebitsExactlyOnce",
+      "Status": "Passed",
+      "Duration": 0.0003173,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Tests.UpgradeQueryTests.QueryDoesNotUpgradeOrScaleHealthAndCommandRechecksLevelLimit",
+      "Status": "Passed",
+      "Duration": 0.0002425,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Demo.Tests.HordeBuildingTests.AdapterDoesNotReferenceSimulationAssembly",
+      "Status": "Passed",
+      "Duration": 0.0023236,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Demo.Tests.HordeBuildingTests.AllCellsMatchOriginalPlacementFootprintRule(Lane)",
+      "Status": "Passed",
+      "Duration": 0.006927,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Demo.Tests.HordeBuildingTests.AllCellsMatchOriginalPlacementFootprintRule(WideFront)",
+      "Status": "Passed",
+      "Duration": 0.0058217,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Demo.Tests.HordeBuildingTests.AllCellsMatchOriginalPlacementFootprintRule(Pincer)",
+      "Status": "Passed",
+      "Duration": 0.0058439,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Demo.Tests.HordeBuildingTests.FailedCreationRollsBackWorldLegacyListAndReservations(False)",
+      "Status": "Passed",
+      "Duration": 0.0020119,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Demo.Tests.HordeBuildingTests.FailedCreationRollsBackWorldLegacyListAndReservations(True)",
+      "Status": "Passed",
+      "Duration": 0.0002462,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Demo.Tests.HordeBuildingTests.InvalidDirectionRangeAndKindCannotLeaveState",
+      "Status": "Passed",
+      "Duration": 0.0003357,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Demo.Tests.HordeBuildingTests.OffsetGridPreservesDefaultCentersAndLegacyEvenCenters",
+      "Status": "Passed",
+      "Duration": 0.0005831,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Demo.Tests.HordeBuildingTests.PhaseAndCapacityAreRecheckedBeforeCommit",
+      "Status": "Passed",
+      "Duration": 0.0003397,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Demo.Tests.HordeBuildingTests.PlacementSharesOccupancyLifetimeAndStableDefinitionId",
+      "Status": "Passed",
+      "Duration": 0.0005269,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "LegacyCombatTests.AreaIncludesRadiusBoundaryAndSkipsAlreadyDeadSlots",
+      "Status": "Passed",
+      "Duration": 0.001355,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "LegacyCombatTests.CapacityIsIndependentOfStageLimits",
+      "Status": "Passed",
+      "Duration": 0.0003925,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "LegacyCombatTests.CombatAssemblyDoesNotReferenceSimulationOrPresentation",
+      "Status": "Passed",
+      "Duration": 0.0003308,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "LegacyCombatTests.CustomSpawnFollowsTerrainAndCanEscapeWithoutDefeat",
+      "Status": "Passed",
+      "Duration": 0.0042344,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "LegacyCombatTests.CustomSpawnRejectsInvalidValuesWithoutConsumingSlots",
+      "Status": "Passed",
+      "Duration": 0.0002594,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "LegacyCombatTests.EscapeStopsMovementImmediatelyAtDefeat",
+      "Status": "Passed",
+      "Duration": 0.0003214,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "LegacyCombatTests.FrostFiltersSectorAndIntegratesPartialSlowExpiry",
+      "Status": "Passed",
+      "Duration": 0.0002967,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "LegacyCombatTests.PiercingHitsEveryForwardTargetOnceIncludingRangeBoundary",
+      "Status": "Passed",
+      "Duration": 0.0011686,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "LegacyCombatTests.RayUsesNearestAlongAndPreservesExclusiveFarBoundary",
+      "Status": "Passed",
+      "Duration": 0.0003018,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "LegacyCombatTests.ResetReplaysSeedAndClearsIndex(Lane)",
+      "Status": "Passed",
+      "Duration": 0.0002282,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "LegacyCombatTests.ResetReplaysSeedAndClearsIndex(WideFront)",
+      "Status": "Passed",
+      "Duration": 7.32e-05,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "LegacyCombatTests.ResetReplaysSeedAndClearsIndex(Pincer)",
+      "Status": "Passed",
+      "Duration": 7.51e-05,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "LegacyCombatTests.ReusedSlotStartsWithFreshHealthAndSlowState",
+      "Status": "Passed",
+      "Duration": 0.0001289,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "LegacyCombatTests.WorldsAndDamageRemainIndependent",
+      "Status": "Passed",
+      "Duration": 0.0001188,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Demo.Tests.HordeDeploymentTests.AimingBeyondMapClampsRangeWhileIdleOutsideMapIsHidden",
+      "Status": "Passed",
+      "Duration": 0.0007219,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Demo.Tests.HordeDeploymentTests.CameraFramingRejectsNonfiniteViewportAndFitsBothMapSizes",
+      "Status": "Passed",
+      "Duration": 0.0005502,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Demo.Tests.HordeDeploymentTests.CombatAndUiBlockingCannotCommit(False,False)",
+      "Status": "Passed",
+      "Duration": 0.0003225,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Demo.Tests.HordeDeploymentTests.CombatAndUiBlockingCannotCommit(True,True)",
+      "Status": "Passed",
+      "Duration": 2.9e-05,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Demo.Tests.HordeDeploymentTests.DeploymentHasNoSimulationOrInputSystemDependency",
+      "Status": "Passed",
+      "Duration": 0.0004588,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Demo.Tests.HordeDeploymentTests.FailedPlacementKeepsEditAndCancellationNeedsNoPointer",
+      "Status": "Passed",
+      "Duration": 0.0001647,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Demo.Tests.HordeDeploymentTests.InvalidGridCannotBeginAndConfirmationRevalidatesThroughCommand",
+      "Status": "Passed",
+      "Duration": 0.0001103,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "EternalSteam.Demo.Tests.HordeDeploymentTests.TwoClicksCommitSnappedPositionAndPointerDirection",
+      "Status": "Passed",
+      "Duration": 0.0002236,
+      "Message": null,
+      "StackTrace": null
+    }
+  ]
+}

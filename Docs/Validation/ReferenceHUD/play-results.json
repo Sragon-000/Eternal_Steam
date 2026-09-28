@@ -1,0 +1,159 @@
+{
+  "VerifyReferenceCanvasHud": {
+    "success": true,
+    "command": "command run_script",
+    "data": {
+      "command": "run_script",
+      "parameters": {
+        "file": "Tools/VerifyReferenceCanvasHud.cs"
+      },
+      "result": {
+        "diagnostics": [],
+        "compileMs": 32,
+        "executeMs": 5,
+        "assemblyName": "PipelineRunScript_VerifyReferenceCanvasHud_15cc71bc0e254c7a9ba097c5c91bf968",
+        "success": true,
+        "result": "PASS thumbnail/resource references, category/build selection frames, horizontal wheel, fold, fixed upgrade controls, stable hierarchy and callbacks"
+      },
+      "target": {
+        "host": "127.0.0.1",
+        "port": 7800,
+        "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+      },
+      "success": true
+    },
+    "errors": [],
+    "warnings": []
+  },
+  "VerifyCanvasHud": {
+    "success": true,
+    "command": "command run_script",
+    "data": {
+      "command": "run_script",
+      "parameters": {
+        "file": "Tools/VerifyCanvasHud.cs"
+      },
+      "result": {
+        "diagnostics": [],
+        "compileMs": 23,
+        "executeMs": 2,
+        "assemblyName": "PipelineRunScript_VerifyCanvasHud_0131a583247e4118b35a80bbec0d75ae",
+        "success": true,
+        "result": "PASS Canvas command wiring, saved catalog filtering, authored construction visibility, stable control hierarchy. Visual/font/input and profiler checks remain separate."
+      },
+      "target": {
+        "host": "127.0.0.1",
+        "port": 7800,
+        "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+      },
+      "success": true
+    },
+    "errors": [],
+    "warnings": []
+  },
+  "VerifyBuildAreaHologram": {
+    "success": true,
+    "command": "command run_script",
+    "data": {
+      "command": "run_script",
+      "parameters": {
+        "file": "Tools/VerifyBuildAreaHologram.cs"
+      },
+      "result": {
+        "diagnostics": [],
+        "compileMs": 44,
+        "executeMs": 24,
+        "assemblyName": "PipelineRunScript_VerifyBuildAreaHologram_5f9a111418e04ea1b929baaf0cede87c",
+        "success": true,
+        "result": "PASS 121 cells; nine chunks; edit-only visibility; no colliders; stationary/hidden cache; three recycled chunks."
+      },
+      "target": {
+        "host": "127.0.0.1",
+        "port": 7800,
+        "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+      },
+      "success": true
+    },
+    "errors": [],
+    "warnings": []
+  },
+  "VerifyWorldGridVisibility": {
+    "success": true,
+    "command": "command run_script",
+    "data": {
+      "command": "run_script",
+      "parameters": {
+        "file": "Tools/VerifyWorldGridVisibility.cs"
+      },
+      "result": {
+        "diagnostics": [],
+        "compileMs": 28,
+        "executeMs": 32,
+        "assemblyName": "PipelineRunScript_VerifyWorldGridVisibility_997857a243d54d2badbbdf59a3626eb9",
+        "success": true,
+        "result": "PASS edit-only grid; immediate cancellation hide; no hidden/stationary rebuild; one-chunk movement recycles 3 of 9 meshes."
+      },
+      "target": {
+        "host": "127.0.0.1",
+        "port": 7800,
+        "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+      },
+      "success": true
+    },
+    "errors": [],
+    "warnings": []
+  },
+  "VerifyCatalogBaseLevel": {
+    "success": true,
+    "command": "command run_script",
+    "data": {
+      "command": "run_script",
+      "parameters": {
+        "file": "Tools/VerifyCatalogBaseLevel.cs"
+      },
+      "result": {
+        "diagnostics": [],
+        "compileMs": 46,
+        "executeMs": 6,
+        "assemblyName": "PipelineRunScript_VerifyCatalogBaseLevel_c0e6fc89579f42b6be318573795f0714",
+        "success": true,
+        "result": "Lv.1: shown=11, hidden=14, direct selection blocked, category filter passed\nLv.2: shown=13, hidden=12, direct selection blocked, category filter passed\nPASS: no UI objects created or removed."
+      },
+      "target": {
+        "host": "127.0.0.1",
+        "port": 7800,
+        "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+      },
+      "success": true
+    },
+    "errors": [],
+    "warnings": []
+  },
+  "VerifyCompactHudInteractions": {
+    "success": true,
+    "command": "command run_script",
+    "data": {
+      "command": "run_script",
+      "parameters": {
+        "file": "Tools/VerifyCompactHudInteractions.cs"
+      },
+      "result": {
+        "diagnostics": [],
+        "compileMs": 27,
+        "executeMs": 21,
+        "assemblyName": "PipelineRunScript_VerifyCompactHudInteractions_cea54ff236c4488c8ced68c7fcce02e0",
+        "success": true,
+        "result": "PASS EventSystem button clicks, catalog scroll, saved upgrade callback (verification-free policy)."
+      },
+      "target": {
+        "host": "127.0.0.1",
+        "port": 7800,
+        "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+      },
+      "success": true
+    },
+    "errors": [],
+    "warnings": []
+  },
+  "ActualGameFrame": "PASS actual Game frame minimap raycast at 3440x1440\nPASS fold heights, resource reflow, stationary layout cache, minimap raycast/drag, saved callbacks and stable hierarchy; columns=1"
+}

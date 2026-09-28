@@ -1,0 +1,457 @@
+{
+  "scaler": "ScaleWithScreenSize",
+  "reference": "(1280.00, 800.00)",
+  "match": 1,
+  "panels": [
+    {
+      "name": "TopBar",
+      "rect": "(x:-578.31, y:-84.00, width:1156.62, height:84.00)",
+      "min": "(0.00, 1.00)",
+      "max": "(1.00, 1.00)"
+    },
+    {
+      "name": "LeftStatus",
+      "rect": "(x:0.00, y:-470.00, width:236.00, height:470.00)",
+      "min": "(0.00, 1.00)",
+      "max": "(0.00, 1.00)"
+    },
+    {
+      "name": "RightStatus",
+      "rect": "(x:-292.00, y:-470.00, width:292.00, height:470.00)",
+      "min": "(1.00, 1.00)",
+      "max": "(1.00, 1.00)"
+    },
+    {
+      "name": "ConstructionBar",
+      "rect": "(x:-578.31, y:0.00, width:1156.62, height:206.00)",
+      "min": "(0.00, 0.00)",
+      "max": "(1.00, 0.00)"
+    },
+    {
+      "name": "Notifications",
+      "rect": "(x:-578.31, y:0.00, width:1156.62, height:66.00)",
+      "min": "(0.00, 0.00)",
+      "max": "(1.00, 0.00)"
+    },
+    {
+      "name": "ProgressAndSave",
+      "rect": "(x:-290.00, y:-210.00, width:580.00, height:420.00)",
+      "min": "(0.50, 0.50)",
+      "max": "(0.50, 0.50)"
+    },
+    {
+      "name": "PowerDetails",
+      "rect": "(x:-235.00, y:-130.00, width:470.00, height:260.00)",
+      "min": "(0.50, 0.50)",
+      "max": "(0.50, 0.50)"
+    },
+    {
+      "name": "Developer",
+      "rect": "(x:-590.31, y:-400.00, width:1180.62, height:800.00)",
+      "min": "(0.00, 0.00)",
+      "max": "(1.00, 1.00)"
+    }
+  ],
+  "fonts": [
+    {
+      "id": "date",
+      "size": 21,
+      "auto": false
+    },
+    {
+      "id": "remaining",
+      "size": 15,
+      "auto": false
+    },
+    {
+      "id": "mode",
+      "size": 16,
+      "auto": false
+    },
+    {
+      "id": "power",
+      "size": 16,
+      "auto": false
+    },
+    {
+      "id": "pause-caption",
+      "size": 15,
+      "auto": false
+    },
+    {
+      "id": "main-title",
+      "size": 20,
+      "auto": false
+    },
+    {
+      "id": "main-health",
+      "size": 16,
+      "auto": false
+    },
+    {
+      "id": "clock-fold-caption",
+      "size": 15,
+      "auto": false
+    },
+    {
+      "id": "clock-face",
+      "size": 16,
+      "auto": false
+    },
+    {
+      "id": "resource-fold-caption",
+      "size": 15,
+      "auto": false
+    },
+    {
+      "id": "resources",
+      "size": 16,
+      "auto": false
+    },
+    {
+      "id": "resources-all-caption",
+      "size": 15,
+      "auto": false
+    },
+    {
+      "id": "minimap-fold-caption",
+      "size": 15,
+      "auto": false
+    },
+    {
+      "id": "selection-title",
+      "size": 18,
+      "auto": false
+    },
+    {
+      "id": "selection-close-caption",
+      "size": 15,
+      "auto": false
+    },
+    {
+      "id": "selection-stats",
+      "size": 16,
+      "auto": false
+    },
+    {
+      "id": "upgrade-caption",
+      "size": 15,
+      "auto": false
+    },
+    {
+      "id": "upgrade-status",
+      "size": 16,
+      "auto": false
+    },
+    {
+      "id": "edit-caption",
+      "size": 15,
+      "auto": false
+    },
+    {
+      "id": "confirm-caption",
+      "size": 15,
+      "auto": false
+    },
+    {
+      "id": "cancel-caption",
+      "size": 15,
+      "auto": false
+    },
+    {
+      "id": "inventory-fold-caption",
+      "size": 15,
+      "auto": false
+    },
+    {
+      "id": "power-fold-caption",
+      "size": 15,
+      "auto": false
+    },
+    {
+      "id": "menu-fold-caption",
+      "size": 15,
+      "auto": false
+    },
+    {
+      "id": "category--1-caption",
+      "size": 15,
+      "auto": false
+    },
+    {
+      "id": "category-0-caption",
+      "size": 15,
+      "auto": false
+    },
+    {
+      "id": "category-1-caption",
+      "size": 15,
+      "auto": false
+    },
+    {
+      "id": "category-2-caption",
+      "size": 15,
+      "auto": false
+    },
+    {
+      "id": "category-3-caption",
+      "size": 15,
+      "auto": false
+    },
+    {
+      "id": "catalog-0-caption",
+      "size": 15,
+      "auto": false
+    },
+    {
+      "id": "catalog-1-caption",
+      "size": 15,
+      "auto": false
+    },
+    {
+      "id": "catalog-2-caption",
+      "size": 15,
+      "auto": false
+    },
+    {
+      "id": "catalog-3-caption",
+      "size": 15,
+      "auto": false
+    },
+    {
+      "id": "catalog-4-caption",
+      "size": 15,
+      "auto": false
+    },
+    {
+      "id": "catalog-5-caption",
+      "size": 15,
+      "auto": false
+    },
+    {
+      "id": "catalog-6-caption",
+      "size": 15,
+      "auto": false
+    },
+    {
+      "id": "catalog-7-caption",
+      "size": 15,
+      "auto": false
+    },
+    {
+      "id": "catalog-8-caption",
+      "size": 15,
+      "auto": false
+    },
+    {
+      "id": "catalog-9-caption",
+      "size": 15,
+      "auto": false
+    },
+    {
+      "id": "catalog-10-caption",
+      "size": 15,
+      "auto": false
+    },
+    {
+      "id": "catalog-11-caption",
+      "size": 15,
+      "auto": false
+    },
+    {
+      "id": "catalog-12-caption",
+      "size": 15,
+      "auto": false
+    },
+    {
+      "id": "catalog-13-caption",
+      "size": 15,
+      "auto": false
+    },
+    {
+      "id": "catalog-14-caption",
+      "size": 15,
+      "auto": false
+    },
+    {
+      "id": "catalog-15-caption",
+      "size": 15,
+      "auto": false
+    },
+    {
+      "id": "catalog-16-caption",
+      "size": 15,
+      "auto": false
+    },
+    {
+      "id": "catalog-17-caption",
+      "size": 15,
+      "auto": false
+    },
+    {
+      "id": "catalog-18-caption",
+      "size": 15,
+      "auto": false
+    },
+    {
+      "id": "catalog-19-caption",
+      "size": 15,
+      "auto": false
+    },
+    {
+      "id": "catalog-20-caption",
+      "size": 15,
+      "auto": false
+    },
+    {
+      "id": "catalog-21-caption",
+      "size": 15,
+      "auto": false
+    },
+    {
+      "id": "catalog-22-caption",
+      "size": 15,
+      "auto": false
+    },
+    {
+      "id": "catalog-23-caption",
+      "size": 15,
+      "auto": false
+    },
+    {
+      "id": "catalog-24-caption",
+      "size": 15,
+      "auto": false
+    },
+    {
+      "id": "pending",
+      "size": 14,
+      "auto": false
+    },
+    {
+      "id": "message",
+      "size": 15,
+      "auto": false
+    },
+    {
+      "id": "placement-hint",
+      "size": 15,
+      "auto": false
+    },
+    {
+      "id": "menu-close-caption",
+      "size": 15,
+      "auto": false
+    },
+    {
+      "id": "save-status",
+      "size": 16,
+      "auto": false
+    },
+    {
+      "id": "save-caption",
+      "size": 15,
+      "auto": false
+    },
+    {
+      "id": "load-caption",
+      "size": 15,
+      "auto": false
+    },
+    {
+      "id": "new-game-caption",
+      "size": 15,
+      "auto": false
+    },
+    {
+      "id": "new-game-warning",
+      "size": 14,
+      "auto": false
+    },
+    {
+      "id": "new-game-confirm-caption",
+      "size": 15,
+      "auto": false
+    },
+    {
+      "id": "new-game-cancel-caption",
+      "size": 15,
+      "auto": false
+    },
+    {
+      "id": "energy",
+      "size": 16,
+      "auto": false
+    },
+    {
+      "id": "stage",
+      "size": 16,
+      "auto": false
+    },
+    {
+      "id": "orb-craft-caption",
+      "size": 15,
+      "auto": false
+    },
+    {
+      "id": "developer-fold-caption",
+      "size": 15,
+      "auto": false
+    },
+    {
+      "id": "power-close-caption",
+      "size": 15,
+      "auto": false
+    },
+    {
+      "id": "power-details",
+      "size": 16,
+      "auto": false
+    },
+    {
+      "id": "developer-close-caption",
+      "size": 15,
+      "auto": false
+    },
+    {
+      "id": "counts",
+      "size": 16,
+      "auto": false
+    },
+    {
+      "id": "spawn-caption",
+      "size": 15,
+      "auto": false
+    },
+    {
+      "id": "spawn-air-caption",
+      "size": 15,
+      "auto": false
+    },
+    {
+      "id": "reset-caption",
+      "size": 15,
+      "auto": false
+    },
+    {
+      "id": "run-caption",
+      "size": 15,
+      "auto": false
+    },
+    {
+      "id": "day-caption",
+      "size": 15,
+      "auto": false
+    },
+    {
+      "id": "night-caption",
+      "size": 15,
+      "auto": false
+    },
+    {
+      "id": "amount-value",
+      "size": 16,
+      "auto": false
+    }
+  ]
+}

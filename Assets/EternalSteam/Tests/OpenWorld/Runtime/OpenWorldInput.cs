@@ -13,6 +13,8 @@ namespace EternalSteam.OpenWorld
         public BuildingDefinition SelectedDefinition {get;private set;}
         public BuildingInstance SelectedContent {get;private set;}
         public void SelectContent(BuildingDefinition definition){
+            if(Sandbox.Content.Defeated||Sandbox.Persistence?.Blocked==true)return;
+            if(!Sandbox.Content.MeetsBaseLevel(definition,out var reason)){Sandbox.Message=reason;return;}
             if(IsEditing&&Tool==WorldTool.Content&&ReferenceEquals(SelectedDefinition,definition)){Select(WorldTool.Edit);Sandbox.Message="건물 선택 해제 · 좌클릭 드래그: 사각형 회수 선택";return;}
             Select(WorldTool.Content);SelectedDefinition=definition;
             Sandbox.Message=WallPlacementStroke.Supports(definition)?"첫 클릭: 방벽 시작점 · 다음 클릭: 일직선 끝점 · Shift+드래그: 사각형 회수 선택 · 같은 목록 클릭: 선택 해제":"빈 위치 클릭: 배치 · 드래그: 사각형 회수 선택";

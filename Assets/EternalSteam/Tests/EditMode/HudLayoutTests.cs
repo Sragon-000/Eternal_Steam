@@ -63,11 +63,16 @@ namespace EternalSteam.Tests
         {
             var root=Hud();var entry=new InventoryBuilding{Id="resource",Name="Resource",Category=BuildingCategory.Resource};
             var view=new BuildingInventoryView(root,new[]{entry},_=>{});view.SelectCategory(BuildingCategory.Resource);
-            var button=root.Q<Button>("building-resource");
-            using(var evt=NavigationSubmitEvent.GetPooled()){evt.target=button;button.SendEvent(evt);}
-            var selected=view.Selected;Assert.That(selected,Is.SameAs(entry));
-            view.SetVisible(false);view.SetVisible(true);
-            Assert.That(view.Category,Is.EqualTo(BuildingCategory.Resource));Assert.That(view.Selected,Is.SameAs(selected));
+            var window=ScriptableObject.CreateInstance<EditorWindow>();
+            try {
+                // Navigation events need an attached panel to invoke Button.clicked.
+                window.Show();window.rootVisualElement.Add(root);
+                var button=root.Q<Button>("building-resource");
+                using(var evt=NavigationSubmitEvent.GetPooled()){evt.target=button;button.SendEvent(evt);}
+                var selected=view.Selected;Assert.That(selected,Is.SameAs(entry));
+                view.SetVisible(false);view.SetVisible(true);
+                Assert.That(view.Category,Is.EqualTo(BuildingCategory.Resource));Assert.That(view.Selected,Is.SameAs(selected));
+            } finally {window.Close();}
         }
     }
 }

@@ -47,6 +47,7 @@ namespace EternalSteam.OpenWorld
             }
             void Segment(Vector2 a,Vector2 b) {
                 var origin=terrain.transform.position;var size=terrain.terrainData.size;var mid=WorldGridGeometry.ToWorld(new Vector3((a.x+b.x)*.5f,0,(a.y+b.y)*.5f));
+                if(tiles!=null&&!tiles.IsPlayable(mid))return;
                 if(mid.x<origin.x||mid.z<origin.z||mid.x>=origin.x+size.x||mid.z>=origin.z+size.z)return;
                 var side=new Vector2(-(b-a).y,(b-a).x).normalized*.015f;int n=vertices.Count;
                 vertices.Add(Point(a+side));vertices.Add(Point(a-side));vertices.Add(Point(b+side));vertices.Add(Point(b-side));

@@ -1,18 +1,20 @@
 # 문서 안내와 현재 적용 상태
 
-최신 코드 확인: **2026-09-28**. 실행 기준은 원본 `Assets/EternalSteam/Scene/Tests/StartRegionSandbox.unity`다. 사용법은 [프로젝트 README](../README.md)를 따른다. 9월 28일 HUD 변경은 C# 컴파일까지 확인했으며 Editor/Play 검증은 대기 중이다.
+최신 코드 확인: **2026-09-28**. 실행 기준은 원본 `Assets/EternalSteam/Scene/Tests/StartRegionSandbox.unity`다. 사용법은 [프로젝트 README](../README.md)를 따른다. 9월 28일 후속 실제 실행에서 EditMode 89/89 및 시작 씬 Play 도구 4종이 통과했다. 후속 [Canvas 밀도 개선](Validation/2026-09-28-compact-canvas-hud.md)을 두 씬에 적용하고 5개 해상도·이벤트 입력·저장 왕복을 확인했다. 전체 수동 입력 QA는 별도다.
 
-2026-09-28 [P3 셀 홀로그램·배치 피드백](Validation/2026-09-28-build-area-hologram.md) 코드를 연결했다. 실제 가동 영역 조회를 공유하고 9청크 메시와 배치 사유 표시를 추가했다. C# 컴파일 완료, 셰이더 import·NUnit·Play 검증 대기다.
+2026-09-28 [P3 셀 홀로그램·배치 피드백](Validation/2026-09-28-build-area-hologram.md) 코드를 연결했다. 실제 가동 영역 조회를 공유하고 9청크 메시와 배치 사유 표시를 추가했다. 후속 실제 Editor에서 NUnit 및 홀로그램 Play 검사를 통과했다.
 
-2026-09-28 사용자 기준 변경에 따라 [Canvas 실제 계층 적용](Validation/2026-09-28-canvas-hierarchy.md)을 완료했다. 현재 StartRegionSandbox·OpenWorldSandbox의 HUD는 씬에 저장된 Canvas/uGUI이며, 격자·홀로그램·배치 미리보기도 실제 Hierarchy 참조를 사용한다. 이전 UI Toolkit 기록보다 이 후속 기록을 우선한다. Unity import·Play 실행 확인은 여전히 대기 중이다.
+2026-09-28 사용자 기준 변경에 따라 [Canvas 실제 계층 적용](Validation/2026-09-28-canvas-hierarchy.md)을 완료했다. 현재 StartRegionSandbox·OpenWorldSandbox의 HUD는 씬에 저장된 Canvas/uGUI이며, 격자·홀로그램·배치 미리보기도 실제 Hierarchy 참조를 사용한다. 이전 UI Toolkit 기록보다 이 후속 기록을 우선한다. 후속 실제 Editor에서 두 씬 계층 검사와 시작 씬 Play 검사를 통과했다.
 
-[실제 Editor 심층 테스트 시도](Validation/2026-09-28-deep-editor-test.md)는 Rosetta 2 미설치로 시작 단계에서 차단되었다. 실행 통과 기록이 아니며, 환경 복구 후 import·NUnit·Play 검사가 필요하다.
+[실제 Editor 심층 테스트](Validation/2026-09-28-deep-editor-test.md)에 Rosetta 설치 후 89개 테스트·Play 4종 통과 및 화면 겹침 발견을 기록했다. 이전 환경 차단 기록도 보존했다.
+
+2026-09-28 [시안 후속 HUD 시각 요소](Validation/2026-09-28-reference-hud-visuals.md)를 두 씬의 실제 Canvas 계층에 저장했다. 테두리·자원 아이콘·시계·실제 프리팹 카드·선택 강조·고정 강화 버튼·중립 격자 재질을 적용하고 EditMode 89/89 및 Play 검증을 통과했다. 최신 UI 상태는 이 기록을 우선한다.
 
 ## 현재 구현
 
 | 영역 | 적용 상태 | 현재 문서 |
 |---|---|---|
-| HUD·건설 표시 | 현재 씬의 Canvas/uGUI·버튼 콜백·9청크·미리보기를 Hierarchy에 저장. 실행 검증 대기 | [실제 계층 적용](Validation/2026-09-28-canvas-hierarchy.md) |
+| HUD·건설 표시 | 현재 씬의 Canvas/uGUI·버튼 콜백·9청크·미리보기를 Hierarchy에 저장. EditMode·시작 씬 Play 검사 통과 | [실제 계층 적용](Validation/2026-09-28-canvas-hierarchy.md) |
 | 시작 기지·맵 | 기존 모델로 메인 자동 설치, 정면 11×11칸, 맵 45° | [시작 루프](고정_메인기지_플레이루프_적용결과.md) |
 | 건설·회수 | 예약/확정/취소, 두 클릭 방벽 직선 배치, 사각 회수 선택 | [건설 편집](드래그_건설_편집.md) |
 | 전투 | 원형 자동 조준, 회전 모듈, 냉각 재탐색, 적의 건물/방벽 공격 | [건물 피격](방벽_건물피격_적공격_적용결과.md) |
@@ -41,6 +43,8 @@ BELTFED 공식 게임 화면의 정보 배치를 참고한 [Eternal Steam UI 시
 
 ## 다음 작업과 기획 대기
 
+- [Canvas HUD 밀도 개선 실제 적용 계획](Canvas_HUD_밀도개선_실제적용계획.md): 1920×1080 기준 치수, 실제 계층 변경, 런타임 배치 덮어쓰기 해소, 두 씬 적용 순서와 검증 매트릭스. **두 씬 적용 완료**. [결과와 검증 범위](Validation/2026-09-28-compact-canvas-hud.md)를 따른다.
+
 - 실제 다중 맵 이동·재방문·비활성 맵 생산·재활성화, 기지별 독립 라운드.
 - 최종 지역별 자원 제한, 건설/강화 비용표, 건물별 테크·개수 제한의 확정 규칙.
 - 9종 오브 효과, 기차/자원 운송, 최종 맵·적·보스 디자인과 애니메이션.
@@ -50,7 +54,7 @@ BELTFED 공식 게임 화면의 정보 배치를 참고한 [Eternal Steam UI 시
 ## 검증 근거
 
 - [현재 Canvas 계층 적용·정적 검증](Validation/2026-09-28-canvas-hierarchy.md)
-- [실제 Editor 실행 차단과 후속 검사](Validation/2026-09-28-deep-editor-test.md)
+- [실제 Editor 테스트 결과와 남은 검사](Validation/2026-09-28-deep-editor-test.md)
 
 - [시작 루프 검증](Validation/2026-09-24-start-loop.md)
 - [저장·패배·강화 검증](Validation/2026-09-24-single-map-save.md)
