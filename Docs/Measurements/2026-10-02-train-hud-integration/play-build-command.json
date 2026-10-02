@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/VerifyIntegratedTrainPlay.cs",
+      "entry": "VerifyIntegratedTrainPlay.Build"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 183,
+      "executeMs": 318,
+      "assemblyName": "PipelineRunScript_VerifyIntegratedTrainPlay_d92253581dfd4cf486b09dbddad82f01",
+      "success": true,
+      "result": "PASS preview, finite cost, reuse, stale/insufficient rejection and unassigned connection save; reload next"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

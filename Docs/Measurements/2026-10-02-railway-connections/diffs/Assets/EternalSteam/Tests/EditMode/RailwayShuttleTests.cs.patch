@@ -1,0 +1,46 @@
+--- before/Assets/EternalSteam/Tests/EditMode/RailwayShuttleTests.cs
++++ after/Assets/EternalSteam/Tests/EditMode/RailwayShuttleTests.cs
+@@ -52,6 +52,43 @@
+             Assert.That(network.Commit(Guid.NewGuid().ToString("N"),draft,out var r,out var e,RailRouteMode.Shuttle),Is.True,e);
+             Assert.That(network.Configure(r,"iron",0,30,0,out e),Is.True,e);return r;
+         }
++        [Test] public void ExplicitConnectionIgnoresAdjacentTracksAndPersistsUnassignedCells()
++        {
++            var r=Route();var leg=r.legs[0];
++            foreach(var cell in new[]{new Vector2Int(2,2),new Vector2Int(3,2),new Vector2Int(4,2),new Vector2Int(5,2)})Facility(RailFacilityKind.Track,cell,stations[0].OwnerBaseId);
++            network.Refresh(buildings);Assert.That(network.ValidateExisting(r,out var error),Is.True,error);
++            var saved=network.Capture();Assert.That(saved.connections.Count,Is.EqualTo(1));Assert.That(saved.trackRecords.Count,Is.EqualTo(9));
++            network.Restore(saved);Assert.That(network.Routes[0].legs[0].cells,Is.EqualTo(leg.cells));Assert.That(network.TrackDirections(new Vector2Int(3,1)),Is.EquivalentTo(new[]{Vector2Int.left,Vector2Int.right}));
++        }
++        [Test] public void ExplicitConnectionCanRegisterBeforeAnyRouteWithoutChargingOrCreatingTrain()
++        {
++            var path=network.InspectDraft(Stops(),null,RailRouteMode.Shuttle).Legs[0];
++            var c=new RailConnection{id=Guid.NewGuid().ToString("N"),fromStation=stations[0].PersistentId,toStation=stations[1].PersistentId,fromPort=path.startPort,toPort=path.endPort,cells=path.cells};
++            Assert.That(network.Connect(c,out var e),Is.True,e);Assert.That(network.Connect(c,out e),Is.True,e);Assert.That(network.Routes.Count,Is.Zero);
++            var saved=network.Capture();network.Restore(saved);Assert.That(network.Connections.Count,Is.EqualTo(1));
++            c.cells.Clear();Assert.That(network.Connections[0].cells.Count,Is.EqualTo(5));var r=Route();Assert.That(r.legs[0].cells.Count,Is.EqualTo(5));
++        }
++        [Test] public void GraphlessSaveMigratesRoutePathBeforeInspectingNewAdjacentTracks()
++        {
++            var r=Route();var saved=network.Capture();saved.connectionVersion=0;saved.connections.Clear();saved.trackRecords.Clear();
++            Facility(RailFacilityKind.Track,new Vector2Int(3,2),stations[0].OwnerBaseId);network.Refresh(buildings);network.Restore(saved);
++            Assert.That(network.ValidateExisting(network.Routes[0],out var e),Is.True,e);Assert.That(network.Capture().connectionVersion,Is.EqualTo(1));
++        }
++        [Test] public void CorruptGraphIdentityAndDuplicateSocketsRejectBeforeReplacingLiveRoutes()
++        {
++            var r=Route();var saved=network.Capture();saved.trackRecords[0].buildingId=Guid.NewGuid().ToString("N");
++            Assert.Throws<ArgumentException>(()=>network.Restore(saved));Assert.That(network.Routes[0],Is.SameAs(r));
++            saved=network.Capture();saved.connections.Add(saved.connections[0]);Assert.Throws<ArgumentException>(()=>network.Restore(saved));
++            saved=network.Capture();saved.connections[0].cells.RemoveAt(2);Assert.Throws<ArgumentException>(()=>network.Restore(saved));
++            Assert.That(network.Routes[0],Is.SameAs(r));
++        }
++        [Test] public void RegisteredBrokenConnectionDoesNotSwitchToAlternativeTrack()
++        {
++            var r=Route();var old=r.legs[0].cells.ToArray();buildings.Single(b=>b.Cell==new Vector2Int(3,1)).Dispose();
++            foreach(var cell in new[]{new Vector2Int(2,2),new Vector2Int(3,2),new Vector2Int(4,2)})Facility(RailFacilityKind.Track,cell,stations[0].OwnerBaseId);
++            network.Refresh(buildings);Assert.That(network.ValidateExisting(r,out _),Is.False);Assert.That(r.legs[0].cells,Is.EqualTo(old));
++            Assert.That(r.train.status,Is.EqualTo(TrainStatus.RouteError));
++        }
+         [Test] public void SharedStationHoldsSecondTrainOutsideAndStopRequestSurvivesReload()
+         {
+             AddStation(2);var a=Between(0,1);var c=Between(2,1);Start(a);Start(c);

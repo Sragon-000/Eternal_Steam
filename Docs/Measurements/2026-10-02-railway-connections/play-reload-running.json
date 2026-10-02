@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/VerifyRailwayConnectionsPlay.cs",
+      "entry": "VerifyRailwayConnectionsPlay.ReloadRunning"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 74,
+      "executeMs": 34,
+      "assemblyName": "PipelineRunScript_VerifyRailwayConnectionsPlay_8142b2a8c22d402e82f38e8b1cfa9ace",
+      "success": true,
+      "result": "PASS exact running graph/train/inventory reload"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

@@ -1,0 +1,27 @@
+{
+  "quarter_frame_samples": 193,
+  "joint_errors_model_units": {
+    "connecting_small_end": 4.915124923727108e-07,
+    "connecting_big_end": 2.6656007498500226e-07,
+    "coupling_pin_to_rod_centerline": 5.748063779469106e-07,
+    "piston_crosshead": 0.0,
+    "connecting_length_error": 5.135224609986722e-07,
+    "piston_axis_error": 1.4305114648394124e-08
+  },
+  "loop_matrix_error": 8.344650268554688e-07,
+  "invalid_drivers": [],
+  "frame_range": [
+    1,
+    48
+  ],
+  "closure_frame": 49,
+  "fps": 24,
+  "connecting_rod_length": 2.1,
+  "crank_radius": 0.13,
+  "slider_axis_z": 1.14,
+  "unity_verified": false,
+  "collision_scope": "Rod planes separated by .19. Endpoint continuity/length verified; full solid collision or engineering validation not performed.",
+  "wheel_center_drift": 9.652456486643342e-07,
+  "wheel_center_to_pivot_error": 0.0,
+  "review_repair": "Restored copied parent-inverse matrices after visual review; all previews regenerated."
+}

@@ -1,0 +1,53 @@
+{
+  "units": "provisional Blender model units; Unity scale not validated",
+  "axes": {
+    "forward": "-X",
+    "up": "+Z"
+  },
+  "wagon": {
+    "body_length": 5.2,
+    "body_width": 2.72,
+    "socket_pitch": 6.4,
+    "wheel_radius": 0.52
+  },
+  "ES_COUPLER_V1": {
+    "front_socket": [
+      -3.2,
+      0,
+      1.05
+    ],
+    "rear_socket": [
+      3.2,
+      0,
+      1.05
+    ],
+    "mating_rule": "Coincident socket positions; opposite local +X axes; matching local +Z",
+    "front_role": "tongue",
+    "rear_role": "fork",
+    "pin_diameter": 0.1,
+    "tongue_width": 0.18,
+    "fork_inner_gap": 0.23,
+    "side_clearance_each": 0.025
+  },
+  "ES_TURRET_V1": {
+    "socket_name": "TURRET_MOUNT",
+    "local_position": [
+      0,
+      0,
+      2.17
+    ],
+    "up": "+Z",
+    "forward": "-X",
+    "plate_diameter": 2.06,
+    "bolt_circle_diameter": 1.7,
+    "bolt_count": 8,
+    "bolt_diameter_nominal": 0.09,
+    "bolt_angle_step_degrees": 45,
+    "register_ring_center_radius": 0.67,
+    "register_ring_tube_radius": 0.035,
+    "receiver_recess_depth_min": 0.06,
+    "bolt_head_clearance_height": 0.055,
+    "recommended_base_radius_max": 1.05,
+    "assembly_rule": "Set separate turret root origin at its lower mounting face; parent to TURRET_MOUNT with identity local transform. Provide underside groove for register ring and clearance/holes for 8 bolt heads."
+  }
+}

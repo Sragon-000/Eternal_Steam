@@ -1,0 +1,23 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "var t=new EternalSteam.Tests.ResponsiveHudBoundsTests();foreach(var size in new[]{new UnityEngine.Vector2Int(800,600),new UnityEngine.Vector2Int(1280,720),new UnityEngine.Vector2Int(1920,1080),new UnityEngine.Vector2Int(2560,1080),new UnityEngine.Vector2Int(3840,1080)})t.SavedHudFitsWideAndSmallWindowsWithExpandedCatalogueAndSelection(\"StartRegionSandbox\",size.x,size.y);return \"PASS responsive bounds cases\";"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": "PASS responsive bounds cases"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

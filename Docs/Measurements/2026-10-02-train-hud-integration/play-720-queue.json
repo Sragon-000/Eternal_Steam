@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/VerifyIntegratedPresentation.cs",
+      "entry": "VerifyIntegratedPresentation.QueuePlay"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 35,
+      "executeMs": 0,
+      "assemblyName": "PipelineRunScript_VerifyIntegratedPresentation_193e66ea50fa430d81674da7d1e0d533",
+      "success": true,
+      "result": "Queued actual Game frame input verification"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

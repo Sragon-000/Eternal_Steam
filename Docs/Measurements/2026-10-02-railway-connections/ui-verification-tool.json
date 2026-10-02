@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/VerifyRailwayConnections.cs",
+      "entry": "VerifyRailwayConnections.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 71,
+      "executeMs": 4596,
+      "assemblyName": "PipelineRunScript_VerifyRailwayConnections_c6a5a890fdf64b69adbae2a978aed14f",
+      "success": true,
+      "result": "[\n  {\n    \"scene\": \"StartRegionSandbox\",\n    \"savedRefs\": true,\n    \"persistentCommands\": 8,\n    \"canvas\": \"GameplayCanvas\",\n    \"initiallyHidden\": true\n  },\n  {\n    \"scene\": \"OpenWorldSandbox\",\n    \"savedRefs\": true,\n    \"persistentCommands\": 8,\n    \"canvas\": \"GameplayCanvas\",\n    \"initiallyHidden\": true\n  }\n]"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

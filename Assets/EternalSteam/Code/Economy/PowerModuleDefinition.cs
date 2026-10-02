@@ -36,6 +36,11 @@ namespace EternalSteam
         public void Activate(){}public void Tick(float dt){}
         public void Dispose(){Supply=null;Supplied=false;Stored=0;PendingProduction=PendingDemand=0;}
         public void RestoreSupply(PowerModule supply){Supply=supply;}
+        public double WithdrawStored(double maximum)
+        {
+            if(Role!=PowerRole.Storage||!Owner.Active||Owner.Disposed||!double.IsFinite(maximum)||maximum<=0)return 0;
+            double taken=Math.Min(Stored,maximum);Stored-=taken;return taken;
+        }
         public bool AllowsCombat=>Role!=PowerRole.Consumer||!RequestsSupply||(Supplied&&Supply!=null&&Supply.Owner.Active&&!Supply.Owner.Disposed);
     }
 }

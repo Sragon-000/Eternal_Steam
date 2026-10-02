@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using NUnit.Framework;
 using UnityEngine;
@@ -10,7 +11,7 @@ namespace EternalSteam.Tests
         readonly List<Object> assets=new();
         readonly List<BuildingInstance> buildings=new();
         sealed class LevelLimit:ILevelLimit
-        {public int LevelCap {get;set;}=1;public bool IsExempt(BuildingInstance b)=>false;}
+        {public int LevelCap {get;set;}=1;public bool Exempt {get;set;} public bool IsExempt(BuildingInstance b)=>Exempt;}
         T Asset<T>() where T:ScriptableObject
         {var asset=ScriptableObject.CreateInstance<T>();assets.Add(asset);return asset;}
         BuildingInstance Create(BuildingModuleDefinition module,BuildingServices services=null,bool active=true)
@@ -60,6 +61,25 @@ namespace EternalSteam.Tests
             Assert.That(other.Module<IUpgradeControl>().CanUpgrade(out reason),Is.False);Assert.That(reason,Does.Contain("활성"));
             Assert.That(other.Module<IUpgradeControl>().TryUpgrade(out _),Is.False);
         }
+        [Test] public void PerformancePurchaseRechecksLiveMainLevelAndPreservesFundsOnRejection()
+        {
+            var limit=new LevelLimit();var bank=Bank(10);
+            var b=Create(Asset<PerformanceUpgradeDefinition>(),new BuildingServices(null,levelLimit:limit));
+            var u=b.Module<IUpgradeControl>();var purchase=new UpgradePurchase(bank,Price(10));
+            Assert.That(purchase.CanUpgrade(b,out var reason),Is.False);Assert.That(reason,Does.Contain("메인 기지"));
+            Assert.That(purchase.TryUpgrade(b,out _),Is.False);Assert.That(u.Level,Is.EqualTo(1));Assert.That(bank.Amount("ore"),Is.EqualTo(10));
+            limit.LevelCap=2;Assert.That(purchase.CanUpgrade(b,out _),Is.True);
+            limit.LevelCap=1;Assert.That(purchase.TryUpgrade(b,out _),Is.False);Assert.That(bank.Amount("ore"),Is.EqualTo(10));
+            limit.LevelCap=2;Assert.That(purchase.TryUpgrade(b,out _),Is.True);Assert.That(u.Level,Is.EqualTo(2));Assert.That(bank.Amount("ore"),Is.Zero);
+            Assert.That(u.TryUpgrade(out _),Is.False);Assert.That(u.Level,Is.EqualTo(2));
+        }
+        [Test] public void PerformanceExemptionStillHonorsOwnMaximumAndActivity()
+        {
+            var limit=new LevelLimit{Exempt=true};var d=Asset<PerformanceUpgradeDefinition>();d.MaximumLevel=2;
+            var b=Create(d,new BuildingServices(null,levelLimit:limit),false);var u=b.Module<IUpgradeControl>();
+            Assert.That(u.TryUpgrade(out _),Is.False);b.Activate();Assert.That(u.TryUpgrade(out _),Is.True);
+            Assert.That(u.TryUpgrade(out _),Is.False);Assert.That(u.Level,Is.EqualTo(2));
+        }
         [Test] public void PaidQueryAggregatesDuplicateCostsAndCommitDebitsExactlyOnce()
         {
             var b=Create(Asset<PerformanceUpgradeDefinition>());var bank=Bank(10);var purchase=new UpgradePurchase(bank,Price(4,6));
@@ -76,6 +96,37 @@ namespace EternalSteam.Tests
             Assert.That(purchase.TryUpgrade(b,out var reason),Is.False);Assert.That(reason,Does.Contain("부족"));
             Assert.That(bank.Amount("ore"),Is.EqualTo(9));Assert.That(b.Module<IUpgradeControl>().Level,Is.EqualTo(1));
             table.Entries.Clear();Assert.That(purchase.CanUpgrade(b,out reason),Is.False);Assert.That(reason,Does.Contain("설정되지"));
+        }
+        [Test] public void PaidUpgradeUsesInstalledOwnerLedger()
+        {
+            string owner=Guid.NewGuid().ToString("N"),other=Guid.NewGuid().ToString("N");
+            var b=Create(Asset<PerformanceUpgradeDefinition>(),active:false);
+            b.RestoreIdentity(b.PersistentId,owner);b.Activate();
+            var registry=new BaseInventoryRegistry(Bank(0),_=>true);
+            var ownerBank=registry.Ensure(owner);var otherBank=registry.Ensure(other);
+            ownerBank.Deposit("ore",10);otherBank.Deposit("ore",80);
+            var purchase=new UpgradePurchase(building=>registry.Available(building.OwnerBaseId),Price(10));
+            Assert.That(purchase.CanUpgrade(b,out _),Is.True);
+            Assert.That(purchase.TryUpgrade(b,out _),Is.True);
+            Assert.That(ownerBank.Amount("ore"),Is.Zero);
+            Assert.That(otherBank.Amount("ore"),Is.EqualTo(80));
+            Assert.That(b.Module<IUpgradeControl>().Level,Is.EqualTo(2));
+        }
+        [Test] public void LostOwnerAndChangedStockRejectPaidUpgradeWithoutMutation()
+        {
+            var b=Create(Asset<PerformanceUpgradeDefinition>());var bank=Bank(10);
+            bool ownerActive=true;
+            var purchase=new UpgradePurchase(_=>ownerActive?bank:null,Price(10));
+            Assert.That(purchase.CanUpgrade(b,out _),Is.True);
+            ownerActive=false;
+            Assert.That(purchase.TryUpgrade(b,out var reason),Is.False);
+            Assert.That(reason,Does.Contain("소속 기지"));
+            Assert.That(bank.Amount("ore"),Is.EqualTo(10));
+            ownerActive=true;
+            bank.Withdraw("ore",1);
+            Assert.That(purchase.TryUpgrade(b,out reason),Is.False);
+            Assert.That(reason,Does.Contain("부족"));
+            Assert.That(b.Module<IUpgradeControl>().Level,Is.EqualTo(1));
         }
         [Test] public void InvalidOrMissingCostsAreNotVerificationFree()
         {
@@ -103,7 +154,9 @@ namespace EternalSteam.Tests
             Assert.That(bank.CanPurchase(costs,out _),Is.False);int commits=0;
             Assert.That(bank.TryPurchase(costs,()=>{commits++;return true;},out _),Is.False);Assert.That(commits,Is.Zero);
             costs[1].Amount=7;Assert.That(bank.CanPurchase(costs,out _),Is.True);
-            Assert.That(bank.TryPurchase(costs,()=>false,out _),Is.False);Assert.That(bank.Amount("ore"),Is.EqualTo(10));
+            double during=-1;
+            Assert.That(bank.TryPurchase(costs,()=>{during=bank.Amount("ore");bank.AddCapacity("ore",-50);return false;},out _),Is.False);
+            Assert.That(during,Is.Zero);Assert.That(bank.Amount("ore"),Is.EqualTo(10));Assert.That(bank.Capacity("ore"),Is.EqualTo(100));
             Assert.That(bank.CanPurchase(null,out _),Is.False);Assert.That(bank.CanPurchase(System.Array.Empty<ResourceCost>(),out _),Is.True);
             costs[0].Amount=double.MaxValue;costs[1].Amount=double.MaxValue;Assert.That(bank.CanPurchase(costs,out _),Is.False);
         }

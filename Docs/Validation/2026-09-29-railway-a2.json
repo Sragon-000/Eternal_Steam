@@ -1,0 +1,558 @@
+{
+  "date": "2026-09-29",
+  "scope": "A2 route confirmation/discard and principal command availability",
+  "project": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam",
+  "runner": {
+    "status": "completed",
+    "duration": 3.26,
+    "summary": {
+      "total": 119,
+      "passed": 119,
+      "failed": 0,
+      "skipped": 0,
+      "inconclusive": 0
+    },
+    "results": [
+      {
+        "FullName": "EternalSteam.Tests.RailwayEconomyTests.InvalidTransfersLeaveStockUnchanged(double.NaN)",
+        "Status": "Passed",
+        "Duration": 0.0001709,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayEconomyTests.InvalidTransfersLeaveStockUnchanged(double.PositiveInfinity)",
+        "Status": "Passed",
+        "Duration": 2.18e-05,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayEconomyTests.InvalidTransfersLeaveStockUnchanged(-1)",
+        "Status": "Passed",
+        "Duration": 1.77e-05,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayEconomyTests.MultiBasePurchaseFailureChargesNeitherBase",
+        "Status": "Passed",
+        "Duration": 0.0001512,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayEconomyTests.OverCapacityStockIsPreservedAndRejectsNewDeliveries",
+        "Status": "Passed",
+        "Duration": 7.49e-05,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayEconomyTests.RestoreValidatesBeforeReplacingLedgers",
+        "Status": "Passed",
+        "Duration": 0.0016601,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayEconomyTests.SeparateBaseLedgersNeverShareOrCopyBalances",
+        "Status": "Passed",
+        "Duration": 0.000172,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayMigrationTests.ArchiveFailureLeavesOriginalReadable",
+        "Status": "Passed",
+        "Duration": 0.0073696,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayMigrationTests.FailedRunCannotBeRevivedByMigrationOrBackup",
+        "Status": "Passed",
+        "Duration": 0.0035125,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayMigrationTests.InterruptedWriteAndArchiveRetryKeepOriginalUntilSuccessfulCommit",
+        "Status": "Passed",
+        "Duration": 0.0036851,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.ChangedPendingPathFailsWithoutChangingValidActiveRoute",
+        "Status": "Passed",
+        "Duration": 0.0084531,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.CommitIsIdempotentAndDoesNotStartOrLoad",
+        "Status": "Passed",
+        "Duration": 0.0004902,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.DeliveryConservesStockAndNextStationStopDoesNotRepeatService",
+        "Status": "Passed",
+        "Duration": 0.0006883,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.EmptyCargoStillRunsAndMissingReturnCannotCommit",
+        "Status": "Passed",
+        "Duration": 0.0008834,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.EveryTransportStateRoundTripsWithoutTransfer(Stopped)",
+        "Status": "Passed",
+        "Duration": 0.0023251,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.EveryTransportStateRoundTripsWithoutTransfer(Moving)",
+        "Status": "Passed",
+        "Duration": 0.0005091,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.EveryTransportStateRoundTripsWithoutTransfer(Dwelling)",
+        "Status": "Passed",
+        "Duration": 0.0004685,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.EveryTransportStateRoundTripsWithoutTransfer(StopRequested)",
+        "Status": "Passed",
+        "Duration": 0.0004585,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.EveryTransportStateRoundTripsWithoutTransfer(FuelWait)",
+        "Status": "Passed",
+        "Duration": 0.0004539,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.EveryTransportStateRoundTripsWithoutTransfer(RouteError)",
+        "Status": "Passed",
+        "Duration": 0.0004572,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.FullDestinationRetainsCargoAndMissingFuelDoesNotDepart",
+        "Status": "Passed",
+        "Duration": 0.0004202,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.InvalidSavedAmountsAndDuplicateTrainsAreRejected",
+        "Status": "Passed",
+        "Duration": 0.000451,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.MidSegmentErrorRecoveryKeepsPositionCargoAndPaidFuel",
+        "Status": "Passed",
+        "Duration": 0.0005016,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.MidSegmentErrorStillProtectsTrackAndStations",
+        "Status": "Passed",
+        "Duration": 0.0009917,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.MovingRestorePreservesFuelAndDoesNotDuplicateCargo",
+        "Status": "Passed",
+        "Duration": 0.0004615,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.MovingTrackRecoveryIsBlockedAndCargoResourceIsImmutable",
+        "Status": "Passed",
+        "Duration": 0.0004596,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.MultipleStationsAndRotatedPortsCompleteClosedCircuit(3,0)",
+        "Status": "Passed",
+        "Duration": 0.0018478,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.MultipleStationsAndRotatedPortsCompleteClosedCircuit(3,1)",
+        "Status": "Passed",
+        "Duration": 0.000787,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.MultipleStationsAndRotatedPortsCompleteClosedCircuit(4,2)",
+        "Status": "Passed",
+        "Duration": 0.0008985,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.MultipleStationsAndRotatedPortsCompleteClosedCircuit(4,3)",
+        "Status": "Passed",
+        "Duration": 0.0009118,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.PendingAppliesOnlyAtFirstStationAndKeepsTrainIdentity",
+        "Status": "Passed",
+        "Duration": 0.0008246,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.PendingDoesNotReserveNewTrackAndCollisionAtBoundaryKeepsOriginalRoute",
+        "Status": "Passed",
+        "Duration": 0.0016546,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.PendingRejectsChangedAnchorAndMalformedSavedRevision",
+        "Status": "Passed",
+        "Duration": 0.0006033,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.PendingSaveCancelAndStaleDraftLeaveActiveRouteUntouched",
+        "Status": "Passed",
+        "Duration": 0.0006334,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.StationErrorAllowsFurtherTrackRecoveryButProtectsOccupiedStation",
+        "Status": "Passed",
+        "Duration": 0.0004886,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.StopRequestWinsAfterBoundaryApplication",
+        "Status": "Passed",
+        "Duration": 0.0004356,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.ThreeBaseDistributionPreservesRemainder(20,30,1000,30,50)",
+        "Status": "Passed",
+        "Duration": 0.0014727,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.ThreeBaseDistributionPreservesRemainder(30,40,25,25,45)",
+        "Status": "Passed",
+        "Duration": 0.0007579,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.TrackSharingAndBranchesAreRejected",
+        "Status": "Passed",
+        "Duration": 0.000455,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.UnassignedCargoCannotHideStockInSnapshot",
+        "Status": "Passed",
+        "Duration": 0.0004785,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.UnassignedCargoSurvivesJsonAndAllowsOnlyFirstAssignment(null)",
+        "Status": "Passed",
+        "Duration": 0.0007513,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.UnassignedCargoSurvivesJsonAndAllowsOnlyFirstAssignment(\"\")",
+        "Status": "Passed",
+        "Duration": 0.0004457,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.UnloadBeforeLoadAndLimitedSourceRespectVisitAmounts",
+        "Status": "Passed",
+        "Duration": 0.0004419,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.TrainDefenseTests.AllThreeMountShapesAcceptedWithoutRotationShortcut",
+        "Status": "Passed",
+        "Duration": 0.0017947,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.TrainDefenseTests.CaptureRestoresBatteryLevelAndCooldown",
+        "Status": "Passed",
+        "Duration": 0.0061012,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.TrainDefenseTests.DepletedBatteryStopsNewAttacksAndPausedCombatSpendsNothing",
+        "Status": "Passed",
+        "Duration": 0.0009083,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.TrainDefenseTests.InvalidBatteryRejected(double.NaN)",
+        "Status": "Passed",
+        "Duration": 0.0001147,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.TrainDefenseTests.InvalidBatteryRejected(-1)",
+        "Status": "Passed",
+        "Duration": 5.99e-05,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.TrainDefenseTests.InvalidBatteryRejected(201)",
+        "Status": "Passed",
+        "Duration": 0.0001814,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.TrainDefenseTests.MountedModuleHonorsInjectedMainLevelEvenWhenCalledDirectly",
+        "Status": "Passed",
+        "Duration": 0.0004562,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.TrainDefenseTests.MovingWeaponQueriesCurrentPositionAndNeverRegistersAsEnemyTarget",
+        "Status": "Passed",
+        "Duration": 0.0009567,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.TrainDefenseTests.OlderV2MissingArmamentDefaultsToEmptyMount",
+        "Status": "Passed",
+        "Duration": 0.0001628,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.TrainDefenseTests.OnlyExactMountDimensionsAreAccepted(1,1)",
+        "Status": "Passed",
+        "Duration": 0.0001017,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.TrainDefenseTests.OnlyExactMountDimensionsAreAccepted(3,3)",
+        "Status": "Passed",
+        "Duration": 5.36e-05,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.TrainDefenseTests.OnlyExactMountDimensionsAreAccepted(3,1)",
+        "Status": "Passed",
+        "Duration": 5.37e-05,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.TrainDefenseTests.PowerTransferConservesStoredEnergyAndRejectsInvalidRequests",
+        "Status": "Passed",
+        "Duration": 0.0016133,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.TrainDefenseTests.ProjectileCompletesAfterBatteryDepletion",
+        "Status": "Passed",
+        "Duration": 0.00066,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.UpgradeQueryTests.AllUpgradeKindsRejectInactiveDestroyedAndMaximumWithoutMutation(0)",
+        "Status": "Passed",
+        "Duration": 0.0015408,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.UpgradeQueryTests.AllUpgradeKindsRejectInactiveDestroyedAndMaximumWithoutMutation(1)",
+        "Status": "Passed",
+        "Duration": 0.0001035,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.UpgradeQueryTests.AllUpgradeKindsRejectInactiveDestroyedAndMaximumWithoutMutation(2)",
+        "Status": "Passed",
+        "Duration": 0.0004754,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.UpgradeQueryTests.BankQuoteAndRejectedCommitNeverDebit",
+        "Status": "Passed",
+        "Duration": 0.0006736,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.UpgradeQueryTests.ClickRechecksFundsAndChangedCostPolicy",
+        "Status": "Passed",
+        "Duration": 0.0011454,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.UpgradeQueryTests.ExplicitFreePolicyStillChecksBuildingAndLevelConditions",
+        "Status": "Passed",
+        "Duration": 0.0002218,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.UpgradeQueryTests.InvalidOrMissingCostsAreNotVerificationFree",
+        "Status": "Passed",
+        "Duration": 0.0004388,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.UpgradeQueryTests.PaidQueryAggregatesDuplicateCostsAndCommitDebitsExactlyOnce",
+        "Status": "Passed",
+        "Duration": 0.0003889,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.UpgradeQueryTests.PerformanceExemptionStillHonorsOwnMaximumAndActivity",
+        "Status": "Passed",
+        "Duration": 0.0001264,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.UpgradeQueryTests.PerformancePurchaseRechecksLiveMainLevelAndPreservesFundsOnRejection",
+        "Status": "Passed",
+        "Duration": 0.0004249,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.UpgradeQueryTests.QueryDoesNotUpgradeOrScaleHealthAndCommandRechecksLevelLimit",
+        "Status": "Passed",
+        "Duration": 0.0002592,
+        "Message": null,
+        "StackTrace": null
+      }
+    ]
+  },
+  "play": {
+    "author": {
+      "diagnostics": [],
+      "compileMs": 843,
+      "executeMs": 1627,
+      "assemblyName": "PipelineRunScript_AuthorRailwayA2_5c22560d615e430b907fba8bb8b203b8",
+      "success": true,
+      "result": "PASS saved confirm/discard panels, persistent callbacks and command bindings in both scenes"
+    },
+    "fixture": {
+      "diagnostics": [],
+      "compileMs": 791,
+      "executeMs": 11,
+      "assemblyName": "PipelineRunScript_VerifyRailwayA2_f640421744a84eb281afdc73743c93d2",
+      "success": true,
+      "result": "PASS fresh new-route gate; load A1 isolated railway fixture"
+    },
+    "main": {
+      "diagnostics": [],
+      "compileMs": 37,
+      "executeMs": 130,
+      "assemblyName": "PipelineRunScript_VerifyRailwayA2_85eb8135c9b64a16807f394c0954bff0",
+      "success": true,
+      "result": "PASS edit/confirm/back, dirty discard/keep/modal guards, repeated commit, stale topology revalidation; restore fixture for new-route tests"
+    },
+    "new": {
+      "diagnostics": [],
+      "compileMs": 77,
+      "executeMs": 11,
+      "assemblyName": "PipelineRunScript_VerifyRailwayA2_4b8f17c10cb543e4b3fc96f998d53c07",
+      "success": true,
+      "result": "PASS new confirm/close/keep/commit, no duplicate train, start gates and running input lock; confirmation visible for review"
+    },
+    "close": {
+      "diagnostics": [],
+      "compileMs": 40,
+      "executeMs": 4,
+      "assemblyName": "PipelineRunScript_VerifyRailwayA2_d7a1d135b08c4038bb8171f23adf670b",
+      "success": true,
+      "result": "PASS discard closes and re-enables toolbar, reopen list and confirmation"
+    },
+    "cleanup": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "playing": false,
+        "dirty": false,
+        "scene": "StartRegionSandbox",
+        "testRootRestored": true,
+        "background": false
+      }
+    }
+  },
+  "limitations": [
+    "Serialized onClick invocation, not physical mouse end-to-end QA",
+    "Canvas inspected at captured Game view size only",
+    "Full build and A3 map/port editing not tested",
+    "Detailed weapon affordability and fuel-stock button predicates remain A5"
+  ],
+  "backgroundReadiness": "Application.runInBackground was false; temporary true allowed Start after scene reload. Restored false on cleanup.",
+  "screenshot": "RailwayA2/confirmation.png",
+  "verificationTool": "Tools/VerifyRailwayA2.cs",
+  "authoringTool": "Tools/AuthorRailwayA2.cs"
+}

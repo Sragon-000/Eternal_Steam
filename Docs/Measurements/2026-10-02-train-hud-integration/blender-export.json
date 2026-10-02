@@ -1,0 +1,25 @@
+{
+  "source": "Docs/Art/Train/model-v3-wagons/train-a-v3-consist.blend",
+  "export": "Assets/EternalSteam/Art/Train/TrainConsist.fbx",
+  "objects": 56,
+  "meshes": 27,
+  "frames": [
+    1,
+    49
+  ],
+  "fps": 24,
+  "sourceObjects": 940,
+  "groups": 15,
+  "materials": [
+    "Brass | functional fittings",
+    "Coal",
+    "Dots Stroke",
+    "Glass | smoke",
+    "Iron | soot black",
+    "Lamp | warm lens",
+    "Material",
+    "Paint | desaturated blue steel",
+    "Paint | ochre 07",
+    "Steel | exposed edges"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "var t=new EternalSteam.Tests.CanvasHierarchyTests();t.SavedRailwayPanelClearsResourcePanel(\"StartRegionSandbox\");t.SavedRailwayPanelClearsResourcePanel(\"OpenWorldSandbox\");return \"PASS preview coordinate check in both scenes\";"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": "PASS preview coordinate check in both scenes"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

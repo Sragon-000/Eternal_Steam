@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/VerifyRailwayConnectionsPlay.cs",
+      "entry": "VerifyRailwayConnectionsPlay.Build"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 123,
+      "executeMs": 314,
+      "assemblyName": "PipelineRunScript_VerifyRailwayConnectionsPlay_ed67925dd8c548baba72309876f26936",
+      "success": true,
+      "result": "PASS preview, finite cost, reuse, stale/insufficient rejection and unassigned connection save; reload next"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

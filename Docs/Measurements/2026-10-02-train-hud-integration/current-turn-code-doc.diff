@@ -1,0 +1,263 @@
+--- before/Assets/EternalSteam/Tests/OpenWorld/Runtime/RailwaySceneView.cs
++++ after/Assets/EternalSteam/Tests/OpenWorld/Runtime/RailwaySceneView.cs
+@@ -21,6 +21,7 @@
+             foreach(var r in network.Routes){if(!trains.TryGetValue(r.trainId,out var go)){go=Instantiate(TrainPrefab,transform);go.name=r.name+" 기차";trains.Add(r.trainId,go);}
+                 var pose=Pose(r,content);go.SetActive(r.train.segmentPaid||network.Station(r.stops[r.train.stop].stationId)!=null);
+                 go.transform.SetPositionAndRotation(pose.position,Quaternion.LookRotation(pose.direction));
++                go.GetComponent<TrainConsistView>()?.Present(r.train.segmentPaid);
+             }
+         }
+         public (Vector3 position,Vector3 direction) Pose(RailRoute r,OpenWorldContent content)
+@@ -75,7 +76,7 @@
+                 var port=RailwayNetwork.PortCell(cell,direction,i);var p=content.GroundWorld.Grid.Center(port,Vector2Int.one);
+                 if(content.CheckTerrain(port,Vector2Int.one,out float height,out _))p.y=height;
+                 var frame=PortFrames[i];frame.gameObject.SetActive(true);frame.transform.position=p+Vector3.up*.45f;
+-                Tint(frame,i==1?Color.yellow:Color.cyan);PortLabels[i].text=$"{i+1}{(i==1?" 진출":" 진입 후보")}";PortLabels[i].color=frame.startColor;
++                Tint(frame,Color.cyan);PortLabels[i].text=$"{i+1} 양방향 연결구";PortLabels[i].color=frame.startColor;
+                 if(Camera.main!=null)PortLabels[i].transform.parent.rotation=Camera.main.transform.rotation;
+             }
+         }
+--- before/Assets/EternalSteam/Tests/OpenWorld/Runtime/CanvasHudLayout.cs
++++ after/Assets/EternalSteam/Tests/OpenWorld/Runtime/CanvasHudLayout.cs
+@@ -11,6 +11,7 @@
+         public RectTransform Root,ClockPanel,ClockBody,ResourcePanel,ResourceBody,ResourceScroll;
+         public RectTransform MapPanel,MapBody,SelectionPanel,SelectionScroll,ConstructionBar,InventoryBody,StatusRow,Notifications;
+         public RectTransform CategoryStrip;
++        public RectTransform[] FloatingPanels=Array.Empty<RectTransform>();
+         public bool SingleRowCatalog;
+         public float SelectionMaximumHeight=240;
+         public UnityEngine.UI.GridLayoutGroup Catalog;
+@@ -28,7 +29,7 @@
+             int state=(ClockBody.gameObject.activeSelf?1:0)|(ResourceBody.gameObject.activeSelf?2:0)|(MapBody.gameObject.activeSelf?4:0)|(SelectionPanel.gameObject.activeSelf?8:0)|(InventoryBody.gameObject.activeSelf?16:0);
+             if(!force&&size==previousSize&&Mathf.Approximately(scale,previousScale)&&state==previousState)return;
+             previousSize=size;previousScale=scale;previousState=state;Revision++;
+-            float bottom=(state&16)!=0?(SingleRowCatalog?Mathf.Max(ExpandedHeight,84+Mathf.Max(CellHeight,MinimumCellHeightPixels/scale)):ExpandedHeight):CollapsedHeight;
++            float bottom=(state&16)!=0?(SingleRowCatalog?Mathf.Max(ExpandedHeight,132+Mathf.Max(CellHeight,MinimumCellHeightPixels/scale)):ExpandedHeight):CollapsedHeight;
+             ConstructionBar.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical,bottom);
+             StatusRow.gameObject.SetActive((state&16)!=0);
+             if(CategoryStrip!=null)CategoryStrip.gameObject.SetActive((state&16)!=0);
+@@ -36,21 +37,31 @@
+             ClockPanel.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical,clockHeight);
+             float resourceTop=84+clockHeight+8;
+             ResourcePanel.anchoredPosition=new Vector2(0,-resourceTop);
+-            float resourceHeight=(state&2)!=0?Mathf.Clamp(size.y-bottom-48-resourceTop,120,280):28;
++            float resourceHeight=(state&2)!=0?Mathf.Clamp(size.y-bottom-48-resourceTop,96,280):28;
+             ResourcePanel.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical,resourceHeight);
+             ResourceBody.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical,Mathf.Max(0,resourceHeight-44));
+-            float mapHeight=(state&4)!=0?292:28;
++            // Budget both panels together: a minimum selection height must never push it through the bottom bar.
++            float rightAvailable=Mathf.Max(0,size.y-84-bottom-40);
++            float mapHeight=(state&4)!=0?Mathf.Min(292,Mathf.Max(64,rightAvailable-228)):28;
+             MapPanel.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical,mapHeight);
++            float mapSide=Mathf.Max(1,Mathf.Min(MapPanel.rect.width-24,mapHeight-44));
++            MapBody.sizeDelta=new Vector2(mapSide,mapSide);
++            MapBody.anchoredPosition=new Vector2((MapPanel.rect.width-mapSide)*.5f,-36);
+             SelectionPanel.anchoredPosition=new Vector2(0,-mapHeight-8);
+-            float selectionHeight=Mathf.Clamp(size.y-84-mapHeight-8-bottom-40,220,SelectionMaximumHeight);
++            float selectionHeight=Mathf.Max(0,Mathf.Min(SelectionMaximumHeight,rightAvailable-mapHeight-8));
+             SelectionPanel.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical,selectionHeight);
+-            Notifications.anchoredPosition=new Vector2(-20,bottom+24);
++            Notifications.anchoredPosition=new Vector2(Notifications.anchoredPosition.x,bottom+24);
++            foreach(var panel in FloatingPanels)if(panel!=null){
++                // Top/right anchored authored popups fit above the bottom dock even on shallow windows.
++                float fit=Mathf.Min(1,Mathf.Max(1,size.x-640)/Mathf.Max(1,panel.rect.width),Mathf.Max(1,size.y-108-bottom)/Mathf.Max(1,panel.rect.height));
++                panel.localScale=Vector3.one*fit;
++            }
+             float width=((RectTransform)Catalog.transform).rect.width;
+             int columns=Mathf.Clamp(Mathf.FloorToInt((width+Gap)/(Mathf.Max(MinimumCellWidth,MinimumCellPixels/scale)+Gap)),1,8);
+             Catalog.constraint=SingleRowCatalog?UnityEngine.UI.GridLayoutGroup.Constraint.FixedRowCount:UnityEngine.UI.GridLayoutGroup.Constraint.FixedColumnCount;
+             Catalog.constraintCount=SingleRowCatalog?1:columns;Catalog.spacing=new Vector2(Gap,Gap);
+             Catalog.cellSize=new Vector2(SingleRowCatalog?Mathf.Max(MinimumCellWidth,MinimumCellPixels/scale):Mathf.Max(1,(width-(columns-1)*Gap)/columns),Mathf.Max(CellHeight,MinimumCellHeightPixels/scale));
+-            for(int i=0;i<Texts.Length;i++)if(Texts[i]!=null){float minimum=FontSizes[i]<=16?12:14;Texts[i].fontSize=Mathf.Max(FontSizes[i],minimum/scale);}
++            for(int i=0;i<Texts.Length;i++)if(Texts[i]!=null){float minimum=FontSizes[i]<=16?12:14;if(!Texts[i].enableAutoSizing)Texts[i].fontSize=Mathf.Clamp(minimum/scale,FontSizes[i],FontSizes[i]*1.15f);}
+         }
+     }
+ }
+--- before/Assets/EternalSteam/Tests/OpenWorld/Runtime/CanvasWorldHud.cs
++++ after/Assets/EternalSteam/Tests/OpenWorld/Runtime/CanvasWorldHud.cs
+@@ -43,7 +43,7 @@
+                 if(module is ProductionModuleDefinition recipe&&ids.Add(recipe.OutputId)){resources.Add(recipe);resourceNames.Add(d.DisplayName.Replace(" 생성기",""));}
+             foreach(var r in resources)if(Array.IndexOf(ResourcePriority,r.OutputId)>=0){hasPriority=true;break;}showAll=!hasPriority;Refresh();
+         }
+-        void Text(string id,string value){if(texts.TryGetValue(id,out var t)&&t.text!=value)t.text=value;}
++        void Text(string id,string value){value=value?.Replace("검증비 ","").Replace(" · 검증용","");if(texts.TryGetValue(id,out var t)&&t.text!=value)t.text=value;}
+         void Show(string id,bool visible){if(sections.TryGetValue(id,out var go)&&go.activeSelf!=visible)go.SetActive(visible);}
+         void Enable(string id,bool enabled){if(buttons.TryGetValue(id,out var b))b.interactable=enabled;}
+         void Caption(string id,string value){Text(id+"-caption",value);}
+@@ -51,10 +51,11 @@
+         public void Execute(string command)
+         {
+             if(actions==null)return;EndTyping();
++            if(Sandbox.RailwayHud?.HasDraft==true&&(command=="edit"||command.StartsWith("build:"))){Sandbox.Message="철도 연결·노선 편집을 먼저 확정하거나 닫아 주세요.";return;}
+             if(command.StartsWith("fold:")){var id=command.Substring(5);if(sections.TryGetValue(id,out var body)){if(id=="minimap")Minimap.CancelInteraction();body.SetActive(!body.activeSelf);Layout?.Apply(true);}return;}
+             if(command.StartsWith("category:")){category=int.Parse(command.Substring(9));RefreshCatalog();return;}
+             if(command.StartsWith("build:")){
+-                int index=int.Parse(command.Substring(6));if(!Input.IsEditing){Sandbox.Message="수정 버튼을 누른 뒤 건물을 선택하세요.";return;}
++                int index=int.Parse(command.Substring(6));if(!Input.IsEditing){Sandbox.Message="건설 메뉴에서 건물을 선택하세요.";return;}
+                 var entry=Catalog[index];if(entry.Definition!=null)Input.SelectContent(entry.Definition);else Input.Select(entry.Tool,entry.Kind);Refresh();return;
+             }
+             switch(command){
+@@ -105,11 +106,11 @@
+             var clock=Sandbox.Clock;long seconds=(long)Math.Ceiling(clock.RemainingSeconds);
+             Text("date",$"{clock.Day}일차 · {(clock.Phase==DayPhase.Day?"낮":"밤")}");Text("remaining",$"{(clock.Phase==DayPhase.Day?"밤":"낮")}까지 {seconds/60:00}:{seconds%60:00}");
+             if(ClockHand!=null)ClockHand.localRotation=Quaternion.Euler(0,0,-360*(float)((clock.Phase==DayPhase.Day?0:.5)+clock.PhaseProgress*.5));
+-            Caption("pause",actions.ProgressLabel);Caption("run",actions.RunLabel);Caption("edit",editing?"수정 종료":"수정");Caption("spawn-air",Sandbox.SpawnAir?"공중 적: 켬":"공중 적: 끔");
++            Caption("pause",actions.ProgressLabel);Caption("run",actions.RunLabel);Caption("edit",editing?"건설 종료":"건설 시작");Caption("spawn-air",Sandbox.SpawnAir?"공중 적: 켬":"공중 적: 끔");
+             Caption("infinite-resources",Sandbox.Content.InfiniteResources?"자원 무한: ON":"자원 무한: OFF");Show("test-shortcuts",ShowDevelopmentControls&&(Application.isEditor||Debug.isDebugBuild));Enable("infinite-resources",!locked);
+             bool can=actions.CanInteract(out _);Enable("quick-day",can);Enable("quick-night",can);Enable("pause",can);Enable("run",can);Enable("edit",!locked);Enable("spawn",!editing&&!locked);Enable("reset",!locked);Enable("day",can);Enable("night",can);Enable("spawn-air",!locked);
+             Show("edit-actions",editing);Show("run",Sandbox.Assault==null);Show("developer",ShowDevelopmentControls&&(Application.isEditor||Debug.isDebugBuild));
+-            Text("pending",editing?$"수정 중 · 임시 작업 {Input.Edits?.Count??0}개":"건물 선택: 상세 정보 · 수정: 설치와 회수");RefreshCatalog();
++            Text("pending",editing?$"건설 중 · 대기 작업 {Input.Edits?.Count??0}개":"건물 선택: 상세 정보 · 건설 메뉴: 설치와 회수");RefreshCatalog();
+             var main=Sandbox.Content.MainBase;var hp=main?.Module<HealthModule>();bool hasHp=main!=null&&main.Active&&!main.Disposed&&hp!=null;
+             Text("main-health",hasHp?$"{hp.Current:0.#} / {hp.Maximum:0.#}":Sandbox.Content.Defeated?"메인 기지 파괴":"메인 기지 없음");float healthRatio=hasHp?Mathf.Clamp01(hp.Current/Mathf.Max(1,hp.Maximum)):0;HealthFill.rectTransform.anchorMax=new Vector2(healthRatio,1);
+             foreach(var icon in ResourceIcons){bool visible=showAll||Array.IndexOf(ResourcePriority,icon.Id)>=0;if(icon.View.gameObject.activeSelf!=visible)icon.View.gameObject.SetActive(visible);}int visibleResourceRows=0;
+@@ -142,7 +143,7 @@
+         }
+         string UpgradeCostStatus(BuildingInstance building,IUpgradeControl level,UpgradeHudState state)
+         {
+-            if(state.VerificationFree)return state.Available?"검증용 무료":state.Reason;
++            if(state.VerificationFree)return state.Available?"비용 없음":state.Reason;
+             if(level==null||!level.CanUpgrade(out _)||Sandbox.UpgradeCosts==null||!Sandbox.UpgradeCosts.TryQuote(building.DefinitionId,level.Level+1,out var costs,out _))
+                 return state.Available?"설정된 강화 비용 적용":state.Reason;
+             var totals=new SortedDictionary<string,double>(StringComparer.Ordinal);
+@@ -180,7 +181,7 @@
+         }
+         string FirstLoopObjective(MapStage stage)
+         {
+-            if(stage==MapStage.Cleared)return "진행·저장 → 저장·이어하기 확인 · 새 게임으로 다시 테스트";
++            if(stage==MapStage.Cleared)return "진행·저장 → 저장하거나 새 게임으로 시작할 수 있습니다.";
+             if(stage==MapStage.AwaitingCraft)return "목표 · 진행·저장 → 아래로 스크롤 → 오브 제작";
+             if(stage==MapStage.BossBattle||stage==MapStage.WaitingForNight)return "목표 · 발전 전력 유지 · 공중 공격 가능한 방어로 보스 처치";
+             if(stage==MapStage.Failed)return "새 게임으로 다시 시작하세요.";
+@@ -192,8 +193,8 @@
+                 if(b.Module<PowerModule>()?.Role==PowerRole.Producer)generators++;
+                 if(b.Module<WeaponRuntime>()!=null)weapons++;
+             }
+-            if(iron==0||coal==0)return "목표 · 수정 → 메인 기지 앞 파란 가동 영역에 철·석탄 생성기 → 확정";
+-            if(generators==0)return "목표 · 수정 → 건물 전체가 파란 가동 영역 안에 들어가도록 발전기 설치 → 확정";
++            if(iron==0||coal==0)return "목표 · 건설 메뉴 → 메인 기지 앞 파란 가동 영역에 철·석탄 생성기 → 확정";
++            if(generators==0)return "목표 · 건설 메뉴 → 건물 전체가 파란 가동 영역 안에 들어가도록 발전기 설치 → 확정";
+             if(Sandbox.Content.LevelCap<3)return "목표 · 메인 기지 선택 → 강화 Lv.3 · 플라즈마 레이저 해금";
+             if(weapons==0)return "목표 · 파란 가동 영역 안에 방어 건물 전체를 배치 · 전력 공급 확인";
+             var network=Sandbox.Content.Railway?.Network;
+--- before/Docs/Presentations/표적탐색_최적화_연구_확장_검토.md
++++ after/Docs/Presentations/표적탐색_최적화_연구_확장_검토.md
+@@ -3,6 +3,12 @@
+ 2026-10-02 · 연구 설계 검토
+ 
+ 기존 세미나 계획은 포탑의 공격 범위와 적 밀도에 따라 전체 순회, 격자 탐색, 조건별 선택의 비용이 어떻게 달라지는지 묻는다. 현재 게임에는 이미 2m 격자 인덱스가 있으므로, 후속 연구는 **공격 유형별 탐색 비용과 격자 유지 비용을 분리해 측정하고, 동일한 명중 결과를 보장하는 선택 기준을 찾는 것**으로 구체화하는 것이 적절하다. 이 문서는 연구 범위와 실험안을 정리한 것이다. 성능 개선이나 학술적 신규성이 확인됐다는 뜻은 아니다.
++
++## 논문 목표와 현재 의사결정 상태
++
++논문의 목표 후보는 **동일한 표적·피격 규칙을 보장하면서 공격 형태, 적 분포, 실제 재탐색 빈도에 따른 탐색법의 손익 구간과 적용 한계를 재현 가능한 비교로 설명하는 것**이다. 동적 선택기가 반드시 더 빠르다는 결론이나 새로운 자료구조 개발을 목표로 미리 정하지 않는다. 부정적 결과와 기존 공유 인덱스의 한계도 보고 대상이다.
++
++**확장안은 미정이며 연구 실험은 아직 시작하지 않는다.** 아래 순위·RQ·지표·중단 기준은 승인 전 설계 후보다. 논문의 최종 범위, 주된 기여, 예비실험 조건 및 수치 임계값은 지도·검토와 사용자 승인 뒤 확정한다. 제품의 모델·HUD 적용 및 회귀 검증은 연구 데이터 수집과 구분한다. 이 문서 보완은 실험 실행 또는 제품 탐색 코드 변경의 승인이 아니다.
+ 
+ ## 기존 계획과 현재 구현의 차이
+ 
+@@ -34,7 +40,7 @@
+ 
+ | 우선순위 | 확장안 | 판단 |
+ | --- | --- | --- |
+-| 1 | 레거시 4종 포탑에서 슬롯 전체 순회, 생존 적 순회, 현행 2m 격자를 같은 입력으로 비교 | 즉시 진행. 기존 발표 질문을 실제 코드에 맞춰 검증할 수 있다. |
++| 1 | 레거시 4종 포탑에서 슬롯 전체 순회, 생존 적 순회, 현행 2m 격자를 같은 입력으로 비교 | 검토 우선순위 1. 사용자 승인 전에는 실험을 시작하지 않는다. 기존 발표 질문을 실제 코드에 맞춰 검증할 후보안이다. |
+ | 2 | 격자 셀 크기와 적의 분포·이동량·질의 형태의 상호작용 비교 | 1의 결과에서 격자 질의나 재구축이 의미 있는 비용일 때 진행한다. 2m를 기준으로 몇 개 크기를 사전 지정한다. |
+ | 3 | 관측된 손익 경계에 따른 CPU 탐색 방식 선택 | 조건부 진행. 구간별 우위가 재현되고, 전환 비용을 포함해 이득이 남을 때만 구현한다. |
+ | 4 | 공통 무기 모듈과 실제 출시 장면으로 재현 | 내부 타당성 확인 뒤 진행한다. 무기 종류·전투 규칙이 달라 독립 검증이 필요하다. |
+@@ -57,6 +63,27 @@
+ 
+ 격자가 이미 다른 시스템에서도 쓰이므로 비용은 두 관점으로 보고한다. **질의 추가 비용**은 기존 인덱스를 공유하는 제품 상황을 나타내고, **인덱스 구축까지 포함한 총비용**은 격자를 쓰지 않는 기준선과 공정하게 비교하기 위한 값이다. 전환 방식이 프레임마다 흔들리면 이득이 사라질 수 있으므로, 선택 방식에는 최소 유지 시간 또는 서로 다른 진입·복귀 경계값을 둔다. 값은 예비 데이터에서 정하고 본 실험 전에 고정한다.
+ 
++## 표적 유지와 빈 탐색을 포함한 관측 지표
++
++포탑 수나 공격 횟수를 곧바로 탐색 횟수로 취급하지 않는다. 유효한 표적을 유지하는 정책과 공격 주기가 실제 질의량을 바꾸므로 아래 분모와 원시 횟수를 함께 기록할 계획이다.
++
++| 지표 | 정의와 해석 |
++| --- | --- |
++| 표적 유지율 | 이전 표적이 있는 갱신 기회 중 ID·세대·생존·범위·공격 가능 조건을 모두 만족해 재탐색을 생략한 횟수 / 이전 표적이 있는 갱신 기회. 이전 표적이 없던 기회는 별도 보고한다. |
++| 표적 유지 비용 | 유지 유효성 검사 호출 수·총시간·중앙값·95백분위. 생략된 질의 시간만 이득으로 계산하고 유지 검사는 누락하지 않는다. |
++| 재탐색률 및 사유 | 전체 갱신 기회 중 실제 재탐색 횟수 / 전체 갱신 기회. 최초 획득, 사망·세대 변경, 이탈, 공격 불가, 정책상 교체로 나눈다. |
++| 빈 탐색률 | 실제 표적 획득 질의 중 유효 결과 0건인 질의 수 / 실제 표적 획득 질의 수. 호출 0이면 0% 대신 해당 없음으로 기록한다. |
++| 빈 탐색 비용 | 빈 결과 질의의 후보 수·방문 셀 수·정밀 판정 수·총시간·95백분위. 후보 자체가 0인 경우와 후보는 있지만 정밀 판정 후 0인 경우를 구분한다. |
++| 표적 유지 기간 | 획득부터 해제·교체까지의 시뮬레이션 시간·갱신 횟수 분포. 실행 종료 시 유지 중인 표적은 관측 중단으로 표시한다. |
++
++모든 비교 방식에 동일한 유지 정책·재탐색 주기·동률 규칙을 적용한다. 현행 구현이 유지하지 않는 경로에 유지 정책을 추가하는 것은 탐색 알고리즘 비교와 별도 요인이다. 유지 정책을 바꿔 호출 수가 줄어든 효과를 격자 질의 최적화 효과로 합치지 않는다. 대포의 폭발 피격 조회 등 결과가 복수인 질의는 표적 획득 질의와 분리한다.
++
++## 공유 격자 유지비 해석의 한계
++
++다른 공격·충돌·AI 시스템이 격자를 계속 요구한다면 일부 포탑 질의를 전체 순회로 전환해도 격자 재구축 비용은 없어지지 않는다. 따라서 **공유 인덱스가 필요한 제품에서 회피할 수 없는 유지비를 선택기의 절감액으로 계산하지 않는다.** 유지비를 포탑 수로 균등 나눈 값도 원인별 추가 비용을 뜻하지 않는다.
++
++제품 비용은 `공통 이동 + 계속 필요한 격자 유지 + 유지 검사 + 실제 질의 + 선택·전환`으로 분리해 보고한다. 격자 없는 비교의 총비용은 모든 소비자를 제거하거나 대체한 조건이 성립할 때만 비교하며, 그 조건이 실제 제품에서 성립하지 않으면 가상 기준선임을 표시한다. `MoveAndIndex` 전체 시간을 격자 구축 시간으로 대신 쓰지 않는다. 분리 계측이 불가능하면 이동·지형 조회가 포함된 상한으로만 보고하고 격자 유지비 단독 효과에 대한 결론을 보류한다. 이중 인덱스 준비와 메모리·할당 비용도 전환 방식의 비용에 포함한다.
++
+ ## 결과 일치와 성능 판정
+ 
+ 모든 방식은 동일한 정밀 판정 뒤 결과를 비교한다. 단일 표적은 **대상 ID와 세대 번호**, 범위 공격과 레거시 관통 화살은 **피격 대상 집합**을 확인한다. 공통 무기 모듈의 관통 공격으로 확장할 때는 **진행 방향 순서와 최대 피격 수**도 비교한다. 거리 동률, 사망 직후, 슬롯 재사용, 공중·지상 구분, 격자 경계 및 월드 경계 밖 위치, 범위 경계값을 포함한다. 공격으로 적 상태가 바뀌는 실제 전투에서는 첫 불일치 시점부터 이후 프레임이 달라질 수 있으므로, 탐색 단독의 스냅샷 일치와 전투 전체의 결과 일치를 별도로 검사한다.
+@@ -65,6 +92,22 @@
+ 
+ 채택 판단은 명중 결과가 일치하고, 독립 시드에서 **갱신·전환 비용을 포함한 프레임 개선**이 반복되는 경우에만 내린다. 질의 단독이 빨라도 전체 프레임에서 차이가 없거나 GPU가 병목이면 게임 성능 개선으로 주장하지 않는다. 결과가 없거나 반대이면 그 조건과 비용을 그대로 보고한다.
+ 
++## 예비실험 중단·전환 기준 — 실행 승인 전 후보
++
++승인된 예비실험을 시작하기 전에 목표 장비·빌드, 프레임 예산, 최소 유의 개선량(절대 ms와 상대 %), 허용 측정 변동, 반복 수·시간 상한을 등록한다. 현재 수치는 **미정**이며 유리한 결과를 본 뒤 임계값을 정하지 않는다.
++
++| 관측 조건 | 중단 또는 전환 결정 |
++| --- | --- |
++| 표적 ID·세대, 피해 집합·순서 등 정확성 불일치 | 성능 비교를 즉시 중단하고 최초 불일치 입력을 보존한다. 동등한 규칙이 복구될 때까지 성능 우위를 주장하지 않는다. |
++| 재생 불일치, 워밍업 미안정, 측정 변동이 사전 허용치 초과 | 비교 결론을 보류하고 계측·환경 검증으로 전환한다. 사전 시간 상한에서 해결되지 않으면 예비실험을 종료한다. |
++| 실제 질의 빈도가 낮거나 빈 탐색·유지 검사가 비용 대부분 | 적 수만 늘리는 실험을 중단하고 실제 호출 분포·유지 정책 또는 빈 탐색의 원인 분석으로 범위를 재검토한다. 정책 변경은 별도 승인한다. |
++| 탐색이 프레임 예산의 작은 부분이거나 GPU/다른 작업이 병목 | 전체 프레임 개선 주장과 동적 선택 구현을 보류한다. 질의 비용·손익 구간 분석만으로 논문 범위를 좁힐지 검토한다. |
++| 고정 방식 하나가 사전 조건 전반에서 우세하거나 구간 우위가 독립 시드에서 재현되지 않음 | 동적 선택(RQ3)을 중단하고 고정 방식의 적용 범위·반례를 보고한다. |
++| 관측·전환·추가 유지비 포함 이득이 사전 최소 개선량 미만 | 선택기를 채택하지 않는다. 공유 격자가 계속 필요하면 유지비 제거를 가정해 재해석하지 않는다. |
++| 사전 자원·시간 상한 도달 또는 조건 범위가 계속 확대됨 | 예비실험을 종료하고 원시 기록·불확실성·누락 조건을 남긴다. 새 자료구조/GPU/DOTS 확장은 별도 연구 질문과 승인으로만 전환한다. |
++
++중단은 불리한 결과의 폐기를 뜻하지 않는다. 실패 조건과 중단 이유를 남기고, 조건을 바꾸면 변경 전후 계획을 별도 버전으로 보존한다. 현재는 이 기준을 문서화했을 뿐 예비실험·본실험·데이터 수집을 실행하지 않았다.
++
+ ## 다음 산출물과 미해결 사항
+ 
+ 첫 단계의 산출물은 재생 가능한 입력 장면, 방식별 동일 결과 검사, 원시 프레임 로그, 조건별 비용 표다. 그 결과로 셀 크기 실험의 필요성과 선택 방식 구현 여부를 결정한다. 이후 실제 전투의 화면·포탑·적 배치를 포함한 빌드 측정으로 적용 가능성을 확인한다.
+--- before/Docs/프로젝트_통합기준.md
++++ after/Docs/프로젝트_통합기준.md
+@@ -400,6 +400,14 @@
+ 내장 image_gen으로 기존 ReferenceHUD의 짙은 청록 바탕·금속 테두리·금색 모서리를 기준으로 패널/버튼/기관차 PNG를 생성했다. 두 씬의 저장 uGUI에 철도 버튼 76개씩과 패널을 적용했다. 개발/자원 무한/시각 전환 테스트 UI는 기본 숨김이다. 정적 표시 계층과 영구 콜백을 검증했으며 런타임 대체 UI는 만들지 않았다. 4K 게임 렌더, 실제 포인터 취소/Esc, 입력 경로 검사 결과를 남겼다.
+ 
+ [상세 검증·생성 프롬프트·실측·실패/한계](Validation/2026-10-02-railway-connections-ui.md). RX-03 전체 완료나 RX-07 완료로 확대하지 않는다. 경유점/재배선 UX, 상태별 추가 자산·Atlas/프리팹, 작은 해상도/다수 역/긴 이름 인수, 자연 생산·야간 방어 한 회차와 경제 수치 설계는 남아 있다. 이전 절의 과거 실행 결과는 당시 기록으로 보존한다.
++
++#### 7.3.12 완성 편성·통합 HUD·해상도 앵커 적용 (2026-10-02)
++
++- 완성 기관차·화물칸·토대칸을 원본 보존 FBX로 가져와 기존 Train 프리팹에 적용했다. 바퀴·로드 연동 클립은 실제 이동 거리와 방향을 따라 샘플링하고 정차 시 멈춘다. 방어 포탑은 토대칸 소켓에 맞췄다.
++- 기존 전용 패널·버튼·기관차 스프라이트로 두 씬의 HUD를 정돈했다. 건설/철도 작업 공간 전환, 역 선택 정보, 철도 건설 카드와 영속 콜백을 통합했다. 개발용 조작 UI는 숨긴 상태다.
++- 상단/좌측/우측/하단 앵커를 명시하고 남은 높이에 맞춰 미니맵·선택 패널·철도 편집·팝업을 조정한다. 800×600부터 3840×2160까지 7개 실제 렌더 해상도(3840×1080 포함)에서 화면 경계·겹침·클릭 검증을 통과했다. 전체 EditMode 266/266 통과.
++- 연구 확장 검토 문서에 논문 목표 후보, 확장안 미정, 표적 유지·빈 탐색 지표, 공유 격자 유지비와 예비실험 중단·전환 기준을 보완했다. 연구 실험은 시작하지 않았다.
++- [이번 적용·검증·한계](Validation/2026-10-02-train-hud-integration.md). 편성은 기존 단일 자세를 따르며 곡선에서 차량별 관절 추종을 새로 구현한 것은 아니다. RX 전체 인수·전체 한 회차·LOD/성능 인수 완료를 뜻하지 않는다.
+ 
+ ## 8. 검증 증거와 완료 판정
+ 
+--- before/Assets/EternalSteam/Tests/EditMode/CanvasHierarchyTests.cs
++++ after/Assets/EternalSteam/Tests/EditMode/CanvasHierarchyTests.cs
+@@ -40,8 +40,13 @@
+                 var resource=world.Layout.ResourcePanel;
+                 var leftStatus=(RectTransform)resource.parent;
+                 var panel=(RectTransform)railway.Panel.transform;
+-                var resourceRight=leftStatus.anchoredPosition.x+resource.anchoredPosition.x+resource.rect.width;
+-                Assert.That(panel.anchoredPosition.x-resourceRight,Is.GreaterThanOrEqualTo(8f),name);
++                // Preview scenes have no display; normalize the Canvas transform before comparing bounds.
++                world.transform.localScale=Vector3.one;
++                // Compare the same canvas space after reparenting the railway panel into its workspace.
++                var corners=new Vector3[4];resource.GetWorldCorners(corners);
++                float resourceRight=world.transform.InverseTransformPoint(corners[2]).x;
++                panel.GetWorldCorners(corners);float panelLeft=world.transform.InverseTransformPoint(corners[0]).x;
++                Assert.That(panelLeft-resourceRight,Is.GreaterThanOrEqualTo(8f),name);
+             }finally{EditorSceneManager.ClosePreviewScene(scene);}
+         }
+ 
+@@ -119,7 +124,9 @@
+                 Assert.That(hud.Sandbox,Is.Not.Null);Assert.That(hud.Input,Is.Not.Null);Assert.That(hud.Amount,Is.Not.Null);Assert.That(hud.Minimap,Is.Not.Null);Assert.That(hud.HealthFill,Is.Not.Null);Assert.That(hud.ClockHand,Is.Not.Null);
+                 Assert.That(hud.Texts.Select(t=>t.Id).Distinct().Count(),Is.EqualTo(hud.Texts.Length));Assert.That(hud.Buttons.Select(t=>t.Id).Distinct().Count(),Is.EqualTo(hud.Buttons.Length));
+                 foreach(var t in hud.Texts){Assert.That(t.View,Is.Not.Null,t.Id);Assert.That(t.View.font,Is.Not.Null,t.Id);Assert.That(t.View.font.fallbackFontAssetTable.Any(f=>f!=null&&f.sourceFontFile!=null),Is.True,"Persisted Korean fallback: "+t.Id);}
+-                foreach(var b in hud.Buttons){Assert.That(b.View,Is.Not.Null,b.Id);Assert.That(b.View.onClick.GetPersistentEventCount(),Is.EqualTo(1),b.Id);Assert.That(b.View.onClick.GetPersistentTarget(0),Is.EqualTo(hud),b.Id);Assert.That(b.View.onClick.GetPersistentMethodName(0),Is.EqualTo("Execute"),b.Id);}
++                foreach(var b in hud.Buttons){Assert.That(b.View,Is.Not.Null,b.Id);Assert.That(b.View.onClick.GetPersistentEventCount(),Is.EqualTo(1),b.Id);var workspace=hud.GetComponent<GameplayHudWorkspace>();
++                    Assert.That(b.View.onClick.GetPersistentTarget(0),Is.EqualTo(b.Id=="inventory-fold"?(Object)workspace:hud),b.Id);
++                    if(b.Id=="inventory-fold"){Assert.That(workspace.ConstructionTab,Is.EqualTo(b.View));Assert.That(b.View.onClick.GetPersistentMethodName(0),Is.EqualTo("Construction"));}Assert.That(b.View.onClick.GetPersistentMethodName(0),Is.EqualTo(b.Id=="inventory-fold"?"Construction":"Execute"),b.Id);}
+                 foreach(var entry in hud.Catalog){Assert.That(entry.View,Is.Not.Null);Assert.That(entry.Icon,Is.Not.Null);Assert.That(entry.Icon.sprite,Is.Not.Null);Assert.That(entry.Icon.raycastTarget,Is.False);Assert.That(AssetDatabase.Contains(entry.Icon.sprite),Is.True);}
+                 Assert.That(hud.CardFrame,Is.Not.Null);Assert.That(hud.SelectedFrame,Is.Not.Null);Assert.That(hud.CategoryFrame,Is.Not.Null);
+                 Assert.That(hud.ResourceIcons.Length,Is.EqualTo(7));foreach(var icon in hud.ResourceIcons){Assert.That(icon.View,Is.Not.Null);Assert.That(icon.View.GetComponent<UnityEngine.UI.Image>().sprite,Is.Not.Null);}

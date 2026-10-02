@@ -87,11 +87,18 @@ namespace EternalSteam.Demo
         {
             Health = MaxHealth;
             random = new System.Random(731);
+            DespawnAll();
+            Killed = Escaped = Spawned = 0;
+        }
+        // Ending a completed map is neither a kill nor an escape. Preserve run
+        // counters and health, and do not emit rewards or defeat events.
+        public void DespawnAll()
+        {
             Array.Clear(enemies, 0, enemies.Length);
             Array.Fill(heads, -1);
             for (int i = 0; i < MaxCount; i++) free[i] = MaxCount - 1 - i;
             FreeCount = MaxCount;
-            Alive = Killed = Escaped = Spawned = 0;
+            Alive = 0;
         }
         public void Spawn(HordeMapKind mapKind)
         {

@@ -1,0 +1,248 @@
+{
+  "startedAt": "2026-10-02T13:55:21.034429+09:00",
+  "completedAt": "2026-10-02T14:19:38.246496+09:00",
+  "head": "7e6dabe890603bdd183c4680420fd53986d3498e",
+  "existingGitEntriesAtBaseline": 2772,
+  "modifiedFromBaseline": [
+    {
+      "path": "Assets/EternalSteam/Code/Railway/RailwayNetwork.cs",
+      "beforeSha256": "b2642e1999c3937d34122e6b22d8c2a1d89ec415ea78724537d713d511d1ef74",
+      "afterSha256": "8db9340be7da7a63d24eb5974d5235e1dc54f9035115695db1395c79dd0efcf7",
+      "patch": "diffs/Assets/EternalSteam/Code/Railway/RailwayNetwork.cs.patch"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/EditMode/RailwayShuttleTests.cs",
+      "beforeSha256": "7725a8efdc527db53225765f5bd1d0a4703850864e3d869f32ce6a78ee8a6fe1",
+      "afterSha256": "41bd009156d355e6cd7a2da5a55700e3a5edbd39f23ff710d1a1e3dffd9a0279",
+      "patch": "diffs/Assets/EternalSteam/Tests/EditMode/RailwayShuttleTests.cs.patch"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/EditMode/RailwayTests.cs",
+      "beforeSha256": "5d0a87ed2b9f1d4730e45d96058579f66a2b81a8351400182a04bbf81e959425",
+      "afterSha256": "cc07928b9b194d23b69f87058778944691113911c4a655b6ecae86adf902e10c",
+      "patch": "diffs/Assets/EternalSteam/Tests/EditMode/RailwayTests.cs.patch"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/RailwaySceneView.cs",
+      "beforeSha256": "e05ababb205f90d12cffd4be2e643f5f2c832b589d835e31359c7dac393b4b6d",
+      "afterSha256": "12a77a5f51e0fd306c63ca4a1cf73c106d7082847e7547d8e6b728acb51b3c28",
+      "patch": "diffs/Assets/EternalSteam/Tests/OpenWorld/Runtime/RailwaySceneView.cs.patch"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/RailwayHud.cs",
+      "beforeSha256": "0c7e73b549a1b374d2681cb96a5c22bbca68322df97cc45ce1ff50d176f29a45",
+      "afterSha256": "8216f08864a6f8e576c94d59e231b46c79ca4179d96ba7b9c55bdea8aefd9200",
+      "patch": "diffs/Assets/EternalSteam/Tests/OpenWorld/Runtime/RailwayHud.cs.patch"
+    },
+    {
+      "path": "Docs/프로젝트_통합기준.md",
+      "beforeSha256": "a09e8dc1a00b8c5af7bd8a7cc72411125a775b11267c28ff86d9f13eac6b13ac",
+      "afterSha256": "51a8830949f077bae916e8321a63c73a5c926cadefd49616680cc5a40ba3abc9",
+      "patch": "diffs/Docs/프로젝트_통합기준.md.patch"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/TrainDefenseController.cs",
+      "beforeSha256": "40c773c917f185cf5adac603a6078f34838e4cf5f82135b534640d9764ff0371",
+      "afterSha256": "f58524390f4c1b8c84692a7c0fa44498509a5eea04c97db3b6ee92a57ba5bece",
+      "patch": "diffs/Assets/EternalSteam/Tests/OpenWorld/Runtime/TrainDefenseController.cs.patch"
+    }
+  ],
+  "newImplementationFiles": [
+    {
+      "path": "Assets/EternalSteam/Code/Railway/RailwayStationSlots.cs",
+      "sha256": "5cac6ac1fbf8effe3cfccede9008caffdac26486086ee5b88684d4e589288ae2"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Railway/RailwayStationSlots.cs.meta",
+      "sha256": "0908c4d829fb8e46e693e12acc43c7f6964ba273c55de9308a356d80397ff130"
+    },
+    {
+      "path": "Tools/VerifyRailwayStationSlotsPlay.cs",
+      "sha256": "38e93d8087051df839d8f591ba813541094fff9f132b7d149b1f1eb4792b17c3"
+    },
+    {
+      "path": "Docs/Validation/2026-10-02-railway-station-slots.md",
+      "sha256": "2f986e7f38842d5385795a03b5138d28777b7bf971b0f539adb84ec44a4c2d4d"
+    }
+  ],
+  "finalTests": {
+    "total": 249,
+    "passed": 249,
+    "failed": 0,
+    "skipped": 0,
+    "inconclusive": 0
+  },
+  "finalTestDurationSeconds": 32.28,
+  "scope": "Local uncommitted implementation; baseline copies include earlier user work. Only final executions counted.",
+  "editorFinal": {
+    "playing": false,
+    "compiling": false,
+    "scene": "Assets/EternalSteam/Scene/Tests/StartRegionSandbox.unity",
+    "dirty": false,
+    "background": false,
+    "saveRoot": null
+  },
+  "implementationFingerprint": "996cfbfe226e7845c35e06f2d55f4c4f5ae3f979f06daf0868741d78e3ac9416",
+  "evidence": [
+    {
+      "path": "admitted-snapshot.json",
+      "sha256": "7eb253b537b9a19b6be2b534f3c1cccdb4753a8cac6c9ec1b01389414b7ac0e6",
+      "bytes": 1521376
+    },
+    {
+      "path": "baseline.json",
+      "sha256": "f1a3d673c28c276c26b999f2805a408f0f17b34a67bab6f8fe5ee165cd73a50e",
+      "bytes": 3449
+    },
+    {
+      "path": "editmode-all-1.json",
+      "sha256": "1927b410f06d760f4e79a62a2e7367b2e6e7ffd01ecc335ecae6aa448b5eb738",
+      "bytes": 62147
+    },
+    {
+      "path": "editmode-all-2.json",
+      "sha256": "0353ff58fa7305325818f595cf678f02ce6c7aff2db368f0d79e755da76cd687",
+      "bytes": 40472
+    },
+    {
+      "path": "editmode-final.json",
+      "sha256": "c62dcf5261d5c1a65f5d27b8bedc2a514760784886c3ae373a9b9304afefd16a",
+      "bytes": 40973
+    },
+    {
+      "path": "editmode-focused-1.json",
+      "sha256": "1c6b6fd0853aecd43850e75fd45bdbad519826c58d3c16d0874aed5997c22420",
+      "bytes": 4418
+    },
+    {
+      "path": "editor-after.json",
+      "sha256": "fdccc57ca6237c95d04a6b995dfe4c550678e01ad94c3cac81e1e1327fd7c3fd",
+      "bytes": 1247
+    },
+    {
+      "path": "editor-before.json",
+      "sha256": "04d59b069ebb4172e90542a59ffba0bd4982cce3c8b740fd565cc0ec775f34e3",
+      "bytes": 1108
+    },
+    {
+      "path": "editor-final.json",
+      "sha256": "fdccc57ca6237c95d04a6b995dfe4c550678e01ad94c3cac81e1e1327fd7c3fd",
+      "bytes": 1247
+    },
+    {
+      "path": "play-arm-2.json",
+      "sha256": "96ec98f632523a89c70028ff938b22ee1b09a93084025c016af100a3d3e4d185",
+      "bytes": 1333
+    },
+    {
+      "path": "play-arm-3.json",
+      "sha256": "432076a9ec1ccd083e662206c7e0019d59cf3ff6b163ca8d480f98f2f6b86ace",
+      "bytes": 739
+    },
+    {
+      "path": "play-before-reload.json",
+      "sha256": "7eb253b537b9a19b6be2b534f3c1cccdb4753a8cac6c9ec1b01389414b7ac0e6",
+      "bytes": 1521376
+    },
+    {
+      "path": "play-build-1.json",
+      "sha256": "ad154ae074fef6ed07df7442fc2b04462b4546d98dfdc6a1e767742a10a14778",
+      "bytes": 1523
+    },
+    {
+      "path": "play-final-admitted.json",
+      "sha256": "f517ee0ddd7ad481ece430a335eb3779eddd7cfe390ff8a0941713a10cdea580",
+      "bytes": 747
+    },
+    {
+      "path": "play-final-build.json",
+      "sha256": "5d1cc458612735db45cbd57535bd7703ca21e0434d6eaab85cdf39ccde2adde1",
+      "bytes": 736
+    },
+    {
+      "path": "play-final-isolate.json",
+      "sha256": "eb967ad9641e62b767e30f7cf2e3cc81b939506f0e6c945dd64382c8288f4fd5",
+      "bytes": 1065
+    },
+    {
+      "path": "play-final-measurements.json",
+      "sha256": "d24e9c768bad3c280e14bbacc7dbf47a0218689fc402e79a7176fe3024f6b86d",
+      "bytes": 1346
+    },
+    {
+      "path": "play-final-reload-return.json",
+      "sha256": "b840c37c7430197e3fbe4015604dd8b5f051bd80945eb44567c1a76889895e1c",
+      "bytes": 581
+    },
+    {
+      "path": "play-final-reload-wait.json",
+      "sha256": "b840c37c7430197e3fbe4015604dd8b5f051bd80945eb44567c1a76889895e1c",
+      "bytes": 581
+    },
+    {
+      "path": "play-final-shared.json",
+      "sha256": "f9ffc6e4e1691ddcf278559ff0bb2b777ab06fdb92a74de6d76924583a0e2552",
+      "bytes": 763
+    },
+    {
+      "path": "play-final-stop.json",
+      "sha256": "19ab965baecf9ae170afc288ec456ff6a7a78526a0e382cb1698b5135521e40f",
+      "bytes": 339
+    },
+    {
+      "path": "play-isolate.json",
+      "sha256": "1d3a5b751cd514d38cb7fd504e61caf14e55f649c3d90bfc3cbaba94db119805",
+      "bytes": 1100
+    },
+    {
+      "path": "play-measurements.json",
+      "sha256": "598dbb797177ca6e9e11e3398ae6b5a59c85c8f9d19e98efd6cfc1984eb691d8",
+      "bytes": 964
+    },
+    {
+      "path": "play-shared-1.json",
+      "sha256": "c8700fb91ccfbd5ecfa52847dcacbdc9f6eed983dd2ecfba9ceee7e03dad278e",
+      "bytes": 763
+    },
+    {
+      "path": "play-stop.json",
+      "sha256": "19ab965baecf9ae170afc288ec456ff6a7a78526a0e382cb1698b5135521e40f",
+      "bytes": 339
+    },
+    {
+      "path": "play-tool-compile.json",
+      "sha256": "c612201fbadc0e4d711d91ce30a6679f74030a980a81a5f1334f57cee56230e4",
+      "bytes": 694
+    },
+    {
+      "path": "play-wait-reload-1.json",
+      "sha256": "3eeee980582b84c548d54edd0709fa630d4de90b0328ca567260c0c2ee057041",
+      "bytes": 747
+    },
+    {
+      "path": "reload-return-command-2.json",
+      "sha256": "5a395f6211abbdb028b6bb37af0c80a1577e8ad2faf9e79486a7fe13095b5361",
+      "bytes": 668
+    },
+    {
+      "path": "reload-return-command.json",
+      "sha256": "bd8c8d579bdaf681c392d361c7b82fd39b431a86b561934d513827e7ebc9d1e7",
+      "bytes": 497
+    },
+    {
+      "path": "reload-wait-command.json",
+      "sha256": "b840c37c7430197e3fbe4015604dd8b5f051bd80945eb44567c1a76889895e1c",
+      "bytes": 581
+    },
+    {
+      "path": "return-snapshot.json",
+      "sha256": "44a1f22b4d8e9d4b63ade3e2128d465c5efcbe3d1831d1f9a78e123130f6e37d",
+      "bytes": 1521330
+    },
+    {
+      "path": "waiting-snapshot.json",
+      "sha256": "996b4747852794affccd2d4c2be7fe29ea8f95245c05a020aff2e42bf77eec3a",
+      "bytes": 1521390
+    }
+  ]
+}

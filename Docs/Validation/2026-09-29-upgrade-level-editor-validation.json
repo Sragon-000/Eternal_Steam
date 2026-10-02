@@ -1,0 +1,878 @@
+{
+  "date": "2026-09-29",
+  "scope": "FIX-01 actual Unity EditMode runner and StartRegionSandbox Play",
+  "runner": {
+    "status": "completed",
+    "duration": 3.36,
+    "summary": {
+      "total": 117,
+      "passed": 117,
+      "failed": 0,
+      "skipped": 0,
+      "inconclusive": 0
+    },
+    "results": [
+      {
+        "FullName": "EternalSteam.Tests.ArchitectureTests.AttackAcceptsIndependentDamageProviderAndUnsubscribesDirectionHandler",
+        "Status": "Passed",
+        "Duration": 0.0142487,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.ArchitectureTests.NexusAcceptsReplacementDamageCapabilityAtValidationAndRuntime",
+        "Status": "Passed",
+        "Duration": 0.0024679,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.ArchitectureTests.RuntimeAndFeatureAssembliesEnforceOneWayDependencies",
+        "Status": "Passed",
+        "Duration": 0.0010168,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.ArchitectureTests.UpgradesUseIndependentLevelPolicyAndHealthReceiver",
+        "Status": "Passed",
+        "Duration": 0.0006959,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.BuildAreaCoverageTests.CircularProviderUsesContainsForEveryWholeCell",
+        "Status": "Passed",
+        "Duration": 0.0137569,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.BuildAreaCoverageTests.ForwardSquareCoversExactly121WholeCellsAndNoRearCells",
+        "Status": "Passed",
+        "Duration": 0.011242,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.BuildAreaCoverageTests.GrowthDestructionAndOwnerSelectionInvalidateButStationaryQueriesDoNot",
+        "Status": "Passed",
+        "Duration": 0.0254584,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.BuildAreaCoverageTests.LegacyOutpostSharesOwnersCoverageButNormalModeFiltersIt",
+        "Status": "Passed",
+        "Duration": 0.0413451,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.BuildAreaCoverageTests.SelectedLegacyOwnerChangesDisplayUnionWithoutReassigningBuildings",
+        "Status": "Passed",
+        "Duration": 0.0005395,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.BuildAreaCoverageTests.UnionDoesNotDuplicateOverlappingProvidersAndPendingProviderDoesNotExpand",
+        "Status": "Passed",
+        "Duration": 0.1095936,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.CanvasHierarchyTests.SavedSceneOwnsCanvasControlsCallbacksAndConstructionObjects(\"StartRegionSandbox\")",
+        "Status": "Passed",
+        "Duration": 1.2131848,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.CanvasHierarchyTests.SavedSceneOwnsCanvasControlsCallbacksAndConstructionObjects(\"OpenWorldSandbox\")",
+        "Status": "Passed",
+        "Duration": 0.2350061,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.DocumentContractTests.CompatibleFilterChangeRetainsTargetAndIncompatibleChangeClearsIt",
+        "Status": "Passed",
+        "Duration": 0.0016659,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.DocumentContractTests.CrossWorldCreationFailureKeepsAllReservations(False)",
+        "Status": "Passed",
+        "Duration": 0.005863,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.DocumentContractTests.CrossWorldCreationFailureKeepsAllReservations(True)",
+        "Status": "Passed",
+        "Duration": 0.0001626,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.DocumentContractTests.CrossWorldRevalidationAndRecoveryAreAllOrNothing",
+        "Status": "Passed",
+        "Duration": 0.0013339,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.DocumentContractTests.RotatedGridRoundTripsNegativeCellsAndMulticellCenters",
+        "Status": "Passed",
+        "Duration": 0.0014783,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.ExtensionTests.AreaFiltersAirAndSectorWhileHittingNeighbours",
+        "Status": "Passed",
+        "Duration": 0.0022402,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.ExtensionTests.ChainDoesNotRepeatAndUsesDeterministicNearestHop",
+        "Status": "Passed",
+        "Duration": 0.0012622,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.ExtensionTests.FailedBatchRollsBackNexusStorageAndObstacleRegistration",
+        "Status": "Passed",
+        "Duration": 0.0022808,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.ExtensionTests.MissingReferencesAndNexusCompositionAreRejected",
+        "Status": "Passed",
+        "Duration": 0.0008935,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.ExtensionTests.NexusLossImmediatelyEndsSessionAndUnsubscribesOnDispose",
+        "Status": "Passed",
+        "Duration": 0.0010151,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.ExtensionTests.NexusUnlocksUpgradesAndDestructionSignalsOnceButDisposalDoesNot",
+        "Status": "Passed",
+        "Duration": 0.0003699,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.ExtensionTests.PiercingUsesOrderedWidthLimitedHits",
+        "Status": "Passed",
+        "Duration": 0.001452,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.ExtensionTests.ProductionWaitsForStorageAndConversionIsAtomic",
+        "Status": "Passed",
+        "Duration": 0.0007683,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.ExtensionTests.ProjectileCannotHitReusedSlotAndDisposeCancelsFlights",
+        "Status": "Passed",
+        "Duration": 0.000961,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.ExtensionTests.ProjectileDelaysDamageAndFollowsBeyondRange",
+        "Status": "Passed",
+        "Duration": 0.0004045,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.ExtensionTests.RemovingOptionalModulesRemovesDependenciesAndMovementRegistration",
+        "Status": "Passed",
+        "Duration": 0.0002889,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.ExtensionTests.StatusDurationsAreIndependentAndSettingsAreCopied",
+        "Status": "Passed",
+        "Duration": 0.0007992,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.FoundationTests.DefinitionsDoNotShareRuntimeStateOrLiveSettings",
+        "Status": "Passed",
+        "Duration": 0.0030742,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.FoundationTests.DirectionEditIsTransactionalAndPhasePolicyGuardsCommands",
+        "Status": "Passed",
+        "Duration": 0.0013116,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.FoundationTests.FactoryFailureRollsBackWithoutLosingPendingWork(False)",
+        "Status": "Passed",
+        "Duration": 0.0019342,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.FoundationTests.FactoryFailureRollsBackWithoutLosingPendingWork(True)",
+        "Status": "Passed",
+        "Duration": 0.0003118,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.FoundationTests.ModuleRemovalAndCatalogValidation",
+        "Status": "Passed",
+        "Duration": 0.0024743,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.FoundationTests.MultiCellBoundsAndCenter",
+        "Status": "Passed",
+        "Duration": 0.0016841,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.FoundationTests.NonRecoverableAndDestroyedBuildings",
+        "Status": "Passed",
+        "Duration": 0.0007435,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.FoundationTests.RecoveryPreservesActivityUntilCommitAndBlocksStaleBatch",
+        "Status": "Passed",
+        "Duration": 0.0006233,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.FoundationTests.RecycledSlotCannotResolveOldHandle",
+        "Status": "Passed",
+        "Duration": 0.000154,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.FoundationTests.ReservationsSurviveSelectionAndFailedMove",
+        "Status": "Passed",
+        "Duration": 0.0005148,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.FoundationTests.RevalidationRejectsWholeBatchAndKeepsReservations",
+        "Status": "Passed",
+        "Duration": 0.0002064,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.FoundationTests.SectorIncludesBoundariesAndIgnoresHeight",
+        "Status": "Passed",
+        "Duration": 0.0001972,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.FoundationTests.TargetKindsAndEqualDistanceTieBreak",
+        "Status": "Passed",
+        "Duration": 0.0002774,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.FoundationTests.TargetLockRetainsCloserArrivalAndReacquiresOnRemoval",
+        "Status": "Passed",
+        "Duration": 0.0002047,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.HudLayoutTests.FoldingCatalogPreservesChosenEntryAndCategory",
+        "Status": "Passed",
+        "Duration": 0.0483404,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.HudLayoutTests.PlayerPanelsAreIndependentOfDeveloperPanel",
+        "Status": "Passed",
+        "Duration": 0.001778,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.HudLayoutTests.PriorityCanExpandAndHiddenStockUpdatesAreNotLost",
+        "Status": "Passed",
+        "Duration": 0.0020154,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.HudLayoutTests.UnknownPriorityFallsBackToEntireCatalog",
+        "Status": "Passed",
+        "Duration": 0.0003902,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.HudLayoutTests.ZeroStockAndDuplicateProductionIdsRemainAccessibleWithoutPriority",
+        "Status": "Passed",
+        "Duration": 0.0001551,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayEconomyTests.FailedInstallAndAggregatedCostsDoNotPartiallyCharge",
+        "Status": "Passed",
+        "Duration": 0.001933,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayEconomyTests.InvalidTransfersLeaveStockUnchanged(double.NaN)",
+        "Status": "Passed",
+        "Duration": 0.0002982,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayEconomyTests.InvalidTransfersLeaveStockUnchanged(double.PositiveInfinity)",
+        "Status": "Passed",
+        "Duration": 9.58e-05,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayEconomyTests.InvalidTransfersLeaveStockUnchanged(-1)",
+        "Status": "Passed",
+        "Duration": 0.0001469,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayEconomyTests.MultiBasePurchaseFailureChargesNeitherBase",
+        "Status": "Passed",
+        "Duration": 0.000304,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayEconomyTests.OverCapacityStockIsPreservedAndRejectsNewDeliveries",
+        "Status": "Passed",
+        "Duration": 0.000215,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayEconomyTests.RestoreValidatesBeforeReplacingLedgers",
+        "Status": "Passed",
+        "Duration": 0.0019692,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayEconomyTests.SeparateBaseLedgersNeverShareOrCopyBalances",
+        "Status": "Passed",
+        "Duration": 0.0002244,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayMigrationTests.ArchiveFailureLeavesOriginalReadable",
+        "Status": "Passed",
+        "Duration": 0.0058273,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayMigrationTests.FailedRunCannotBeRevivedByMigrationOrBackup",
+        "Status": "Passed",
+        "Duration": 0.0059902,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayMigrationTests.InterruptedWriteAndArchiveRetryKeepOriginalUntilSuccessfulCommit",
+        "Status": "Passed",
+        "Duration": 0.0059258,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.ChangedPendingPathFailsWithoutChangingValidActiveRoute",
+        "Status": "Passed",
+        "Duration": 0.0105986,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.CommitIsIdempotentAndDoesNotStartOrLoad",
+        "Status": "Passed",
+        "Duration": 0.0011325,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.DeliveryConservesStockAndNextStationStopDoesNotRepeatService",
+        "Status": "Passed",
+        "Duration": 0.001365,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.EmptyCargoStillRunsAndMissingReturnCannotCommit",
+        "Status": "Passed",
+        "Duration": 0.0011852,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.EveryTransportStateRoundTripsWithoutTransfer(Stopped)",
+        "Status": "Passed",
+        "Duration": 0.0034191,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.EveryTransportStateRoundTripsWithoutTransfer(Moving)",
+        "Status": "Passed",
+        "Duration": 0.0006587,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.EveryTransportStateRoundTripsWithoutTransfer(Dwelling)",
+        "Status": "Passed",
+        "Duration": 0.0004802,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.EveryTransportStateRoundTripsWithoutTransfer(StopRequested)",
+        "Status": "Passed",
+        "Duration": 0.00048,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.EveryTransportStateRoundTripsWithoutTransfer(FuelWait)",
+        "Status": "Passed",
+        "Duration": 0.0004505,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.EveryTransportStateRoundTripsWithoutTransfer(RouteError)",
+        "Status": "Passed",
+        "Duration": 0.0004542,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.FullDestinationRetainsCargoAndMissingFuelDoesNotDepart",
+        "Status": "Passed",
+        "Duration": 0.0004692,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.InvalidSavedAmountsAndDuplicateTrainsAreRejected",
+        "Status": "Passed",
+        "Duration": 0.0004762,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.MidSegmentErrorRecoveryKeepsPositionCargoAndPaidFuel",
+        "Status": "Passed",
+        "Duration": 0.0005191,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.MidSegmentErrorStillProtectsTrackAndStations",
+        "Status": "Passed",
+        "Duration": 0.0011454,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.MovingRestorePreservesFuelAndDoesNotDuplicateCargo",
+        "Status": "Passed",
+        "Duration": 0.0005108,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.MovingTrackRecoveryIsBlockedAndCargoResourceIsImmutable",
+        "Status": "Passed",
+        "Duration": 0.0007224,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.MultipleStationsAndRotatedPortsCompleteClosedCircuit(3,0)",
+        "Status": "Passed",
+        "Duration": 0.0017155,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.MultipleStationsAndRotatedPortsCompleteClosedCircuit(3,1)",
+        "Status": "Passed",
+        "Duration": 0.0007832,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.MultipleStationsAndRotatedPortsCompleteClosedCircuit(4,2)",
+        "Status": "Passed",
+        "Duration": 0.0008913,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.MultipleStationsAndRotatedPortsCompleteClosedCircuit(4,3)",
+        "Status": "Passed",
+        "Duration": 0.0008875,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.PendingAppliesOnlyAtFirstStationAndKeepsTrainIdentity",
+        "Status": "Passed",
+        "Duration": 0.0007262,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.PendingDoesNotReserveNewTrackAndCollisionAtBoundaryKeepsOriginalRoute",
+        "Status": "Passed",
+        "Duration": 0.0012838,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.PendingRejectsChangedAnchorAndMalformedSavedRevision",
+        "Status": "Passed",
+        "Duration": 0.0005981,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.PendingSaveCancelAndStaleDraftLeaveActiveRouteUntouched",
+        "Status": "Passed",
+        "Duration": 0.0006019,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.StationErrorAllowsFurtherTrackRecoveryButProtectsOccupiedStation",
+        "Status": "Passed",
+        "Duration": 0.0005915,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.StopRequestWinsAfterBoundaryApplication",
+        "Status": "Passed",
+        "Duration": 0.0005568,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.ThreeBaseDistributionPreservesRemainder(20,30,1000,30,50)",
+        "Status": "Passed",
+        "Duration": 0.001259,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.ThreeBaseDistributionPreservesRemainder(30,40,25,25,45)",
+        "Status": "Passed",
+        "Duration": 0.0007441,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.TrackSharingAndBranchesAreRejected",
+        "Status": "Passed",
+        "Duration": 0.0004208,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.UnassignedCargoCannotHideStockInSnapshot",
+        "Status": "Passed",
+        "Duration": 0.0004628,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.UnassignedCargoSurvivesJsonAndAllowsOnlyFirstAssignment(null)",
+        "Status": "Passed",
+        "Duration": 0.0005881,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.UnassignedCargoSurvivesJsonAndAllowsOnlyFirstAssignment(\"\")",
+        "Status": "Passed",
+        "Duration": 0.0004221,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.RailwayTests.UnloadBeforeLoadAndLimitedSourceRespectVisitAmounts",
+        "Status": "Passed",
+        "Duration": 0.0003978,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.TrainDefenseTests.AllThreeMountShapesAcceptedWithoutRotationShortcut",
+        "Status": "Passed",
+        "Duration": 0.001728,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.TrainDefenseTests.CaptureRestoresBatteryLevelAndCooldown",
+        "Status": "Passed",
+        "Duration": 0.0063182,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.TrainDefenseTests.DepletedBatteryStopsNewAttacksAndPausedCombatSpendsNothing",
+        "Status": "Passed",
+        "Duration": 0.0009629,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.TrainDefenseTests.InvalidBatteryRejected(double.NaN)",
+        "Status": "Passed",
+        "Duration": 0.0002406,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.TrainDefenseTests.InvalidBatteryRejected(-1)",
+        "Status": "Passed",
+        "Duration": 6.96e-05,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.TrainDefenseTests.InvalidBatteryRejected(201)",
+        "Status": "Passed",
+        "Duration": 6.55e-05,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.TrainDefenseTests.MountedModuleHonorsInjectedMainLevelEvenWhenCalledDirectly",
+        "Status": "Passed",
+        "Duration": 0.0004034,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.TrainDefenseTests.MovingWeaponQueriesCurrentPositionAndNeverRegistersAsEnemyTarget",
+        "Status": "Passed",
+        "Duration": 0.0010186,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.TrainDefenseTests.OlderV2MissingArmamentDefaultsToEmptyMount",
+        "Status": "Passed",
+        "Duration": 0.0001815,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.TrainDefenseTests.OnlyExactMountDimensionsAreAccepted(1,1)",
+        "Status": "Passed",
+        "Duration": 0.000105,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.TrainDefenseTests.OnlyExactMountDimensionsAreAccepted(3,3)",
+        "Status": "Passed",
+        "Duration": 6.05e-05,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.TrainDefenseTests.OnlyExactMountDimensionsAreAccepted(3,1)",
+        "Status": "Passed",
+        "Duration": 5.4e-05,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.TrainDefenseTests.PowerTransferConservesStoredEnergyAndRejectsInvalidRequests",
+        "Status": "Passed",
+        "Duration": 0.0015952,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.TrainDefenseTests.ProjectileCompletesAfterBatteryDepletion",
+        "Status": "Passed",
+        "Duration": 0.0004851,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.UpgradeQueryTests.AllUpgradeKindsRejectInactiveDestroyedAndMaximumWithoutMutation(0)",
+        "Status": "Passed",
+        "Duration": 0.0016765,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.UpgradeQueryTests.AllUpgradeKindsRejectInactiveDestroyedAndMaximumWithoutMutation(1)",
+        "Status": "Passed",
+        "Duration": 0.0001232,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.UpgradeQueryTests.AllUpgradeKindsRejectInactiveDestroyedAndMaximumWithoutMutation(2)",
+        "Status": "Passed",
+        "Duration": 0.0004562,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.UpgradeQueryTests.BankQuoteAndRejectedCommitNeverDebit",
+        "Status": "Passed",
+        "Duration": 0.0007104,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.UpgradeQueryTests.ClickRechecksFundsAndChangedCostPolicy",
+        "Status": "Passed",
+        "Duration": 0.0010893,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.UpgradeQueryTests.ExplicitFreePolicyStillChecksBuildingAndLevelConditions",
+        "Status": "Passed",
+        "Duration": 0.0002164,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.UpgradeQueryTests.InvalidOrMissingCostsAreNotVerificationFree",
+        "Status": "Passed",
+        "Duration": 0.0003259,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.UpgradeQueryTests.PaidQueryAggregatesDuplicateCostsAndCommitDebitsExactlyOnce",
+        "Status": "Passed",
+        "Duration": 0.0003471,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.UpgradeQueryTests.PerformanceExemptionStillHonorsOwnMaximumAndActivity",
+        "Status": "Passed",
+        "Duration": 0.0001101,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.UpgradeQueryTests.PerformancePurchaseRechecksLiveMainLevelAndPreservesFundsOnRejection",
+        "Status": "Passed",
+        "Duration": 0.0003176,
+        "Message": null,
+        "StackTrace": null
+      },
+      {
+        "FullName": "EternalSteam.Tests.UpgradeQueryTests.QueryDoesNotUpgradeOrScaleHealthAndCommandRechecksLevelLimit",
+        "Status": "Passed",
+        "Duration": 0.0002365,
+        "Message": null,
+        "StackTrace": null
+      }
+    ]
+  },
+  "play": {
+    "prepare": {
+      "diagnostics": [],
+      "compileMs": 871,
+      "executeMs": 41,
+      "assemblyName": "PipelineRunScript_VerifyUpgradeLevel_0d6cbcee21b74e11b702836026fd6665",
+      "success": true,
+      "result": "PASS actual tesla, disabled button and callback guard, main growth, level2 callback, over-level validation rejection; normal scene reload requested"
+    },
+    "reloaded": {
+      "diagnostics": [],
+      "compileMs": 52,
+      "executeMs": 6,
+      "assemblyName": "PipelineRunScript_VerifyUpgradeLevel_6475f14e736c44b2a334f4e0b1d8bccb",
+      "success": true,
+      "result": "PASS actual normal reload with level2 and disabled UI; over-level file reload requested"
+    },
+    "rejected": {
+      "diagnostics": [],
+      "compileMs": 51,
+      "executeMs": 1,
+      "assemblyName": "PipelineRunScript_VerifyUpgradeLevel_4c22719dba794c35910c9edd9e600bf6",
+      "success": true,
+      "result": "PASS actual over-level save reload blocked with reason; original file preserved"
+    },
+    "cleanup": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "playing": false,
+        "dirty": false,
+        "scene": "Assets/EternalSteam/Scene/Tests/StartRegionSandbox.unity",
+        "testRootRestored": true
+      }
+    }
+  },
+  "limitations": [
+    "Canvas serialized button onClick callbacks were invoked programmatically; not physical mouse input QA",
+    "No game build or other roadmap items validated"
+  ],
+  "replay": "Tools/VerifyUpgradeLevel.cs: Prepare -> Reloaded -> Rejected, in Play with ETERNAL_STEAM_SAVE_TEST_ROOT=/tmp/eternal-fix01-live"
+}

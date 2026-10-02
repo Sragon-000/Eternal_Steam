@@ -1,0 +1,313 @@
+{
+  "baselineHead": "7e6dabe890603bdd183c4680420fd53986d3498e",
+  "fingerprint": "b436d0ee635d34fca32bf37c4169d55a45c5ced2906173709bc207adfde70cdb",
+  "files": [
+    {
+      "path": "Assets/EternalSteam/Code/Placement/BuildingWorld.cs",
+      "sha256": "ec05a65f2fc58aa67bb1f4c78e6e6434f76000df428177062b50480d8e9c738a",
+      "bytes": 9721
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Placement/BuildingWorld.cs.meta",
+      "sha256": "27abef2a70ef8229ea348368dfb2857584c617b423df73cde9637aeb0e747a57",
+      "bytes": 59
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Railway/RailConnections.cs",
+      "sha256": "f475e2ae1305baaf352947f7688b7495593ad6b9797ee523243a255960676ede",
+      "bytes": 8217
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Railway/RailConnections.cs.meta",
+      "sha256": "2f84124161d5d0eb187e1a4ba2da89542f2bee3f3c8a03bc36a094151ec6502c",
+      "bytes": 59
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Railway/RailFacilityDefinition.cs",
+      "sha256": "ccf8b8f9758ccfa514d9e4507e19c503eb1cdd3f25a7b98ac51cbc6daabd808e",
+      "bytes": 781
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Railway/RailFacilityDefinition.cs.meta",
+      "sha256": "8e0b46fd529428a7130bef99295441cdf6d02f339d6f00250f89047ed9b068eb",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Railway/RailPathPlanner.cs",
+      "sha256": "8f7ad059b3116fd2b1278852568af9d0beb70e696151894ff45d9db530c5a3ed",
+      "bytes": 3944
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Railway/RailPathPlanner.cs.meta",
+      "sha256": "34bfc50e863d7e532d011d057b819f0adc7aa0aa5a0b5763ad4f2f0cd175830c",
+      "bytes": 59
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Railway/RailwayNetwork.cs",
+      "sha256": "bddc261e5c096e345b9fb4825313e85a65b374d1c2967efe9117d54a4c730121",
+      "bytes": 28206
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Railway/RailwayNetwork.cs.meta",
+      "sha256": "e2e2c2b15481b6975d37b505b95f7f11eca5f98a01fa1ed14d982156c8b80510",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Railway/RailwayRevisions.cs",
+      "sha256": "5e42ef712a8ffe7e51b53a5a970012a3b93d17500521da91992759b16f874b60",
+      "bytes": 5192
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Railway/RailwayRevisions.cs.meta",
+      "sha256": "6037f71fe2397dbff897ffb59a5cdb370152d018a5acb47b4f786989e090a3d7",
+      "bytes": 59
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Railway/RailwayShuttle.cs",
+      "sha256": "5eddc34ea8ac6f221462ac6cb48f641de1b70f683e020a3359ac8287a15e4f7a",
+      "bytes": 8145
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Railway/RailwayShuttle.cs.meta",
+      "sha256": "7942e189011932df11cecea0334b4cb19435088913d2a82091792bc1fb789564",
+      "bytes": 59
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Railway/RailwayStationSlots.cs",
+      "sha256": "5cac6ac1fbf8effe3cfccede9008caffdac26486086ee5b88684d4e589288ae2",
+      "bytes": 6297
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Railway/RailwayStationSlots.cs.meta",
+      "sha256": "0908c4d829fb8e46e693e12acc43c7f6964ba273c55de9308a356d80397ff130",
+      "bytes": 59
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Railway/TrainArmament.cs",
+      "sha256": "be3c9477c11328f59ff7dc71678012829fd2acd859feb65f96098448cb4ed239",
+      "bytes": 1182
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Railway/TrainArmament.cs.meta",
+      "sha256": "712f2e327038f22b061ec3bcfec1eada9c650a363a5c5895b5ecf9386f96dd46",
+      "bytes": 59
+    },
+    {
+      "path": "Assets/EternalSteam/Scene/Tests/OpenWorldSandbox.unity",
+      "sha256": "59fceec6824ef52550f1f654c54820f2fa9f83f339cf99b9eb489e013ea6aeda",
+      "bytes": 3161303
+    },
+    {
+      "path": "Assets/EternalSteam/Scene/Tests/OpenWorldSandbox.unity.meta",
+      "sha256": "6f371fc2e30ab63ca7d45289ae111f7826af235b983149c2f2ead9379281259d",
+      "bytes": 155
+    },
+    {
+      "path": "Assets/EternalSteam/Scene/Tests/StartRegionSandbox.unity",
+      "sha256": "ab93fbdf7e439c0ebc3f0926d9c9c23d103d74d02123099b18a497b1345534ed",
+      "bytes": 160900282
+    },
+    {
+      "path": "Assets/EternalSteam/Scene/Tests/StartRegionSandbox.unity.meta",
+      "sha256": "8c5328e4497ac88c2d92541072957fc98ddfeb5a359e16a9c81a31fc3967dd8b",
+      "bytes": 155
+    },
+    {
+      "path": "Assets/EternalSteam/Shared/UI/Railway/RailwayButton.png",
+      "sha256": "9251713dc13f009affa30cf958f22824c5e76229fa467cda387b5ea039aebc4a",
+      "bytes": 631086
+    },
+    {
+      "path": "Assets/EternalSteam/Shared/UI/Railway/RailwayButton.png.meta",
+      "sha256": "d38cb5e2192fc3014142d901abf2444dca4c9ea653918298fb4102453bdbed3a",
+      "bytes": 3926
+    },
+    {
+      "path": "Assets/EternalSteam/Shared/UI/Railway/RailwayIcon.png",
+      "sha256": "684a48ace2418a063456ad196ca0a86824f2bfe6a3f6da1757cb75a9fcab5417",
+      "bytes": 374015
+    },
+    {
+      "path": "Assets/EternalSteam/Shared/UI/Railway/RailwayIcon.png.meta",
+      "sha256": "76878db3f08c6ac736aec0dbe375a4e0f5ca86909eb5ece1f4979987d492b7de",
+      "bytes": 3920
+    },
+    {
+      "path": "Assets/EternalSteam/Shared/UI/Railway/RailwayPanel.png",
+      "sha256": "70e558bfdb9ae10111742a216f5cc0d2eb769ac1d3ae48a5e906f14d53f0a948",
+      "bytes": 946588
+    },
+    {
+      "path": "Assets/EternalSteam/Shared/UI/Railway/RailwayPanel.png.meta",
+      "sha256": "d1ccdc465d783b3f57620bd54d5db9c09d90019ea8b7309ec47b1668734eda8b",
+      "bytes": 3926
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/EditMode/RailConnectionTransactionTests.cs",
+      "sha256": "83680aae74229d1fc3b05e03bc02945532dc7780e5c099a4384cb289d474feed",
+      "bytes": 2548
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/EditMode/RailConnectionTransactionTests.cs.meta",
+      "sha256": "34c567a07ea50a2a09ce49b517df15e33b28ccd847b70b144835c092d45ea47c",
+      "bytes": 59
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/EditMode/RailPathPlannerTests.cs",
+      "sha256": "bd7de0bf8ed4a8b6dd4915d09284f8c172a06756fabe71c8928d8f1996fa3811",
+      "bytes": 2705
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/EditMode/RailPathPlannerTests.cs.meta",
+      "sha256": "c7b7bdb0101c118951fd2abd06634c66d8c458f728b01770a7220270b2df2716",
+      "bytes": 59
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/EditMode/RailwayShuttleTests.cs",
+      "sha256": "5e7a4d83c452349918ae99302f8a7810ec2e4e8d48cfcf5a2fbce363d449fe3b",
+      "bytes": 19083
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/EditMode/RailwayShuttleTests.cs.meta",
+      "sha256": "b1a4ff42238784129be15192299102879dffaae76e2aed47fea6f1e2f49f47dc",
+      "bytes": 59
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/EditMode/RailwayTests.cs",
+      "sha256": "610c2227e402bf39aeaa37edc608538a55a07f5fc44f977cabee831d7827e807",
+      "bytes": 41424
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/EditMode/RailwayTests.cs.meta",
+      "sha256": "cee8884d4252971d304a1fd2a2d95bea58fc32df1a581871f60b1a152e150b17",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/CanvasWorldHud.cs",
+      "sha256": "3f05339693bc30b4f952297637a32c4416ba6109253f8adef4f81b4cde237ce0",
+      "bytes": 23895
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/CanvasWorldHud.cs.meta",
+      "sha256": "dc72e3683dccc5da87577493e73bb9cbb07dee93e2bbee5e7017c3dc86590255",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/OpenWorldInput.cs",
+      "sha256": "efa929961046353c21ffec4f99fd296e1293d026b01fa32a4e42145b78c95f00",
+      "bytes": 21080
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/OpenWorldInput.cs.meta",
+      "sha256": "f00576b8ad28ebc8be552173abf8cef33e891a965af696de3263b2eb56875180",
+      "bytes": 59
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/RailwayConnectionHud.cs",
+      "sha256": "1c33797c45c71b907cdd1af5adc0c0d3d758c47b473e2f9b319cefbe3128d058",
+      "bytes": 7288
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/RailwayConnectionHud.cs.meta",
+      "sha256": "2ce59219cbf9ff24a1bed2bc87f96573985af683c0143e562e4a83fa144ecc2a",
+      "bytes": 59
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/RailwayConstruction.cs",
+      "sha256": "95f3c03e37fd08d37d26cfa68ab0dccb8b1384e2b09f8c733137f8a8ab1430e2",
+      "bytes": 4997
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/RailwayConstruction.cs.meta",
+      "sha256": "d8b471027d62acca4e73c5d5ee5b0324bcd097ee9bab3cf45e6bd0a5c880c93d",
+      "bytes": 59
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/RailwayController.cs",
+      "sha256": "b77543822daef2804807d9fe2782d8395fe897410371d009409e96d5d2e8e03e",
+      "bytes": 3032
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/RailwayController.cs.meta",
+      "sha256": "318cb8bb839caa091e7434839c6e88f5213fa93a31f8783c944a18aa0673fcc6",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/RailwayHud.cs",
+      "sha256": "8e0af45484d56c34497b1a28d66e2443429f10ff8034857dfce5a2b8f4f8a04d",
+      "bytes": 43343
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/RailwayHud.cs.meta",
+      "sha256": "908c27f518a5f7fd6ba54af045444b72913432be0555b017b85526534717f70c",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/SingleMapPersistence.cs",
+      "sha256": "1045f8c7e0783abdc7e61d6981411706dbec5e13fc06585035ba171ca0c8afbb",
+      "bytes": 28792
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/SingleMapPersistence.cs.meta",
+      "sha256": "24b602d92007d25039864c7f670c3596c81b19f9fdee8dc582e315019516fdef",
+      "bytes": 59
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/WorldEditSession.cs",
+      "sha256": "9a052f9c770b4eddeee3e17596953e54efe76e2f4b47e687f071e3da72c053f7",
+      "bytes": 28713
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/WorldEditSession.cs.meta",
+      "sha256": "cb8fcfc0f4a59a9fadc6bb80ddf091ece106abc8afa5e88143eacb75e5feaaf0",
+      "bytes": 59
+    },
+    {
+      "path": "Docs/Validation/2026-10-02-railway-connections-ui.md",
+      "sha256": "89e77f366149576c118c81a6459588fbeb202ae737127450ab904b220b95b361",
+      "bytes": 10240
+    },
+    {
+      "path": "Docs/프로젝트_통합기준.md",
+      "sha256": "5e2bff48600fd0a6dcc17c32a542330b5201cc64ad8cadcbd3b4cf368985633c",
+      "bytes": 176038
+    },
+    {
+      "path": "Packages/manifest.json",
+      "sha256": "8077469c51cb8bc679109e22095e619147f50148b1f53c2334c923ed0304fa8b",
+      "bytes": 2098
+    },
+    {
+      "path": "Packages/packages-lock.json",
+      "sha256": "e751672859ca3be39e81078fd503082391a4bfa2f81a2687c0e4c8ba1c0549a9",
+      "bytes": 13374
+    },
+    {
+      "path": "Tools/AuthorRailwayConnections.cs",
+      "sha256": "6130628bed31b09905ccc153709a176ed88ffe3426a73c0c376bc7d1532d76b5",
+      "bytes": 3390
+    },
+    {
+      "path": "Tools/AuthorRailwaySprites.cs",
+      "sha256": "66424d8df95d8708fbb8253ef6c5ff1464535378ec1b7f38e886cd4035c85d3b",
+      "bytes": 6144
+    },
+    {
+      "path": "Tools/MeasureRailPathPlanner.cs",
+      "sha256": "19c5ac9b963716d5b53aa75c3e4e328151c66281d3474c798dbb102b358582a3",
+      "bytes": 1268
+    },
+    {
+      "path": "Tools/VerifyRailwayConnections.cs",
+      "sha256": "f672cb91f535071479f45c8d045487d4a0ec60e45e3cdb12b6c5d073ff31248c",
+      "bytes": 2825
+    },
+    {
+      "path": "Tools/VerifyRailwayConnectionsPlay.cs",
+      "sha256": "11cc0ed9d35dee4bd043fa5032ac571beaf66d21ebb56ea0cca06397d1366783",
+      "bytes": 8285
+    }
+  ],
+  "missing": [],
+  "addedTrailingWhitespace": []
+}

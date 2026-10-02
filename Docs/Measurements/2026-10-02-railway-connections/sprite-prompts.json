@@ -1,0 +1,17 @@
+{
+  "mode": "built-in image_gen",
+  "assets": [
+    {
+      "name": "panel",
+      "prompt": "Generate a NEW production game UI panel sprite for the railway interface in Eternal Steam. The attached tiny sprite is STYLE REFERENCE only. Match its restrained flat industrial strategy-game style: almost-black blue-green matte interior (#091114), extremely thin muted steel teal double outline (#58767b), tiny dull amber gold corner brackets (#b88a32), square corners, crisp orthographic straight-on geometry, no bevel and no perspective. Single square panel filling the entire canvas, border inset only 2% of canvas, empty dark center; designed for Unity uGUI nine-slice stretching, keep decoration entirely at the four corners and the narrow border. At final 620x570 display the lines should read as about 1 pixel thick. No text, symbols, rivets, gradients, large decorations, drop shadow, mockup, surrounding UI or presentation board. Real transparent pixels only outside the panel. It must look like a polished sibling of the reference, not a fantasy frame."
+    },
+    {
+      "name": "button",
+      "prompt": "Generate a NEW production railway command button background sprite for Eternal Steam. The attached tiny Card sprite is STYLE REFERENCE only. Match the restrained flat industrial strategy-game UI: almost-black blue-green matte fill (#101b1e), extremely thin muted steel teal double outline (#58767b), subtle tiny amber gold accents at the outermost left and right edge only, crisp square corners. ONE horizontal empty button, approximately 3:1 width:height, front view, filling the canvas with only 2% transparent padding, designed for Unity uGUI nine-slice; middle stretches without seams and borders stay thin. No text, icons, bevel, rivets, perspective, mockup, drop shadow, glow, busy texture or surrounding UI. Readable muted surface, compatible with gray-teal industrial HUD. Preserve genuine transparency outside the button."
+    },
+    {
+      "name": "rail",
+      "prompt": "Generate a NEW production railway navigation icon sprite for Eternal Steam. Attached wrench icon is STYLE REFERENCE only. Match its muted blue-gray teal (#52777e), restrained flat solid silhouette and crisp low-detail game HUD style. Single recognizable front-view locomotive with a short pair of rails leading downward, compact square silhouette, designed to remain clear at 28px. One tiny muted amber (#b88a32) headlamp is allowed; all other fill muted teal, transparent negative-space windows. No text, letters, numbers, outline box, surrounding panel, shadow, gradient, metallic 3D render, perspective or busy details. Genuine transparent background, generous 12% clear padding, centered subject."
+    }
+  ]
+}

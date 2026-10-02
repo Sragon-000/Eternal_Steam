@@ -1,0 +1,43 @@
+{
+  "date": "2026-09-29",
+  "scope": "A5 supported same-configuration v1-to-v2 inventory migration",
+  "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam",
+  "fixture": {
+    "kind": "synthetic v1 from current 500x500 scene with main and sub base",
+    "root": "/tmp/eternal-railway-migration-c5f87e9c8e644285a97abd89dc6082de",
+    "sourceVersion": 1,
+    "sourceIron": 1234.0,
+    "sourceBuildingCount": 2
+  },
+  "play": {
+    "prepare": "PASS v1 fixture loaded through actual scene initialization",
+    "migration": "PASS main gets 1234, sub and shared banks get 0; source archived; v2 written",
+    "reload": "PASS v2 reload retains exact main stock and source marker without duplicate grant",
+    "v2Version": 2,
+    "migratedVersion": 1,
+    "sourceHashMatches": true,
+    "sourceArchiveCount": 1,
+    "mainIron": 1234.0,
+    "subIron": 0.0,
+    "sharedIron": 0.0
+  },
+  "editMode": {
+    "Total": 188,
+    "Passed": 188,
+    "Failed": 0,
+    "Skipped": 0,
+    "Inconclusive": 0
+  },
+  "isolation": {
+    "editorStartedByAgent": false,
+    "finalPlayMode": false,
+    "sceneDirty": false,
+    "saveRootRestored": true,
+    "backgroundRestored": true
+  },
+  "limits": [
+    "Only matching content configuration fingerprint is accepted; earlier map/content configurations need explicit mapping",
+    "Per-base storage-building capacity reconstruction and old user-save variants remain unverified",
+    "Physical mouse and display-resolution QA remains"
+  ]
+}

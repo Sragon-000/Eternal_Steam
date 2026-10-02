@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/VerifyTrainConsist.cs",
+      "entry": "VerifyTrainConsist.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 539,
+      "executeMs": 589,
+      "assemblyName": "PipelineRunScript_VerifyTrainConsist_664cbed1eae949e780a426681edc95c5",
+      "success": true,
+      "result": "{\n  \"status\": \"PASS\",\n  \"renderers\": 27,\n  \"triangles\": 203712,\n  \"animatedDifference\": 0.0493567,\n  \"loopError\": 0.0,\n  \"forwardPhase\": 0.119665377,\n  \"reversePhase\": 0.05983269,\n  \"bounds\": \"(1.28, 1.78, 9.43)\",\n  \"savedClip\": \"LinkedMotion\"\n}"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

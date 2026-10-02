@@ -1,0 +1,89 @@
+{
+  "capturedAt": "2026-10-02T13:55:21.034429+09:00",
+  "head": "7e6dabe890603bdd183c4680420fd53986d3498e",
+  "files": [
+    {
+      "path": "Assets/EternalSteam/Code/Railway/TrainArmament.cs",
+      "sha256": "be3c9477c11328f59ff7dc71678012829fd2acd859feb65f96098448cb4ed239",
+      "bytes": 1182
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Railway/RailwayNetwork.cs",
+      "sha256": "b2642e1999c3937d34122e6b22d8c2a1d89ec415ea78724537d713d511d1ef74",
+      "bytes": 28473
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Railway/RailwayShuttle.cs",
+      "sha256": "f43e265b247171667cd7efa08d9eb3c9e5ed7cb212e5212813158c9046d2434b",
+      "bytes": 6030
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Railway/RailFacilityDefinition.cs",
+      "sha256": "ccf8b8f9758ccfa514d9e4507e19c503eb1cdd3f25a7b98ac51cbc6daabd808e",
+      "bytes": 781
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Railway/RailwayRevisions.cs",
+      "sha256": "0ceea365d3fcdb9789fbbefddfba09c0c2a7937e8c4e69a513cc10d282cf9d24",
+      "bytes": 5165
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/EditMode/RailwayMigrationTests.cs",
+      "sha256": "68863783cc22a9d24b5c1345bdc24f58ebeb210883949570e59bb5a066015134",
+      "bytes": 6113
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/EditMode/RailwayShuttleTests.cs",
+      "sha256": "7725a8efdc527db53225765f5bd1d0a4703850864e3d869f32ce6a78ee8a6fe1",
+      "bytes": 8582
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/EditMode/RailwayTests.cs",
+      "sha256": "5d0a87ed2b9f1d4730e45d96058579f66a2b81a8351400182a04bbf81e959425",
+      "bytes": 41333
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/EditMode/TrainDefenseTests.cs",
+      "sha256": "f1d4cbaab5305f610a4b080fc0b5593b6e4feb2afce96baac55ea91edf5e753b",
+      "bytes": 5884
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/RailwaySceneView.cs",
+      "sha256": "e05ababb205f90d12cffd4be2e643f5f2c832b589d835e31359c7dac393b4b6d",
+      "bytes": 9514
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/RailwayHud.cs",
+      "sha256": "0c7e73b549a1b374d2681cb96a5c22bbca68322df97cc45ce1ff50d176f29a45",
+      "bytes": 42605
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/RailwayController.cs",
+      "sha256": "5a01f629d6ad0ea09cd4cf69fb796e5cee938d3798b1248625a5933de6c93b4d",
+      "bytes": 2809
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/SingleMapPersistence.cs",
+      "sha256": "2659f51617de66a484712429f9802ffee247113f748185097742608a82d796ec",
+      "bytes": 28569
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/SingleMapSnapshot.cs",
+      "sha256": "d6b82995e060faa4890e21ab2eb526c1427dfcb1932028cc3c90764d0b69dc20",
+      "bytes": 5691
+    },
+    {
+      "path": "Docs/프로젝트_통합기준.md",
+      "sha256": "a09e8dc1a00b8c5af7bd8a7cc72411125a775b11267c28ff86d9f13eac6b13ac",
+      "bytes": 171010
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/TrainDefenseController.cs",
+      "sha256": "40c773c917f185cf5adac603a6078f34838e4cf5f82135b534640d9764ff0371",
+      "bytes": 9728,
+      "note": "Captured before first edit to this file; after initial core test run."
+    }
+  ],
+  "scope": "Before this chat implementation; includes pre-existing uncommitted/untracked source. No runtime tests yet.",
+  "priorEvidence": "241/241 is previous chat only."
+}

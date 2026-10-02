@@ -1,0 +1,22 @@
+{
+  "kind": "isolated Unity memory probes; no scene/save write commands",
+  "result": {
+    "emptyCargo": {
+      "beforeNull": true,
+      "capturedResource": "",
+      "configureAfterRestore": false,
+      "error": "화물칸 자원은 지정 후 변경할 수 없습니다.",
+      "storedExcerpt": "resource\":\"\",\"armament\":{\"footprint\":{\"x\":2,\"y\":2},\"definition\":\"\",\"ba"
+    },
+    "errorRecovery": {
+      "firstRecoveryAllowed": true,
+      "status": "RouteError",
+      "atStation": true,
+      "secondRecoveryAllowed": false,
+      "error": "사용 중인 노선의 기차를 먼저 역에서 정지하세요."
+    },
+    "scene": "Assets/EternalSteam/Scene/Tests/StartRegionSandbox.unity",
+    "dirty": true
+  },
+  "note": "Scene dirty flag was true at the end; no pre-probe dirty measurement was taken. Existing scene was neither saved nor reloaded."
+}

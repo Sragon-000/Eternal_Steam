@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/VerifyRailwayStationSlotsPlay.cs",
+      "entry": "VerifyRailwayStationSlotsPlay.ReloadWaiting"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 50,
+      "executeMs": 139,
+      "assemblyName": "PipelineRunScript_VerifyRailwayStationSlotsPlay_8562423e2bfe41caa2e775884c0083eb",
+      "success": true,
+      "result": "PASS exact waiting save reload, slot release, single unload and preserved fuel."
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

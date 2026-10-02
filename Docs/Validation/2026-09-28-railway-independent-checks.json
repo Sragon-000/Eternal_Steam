@@ -1,0 +1,15 @@
+{
+  "scope": "Standalone managed checks; not Unity import, NUnit runner, scene or Play validation",
+  "results": {
+    "EconomyChecks": {
+      "exitCode": 0,
+      "output": "PASS SeparateBaseLedgersNeverShareOrCopyBalances\nPASS MultiBasePurchaseFailureChargesNeitherBase\nPASS FailedInstallAndAggregatedCostsDoNotPartiallyCharge\nPASS OverCapacityStockIsPreservedAndRejectsNewDeliveries\nPASS RestoreValidatesBeforeReplacingLedgers\nPassed 8 economy checks outside Unity\n",
+      "error": ""
+    },
+    "RailwayCoreChecks": {
+      "exitCode": 0,
+      "output": "PASS Commit is idempotent and manual start\nPASS Independent cargo conservation and next-station stop\nPASS Full destination preserves cargo\nPASS Fuel wait requires manual restart\nPASS Shared track and branching are rejected\nPASS Running rail locked and resource immutable\nPASS Large ticks equal small ticks\nPASS Draft quantities rejected without creating a train\nPASS Invalid saved quantity rejected\nPassed 9 railway algorithm checks; Unity import/scene/Play not covered.\n",
+      "error": ""
+    }
+  }
+}

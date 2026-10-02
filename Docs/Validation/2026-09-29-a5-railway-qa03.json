@@ -1,0 +1,49 @@
+{
+  "date": "2026-09-29",
+  "scope": "QA-03 lost station reference and curved route timing/pose continuity",
+  "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam",
+  "lostStation": {
+    "fixture": "/tmp/eternal-a5-stationloss-live (copy of isolated A5 v2 save)",
+    "probe": "Tools/VerifyA5StationLoss.cs",
+    "playResult": "PASS lostDepartureWhileMoving=true; routeError=true; paidFuelCargoProgressPreserved=true; trainVisibleAtTrack=true",
+    "change": "A train that has paid for and entered a segment remains visible at the saved track position when its departure station disappears.",
+    "destinationStationTest": "DestinationStationLossStopsPaidSegmentAndResumeDoesNotChargeAgain passed: the route stopped, then resumed from the paid position without a second fuel debit after the same station reference returned."
+  },
+  "curveAndTiming": {
+    "fixture": "/tmp/eternal-a5-timing-live (copy of isolated A5 v2 save)",
+    "probe": "Tools/MeasureA5CurveTiming.cs",
+    "routeTurns": 4,
+    "expectedCircuitSeconds": 46,
+    "before": {
+      "largeTick": "Dwelling at stop 0, revision 1",
+      "pointOneSecondTicks": "Moving at stop 1, progress just below 20, revision 0",
+      "departurePoseJumpMeters": 3.162278,
+      "largestPointOneSecondPoseStepMeters": 3.352613
+    },
+    "after": {
+      "largeAndSmallTickStateEqual": true,
+      "largeAndSmallTickState": "Dwelling at stop 0, revision 1",
+      "departurePoseJumpMeters": 0,
+      "largestPointOneSecondPoseStepMeters": 0.3689345
+    },
+    "change": "Snap sub-nanosecond dwell/segment remainder at boundaries; interpolate the train pose from departure station through track cells to arrival station over the existing segment duration."
+  },
+  "verification": {
+    "editorCompilation": "completed without errors",
+    "newEditModeTest": "EternalSteam.Tests.RailwayTests.CurvedCircuitEndsAtTheSameStationWithLargeAndPointOneSecondTicks",
+    "targetedEditMode": {"Total": 1, "Passed": 1, "Failed": 0},
+    "fullEditMode": {"Total": 194, "Passed": 194, "Failed": 0, "Skipped": 0, "Inconclusive": 0}
+  },
+  "isolation": {
+    "editorStartedByAgent": false,
+    "productionSaveTouched": false,
+    "finalPlayMode": false,
+    "saveRootRestored": true,
+    "backgroundRestored": true,
+    "sceneDirty": false
+  },
+  "limits": [
+    "Station loss was simulated by removing the runtime station building in an isolated Play session; no player save was modified.",
+    "Curve/timing checks used the authored scene and runtime pose, but did not drive physical mouse input or a standalone build."
+  ]
+}

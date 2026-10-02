@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/PolishIntegratedHud.cs",
+      "entry": "PolishIntegratedHud.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 615,
+      "executeMs": 4298,
+      "assemblyName": "PipelineRunScript_PolishIntegratedHud_938fc37fe7e048b9b1fff00eb2067397",
+      "success": true,
+      "result": "PASS both scenes: guide, notification, railway tools skin and footer padding"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

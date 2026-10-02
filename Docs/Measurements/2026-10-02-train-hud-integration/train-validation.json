@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "renderers": 27,
+  "triangles": 203712,
+  "animatedDifference": 0.0493567,
+  "loopError": 0.0,
+  "forwardPhase": 0.119665377,
+  "reversePhase": 0.05983269,
+  "bounds": "(1.28, 1.78, 9.43)",
+  "savedClip": "LinkedMotion"
+}

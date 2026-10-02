@@ -1,0 +1,18 @@
+{
+  "Eternal_Steam/Docs/Art/Train/model-v2-linked-animation/train-a-v2-linked-animation.blend": {
+    "bytes": 402124,
+    "sha256": "435eac0fe6d61ca399bbc5707277ab1df10b39e72c6240d9c0d6b793960db7ad"
+  },
+  "Eternal_Steam/Docs/Art/Train/model-v3-wagons/turret-foundation-wagon.blend": {
+    "bytes": 145450,
+    "sha256": "ca7df3d40bc2239588f3c4aa9e60552303b06ceb8b2f4c7a04855ee6e311530f"
+  },
+  "Eternal_Steam/Docs/Art/Train/model-v3-wagons/train-a-v3-consist.blend": {
+    "bytes": 538615,
+    "sha256": "a2bbdd48aa8b6d8bfa97f334282d77d91b3804d10b1713c1d4909cbc647aac99"
+  },
+  "Eternal_Steam/Docs/Art/Train/model-v3-wagons/cargo-wagon.blend": {
+    "bytes": 150672,
+    "sha256": "e749ad5c616750dccfe01b0ab8533e68e9f0599bcf0d04a404f431bde79df2f0"
+  }
+}

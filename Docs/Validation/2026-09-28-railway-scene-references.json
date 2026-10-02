@@ -1,0 +1,16 @@
+[
+  {
+    "scene": "StartRegionSandbox",
+    "newSerializedBlocks": 358,
+    "persistentRailwayCallbacks": 39,
+    "sha256": "fb660662edc560b95adeaaff0becb986f8254f4aa5a09e78a6b56ab9eedaf3f5",
+    "staticReferences": "PASS"
+  },
+  {
+    "scene": "OpenWorldSandbox",
+    "newSerializedBlocks": 358,
+    "persistentRailwayCallbacks": 39,
+    "sha256": "fd9e04356b4dc94a4d1ec84e1bdc099e70a81e5050f35700ddb29218d0825cf0",
+    "staticReferences": "PASS"
+  }
+]

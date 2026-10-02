@@ -1,0 +1,59 @@
+{
+  "scope": "Unity Editor core only, 1000 updates at 0.1s; no FPS guarantee",
+  "samples": [
+    {
+      "routes": 1,
+      "stations": 2,
+      "tracks": 22,
+      "updates": 1000,
+      "topologyMs": 0.4524,
+      "commitMs": 0.7567,
+      "tickMs": 0.3684
+    },
+    {
+      "routes": 10,
+      "stations": 20,
+      "tracks": 220,
+      "updates": 1000,
+      "topologyMs": 0.4292,
+      "commitMs": 0.38330000000000003,
+      "tickMs": 3.1733000000000002
+    },
+    {
+      "routes": 100,
+      "stations": 200,
+      "tracks": 2200,
+      "updates": 1000,
+      "topologyMs": 4.5285,
+      "commitMs": 3.5383,
+      "tickMs": 32.2492
+    },
+    {
+      "routes": 10,
+      "stations": 40,
+      "tracks": 440,
+      "updates": 1000,
+      "topologyMs": 0.8655,
+      "commitMs": 0.7040000000000001,
+      "tickMs": 4.9939
+    },
+    {
+      "routes": 10,
+      "stations": 40,
+      "tracks": 1880,
+      "updates": 1000,
+      "topologyMs": 3.0567,
+      "commitMs": 2.3933,
+      "tickMs": 4.6907000000000005
+    },
+    {
+      "routes": 10,
+      "stations": 40,
+      "tracks": 6080,
+      "updates": 1000,
+      "topologyMs": 9.915600000000001,
+      "commitMs": 6.9668,
+      "tickMs": 4.8297
+    }
+  ]
+}

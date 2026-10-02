@@ -1,0 +1,48 @@
+--- before/Assets/EternalSteam/Code/Railway/RailwayNetwork.cs
++++ after/Assets/EternalSteam/Code/Railway/RailwayNetwork.cs
+@@ -179,7 +179,7 @@
+             if(!ValidateDraft(draft,null,out var legs,out error,mode))return false;
+             route=new RailRoute{mode=mode,id=requestId,name="노선 "+(routes.Count+1),trainId=Guid.NewGuid().ToString("N"),stops=draft.Select(s=>s.Copy()).ToList(),legs=legs};
+             route.train.waitingForStation=StationOccupied(route.stops[0].stationId,route);
+-            routes.Add(route);foreach(var cell in legs.SelectMany(l=>l.cells).Distinct())assignments.Add(cell,route.id);return true;
++            RememberConnections(route);routes.Add(route);foreach(var cell in legs.SelectMany(l=>l.cells).Distinct())assignments.Add(cell,route.id);return true;
+         }
+         public bool Edit(RailRoute route,IReadOnlyList<RailStop> stops,out string error)
+         {
+@@ -190,7 +190,7 @@
+             if(route.train.fuel>stops.Count*FuelPerStation){error="수정 후 연료 용량보다 현재 석탄이 많습니다.";return false;}
+             foreach(var cell in route.legs.SelectMany(l=>l.cells).Distinct())assignments.Remove(cell);
+             route.stops=stops.Select(s=>s.Copy()).ToList();route.legs=legs;route.train.stop=route.stops.FindIndex(s=>s.stationId==current);NormalizeDirection(route);
+-            foreach(var cell in legs.SelectMany(l=>l.cells).Distinct())assignments.Add(cell,route.id);route.train.status=TrainStatus.Stopped;route.error=null;route.revision++;route.pending=new PendingRouteRevision();return true;
++            foreach(var cell in legs.SelectMany(l=>l.cells).Distinct())assignments.Add(cell,route.id);route.train.status=TrainStatus.Stopped;route.error=null;route.revision++;route.pending=new PendingRouteRevision();RememberConnections(route);return true;
+         }
+         bool Owns(RailRoute r)=>r!=null&&routes.Contains(r);
+         public bool Configure(RailRoute route,string resource,int stop,double load,double unload,out string error)
+@@ -230,8 +230,8 @@
+             if(!ValidateDraft(route.stops,route.id,out var legs,out error,route.mode))return false;
+             if(legs.Count!=route.legs.Count||legs.Where((l,i)=>(!l.cells.SequenceEqual(route.legs[i].cells)||(route.IsShuttle&&(l.startPort!=route.legs[i].startPort||l.endPort!=route.legs[i].endPort)))).Any()){error="저장된 선로 경로가 변경되었습니다.";return false;}return true;
+         }
+-        [Serializable] public sealed class Snapshot {public int stationSlotVersion;public List<RailRoute> routes=new();public List<StationLabel> labels=new();public List<BaseLabel> baseLabels=new();}
+-        public Snapshot Capture()=>JsonUtility.FromJson<Snapshot>(JsonUtility.ToJson(new Snapshot{stationSlotVersion=1,routes=routes,labels=labels,baseLabels=baseLabels}));
++        [Serializable] public sealed class Snapshot {public int connectionVersion;public List<RailConnection> connections=new();public List<RailTrackRecord> trackRecords=new();public int stationSlotVersion;public List<RailRoute> routes=new();public List<StationLabel> labels=new();public List<BaseLabel> baseLabels=new();}
++        public Snapshot Capture()=>JsonUtility.FromJson<Snapshot>(JsonUtility.ToJson(new Snapshot{connectionVersion=1,connections=connections,trackRecords=tracks.Values.OrderBy(b=>b.PersistentId,StringComparer.Ordinal).Select(b=>new RailTrackRecord{buildingId=b.PersistentId,cell=b.Cell}).ToList(),stationSlotVersion=1,routes=routes,labels=labels,baseLabels=baseLabels}));
+         public static void ValidateSnapshot(Snapshot data,bool allowShuttle=true)
+         {
+             if(data?.routes==null||data.routes.Count>10000||data.stationSlotVersion<0||data.stationSlotVersion>1)throw new ArgumentException("철도 저장 목록 오류");
+@@ -254,13 +254,15 @@
+                 if(t.status is TrainStatus.Moving or TrainStatus.StopRequested){if(!t.segmentPaid||!t.serviced||t.dwell!=0)throw new ArgumentException("기차 이동 저장 상태 오류");}
+                 else if(t.status!=TrainStatus.RouteError&&(t.segmentPaid||t.progress!=0))throw new ArgumentException("기차 정차 저장 상태 오류");
+             }
+-            if(data.stationSlotVersion==1)ValidateStationSlots(data.routes);
++            ValidateConnections(data);if(data.stationSlotVersion==1)ValidateStationSlots(data.routes);
+         }
+         public void Restore(Snapshot data)
+         {
+             ValidateSnapshot(data);var copy=JsonUtility.FromJson<Snapshot>(JsonUtility.ToJson(data));
+             if(copy.stationSlotVersion==0)MigrateStationSlots(copy.routes);
+             ValidateStationSlots(copy.routes);
++            ValidateTrackRecords(copy,tracks.Values.ToDictionary(b=>b.PersistentId,b=>b.Cell));
++            RestoreConnections(copy);
+             routes.Clear();assignments.Clear();labels.Clear();labels.AddRange(copy.labels);baseLabels.Clear();
+             if(copy.baseLabels!=null&&copy.baseLabels.Count>0)baseLabels.AddRange(copy.baseLabels);
+             else foreach(var id in labels.Select(l=>l.baseId).Distinct().OrderBy(id=>id,StringComparer.Ordinal))RegisterBaseLabel(id);

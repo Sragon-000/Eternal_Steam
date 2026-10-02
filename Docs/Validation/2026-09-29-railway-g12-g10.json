@@ -1,0 +1,84 @@
+{
+  "date": "2026-09-29",
+  "project": "Eternal_Steam",
+  "editor": {
+    "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam",
+    "connectedExistingPid": 9554,
+    "openedNewEditor": false,
+    "finalState": "Edit Mode; active scene clean; isolated save-root and runInBackground restored"
+  },
+  "scope": [
+    "RAIL-G12 station context and saved Canvas entry",
+    "RAIL-G10 direction/ports, straight track quote and transaction",
+    "single-map v2 railway and base-inventory persistence",
+    "selected-base resource HUD"
+  ],
+  "play": {
+    "stationContext": "PASS context title/detail/edit, clickable names, list return, global list, new route starts at chosen station",
+    "stationConstruction": "PASS track line quote/shortage, station two-click direction, four saved port markers, reservation unchanged, iron10 exact confirm, installed port match",
+    "straightTrack": "PASS three-cell straight rail reservation, quote=payment 3 iron, live shortage rejects atomically and preserves pending work",
+    "buildingDetailEntry": "PASS selected station building detail opens same station railway context",
+    "baseInventoryHud": {
+      "selectedBaseIron": 90,
+      "displayedIron": 90,
+      "screenshot": "2026-09-29-railway-g12-detail.png"
+    },
+    "persistenceReload": {
+      "version": 2,
+      "buildings": 30,
+      "routes": 1,
+      "baseInventories": 2,
+      "buildingsExact": true,
+      "railwayExact": true,
+      "inventoriesExact": true,
+      "runIdExact": true,
+      "cameraZoomBefore": 56.0,
+      "cameraZoomAfter": 70.0
+    }
+  },
+  "editMode": {
+    "summary": {
+      "Total": 186,
+      "Passed": 184,
+      "Failed": 2,
+      "Skipped": 0,
+      "Inconclusive": 0
+    },
+    "targeted": [
+      {
+        "name": "EternalSteam.Tests.CanvasHierarchyTests.SavedStationContextHasClickableNamesAndDetailEntry(\"StartRegionSandbox\")",
+        "status": "Passed"
+      },
+      {
+        "name": "EternalSteam.Tests.CanvasHierarchyTests.SavedStationContextHasClickableNamesAndDetailEntry(\"OpenWorldSandbox\")",
+        "status": "Passed"
+      },
+      {
+        "name": "EternalSteam.Tests.RailwayTests.StationDirectionPreviewUsesTheInstalledPortPositions(0)",
+        "status": "Passed"
+      },
+      {
+        "name": "EternalSteam.Tests.RailwayTests.StationDirectionPreviewUsesTheInstalledPortPositions(1)",
+        "status": "Passed"
+      },
+      {
+        "name": "EternalSteam.Tests.RailwayTests.StationDirectionPreviewUsesTheInstalledPortPositions(2)",
+        "status": "Passed"
+      },
+      {
+        "name": "EternalSteam.Tests.RailwayTests.StationDirectionPreviewUsesTheInstalledPortPositions(3)",
+        "status": "Passed"
+      }
+    ],
+    "preexistingFailures": [
+      "EternalSteam.Tests.TrainDefenseTests.MountedModuleHonorsInjectedMainLevelEvenWhenCalledDirectly",
+      "EternalSteam.Tests.UpgradeQueryTests.PerformancePurchaseRechecksLiveMainLevelAndPreservesFundsOnRejection"
+    ]
+  },
+  "remaining": [
+    "physical mouse and multi-resolution validation",
+    "legacy v1-to-v2 migration end-to-end validation",
+    "camera zoom difference during reload",
+    "two existing main-level cap test failures"
+  ]
+}

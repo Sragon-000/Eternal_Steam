@@ -1,0 +1,26 @@
+{
+  "date": "2026-09-29",
+  "scope": "Unity Editor EditMode eval; temporary BuildingInstance from actual defense.tesla asset; shared UpgradePurchase command, no scene UI click",
+  "finding": "FIX-01",
+  "expected": {
+    "allowed": false,
+    "changed": false,
+    "after": 1
+  },
+  "observed": {
+    "definition": "defense.tesla",
+    "mainLevel": 1,
+    "before": 1,
+    "allowed": true,
+    "changed": true,
+    "after": 2,
+    "reason": null,
+    "error": null
+  },
+  "replay_csharp": "if(UnityEditor.EditorApplication.isPlaying)throw new System.Exception(\"Play active\"); var t=System.Reflection.Assembly.Load(\"EternalSteam.EditModeTests\").GetType(\"EternalSteam.Tests.ArchitectureTests+LevelPolicy\"); var limit=(EternalSteam.ILevelLimit)System.Activator.CreateInstance(t,true); t.GetProperty(\"LevelCap\").SetValue(limit,1); var d=UnityEditor.AssetDatabase.LoadAssetAtPath<EternalSteam.BuildingDefinition>(\"Assets/EternalSteam/Content/Buildings/DocumentContent/defense.tesla.asset\"); var bank=new EternalSteam.ResourceBank(); using(var b=new EternalSteam.BuildingInstance(1,d,default,default,new EternalSteam.BuildingServices(new EternalSteam.TargetRegistry(),resources:bank,levelLimit:limit))){b.Activate();var p=new EternalSteam.UpgradePurchase(bank,new EternalSteam.VerificationFreeUpgrade());var before=b.Module<EternalSteam.IUpgradeControl>().Level;var allowed=p.CanUpgrade(b,out var reason);var changed=p.TryUpgrade(b,out var error);return new{definition=d.Id,mainLevel=limit.LevelCap,before,allowed,changed,after=b.Module<EternalSteam.IUpgradeControl>().Level,reason,error};}",
+  "limitations": [
+    "Only tesla asset executed; other PerformanceUpgrade consumers inspected statically",
+    "Full NUnit runner, scene UI interaction and over-level save reload not executed in this probe"
+  ],
+  "cleanup": "Temporary BuildingInstance disposed; no scene or asset mutation required"
+}

@@ -1,0 +1,27 @@
+{
+  "scope": "Current compiled source; synthetic building handles; not Unity asset/lifecycle/UI/save-reload validation",
+  "exitCode": 0,
+  "output": "PASS main1 blocks query and paid command without debit\nPASS main2 unlocks query\nPASS command rechecks changed main level\nPASS one upgrade debits exactly once\nPASS second upgrade cannot exceed cap\nPASS explicit exemption allows own progression\nPASS exemption does not bypass own maximum\nPASS verification free policy also honors cap\nPASS unscoped module remains compatible with train controller policy\nPASS inactive blocks upgrade\nPASS disposed blocks upgrade\n",
+  "error": "",
+  "compilation": {
+    "scope": "Independent compiler using Unity cached response files; not Editor import",
+    "assemblies": 6,
+    "errors": 0,
+    "output": "EternalSteam.Runtime 0 \nEternalSteam.Progression 0 \nEternalSteam.Economy 0 \nEternalSteam.Railway 0 \nEternalSteam.OpenWorldSandbox 0 Assets/EternalSteam/Tests/OpenWorld/Runtime/MinimapElement.cs(15,24): warning CS0108: 'MinimapElement.Focus' hides inherited member 'VisualElement.Focus()'. Use the new keyword if hiding was intended.\nAssets/EternalSteam/Tests/OpenWorld/Runtime/OpenWorldSandbox.cs(50,28): warning CS0108: 'OpenWorldSandbox.renderer' hides inherited member 'Component.renderer'. Use the new keyword if hiding was intended.\nAssets/EternalSteam/Tests/OpenWorld/Runtime/SpawnQuantityInput.cs(27,79): warning CS0618: 'EventBase.PreventDefault()' is obsolete: 'Use StopPropagation and/or FocusController.IgnoreEvent. Before proceeding, make sure you understand the latest changes to UIToolkit event propagation rules by visiting Unity's manual page https://docs.unity3d.com/Manual/UIE-Events-Dispatching.html'\nAssets/EternalSteam/Tests/OpenWorld/Runtime/SpawnQuantityInput.cs(30,177): warning CS0618: 'EventBase.PreventDefault()' is obsolete: 'Use StopPropagation and/or FocusController.IgnoreEvent. Before proceeding, make sure you understand the latest changes to UIToolkit event propagation rules by visiting Unity's manual page https://docs.unity3d.com/Manual/UIE-Events-Dispatching.html'\nAssets/EternalSteam/Tests/OpenWorld/Runtime/SpawnQuantityInput.cs(31,147): warning CS0618: 'EventBase.PreventDefault()' is obsolete: 'Use StopPropagation and/or FocusController.IgnoreEvent. Before proceeding, make sure you understand the latest changes to UIToolkit event propagation rules by visiting Unity's manual page https://docs.unity3d.com/Manual/UIE-Events-Dispatching.html'\n\nEternalSteam.EditModeTests 0 \n"
+  },
+  "editor_validation": {
+    "status": "completed_in_followup",
+    "evidence": "2026-09-29-upgrade-level-editor-validation.json",
+    "runner_passed": 117,
+    "runner_failed": 0,
+    "play": "actual asset, Canvas callback guards, main growth, exact save reload, invalid saved level rejected without file mutation"
+  },
+  "source_sha256": {
+    "Assets/EternalSteam/Code/Progression/PerformanceUpgradeDefinition.cs": "4ddf5269f57139709644912c6427df231c2712f518d4cc154d339f591ee5ca78",
+    "Assets/EternalSteam/Tests/OpenWorld/Runtime/MobileDefenseRuntime.cs": "9a862c0470b06d66d8164c1ed9792b2174f07f6c2f43cedcca6124ddce17d668",
+    "Assets/EternalSteam/Tests/OpenWorld/Runtime/TrainDefenseController.cs": "8bd25ad78379767c7c699f7abb5f716349663bcd20e0dc94cd1c5b922d9ec9ec",
+    "Assets/EternalSteam/Tests/OpenWorld/Runtime/SingleMapPersistence.cs": "73bf2254608b9e93e11a72cdc4f80fa4b861b346c3b752cc33da074002e9752c",
+    "Assets/EternalSteam/Tests/EditMode/UpgradeQueryTests.cs": "15ed59cb6cfd465d4230aca07c1cd3c91d620f203ba464cdb46fe3b97ea0b3a4",
+    "Assets/EternalSteam/Tests/EditMode/TrainDefenseTests.cs": "f1d4cbaab5305f610a4b080fc0b5593b6e4feb2afce96baac55ea91edf5e753b"
+  }
+}

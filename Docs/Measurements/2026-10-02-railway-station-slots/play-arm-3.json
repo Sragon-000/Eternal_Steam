@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/VerifyRailwayStationSlotsPlay.cs",
+      "entry": "VerifyRailwayStationSlotsPlay.ArmAndRun"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 44,
+      "executeMs": 180,
+      "assemblyName": "PipelineRunScript_VerifyRailwayStationSlotsPlay_5c377200fe2c4d77a10d53ae6db63fa4",
+      "success": true,
+      "result": "PASS return attack, pending extension plus weapon saved; reload scene next."
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

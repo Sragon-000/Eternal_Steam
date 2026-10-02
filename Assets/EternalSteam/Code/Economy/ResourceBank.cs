@@ -4,26 +4,48 @@ namespace EternalSteam
 {
     public sealed class ResourceBank : IResourceBank
     {
+        // Test mode is session-only; real stocks and saved snapshots remain finite.
+        public bool InfiniteResources {get;set;}
         readonly Dictionary<string,double> amounts=new(),capacities=new();
         [Serializable] public sealed class Stock {public string id;public double amount,capacity;}
         public List<Stock> Capture(){var result=new List<Stock>();foreach(var pair in capacities)result.Add(new Stock{id=pair.Key,capacity=pair.Value,amount=Amount(pair.Key)});result.Sort((a,b)=>string.CompareOrdinal(a.id,b.id));return result;}
         public void Restore(List<Stock> stocks){var ids=new HashSet<string>();if(stocks==null)throw new ArgumentException("Missing stocks");foreach(var s in stocks)if(s==null||string.IsNullOrWhiteSpace(s.id)||!ids.Add(s.id)||!double.IsFinite(s.amount)||s.amount<0||!double.IsFinite(s.capacity)||s.capacity<0)throw new ArgumentException("Invalid resource stock");amounts.Clear();capacities.Clear();foreach(var s in stocks){amounts.Add(s.id,s.amount);capacities.Add(s.id,s.capacity);}}
         public bool CanPurchase(IReadOnlyList<ResourceCost> costs,out string reason)=>ValidatePurchase(costs,out _,out reason);
         bool ValidatePurchase(IReadOnlyList<ResourceCost> costs,out Dictionary<string,double> totals,out string reason){
-            reason=null;totals=null;if(costs==null){reason="비용이 설정되지 않았습니다.";return false;}
-            if(costs.Count==0)return true;
-            totals=new Dictionary<string,double>();
+            reason=null;totals=new Dictionary<string,double>();if(costs==null){reason="비용이 설정되지 않았습니다.";return false;}
             foreach(var cost in costs){if(cost==null||string.IsNullOrWhiteSpace(cost.ResourceId)||!double.IsFinite(cost.Amount)||cost.Amount<0){reason="잘못된 비용 설정입니다.";return false;}totals.TryGetValue(cost.ResourceId,out var old);double total=old+cost.Amount;if(!double.IsFinite(total)){reason="비용 범위 오류";return false;}totals[cost.ResourceId]=total;}
-            foreach(var pair in totals)if(Amount(pair.Key)<pair.Value){reason="자원이 부족합니다: "+pair.Key;return false;}
+            foreach(var pair in totals)if(!InfiniteResources&&Amount(pair.Key)<pair.Value){reason="자원이 부족합니다: "+pair.Key;return false;}
             return true;
         }
         public bool TryPurchase(IReadOnlyList<ResourceCost> costs,Func<bool> commit,out string reason){
             if(!ValidatePurchase(costs,out var totals,out reason))return false;
-            if(!commit()){reason="강화 조건을 만족하지 않습니다.";return false;}
-            if(totals!=null)foreach(var pair in totals)amounts[pair.Key]=Amount(pair.Key)-pair.Value;return true;
+            if(commit==null){reason="강화 실행 조건이 없습니다.";return false;}
+            var beforeAmounts=new Dictionary<string,double>(amounts);
+            var beforeCapacities=new Dictionary<string,double>(capacities);
+            bool beforeInfinite=InfiniteResources;
+            if(!InfiniteResources)foreach(var pair in totals)amounts[pair.Key]=Amount(pair.Key)-pair.Value;
+            try{if(commit())return true;reason="강화 조건을 만족하지 않습니다.";}
+            catch{RestoreBefore();throw;}
+            RestoreBefore();return false;
+            void RestoreBefore(){amounts.Clear();foreach(var pair in beforeAmounts)amounts.Add(pair.Key,pair.Value);capacities.Clear();foreach(var pair in beforeCapacities)capacities.Add(pair.Key,pair.Value);InfiniteResources=beforeInfinite;}
         }
         public double Amount(string id) => amounts.TryGetValue(id,out var value)?value:0;
         public double Capacity(string id) => capacities.TryGetValue(id,out var value)?value:0;
+        public double Deposit(string id,double maximum)
+        {
+            if(string.IsNullOrWhiteSpace(id)||!double.IsFinite(maximum)||maximum<=0)return 0;
+            double accepted=Math.Min(maximum,Math.Max(0,Capacity(id)-Amount(id)));
+            if(accepted>0)amounts[id]=Amount(id)+accepted;
+            return accepted;
+        }
+        public double Withdraw(string id,double maximum)
+        {
+            if(string.IsNullOrWhiteSpace(id)||!double.IsFinite(maximum)||maximum<=0)return 0;
+            if(InfiniteResources)return maximum;
+            double taken=Math.Min(maximum,Math.Max(0,Amount(id)));
+            if(taken>0)amounts[id]=Amount(id)-taken;
+            return taken;
+        }
         public void AddCapacity(string id,double value)
         {
             if(string.IsNullOrWhiteSpace(id) || !double.IsFinite(value)) throw new ArgumentException("Invalid resource capacity.");
@@ -33,10 +55,10 @@ namespace EternalSteam
         public bool Exchange(string input,double cost,string output,double gain)
         {
             if(string.IsNullOrWhiteSpace(output) || !double.IsFinite(cost) || cost<0 || !double.IsFinite(gain) || gain<=0) return false;
-            if(cost>0 && (string.IsNullOrWhiteSpace(input) || Amount(input)<cost)) return false;
-            double after=Amount(output)+gain-(input==output?cost:0);
+            if(cost>0 && (string.IsNullOrWhiteSpace(input) || (!InfiniteResources&&Amount(input)<cost))) return false;
+            double after=Amount(output)+gain-(!InfiniteResources&&input==output?cost:0);
             if(after>Capacity(output)) return false;
-            if(cost>0) amounts[input]=Amount(input)-cost;
+            if(cost>0&&!InfiniteResources) amounts[input]=Amount(input)-cost;
             amounts[output]=Amount(output)+gain; return true;
         }
     }

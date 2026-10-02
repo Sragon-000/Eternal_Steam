@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/VerifyRailwayConnectionsPlay.cs",
+      "entry": "VerifyRailwayConnectionsPlay.Build"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 666,
+      "executeMs": 69,
+      "assemblyName": "PipelineRunScript_VerifyRailwayConnectionsPlay_b7907ca6927d46a3ad97b646c66460c2",
+      "success": false,
+      "error": "Runtime Error",
+      "errorDetails": "Exception: Open station\n  at VerifyRailwayConnectionsPlay.Build () [0x007bb] in /Users/limseth/Projects/Eternal_Steam/Eternal_Steam/Tools/VerifyRailwayConnectionsPlay.cs:45 \n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\n  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <c5eeda5e65d44b388e164c6c5cfe0702>:0 "
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

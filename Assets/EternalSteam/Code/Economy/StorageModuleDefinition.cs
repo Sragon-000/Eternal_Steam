@@ -15,7 +15,7 @@ namespace EternalSteam
         {
             readonly string id; readonly float capacity; IResourceBank bank; bool active;
             public Runtime(string id,float capacity) { this.id=id; this.capacity=capacity; }
-            public void Initialize(BuildingInstance owner,BuildingServices services)=>bank=services.Resources??throw new InvalidOperationException("Storage requires ResourceBank.");
+            public void Initialize(BuildingInstance owner,BuildingServices services)=>bank=services.ResourcesFor(owner)??throw new InvalidOperationException("Storage requires ResourceBank.");
             public void Activate() { bank.AddCapacity(id,capacity); active=true; }
             public void Tick(float dt) { }
             public void Dispose() { if(active) { bank.AddCapacity(id,-capacity); active=false; } }

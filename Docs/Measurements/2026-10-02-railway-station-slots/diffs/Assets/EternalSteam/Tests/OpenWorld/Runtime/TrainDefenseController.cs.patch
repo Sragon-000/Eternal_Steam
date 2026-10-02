@@ -1,0 +1,11 @@
+--- before/Assets/EternalSteam/Tests/OpenWorld/Runtime/TrainDefenseController.cs
++++ after/Assets/EternalSteam/Tests/OpenWorld/Runtime/TrainDefenseController.cs
+@@ -18,7 +18,7 @@
+         bool AtStation(RailRoute r,out BuildingInstance station,out string error)
+         {
+             station=null;error=null;
+-            if(r==null||!network.Routes.Contains(r)||r.train.segmentPaid||r.train.status is not (TrainStatus.Stopped or TrainStatus.FuelWait or TrainStatus.RouteError)){error="역에서 기차를 정지한 뒤 변경하세요.";return false;}
++            if(r==null||!network.Routes.Contains(r)||r.train.segmentPaid||r.train.waitingForStation||r.train.status is not (TrainStatus.Stopped or TrainStatus.FuelWait or TrainStatus.RouteError)){error="역에서 기차를 정지한 뒤 변경하세요.";return false;}
+             station=network.Station(r.stops[r.train.stop].stationId);
+             if(station==null||!network.StationActive(station.PersistentId)){error="정차 역의 소속 기지가 비활성입니다.";return false;}
+             if(mounted.TryGetValue(r.trainId,out var m)&&m.Pending){error="진행 중인 공격이 끝난 뒤 변경하세요.";return false;}

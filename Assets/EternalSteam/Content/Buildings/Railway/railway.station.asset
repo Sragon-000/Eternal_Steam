@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 961be35588064450ea724446c223c99b, type: 3}
+  m_Name: railway.station
+  m_EditorClassIdentifier: 
+  Id: railway.station
+  DisplayName: "기차역 · 검증비 철 10"
+  Category: 2
+  Footprint: {x: 2, y: 2}
+  Recoverable: 1
+  Placement: {fileID: 11400000, guid: e2f81ee1aea34869a58da74433825cc2, type: 2}
+  ViewPrefab: {fileID: 100001, guid: 2045524d723241278388e8c493281b4d, type: 3}
+  Modules:
+  - {fileID: 11400000, guid: dbd14f0912e64074b366246861441c02, type: 2}

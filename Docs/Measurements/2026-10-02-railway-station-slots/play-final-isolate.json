@@ -1,0 +1,23 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "if(UnityEditor.EditorApplication.isPlaying||UnityEditor.EditorApplication.isCompiling||UnityEngine.SceneManagement.SceneManager.GetActiveScene().isDirty)throw new System.Exception(\"Editor busy/dirty\");if(System.Environment.GetEnvironmentVariable(\"ETERNAL_STEAM_SAVE_TEST_ROOT\")!=null||System.IO.Directory.Exists(\"/tmp/eternal-station-slots-20261002-final\"))throw new System.Exception(\"Unexpected fixture path\");System.Environment.SetEnvironmentVariable(\"ETERNAL_STEAM_SAVE_TEST_ROOT\",\"/tmp/eternal-station-slots-20261002-final\");UnityEngine.Application.runInBackground=true;return \"isolated final replay\";"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": "isolated final replay"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

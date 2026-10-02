@@ -1,0 +1,16 @@
+[
+  {
+    "scene": "StartRegionSandbox",
+    "hudCallbacks": 63,
+    "railCallbacks": 76,
+    "trainClip": "LinkedMotion",
+    "result": "PASS"
+  },
+  {
+    "scene": "OpenWorldSandbox",
+    "hudCallbacks": 61,
+    "railCallbacks": 76,
+    "trainClip": "LinkedMotion",
+    "result": "PASS"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "scene": "StartRegionSandbox",
+    "top": "top stretch",
+    "sides": "top left / top right",
+    "construction": "bottom stretch",
+    "selection": "right column, available height",
+    "popups": "top right, fit available height"
+  },
+  {
+    "scene": "OpenWorldSandbox",
+    "top": "top stretch",
+    "sides": "top left / top right",
+    "construction": "bottom stretch",
+    "selection": "right column, available height",
+    "popups": "top right, fit available height"
+  }
+]

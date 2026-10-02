@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/AuthorResponsiveHudAnchors.cs",
+      "entry": "AuthorResponsiveHudAnchors.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 762,
+      "executeMs": 4504,
+      "assemblyName": "PipelineRunScript_AuthorResponsiveHudAnchors_74e278c984ea48dba6162c902d05c2b6",
+      "success": true,
+      "result": "[\n  {\n    \"scene\": \"StartRegionSandbox\",\n    \"top\": \"top stretch\",\n    \"sides\": \"top left / top right\",\n    \"construction\": \"bottom stretch\",\n    \"selection\": \"right column, available height\",\n    \"popups\": \"top right, fit available height\"\n  },\n  {\n    \"scene\": \"OpenWorldSandbox\",\n    \"top\": \"top stretch\",\n    \"sides\": \"top left / top right\",\n    \"construction\": \"bottom stretch\",\n    \"selection\": \"right column, available height\",\n    \"popups\": \"top right, fit available height\"\n  }\n]"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

@@ -1,0 +1,470 @@
+{
+  "date": "2026-10-01",
+  "status": "partial OS pointer acceptance; supplemental HUD commands passed",
+  "scene": "Assets/EternalSteam/Scene/Tests/StartRegionSandbox.unity",
+  "mapCells": [
+    500,
+    500
+  ],
+  "editor": {
+    "pid": 30501,
+    "version": "6000.3.14f1",
+    "reusedRunningEditor": true
+  },
+  "pointerRun": {
+    "resolution": [
+      1280,
+      720
+    ],
+    "saveRoot": "/tmp/eternal-qa06-pointer-20260930",
+    "runId": "50cf57cd2ffb48d2a558eb6191a16e89",
+    "input": "CUA OS pointer and keyboard",
+    "simulation": "natural Update frames; no manual AdvanceSimulation/Tick calls",
+    "injections": {
+      "inventory": false,
+      "power": false,
+      "energy": false,
+      "enemyHealth": false,
+      "enemySpawns": false,
+      "dayNightPhase": false
+    },
+    "infiniteResources": false,
+    "passedActions": [
+      "Play automatic fresh game and starting main base",
+      "main and sub base normal upgrades to Lv.3",
+      "construction reserve and confirm; iron/coal generators, power and laser/arc defense",
+      "outside-area facilities recovered and placed inside whole-footprint operating coverage",
+      "two stations: first click position, second click snapped direction",
+      "22 paid track cells; iron 174 to 152 on confirm",
+      "route manager: new, select A/B, arrival/departure ports, close loop, validate and commit",
+      "load main iron 30/unload 0; sub load 0/unload 30 through input fields",
+      "coal +50 twice, fuel 100; start/stop/restart",
+      "actual minimap camera pan to access stations behind route overlay",
+      "progress/save menu opened and scrolled; craft button visible"
+    ],
+    "negativePlacement": {
+      "outsideAreaInstalledButInactive": true,
+      "wholeFootprintRequired": true,
+      "mainAreaStartsAtFrontEdge": true,
+      "recoveryAndRepositionByPointer": true
+    },
+    "deliveryObserver": {
+      "pass": true,
+      "cargoBefore": 30,
+      "cargoAfter": 0,
+      "destinationIronBefore": 420,
+      "destinationIronAfter": 450,
+      "sourceBase": "22b7b02bb150432f909c1e7d7ec83481",
+      "destinationBase": "e066f33adc094bbfb7d5b08c72d46631",
+      "input": "OS pointer via CUA",
+      "simulation": "natural frames, no injected ticks"
+    },
+    "beforeCraft": {
+      "energy": {
+        "MapId": "start-region",
+        "Target": 1000000,
+        "Extracted": 800000,
+        "KillReward": 100000,
+        "BossReward": 100000,
+        "Balance": 1000000,
+        "Stage": 3,
+        "IncompleteOrb": true,
+        "PerfectOrb": false
+      },
+      "observedDefeated": 101,
+      "observedAlive": 0,
+      "mainHealth": 100,
+      "normalEnemies": 100,
+      "bossDefeated": true
+    },
+    "remainingPhysicalInput": [
+      "orb craft click",
+      "save click",
+      "continue saved click and restore UI",
+      "full loop at 1920x1080",
+      "failure/new-game repeat and multi-station pages"
+    ],
+    "pointerFailure": {
+      "error": "noWindowsAvailable",
+      "when": "before final orb craft click; observations and Unity Pipeline remained available",
+      "recoveryAttempts": [
+        "rebind Unity app",
+        "AX Raise",
+        "reset CUA and rebind"
+      ],
+      "finalActionsWereNotPhysicalInput": true
+    }
+  },
+  "supplementalHudCommands": {
+    "input": "existing RailwayHud/CanvasWorldHud Execute callbacks, not OS pointer",
+    "commands": [
+      "stop",
+      "menu-fold",
+      "orb-craft",
+      "save",
+      "load"
+    ],
+    "stage": 4,
+    "perfectOrb": true,
+    "balance": 0,
+    "sameSceneReload": true,
+    "restoredPaused": true,
+    "comparison": "actual latest saved payload versus reloaded Capture; ignore savedUtc and compare building order by persistent ID",
+    "allOtherSnapshotFieldsEqual": true,
+    "buildingCount": 38,
+    "buildingDefinitions": {
+      "installation.main_base": 1,
+      "resource.power_generator": 4,
+      "resource.iron": 3,
+      "railway.coal": 1,
+      "defense.plasma_laser": 2,
+      "defense.arc": 2,
+      "installation.nexus": 1,
+      "railway.station": 2,
+      "railway.track": 22
+    },
+    "inventories": [
+      {
+        "baseId": "22b7b02bb150432f909c1e7d7ec83481",
+        "stocks": [
+          {
+            "id": "coal",
+            "amount": 401.0,
+            "capacity": 1000000.0
+          },
+          {
+            "id": "copper",
+            "amount": 0.0,
+            "capacity": 1000000.0
+          },
+          {
+            "id": "iron",
+            "amount": 700.0,
+            "capacity": 1000000.0
+          },
+          {
+            "id": "nanometal",
+            "amount": 0.0,
+            "capacity": 1000000.0
+          },
+          {
+            "id": "plasma_ore",
+            "amount": 0.0,
+            "capacity": 1000000.0
+          },
+          {
+            "id": "titanium",
+            "amount": 0.0,
+            "capacity": 1000000.0
+          },
+          {
+            "id": "tungsten",
+            "amount": 0.0,
+            "capacity": 1000000.0
+          },
+          {
+            "id": "uranium",
+            "amount": 0.0,
+            "capacity": 1000000.0
+          }
+        ]
+      },
+      {
+        "baseId": "e066f33adc094bbfb7d5b08c72d46631",
+        "stocks": [
+          {
+            "id": "coal",
+            "amount": 0.0,
+            "capacity": 1000000.0
+          },
+          {
+            "id": "copper",
+            "amount": 0.0,
+            "capacity": 1000000.0
+          },
+          {
+            "id": "iron",
+            "amount": 703.0,
+            "capacity": 1000000.0
+          },
+          {
+            "id": "nanometal",
+            "amount": 0.0,
+            "capacity": 1000000.0
+          },
+          {
+            "id": "plasma_ore",
+            "amount": 0.0,
+            "capacity": 1000000.0
+          },
+          {
+            "id": "titanium",
+            "amount": 0.0,
+            "capacity": 1000000.0
+          },
+          {
+            "id": "tungsten",
+            "amount": 0.0,
+            "capacity": 1000000.0
+          },
+          {
+            "id": "uranium",
+            "amount": 0.0,
+            "capacity": 1000000.0
+          }
+        ]
+      }
+    ],
+    "railway": {
+      "routes": [
+        {
+          "id": "8c739dd6ff19496fb4edf45b6d27261e",
+          "name": "노선 1",
+          "trainId": "cafd27ffb53b4188b99a7b3290def7d4",
+          "stops": [
+            {
+              "stationId": "cc46a2d7eae849f1afced0cdc627c31b",
+              "arrival": 2,
+              "departure": 1,
+              "load": 30.0,
+              "unload": 0.0
+            },
+            {
+              "stationId": "51ca59be9c18484cb7c63f5c671be4be",
+              "arrival": 0,
+              "departure": 2,
+              "load": 0.0,
+              "unload": 30.0
+            }
+          ],
+          "legs": [
+            {
+              "cells": [
+                {
+                  "x": -1,
+                  "y": 13
+                },
+                {
+                  "x": 0,
+                  "y": 13
+                },
+                {
+                  "x": 1,
+                  "y": 13
+                },
+                {
+                  "x": 2,
+                  "y": 13
+                },
+                {
+                  "x": 2,
+                  "y": 12
+                }
+              ]
+            },
+            {
+              "cells": [
+                {
+                  "x": 4,
+                  "y": 11
+                },
+                {
+                  "x": 4,
+                  "y": 10
+                },
+                {
+                  "x": 4,
+                  "y": 9
+                },
+                {
+                  "x": 4,
+                  "y": 8
+                },
+                {
+                  "x": 4,
+                  "y": 7
+                },
+                {
+                  "x": 4,
+                  "y": 6
+                },
+                {
+                  "x": 3,
+                  "y": 6
+                },
+                {
+                  "x": 2,
+                  "y": 6
+                },
+                {
+                  "x": 1,
+                  "y": 6
+                },
+                {
+                  "x": 0,
+                  "y": 6
+                },
+                {
+                  "x": -1,
+                  "y": 6
+                },
+                {
+                  "x": -2,
+                  "y": 6
+                },
+                {
+                  "x": -2,
+                  "y": 7
+                },
+                {
+                  "x": -2,
+                  "y": 8
+                },
+                {
+                  "x": -2,
+                  "y": 9
+                },
+                {
+                  "x": -2,
+                  "y": 10
+                },
+                {
+                  "x": -2,
+                  "y": 11
+                }
+              ]
+            }
+          ],
+          "train": {
+            "status": 0,
+            "stop": 0,
+            "progress": 0.0,
+            "dwell": 10.0,
+            "cargo": 30.0,
+            "fuel": 59.99999999999999,
+            "serviced": true,
+            "segmentPaid": false,
+            "resource": "iron",
+            "armament": {
+              "footprint": {
+                "x": 2,
+                "y": 2
+              },
+              "definition": "",
+              "battery": 0.0,
+              "modules": []
+            }
+          },
+          "error": "",
+          "revision": 0,
+          "pending": {
+            "active": false,
+            "failed": false,
+            "baseRevision": 0,
+            "stops": [],
+            "legs": [],
+            "error": ""
+          }
+        }
+      ],
+      "labels": [
+        {
+          "stationId": "cc46a2d7eae849f1afced0cdc627c31b",
+          "baseId": "22b7b02bb150432f909c1e7d7ec83481",
+          "number": 1
+        },
+        {
+          "stationId": "51ca59be9c18484cb7c63f5c671be4be",
+          "baseId": "e066f33adc094bbfb7d5b08c72d46631",
+          "number": 1
+        }
+      ],
+      "baseLabels": [
+        {
+          "baseId": "22b7b02bb150432f909c1e7d7ec83481",
+          "name": "메인 기지",
+          "number": 1
+        },
+        {
+          "baseId": "e066f33adc094bbfb7d5b08c72d46631",
+          "name": "서브 기지",
+          "number": 2
+        }
+      ]
+    },
+    "expectedNormalizedSha256": "8e74e7fc54c533cba65ccb878f731cbd790cf8ac5f0b7a2d9a867b03ec9a6570",
+    "reloadedNormalizedSha256": "8e74e7fc54c533cba65ccb878f731cbd790cf8ac5f0b7a2d9a867b03ec9a6570"
+  },
+  "fixes": {
+    "guidance": "main front blue area, whole footprint placement, progress/save menu then scroll to craft",
+    "savedScenes": [
+      "StartRegionSandbox",
+      "OpenWorldSandbox"
+    ],
+    "runtimeUiCreation": false,
+    "selectionTitle": {
+      "autoSizing": true,
+      "minFont": 14,
+      "maxFont": 21,
+      "margin": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "fontMeasured": 17.15,
+      "lines": 3,
+      "glyphBounds": [
+        135.34,
+        69.95
+      ],
+      "rect": [
+        148,
+        70
+      ],
+      "title": "플라즈마 레이저 포탑\nLv.1 / 10",
+      "visibleAndFitsAt": [
+        [
+          1280,
+          720
+        ],
+        [
+          1920,
+          1080
+        ]
+      ],
+      "screenshots": [
+        "2026-10-01-qa06-title-1280.png",
+        "2026-10-01-qa06-title-1920.png"
+      ],
+      "measurementResolutionSource": "actual camera pixelRect and GameView render texture; Editor eval Screen.width describes the Editor window"
+    }
+  },
+  "editmode": {
+    "summary": {
+      "total": 225,
+      "passed": 225,
+      "failed": 0,
+      "skipped": 0,
+      "inconclusive": 0
+    },
+    "durationSeconds": 91.47,
+    "evidence": "2026-10-01-qa06-editmode.json"
+  },
+  "hudFixture": {
+    "separateSaveRoot": "/tmp/eternal-qa06-hud-20261001",
+    "normalUpgradeAndConstructionCommands": true,
+    "clockPausedForRenderingOnly": true,
+    "playRestartedAfterSourceRecompileInvalidatedRuntimeInitialization": true,
+    "freshPlayConsoleErrorCount": 0
+  },
+  "editorRestored": {
+    "playing": false,
+    "scene": "Assets/EternalSteam/Scene/Tests/StartRegionSandbox.unity",
+    "dirty": false,
+    "maximized": false,
+    "selectedSizeIndex": 6,
+    "runInBackground": false,
+    "saveTestRoot": null
+  }
+}

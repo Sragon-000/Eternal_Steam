@@ -1,0 +1,397 @@
+{
+  "scope": "Changed baseline files and explicit task artifacts, not all existing repository changes",
+  "files": [
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/RailwaySceneView.cs",
+      "before": "12a77a5f51e0fd306c63ca4a1cf73c106d7082847e7547d8e6b728acb51b3c28",
+      "after": "709cb25c89a7d97bba49c7bb9e71a49ba5fc9b4fa79ab0bec4fe397fafa95c27"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/CanvasHudLayout.cs",
+      "before": "cd58b6d32d8d4bd4f6eab869abf5fccbf82be9bf0a1cb06b3e4a8287f8ad37c9",
+      "after": "8bd8f9d8ff882e93ae5d4f7775fcad18f5d19cee446e607b1e9d9f362b77e1e8"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/CanvasWorldHud.cs",
+      "before": "3f05339693bc30b4f952297637a32c4416ba6109253f8adef4f81b4cde237ce0",
+      "after": "af26851d2007a3064e176b93ddf53681ef3351a65b7c7e75cdae75e82e6827f0"
+    },
+    {
+      "path": "Assets/EternalSteam/Scene/Tests/OpenWorldSandbox.unity",
+      "before": "59fceec6824ef52550f1f654c54820f2fa9f83f339cf99b9eb489e013ea6aeda",
+      "after": "bcd8900606d7b8b37efb7fb596286842c3cc720027ff9b6ed82c1ed0c2329c3c"
+    },
+    {
+      "path": "Assets/EternalSteam/Scene/Tests/StartRegionSandbox.unity",
+      "before": "ab93fbdf7e439c0ebc3f0926d9c9c23d103d74d02123099b18a497b1345534ed",
+      "after": "55d430662558230ae33aa9bd442a5d933c4a57f948e51636ecfb01836c9efa71"
+    },
+    {
+      "path": "Assets/EternalSteam/Content/Buildings/Railway/Train.prefab",
+      "before": "ab264735aa88001399fbbbe80be1b7fd937021ba3b1ad88e812d4f36a4ec5892",
+      "after": "c54dde787a6146d91169d6f334fff21daaadf0a8c35d995e49628c6c02573017"
+    },
+    {
+      "path": "Docs/Presentations/표적탐색_최적화_연구_확장_검토.md",
+      "before": "44330c9f39e523a0da9761e47ce4417dde27f10de3dd53e6fb5824bbec678b03",
+      "after": "8852a14cad8a3c2cac1b417faf33d29cc94502f145c77de6872a6b57940709de"
+    },
+    {
+      "path": "Docs/프로젝트_통합기준.md",
+      "before": "5e2bff48600fd0a6dcc17c32a542330b5201cc64ad8cadcbd3b4cf368985633c",
+      "after": "885dcfde9cb576e1084cd05b911352545aba5155965b057bf0ffb2dcb0b05b02"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/EditMode/CanvasHierarchyTests.cs",
+      "before": "676cb30d9e13d0b1de97f02390917be265267f61cd3e2d06fd91b2f3c44b2655",
+      "after": "f5f33b1566dd3a4aa73ece60301afe08886d34866057ac5ac287947356023450"
+    },
+    {
+      "path": "Assets/EternalSteam/Art/Train/Steel _ exposed edges.mat",
+      "after": "79775768ab2953d8d006798b5a800d2be4a739b8f8a05139ef253809f69e3d86",
+      "classification": "task artifact; may predate this turn"
+    },
+    {
+      "path": "Assets/EternalSteam/Art/Train/Coal.mat",
+      "after": "1c279c5f4cd45b71c1d3059887d50a258f9f19c1070d22285b63cf0a6aba2ba8",
+      "classification": "task artifact; may predate this turn"
+    },
+    {
+      "path": "Assets/EternalSteam/Art/Train/Coal.mat.meta",
+      "after": "85e052065fcc5d0a18670cd1caa1e799f25f69819b762d2f548ba3c4ad0cd6fe",
+      "classification": "task artifact; may predate this turn"
+    },
+    {
+      "path": "Assets/EternalSteam/Art/Train/Paint _ desaturated blue steel.mat",
+      "after": "7e42c06add005cd5c2392bb3be58fb76f918ac0d22f03a1dbba53da492543725",
+      "classification": "task artifact; may predate this turn"
+    },
+    {
+      "path": "Assets/EternalSteam/Art/Train/Paint _ ochre 07.mat.meta",
+      "after": "c202b8ec9b1cf383a5ce969d609a45504805338cfa89e3597d2414c0995da88c",
+      "classification": "task artifact; may predate this turn"
+    },
+    {
+      "path": "Assets/EternalSteam/Art/Train/Lamp _ warm lens.mat",
+      "after": "a8729cc1e262be59c77cf27d1b0a1444682be9303be4ed2d39636972309c05c0",
+      "classification": "task artifact; may predate this turn"
+    },
+    {
+      "path": "Assets/EternalSteam/Art/Train/Brass _ functional fittings.mat",
+      "after": "08a44f8ee7b7494af2038fd769eae76a4a0bde6f925dcf28b2e3225a36176ccc",
+      "classification": "task artifact; may predate this turn"
+    },
+    {
+      "path": "Assets/EternalSteam/Art/Train/Brass _ functional fittings.mat.meta",
+      "after": "c77c6b6955af125757d4e5c766fd74fd49e82b70de53e291e45d074637657dae",
+      "classification": "task artifact; may predate this turn"
+    },
+    {
+      "path": "Assets/EternalSteam/Art/Train/Paint _ desaturated blue steel.mat.meta",
+      "after": "00883afb7545192c4aee4c7fe34e05c363dc9845124cfb9a3499efe29e612a48",
+      "classification": "task artifact; may predate this turn"
+    },
+    {
+      "path": "Assets/EternalSteam/Art/Train/Iron _ soot black.mat",
+      "after": "44071dbf8f0005f8d53d2db5934f884944cabf6f1de6fe4e42b8f0df3986589d",
+      "classification": "task artifact; may predate this turn"
+    },
+    {
+      "path": "Assets/EternalSteam/Art/Train/Paint _ ochre 07.mat",
+      "after": "68e1a19a9d2faaeef8816c16d94e81d8e36bd1a3c0c0a246b89548cda04b9599",
+      "classification": "task artifact; may predate this turn"
+    },
+    {
+      "path": "Assets/EternalSteam/Art/Train/Glass _ smoke.mat.meta",
+      "after": "e55dcf0484b7f1112c4dc96de8cf6b9aa2cd709058442ccadeab94508542f243",
+      "classification": "task artifact; may predate this turn"
+    },
+    {
+      "path": "Assets/EternalSteam/Art/Train/Glass _ smoke.mat",
+      "after": "ff467666426a9e81afd8336b0d2d219c72984e2dcdc42ccd409c9640c839354d",
+      "classification": "task artifact; may predate this turn"
+    },
+    {
+      "path": "Assets/EternalSteam/Art/Train/TrainConsist.fbx",
+      "after": "74f4f78e4186021a6f1206d8fd7ba179d6196dd4886c71b2220d2901d38b69d5",
+      "classification": "task artifact; may predate this turn"
+    },
+    {
+      "path": "Assets/EternalSteam/Art/Train/Lamp _ warm lens.mat.meta",
+      "after": "5ea124fce2bcd1930c09ee464d2c965e551b1bc20949fc740170b576f701fc6f",
+      "classification": "task artifact; may predate this turn"
+    },
+    {
+      "path": "Assets/EternalSteam/Art/Train/Iron _ soot black.mat.meta",
+      "after": "1b5aba2c81ecffbf81761a7b2dfe6d32a936deada4c8fa0f38610158005adffc",
+      "classification": "task artifact; may predate this turn"
+    },
+    {
+      "path": "Assets/EternalSteam/Art/Train/Steel _ exposed edges.mat.meta",
+      "after": "7c646cf859725be94aaa0868f0827ce6d8bd3842257c6b9399c8a8d0b11085a5",
+      "classification": "task artifact; may predate this turn"
+    },
+    {
+      "path": "Assets/EternalSteam/Art/Train/TrainConsist.fbx.meta",
+      "after": "5698abe50c48cb66e73402e549a4cba316330e14e3588feb98ff2cdc0e983771",
+      "classification": "task artifact; may predate this turn"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/TrainConsistView.cs.meta",
+      "after": "dc0a040d0bc2ba77012946f4d32efc8e0348cb03919f3cac3f700b8a27116753",
+      "classification": "task artifact; may predate this turn"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/TrainConsistView.cs",
+      "after": "58df1694b396d3c910eccfd66aa8536a1eac34f701bf2a1553ce7f0d85b9e84b",
+      "classification": "task artifact; may predate this turn"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/GameplayHudWorkspace.cs.meta",
+      "after": "cfab264ea58130f7c7d4a527961f45d9e1d6af494cc4e53d65b9d42b28d5c75d",
+      "classification": "task artifact; may predate this turn"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/GameplayHudWorkspace.cs",
+      "after": "abbd50650659bec447d859ff7f2034ebfb4aa7e62fdd064c8b435fa19204dcbe",
+      "classification": "task artifact; may predate this turn"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/EditMode/ResponsiveHudBoundsTests.cs.meta",
+      "after": "d5410c4fcf74f18ac8118e43dcee7dab1eff91baf869d32e5ea037fe301177fc",
+      "classification": "task artifact; may predate this turn"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/EditMode/ResponsiveHudBoundsTests.cs",
+      "after": "7dc76f61f84b5a0eba8b72d7a03a9f6656f6bbe66634a3c6bf45fc11e0b31ae7",
+      "classification": "task artifact; may predate this turn"
+    },
+    {
+      "path": "Tools/FinishTrainHudIntegration.cs",
+      "after": "68b5f741e18ee1496f8d2a950a6f0ed24ae4083c68a8a5f8ad1bf619bee01020",
+      "classification": "task artifact; may predate this turn"
+    },
+    {
+      "path": "Tools/ExportTrainConsist.py",
+      "after": "fcb7c6b887f831e35145f0e227e86b408f80a8384413b8a84adfb4fede4ccf81",
+      "classification": "task artifact; may predate this turn"
+    },
+    {
+      "path": "Tools/VerifyTrainConsist.cs",
+      "after": "c92f3574174a2b7cd13dede2521f920c3624d79d979bae03205ba69af00a2845",
+      "classification": "task artifact; may predate this turn"
+    },
+    {
+      "path": "Tools/VerifyIntegratedTrainPlay.cs",
+      "after": "18dbca89dc71bfba739e1cdae5ab6f0fea7f3d3337b98659b4f76cf9928a643d",
+      "classification": "task artifact; may predate this turn"
+    },
+    {
+      "path": "Tools/AuthorTrainDefense.cs",
+      "after": "ed4b3976b7d96a6a989ee803b2d7879fff78fecfd023905649ddfeab04e27c22",
+      "classification": "task artifact; may predate this turn"
+    },
+    {
+      "path": "Tools/AuthorTrainConsist.cs",
+      "after": "6ac04a52769fef05d239a3da062279ac645d40f4a83c01a5a5115f04690ac626",
+      "classification": "task artifact; may predate this turn"
+    },
+    {
+      "path": "Tools/VerifyTrainDefensePlay.cs",
+      "after": "bf7ce660990dd31b615cdb2abc8e62141605fb18fd6b0be601b0039bfe489004",
+      "classification": "task artifact; may predate this turn"
+    },
+    {
+      "path": "Tools/CreateHudVisualAssets.cs",
+      "after": "d34946e3775a827610244b30ace16ca0c053544b614d5cecc06a21a735a3fa4a",
+      "classification": "task artifact; may predate this turn"
+    },
+    {
+      "path": "Tools/VerifyHudFrame.cs",
+      "after": "035992ce3916e93dfc1b214c9883b9166fc53a34c2c616964ab039bc8dc005cd",
+      "classification": "task artifact; may predate this turn"
+    },
+    {
+      "path": "Tools/VerifyHordeHud.cs",
+      "after": "b5859e356e6ba0b43888b98e0ee5f565b9b75f0f162bf79c63904ab4f8c4b74d",
+      "classification": "task artifact; may predate this turn"
+    },
+    {
+      "path": "Tools/VerifyCompactCanvasHud.cs",
+      "after": "47fd823767cd330725ba9859adcd373bfe688b9545b9232f4a8e702169e9a61d",
+      "classification": "task artifact; may predate this turn"
+    },
+    {
+      "path": "Tools/ApplyReferenceCanvasHud.cs",
+      "after": "3ba0414ee05f0186e141bee868de3da2dea53e97fb31abf3ce2e86f1b0c6d688",
+      "classification": "task artifact; may predate this turn"
+    },
+    {
+      "path": "Tools/VerifyCompactHudInteractions.cs",
+      "after": "779f08dd3d2e25a386ec2023df6eca83d0a881b227106f2d63ab9422a9600955",
+      "classification": "task artifact; may predate this turn"
+    },
+    {
+      "path": "Tools/PolishPointerQaHud.cs",
+      "after": "d581f8a1293b6d97107991c9d49a5f04b6419834a448fbb3c67d56bb681a33f8",
+      "classification": "task artifact; may predate this turn"
+    },
+    {
+      "path": "Tools/VerifyRailwayHud.eval.cs",
+      "after": "373f1b910268cf8e9ae1a6db9afd03007a8353cc00b1affaf04ad024870eb465",
+      "classification": "task artifact; may predate this turn"
+    },
+    {
+      "path": "Tools/CaptureIntegratedHud.cs",
+      "after": "8f708a5f24332de2d81ac069272564123b2357c2c515be475978f2387210ccab",
+      "classification": "task artifact; may predate this turn"
+    },
+    {
+      "path": "Tools/ApplyCompactCanvasHud.cs",
+      "after": "55827e3bd093f2b1a62702906fb046f59cc8a5c8efb1637e3c83131b048b09d7",
+      "classification": "task artifact; may predate this turn"
+    },
+    {
+      "path": "Tools/VerifyPointerQaHudFit.cs",
+      "after": "ea3d853d02505cc9f96ad7a0b9ac0b3115decec5296a74b7e57ceafc54474d37",
+      "classification": "task artifact; may predate this turn"
+    },
+    {
+      "path": "Tools/AuthorIntegratedHud.cs",
+      "after": "b34cdb03317a8eb937dea49dcf03479bb48710cedcffc5907d7095324ee7e637",
+      "classification": "task artifact; may predate this turn"
+    },
+    {
+      "path": "Tools/AuthorFirstLoopHud.cs",
+      "after": "f1b24c8fe35361d4c263e6babe476fc1aa15af4230e6855054e639a37b6e9756",
+      "classification": "task artifact; may predate this turn"
+    },
+    {
+      "path": "Tools/InspectIntegratedHud.cs",
+      "after": "9005c4bceb3fdbf5a516fee3d9c69bb33978360550a5950070492d514d977489",
+      "classification": "task artifact; may predate this turn"
+    },
+    {
+      "path": "Tools/AuthorResponsiveHudAnchors.cs",
+      "after": "413ec9de3745eb70e33103d56973992cd4ba9c17427bca1b02ea6d27b5b2c187",
+      "classification": "task artifact; may predate this turn"
+    },
+    {
+      "path": "Tools/VerifyHudFolds.cs",
+      "after": "e4a4da3527e63c075d97f7454470f90fb11893d14ddbd33ff74a2a1dad77b51e",
+      "classification": "task artifact; may predate this turn"
+    },
+    {
+      "path": "Tools/VerifyReferenceCanvasHud.cs",
+      "after": "2de0170f709e12fc97b29860a24a8509dab6af69ac77e8b655fd77788f9e7c22",
+      "classification": "task artifact; may predate this turn"
+    },
+    {
+      "path": "Tools/SetHudReviewResolution.cs",
+      "after": "c2fc972c43b28c437dc3214ace49ca7f74a8ad589a0aa44b3956d821d05fcbe7",
+      "classification": "task artifact; may predate this turn"
+    },
+    {
+      "path": "Tools/PolishIntegratedHud.cs",
+      "after": "d2b0b5cec0af232a237c10700ffdbd4fb0149cbf332aca9eed4df78226dd4557",
+      "classification": "task artifact; may predate this turn"
+    },
+    {
+      "path": "Tools/VerifyCanvasHud.cs",
+      "after": "322a5803fb4d54b3c7c0c3211b879f0dfeb364c50658c00c8b5f6b6a7e0c3b8a",
+      "classification": "task artifact; may predate this turn"
+    },
+    {
+      "path": "Tools/VerifyHudLayout.cs",
+      "after": "7c5cc005ccac841b0493bcc96b3b95aab323b60768a8204a1b8cf8512950c562",
+      "classification": "task artifact; may predate this turn"
+    },
+    {
+      "path": "Tools/VerifyIntegratedPresentation.cs",
+      "after": "f1387c52f97d1aabd6b86d783983011ff4919c7cf6bc8b0feb229508a618317a",
+      "classification": "task artifact; may predate this turn"
+    },
+    {
+      "path": "Tools/ResponsiveMatrixTail.cs",
+      "after": "200b5accc58ee61a7f0adec6c6895a701ca138457c4fe103c39ec50964ca9fc2",
+      "classification": "task artifact; may predate this turn"
+    },
+    {
+      "path": "Tools/VerifyResponsiveMatrix.cs",
+      "after": "0dacff82bb6e3d61301f54570308a4ebe16d0522a060912408ee338437353bf8",
+      "classification": "task artifact; may predate this turn"
+    },
+    {
+      "path": "Tools/IntegrateRailwayCatalog.cs",
+      "after": "2de9c58d9abf1b88421465e2f7180fe0e6976ab4458601214e5d9a1f53a480da",
+      "classification": "task artifact; may predate this turn"
+    },
+    {
+      "path": "Tools/ExportProductTestResults.cs",
+      "after": "d8beabc6ccd4478f47b1a22b384193d9c77b1b95eb00f3d8136eaac2a9904124",
+      "classification": "task artifact; may predate this turn"
+    },
+    {
+      "path": "Docs/Validation/2026-10-02-train-hud-integration.md",
+      "after": "c98e0028961555aa579cf019c619069fd799d47a47bd942892cdb1ad95d882f1",
+      "classification": "task artifact; may predate this turn"
+    },
+    {
+      "path": "Assets/EternalSteam/Shared/UI/Railway/RailwayIcon.png",
+      "after": "684a48ace2418a063456ad196ca0a86824f2bfe6a3f6da1757cb75a9fcab5417",
+      "classification": "task artifact; may predate this turn"
+    },
+    {
+      "path": "Assets/EternalSteam/Shared/UI/Railway/RailwayButton.png",
+      "after": "9251713dc13f009affa30cf958f22824c5e76229fa467cda387b5ea039aebc4a",
+      "classification": "task artifact; may predate this turn"
+    },
+    {
+      "path": "Assets/EternalSteam/Shared/UI/Railway/RailwayIcon.png.meta",
+      "after": "76878db3f08c6ac736aec0dbe375a4e0f5ca86909eb5ece1f4979987d492b7de",
+      "classification": "task artifact; may predate this turn"
+    },
+    {
+      "path": "Assets/EternalSteam/Shared/UI/Railway/RailwayButton.png.meta",
+      "after": "d38cb5e2192fc3014142d901abf2444dca4c9ea653918298fb4102453bdbed3a",
+      "classification": "task artifact; may predate this turn"
+    },
+    {
+      "path": "Assets/EternalSteam/Shared/UI/Railway/RailwayPanel.png",
+      "after": "70e558bfdb9ae10111742a216f5cc0d2eb769ac1d3ae48a5e906f14d53f0a948",
+      "classification": "task artifact; may predate this turn"
+    },
+    {
+      "path": "Assets/EternalSteam/Shared/UI/Railway/RailwayPanel.png.meta",
+      "after": "d1ccdc465d783b3f57620bd54d5db9c09d90019ea8b7309ec47b1668734eda8b",
+      "classification": "task artifact; may predate this turn"
+    }
+  ],
+  "readOnlyBlenderSources": [
+    {
+      "path": "Docs/Art/Train/model-v2-linked-animation/train-a-v2-linked-animation.blend",
+      "sha256": "435eac0fe6d61ca399bbc5707277ab1df10b39e72c6240d9c0d6b793960db7ad"
+    },
+    {
+      "path": "Docs/Art/Train/model-v1-wheel-animation/train-a-v1-wheel-animation.blend",
+      "sha256": "87a368f0d421e3ba59e3c6dad3bd673feec3c6c5396e0bc4d1edbe039059230c"
+    },
+    {
+      "path": "Docs/Art/Train/model-v3-wagons/turret-foundation-wagon.blend",
+      "sha256": "ca7df3d40bc2239588f3c4aa9e60552303b06ceb8b2f4c7a04855ee6e311530f"
+    },
+    {
+      "path": "Docs/Art/Train/model-v3-wagons/train-a-v3-consist.blend",
+      "sha256": "a2bbdd48aa8b6d8bfa97f334282d77d91b3804d10b1713c1d4909cbc647aac99"
+    },
+    {
+      "path": "Docs/Art/Train/model-v3-wagons/cargo-wagon.blend",
+      "sha256": "e749ad5c616750dccfe01b0ab8533e68e9f0599bcf0d04a404f431bde79df2f0"
+    },
+    {
+      "path": "Docs/Art/Train/model-v1/train-a-v1.blend",
+      "sha256": "e8d30b36926b8512a163942c37c369bbbd819143363fcf22c115d1416ec8e6bc"
+    }
+  ],
+  "researchExperimentRun": false
+}

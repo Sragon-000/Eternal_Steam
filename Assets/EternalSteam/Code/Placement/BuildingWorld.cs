@@ -24,7 +24,7 @@ namespace EternalSteam
         internal PlacementResult Install(IReadOnlyList<PlacementRequest> requests)
             => InstallBatch(new[] { (this, requests) });
         // Stage every world before activating any: a cross-foundation edit is one transaction.
-        internal static PlacementResult InstallBatch(IReadOnlyList<(BuildingWorld World, IReadOnlyList<PlacementRequest> Requests)> batches)
+        internal static PlacementResult InstallBatch(IReadOnlyList<(BuildingWorld World, IReadOnlyList<PlacementRequest> Requests)> batches, Func<PlacementResult> onInstalled=null)
         {
             var staged = new List<(BuildingWorld World, BuildingInstance Building)>();
             try
@@ -45,6 +45,7 @@ namespace EternalSteam
                     item.Building.Destroyed += item.World.OnDestroyed;
                 }
                 foreach (var item in staged) { item.Building.Activate(); item.World.factory.Activate(item.Building); }
+                if(onInstalled!=null){var result=onInstalled();if(!result.Success)throw new InvalidOperationException(result.Message);}
                 return PlacementResult.Ok;
             }
             catch (Exception exception)
@@ -132,7 +133,7 @@ namespace EternalSteam
             pending.Remove(request);
         }
         public PlacementResult Confirm() => ConfirmTogether(new[] { this });
-        public static PlacementResult ConfirmTogether(IReadOnlyList<PlacementSession> sessions)
+        public static PlacementResult ConfirmTogether(IReadOnlyList<PlacementSession> sessions, Func<PlacementResult> onInstalled=null)
         {
             var batches = new List<(BuildingWorld, IReadOnlyList<PlacementRequest>)>();
             var unique = new HashSet<BuildingWorld>();
@@ -144,7 +145,7 @@ namespace EternalSteam
                 if (session.pending.Count > 0) batches.Add((session.world, session.pending));
             }
             if (batches.Count == 0) return new PlacementResult("empty", "임시 건물이 없습니다.");
-            var installed = BuildingWorld.InstallBatch(batches);
+            var installed = BuildingWorld.InstallBatch(batches,onInstalled);
             if (installed.Success) foreach (var session in sessions) session.Cancel();
             return installed;
         }

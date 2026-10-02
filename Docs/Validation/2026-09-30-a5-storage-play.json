@@ -1,0 +1,26 @@
+{
+  "date": "2026-09-30",
+  "scope": "A5 기지별 저장 건물 용량·철거·v2 재로드 실제 Play 인수",
+  "editor": "기존 실행 중인 StartRegionSandbox, Unity 6000.3.14f1",
+  "fixture": {
+    "saveRoot": "/tmp/eternal-a5-storage-play-20260930",
+    "definition": "Assets/EternalSteam/Content/Buildings/BasePlanning/resource.iron.asset",
+    "temporaryModule": "iron +250 capacity",
+    "cleanup": "Play 종료 후 임시 모듈 삭제, 원본 definition 바이트 단위 복구; BasePlanning 및 DocumentContent resource.iron 에셋의 Git diff 없음",
+    "tools": ["Tools/VerifyA5StorageAsset.cs", "Tools/VerifyA5StoragePlay.cs"]
+  },
+  "checks": [
+    "새 게임 메인 기지와 서브 기지에 저장 기능을 임시로 붙인 철 생성기 1개씩 설치; 두 기지 철 용량 각각 1000250",
+    "메인 철 1000100, 서브 철 23, 공용 철 0으로 분리 확인 후 안전 저장·씬 재로드",
+    "첫 재로드에서 두 저장 건물과 기지별 용량·수량 일치",
+    "메인 저장 건물 철거 뒤 메인 용량 1000000, 철 재고 1000100 보존; 서브 용량 1000250과 철 23 유지",
+    "두 번째 안전 저장·씬 재로드에서 메인 철 초과 재고와 서브 독립 용량·재고 재확인"
+  ],
+  "editMode": {"total": 198, "passed": 198, "failed": 0},
+  "relatedFix": "손상된 current.json을 덮어쓸 때 JsonUtility ArgumentException을 InvalidDataException으로 정규화해 정상 백업을 보존하도록 수정; 전체 EditMode 회귀 통과",
+  "finalEditorState": "Play=false, save override cleared, sceneDirty=false",
+  "limits": [
+    "제품 카탈로그에 영구 저장 건물 정의를 추가한 것은 아니다. 원본 일정 계획 2.4의 저장 건물은 검토 사항이다.",
+    "설치와 철거는 검증 코드로 수행했으며 물리 포인터 입력 검증은 QA-06에 남는다."
+  ]
+}

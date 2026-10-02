@@ -1,0 +1,30 @@
+{
+  "date": "2026-09-30",
+  "unityVersion": "6000.3.14f1",
+  "mode": "EditMode",
+  "summary": {
+    "total": 216,
+    "passed": 216,
+    "failed": 0,
+    "skipped": 0,
+    "inconclusive": 0
+  },
+  "qa06SceneCases": [
+    {
+      "name": "EternalSteam.Tests.CanvasHierarchyTests.SavedRailwayPanelClearsResourcePanel(\"StartRegionSandbox\")",
+      "status": "Passed"
+    },
+    {
+      "name": "EternalSteam.Tests.CanvasHierarchyTests.SavedRailwayPanelClearsResourcePanel(\"OpenWorldSandbox\")",
+      "status": "Passed"
+    },
+    {
+      "name": "EternalSteam.Tests.CanvasHierarchyTests.SavedResourceColumnsFitLongQuantitiesWithoutOverlap(\"StartRegionSandbox\")",
+      "status": "Passed"
+    },
+    {
+      "name": "EternalSteam.Tests.CanvasHierarchyTests.SavedResourceColumnsFitLongQuantitiesWithoutOverlap(\"OpenWorldSandbox\")",
+      "status": "Passed"
+    }
+  ]
+}

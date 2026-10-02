@@ -1,0 +1,54 @@
+{
+  "head": "7e6dabe",
+  "basis": "working tree including uncommitted changes",
+  "files": [
+    {
+      "path": "Assets/EternalSteam/Code/Railway/RailwayNetwork.cs",
+      "sha256": "25fdc0dc10992968966f52a5f3b73e7bcd357e6c0547e37eb9807d3dba349650"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Railway/RailwayRevisions.cs",
+      "sha256": "0a3a4177e2531a406657e7d5ff37deb0ad6861e9711c4f9ad466a7bd5d79e12a"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/RailwayHud.cs",
+      "sha256": "ea5df9cd0884848a9ec86a1418ff8e4d88fd1bdb01addaa82048274d538bce86"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/RailwaySceneView.cs",
+      "sha256": "ff6e5e4d0ef9aceb5e590d5a28f469f16f8fde34371e2e4d9be834b74e6721ac"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/SingleMapPersistence.cs",
+      "sha256": "07c82fc6abc0365f492d989e417fe650c5101875b2ff48fadcbc7f5b06870a26"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/ConstructionDragEditor.cs",
+      "sha256": "b88326f31a238484fc5f43c5b2af9dcb8e3bf01d1f9f963ecf7337100b6a122b"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/WorldEditSession.cs",
+      "sha256": "760e472a373a557e42a88331e9f64426ad22acaed74042471acd75b88c269cf5"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/TrainDefenseController.cs",
+      "sha256": "be14790c3d22f3d3abd0bfb79cff6ae4194ebe49244967b303e99ede505980c3"
+    },
+    {
+      "path": "Assets/EternalSteam/Scene/Tests/StartRegionSandbox.unity",
+      "sha256": "fb660662edc560b95adeaaff0becb986f8254f4aa5a09e78a6b56ab9eedaf3f5"
+    },
+    {
+      "path": "Assets/EternalSteam/Scene/Tests/OpenWorldSandbox.unity",
+      "sha256": "fd9e04356b4dc94a4d1ec84e1bdc099e70a81e5050f35700ddb29218d0825cf0"
+    },
+    {
+      "path": "Docs/Source/Attachments/4.3 기차.md",
+      "sha256": "d9bd1312e76790062368a2dd8280c16b0cf24a713fb402b03b2aa0ece30345dd"
+    },
+    {
+      "path": "Docs/Source/Attachments/4.4 노선.md",
+      "sha256": "8929069b7c8f3645bef0d2a117c69ac8591a03cc58045af2fb7e49fc96c26f30"
+    }
+  ]
+}

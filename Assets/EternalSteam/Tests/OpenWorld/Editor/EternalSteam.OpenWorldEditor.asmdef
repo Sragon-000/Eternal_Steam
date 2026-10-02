@@ -12,6 +12,8 @@
     "EternalSteam.LegacyPresentation",
     "EternalSteam.Combat",
     "EternalSteam.Economy",
-    "EternalSteam.Progression"
+    "EternalSteam.Progression",
+    "EternalSteam.Railway",
+    "GiantGrey.TileWorldCreator"
   ]
 }

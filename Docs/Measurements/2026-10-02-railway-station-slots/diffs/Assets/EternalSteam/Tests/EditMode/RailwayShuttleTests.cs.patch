@@ -1,0 +1,89 @@
+--- before/Assets/EternalSteam/Tests/EditMode/RailwayShuttleTests.cs
++++ after/Assets/EternalSteam/Tests/EditMode/RailwayShuttleTests.cs
+@@ -46,6 +46,86 @@
+         [SetUp] public void Setup(){inventory=new Inventory();network=new RailwayNetwork(inventory,"coal",1);AddStation(0);AddStation(1);}
+         [TearDown] public void Cleanup(){foreach(var b in buildings)b.Dispose();buildings.Clear();stations.Clear();foreach(var a in assets)UnityEngine.Object.DestroyImmediate(a);assets.Clear();}
+ 
++        RailRoute Between(int from,int to)
++        {
++            var draft=new[]{new RailStop{stationId=stations[from].PersistentId,load=30},new RailStop{stationId=stations[to].PersistentId,unload=30}};
++            Assert.That(network.Commit(Guid.NewGuid().ToString("N"),draft,out var r,out var e,RailRouteMode.Shuttle),Is.True,e);
++            Assert.That(network.Configure(r,"iron",0,30,0,out e),Is.True,e);return r;
++        }
++        [Test] public void SharedStationHoldsSecondTrainOutsideAndStopRequestSurvivesReload()
++        {
++            AddStation(2);var a=Between(0,1);var c=Between(2,1);Start(a);Start(c);
++            network.Tick(10);network.Stop(a);network.Stop(c);network.Tick(5);
++            Assert.That(a.train.status,Is.EqualTo(TrainStatus.Stopped));Assert.That(c.train.waitingForStation,Is.True);
++            Assert.That(c.train.progress,Is.EqualTo(RailwayNetwork.StationEntryProgress(c)).Within(1e-9));
++            Assert.That(network.StationSlotOwner(stations[1].PersistentId),Is.EqualTo(a.id));
++            double fuel=c.train.fuel;int visits=inventory.visits[stations[1].OwnerBaseId];
++            network.Tick(100);Assert.That(inventory.visits[stations[1].OwnerBaseId],Is.EqualTo(visits));Assert.That(c.train.fuel,Is.EqualTo(fuel));
++            string saved=JsonUtility.ToJson(network.Capture());network.Restore(JsonUtility.FromJson<RailwayNetwork.Snapshot>(saved));
++            Assert.That(JsonUtility.ToJson(network.Capture()),Is.EqualTo(saved));a=network.Routes[0];c=network.Routes[1];
++            Assert.That(network.Start(a,out var e),Is.True,e);network.Tick(11);
++            Assert.That(c.train.status,Is.EqualTo(TrainStatus.Stopped));Assert.That(c.train.waitingForStation,Is.False);
++            Assert.That(c.train.stop,Is.EqualTo(1));Assert.That(c.train.fuel,Is.EqualTo(fuel));Assert.That(inventory.visits[stations[1].OwnerBaseId],Is.EqualTo(visits+1));
++        }
++        [Test] public void SharedStationArbitrationIsIndependentOfTickPartition()
++        {
++            AddStation(2);var a=Between(0,1);var c=Between(2,1);
++            network.Configure(a,"iron",0,0,0,out _);network.Configure(c,"iron",0,0,0,out _);Start(a);Start(c);
++            var before=network.Capture();network.Tick(80);
++            var expected=network.Capture();network.Restore(before);for(int i=0;i<800;i++)network.Tick(.1);
++            for(int i=0;i<2;i++){var x=expected.routes[i].train;var y=network.Routes[i].train;
++                Assert.That(y.stop,Is.EqualTo(x.stop));Assert.That(y.status,Is.EqualTo(x.status));Assert.That(y.waitingForStation,Is.EqualTo(x.waitingForStation));
++                Assert.That(y.stationEntryReserved,Is.EqualTo(x.stationEntryReserved));Assert.That(y.progress,Is.EqualTo(x.progress).Within(1e-8));
++                Assert.That(y.dwell,Is.EqualTo(x.dwell).Within(1e-8));Assert.That(y.fuel,Is.EqualTo(x.fuel).Within(1e-8));}
++        }
++        [Test] public void TwoRoutesCreatedAtSameStationQueueWithoutDoubleService()
++        {
++            AddStation(2);var a=Between(1,0);var c=Between(1,2);Assert.That(c.train.waitingForStation,Is.True);
++            Start(a);Assert.That(network.Refuel(c,50,out _),Is.False);Assert.That(inventory.visits[stations[1].OwnerBaseId],Is.EqualTo(1));
++            network.Tick(10);Assert.That(c.train.waitingForStation,Is.False);Start(c);Assert.That(c.train.status,Is.EqualTo(TrainStatus.Dwelling));
++            Assert.That(c.train.dwell,Is.EqualTo(10));Assert.That(inventory.visits[stations[1].OwnerBaseId],Is.EqualTo(2));
++        }
++        [Test] public void CorruptSlotOwnershipRejectedWithoutChangingLiveNetwork()
++        {
++            var a=Route();Start(a);network.Tick(11);var saved=network.Capture();saved.routes[0].train.stationEntryReserved=true;
++            Assert.Throws<ArgumentException>(()=>network.Restore(saved));Assert.That(network.Routes[0],Is.SameAs(a));
++            saved=network.Capture();saved.routes[0].train.waitingForStation=true;Assert.Throws<ArgumentException>(()=>network.Restore(saved));
++        }
++        [Test] public void PreSlotSaveWithTwoParkedTrainsMigratesWithoutInventoryMutation()
++        {
++            AddStation(2);var a=Between(1,0);var c=Between(1,2);var saved=network.Capture();saved.stationSlotVersion=0;
++            saved.routes[1].train.waitingForStation=false;double coal=inventory.banks.Values.Sum(b=>b.Amount("coal"));
++            network.Restore(saved);Assert.That(network.Routes[0].train.waitingForStation,Is.False);Assert.That(network.Routes[1].train.waitingForStation,Is.True);
++            Assert.That(inventory.banks.Values.Sum(b=>b.Amount("coal")),Is.EqualTo(coal));Assert.That(network.Capture().stationSlotVersion,Is.EqualTo(1));
++        }
++        [Test] public void ReservedExtensionLosesToCommittedRouteWithoutChangingExistingPath()
++        {
++            AddStation(2);var a=Between(0,1);Start(a);network.Tick(26);
++            var stops=Stops();Assert.That(network.UpdateRoute(a,stops,a.revision,out var e),Is.True,e);
++            var c=Between(2,1);network.Restore(network.Capture());a=network.Routes[0];network.Tick(4);
++            Assert.That(a.pending.active,Is.True);Assert.That(a.pending.failed,Is.True);Assert.That(a.revision,Is.Zero);
++            Assert.That(a.stops.Count,Is.EqualTo(2));Assert.That(a.legs.Count,Is.EqualTo(1));Assert.That(a.train.stop,Is.Zero);
++            Assert.That(network.Routes[1].id,Is.EqualTo(c.id));
++        }
++        [Test] public void EntryReservationSurvivesReloadBeforeArrivalAndProtectsStation()
++        {
++            AddStation(2);var a=Between(0,1);Start(a);network.Tick(14.5);
++            Assert.That(a.train.stationEntryReserved,Is.True);Assert.That(a.train.waitingForStation,Is.False);
++            var c=Between(1,2);Assert.That(c.train.waitingForStation,Is.True);
++            var saved=network.Capture();network.Restore(saved);a=network.Routes[0];c=network.Routes[1];
++            Assert.That(network.StationSlotOwner(stations[1].PersistentId),Is.EqualTo(a.id));network.Tick(.5);
++            Assert.That(a.train.stop,Is.EqualTo(1));Assert.That(c.train.waitingForStation,Is.True);
++            network.Tick(10);Assert.That(c.train.waitingForStation,Is.False);
++        }
++        [Test] public void SlotLossDuringEntryKeepsPaidFuelAndResumesAfterStationRecovery()
++        {
++            var r=Route();Start(r);network.Tick(14.5);double fuel=r.train.fuel,progress=r.train.progress;
++            inventory.banks.Remove(stations[1].OwnerBaseId);network.Tick(1);Assert.That(r.train.status,Is.EqualTo(TrainStatus.RouteError));
++            Assert.That(r.train.stationEntryReserved,Is.True);Assert.That(r.train.progress,Is.EqualTo(progress));
++            var bank=new ResourceBank();bank.AddCapacity("iron",1000);inventory.banks.Add(stations[1].OwnerBaseId,bank);
++            network.Restore(network.Capture());r=network.Routes.Single();Assert.That(network.Start(r,out var e),Is.True,e);network.Tick(.5);
++            Assert.That(r.train.fuel,Is.EqualTo(fuel));Assert.That(r.train.stop,Is.EqualTo(1));Assert.That(bank.Amount("iron"),Is.EqualTo(30));
++        }
+         [Test] public void SingleConnectionAllowsSameSocketBothWaysWithoutReturnTrack()
+         {
+             var r=Route();Assert.That(r.legs.Count,Is.EqualTo(1));Assert.That(r.legs[0].cells.Count,Is.EqualTo(5));

@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/ExportProductTestResults.cs",
+      "entry": "ExportProductTestResults.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 79,
+      "executeMs": 0,
+      "assemblyName": "PipelineRunScript_ExportProductTestResults_8d55d770589f4b2484e8e304cc1808f9",
+      "success": true,
+      "result": "Authoritative full result XML callback registered"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

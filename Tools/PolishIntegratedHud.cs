@@ -1,0 +1,9 @@
+using System;using System.Linq;using UnityEngine;using UnityEditor;using UnityEditor.SceneManagement;using TMPro;using EternalSteam.OpenWorld;
+public static class PolishIntegratedHud{
+ public static string Main(){if(EditorApplication.isPlaying||EditorSceneManager.GetActiveScene().isDirty)throw new Exception("Clean edit mode required");string original=EditorSceneManager.GetActiveScene().path;
+ try{foreach(var name in new[]{"StartRegionSandbox","OpenWorldSandbox"}){var scene=EditorSceneManager.OpenScene("Assets/EternalSteam/Scene/Tests/"+name+".unity");var h=UnityEngine.Object.FindFirstObjectByType<CanvasWorldHud>();var sprite=AssetDatabase.LoadAllAssetsAtPath("Assets/EternalSteam/Shared/UI/Railway/RailwayPanel.png").OfType<Sprite>().Single();
+ foreach(var n in new[]{"FirstLoopObjective","RailwayToolbar","Notifications"}){var t=h.GetComponentsInChildren<RectTransform>(true).FirstOrDefault(t=>t.name==n);if(t==null)continue;var image=t.GetComponent<UnityEngine.UI.Image>()??t.gameObject.AddComponent<UnityEngine.UI.Image>();image.sprite=sprite;image.color=Color.white;image.type=UnityEngine.UI.Image.Type.Sliced;image.raycastTarget=false;}
+ var pending=h.Texts.Single(t=>t.Id=="pending").View;pending.rectTransform.anchoredPosition=new Vector2(0,4);pending.rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical,24);pending.alignment=TextAlignmentOptions.MidlineLeft;pending.text="건물 선택: 상세 정보 · 건설 메뉴: 설치와 회수";
+ foreach(var t in h.Texts.Where(t=>t.Id=="first-loop-objective"))t.View.text=t.View.text.Replace("목표 · 수정","목표 · 건설 메뉴");
+ EditorUtility.SetDirty(h);EditorSceneManager.MarkSceneDirty(scene);EditorSceneManager.SaveScene(scene);}}finally{EditorSceneManager.OpenScene(original);}return "PASS both scenes: guide, notification, railway tools skin and footer padding";}
+}

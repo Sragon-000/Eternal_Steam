@@ -1,0 +1,13 @@
+{
+  "checks": {
+    "논문 목표": true,
+    "확장안은 미정": true,
+    "연구 실험은 아직 시작하지 않는다": true,
+    "표적 유지율": true,
+    "빈 탐색률": true,
+    "공유 격자 유지비": true,
+    "예비실험 중단·전환 기준": true
+  },
+  "researchExperimentRun": false,
+  "sha256": "8852a14cad8a3c2cac1b417faf33d29cc94502f145c77de6872a6b57940709de"
+}

@@ -1,0 +1,784 @@
+{
+  "date": "2026-09-29",
+  "documents_before": 97,
+  "root_documents_archived": 47,
+  "files": [
+    {
+      "before": "Docs/BELTFED_UI_시안_적용계획.md",
+      "after": "Docs/Archive/2026-09-29/BELTFED_UI_시안_적용계획.md",
+      "classification": "historical",
+      "purpose": "현행 계약·현황·잔여 작업은 통합 기준에 흡수; 상세 설계/당시 증거는 기록 보존",
+      "sha256_before": "c6b284d5592fc5182548bd0b42c7a7275f48488146380ce38dd1cc2de25ba5b2",
+      "sha256_after": "596fd677d79290c789478afc02a8945ede7f7fc94cc247a7a227fb1c21da4647"
+    },
+    {
+      "before": "Docs/BELTFED_UI_실제적용_준비.md",
+      "after": "Docs/Archive/2026-09-29/BELTFED_UI_실제적용_준비.md",
+      "classification": "historical",
+      "purpose": "현행 계약·현황·잔여 작업은 통합 기준에 흡수; 상세 설계/당시 증거는 기록 보존",
+      "sha256_before": "08f6a0ede4de7d830015371013dcae48810dae9ae946d8308e86d21b121779bf",
+      "sha256_after": "f129ca521908f423a038d1aff0313e8fc2ce498258fb137dbdfbad86b810000e"
+    },
+    {
+      "before": "Docs/Canvas_HUD_밀도개선_실제적용계획.md",
+      "after": "Docs/Archive/2026-09-29/Canvas_HUD_밀도개선_실제적용계획.md",
+      "classification": "historical",
+      "purpose": "현행 계약·현황·잔여 작업은 통합 기준에 흡수; 상세 설계/당시 증거는 기록 보존",
+      "sha256_before": "0a1d0f3ce7946c938e8f05d3ed75d2f8857efe1e876a460edd8aeb16d1073d74",
+      "sha256_after": "4e3187671bfcb9908b86137688f93a2ad8ff5e23c0d1f5d2c199fc994fecda26"
+    },
+    {
+      "before": "Docs/Presentations/표적탐색_최적화_세미나_발표노트.md",
+      "after": "Docs/Presentations/표적탐색_최적화_세미나_발표노트.md",
+      "classification": "presentation",
+      "purpose": "연구 발표 산출물",
+      "sha256_before": "5e55fac795b4decfb91c6de6aedd8336b6456f6e39a584d7b0b5cfd69209577b",
+      "sha256_after": "5e55fac795b4decfb91c6de6aedd8336b6456f6e39a584d7b0b5cfd69209577b"
+    },
+    {
+      "before": "Docs/README.md",
+      "after": "Docs/README.md",
+      "classification": "navigation",
+      "purpose": "통합 문서와 보관 경로 안내",
+      "sha256_before": "e9a85398c7cc0826adb30f2fc5390103c757d8ffb464aca91db72bbfb2b19bad",
+      "sha256_after": "9bdbf30580391eb7a4b6f67033a248060c263c209a1e6352f7cd698430742976"
+    },
+    {
+      "before": "Docs/References/BELTFED.md",
+      "after": "Docs/References/BELTFED.md",
+      "classification": "reference",
+      "purpose": "외부 게임 연구; 게임 요구 사양과 분리",
+      "sha256_before": "252ec7e1f6276262f800058dc9516e080150e037c80193dc6a152f7d5624ba11",
+      "sha256_after": "252ec7e1f6276262f800058dc9516e080150e037c80193dc6a152f7d5624ba11"
+    },
+    {
+      "before": "Docs/References/BELTFED_UI_시안.md",
+      "after": "Docs/References/BELTFED_UI_시안.md",
+      "classification": "reference",
+      "purpose": "외부 게임 연구; 게임 요구 사양과 분리",
+      "sha256_before": "ab529fdd610c541bd52f8ca9aa9ac0f7b8989ca8616e9ed12c7577a1ecff3d3f",
+      "sha256_after": "8dd2c3f9985a0dc7d5cf2c772925ba4f011f5214ca8b9da2b659a5ee33ba1f3c"
+    },
+    {
+      "before": "Docs/References/BELTFED_검증대장.md",
+      "after": "Docs/References/BELTFED_검증대장.md",
+      "classification": "reference",
+      "purpose": "외부 게임 연구; 게임 요구 사양과 분리",
+      "sha256_before": "3622752ac9b5de58f77ada686498dcbf0538b60d79ed68440e9c31d650e2c591",
+      "sha256_after": "3622752ac9b5de58f77ada686498dcbf0538b60d79ed68440e9c31d650e2c591"
+    },
+    {
+      "before": "Docs/References/BELTFED_역기획서.md",
+      "after": "Docs/References/BELTFED_역기획서.md",
+      "classification": "reference",
+      "purpose": "외부 게임 연구; 게임 요구 사양과 분리",
+      "sha256_before": "42c9619e5eb8267d837528fad5623ccc51657e8670768d0f53fefe1d2024952c",
+      "sha256_after": "42c9619e5eb8267d837528fad5623ccc51657e8670768d0f53fefe1d2024952c"
+    },
+    {
+      "before": "Docs/References/BELTFED_유지관리.md",
+      "after": "Docs/References/BELTFED_유지관리.md",
+      "classification": "reference",
+      "purpose": "외부 게임 연구; 게임 요구 사양과 분리",
+      "sha256_before": "f0e6e081529b6617e49ba5edc220a3078f6d972316b149379221b5fcd0284308",
+      "sha256_after": "f0e6e081529b6617e49ba5edc220a3078f6d972316b149379221b5fcd0284308"
+    },
+    {
+      "before": "Docs/References/레퍼런스_방향과_시작_경험.md",
+      "after": "Docs/References/레퍼런스_방향과_시작_경험.md",
+      "classification": "reference",
+      "purpose": "외부 게임 연구; 게임 요구 사양과 분리",
+      "sha256_before": "7e69763e31918b3700f2fc913bc6aa9c3f2f441fe12286c45579b80c9d6641bb",
+      "sha256_after": "8ed7a01d8796e5c0e76c160b84dcfe1a38a544945d2f04aa54a161c3fc8353a8"
+    },
+    {
+      "before": "Docs/Source/Attachments/4. 기지.md",
+      "after": "Docs/Source/Attachments/4. 기지.md",
+      "classification": "original",
+      "purpose": "사용자 원본; 변경 금지",
+      "sha256_before": "c05a66d3cbbd1e14db5b1c8cc725200afc80a097da40bcbfbca3f4ccf921aae8",
+      "sha256_after": "c05a66d3cbbd1e14db5b1c8cc725200afc80a097da40bcbfbca3f4ccf921aae8"
+    },
+    {
+      "before": "Docs/Source/Attachments/4.1 추가 사항.md",
+      "after": "Docs/Source/Attachments/4.1 추가 사항.md",
+      "classification": "original",
+      "purpose": "사용자 원본; 변경 금지",
+      "sha256_before": "4e863784f79c37e94571ac7cfcbfff69e0881b2ffdc1d81a03c4a112f33e5d79",
+      "sha256_after": "4e863784f79c37e94571ac7cfcbfff69e0881b2ffdc1d81a03c4a112f33e5d79"
+    },
+    {
+      "before": "Docs/Source/Attachments/4.3 기차.md",
+      "after": "Docs/Source/Attachments/4.3 기차.md",
+      "classification": "original",
+      "purpose": "사용자 원본; 변경 금지",
+      "sha256_before": "d9bd1312e76790062368a2dd8280c16b0cf24a713fb402b03b2aa0ece30345dd",
+      "sha256_after": "d9bd1312e76790062368a2dd8280c16b0cf24a713fb402b03b2aa0ece30345dd"
+    },
+    {
+      "before": "Docs/Source/Attachments/4.4 노선.md",
+      "after": "Docs/Source/Attachments/4.4 노선.md",
+      "classification": "original",
+      "purpose": "사용자 원본; 변경 금지",
+      "sha256_before": "8929069b7c8f3645bef0d2a117c69ac8591a03cc58045af2fb7e49fc96c26f30",
+      "sha256_after": "8929069b7c8f3645bef0d2a117c69ac8591a03cc58045af2fb7e49fc96c26f30"
+    },
+    {
+      "before": "Docs/Source/Attachments/7. 맵 진행 및 에너지 오브 시스템.md",
+      "after": "Docs/Source/Attachments/7. 맵 진행 및 에너지 오브 시스템.md",
+      "classification": "original",
+      "purpose": "사용자 원본; 변경 금지",
+      "sha256_before": "e459a347ff18c9882c8dcd85a8689e1206ada54104e9d615cd2f4f65929d9199",
+      "sha256_after": "e459a347ff18c9882c8dcd85a8689e1206ada54104e9d615cd2f4f65929d9199"
+    },
+    {
+      "before": "Docs/Source/Attachments/건물.md",
+      "after": "Docs/Source/Attachments/건물.md",
+      "classification": "original",
+      "purpose": "사용자 원본; 변경 금지",
+      "sha256_before": "4d2baa7a5b3a3c58e52927947598aa499134d36d719cc31d49ec554261b46809",
+      "sha256_after": "4d2baa7a5b3a3c58e52927947598aa499134d36d719cc31d49ec554261b46809"
+    },
+    {
+      "before": "Docs/Source/Attachments/기타_건물.md",
+      "after": "Docs/Source/Attachments/기타_건물.md",
+      "classification": "original",
+      "purpose": "사용자 원본; 변경 금지",
+      "sha256_before": "443ee807af6013a6722de7c33eb45fed30cb54c4a085997b6f71f60872ffa205",
+      "sha256_after": "443ee807af6013a6722de7c33eb45fed30cb54c4a085997b6f71f60872ffa205"
+    },
+    {
+      "before": "Docs/Source/Attachments/방어_건물.md",
+      "after": "Docs/Source/Attachments/방어_건물.md",
+      "classification": "original",
+      "purpose": "사용자 원본; 변경 금지",
+      "sha256_before": "5b199513da599f5d2aa7503267ee69553d3fc339d1701b386bc5a0995390dfa7",
+      "sha256_after": "5b199513da599f5d2aa7503267ee69553d3fc339d1701b386bc5a0995390dfa7"
+    },
+    {
+      "before": "Docs/Source/Attachments/방어_건물_종류.md",
+      "after": "Docs/Source/Attachments/방어_건물_종류.md",
+      "classification": "original",
+      "purpose": "사용자 원본; 변경 금지",
+      "sha256_before": "ae946b4fe5697ff558c82605f0102dd1b4aa10c968ed5e4cea50fd3574d4d761",
+      "sha256_after": "ae946b4fe5697ff558c82605f0102dd1b4aa10c968ed5e4cea50fd3574d4d761"
+    },
+    {
+      "before": "Docs/Source/Attachments/배치 수정 임시 UI.md",
+      "after": "Docs/Source/Attachments/배치 수정 임시 UI.md",
+      "classification": "original",
+      "purpose": "사용자 원본; 변경 금지",
+      "sha256_before": "bdae7ecf395d3c5611ca9e2a6914a9d3b1c50756ceb64d3b54111bd9ef312759",
+      "sha256_after": "bdae7ecf395d3c5611ca9e2a6914a9d3b1c50756ceb64d3b54111bd9ef312759"
+    },
+    {
+      "before": "Docs/Source/Attachments/일정 계획.md",
+      "after": "Docs/Source/Attachments/일정 계획.md",
+      "classification": "original",
+      "purpose": "사용자 원본; 변경 금지",
+      "sha256_before": "a2771f7d983a9b22c6babc09e197b053d3a1d38b554ca865ae784c2651e09887",
+      "sha256_after": "a2771f7d983a9b22c6babc09e197b053d3a1d38b554ca865ae784c2651e09887"
+    },
+    {
+      "before": "Docs/Source/Attachments/자원_건물.md",
+      "after": "Docs/Source/Attachments/자원_건물.md",
+      "classification": "original",
+      "purpose": "사용자 원본; 변경 금지",
+      "sha256_before": "b3f22e6c048906ab6f1e3568675041bd54893a97e040150ca47f56a932918823",
+      "sha256_after": "b3f22e6c048906ab6f1e3568675041bd54893a97e040150ca47f56a932918823"
+    },
+    {
+      "before": "Docs/Source/Conversation/2026-09-24_추가_레퍼런스.md",
+      "after": "Docs/Source/Conversation/2026-09-24_추가_레퍼런스.md",
+      "classification": "provenance",
+      "purpose": "출처·대화 결정 추적",
+      "sha256_before": "733c246f880545eba61ad964c9604626645a5b14c35e8cd81a09c32eca5d8a2c",
+      "sha256_after": "733c246f880545eba61ad964c9604626645a5b14c35e8cd81a09c32eca5d8a2c"
+    },
+    {
+      "before": "Docs/Source/Conversation/계획과_후속결정_요약.md",
+      "after": "Docs/Source/Conversation/계획과_후속결정_요약.md",
+      "classification": "provenance",
+      "purpose": "출처·대화 결정 추적",
+      "sha256_before": "d846476ea5f2e857a7e5e2e355f2f9b150aa15fe00e03efaca3b90cf1161b595",
+      "sha256_after": "8c585bd058e3b06164ad75103c83fd9f0868dff53809d34de7be902464b091d6"
+    },
+    {
+      "before": "Docs/Source/README.md",
+      "after": "Docs/Source/README.md",
+      "classification": "provenance",
+      "purpose": "출처·대화 결정 추적",
+      "sha256_before": "90ab94413ad941bd69c12ad9eadda21c30c6e1a1ecf0bb1a0d30a261bed6f657",
+      "sha256_after": "4e97d8ede9dff5763b2fd469ce19fc44253442576059f1804c5af03fa0ffd27c"
+    },
+    {
+      "before": "Docs/TileWorldCreator_그리드_연동_및_사용_범위.md",
+      "after": "Docs/Archive/2026-09-29/TileWorldCreator_그리드_연동_및_사용_범위.md",
+      "classification": "historical",
+      "purpose": "현행 계약·현황·잔여 작업은 통합 기준에 흡수; 상세 설계/당시 증거는 기록 보존",
+      "sha256_before": "3fb71823a76090e5a66a3ab51287c9fb615fa36b1e2dc72bdbeab084775d0e88",
+      "sha256_after": "1527b815f0fc7ecd97ab61bd327d35029813434dad6f38e9a682f6000e967d16"
+    },
+    {
+      "before": "Docs/Validation/2026-09-24-single-map-save.md",
+      "after": "Docs/Validation/2026-09-24-single-map-save.md",
+      "classification": "evidence",
+      "purpose": "일자별 검증 증거; 현재 전체 완료 판정으로 확대 금지",
+      "sha256_before": "c96a215315174c893bdd9b3ddcdcdd29eeab91ef5681b058e8a5c8e0c96a2d15",
+      "sha256_after": "c96a215315174c893bdd9b3ddcdcdd29eeab91ef5681b058e8a5c8e0c96a2d15"
+    },
+    {
+      "before": "Docs/Validation/2026-09-24-start-loop.md",
+      "after": "Docs/Validation/2026-09-24-start-loop.md",
+      "classification": "evidence",
+      "purpose": "일자별 검증 증거; 현재 전체 완료 판정으로 확대 금지",
+      "sha256_before": "fc031a32a241becd4108362e14362db68736bb8fb5a207ca55ab3b8908f85120",
+      "sha256_after": "fc031a32a241becd4108362e14362db68736bb8fb5a207ca55ab3b8908f85120"
+    },
+    {
+      "before": "Docs/Validation/2026-09-27-hud-foundation.md",
+      "after": "Docs/Validation/2026-09-27-hud-foundation.md",
+      "classification": "evidence",
+      "purpose": "일자별 검증 증거; 현재 전체 완료 판정으로 확대 금지",
+      "sha256_before": "6841b8688c08c0aa829d184cd28f3e0146a7438d12d6c74414d008a1df6ae299",
+      "sha256_after": "84cd4240b936b167230b25c0622832424ff86a01d46f40b2b746349b83dfa8f5"
+    },
+    {
+      "before": "Docs/Validation/2026-09-28-build-area-hologram.md",
+      "after": "Docs/Validation/2026-09-28-build-area-hologram.md",
+      "classification": "evidence",
+      "purpose": "일자별 검증 증거; 현재 전체 완료 판정으로 확대 금지",
+      "sha256_before": "5d654700c45aa3fb2d9b4e95274e67e4cfaa5ccb3aec89f9066d5014664740a7",
+      "sha256_after": "6b98e8e075ab064d1a2a16fb404ca86863ca2e98697b5fa10dfab92d24e01ea2"
+    },
+    {
+      "before": "Docs/Validation/2026-09-28-canvas-hierarchy.md",
+      "after": "Docs/Validation/2026-09-28-canvas-hierarchy.md",
+      "classification": "evidence",
+      "purpose": "일자별 검증 증거; 현재 전체 완료 판정으로 확대 금지",
+      "sha256_before": "d684566dbdc255e82f9b88e5b27699844e1705c141fd6666a81f5eb2e8920c00",
+      "sha256_after": "d684566dbdc255e82f9b88e5b27699844e1705c141fd6666a81f5eb2e8920c00"
+    },
+    {
+      "before": "Docs/Validation/2026-09-28-catalog-base-level.md",
+      "after": "Docs/Validation/2026-09-28-catalog-base-level.md",
+      "classification": "evidence",
+      "purpose": "일자별 검증 증거; 현재 전체 완료 판정으로 확대 금지",
+      "sha256_before": "33b99b7a78774517c87196ca63717ac6aca5815623bb8600304917bf01e06b21",
+      "sha256_after": "33b99b7a78774517c87196ca63717ac6aca5815623bb8600304917bf01e06b21"
+    },
+    {
+      "before": "Docs/Validation/2026-09-28-compact-canvas-hud.md",
+      "after": "Docs/Validation/2026-09-28-compact-canvas-hud.md",
+      "classification": "evidence",
+      "purpose": "일자별 검증 증거; 현재 전체 완료 판정으로 확대 금지",
+      "sha256_before": "e7185f7fdbd8d6cc2bade7367b5a465232f3575b522e0a48bac102da2da765ae",
+      "sha256_after": "29c6c1095a96977827ee2a7c45a8a880c671b3daae06c0d8875b0df64343cf2f"
+    },
+    {
+      "before": "Docs/Validation/2026-09-28-deep-editor-test.md",
+      "after": "Docs/Validation/2026-09-28-deep-editor-test.md",
+      "classification": "evidence",
+      "purpose": "일자별 검증 증거; 현재 전체 완료 판정으로 확대 금지",
+      "sha256_before": "ce95044fb205bf80a824042d0673a5e1e6fbf4c151327b5baf500228558c30cc",
+      "sha256_after": "ce95044fb205bf80a824042d0673a5e1e6fbf4c151327b5baf500228558c30cc"
+    },
+    {
+      "before": "Docs/Validation/2026-09-28-hud-layout.md",
+      "after": "Docs/Validation/2026-09-28-hud-layout.md",
+      "classification": "evidence",
+      "purpose": "일자별 검증 증거; 현재 전체 완료 판정으로 확대 금지",
+      "sha256_before": "884765bb7c6307429118a43b770d2575710485c76e1318a45ac13e951e72a32a",
+      "sha256_after": "1ae1225c6a095a8752751ec7023c3b23c870d2aff0c735c3365452c8c56b0dde"
+    },
+    {
+      "before": "Docs/Validation/2026-09-28-railway-live-play.md",
+      "after": "Docs/Validation/2026-09-28-railway-live-play.md",
+      "classification": "evidence",
+      "purpose": "일자별 검증 증거; 현재 전체 완료 판정으로 확대 금지",
+      "sha256_before": "5de33c0d46f216168fd14e625f00a8bf4b2ab0b38a9f7c9a51911beeb1bcc821",
+      "sha256_after": "5de33c0d46f216168fd14e625f00a8bf4b2ab0b38a9f7c9a51911beeb1bcc821"
+    },
+    {
+      "before": "Docs/Validation/2026-09-28-reference-hud-visuals.md",
+      "after": "Docs/Validation/2026-09-28-reference-hud-visuals.md",
+      "classification": "evidence",
+      "purpose": "일자별 검증 증거; 현재 전체 완료 판정으로 확대 금지",
+      "sha256_before": "54abcaa80738495a1680fb5a953976297b6cf925c5255a2de56cf8b5b169cb88",
+      "sha256_after": "54abcaa80738495a1680fb5a953976297b6cf925c5255a2de56cf8b5b169cb88"
+    },
+    {
+      "before": "Docs/Validation/2026-09-28-ui-reference-review.md",
+      "after": "Docs/Validation/2026-09-28-ui-reference-review.md",
+      "classification": "evidence",
+      "purpose": "일자별 검증 증거; 현재 전체 완료 판정으로 확대 금지",
+      "sha256_before": "3fb9f440f9a3428ce357b5ce40f3fffc2eeb2599edfa9a29073a400bfa897f75",
+      "sha256_after": "3fb9f440f9a3428ce357b5ce40f3fffc2eeb2599edfa9a29073a400bfa897f75"
+    },
+    {
+      "before": "Docs/Validation/2026-09-29-auto-new-game-on-play.md",
+      "after": "Docs/Validation/2026-09-29-auto-new-game-on-play.md",
+      "classification": "evidence",
+      "purpose": "일자별 검증 증거; 현재 전체 완료 판정으로 확대 금지",
+      "sha256_before": "c78ee2b3b79f7f9be1162a0a72bfb31652e246d36083a0ffa6caef589cbcbed3",
+      "sha256_after": "c78ee2b3b79f7f9be1162a0a72bfb31652e246d36083a0ffa6caef589cbcbed3"
+    },
+    {
+      "before": "Docs/Validation/Editor_프레임_측정.md",
+      "after": "Docs/Validation/Editor_프레임_측정.md",
+      "classification": "evidence",
+      "purpose": "일자별 검증 증거; 현재 전체 완료 판정으로 확대 금지",
+      "sha256_before": "641c7948f03250d68b483215db7866395f908c9a3d8e68ba9b6c139bd9f66061",
+      "sha256_after": "641c7948f03250d68b483215db7866395f908c9a3d8e68ba9b6c139bd9f66061"
+    },
+    {
+      "before": "Docs/Validation/TileWorldCreator_산과강_적용.md",
+      "after": "Docs/Validation/TileWorldCreator_산과강_적용.md",
+      "classification": "evidence",
+      "purpose": "일자별 검증 증거; 현재 전체 완료 판정으로 확대 금지",
+      "sha256_before": "17948cd948d2bde90c68ce637b442dddc7deb8465ae9d57535e1b4419a5762ec",
+      "sha256_after": "17948cd948d2bde90c68ce637b442dddc7deb8465ae9d57535e1b4419a5762ec"
+    },
+    {
+      "before": "Docs/Validation/개발_모듈_경계_검증.md",
+      "after": "Docs/Validation/개발_모듈_경계_검증.md",
+      "classification": "evidence",
+      "purpose": "일자별 검증 증거; 현재 전체 완료 판정으로 확대 금지",
+      "sha256_before": "c305e1b494a0e5d6f20636c1cb9b606dc2ca2ffbf2b89bb054d8bcbb0416b893",
+      "sha256_after": "c305e1b494a0e5d6f20636c1cb9b606dc2ca2ffbf2b89bb054d8bcbb0416b893"
+    },
+    {
+      "before": "Docs/Validation/기반_검증_결과.md",
+      "after": "Docs/Validation/기반_검증_결과.md",
+      "classification": "evidence",
+      "purpose": "일자별 검증 증거; 현재 전체 완료 판정으로 확대 금지",
+      "sha256_before": "dbfc5e585700a32dd7c8366726382daaf1cc0b278db6b380ebc14ff2b98b249b",
+      "sha256_after": "dbfc5e585700a32dd7c8366726382daaf1cc0b278db6b380ebc14ff2b98b249b"
+    },
+    {
+      "before": "Docs/Validation/대규모_적_소환_검증.md",
+      "after": "Docs/Validation/대규모_적_소환_검증.md",
+      "classification": "evidence",
+      "purpose": "일자별 검증 증거; 현재 전체 완료 판정으로 확대 금지",
+      "sha256_before": "2d019d0a003d899293e9362920ee1850d552849a901c55d7785d15f1324ff534",
+      "sha256_after": "2d019d0a003d899293e9362920ee1850d552849a901c55d7785d15f1324ff534"
+    },
+    {
+      "before": "Docs/Validation/레거시_공통_건물_연결_검증.md",
+      "after": "Docs/Validation/레거시_공통_건물_연결_검증.md",
+      "classification": "evidence",
+      "purpose": "일자별 검증 증거; 현재 전체 완료 판정으로 확대 금지",
+      "sha256_before": "d1274f6ce4849e85defa5b0fdf771072a9dc0ba5050d9249febb6c4869fb1aa7",
+      "sha256_after": "d1274f6ce4849e85defa5b0fdf771072a9dc0ba5050d9249febb6c4869fb1aa7"
+    },
+    {
+      "before": "Docs/Validation/레거시_배치_분리_검증.md",
+      "after": "Docs/Validation/레거시_배치_분리_검증.md",
+      "classification": "evidence",
+      "purpose": "일자별 검증 증거; 현재 전체 완료 판정으로 확대 금지",
+      "sha256_before": "640448197e97e1b44f4ad0e8e20a74d11bb0360c27503ce691a8a728c1f96509",
+      "sha256_after": "640448197e97e1b44f4ad0e8e20a74d11bb0360c27503ce691a8a728c1f96509"
+    },
+    {
+      "before": "Docs/Validation/레거시_전투_분리_검증.md",
+      "after": "Docs/Validation/레거시_전투_분리_검증.md",
+      "classification": "evidence",
+      "purpose": "일자별 검증 증거; 현재 전체 완료 판정으로 확대 금지",
+      "sha256_before": "c5d2463048d2eaba12ab2ca284a7002dab7712af28bf7e360dda59447c8bbdd8",
+      "sha256_after": "c5d2463048d2eaba12ab2ca284a7002dab7712af28bf7e360dda59447c8bbdd8"
+    },
+    {
+      "before": "Docs/Validation/문서_대조_및_45도_격자_검증.md",
+      "after": "Docs/Validation/문서_대조_및_45도_격자_검증.md",
+      "classification": "evidence",
+      "purpose": "일자별 검증 증거; 현재 전체 완료 판정으로 확대 금지",
+      "sha256_before": "bc824f2b02af02f32f268f06b26d6fba0d4e5417302980955d55f98ab87f9ef5",
+      "sha256_after": "bc824f2b02af02f32f268f06b26d6fba0d4e5417302980955d55f98ab87f9ef5"
+    },
+    {
+      "before": "Docs/Validation/선택_모듈_검증.md",
+      "after": "Docs/Validation/선택_모듈_검증.md",
+      "classification": "evidence",
+      "purpose": "일자별 검증 증거; 현재 전체 완료 판정으로 확대 금지",
+      "sha256_before": "b5a33e11064dbc08c3c7fc798115e6b537a231114193a0d2bd134f77d51ea98e",
+      "sha256_after": "b5a33e11064dbc08c3c7fc798115e6b537a231114193a0d2bd134f77d51ea98e"
+    },
+    {
+      "before": "Docs/Validation/수량_입력_포커스_검증.md",
+      "after": "Docs/Validation/수량_입력_포커스_검증.md",
+      "classification": "evidence",
+      "purpose": "일자별 검증 증거; 현재 전체 완료 판정으로 확대 금지",
+      "sha256_before": "0c0f3d4ac7ec99b46217b91333db1993b8da07da7863bd63eabdb853d9adc890",
+      "sha256_after": "0c0f3d4ac7ec99b46217b91333db1993b8da07da7863bd63eabdb853d9adc890"
+    },
+    {
+      "before": "Docs/Validation/씬_배치_편집_검증.md",
+      "after": "Docs/Validation/씬_배치_편집_검증.md",
+      "classification": "evidence",
+      "purpose": "일자별 검증 증거; 현재 전체 완료 판정으로 확대 금지",
+      "sha256_before": "a1166e2f979dd7d4bde13d548eb207d4a315df4519453b4b105e24b97304ba4b",
+      "sha256_after": "a1166e2f979dd7d4bde13d548eb207d4a315df4519453b4b105e24b97304ba4b"
+    },
+    {
+      "before": "Docs/Validation/인게임_건설_전환_검증.md",
+      "after": "Docs/Validation/인게임_건설_전환_검증.md",
+      "classification": "evidence",
+      "purpose": "일자별 검증 증거; 현재 전체 완료 판정으로 확대 금지",
+      "sha256_before": "b6d001e3465288677fa42ce95f7fce9f058752ea0dff1a65b321b2c183279997",
+      "sha256_after": "b6d001e3465288677fa42ce95f7fce9f058752ea0dff1a65b321b2c183279997"
+    },
+    {
+      "before": "Docs/Validation/폴더_정리_검증.md",
+      "after": "Docs/Validation/폴더_정리_검증.md",
+      "classification": "evidence",
+      "purpose": "일자별 검증 증거; 현재 전체 완료 판정으로 확대 금지",
+      "sha256_before": "ade213081f12df3569e3f218627ef29fbe6cd0d65785330b054b159a56670593",
+      "sha256_after": "ade213081f12df3569e3f218627ef29fbe6cd0d65785330b054b159a56670593"
+    },
+    {
+      "before": "Docs/개발_모듈_경계.md",
+      "after": "Docs/Archive/2026-09-29/개발_모듈_경계.md",
+      "classification": "historical",
+      "purpose": "현행 계약·현황·잔여 작업은 통합 기준에 흡수; 상세 설계/당시 증거는 기록 보존",
+      "sha256_before": "8c13286714c64fbd2ef9a28a421ddc475a0c707c0664a7b642a2fd86ade0c087",
+      "sha256_after": "b8869d0b87105ebb308941dc2376887248a5202334d34ec9eeb32bc7fba8b194"
+    },
+    {
+      "before": "Docs/고정_메인기지_플레이루프_적용결과.md",
+      "after": "Docs/Archive/2026-09-29/고정_메인기지_플레이루프_적용결과.md",
+      "classification": "historical",
+      "purpose": "현행 계약·현황·잔여 작업은 통합 기준에 흡수; 상세 설계/당시 증거는 기록 보존",
+      "sha256_before": "525b6be109da61da63062ea37121564c6561ce490b5d5ceb1614dac3a1b54327",
+      "sha256_after": "7286beb4d9663c6416165beb2141a16b8eac06c2e7de5934aebde392bfb433b3"
+    },
+    {
+      "before": "Docs/공유레벨_전력_스폰영역_적용결과.md",
+      "after": "Docs/Archive/2026-09-29/공유레벨_전력_스폰영역_적용결과.md",
+      "classification": "historical",
+      "purpose": "현행 계약·현황·잔여 작업은 통합 기준에 흡수; 상세 설계/당시 증거는 기록 보존",
+      "sha256_before": "b1f3791fe24d1558d902dd32e70e1c2a2493e1f7a4fd6e5b67baf5c9fcf66333",
+      "sha256_after": "ac1902e73d13f7dfc6de88f919220d1ff058d4afd3a7244e43091dcfc4dc200d"
+    },
+    {
+      "before": "Docs/공통_기반_개발_안내.md",
+      "after": "Docs/Archive/2026-09-29/공통_기반_개발_안내.md",
+      "classification": "historical",
+      "purpose": "현행 계약·현황·잔여 작업은 통합 기준에 흡수; 상세 설계/당시 증거는 기록 보존",
+      "sha256_before": "c74bb5e527c3e98d48a943a6f959359db00b216da3972acaddf282c75ef84a64",
+      "sha256_after": "59a5731592fca8eb48cc34103f908656385a35689df01a3079b7ae90a78d916e"
+    },
+    {
+      "before": "Docs/기지_공유레벨_전력_스폰영역_적용계획.md",
+      "after": "Docs/Archive/2026-09-29/기지_공유레벨_전력_스폰영역_적용계획.md",
+      "classification": "historical",
+      "purpose": "현행 계약·현황·잔여 작업은 통합 기준에 흡수; 상세 설계/당시 증거는 기록 보존",
+      "sha256_before": "770ef5ef0bf9db6f07c873e0a6e48ae10e6ea1d39cbbf3d1a728ab15a984b365",
+      "sha256_after": "a3bcaaa6666bc4fbc984383a7fcf396bf39337b47243952e419e39ceaccb34ab"
+    },
+    {
+      "before": "Docs/기지_맵진행_에너지오브_적용계획.md",
+      "after": "Docs/Archive/2026-09-29/기지_맵진행_에너지오브_적용계획.md",
+      "classification": "historical",
+      "purpose": "현행 계약·현황·잔여 작업은 통합 기준에 흡수; 상세 설계/당시 증거는 기록 보존",
+      "sha256_before": "ebd019991d29583c6ca75d76c2f9387d5184b6f289f86ad7909f8de80eb3b4b3",
+      "sha256_after": "831fc8eb474ba51c78f76dc925243fffd49a83561b9388d76804441982b02592"
+    },
+    {
+      "before": "Docs/기지_추가사항_검토.md",
+      "after": "Docs/Archive/2026-09-29/기지_추가사항_검토.md",
+      "classification": "historical",
+      "purpose": "현행 계약·현황·잔여 작업은 통합 기준에 흡수; 상세 설계/당시 증거는 기록 보존",
+      "sha256_before": "a45f964bccf74b2ad9d286be4029cdf2804d7f825868b8f3358164201a160835",
+      "sha256_after": "65961922c36af301ab72de2b3df6ce3a38684fb1875668c2c972fc0e217978b5"
+    },
+    {
+      "before": "Docs/기지기반_1차_적용결과.md",
+      "after": "Docs/Archive/2026-09-29/기지기반_1차_적용결과.md",
+      "classification": "historical",
+      "purpose": "현행 계약·현황·잔여 작업은 통합 기준에 흡수; 상세 설계/당시 증거는 기록 보존",
+      "sha256_before": "8038fb46c06fa637c83ebf26a59a694a1484eea6a16533bccc74ef3cb816149a",
+      "sha256_after": "97045a814176a11cb1293b0e2391ab59d1fe60795650fd1580c1b73fe5959914"
+    },
+    {
+      "before": "Docs/기차_노선_1차_적용결과.md",
+      "after": "Docs/Archive/2026-09-29/기차_노선_1차_적용결과.md",
+      "classification": "historical",
+      "purpose": "현행 계약·현황·잔여 작업은 통합 기준에 흡수; 상세 설계/당시 증거는 기록 보존",
+      "sha256_before": "1e48001baa71d8b0254dbe7eef85e353461cde6b1949b6824c93d222299b9e86",
+      "sha256_after": "e04dc404b2c1dd2c23258b79d003fb6cb4292cf1de628ee575737ae2bff9ee2d"
+    },
+    {
+      "before": "Docs/기차_노선_시스템_적용계획.md",
+      "after": "Docs/Archive/2026-09-29/기차_노선_시스템_적용계획.md",
+      "classification": "historical",
+      "purpose": "현행 계약·현황·잔여 작업은 통합 기준에 흡수; 상세 설계/당시 증거는 기록 보존",
+      "sha256_before": "5652bc60e9e3ce6d14471a4b224f1f8176c038b429783cc1672bc1df581c02b5",
+      "sha256_after": "81e0335d393cdb33047cf4ee12d38e17b526a1639c2a8f87eecef88da83e0311"
+    },
+    {
+      "before": "Docs/기차_노선_예약수정_적용결과.md",
+      "after": "Docs/Archive/2026-09-29/기차_노선_예약수정_적용결과.md",
+      "classification": "historical",
+      "purpose": "현행 계약·현황·잔여 작업은 통합 기준에 흡수; 상세 설계/당시 증거는 기록 보존",
+      "sha256_before": "0fdc03d86d445d51c6ffec220532b66bcd97316b3e40888c34665c73c0fae138",
+      "sha256_after": "f331e3395ee88d60004014ba9a51319dfc501c2a4c26123f0eab9b4a58ca3f61"
+    },
+    {
+      "before": "Docs/기차_노선_원문대조_후속적용계획.md",
+      "after": "Docs/Archive/2026-09-29/기차_노선_원문대조_후속적용계획.md",
+      "classification": "historical",
+      "purpose": "현행 계약·현황·잔여 작업은 통합 기준에 흡수; 상세 설계/당시 증거는 기록 보존",
+      "sha256_before": "eda2e4b7c2efbf7470a2742eb3d8b1bdec328d76c0bd2d62bce23075e2bcef98",
+      "sha256_after": "5a4794ace42639a7a960b40eb72bd2b1029860ba4876059016a44202e7012926"
+    },
+    {
+      "before": "Docs/기차_노선_이동방어_통합결과.md",
+      "after": "Docs/Archive/2026-09-29/기차_노선_이동방어_통합결과.md",
+      "classification": "historical",
+      "purpose": "현행 계약·현황·잔여 작업은 통합 기준에 흡수; 상세 설계/당시 증거는 기록 보존",
+      "sha256_before": "8b6d9936333d78af84a373f4b4feecfee6c28a1b5ff476c293508b964d4b1ac3",
+      "sha256_after": "4684a0b72cdf5608fb9fdf59cab6abb58ae391a4c38a4259c8e5c35df6e632b8"
+    },
+    {
+      "before": "Docs/기차_노선_저장복구_안정화_적용결과.md",
+      "after": "Docs/Archive/2026-09-29/기차_노선_저장복구_안정화_적용결과.md",
+      "classification": "historical",
+      "purpose": "현행 계약·현황·잔여 작업은 통합 기준에 흡수; 상세 설계/당시 증거는 기록 보존",
+      "sha256_before": "7026b50427f919174b4aa6adaa53766529a3775ae7c7c8572789304770ced3ff",
+      "sha256_after": "148de2f8607667a2d71b8192d9f2d0b5d78d1eeccac6309b3659a52193235e08"
+    },
+    {
+      "before": "Docs/기차_노선_현재수정목록.md",
+      "after": "Docs/Archive/2026-09-29/기차_노선_현재수정목록.md",
+      "classification": "historical",
+      "purpose": "현행 계약·현황·잔여 작업은 통합 기준에 흡수; 상세 설계/당시 증거는 기록 보존",
+      "sha256_before": "eccad0a269f0962065a5d89db789f5470ddc89b84032ef4725af7d96926188f9",
+      "sha256_after": "4b62087a6189a1e86a4bb555976d92b1d9281d976350855a62ddfc765bd25b5d"
+    },
+    {
+      "before": "Docs/단일_맵_저장_복원.md",
+      "after": "Docs/Archive/2026-09-29/단일_맵_저장_복원.md",
+      "classification": "historical",
+      "purpose": "현행 계약·현황·잔여 작업은 통합 기준에 흡수; 상세 설계/당시 증거는 기록 보존",
+      "sha256_before": "e89738d616ce7ddc66f356b3c3122103f58bd1466b4a9ff1f1f952953c27d6cb",
+      "sha256_after": "41dd9444de26f7002798aed31b00b89adeb57e20bd42969133eda08db47e315b"
+    },
+    {
+      "before": "Docs/데모_실행_안내.md",
+      "after": "Docs/Archive/2026-09-29/데모_실행_안내.md",
+      "classification": "historical",
+      "purpose": "현행 계약·현황·잔여 작업은 통합 기준에 흡수; 상세 설계/당시 증거는 기록 보존",
+      "sha256_before": "341282162e04c5a5c689788e9e08ea18b8def0819980e5b33b8eca2b4091b75e",
+      "sha256_after": "5a95af0052c1a99f42260f7fa28c531b527170871ec0d06230fe07c73750ae91"
+    },
+    {
+      "before": "Docs/드래그_건설_편집.md",
+      "after": "Docs/Archive/2026-09-29/드래그_건설_편집.md",
+      "classification": "historical",
+      "purpose": "현행 계약·현황·잔여 작업은 통합 기준에 흡수; 상세 설계/당시 증거는 기록 보존",
+      "sha256_before": "a1863cec63252bae1c8f86829714d1e584fa518d49ec10e5605fc785937e6b9d",
+      "sha256_after": "d4f73d988d56994007ca83166723f89e219979274fba56b12665e1dcd227086c"
+    },
+    {
+      "before": "Docs/레거시_공통_건물_연결.md",
+      "after": "Docs/Archive/2026-09-29/레거시_공통_건물_연결.md",
+      "classification": "historical",
+      "purpose": "현행 계약·현황·잔여 작업은 통합 기준에 흡수; 상세 설계/당시 증거는 기록 보존",
+      "sha256_before": "6da6379cd986606d59ae449c864a692438e4a85402eb7a768148cad8556923e9",
+      "sha256_after": "486c1f25eedfc6fc93465433fdd9f3f9b986408546f0abd968b3847f684184ed"
+    },
+    {
+      "before": "Docs/레거시_배치_분리.md",
+      "after": "Docs/Archive/2026-09-29/레거시_배치_분리.md",
+      "classification": "historical",
+      "purpose": "현행 계약·현황·잔여 작업은 통합 기준에 흡수; 상세 설계/당시 증거는 기록 보존",
+      "sha256_before": "75d295ff883998f748172faf337248c1f583dea72a537d634d879045c12829cf",
+      "sha256_after": "111eddaf7a2944a25638da55d87a54d83e69876dca800b6f5df0b8c1381831bf"
+    },
+    {
+      "before": "Docs/레거시_전투_분리.md",
+      "after": "Docs/Archive/2026-09-29/레거시_전투_분리.md",
+      "classification": "historical",
+      "purpose": "현행 계약·현황·잔여 작업은 통합 기준에 흡수; 상세 설계/당시 증거는 기록 보존",
+      "sha256_before": "7860fd2c119dbcb180c574be8ebbc4f311021d8ff855fcf11a5b9d0b6a0766c6",
+      "sha256_after": "91ddc74bff39197b00aa4e384a8664138dd002c213def60b8b8a147ecf79a418"
+    },
+    {
+      "before": "Docs/로비_재화_성장_개발계획.md",
+      "after": "Docs/Archive/2026-09-29/로비_재화_성장_개발계획.md",
+      "classification": "historical",
+      "purpose": "현행 계약·현황·잔여 작업은 통합 기준에 흡수; 상세 설계/당시 증거는 기록 보존",
+      "sha256_before": "21472b5aec257317889d88f6fca16fdf446b8c7c910ba58ffa4451bc323e3295",
+      "sha256_after": "ca10f211a819c43abe50484bcb24f49ac7c7ea34393f86af1fa3a1d92825a5c1"
+    },
+    {
+      "before": "Docs/맵에너지_야간소환_오브_적용결과.md",
+      "after": "Docs/Archive/2026-09-29/맵에너지_야간소환_오브_적용결과.md",
+      "classification": "historical",
+      "purpose": "현행 계약·현황·잔여 작업은 통합 기준에 흡수; 상세 설계/당시 증거는 기록 보존",
+      "sha256_before": "a6d2206d7837b5452c5c94ee9e16ff860ddcf67909b647ee5c3d4fcb8782f75c",
+      "sha256_after": "e35baebeb45a55b2329b57e62ea681963423c3691c34552382e3367a87cb30d6"
+    },
+    {
+      "before": "Docs/문서_세부항목_적용_대조.md",
+      "after": "Docs/Archive/2026-09-29/문서_세부항목_적용_대조.md",
+      "classification": "historical",
+      "purpose": "현행 계약·현황·잔여 작업은 통합 기준에 흡수; 상세 설계/당시 증거는 기록 보존",
+      "sha256_before": "fb856beadac65f521f1e36b6cb3ed4dab749977964a78ca18cd1c05ec33aede1",
+      "sha256_after": "bd35c49c1376a32a776c0fdd32a78c11ebefbc6fa7accefae551d6ac5f71436f"
+    },
+    {
+      "before": "Docs/미니맵_적용결과.md",
+      "after": "Docs/Archive/2026-09-29/미니맵_적용결과.md",
+      "classification": "historical",
+      "purpose": "현행 계약·현황·잔여 작업은 통합 기준에 흡수; 상세 설계/당시 증거는 기록 보존",
+      "sha256_before": "0730983d316b6fd2a464d0b795d1d8a50c40064da76b177bebff0c1d0ca1a6db",
+      "sha256_after": "1d450c081ed072873f12caae5010bc7ef2a36194393e764ead1d83f9de87e12c"
+    },
+    {
+      "before": "Docs/방벽_건물피격_적공격_적용결과.md",
+      "after": "Docs/Archive/2026-09-29/방벽_건물피격_적공격_적용결과.md",
+      "classification": "historical",
+      "purpose": "현행 계약·현황·잔여 작업은 통합 기준에 흡수; 상세 설계/당시 증거는 기록 보존",
+      "sha256_before": "ee7cb754d249ce49d78e2aee96748557748f3249d6047d507dedb0f49830e177",
+      "sha256_after": "38d6f4a20d19412785389d69039b4447c0cbe0014a0b2f3694271718c087f36e"
+    },
+    {
+      "before": "Docs/배치_수정_임시_UI_적용.md",
+      "after": "Docs/Archive/2026-09-29/배치_수정_임시_UI_적용.md",
+      "classification": "historical",
+      "purpose": "현행 계약·현황·잔여 작업은 통합 기준에 흡수; 상세 설계/당시 증거는 기록 보존",
+      "sha256_before": "9cad46cb193a59f4a790e922ca04810875a28505b0cc7c6525d8804b5e8ad886",
+      "sha256_after": "f05f2d23616488f456a4853d8feaae7071f0ce258972261ba06a8099d9425315"
+    },
+    {
+      "before": "Docs/선택_모듈_확장_안내.md",
+      "after": "Docs/Archive/2026-09-29/선택_모듈_확장_안내.md",
+      "classification": "historical",
+      "purpose": "현행 계약·현황·잔여 작업은 통합 기준에 흡수; 상세 설계/당시 증거는 기록 보존",
+      "sha256_before": "bd7ee68ca12038a2e484dabf21c745e501e2e20321cbb10ed7499caaef993580",
+      "sha256_after": "05807af26bab22ef131d70f16dd8a9e8b2f075ef5c1e0405131ef739d1730448"
+    },
+    {
+      "before": "Docs/시간시스템_UI_적용결과.md",
+      "after": "Docs/Archive/2026-09-29/시간시스템_UI_적용결과.md",
+      "classification": "historical",
+      "purpose": "현행 계약·현황·잔여 작업은 통합 기준에 흡수; 상세 설계/당시 증거는 기록 보존",
+      "sha256_before": "469d8b52962c36ab84542e70d448d0997aee39c223fe5b3dde34f4f40e883a29",
+      "sha256_after": "85ce0806124a1a594f8de9002f5acec05e6fae81948b00eb53590f468b890719"
+    },
+    {
+      "before": "Docs/연구기획_물량감과_적_출현_설계.md",
+      "after": "Docs/Archive/2026-09-29/연구기획_물량감과_적_출현_설계.md",
+      "classification": "historical",
+      "purpose": "현행 계약·현황·잔여 작업은 통합 기준에 흡수; 상세 설계/당시 증거는 기록 보존",
+      "sha256_before": "1d3ede3bbb0daa328f35c795101de3cb39fcb939779369a476b9b1ea410bd4b2",
+      "sha256_after": "d68881f580b8290d8835112c2a8aa466f5575687518d1218429b8a0a60fc8c0f"
+    },
+    {
+      "before": "Docs/오픈월드_테스트_공간.md",
+      "after": "Docs/Archive/2026-09-29/오픈월드_테스트_공간.md",
+      "classification": "historical",
+      "purpose": "현행 계약·현황·잔여 작업은 통합 기준에 흡수; 상세 설계/당시 증거는 기록 보존",
+      "sha256_before": "3a596b4ef5241faeee8ec1f9d4be358c90fd0c10e60d73dda4e7af5e743d58a2",
+      "sha256_after": "05c6e9be1161782150f4d3113f0b5c13e099900c6670c04b63e91c1cd52b85b0"
+    },
+    {
+      "before": "Docs/이터널스팀_레퍼런스_분석_및_데모_설계.md",
+      "after": "Docs/Archive/2026-09-29/이터널스팀_레퍼런스_분석_및_데모_설계.md",
+      "classification": "historical",
+      "purpose": "현행 계약·현황·잔여 작업은 통합 기준에 흡수; 상세 설계/당시 증거는 기록 보존",
+      "sha256_before": "c5dec733b6f4a2479ffd748bbc37f4b92c2f0fc8d48a87030c31107e841a0b5a",
+      "sha256_after": "1c3d3d7589468e12272e06a19eb8a6c78f4c36c6b04545fc9380ebd8cac99e83"
+    },
+    {
+      "before": "Docs/자원_방어_건물_적용_결과.md",
+      "after": "Docs/Archive/2026-09-29/자원_방어_건물_적용_결과.md",
+      "classification": "historical",
+      "purpose": "현행 계약·현황·잔여 작업은 통합 기준에 흡수; 상세 설계/당시 증거는 기록 보존",
+      "sha256_before": "c77f3a034a631accf755ddcec39814518e12756c2851e8b855a07ca9328ecbbd",
+      "sha256_after": "5325ed7f4aeb89d27dc10d12528459ecd39132682b977889f1f4e71997d7b506"
+    },
+    {
+      "before": "Docs/자원_방어_건물_적용_계획.md",
+      "after": "Docs/Archive/2026-09-29/자원_방어_건물_적용_계획.md",
+      "classification": "historical",
+      "purpose": "현행 계약·현황·잔여 작업은 통합 기준에 흡수; 상세 설계/당시 증거는 기록 보존",
+      "sha256_before": "0c493b24bffb69b2573a4e11b21022741eb07e1deddd48990e718bd9571c6cc2",
+      "sha256_after": "49590c51aa3200e17f67d160e9aeb9f54cdc799e8c77a0684baf4a7980b9daaa"
+    },
+    {
+      "before": "Docs/자원생산_상단UI_적용.md",
+      "after": "Docs/Archive/2026-09-29/자원생산_상단UI_적용.md",
+      "classification": "historical",
+      "purpose": "현행 계약·현황·잔여 작업은 통합 기준에 흡수; 상세 설계/당시 증거는 기록 보존",
+      "sha256_before": "1cea463873a0aaeee4429c40ee06b1075906d783bef1c25a5d94b1b8d12bb2aa",
+      "sha256_after": "40017391db495bfe2abf185f8d53e41edbef848ead21990836940005c3c0802b"
+    },
+    {
+      "before": "Docs/적전투_최적화_결과.md",
+      "after": "Docs/Archive/2026-09-29/적전투_최적화_결과.md",
+      "classification": "historical",
+      "purpose": "현행 계약·현황·잔여 작업은 통합 기준에 흡수; 상세 설계/당시 증거는 기록 보존",
+      "sha256_before": "fc1029758aa7d9ff77ea5994cf536b1d0d73839270a163f67f2e7cdad3d7bc9a",
+      "sha256_after": "f3e004101c36109c33d4bca012ff0f2d3ecfa67bdaa43e70333575fa1a20ece2"
+    },
+    {
+      "before": "Docs/전체문서_구현현황_검토.md",
+      "after": "Docs/Archive/2026-09-29/전체문서_구현현황_검토.md",
+      "classification": "historical",
+      "purpose": "현행 계약·현황·잔여 작업은 통합 기준에 흡수; 상세 설계/당시 증거는 기록 보존",
+      "sha256_before": "7421e1ff65b578758e8a7a1dbe05c0571c9c84ce5bd11579a3756aa77229a90d",
+      "sha256_after": "cd20f02b4be751b994ab206425e49b856094669285e8d3f1dddccca348384be6"
+    },
+    {
+      "before": "Docs/최소완결_적용계획.md",
+      "after": "Docs/Archive/2026-09-29/최소완결_적용계획.md",
+      "classification": "historical",
+      "purpose": "현행 계약·현황·잔여 작업은 통합 기준에 흡수; 상세 설계/당시 증거는 기록 보존",
+      "sha256_before": "6ba732ec55ae23d50d817614a4737061ddfcf43fab8bcd3a74115707a91e1e74",
+      "sha256_after": "b642e47161bba9a0b0df6252e49f8234226df0563939308b0c3ce46b5a5a5a10"
+    },
+    {
+      "before": "Docs/추가_개선_백로그.md",
+      "after": "Docs/Archive/2026-09-29/추가_개선_백로그.md",
+      "classification": "historical",
+      "purpose": "현행 계약·현황·잔여 작업은 통합 기준에 흡수; 상세 설계/당시 증거는 기록 보존",
+      "sha256_before": "16aee62f145283c224a17d0436f16605aee6dd9e08305a1b8d8b584a72bbe7dd",
+      "sha256_after": "57e3636f4b327b5f3223ec823b2afa0d391566b199ecde5cb9fd3850ffe73f2a"
+    },
+    {
+      "before": "Docs/추가_맵프리팹_적용.md",
+      "after": "Docs/Archive/2026-09-29/추가_맵프리팹_적용.md",
+      "classification": "historical",
+      "purpose": "현행 계약·현황·잔여 작업은 통합 기준에 흡수; 상세 설계/당시 증거는 기록 보존",
+      "sha256_before": "16e94842a773face731e94f601d73cf1a944d2fd86dd95d3358fbbde1a3cdc4f",
+      "sha256_after": "3c9ad2e877b2806eb9856f7a00f4e011b0a32c406bc476f320b400f8096a735a"
+    },
+    {
+      "before": "Docs/폴더_구조.md",
+      "after": "Docs/Archive/2026-09-29/폴더_구조.md",
+      "classification": "historical",
+      "purpose": "현행 계약·현황·잔여 작업은 통합 기준에 흡수; 상세 설계/당시 증거는 기록 보존",
+      "sha256_before": "7e9fa0e84c26888e5afee8fdd05903ad57efd7e7f2dadc48733fd2ed98f3e43f",
+      "sha256_after": "414aa4087f607d70b7992b88e679613575b61c5d4715925a10daafe6e104f22e"
+    },
+    {
+      "before": "Docs/회의_건설기반_적용상태.md",
+      "after": "Docs/Archive/2026-09-29/회의_건설기반_적용상태.md",
+      "classification": "historical",
+      "purpose": "현행 계약·현황·잔여 작업은 통합 기준에 흡수; 상세 설계/당시 증거는 기록 보존",
+      "sha256_before": "f104441d60aa518c276bfba998dfd24f52817f9256114daefba82e2989c03a7a",
+      "sha256_after": "2659985ea2f62701b9e8bb703eaf33c87ef77a60970698eba7fba707402053ae"
+    },
+    {
+      "before": "Docs/회의록_다중기지_운영체계_적용계획.md",
+      "after": "Docs/Archive/2026-09-29/회의록_다중기지_운영체계_적용계획.md",
+      "classification": "historical",
+      "purpose": "현행 계약·현황·잔여 작업은 통합 기준에 흡수; 상세 설계/당시 증거는 기록 보존",
+      "sha256_before": "2f57f3ea0824d2b6f231f1b3c953d621feac6c9ea4e64ce32591b3e486ad1b9c",
+      "sha256_after": "991ee7657182dc6d1cab35219edebd8ccb3e70e9fc291735af39af7b3f46afa8"
+    }
+  ],
+  "hash_scope": "Before hashes are exact bytes in documents-before.tar.gz captured immediately before consolidation; after hashes are files at consolidation validation time. External reference documents may continue independent updates."
+}

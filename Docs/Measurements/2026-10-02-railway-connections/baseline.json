@@ -1,0 +1,85 @@
+{
+  "head": "7e6dabe890603bdd183c4680420fd53986d3498e",
+  "files": [
+    {
+      "path": "Assets/EternalSteam/Code/Railway/TrainArmament.cs",
+      "sha256": "be3c9477c11328f59ff7dc71678012829fd2acd859feb65f96098448cb4ed239"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Railway/RailwayNetwork.cs",
+      "sha256": "8db9340be7da7a63d24eb5974d5235e1dc54f9035115695db1395c79dd0efcf7"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Railway/RailwayShuttle.cs",
+      "sha256": "f43e265b247171667cd7efa08d9eb3c9e5ed7cb212e5212813158c9046d2434b"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Railway/RailFacilityDefinition.cs",
+      "sha256": "ccf8b8f9758ccfa514d9e4507e19c503eb1cdd3f25a7b98ac51cbc6daabd808e"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Railway/RailwayRevisions.cs",
+      "sha256": "0ceea365d3fcdb9789fbbefddfba09c0c2a7937e8c4e69a513cc10d282cf9d24"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Railway/RailwayStationSlots.cs",
+      "sha256": "5cac6ac1fbf8effe3cfccede9008caffdac26486086ee5b88684d4e589288ae2"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/RailwayController.cs",
+      "sha256": "5a01f629d6ad0ea09cd4cf69fb796e5cee938d3798b1248625a5933de6c93b4d"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/RailwayHud.cs",
+      "sha256": "8216f08864a6f8e576c94d59e231b46c79ca4179d96ba7b9c55bdea8aefd9200"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/WorldEditSession.cs",
+      "sha256": "0c77a6a3d6f1fa8a02845d79b3d0c121a156bc7bb805ad075006d27750ed352b"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/SingleMapPersistence.cs",
+      "sha256": "2659f51617de66a484712429f9802ffee247113f748185097742608a82d796ec"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/OpenWorldInput.cs",
+      "sha256": "4436be4a1ba9c15ac9a569c0fc30bc548b5d13bf0a23a3f6d89167b2d0ba635f"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/EditMode/RailwayShuttleTests.cs",
+      "sha256": "41bd009156d355e6cd7a2da5a55700e3a5edbd39f23ff710d1a1e3dffd9a0279"
+    },
+    {
+      "path": "Docs/프로젝트_통합기준.md",
+      "sha256": "51a8830949f077bae916e8321a63c73a5c926cadefd49616680cc5a40ba3abc9"
+    },
+    {
+      "path": "Assets/EternalSteam/Scene/Tests/StartRegionSandbox.unity",
+      "sha256": "3b7a8d83a9c00f6d6e6c0f7fb637395dc6bec0fed30016d269166942e4568994"
+    },
+    {
+      "path": "Assets/EternalSteam/Scene/Tests/OpenWorldSandbox.unity",
+      "sha256": "956632a3715da6922df124c0d57ee43ac5aa3e1df5bff125518ba28041da6757"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Placement/BuildingWorld.cs",
+      "sha256": "8b930f746e0052b35bb73996fdbf4ba6542d982ed7f8a61a1e0135795387cff2"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/EditMode/RailwayTests.cs",
+      "sha256": "cc07928b9b194d23b69f87058778944691113911c4a655b6ecae86adf902e10c"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/CanvasWorldHud.cs",
+      "sha256": "7d7b207539afe197407339d89b53751c62e58152f3793cbd93d4bca8fd2de642"
+    },
+    {
+      "path": "Packages/manifest.json",
+      "sha256": "e04f49af4cda7b383aff46c99d93bc5347644ba7250cd4c50e4d91cffc2a57cf"
+    },
+    {
+      "path": "Packages/packages-lock.json",
+      "sha256": "e7b8004595cd4faf0cc7dbc09cc0956bcfc92c668ba4390479380a66f473dffb"
+    }
+  ]
+}

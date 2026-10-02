@@ -1,0 +1,42 @@
+{
+  "date": "2026-09-29",
+  "scope": "A5 exact train cargo acceptance quantities ACC-007/015/019",
+  "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam",
+  "cases": {
+    "ACC-007": {
+      "setup": "A load 100, B unload 30, C unload 40; B and C capacity 1000",
+      "result": "A iron 200, B iron 30, C iron 40, cargo 30; conserved from A initial 300",
+      "name": "EternalSteam.Tests.RailwayTests.ThreeBaseDistributionPreservesRemainder(30,40,1000,40,30)",
+      "status": "Passed"
+    },
+    "ACC-015": {
+      "setup": "Cargo 50, B unload target 80, no same-visit load",
+      "result": "B receives 50, cargo becomes 0, A stock unchanged",
+      "name": "EternalSteam.Tests.RailwayTests.Acc015_UnloadOnlyDropsRemainingFiftyWhenTargetIsEighty",
+      "status": "Passed"
+    },
+    "ACC-019": {
+      "setup": "A load target 1000, cargo 300/free 700, available A stock 300",
+      "result": "First visit loads only 300; after 200 stock added, next visit loads 200 without changing B stock",
+      "name": "EternalSteam.Tests.RailwayTests.Acc019_ThousandTargetLoadsAvailableThreeHundredThenRetriesNextVisit",
+      "status": "Passed"
+    }
+  },
+  "railwayEditMode": {
+    "Total": 59,
+    "Passed": 59,
+    "Failed": 0,
+    "Skipped": 0,
+    "Inconclusive": 0
+  },
+  "allEditMode": {
+    "Total": 191,
+    "Passed": 191,
+    "Failed": 0,
+    "Skipped": 0,
+    "Inconclusive": 0
+  },
+  "limits": [
+    "Core RailwayNetwork model tests; physical UI input and three-base scene construction are separate QA"
+  ]
+}

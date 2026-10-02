@@ -21,13 +21,13 @@ namespace EternalSteam
         static void CheckId(string id){if(!Guid.TryParseExact(id,"N",out _))throw new InvalidDataException("Invalid run ID");}
         string FailurePath(string id){CheckId(id);return Path.Combine(directory,"failures",id+".failed");}
         public bool IsFailed(string id)=>File.Exists(FailurePath(id));
-        static SaveEnvelope Decode(string path){var info=new FileInfo(path);if(info.Length>64*1024*1024)throw new InvalidDataException("Save too large");var data=JsonUtility.FromJson<SaveEnvelope>(File.ReadAllText(path));if(data==null)throw new InvalidDataException("Missing save");if(data.version!=1)throw new IncompatibleSaveException("지원하지 않는 저장 버전입니다.");CheckId(data.runId);if(data.payload==null||data.checksum!=Digest(data.runId+"\n"+data.payload))throw new InvalidDataException("저장 파일 무결성 오류");return data;}
+        static SaveEnvelope Decode(string path){var info=new FileInfo(path);if(info.Length>64*1024*1024)throw new InvalidDataException("Save too large");SaveEnvelope data;try{data=JsonUtility.FromJson<SaveEnvelope>(File.ReadAllText(path));}catch(ArgumentException e){throw new InvalidDataException("Invalid save JSON",e);}if(data==null)throw new InvalidDataException("Missing save");if(data.version!=1)throw new IncompatibleSaveException("지원하지 않는 저장 버전입니다.");CheckId(data.runId);if(data.payload==null||data.checksum!=Digest(data.runId+"\n"+data.payload))throw new InvalidDataException("저장 파일 무결성 오류");return data;}
         public SaveRead Read()
         {
             if(File.Exists(NewGameMarker))return new SaveRead();
             foreach(var path in new[]{CurrentPath,BackupPath}){
                 if(!File.Exists(path))continue;
-                try{var data=Decode(path);if(IsFailed(data.runId))return new SaveRead{RunId=data.runId,Blocked=true,Error="패배한 진행입니다. 새 게임만 가능합니다."};return new SaveRead{Payload=data.payload,RunId=data.runId,Recovered=path==BackupPath};}
+                try{var data=Decode(path);if(IsFailed(data.runId))return new SaveRead{Payload=data.payload,RunId=data.runId,Blocked=true,Error="패배한 진행입니다. 새 게임만 가능합니다."};return new SaveRead{Payload=data.payload,RunId=data.runId,Recovered=path==BackupPath};}
                 catch(IncompatibleSaveException e){return new SaveRead{Blocked=true,Error=e.Message};}
                 catch(Exception e){if(path==BackupPath||!File.Exists(BackupPath))return new SaveRead{Blocked=true,Error="저장을 읽을 수 없습니다: "+e.Message};}
             }return new SaveRead();
@@ -43,6 +43,18 @@ namespace EternalSteam
             AtomicWrite(CurrentPath,JsonUtility.ToJson(data,true),true);Decode(CurrentPath);if(File.Exists(NewGameMarker))File.Delete(NewGameMarker);
         }
         public void MarkFailed(string runId)=>AtomicWrite(FailurePath(runId),DateTime.UtcNow.ToString("O"));
+        public void PreserveMigrationSource(string payload)
+        {
+            if(payload==null)throw new ArgumentNullException(nameof(payload));
+            string root=Path.Combine(directory,"migrations");
+            Directory.CreateDirectory(root);
+            string archive=Path.Combine(root,Digest(payload).Replace('/','_').Replace('+','-'));
+            if(Directory.Exists(archive))return;
+            Directory.CreateDirectory(archive);
+            foreach(var path in new[]{CurrentPath,BackupPath})
+                if(File.Exists(path))File.Copy(path,Path.Combine(archive,Path.GetFileName(path)));
+            AtomicWrite(Path.Combine(archive,"source-payload.json"),payload);
+        }
         public void Archive()
         {
             string archive=Path.Combine(directory,"archive",DateTime.UtcNow.ToString("yyyyMMdd-HHmmss")+"-"+Guid.NewGuid().ToString("N"));

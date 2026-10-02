@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/FinishTrainHudIntegration.cs",
+      "entry": "FinishTrainHudIntegration.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 22,
+      "executeMs": 1,
+      "assemblyName": "PipelineRunScript_FinishTrainHudIntegration_62a8003873834a33bbba64607ee8b96a",
+      "success": true,
+      "result": "{\n  \"result\": \"PASS\",\n  \"scene\": \"Assets/EternalSteam/Scene/Tests/StartRegionSandbox.unity\",\n  \"sceneDirty\": false,\n  \"playMode\": false,\n  \"runInBackground\": false,\n  \"saveOverrideCleared\": true,\n  \"catalogLabels\": [\n    \"서브 기지\",\n    \"테슬라 타워\",\n    \"플라즈마 레이저 포탑\",\n    \"발칸 대공포\",\n    \"레일 대공포\",\n    \"아크 블래스터\",\n    \"레일건 터렛\",\n    \"스카이 플라즈마 포탑\",\n    \"스마트 미사일 발사대\",\n    \"EMP 펄스 타워\",\n    \"외부 전초\",\n    \"방벽\",\n    \"구리 생성기\",\n    \"철 생성기\",\n    \"나노메탈 생성기\",\n    \"플라즈마 생성기\",\n    \"티타늄 생성기\",\n    \"텅스텐 생성기\",\n    \"우라늄 생성기\",\n    \"전력 발전기\",\n    \"기관총\",\n    \"화염\",\n    \"미사일\",\n    \"레이저\",\n    \"토대 8×8m\",\n    \"기차역 · 철 10\",\n    \"선로 · 철 1\",\n    \"석탄 생성기\"\n  ],\n  \"selectedLabelCleanup\": true,\n  \"researchExperiment\": false\n}"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

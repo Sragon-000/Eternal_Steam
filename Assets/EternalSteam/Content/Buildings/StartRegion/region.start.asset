@@ -16,9 +16,9 @@ MonoBehaviour:
   DisplayName: "\uC2A4\uD0C0\uD2B8 \uC9C0\uC5ED A"
   Bounds:
     serializedVersion: 2
-    x: -136.57286
-    y: -136.57285
-    width: 136.57285
-    height: 273.1457
+    x: -341.09772
+    y: -348.8759
+    width: 353.82562
+    height: 707.65125
   ResourceId: verification.iron
   VerificationSettings: 1

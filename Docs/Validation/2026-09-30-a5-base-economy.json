@@ -1,0 +1,25 @@
+{
+  "date": "2026-09-30",
+  "scope": "A5 기지별 생산·저장 용량과 v2 재로드",
+  "changes": [
+    "BaseRules 씬의 생산·저장 모듈을 건물 소속 기지 재고에 연결",
+    "v2 재로드 때 저장 수량을 복원하고 용량은 활성 건물과 현행 콘텐츠 기준으로 재구성",
+    "v1 공용 수량 이관에도 재구성된 기지 용량 유지"
+  ],
+  "verification": {
+    "unityRecompile": "completed; failed=false; errors=[]",
+    "editMode": {"total": 195, "passed": 195, "failed": 0},
+    "unitCase": "서로 다른 두 기지의 저장 용량 10/20과 생산 재고 분리, 저장된 가짜 용량 999 무시, 창고 제거 뒤 초과 재고 보존",
+    "playFixture": "/tmp/eternal-a5-economy-reload-20260930 (기존 3기지 v2 저장본의 복사본)",
+    "existingV2Reload": "기지 3개, 철 200/30/40, 각 기본 용량 1000000, 복원 차단 없음",
+    "production": "메인 기지 범위 (6,10)에 철 생성기 설치; 2초 Tick에서 메인 철 200→201, 공용 철 0 유지",
+    "saveReload": "실제 안전 저장·씬 재로드 후 기지 3개, 메인 철 201, 작동 중인 철 생성기와 기본 용량 1000000 유지",
+    "editorRestored": "Play=false, save root unset, runInBackground=false, sceneDirty=false"
+  },
+  "followUp": "2026-09-30-a5-storage-play.json: 임시 저장 모듈을 실제 카탈로그 에셋에 붙여 두 기지 설치·2회 재로드·철거·초과 재고 보존 통과; 이후 전체 EditMode 198/198 통과",
+  "limits": [
+    "제품 카탈로그에는 영구 저장 건물 정의가 없다. 추가 용량·철거의 실제 씬 Play 인수는 후속 임시 모듈 구성으로 검증했다.",
+    "이전 500×500 맵 교체 전 구성 지문의 저장본은 이 변경으로 허용하지 않는다.",
+    "기존 v2의 공용 재고에 남아 있는 생산량을 기지별 재고로 자동 배분하지 않는다. 출처가 모호한 기존 잔량 이관 정책은 별도 결정이 필요하다."
+  ]
+}

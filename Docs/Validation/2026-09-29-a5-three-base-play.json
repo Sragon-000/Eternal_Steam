@@ -1,0 +1,39 @@
+{
+  "date": "2026-09-29",
+  "scope": "A5 actual three-base railway distribution and saved HUD callbacks",
+  "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam",
+  "fixture": {
+    "scene": "StartRegionSandbox",
+    "saveRoot": "/tmp/eternal-a5-threebase-live-v4",
+    "probe": "Tools/VerifyA5ThreeBasePlay.cs",
+    "construction": "Fresh main base; two sub bases at (-5,20) and (10,14); three active stations and 33 tracks on a terrain-valid closed route",
+    "operationalRailFacilities": "36/36"
+  },
+  "play": {
+    "hudConfiguration": "A load 100, B unload 30, C unload 40, cargo iron; fuel and start from railway HUD",
+    "initialIron": {"A": 300, "B": 0, "C": 0},
+    "atC": {"A": 200, "B": 30, "C": 40, "trainCargo": 30, "total": 300},
+    "prepareResult": "PASS actual three-base HUD configuration, fuel, 100 load/30+40 unload/30 cargo; isolated save and reload requested",
+    "reloadResult": "PASS actual v2 reload preserves three base inventories/route/cargo; saved route, configure, fuel and start button callbacks",
+    "reloadComparison": "Railway snapshot and all three base inventory records equal their saved values; C station context selects the third stop",
+    "savedButtonCallbacks": "Route row, C unload target change, C coal refuel, and start invoked through scene Button.onClick; no duplicate C service on restart"
+  },
+  "verification": {
+    "probeCompilation": "passed",
+    "productCodeChanged": false,
+    "latestFullEditMode": {"Total": 194, "Passed": 194, "Failed": 0}
+  },
+  "isolation": {
+    "editorStartedByAgent": false,
+    "productionSaveTouched": false,
+    "finalPlayMode": false,
+    "saveRootRestored": true,
+    "backgroundRestored": true,
+    "sceneDirty": false
+  },
+  "limits": [
+    "Station and track placement was performed through placement APIs; route configuration used HUD commands and persisted button callbacks.",
+    "Physical pointer input, keyboard focus, multiple resolutions and standalone build remain QA-06/07.",
+    "ACC-015 and ACC-019 quantities were covered by existing model tests, not repeated in this three-base Play fixture."
+  ]
+}

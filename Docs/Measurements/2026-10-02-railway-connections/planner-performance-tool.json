@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/MeasureRailPathPlanner.cs",
+      "entry": "MeasureRailPathPlanner.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 288,
+      "executeMs": 468,
+      "assemblyName": "PipelineRunScript_MeasureRailPathPlanner_8b4da93959544e889307c74f26b1de8c",
+      "success": true,
+      "result": "[\n  {\n    \"case\": \"500x500-empty\",\n    \"runs\": 20,\n    \"warmups\": 1,\n    \"medianMs\": 12.196100000000001,\n    \"p95Ms\": 16.997500000000002,\n    \"maxMs\": 17.102800000000002,\n    \"status\": \"Found\",\n    \"expanded\": 1498,\n    \"cells\": 999,\n    \"newCells\": 999\n  },\n  {\n    \"case\": \"500x500-wall\",\n    \"runs\": 20,\n    \"warmups\": 1,\n    \"medianMs\": 8.2888,\n    \"p95Ms\": 14.4854,\n    \"maxMs\": 15.4046,\n    \"status\": \"Found\",\n    \"expanded\": 1248,\n    \"cells\": 999,\n    \"newCells\": 999\n  }\n]"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

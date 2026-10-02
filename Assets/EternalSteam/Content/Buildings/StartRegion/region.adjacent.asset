@@ -16,9 +16,9 @@ MonoBehaviour:
   DisplayName: "\uC778\uC811 \uC9C0\uC5ED B"
   Bounds:
     serializedVersion: 2
-    x: -0.000015258789
-    y: -136.57285
-    width: 136.57285
-    height: 273.1457
+    x: 12.727905
+    y: -348.8759
+    width: 353.82562
+    height: 707.65125
   ResourceId: verification.copper
   VerificationSettings: 1

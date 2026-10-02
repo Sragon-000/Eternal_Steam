@@ -1,0 +1,28 @@
+{
+  "scope": "Unity Editor eval invokes existing test methods with Setup and Cleanup; not full NUnit runner or UI/save integration",
+  "results": [
+    {
+      "case": "UnassignedCargoSurvivesJsonAndAllowsOnlyFirstAssignment",
+      "argument": null,
+      "result": "PASS"
+    },
+    {
+      "case": "UnassignedCargoSurvivesJsonAndAllowsOnlyFirstAssignment",
+      "argument": "",
+      "result": "PASS"
+    },
+    {
+      "case": "UnassignedCargoCannotHideStockInSnapshot",
+      "result": "PASS"
+    },
+    {
+      "case": "StationErrorAllowsFurtherTrackRecoveryButProtectsOccupiedStation",
+      "result": "PASS"
+    },
+    {
+      "case": "MidSegmentErrorStillProtectsTrackAndStations",
+      "result": "PASS"
+    }
+  ],
+  "sceneReloadDisabled": false
+}

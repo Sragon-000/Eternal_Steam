@@ -1,0 +1,65 @@
+{
+  "date": "2026-09-29",
+  "id": "FIX-01",
+  "result": "complete",
+  "changes": [
+    "PerformanceUpgrade stores injected ILevelLimit and checks live cap and exemption in CanUpgrade/TryUpgrade",
+    "SingleMapPersistence validates saved levels of capped non-main buildings against saved campaign level; own maximum remains enforced"
+  ],
+  "editMode": {
+    "summary": {
+      "Total": 186,
+      "Passed": 186,
+      "Failed": 0,
+      "Skipped": 0,
+      "Inconclusive": 0
+    },
+    "targeted": [
+      {
+        "name": "EternalSteam.Tests.TrainDefenseTests.MountedModuleHonorsInjectedMainLevelEvenWhenCalledDirectly",
+        "status": "Passed"
+      },
+      {
+        "name": "EternalSteam.Tests.UpgradeQueryTests.PerformanceExemptionStillHonorsOwnMaximumAndActivity",
+        "status": "Passed"
+      },
+      {
+        "name": "EternalSteam.Tests.UpgradeQueryTests.PerformancePurchaseRechecksLiveMainLevelAndPreservesFundsOnRejection",
+        "status": "Passed"
+      }
+    ]
+  },
+  "actualPlay": [
+    {
+      "phase": "prepare",
+      "success": true,
+      "result": "PASS actual tesla, disabled button and callback guard, main growth, level2 callback, over-level validation rejection; normal scene reload requested",
+      "error": null
+    },
+    {
+      "phase": "normalReload",
+      "success": true,
+      "result": "PASS actual normal reload with level2 and disabled UI; over-level file reload requested",
+      "error": null
+    },
+    {
+      "phase": "invalidReload",
+      "success": true,
+      "result": "PASS actual over-level save reload blocked with reason; original file preserved",
+      "error": null
+    }
+  ],
+  "testIsolation": {
+    "root": "/tmp/eternal-fix01-live",
+    "editorProject": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam",
+    "userSaveTouched": false,
+    "originalSaveSourcePreserved": true,
+    "finalEditorMode": "Edit",
+    "finalSceneDirty": false,
+    "testRootRestored": true,
+    "runInBackgroundRestored": true
+  },
+  "limitations": [
+    "button callback invoked programmatically, physical mouse QA remains separate"
+  ]
+}

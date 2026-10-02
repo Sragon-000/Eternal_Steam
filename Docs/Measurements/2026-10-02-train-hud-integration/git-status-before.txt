@@ -1,0 +1,415 @@
+ M Assets/EternalSteam/Code/Building/BuildingModuleDefinition.cs
+ M Assets/EternalSteam/Code/Economy/PowerModuleDefinition.cs
+ M Assets/EternalSteam/Code/Economy/ProductionModuleDefinition.cs
+ M Assets/EternalSteam/Code/Economy/ResourceBank.cs
+ M Assets/EternalSteam/Code/Economy/StorageModuleDefinition.cs
+ M Assets/EternalSteam/Code/Economy/UpgradePurchase.cs
+ M Assets/EternalSteam/Code/LegacyDemo/Combat/HordeEnemyWorld.cs
+ M Assets/EternalSteam/Code/Persistence/JsonSaveStore.cs
+ M Assets/EternalSteam/Code/Placement/BuildingWorld.cs
+ M Assets/EternalSteam/Code/Progression/PerformanceUpgradeDefinition.cs
+ M Assets/EternalSteam/Content/Buildings/DocumentContent/DocumentBuildings.asset
+ M Assets/EternalSteam/Content/Buildings/StartLoop/Catalog.asset
+ M Assets/EternalSteam/Content/Buildings/StartLoop/MapAssault.asset
+ M Assets/EternalSteam/Content/Buildings/StartRegion/region.adjacent.asset
+ M Assets/EternalSteam/Content/Buildings/StartRegion/region.start.asset
+ M Assets/EternalSteam/Scene/Tests/OpenWorldSandbox.unity
+ M Assets/EternalSteam/Scene/Tests/StartRegionSandbox.unity
+ M Assets/EternalSteam/Shared/Fonts/NotoSansCJKkr-Dynamic.asset
+ M Assets/EternalSteam/Shared/Materials/Demo/DragSelection.mat
+ M Assets/EternalSteam/Tests/EditMode/BuildAreaCoverageTests.cs
+ M Assets/EternalSteam/Tests/EditMode/CanvasHierarchyTests.cs
+ M Assets/EternalSteam/Tests/EditMode/EternalSteam.EditModeTests.asmdef
+ M Assets/EternalSteam/Tests/EditMode/ExtensionTests.cs
+ M Assets/EternalSteam/Tests/EditMode/UpgradeQueryTests.cs
+ M Assets/EternalSteam/Tests/OpenWorld/Editor/EternalSteam.OpenWorldEditor.asmdef
+ M Assets/EternalSteam/Tests/OpenWorld/EternalSteam.OpenWorldSandbox.asmdef
+ M Assets/EternalSteam/Tests/OpenWorld/Runtime/BasePowerView.cs
+ M Assets/EternalSteam/Tests/OpenWorld/Runtime/CanvasWorldHud.cs
+ M Assets/EternalSteam/Tests/OpenWorld/Runtime/ConstructionDragEditor.cs
+ M Assets/EternalSteam/Tests/OpenWorld/Runtime/EnemyBuildingCombat.cs
+ M Assets/EternalSteam/Tests/OpenWorld/Runtime/EnemySpawnStream.cs
+ M Assets/EternalSteam/Tests/OpenWorld/Runtime/FreeCameraRig.cs
+ M Assets/EternalSteam/Tests/OpenWorld/Runtime/MapAssaultController.cs
+ M Assets/EternalSteam/Tests/OpenWorld/Runtime/MapAssaultSettings.cs
+ M Assets/EternalSteam/Tests/OpenWorld/Runtime/MapCoverage.cs
+ M Assets/EternalSteam/Tests/OpenWorld/Runtime/OpenWorldContent.cs
+ M Assets/EternalSteam/Tests/OpenWorld/Runtime/OpenWorldHud.cs
+ M Assets/EternalSteam/Tests/OpenWorld/Runtime/OpenWorldHudActions.cs
+ M Assets/EternalSteam/Tests/OpenWorld/Runtime/OpenWorldInput.cs
+ M Assets/EternalSteam/Tests/OpenWorld/Runtime/OpenWorldSandbox.cs
+ M Assets/EternalSteam/Tests/OpenWorld/Runtime/SelectedBuildingView.cs
+ M Assets/EternalSteam/Tests/OpenWorld/Runtime/SingleMapPersistence.cs
+ M Assets/EternalSteam/Tests/OpenWorld/Runtime/SingleMapSnapshot.cs
+ M Assets/EternalSteam/Tests/OpenWorld/Runtime/TileWorldGround.cs
+ M Assets/EternalSteam/Tests/OpenWorld/Runtime/WallPlacementStroke.cs
+ M Assets/EternalSteam/Tests/OpenWorld/Runtime/WorldClockView.cs
+ M Assets/EternalSteam/Tests/OpenWorld/Runtime/WorldEditSession.cs
+ M Assets/TileWorldCreator/Code/Attributes/BlueprintLayerAttribute.cs
+ M Assets/TileWorldCreator/Code/Attributes/BlueprintLayerSelectAttribute.cs
+ M Assets/TileWorldCreator/Code/Attributes/BuildLayerAttribute.cs
+ M Assets/TileWorldCreator/Code/Attributes/HelpBoxAttribute.cs
+ M Assets/TileWorldCreator/Code/Attributes/ModifierAttribute.cs
+ M Assets/TileWorldCreator/Code/Attributes/TWCOverlayIconAttribute.cs
+ M Assets/TileWorldCreator/Code/Attributes/TilePresetPopupAttribute.cs
+ M Assets/TileWorldCreator/Code/Components/ClusterIdentifier.cs
+ M Assets/TileWorldCreator/Code/Components/LayerIdentifier.cs
+ M Assets/TileWorldCreator/Code/Components/TileWorldCreatorManager.cs
+ M Assets/TileWorldCreator/Code/Data/BlueprintModifier.cs
+ M Assets/TileWorldCreator/Code/Data/Configuration.cs
+ M Assets/TileWorldCreator/Code/Data/Layers/BlueprintLayer.cs
+ M Assets/TileWorldCreator/Code/Data/Layers/BlueprintLayerFolder.cs
+ M Assets/TileWorldCreator/Code/Data/Layers/BuildLayer.cs
+ M Assets/TileWorldCreator/Code/Data/Layers/BuildLayerFolder.cs
+ M Assets/TileWorldCreator/Code/Data/Layers/BuildLayerMask.cs
+ M Assets/TileWorldCreator/Code/Data/Layers/ObjectBuildLayer.cs
+ M Assets/TileWorldCreator/Code/Data/Layers/TilesBuildLayer.cs
+ M Assets/TileWorldCreator/Code/Data/TileConfigurations.cs
+ M Assets/TileWorldCreator/Code/Data/TilePreset.cs
+ M Assets/TileWorldCreator/Code/Generators/BSPDungeon.cs
+ M Assets/TileWorldCreator/Code/Generators/CellularAutomata.cs
+ M Assets/TileWorldCreator/Code/Generators/Checkerboard.cs
+ M Assets/TileWorldCreator/Code/Generators/DotGrid.cs
+ M Assets/TileWorldCreator/Code/Generators/HeightTexture.cs
+ M Assets/TileWorldCreator/Code/Generators/Maze.cs
+ M Assets/TileWorldCreator/Code/Generators/Pathfinding.cs
+ M Assets/TileWorldCreator/Code/Generators/PoissonDiscSampling.cs
+ M Assets/TileWorldCreator/Code/Generators/RandomNoise.cs
+ M Assets/TileWorldCreator/Code/Generators/RandomWalkDungeon.cs
+ M Assets/TileWorldCreator/Code/Generators/Shapes.cs
+ M Assets/TileWorldCreator/Code/Modifiers/Add.cs
+ M Assets/TileWorldCreator/Code/Modifiers/Boolean.cs
+ M Assets/TileWorldCreator/Code/Modifiers/Expand.cs
+ M Assets/TileWorldCreator/Code/Modifiers/FindPositionOnIslands.cs
+ M Assets/TileWorldCreator/Code/Modifiers/Invert.cs
+ M Assets/TileWorldCreator/Code/Modifiers/PushToPaintPositions.cs
+ M Assets/TileWorldCreator/Code/Modifiers/Select.cs
+ M Assets/TileWorldCreator/Code/Modifiers/SelectBasedOnNeighbour.cs
+ M Assets/TileWorldCreator/Code/Modifiers/SelectByRule.cs
+ M Assets/TileWorldCreator/Code/Modifiers/SelectIslands.cs
+ M Assets/TileWorldCreator/Code/Modifiers/Shrink.cs
+ M Assets/TileWorldCreator/Code/Modifiers/Smooth.cs
+ M Assets/TileWorldCreator/Code/Modifiers/Subtract.cs
+ M Assets/TileWorldCreator/Code/UI/BlueprintPreviewImagePopup.cs
+ M Assets/TileWorldCreator/Code/UI/ConfigurationEditor.cs
+ M Assets/TileWorldCreator/Code/UI/LabelGizmoDrawer.cs
+ M Assets/TileWorldCreator/Code/UI/LayerIdentifierEditor.cs
+ M Assets/TileWorldCreator/Code/UI/Manipulators/BlueprintLayerItemDragManipulator.cs
+ M Assets/TileWorldCreator/Code/UI/Manipulators/BuildLayerItemDragManipulator.cs
+ M Assets/TileWorldCreator/Code/UI/PaintSceneOverlay.cs
+ M Assets/TileWorldCreator/Code/UI/PropertyDrawers/BlueprintLayerDropdown.cs
+ M Assets/TileWorldCreator/Code/UI/PropertyDrawers/BlueprintLayerPropertyDrawer.cs
+ M Assets/TileWorldCreator/Code/UI/PropertyDrawers/HelpBoxPropertyDrawer.cs
+ M Assets/TileWorldCreator/Code/UI/PropertyDrawers/TilePresetPopupPropertyDrawer.cs
+ M Assets/TileWorldCreator/Code/UI/TilePresetEditor.cs
+ M Assets/TileWorldCreator/Code/UI/TileWorldCreatorColors.cs
+ M Assets/TileWorldCreator/Code/UI/TileWorldCreatorManagerEditor.cs
+ M Assets/TileWorldCreator/Code/UI/TileWorldCreatorUIElements.cs
+ M Assets/TileWorldCreator/Code/UI/TileWorldCreatorWelcome.cs
+ M Assets/TileWorldCreator/Code/UI/UIElementsExtensions.cs
+ M Assets/TileWorldCreator/Code/UI/VisualElements/BlueprintLayerFolderListViewElement.cs
+ M Assets/TileWorldCreator/Code/UI/VisualElements/BlueprintLayerPopupSelector.cs
+ M Assets/TileWorldCreator/Code/UI/VisualElements/BuildLayerFolderListViewElement.cs
+ M Assets/TileWorldCreator/Code/UI/VisualElements/FoldoutElement.cs
+ M Assets/TileWorldCreator/Code/UI/VisualElements/LayerFoldoutElement.cs
+ M Assets/TileWorldCreator/Code/UI/VisualElements/LayerSelectDropdownElement.cs
+ M Assets/TileWorldCreator/Code/UI/VisualElements/TilePresetPopupSelector.cs
+ M Assets/TileWorldCreator/Code/UI/VisualElements/ToolbarButtonToggle.cs
+ M Assets/TileWorldCreator/Code/Utilities/EditorCoroutines.cs
+ M Assets/TileWorldCreator/Code/Utilities/Extensions.cs
+ M Assets/TileWorldCreator/Code/Utilities/GridMeshColliderGenerator.cs
+ M Assets/TileWorldCreator/Code/Utilities/MeshColliderGenerator.cs
+ M Assets/TileWorldCreator/Code/Utilities/RenderingLayerMask.cs
+ M Assets/TileWorldCreator/Code/Utilities/RenderingLayerMaskField.cs
+ M Assets/TileWorldCreator/Code/Utilities/SaveMeshAndPrefab.cs
+ M Assets/TileWorldCreator/Code/Utilities/ScriptableObjectCloner.cs
+ M Assets/TileWorldCreator/Code/Utilities/TileWorldCreatorUtilities.cs
+ M Assets/TileWorldCreator/Res/TileWorldCreator4_ResPath.cs
+ M Assets/TileWorldCreatorConfiguration.asset
+ D "Docs/BELTFED_UI_\354\213\234\354\225\210_\354\240\201\354\232\251\352\263\204\355\232\215.md"
+ D "Docs/BELTFED_UI_\354\213\244\354\240\234\354\240\201\354\232\251_\354\244\200\353\271\204.md"
+ D "Docs/Canvas_HUD_\353\260\200\353\217\204\352\260\234\354\204\240_\354\213\244\354\240\234\354\240\201\354\232\251\352\263\204\355\232\215.md"
+ M Docs/README.md
+ M Docs/References/BELTFED.md
+ M "Docs/References/BELTFED_UI_\354\213\234\354\225\210.md"
+ M "Docs/References/\353\240\210\355\215\274\353\237\260\354\212\244_\353\260\251\355\226\245\352\263\274_\354\213\234\354\236\221_\352\262\275\355\227\230.md"
+ M "Docs/Source/Conversation/\352\263\204\355\232\215\352\263\274_\355\233\204\354\206\215\352\262\260\354\240\225_\354\232\224\354\225\275.md"
+ M Docs/Source/README.md
+ M Docs/Source/manifest.json
+ D "Docs/TileWorldCreator_\352\267\270\353\246\254\353\223\234_\354\227\260\353\217\231_\353\260\217_\354\202\254\354\232\251_\353\262\224\354\234\204.md"
+ M Docs/Validation/2026-09-27-hud-foundation.md
+ M Docs/Validation/2026-09-28-build-area-hologram.md
+ M Docs/Validation/2026-09-28-compact-canvas-hud.md
+ M Docs/Validation/2026-09-28-hud-layout.md
+ D "Docs/\352\260\234\353\260\234_\353\252\250\353\223\210_\352\262\275\352\263\204.md"
+ D "Docs/\352\263\240\354\240\225_\353\251\224\354\235\270\352\270\260\354\247\200_\355\224\214\353\240\210\354\235\264\353\243\250\355\224\204_\354\240\201\354\232\251\352\262\260\352\263\274.md"
+ D "Docs/\352\263\265\354\234\240\353\240\210\353\262\250_\354\240\204\353\240\245_\354\212\244\355\217\260\354\230\201\354\227\255_\354\240\201\354\232\251\352\262\260\352\263\274.md"
+ D "Docs/\352\263\265\355\206\265_\352\270\260\353\260\230_\352\260\234\353\260\234_\354\225\210\353\202\264.md"
+ D "Docs/\352\270\260\354\247\200_\352\263\265\354\234\240\353\240\210\353\262\250_\354\240\204\353\240\245_\354\212\244\355\217\260\354\230\201\354\227\255_\354\240\201\354\232\251\352\263\204\355\232\215.md"
+ D "Docs/\352\270\260\354\247\200_\353\247\265\354\247\204\355\226\211_\354\227\220\353\204\210\354\247\200\354\230\244\353\270\214_\354\240\201\354\232\251\352\263\204\355\232\215.md"
+ D "Docs/\352\270\260\354\247\200_\354\266\224\352\260\200\354\202\254\355\225\255_\352\262\200\355\206\240.md"
+ D "Docs/\352\270\260\354\247\200\352\270\260\353\260\230_1\354\260\250_\354\240\201\354\232\251\352\262\260\352\263\274.md"
+ D "Docs/\353\213\250\354\235\274_\353\247\265_\354\240\200\354\236\245_\353\263\265\354\233\220.md"
+ D "Docs/\353\215\260\353\252\250_\354\213\244\355\226\211_\354\225\210\353\202\264.md"
+ D "Docs/\353\223\234\353\236\230\352\267\270_\352\261\264\354\204\244_\355\216\270\354\247\221.md"
+ D "Docs/\353\240\210\352\261\260\354\213\234_\352\263\265\355\206\265_\352\261\264\353\254\274_\354\227\260\352\262\260.md"
+ D "Docs/\353\240\210\352\261\260\354\213\234_\353\260\260\354\271\230_\353\266\204\353\246\254.md"
+ D "Docs/\353\240\210\352\261\260\354\213\234_\354\240\204\355\210\254_\353\266\204\353\246\254.md"
+ D "Docs/\353\241\234\353\271\204_\354\236\254\355\231\224_\354\204\261\354\236\245_\352\260\234\353\260\234\352\263\204\355\232\215.md"
+ D "Docs/\353\247\265\354\227\220\353\204\210\354\247\200_\354\225\274\352\260\204\354\206\214\355\231\230_\354\230\244\353\270\214_\354\240\201\354\232\251\352\262\260\352\263\274.md"
+ D "Docs/\353\254\270\354\204\234_\354\204\270\353\266\200\355\225\255\353\252\251_\354\240\201\354\232\251_\353\214\200\354\241\260.md"
+ D "Docs/\353\257\270\353\213\210\353\247\265_\354\240\201\354\232\251\352\262\260\352\263\274.md"
+ D "Docs/\353\260\251\353\262\275_\352\261\264\353\254\274\355\224\274\352\262\251_\354\240\201\352\263\265\352\262\251_\354\240\201\354\232\251\352\262\260\352\263\274.md"
+ D "Docs/\353\260\260\354\271\230_\354\210\230\354\240\225_\354\236\204\354\213\234_UI_\354\240\201\354\232\251.md"
+ D "Docs/\354\204\240\355\203\235_\353\252\250\353\223\210_\355\231\225\354\236\245_\354\225\210\353\202\264.md"
+ D "Docs/\354\213\234\352\260\204\354\213\234\354\212\244\355\205\234_UI_\354\240\201\354\232\251\352\262\260\352\263\274.md"
+ D "Docs/\354\227\260\352\265\254\352\270\260\355\232\215_\353\254\274\353\237\211\352\260\220\352\263\274_\354\240\201_\354\266\234\355\230\204_\354\204\244\352\263\204.md"
+ D "Docs/\354\230\244\355\224\210\354\233\224\353\223\234_\355\205\214\354\212\244\355\212\270_\352\263\265\352\260\204.md"
+ D "Docs/\354\235\264\355\204\260\353\204\220\354\212\244\355\214\200_\353\240\210\355\215\274\353\237\260\354\212\244_\353\266\204\354\204\235_\353\260\217_\353\215\260\353\252\250_\354\204\244\352\263\204.md"
+ D "Docs/\354\236\220\354\233\220_\353\260\251\354\226\264_\352\261\264\353\254\274_\354\240\201\354\232\251_\352\262\260\352\263\274.md"
+ D "Docs/\354\236\220\354\233\220_\353\260\251\354\226\264_\352\261\264\353\254\274_\354\240\201\354\232\251_\352\263\204\355\232\215.md"
+ D "Docs/\354\236\220\354\233\220\354\203\235\354\202\260_\354\203\201\353\213\250UI_\354\240\201\354\232\251.md"
+ D "Docs/\354\240\201\354\240\204\355\210\254_\354\265\234\354\240\201\355\231\224_\352\262\260\352\263\274.md"
+ D "Docs/\354\265\234\354\206\214\354\231\204\352\262\260_\354\240\201\354\232\251\352\263\204\355\232\215.md"
+ D "Docs/\354\266\224\352\260\200_\352\260\234\354\204\240_\353\260\261\353\241\234\352\267\270.md"
+ D "Docs/\354\266\224\352\260\200_\353\247\265\355\224\204\353\246\254\355\214\271_\354\240\201\354\232\251.md"
+ D "Docs/\355\217\264\353\215\224_\352\265\254\354\241\260.md"
+ D "Docs/\355\232\214\354\235\230_\352\261\264\354\204\244\352\270\260\353\260\230_\354\240\201\354\232\251\354\203\201\355\203\234.md"
+ D "Docs/\355\232\214\354\235\230\353\241\235_\353\213\244\354\244\221\352\270\260\354\247\200_\354\232\264\354\230\201\354\262\264\352\263\204_\354\240\201\354\232\251\352\263\204\355\232\215.md"
+ M Packages/manifest.json
+ M Packages/packages-lock.json
+ M ProjectSettings/ProjectSettings.asset
+ M README.md
+?? Assets/Editor.meta
+?? Assets/EternalSteam/Code/Economy/BaseInventoryRegistry.cs
+?? Assets/EternalSteam/Code/Economy/BaseInventoryRegistry.cs.meta
+?? Assets/EternalSteam/Code/Economy/ConstructionCostTable.cs
+?? Assets/EternalSteam/Code/Economy/ConstructionCostTable.cs.meta
+?? Assets/EternalSteam/Code/Economy/ConstructionPurchase.cs
+?? Assets/EternalSteam/Code/Economy/ConstructionPurchase.cs.meta
+?? Assets/EternalSteam/Code/Railway.meta
+?? Assets/EternalSteam/Code/Railway/
+?? Assets/EternalSteam/Content/Buildings/Railway.meta
+?? Assets/EternalSteam/Content/Buildings/Railway/
+?? Assets/EternalSteam/Content/Environments/StartRegion500.meta
+?? Assets/EternalSteam/Content/Environments/StartRegion500/
+?? Assets/EternalSteam/Scene/Tests/StartRegionSandbox_Before500Map.unity
+?? Assets/EternalSteam/Scene/Tests/StartRegionSandbox_Before500Map.unity.meta
+?? Assets/EternalSteam/Shared/UI/Railway.meta
+?? Assets/EternalSteam/Shared/UI/Railway/
+?? Assets/EternalSteam/Tests/EditMode/ConstructionCostTests.cs
+?? Assets/EternalSteam/Tests/EditMode/ConstructionCostTests.cs.meta
+?? Assets/EternalSteam/Tests/EditMode/DefenseCatalogParityTests.cs
+?? Assets/EternalSteam/Tests/EditMode/DefenseCatalogParityTests.cs.meta
+?? Assets/EternalSteam/Tests/EditMode/MapAssaultBoundaryTests.cs
+?? Assets/EternalSteam/Tests/EditMode/MapAssaultBoundaryTests.cs.meta
+?? Assets/EternalSteam/Tests/EditMode/MapClearEnemyTests.cs
+?? Assets/EternalSteam/Tests/EditMode/MapClearEnemyTests.cs.meta
+?? Assets/EternalSteam/Tests/EditMode/RailConnectionTransactionTests.cs
+?? Assets/EternalSteam/Tests/EditMode/RailConnectionTransactionTests.cs.meta
+?? Assets/EternalSteam/Tests/EditMode/RailPathPlannerTests.cs
+?? Assets/EternalSteam/Tests/EditMode/RailPathPlannerTests.cs.meta
+?? Assets/EternalSteam/Tests/EditMode/RailwayMigrationTests.cs
+?? Assets/EternalSteam/Tests/EditMode/RailwayMigrationTests.cs.meta
+?? Assets/EternalSteam/Tests/EditMode/RailwayShuttleTests.cs
+?? Assets/EternalSteam/Tests/EditMode/RailwayShuttleTests.cs.meta
+?? Assets/EternalSteam/Tests/EditMode/RailwayTests.cs
+?? Assets/EternalSteam/Tests/EditMode/RailwayTests.cs.meta
+?? Assets/EternalSteam/Tests/EditMode/TerrainNavigationTests.cs
+?? Assets/EternalSteam/Tests/EditMode/TerrainNavigationTests.cs.meta
+?? Assets/EternalSteam/Tests/EditMode/TrainDefenseTests.cs
+?? Assets/EternalSteam/Tests/EditMode/TrainDefenseTests.cs.meta
+?? Assets/EternalSteam/Tests/OpenWorld/Editor/StartRegion500MapAuthoring.cs
+?? Assets/EternalSteam/Tests/OpenWorld/Editor/StartRegion500MapAuthoring.cs.meta
+?? Assets/EternalSteam/Tests/OpenWorld/Runtime/BuildingOperationStatus.cs
+?? Assets/EternalSteam/Tests/OpenWorld/Runtime/BuildingOperationStatus.cs.meta
+?? Assets/EternalSteam/Tests/OpenWorld/Runtime/MobileDefenseRuntime.cs
+?? Assets/EternalSteam/Tests/OpenWorld/Runtime/MobileDefenseRuntime.cs.meta
+?? Assets/EternalSteam/Tests/OpenWorld/Runtime/RailRouteMarker.cs
+?? Assets/EternalSteam/Tests/OpenWorld/Runtime/RailRouteMarker.cs.meta
+?? Assets/EternalSteam/Tests/OpenWorld/Runtime/RailTrackView.cs
+?? Assets/EternalSteam/Tests/OpenWorld/Runtime/RailTrackView.cs.meta
+?? Assets/EternalSteam/Tests/OpenWorld/Runtime/RailwayConnectionHud.cs
+?? Assets/EternalSteam/Tests/OpenWorld/Runtime/RailwayConnectionHud.cs.meta
+?? Assets/EternalSteam/Tests/OpenWorld/Runtime/RailwayConstruction.cs
+?? Assets/EternalSteam/Tests/OpenWorld/Runtime/RailwayConstruction.cs.meta
+?? Assets/EternalSteam/Tests/OpenWorld/Runtime/RailwayController.cs
+?? Assets/EternalSteam/Tests/OpenWorld/Runtime/RailwayController.cs.meta
+?? Assets/EternalSteam/Tests/OpenWorld/Runtime/RailwayHud.cs
+?? Assets/EternalSteam/Tests/OpenWorld/Runtime/RailwayHud.cs.meta
+?? Assets/EternalSteam/Tests/OpenWorld/Runtime/RailwaySceneView.cs
+?? Assets/EternalSteam/Tests/OpenWorld/Runtime/RailwaySceneView.cs.meta
+?? Assets/EternalSteam/Tests/OpenWorld/Runtime/TerrainFlowNavigation.cs
+?? Assets/EternalSteam/Tests/OpenWorld/Runtime/TerrainFlowNavigation.cs.meta
+?? Assets/EternalSteam/Tests/OpenWorld/Runtime/TrainDefenseController.cs
+?? Assets/EternalSteam/Tests/OpenWorld/Runtime/TrainDefenseController.cs.meta
+?? Assets/EternalSteam/Tests/OpenWorld/Runtime/TrainDefenseView.cs
+?? Assets/EternalSteam/Tests/OpenWorld/Runtime/TrainDefenseView.cs.meta
+?? Assets/Map.meta
+?? Assets/Map/
+?? Docs/Archive/
+?? Docs/Art/
+?? Docs/Measurements/2026-10-02-railway-connections/
+?? Docs/Measurements/2026-10-02-railway-station-slots/
+?? Docs/Measurements/2026-10-02-train-hud-integration/
+?? "Docs/Presentations/\355\221\234\354\240\201\355\203\220\354\203\211_\354\265\234\354\240\201\355\231\224_\354\227\260\352\265\254_\355\231\225\354\236\245_\352\262\200\355\206\240.md"
+?? "Docs/References/BELTFED_\352\262\200\354\246\235\353\214\200\354\236\245.md"
+?? "Docs/References/BELTFED_\352\263\265\352\260\234\354\236\220\353\243\214_\354\230\201\354\203\201\353\266\204\354\204\235.md"
+?? "Docs/References/BELTFED_\354\227\255\352\270\260\355\232\215\354\204\234.md"
+?? "Docs/References/BELTFED_\354\234\240\354\247\200\352\264\200\353\246\254.md"
+?? "Docs/Source/Attachments/4.3 \352\270\260\354\260\250.md"
+?? "Docs/Source/Attachments/4.4 \353\205\270\354\204\240.md"
+?? Docs/Validation/2026-09-28-railway-1280.png
+?? Docs/Validation/2026-09-28-railway-1920.png
+?? Docs/Validation/2026-09-28-railway-a1-independent-checks.json
+?? Docs/Validation/2026-09-28-railway-a1-red.json
+?? Docs/Validation/2026-09-28-railway-all-editor-tests.json
+?? Docs/Validation/2026-09-28-railway-audit-baseline.json
+?? Docs/Validation/2026-09-28-railway-defense-1280.png
+?? Docs/Validation/2026-09-28-railway-defense-final.png
+?? Docs/Validation/2026-09-28-railway-editor-tests.json
+?? Docs/Validation/2026-09-28-railway-gap-probes.eval.cs
+?? Docs/Validation/2026-09-28-railway-gap-probes.json
+?? Docs/Validation/2026-09-28-railway-independent-checks.json
+?? Docs/Validation/2026-09-28-railway-live-play.md
+?? Docs/Validation/2026-09-28-railway-p5-tests.json
+?? Docs/Validation/2026-09-28-railway-p6-tests.json
+?? Docs/Validation/2026-09-28-railway-pending.png
+?? Docs/Validation/2026-09-28-railway-scale.json
+?? Docs/Validation/2026-09-28-railway-scene-references.json
+?? Docs/Validation/2026-09-29-a5-acc-007-015-019.json
+?? Docs/Validation/2026-09-29-a5-defense-integration.json
+?? Docs/Validation/2026-09-29-a5-fuel-range.json
+?? Docs/Validation/2026-09-29-a5-moving-branch.json
+?? Docs/Validation/2026-09-29-a5-pending-save.json
+?? Docs/Validation/2026-09-29-a5-railway-buttons.json
+?? Docs/Validation/2026-09-29-a5-railway-qa03.json
+?? Docs/Validation/2026-09-29-a5-three-base-play.json
+?? Docs/Validation/2026-09-29-a5-v1-migration.json
+?? Docs/Validation/2026-09-29-all-documents-review.json
+?? Docs/Validation/2026-09-29-auto-new-game-on-play.md
+?? Docs/Validation/2026-09-29-document-consolidation.json
+?? Docs/Validation/2026-09-29-fix01-closure.json
+?? Docs/Validation/2026-09-29-fix01-railway-regression.json
+?? Docs/Validation/2026-09-29-railway-a1-play.json
+?? Docs/Validation/2026-09-29-railway-a2.json
+?? Docs/Validation/2026-09-29-railway-a3-diagnostics.json
+?? Docs/Validation/2026-09-29-railway-a3-issues.json
+?? Docs/Validation/2026-09-29-railway-a3-map.json
+?? Docs/Validation/2026-09-29-railway-a3-order.json
+?? Docs/Validation/2026-09-29-railway-a4-names.json
+?? Docs/Validation/2026-09-29-railway-g12-detail.png
+?? Docs/Validation/2026-09-29-railway-g12-g10.json
+?? Docs/Validation/2026-09-29-railway-reassessment.json
+?? Docs/Validation/2026-09-29-start-region-500-map.md
+?? Docs/Validation/2026-09-29-strict-audit-probes.json
+?? Docs/Validation/2026-09-29-test-controls.json
+?? Docs/Validation/2026-09-29-test-controls.png
+?? Docs/Validation/2026-09-29-upgrade-level-checks.json
+?? Docs/Validation/2026-09-29-upgrade-level-editor-validation.json
+?? Docs/Validation/2026-09-30-a5-base-economy.json
+?? Docs/Validation/2026-09-30-a5-save-slot-policy.json
+?? Docs/Validation/2026-09-30-a5-storage-play.json
+?? Docs/Validation/2026-09-30-first-loop-editmode.json
+?? Docs/Validation/2026-09-30-first-loop-guide.png
+?? Docs/Validation/2026-09-30-first-playable-loop.json
+?? Docs/Validation/2026-09-30-qa01-auto-new-game.md
+?? Docs/Validation/2026-09-30-qa02-integration.md
+?? Docs/Validation/2026-09-30-qa04-overlap.md
+?? Docs/Validation/2026-09-30-qa05-defense-audit.md
+?? Docs/Validation/2026-09-30-qa05-map-assault.md
+?? Docs/Validation/2026-09-30-qa06-after-1280.png
+?? Docs/Validation/2026-09-30-qa06-after-1920.png
+?? Docs/Validation/2026-09-30-qa06-editmode.json
+?? Docs/Validation/2026-09-30-qa06-long-1920.png
+?? Docs/Validation/2026-09-30-qa06-railway-final-1280.png
+?? Docs/Validation/2026-09-30-qa06-railway-final-1920.png
+?? Docs/Validation/2026-09-30-qa06-railway-shift-1280.png
+?? Docs/Validation/2026-09-30-qa06-route-detail-1280.png
+?? Docs/Validation/2026-09-30-qa06-route-detail-1920.png
+?? Docs/Validation/2026-09-30-qa06-selection-1280.png
+?? Docs/Validation/2026-09-30-qa06-ui.md
+?? Docs/Validation/2026-09-30-sys04-editmode.json
+?? Docs/Validation/2026-09-30-sys04-owner-payment.md
+?? Docs/Validation/2026-09-30-terrain-navigation-editmode.json
+?? Docs/Validation/2026-09-30-terrain-navigation-play.json
+?? Docs/Validation/2026-10-01-construction-editmode.json
+?? Docs/Validation/2026-10-01-construction-play.json
+?? Docs/Validation/2026-10-01-qa06-editmode.json
+?? Docs/Validation/2026-10-01-qa06-pointer-play.json
+?? Docs/Validation/2026-10-01-qa06-title-1280.png
+?? Docs/Validation/2026-10-01-qa06-title-1920.png
+?? Docs/Validation/2026-10-01-railway-replan-editor.png
+?? Docs/Validation/2026-10-02-railway-connections-ui.md
+?? Docs/Validation/2026-10-02-railway-shuttle-editmode.json
+?? Docs/Validation/2026-10-02-railway-shuttle-play.json
+?? Docs/Validation/2026-10-02-railway-station-slots.md
+?? Docs/Validation/RailwayA2/
+?? Docs/Validation/RailwayA3/
+?? "Docs/\355\224\204\353\241\234\354\240\235\355\212\270_\355\206\265\355\225\251\352\270\260\354\244\200.md"
+?? Tools/AuthorFirstLoopHud.cs
+?? Tools/AuthorRailRouteMarkers.cs
+?? Tools/AuthorRailwayA2.cs
+?? Tools/AuthorRailwayA3Issues.cs
+?? Tools/AuthorRailwayA3Map.cs
+?? Tools/AuthorRailwayA3Order.cs
+?? Tools/AuthorRailwayConnections.cs
+?? Tools/AuthorRailwayG12.cs
+?? Tools/AuthorRailwaySprites.cs
+?? Tools/AuthorRailwayStationEntry.cs
+?? Tools/AuthorTestControls.cs
+?? Tools/AuthorTrainDefense.cs
+?? Tools/InspectPointerRailLayout.cs
+?? Tools/MeasureA5CurveTiming.cs
+?? Tools/MeasureRailPathPlanner.cs
+?? Tools/MeasureRailwayScale.cs
+?? Tools/PolishPointerQaHud.cs
+?? Tools/RailwayCoreChecks.cs
+?? Tools/RecordPointerDelivery.cs
+?? Tools/UpgradeLevelChecks.cs
+?? Tools/VerifyA5Buttons.cs
+?? Tools/VerifyA5Defense.cs
+?? Tools/VerifyA5MovingBranch.cs
+?? Tools/VerifyA5PendingSave.cs
+?? Tools/VerifyA5StationLoss.cs
+?? Tools/VerifyA5StorageAsset.cs
+?? Tools/VerifyA5StoragePlay.cs
+?? Tools/VerifyA5ThreeBasePlay.cs
+?? Tools/VerifyConstructionCosts.cs
+?? Tools/VerifyFirstPlayableLoop.cs
+?? Tools/VerifyPointerQaHudFit.cs
+?? Tools/VerifyQa02BaseLoss.cs
+?? Tools/VerifyQa02BaseRecovery.cs
+?? Tools/VerifyQa02Batch.cs
+?? Tools/VerifyQa04Overlap.cs
+?? Tools/VerifyQa05Defense.cs
+?? Tools/VerifyQa05Map.cs
+?? Tools/VerifyRailwayA1.cs
+?? Tools/VerifyRailwayA2.cs
+?? Tools/VerifyRailwayA3.cs
+?? Tools/VerifyRailwayA3Issues.cs
+?? Tools/VerifyRailwayA3Map.cs
+?? Tools/VerifyRailwayA3Order.cs
+?? Tools/VerifyRailwayA4Names.cs
+?? Tools/VerifyRailwayConnections.cs
+?? Tools/VerifyRailwayConnectionsPlay.cs
+?? Tools/VerifyRailwayG10.cs
+?? Tools/VerifyRailwayG10Line.cs
+?? Tools/VerifyRailwayG12.cs
+?? Tools/VerifyRailwayHud.eval.cs
+?? Tools/VerifyRailwayPlay.cs
+?? Tools/VerifyRailwayRevisionPlay.cs
+?? Tools/VerifyRailwayShuttleCompatibility.cs
+?? Tools/VerifyRailwayShuttlePlay.cs
+?? Tools/VerifyRailwayStationSlotsPlay.cs
+?? Tools/VerifyTerrainNavigation.cs
+?? Tools/VerifyTestControls.cs
+?? Tools/VerifyTrainDefensePlay.cs
+?? Tools/VerifyUpgradeLevel.cs
+?? Tools/__pycache__/
+?? Tools/author_railway_offline.py
+?? Tools/compile_play_check.py
+?? Tools/compile_railway_check.py
+?? Tools/run_railway_checks.py
+?? Tools/run_upgrade_checks.py
+?? Tools/verify_railway_authoring.py

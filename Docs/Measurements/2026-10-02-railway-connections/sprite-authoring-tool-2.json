@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/AuthorRailwaySprites.cs",
+      "entry": "AuthorRailwaySprites.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 675,
+      "executeMs": 5012,
+      "assemblyName": "PipelineRunScript_AuthorRailwaySprites_4f015ab005c84a2f943f10251153e879",
+      "success": true,
+      "result": "[\n  {\n    \"scene\": \"StartRegionSandbox\",\n    \"spriteButtons\": 76,\n    \"debugControlsVisible\": false\n  },\n  {\n    \"scene\": \"OpenWorldSandbox\",\n    \"spriteButtons\": 76,\n    \"debugControlsVisible\": false\n  }\n]"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

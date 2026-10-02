@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/EnableExistingTestHud.cs",
+      "entry": "EnableExistingTestHud.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 574,
+      "executeMs": 5050,
+      "assemblyName": "PipelineRunScript_EnableExistingTestHud_a604d1b9afc94bc59ec750f3f9ccd59f",
+      "success": true,
+      "result": "[\n  {\n    \"scene\": \"StartRegionSandbox\",\n    \"showDevelopmentControls\": true,\n    \"sections\": [\n      {\n        \"id\": \"developer\",\n        \"activeSelf\": true,\n        \"activeInHierarchy\": true\n      },\n      {\n        \"id\": \"test-shortcuts\",\n        \"activeSelf\": true,\n        \"activeInHierarchy\": true\n      }\n    ]\n  },\n  {\n    \"scene\": \"OpenWorldSandbox\",\n    \"showDevelopmentControls\": true,\n    \"sections\": [\n      {\n        \"id\": \"developer\",\n        \"activeSelf\": true,\n        \"activeInHierarchy\": true\n      },\n      {\n        \"id\": \"test-shortcuts\",\n        \"activeSelf\": true,\n        \"activeInHierarchy\": true\n      }\n    ]\n  }\n]"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

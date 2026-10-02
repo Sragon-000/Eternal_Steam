@@ -13,6 +13,7 @@
     "EternalSteam.Progression",
     "EternalSteam.Presentation",
     "Unity.TextMeshPro",
-    "UnityEngine.UI"
+    "UnityEngine.UI",
+    "EternalSteam.Railway"
   ]
 }

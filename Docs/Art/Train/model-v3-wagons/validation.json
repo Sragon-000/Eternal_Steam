@@ -1,0 +1,59 @@
+{
+  "blender": "5.2.1 LTS",
+  "saved_file_reloaded_successfully": true,
+  "socket_pairs": [
+    {
+      "sockets": [
+        "LOCOMOTIVE_REAR_SOCKET",
+        "CARGO_FRONT_SOCKET"
+      ],
+      "gap": 0.0,
+      "outward_axis_dot": -1.0
+    },
+    {
+      "sockets": [
+        "CARGO_REAR_SOCKET",
+        "FOUNDATION_FRONT_SOCKET"
+      ],
+      "gap": 0.0,
+      "outward_axis_dot": -1.0
+    }
+  ],
+  "external_driver_targets": [],
+  "sample_count": 193,
+  "wagon_wheel_center_drift": 3.844384073399806e-06,
+  "locomotive_linkage_endpoint_error": 4.915124923727108e-07,
+  "loop_matrix_error": 2.384185791015625e-07,
+  "saved_files": [
+    {
+      "file": "train-a-v3-consist.blend",
+      "scenes": [
+        "TRAIN_A_CONSIST_V3"
+      ],
+      "objects": 940,
+      "bytes": 538615
+    },
+    {
+      "file": "cargo-wagon.blend",
+      "scenes": [
+        "CARGO_WAGON_STANDALONE"
+      ],
+      "objects": 154,
+      "bytes": 150672
+    },
+    {
+      "file": "turret-foundation-wagon.blend",
+      "scenes": [
+        "TURRET_FOUNDATION_STANDALONE"
+      ],
+      "objects": 144,
+      "bytes": 145450
+    }
+  ],
+  "mount_world": [
+    15.600000381469727,
+    0.0,
+    2.1700000762939453
+  ],
+  "unity_verified": false
+}

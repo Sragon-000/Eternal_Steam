@@ -2,6 +2,8 @@
 
 등록일: 2026-09-24. 사용자 요청으로 레퍼런스 게임에 추가했다.
 
+2026-09-29 상세 분석을 [BELTFED 역기획서](BELTFED_역기획서.md)로 확장했다. 최신 조사 범위와 사실·관찰·해석 구분은 해당 문서를 따른다. [출처·검증대장](BELTFED_검증대장.md)과 [변경 이력·유지관리](BELTFED_유지관리.md)를 함께 관리한다. 2026-09-29 추가 조사에서 공식 영상·프레스킷·FAQ·뉴스를 반영한 v0.2.0으로 갱신했으며, [자료·영상 분석 부록](BELTFED_공개자료_영상분석.md)에 시간코드와 콘텐츠 목록을 정리했다. 아래는 최초 등록 시점의 기록이다.
+
 - 사용자 제공 영상: https://www.youtube.com/watch?v=n4RiVblVQ90
 - 영상 식별: BELTFED – Official Announcement Trailer | Roguelike Factory Defense (검색 메타데이터 기준).
 - 공식 게임 정보: [BELTFED - Roguelike Factory Defense / Steam](https://store.steampowered.com/app/4879420/BELTFED__Roguelike_Factory_Defense/)

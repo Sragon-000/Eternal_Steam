@@ -1,0 +1,42 @@
+{
+  "fixtureMainLevel": 2,
+  "weapon": {
+    "definition": "defense.arc",
+    "installIron": 10.0,
+    "shape": {
+      "x": 2,
+      "y": 2,
+      "magnitude": 2.828427,
+      "sqrMagnitude": 8
+    }
+  },
+  "returnAttack": {
+    "damage": 150,
+    "batteryBefore": 100.0,
+    "batteryAfter": 89.999999850988388,
+    "maxPositionError": 0.0,
+    "minDirectionDot": 0.99999994,
+    "progress": 3.249999999999996,
+    "combatSaveRejected": true,
+    "reverse": true
+  },
+  "returnPendingWeaponSaved": true,
+  "returnPendingWeaponReloadExact": true,
+  "sharedArrival": {
+    "waitProgress": 4.166666666666667,
+    "entryProgress": 4.166666666666667,
+    "outsidePositionError": 0.0,
+    "blockedSeconds": 100,
+    "cargo": 30.0,
+    "fuel": 48.6,
+    "stopRequestPreserved": true,
+    "reservationLostWithoutRouteMutation": true
+  },
+  "waitingReload": {
+    "exact": true,
+    "admitted": true,
+    "unloaded": 30,
+    "fuelBefore": 48.6,
+    "fuelAfter": 48.6
+  }
+}

@@ -169,3 +169,8 @@ Packages/packages-lock.json linguist-generated
 
 # Exceptions for .asset files such as lightning pre-baking
 LightingData.asset     binary
+
+# Large authored assets and validation baseline
+Assets/EternalSteam/Scene/Tests/StartRegionSandbox.unity filter=lfs diff=lfs merge=lfs -text
+Docs/Measurements/2026-10-02-train-hud-integration/baseline/Assets/EternalSteam/Scene/Tests/StartRegionSandbox.unity filter=lfs diff=lfs merge=lfs -text
+Assets/Map/TileWorldCreatorConfiguration.asset filter=lfs diff=lfs merge=lfs -text

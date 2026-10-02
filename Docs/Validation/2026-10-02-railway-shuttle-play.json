@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-02",
+  "scope": "Isolated actual Unity Play; production/balance bypassed for fixture; normal railway Tick, HUD/world command callbacks, not physical mouse input",
+  "physicalTracks": 5,
+  "connections": 1,
+  "roundTrips": 3,
+  "delivered": 90,
+  "containerVersion": 3,
+  "returnMovingSaved": true,
+  "hudNoManualPorts": true,
+  "hudNoCycleClose": true,
+  "importAndPlay": true,
+  "reload": "passed",
+  "returnMovingReloadExact": true,
+  "stopRequestReturnsToFirstStation": true,
+  "stoppedReloadExact": true,
+  "noDuplicateServiceAfterReload": true,
+  "legacyV2ReloadExactAndV3Write": true,
+  "legacyV1InitializationPreservesOverflowAndSource": true,
+  "v1ToV3SecondReloadNoDuplicateStock": true
+}

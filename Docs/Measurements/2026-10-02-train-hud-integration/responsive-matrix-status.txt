@@ -1,0 +1,1 @@
+PASS all 7 resolutions; construction, selection, route detail/draft, popups, viewport, input and animated consist

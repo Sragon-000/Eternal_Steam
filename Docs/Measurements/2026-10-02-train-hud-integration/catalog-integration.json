@@ -1,0 +1,12 @@
+[
+  {
+    "scene": "StartRegionSandbox",
+    "catalogEntries": 28,
+    "railwayCards": 3
+  },
+  {
+    "scene": "OpenWorldSandbox",
+    "catalogEntries": 26,
+    "railwayCards": 3
+  }
+]

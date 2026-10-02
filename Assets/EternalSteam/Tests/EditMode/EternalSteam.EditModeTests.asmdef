@@ -10,7 +10,9 @@
     "EternalSteam.Presentation",
     "EternalSteam.OpenWorldSandbox",
     "Unity.TextMeshPro",
-    "UnityEngine.UI"
+    "UnityEngine.UI",
+    "EternalSteam.Railway",
+    "EternalSteam.LegacyCombat"
   ],
   "optionalUnityReferences": [
     "TestAssemblies"

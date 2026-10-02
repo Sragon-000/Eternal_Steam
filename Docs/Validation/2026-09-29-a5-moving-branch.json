@@ -1,0 +1,37 @@
+{
+  "date": "2026-09-29",
+  "scope": "QA-03 adjacent branch construction while a train is moving",
+  "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam",
+  "fixture": {
+    "saveRoot": "/tmp/eternal-a5-branch-live",
+    "source": "Copy of the prior isolated A5 v2 train-defense save",
+    "productionSaveTouched": false,
+    "editorStartedByAgent": false
+  },
+  "probe": "Tools/VerifyA5MovingBranch.cs",
+  "playResult": {
+    "status": "PASS",
+    "branchCell": "(-5, 13)",
+    "startedWithMovingTrainAndPaidSegment": true,
+    "branchInstalledThroughWorldEditSession": true,
+    "ironChargedOnce": true,
+    "routeEnteredRouteErrorWithBranchReason": true,
+    "trainStayedStoppedDuringError": true,
+    "cargoFuelStopAndProgressPreserved": true,
+    "branchRecoveredThroughWorldEditSession": true,
+    "routeValidatedAfterRecovery": true,
+    "manualResumeKeptFuelCargoAndProgress": true,
+    "trainAdvancedFromPreservedProgress": true
+  },
+  "isolation": {
+    "finalPlayMode": false,
+    "saveRootRestored": true,
+    "backgroundRestored": true,
+    "scene": "Assets/EternalSteam/Scene/Tests/StartRegionSandbox.unity",
+    "sceneDirty": false
+  },
+  "limits": [
+    "The verification used the authored runtime editing and confirmation path, but invoked its commands programmatically; physical mouse input remains QA-06.",
+    "No product code or scene assets were changed for this case."
+  ]
+}

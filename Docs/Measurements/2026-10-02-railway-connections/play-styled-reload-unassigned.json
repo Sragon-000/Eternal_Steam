@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/VerifyRailwayConnectionsPlay.cs",
+      "entry": "VerifyRailwayConnectionsPlay.ReloadAndRun"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 35,
+      "executeMs": 183,
+      "assemblyName": "PipelineRunScript_VerifyRailwayConnectionsPlay_844abed25d9f4b318c8c12f0b1c8f812",
+      "success": true,
+      "result": "PASS unassigned connection reload, route creation and return journey; reload next"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

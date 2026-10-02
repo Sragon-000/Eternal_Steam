@@ -1,0 +1,36 @@
+{
+  "date": "2026-09-29",
+  "scope": "A5 mounted train projectile safe-save guard, direct Play verification",
+  "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam",
+  "fixture": {
+    "root": "/tmp/eternal-a5-pending-live",
+    "source": "Copy of /tmp/eternal-a5-defense-live with a v2 route and mounted defense.arc",
+    "productionSaveTouched": false,
+    "editorStartedByAgent": false
+  },
+  "probe": "Tools/VerifyA5PendingSave.cs",
+  "result": {
+    "status": "PASS",
+    "mountedExecutionStarted": true,
+    "enemiesRemovedBeforeSave": true,
+    "guardReason": "기차 방어의 투사체 또는 연쇄 공격이 진행 중입니다.",
+    "rejectedSaveReturnedFalse": true,
+    "rejectedSaveKeptCurrentJsonByteIdentical": true,
+    "rejectedSaveKeptLastSavedUtc": true,
+    "executionFinishedAfterManualTicks": 1,
+    "saveAfterCompletionSucceeded": true,
+    "saveAfterCompletionUpdatedCurrentJson": true,
+    "mountedWeaponRetainedInSnapshot": true
+  },
+  "isolation": {
+    "finalPlayMode": false,
+    "saveRootRestored": true,
+    "backgroundRestored": true,
+    "scene": "Assets/EternalSteam/Scene/Tests/StartRegionSandbox.unity",
+    "sceneDirty": false
+  },
+  "limits": [
+    "Projectile execution was verified in the existing Editor scene; chain execution and long-running physical input remain separate QA.",
+    "No production source or assets were changed in this verification. The prior full EditMode result remains 191/191."
+  ]
+}

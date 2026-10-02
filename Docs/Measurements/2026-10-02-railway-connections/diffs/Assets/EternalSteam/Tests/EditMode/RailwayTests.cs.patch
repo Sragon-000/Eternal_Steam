@@ -1,0 +1,22 @@
+--- before/Assets/EternalSteam/Tests/EditMode/RailwayTests.cs
++++ after/Assets/EternalSteam/Tests/EditMode/RailwayTests.cs
+@@ -411,7 +411,7 @@
+             var named=new RailwayNetwork(inventory,"coal",1,_=>"서브 기지");named.Refresh(buildings);
+             var ids=new[]{sa.PersistentId,sb.PersistentId,third.PersistentId};var names=ids.Select(named.StationName).ToArray();
+             Assert.That(names.Distinct().Count(),Is.EqualTo(3));
+-            var restored=new RailwayNetwork(inventory,"coal",1,_=>"상실 기지");restored.Restore(named.Capture());restored.Refresh(buildings.AsEnumerable().Reverse());
++            var restored=new RailwayNetwork(inventory,"coal",1,_=>"상실 기지");restored.Refresh(buildings.AsEnumerable().Reverse());restored.Restore(named.Capture());
+             Assert.That(ids.Select(restored.StationName),Is.EqualTo(names));
+         }
+         [Test] public void DemolitionDoesNotReuseBaseOrStationNumbers()
+@@ -426,8 +426,8 @@
+         [Test] public void LegacyBaseNamesMigrateDeterministicallyAndPersist()
+         {
+             var saved=network.Capture();saved.baseLabels=null;
+-            var one=new RailwayNetwork(inventory,"coal",1,_=>"서브 기지");one.Restore(saved);
+-            saved.labels.Reverse();var two=new RailwayNetwork(inventory,"coal",1,_=>"서브 기지");two.Restore(saved);
++            var one=new RailwayNetwork(inventory,"coal",1,_=>"서브 기지");one.Refresh(buildings);one.Restore(saved);
++            saved.labels.Reverse();var two=new RailwayNetwork(inventory,"coal",1,_=>"서브 기지");two.Refresh(buildings.AsEnumerable().Reverse());two.Restore(saved);
+             Assert.That(one.StationName(sa.PersistentId),Is.EqualTo(two.StationName(sa.PersistentId)));
+             var json=JsonUtility.ToJson(one.Capture());two.Restore(JsonUtility.FromJson<RailwayNetwork.Snapshot>(json));
+             Assert.That(JsonUtility.ToJson(two.Capture()),Is.EqualTo(json));

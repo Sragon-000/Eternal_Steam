@@ -1,0 +1,23 @@
+{
+  "date": "2026-09-29",
+  "scope": "QA-03 route leg beyond maximum train fuel capacity",
+  "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam",
+  "finding": "A structurally valid circular route could be committed even when one leg required more coal than its train could ever hold (station count × 50). It would remain in FuelWait after a full refuel.",
+  "change": [
+    "Route inspection reports InsufficientTankRange with required coal, tank maximum, affected leg and a recovery hint.",
+    "Commit and subsequent route validation reject such a route; the route UI names the issue 연료칸 거리 초과."
+  ],
+  "verification": {
+    "newTest": "EternalSteam.Tests.RailwayTests.RouteLongerThanFullFuelTankIsRejectedBeforeCommit",
+    "normalRouteAccepted": true,
+    "overCapacityLegsRejected": true,
+    "rejectedCommitKeepsRoutesEmptyAndCoalUnchanged": true,
+    "editorCompilation": "completed without errors",
+    "targetedEditMode": {"Total": 1, "Passed": 1, "Failed": 0},
+    "fullEditMode": {"Total": 192, "Passed": 192, "Failed": 0, "Skipped": 0, "Inconclusive": 0}
+  },
+  "limits": [
+    "This is a model and compiled UI-label verification in the connected Editor; no physical pointer interaction or long live route was run.",
+    "Other QA-03 cases (adjacent branch during travel, lost station reference, curved-path and arrival-time continuity) remain."
+  ]
+}

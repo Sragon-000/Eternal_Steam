@@ -1,0 +1,52 @@
+{
+  "rest_pose_error": 1.192092966562086e-07,
+  "loop_pose_error": 2.384185791015625e-07,
+  "checks": [
+    {
+      "frame": 7,
+      "static_object_max_error": 0.0
+    },
+    {
+      "frame": 13,
+      "static_object_max_error": 0.0
+    },
+    {
+      "frame": 25,
+      "static_object_max_error": 0.0
+    },
+    {
+      "frame": 37,
+      "static_object_max_error": 0.0
+    },
+    {
+      "frame": 49,
+      "static_object_max_error": 0.0
+    }
+  ],
+  "source_scene_animated_objects": 0,
+  "rotating_meshes": 216,
+  "wheel_axles": 8,
+  "wheel_count": 16,
+  "fps": 24,
+  "frames": [
+    1,
+    48
+  ],
+  "saved": {
+    "scenes": [
+      "TRAIN_A_WHEEL_ROTATION_V1"
+    ],
+    "actions": [
+      "WheelAxis_Support_axleAction",
+      "WheelAxis_Support_axle.003Action",
+      "WheelAxis_Support_axle.002Action",
+      "WheelAxis_Support_axle.001Action",
+      "WheelAxis_Driving_axleAction",
+      "WheelAxis_Driving_axle.003Action",
+      "WheelAxis_Driving_axle.002Action",
+      "WheelAxis_Driving_axle.001Action"
+    ],
+    "objects": 617
+  },
+  "unity_verified": false
+}

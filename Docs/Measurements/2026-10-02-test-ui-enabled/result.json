@@ -1,0 +1,34 @@
+[
+  {
+    "scene": "StartRegionSandbox",
+    "showDevelopmentControls": true,
+    "sections": [
+      {
+        "id": "developer",
+        "activeSelf": true,
+        "activeInHierarchy": true
+      },
+      {
+        "id": "test-shortcuts",
+        "activeSelf": true,
+        "activeInHierarchy": true
+      }
+    ]
+  },
+  {
+    "scene": "OpenWorldSandbox",
+    "showDevelopmentControls": true,
+    "sections": [
+      {
+        "id": "developer",
+        "activeSelf": true,
+        "activeInHierarchy": true
+      },
+      {
+        "id": "test-shortcuts",
+        "activeSelf": true,
+        "activeInHierarchy": true
+      }
+    ]
+  }
+]

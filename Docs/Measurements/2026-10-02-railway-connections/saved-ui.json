@@ -1,0 +1,20 @@
+[
+  {
+    "scene": "StartRegionSandbox",
+    "savedRefs": true,
+    "customSpriteButtons": 76,
+    "testUiHidden": true,
+    "persistentCommands": 8,
+    "canvas": "GameplayCanvas",
+    "initiallyHidden": true
+  },
+  {
+    "scene": "OpenWorldSandbox",
+    "savedRefs": true,
+    "customSpriteButtons": 76,
+    "testUiHidden": true,
+    "persistentCommands": 8,
+    "canvas": "GameplayCanvas",
+    "initiallyHidden": true
+  }
+]

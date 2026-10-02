@@ -1,0 +1,25 @@
+{
+  "date": "2026-09-30",
+  "scope": "A5 이전 맵/콘텐츠 구성 지문 저장 정책",
+  "policy": {
+    "differentConfiguration": "이전 구성 저장은 원본 경로에 보존하고 현재 맵으로 자동 복원·부분 이관하지 않는다",
+    "sameConfigurationV1": "기존 v1→v2 재고 이관 경로 유지",
+    "notice": "같은 맵 ID의 다른 구성에서 온 정상 활성 슬롯만 저장 화면에 수량 표시; 현행 이어하기와 분리",
+    "excluded": ["보관 archive", "패배 진행", "손상 저장", "다른 맵 ID", "Editor 격리 테스트 경로"]
+  },
+  "readOnlyAudit": {
+    "location": "사용자 Application.persistentDataPath 내 EternalSteam/SingleMap",
+    "legacyActive": "start-region v2 current/previous 무결성 검사 통과; 같은 활성 슬롯 1건",
+    "currentMapActive": "maps/<구성 지문>/current.json에 별도 start-region v1 저장 존재; 무결성 검사 통과",
+    "filesModified": false
+  },
+  "verification": {
+    "offlineCompilation": "OpenWorldSandbox 및 EditModeTests 어셈블리 Unity 응답 파일로 C# 컴파일 성공",
+    "editorTests": "전체 EditMode 198/198 통과. 손상·패배 슬롯 제외와 이전 구성 활성 슬롯 계수 2건 포함",
+    "playUi": "실제 사용자 저장은 읽기 전용으로 조회해 다른 구성 활성 슬롯 2건 안내를 계산. 별도 격리 Play의 CanvasWorldHud에 같은 문구를 주입해 진행·저장 메뉴에서 텍스트 표시 확인; 사용자 저장 파일은 변경하지 않음"
+  },
+  "limits": [
+    "현재 Editor 구성 지문에서 이전 활성 슬롯 2건이 확인됐다. 기존 저장을 500×500 지형으로 자동 이관하지 않는다.",
+    "다른 지문 저장을 현재 지형에 이관하는 매핑은 제공하지 않는다."
+  ]
+}

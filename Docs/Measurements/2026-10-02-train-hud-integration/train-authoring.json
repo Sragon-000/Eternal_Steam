@@ -1,0 +1,11 @@
+{
+  "prefab": "Assets/EternalSteam/Content/Buildings/Railway/Train.prefab",
+  "meshes": 27,
+  "clip": "LinkedMotion",
+  "seconds": 2.0,
+  "scale": 0.38,
+  "forward": "+Z",
+  "socketGap1": 0.0,
+  "socketGap2": 4.76837158E-07,
+  "mount": "(0.00, 0.37, -5.93)"
+}

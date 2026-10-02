@@ -70,5 +70,37 @@ namespace EternalSteam.Tests
                 Assert.That(r.Covers(point,Vector2.one,WorldGridGeometry.Rotation,r.SelectedBaseId),Is.EqualTo(area.Contains(point,Vector2.one,WorldGridGeometry.Rotation)));
             }
         }
+        [Test]public void LostOwnerInAnotherBaseAreaKeepsOperationButSuspendsItsLedgerAndShowsBothStates()
+        {
+            var bases=new BaseRegistry(2,WorldGridGeometry.Rotation){AnyNormalBaseCoverage=true};
+            var main=Provider(bases,new Vector3(4,0,4));
+            var sub=Provider(bases,new Vector3(4,0,4),BaseRole.Sub);
+            var definition=Asset<BuildingDefinition>();definition.Id="coverage.consumer";definition.Footprint=new Vector2Int(2,2);
+            var placement=Asset<BuildingPlacementDefinition>();placement.RequiresOperationalArea=true;placement.RequiresOwnerBase=true;definition.Placement=placement;
+            var recipe=Asset<ProductionModuleDefinition>();recipe.OutputId="iron";recipe.OutputAmount=5;recipe.Interval=1;definition.Modules.Add(recipe);
+            var inventories=new BaseInventoryRegistry(new ResourceBank(),id=>bases.Bases.TryGetValue(id,out var context)&&context.Active);
+            Vector3 location=default;bool found=false;
+            for(int z=-8;z<20&&!found;z++)for(int x=-8;x<20&&!found;x++){
+                var point=WorldGridGeometry.Center(new Vector2Int(x,z),2);
+                if(!bases.Covers(point,Vector2.one*2,WorldGridGeometry.Rotation,sub.OwnerBaseId))continue;
+                location=point;found=true;
+            }
+            Assert.That(found,Is.True,"Fixture needs a full-footprint overlap cell");
+            var building=new BuildingInstance(3,definition,Vector2Int.zero,location,new BuildingServices(null,resourceFor:owner=>inventories.Bind(owner,sub.OwnerBaseId)));
+            buildings.Add(building);building.Activate();bases.Register(building);bases.Refresh();
+            string owner=sub.OwnerBaseId;
+            Assert.That(building.OwnerBaseId,Is.EqualTo(owner));
+            Assert.That(building.Operational,Is.True);
+            var bank=inventories.Available(owner);bank.AddCapacity("iron",100);bank.Deposit("iron",25);
+            building.Tick(1);Assert.That(bank.Amount("iron"),Is.EqualTo(30),"Production must work before owner loss");
+            bases.Remove(sub);sub.Dispose();bases.Refresh();
+            Assert.That(main.Operational,Is.True);
+            Assert.That(building.OwnerBaseId,Is.EqualTo(owner),"Area coverage must not reassign ownership");
+            Assert.That(building.Operational,Is.True,"Another normal base still covers the building");
+            Assert.That(inventories.Available(owner),Is.Null);
+            building.Tick(1);Assert.That(inventories.Ensure(owner).Amount("iron"),Is.EqualTo(30),"Lost owner must stop production even inside another base area");
+            Assert.That(BuildingOperationStatus.Describe(building,bases),Does.Contain("소속 기지 상실"));
+            Assert.That(BuildingOperationStatus.Describe(building,bases),Does.Contain("생산/역 운송 중단"));
+        }
     }
 }

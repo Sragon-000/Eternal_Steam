@@ -1,0 +1,116 @@
+{
+  "date": "2026-09-30",
+  "project": "Eternal_Steam",
+  "scene": "StartRegionSandbox",
+  "editor": "6000.3.14f1",
+  "map": {
+    "width": 500,
+    "height": 500
+  },
+  "saveRoot": "/tmp/eternal-first-loop-20260930",
+  "mode": "Live Editor commands + actual AdvanceSimulation; physical pointer end-to-end remains QA-06",
+  "injections": {
+    "inventory": false,
+    "infiniteResources": false,
+    "energy": false,
+    "enemyDamage": false,
+    "powerStorage": false,
+    "clockPhase": false
+  },
+  "settings": {
+    "daySeconds": 300,
+    "nightSeconds": 180,
+    "mainLevel": 3,
+    "subLevel": 3,
+    "mainIronProducers": 2,
+    "subIronProducers": 1,
+    "coalProducers": 1,
+    "generatorsPerBase": 2,
+    "defensesPerBase": [
+      "arc Lv3",
+      "plasma laser Lv3"
+    ],
+    "constructionPolicy": "Temporary free except track iron1 / station iron10",
+    "upgradePolicy": "Temporary verification free"
+  },
+  "steps": [
+    {
+      "step": "Prepare",
+      "result": "Prepared main/sub Lv3, natural iron/coal production and powered defenses via edit/purchase commands | day=1 phase=Day remaining=295.7 energy=0.5 stage=Gathering bossHp=0 enemies=0 killed=0 mainHp=100 iron=0 coal=0 train=none"
+    },
+    {
+      "step": "Advance",
+      "result": "Advanced actual simulation | day=1 phase=Day remaining=195.7 energy=23.6 stage=Gathering bossHp=0 enemies=0 killed=0 mainHp=100 iron=100 coal=50 train=none"
+    },
+    {
+      "step": "BuildRailway",
+      "result": "Rail paid from produced iron; HUD cargo/fuel/start accepted | day=1 phase=Day remaining=195.7 energy=23.6 stage=Gathering bossHp=0 enemies=0 killed=0 mainHp=100 iron=38 coal=0 train=Dwelling stop=0 cargo=30 fuel=50"
+    },
+    {
+      "step": "VerifyFirstDelivery",
+      "result": "PASS first 30 produced iron delivered to separate base inventory | day=1 phase=Day remaining=180.7 energy=27.0 stage=Gathering bossHp=0 enemies=0 killed=0 mainHp=100 iron=52 coal=7 train=Dwelling stop=1 cargo=0 fuel=48.6"
+    },
+    {
+      "step": "combat0",
+      "result": "Advanced actual simulation | day=1 phase=Night remaining=160.7 energy=73.2 stage=Gathering bossHp=0 enemies=100 killed=0 mainHp=100 iron=102 coal=107 train=Dwelling stop=0 cargo=30 fuel=30"
+    },
+    {
+      "step": "combat1",
+      "result": "Advanced actual simulation | day=2 phase=Day remaining=284.7 energy=100.0 stage=AwaitingCraft bossHp=0 enemies=33 killed=68 mainHp=100 iron=158 coal=195 train=Moving stop=0 cargo=30 fuel=12.6"
+    },
+    {
+      "step": "Reloaded",
+      "result": "PASS same run, completed orb, buildings, route and exact base inventories restored after clear"
+    }
+  ],
+  "finish": {
+    "status": "PASS",
+    "day": 2,
+    "phase": "Day",
+    "remaining": 255.7,
+    "energyPercent": 100,
+    "stage": "Cleared",
+    "enemies": 0,
+    "killed": 68,
+    "mainHealth": 100,
+    "mainIron": 158,
+    "mainCoal": 210,
+    "trainStatus": "Stopped",
+    "trainStop": 0,
+    "trainCargo": 30,
+    "trainFuel": 10,
+    "assertions": [
+      "HUD orb craft",
+      "despawn residual enemies without additional kill/energy reward",
+      "safe clear save",
+      "same run/orb/buildings/route/exact base inventories restored"
+    ]
+  },
+  "editMode": {
+    "total": 220,
+    "passed": 220,
+    "failed": 0,
+    "report": "2026-09-30-first-loop-editmode.json"
+  },
+  "hud": {
+    "savedScenes": [
+      "StartRegionSandbox",
+      "OpenWorldSandbox"
+    ],
+    "alwaysVisible": true,
+    "pointerInterception": false,
+    "screenshot": "2026-09-30-first-loop-guide.png"
+  },
+  "remaining": [
+    "Ground enemy direct movement can stall on terrain (33 enemies reproduced); clear cleanup does not provide pathfinding",
+    "Physical mouse end-to-end gameplay QA-06",
+    "Standalone build/platform/long-session QA-07"
+  ],
+  "restoredEditor": {
+    "scene": "StartRegionSandbox",
+    "playMode": false,
+    "sceneDirty": false,
+    "testSaveRoot": null,
+    "runInBackground": false
+  }
+}

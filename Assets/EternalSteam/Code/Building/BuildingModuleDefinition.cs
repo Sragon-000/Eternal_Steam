@@ -26,9 +26,11 @@ namespace EternalSteam
         public IBaseObjective Nexus { get; }
         public ILevelLimit LevelLimit { get; }
         public IResourceBank Resources { get; }
+        readonly Func<BuildingInstance,IResourceBank> resourceFor;
         public IMovementObstacles Obstacles { get; }
-        public BuildingServices(ITargetQuery targets, IBaseObjective nexus = null, IResourceBank resources = null, IMovementObstacles obstacles = null, ILevelLimit levelLimit = null, ICampaignMainLevel campaign = null)
-        { Campaign=campaign;Targets = targets; Nexus = nexus; LevelLimit = levelLimit ?? nexus; Resources = resources; Obstacles = obstacles; }
+        public BuildingServices(ITargetQuery targets, IBaseObjective nexus = null, IResourceBank resources = null, IMovementObstacles obstacles = null, ILevelLimit levelLimit = null, ICampaignMainLevel campaign = null, Func<BuildingInstance,IResourceBank> resourceFor = null)
+        { Campaign=campaign;Targets = targets; Nexus = nexus; LevelLimit = levelLimit ?? nexus; Resources = resources; Obstacles = obstacles; this.resourceFor=resourceFor; }
+        public IResourceBank ResourcesFor(BuildingInstance owner)=>resourceFor?.Invoke(owner)??Resources;
     }
 
     public sealed class BuildingInstance : IDisposable
@@ -43,7 +45,9 @@ namespace EternalSteam
         public string DisplayName { get; }
         public Vector2Int Footprint { get; }
         public Vector2Int Cell { get; }
-        public Vector3 Position { get; }
+        readonly Vector3 position;
+        readonly Func<Vector3> positionProvider;
+        public Vector3 Position => positionProvider?.Invoke() ?? position;
         public Vector3 Direction { get; private set; } = Vector3.forward;
         public bool Recoverable { get; }
         public bool RequiresBuildArea { get; }
@@ -69,8 +73,10 @@ namespace EternalSteam
         public event Action<Vector3> Projectile;
         public void ReportProjectile(Vector3 position) => Projectile?.Invoke(position);
 
-        public BuildingInstance(int id, BuildingDefinition definition, Vector2Int cell, Vector3 position, BuildingServices services)
+        public BuildingInstance(int id, BuildingDefinition definition, Vector2Int cell, Vector3 position, BuildingServices services, Func<Vector3> positionProvider = null)
         {
+            this.position = position;
+            this.positionProvider = positionProvider;
             Id = id;
             definitionId = definition.Id;
             DisplayName = definition.DisplayName;
@@ -80,7 +86,6 @@ namespace EternalSteam
             RequiresOperationalArea = definition.Placement!=null && definition.Placement.RequiresOperationalArea;
             RequiresOwnerBase = definition.Placement!=null && definition.Placement.RequiresOwnerBase;
             Cell = cell;
-            Position = position;
             try
             {
                 foreach (var definitionModule in definition.Modules)

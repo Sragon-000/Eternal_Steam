@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using NUnit.Framework;
 using UnityEngine;
 using Object=UnityEngine.Object;
@@ -106,6 +107,61 @@ namespace EternalSteam.Tests
             Assert.That(bank.Exchange("sample.energy",5,"sample.parts",1),Is.False); Assert.That(bank.Amount("sample.energy"),Is.EqualTo(5));
             bank.AddCapacity("sample.parts",10); Assert.That(bank.Exchange("sample.energy",5,"sample.parts",1),Is.True);
             producer.Tick(1); storage.Dispose(); Assert.That(bank.Capacity("sample.energy"),Is.Zero); Assert.That(bank.Amount("sample.energy"),Is.EqualTo(5));
+        }
+        [Test] public void BaseProductionAndStorageRestoreIndependentCapacities()
+        {
+            var shared=new ResourceBank();
+            var inventories=new BaseInventoryRegistry(shared,_=>true);
+            string a=Guid.NewGuid().ToString("N"),b=Guid.NewGuid().ToString("N");
+            BuildingInstance Owned(string id,params BuildingModuleDefinition[] modules)
+            {
+                var services=new BuildingServices(null,resources:shared,resourceFor:owner=>inventories.Bind(owner,id));
+                var building=new BuildingInstance(instances.Count+1,Definition(modules),Vector2Int.zero,Vector3.zero,services);
+                building.RestoreIdentity(building.PersistentId,id);instances.Add(building);building.Activate();return building;
+            }
+            var storageA=Asset<StorageModuleDefinition>();storageA.ResourceId="iron";storageA.Capacity=10;
+            var storageB=Asset<StorageModuleDefinition>();storageB.ResourceId="iron";storageB.Capacity=20;
+            var recipe=Asset<ProductionModuleDefinition>();recipe.OutputId="iron";recipe.OutputAmount=5;
+            var producerA=Owned(a,storageA,recipe);var producerB=Owned(b,storageB,recipe);
+            producerA.Tick(1);producerB.Tick(1);
+            Assert.That(inventories.Ensure(a).Amount("iron"),Is.EqualTo(5));
+            Assert.That(inventories.Ensure(b).Amount("iron"),Is.EqualTo(5));
+            Assert.That(shared.Amount("iron"),Is.Zero);
+            var saved=inventories.Capture();
+            foreach(var record in saved)record.stocks.Single(stock=>stock.id=="iron").capacity=999;
+            inventories.RestoreAmounts(saved);
+            Assert.That(inventories.Ensure(a).Capacity("iron"),Is.EqualTo(10));
+            Assert.That(inventories.Ensure(b).Capacity("iron"),Is.EqualTo(20));
+            producerA.Dispose();
+            Assert.That(inventories.Ensure(a).Capacity("iron"),Is.Zero);
+            Assert.That(inventories.Ensure(a).Amount("iron"),Is.EqualTo(5));
+            Assert.That(inventories.Ensure(b).Capacity("iron"),Is.EqualTo(20));
+        }
+        [Test] public void ReloadRebuildsStorageCapacityAndPreservesOverflowAfterRemoval()
+        {
+            string id=Guid.NewGuid().ToString("N");
+            var defaults=new ResourceBank();defaults.AddCapacity("iron",100);
+            var storage=Asset<StorageModuleDefinition>();storage.ResourceId="iron";storage.Capacity=25;
+            var definition=Definition(storage);
+            BaseInventoryRegistry Registry()=>new(defaults,_=>true);
+            BuildingInstance Install(BaseInventoryRegistry inventory,string persistentId=null)
+            {
+                var services=new BuildingServices(null,resources:defaults,resourceFor:owner=>inventory.Bind(owner,id));
+                var building=new BuildingInstance(instances.Count+1,definition,Vector2Int.zero,Vector3.zero,services);
+                building.RestoreIdentity(persistentId??building.PersistentId,id);instances.Add(building);building.Activate();return building;
+            }
+            var first=Registry();var old=Install(first);
+            Assert.That(first.Ensure(id).Capacity("iron"),Is.EqualTo(125));
+            Assert.That(first.Ensure(id).Deposit("iron",110),Is.EqualTo(110));
+            var saved=first.Capture();saved[0].stocks.Single(stock=>stock.id=="iron").capacity=999;
+            old.Dispose();
+            var restored=Registry();var current=Install(restored,old.PersistentId);
+            restored.RestoreAmounts(saved);
+            Assert.That(restored.Ensure(id).Capacity("iron"),Is.EqualTo(125));
+            Assert.That(restored.Ensure(id).Amount("iron"),Is.EqualTo(110));
+            current.Dispose();
+            Assert.That(restored.Ensure(id).Capacity("iron"),Is.EqualTo(100));
+            Assert.That(restored.Ensure(id).Amount("iron"),Is.EqualTo(110));
         }
         [Test] public void RemovingOptionalModulesRemovesDependenciesAndMovementRegistration()
         {

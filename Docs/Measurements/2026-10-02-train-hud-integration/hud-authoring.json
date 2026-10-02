@@ -1,0 +1,14 @@
+[
+  {
+    "scene": "StartRegionSandbox",
+    "buttons": 139,
+    "staticWorkspace": true,
+    "developmentControls": false
+  },
+  {
+    "scene": "OpenWorldSandbox",
+    "buttons": 137,
+    "staticWorkspace": true,
+    "developmentControls": false
+  }
+]

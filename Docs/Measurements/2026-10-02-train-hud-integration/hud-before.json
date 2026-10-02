@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/InspectIntegratedHud.cs",
+      "entry": "InspectIntegratedHud.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 85,
+      "executeMs": 5,
+      "assemblyName": "PipelineRunScript_InspectIntegratedHud_74ff6148a1574ace87bc238409293fc9",
+      "success": false,
+      "error": "Runtime Error",
+      "errorDetails": "NullReferenceException: Object reference not set to an instance of an object\n  at InspectIntegratedHud+<>c__DisplayClass0_0.<Main>b__1 (UnityEngine.RectTransform t) [0x00000] in /Users/limseth/Projects/Eternal_Steam/Eternal_Steam/Tools/InspectIntegratedHud.cs:2 \n  at System.Linq.Enumerable+WhereSelectArrayIterator`2[TSource,TResult].ToArray () [0x00022] in <8203c5af529241e2a5cc4b3c5a3dc69a>:0 \n  at System.Linq.Enumerable.ToArray[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x0001f] in <8203c5af529241e2a5cc4b3c5a3dc69a>:0 \n  at InspectIntegratedHud.Main () [0x00023] in /Users/limseth/Projects/Eternal_Steam/Eternal_Steam/Tools/InspectIntegratedHud.cs:2 \n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\n  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <c5eeda5e65d44b388e164c6c5cfe0702>:0 "
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

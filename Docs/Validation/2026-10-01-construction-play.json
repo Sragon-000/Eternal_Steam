@@ -1,0 +1,187 @@
+{
+  "date": "2026-10-01",
+  "feature": "SYS-04 general construction quote/payment infrastructure",
+  "status": "implemented; isolated command Play acceptance passed; final product costs unassigned",
+  "editor": {
+    "project": "Eternal_Steam",
+    "pid": 30501,
+    "version": "6000.3.14f1",
+    "reusedExistingEditor": true
+  },
+  "scene": "Assets/EternalSteam/Scene/Tests/StartRegionSandbox.unity",
+  "input": "WorldEditSession/OpenWorldInput commands, not OS pointer",
+  "saveRoot": "/tmp/eternal-construction-20261001",
+  "runtimeCostTable": "temporary in-memory fixture, not a product balance asset",
+  "setup": "Paused isolated session, main upgraded through normal purchase, sub built through normal placement; fixture stock and costs injected explicitly",
+  "policy": {
+    "normalGame": "ConstructionCosts null => VerificationFreeConstruction",
+    "configuredTable": "missing/duplicate/invalid rows reject, explicit empty costs permit zero price",
+    "railCosts": "track iron 1 / station iron 10 retained",
+    "foundationKey": "openworld.foundation",
+    "legacyTowerKeys": "openworld.legacy.<HordeTowerKind>",
+    "payer": "selected active base at reservation; same base must be selected at confirm; no automatic reassignment",
+    "legacyNonBaseMode": "shared ResourceBank",
+    "recovery": "existing recovery path; no refund invented",
+    "startingMain": "automatic starting base remains system installation, outside purchase"
+  },
+  "checks": {
+    "passed": true,
+    "mixedIron": 15.0,
+    "mixedCopper": 4.0,
+    "mainAfterMixedIron": 15.0,
+    "mainAfterMixedCopper": 6.0,
+    "subIron": 80.0,
+    "subCopper": 80.0,
+    "foundationCopper": 3.0,
+    "legacyTowerIron": 2.0,
+    "legacyTowerCopper": 1.0
+  },
+  "passed": [
+    "default unassigned policy free, explicit free quote",
+    "duplicate iron entries and two resources aggregated across two generators plus one track",
+    "copper shortage: no partial debit, no install, 3 reservations retained",
+    "selection changed main to sub: no charge to either base, original reservation retained",
+    "blocked tile: entire mixed batch rejected without charge",
+    "injected factory exception: world, occupancy and bank restore, reservations retained",
+    "paid confirm: iron 15/copper 4 charged exactly, sub stock unchanged, installed owner matches payer",
+    "infinite ON/OFF recheck: OFF rejects; ON commits without changing actual stock",
+    "cancel charges nothing",
+    "foundation copper 3; legacy tower on foundation iron 2/copper 1 exact payment",
+    "pending payer destroyed: rejection without redirect/charge; retired stock preserved",
+    "safe save, real same-scene reload, all snapshot fields equal excluding savedUtc and building ordering; no second charge",
+    "configured cost table changes save fingerprint; null table keeps previous free-game fingerprint"
+  ],
+  "snapshot": {
+    "runId": "0d6c499985714b2593e55ae677577b42",
+    "buildingCount": 7,
+    "foundationCount": 1,
+    "retiredBaseCount": 1,
+    "inventories": [
+      {
+        "baseId": "18f8a08e5638499e85f3c5a819989a4c",
+        "stocks": [
+          {
+            "id": "coal",
+            "amount": 0.0,
+            "capacity": 1000000.0
+          },
+          {
+            "id": "copper",
+            "amount": 80.0,
+            "capacity": 1000000.0
+          },
+          {
+            "id": "iron",
+            "amount": 80.0,
+            "capacity": 1000000.0
+          },
+          {
+            "id": "nanometal",
+            "amount": 0.0,
+            "capacity": 1000000.0
+          },
+          {
+            "id": "plasma_ore",
+            "amount": 0.0,
+            "capacity": 1000000.0
+          },
+          {
+            "id": "titanium",
+            "amount": 0.0,
+            "capacity": 1000000.0
+          },
+          {
+            "id": "tungsten",
+            "amount": 0.0,
+            "capacity": 1000000.0
+          },
+          {
+            "id": "uranium",
+            "amount": 0.0,
+            "capacity": 1000000.0
+          }
+        ]
+      },
+      {
+        "baseId": "5cac48bfb9ec43cc83aff7e616c0095d",
+        "stocks": [
+          {
+            "id": "coal",
+            "amount": 0.0,
+            "capacity": 1000000.0
+          },
+          {
+            "id": "copper",
+            "amount": 6.0,
+            "capacity": 1000000.0
+          },
+          {
+            "id": "iron",
+            "amount": 18.0,
+            "capacity": 1000000.0
+          },
+          {
+            "id": "nanometal",
+            "amount": 0.0,
+            "capacity": 1000000.0
+          },
+          {
+            "id": "plasma_ore",
+            "amount": 0.0,
+            "capacity": 1000000.0
+          },
+          {
+            "id": "titanium",
+            "amount": 0.0,
+            "capacity": 1000000.0
+          },
+          {
+            "id": "tungsten",
+            "amount": 0.0,
+            "capacity": 1000000.0
+          },
+          {
+            "id": "uranium",
+            "amount": 0.0,
+            "capacity": 1000000.0
+          }
+        ]
+      }
+    ],
+    "expectedPayloadSha256": "8a5dfdc18204bbf0d93a19862223233edf677a253b13a055aa073e20ea2906a7",
+    "reloadCommandResult": "PASS paid buildings, legacy tower/foundation, base inventories and retired payer exact save/reload; no repeated charge"
+  },
+  "consoleErrorsAfterPlay": 0,
+  "editorRestored": {
+    "playing": false,
+    "dirty": false,
+    "scene": "Assets/EternalSteam/Scene/Tests/StartRegionSandbox.unity",
+    "saveTestRoot": null,
+    "runInBackground": false,
+    "constructionCostAssetAssigned": false
+  },
+  "remaining": [
+    "DEC-08 final construction and upgrade costs and payer policies for new bases",
+    "product ConstructionCostTable/UpgradeCostTable assets and saved scene references",
+    "refund policy decision",
+    "paid OS pointer actions, all-resource/large-quantity layout at 1280/1920",
+    "catalog building on foundation paid integration and legacy ground tower variant; common API implemented, these surface variants not separately run"
+  ],
+  "editmodeEvidence": "2026-10-01-construction-editmode.json",
+  "finalEditmode": {
+    "total": 232,
+    "passed": 232,
+    "failed": 0,
+    "skipped": 0,
+    "inconclusive": 0
+  },
+  "testInfrastructureNote": "An intermediate run was contaminated by a concurrent Pipeline main-thread timeout error; final isolated full run passed 232/232.",
+  "workCompletion": {
+    "date": "2026-10-01",
+    "status": "complete",
+    "scope": "general construction quote/payment infrastructure and recorded core acceptance",
+    "productEconomyStatus": "partial; final cost assets/policies and additional acceptance remain",
+    "canonicalDocument": "../프로젝트_통합기준.md",
+    "reopenRule": "Do not repeat completed infrastructure; continue only documented remaining work or a reproduced regression."
+  }
+}

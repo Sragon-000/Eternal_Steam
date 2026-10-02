@@ -1,0 +1,33 @@
+--- before/Assets/EternalSteam/Tests/OpenWorld/Runtime/WorldEditSession.cs
++++ after/Assets/EternalSteam/Tests/OpenWorld/Runtime/WorldEditSession.cs
+@@ -269,7 +269,7 @@
+             foreach(var v in recoveringFoundations.Values)v.Dispose();
+             recovering.Clear();recovery.Clear();recoveringFoundations.Clear();
+         }
+-        public PlacementResult Confirm()
++        public PlacementResult Confirm(Func<PlacementResult> onInstalled=null)
+         {
+             if(Count==0)return new PlacementResult("empty","임시 작업이 없습니다.");
+             if(RecoveryCount>0) {
+@@ -302,10 +302,10 @@
+             if(!valid)return new PlacementResult("invalid",reason);
+             var quote=Quote();if(!quote.Affordable)return new PlacementResult("resource",quote.Reason);
+             PlacementResult installation=PlacementResult.Ok;
+-            bool paid=ConstructionPurchase.TryCommit(quote.Payments,()=>{installation=ConfirmPlacement();return installation.Success;},out reason);
++            bool paid=ConstructionPurchase.TryCommit(quote.Payments,()=>{installation=ConfirmPlacement(onInstalled);return installation.Success;},out reason);
+             return paid?installation:installation.Success?new PlacementResult("resource",reason):installation;
+         }
+-        PlacementResult ConfirmPlacement()
++        PlacementResult ConfirmPlacement(Func<PlacementResult> onInstalled)
+         {
+             string reason=null;
+             var installedFoundations=new List<FoundationPlacement.Platform>();
+@@ -322,7 +322,7 @@
+                     if(!sessions.Contains(t.Platform.Placement))sessions.Add(t.Platform.Placement);
+                 }
+                 foreach(var p in contentPending)if(!sessions.Contains(p.Session))sessions.Add(p.Session);
+-                var result=sessions.Count==0?PlacementResult.Ok:PlacementSession.ConfirmTogether(sessions);
++                var result=sessions.Count==0?PlacementResult.Ok:PlacementSession.ConfirmTogether(sessions,onInstalled);
+                 if(!result.Success)throw new InvalidOperationException(result.Message);
+                 prepared.Clear();Cancel();return PlacementResult.Ok;
+             } catch(Exception e) {

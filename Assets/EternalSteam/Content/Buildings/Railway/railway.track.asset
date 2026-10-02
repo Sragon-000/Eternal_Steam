@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 961be35588064450ea724446c223c99b, type: 3}
+  m_Name: railway.track
+  m_EditorClassIdentifier: 
+  Id: railway.track
+  DisplayName: "선로 · 검증비 철 1"
+  Category: 2
+  Footprint: {x: 1, y: 1}
+  Recoverable: 1
+  Placement: {fileID: 11400000, guid: 4e2c888d23504357b31c855bc9f80eab, type: 2}
+  ViewPrefab: {fileID: 100001, guid: 08874a0cc1e44f1f929621312c1c0277, type: 3}
+  Modules:
+  - {fileID: 11400000, guid: cadf476e84ab4bd4abdfb73c76e45d12, type: 2}

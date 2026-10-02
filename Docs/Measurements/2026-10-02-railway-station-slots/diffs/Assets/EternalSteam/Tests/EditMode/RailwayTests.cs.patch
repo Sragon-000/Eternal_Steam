@@ -1,0 +1,11 @@
+--- before/Assets/EternalSteam/Tests/EditMode/RailwayTests.cs
++++ after/Assets/EternalSteam/Tests/EditMode/RailwayTests.cs
+@@ -456,7 +456,7 @@
+             var candidate=new[]{new RailStop{stationId=first.PersistentId,arrival=3,departure=0},new RailStop{stationId=west.PersistentId,arrival=1,departure=3,load=999}};
+             Assert.That(network.Commit(Guid.NewGuid().ToString("N"),original,out var r,out var error),Is.True,error);network.Configure(r,"iron",0,100,0,out _);network.Refuel(r,50,out _);network.Start(r,out _);
+             Assert.That(network.UpdateRoute(r,candidate,0,out error),Is.True,error);Assert.That(r.pending.stops[1].load,Is.Zero,"New station settings reset");
+-            Assert.That(network.Commit(Guid.NewGuid().ToString("N"),candidate,out var competitor,out error),Is.True,error);
++            Assert.That(network.Commit(Guid.NewGuid().ToString("N"),candidate.Reverse().ToArray(),out var competitor,out error),Is.True,error);
+             network.Tick(r.ExpectedSeconds);Assert.That(r.pending.failed,Is.True);Assert.That(r.pending.error,Does.Contain("다른 노선"));Assert.That(r.revision,Is.Zero);Assert.That(r.stops[1].stationId,Is.EqualTo(east.PersistentId));Assert.That(r.train.status,Is.EqualTo(TrainStatus.Dwelling));Assert.That(competitor.train.status,Is.EqualTo(TrainStatus.Stopped));
+         }
+     }

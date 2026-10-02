@@ -1,0 +1,10 @@
+--- before/Assets/EternalSteam/Tests/OpenWorld/Runtime/RailwaySceneView.cs
++++ after/Assets/EternalSteam/Tests/OpenWorld/Runtime/RailwaySceneView.cs
+@@ -34,6 +34,7 @@
+                     vertex==count+1?content.Railway.Network.Station(r.stops[r.NextStopIndex].stationId)?.Position??content.GroundWorld.Grid.Center(r.TravelCell(count-1),Vector2Int.one):
+                     content.GroundWorld.Grid.Center(r.TravelCell(vertex-1),Vector2Int.one);
+                 var from=Point(edge);var to=Point(edge+1);p=Vector3.Lerp(from,to,(float)(traveled-edge));next=p+(r.IsShuttle&&t.reverse?from-to:to-from);}
++            if(t.waitingForStation&&!t.segmentPaid){var direction=next-p;p=content.GroundWorld.Grid.Center(r.TravelCell(0),Vector2Int.one);next=p+direction;}
+             var d=next-p;d.y=0;if(d.sqrMagnitude<.001f)d=station?.Direction??Vector3.forward;
+             if(content.CheckTerrain(content.GroundWorld.Grid.WorldToCell(p),Vector2Int.one,out float height,out _))p.y=height;
+             return (p+Vector3.up*.6f,d.normalized);

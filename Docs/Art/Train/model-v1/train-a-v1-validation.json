@@ -1,0 +1,14 @@
+{
+  "blender": "5.2.1 LTS",
+  "saved_scenes": [
+    "TRAIN_A_V1"
+  ],
+  "saved_objects": 609,
+  "editable_component_objects": 605,
+  "base_mesh_vertices": 32752,
+  "base_mesh_faces": 26214,
+  "file_bytes": 387692,
+  "original_scene_preserved": true,
+  "unity_import_verified": false,
+  "render_engine": "BLENDER_WORKBENCH"
+}

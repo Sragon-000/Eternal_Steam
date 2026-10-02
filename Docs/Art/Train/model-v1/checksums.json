@@ -1,0 +1,38 @@
+{
+  "Eternal_Steam/Docs/Art/Train/train-a-three-view-v3.png": {
+    "bytes": 2132658,
+    "sha256": "a93de46c70550ecbd1c52002db8027ea48cfbfc077da07397c187a26309abf1a"
+  },
+  "Eternal_Steam/Docs/Art/Train/model-v1/comparison.html": {
+    "bytes": 1036,
+    "sha256": "d322888467b08e8f5a3803a6f79fccca318d73b7c28c7b281f8c2ab7e4c521cb"
+  },
+  "Eternal_Steam/Docs/Art/Train/model-v1/front.png": {
+    "bytes": 563581,
+    "sha256": "241bad61bedb6eb673182baa22306935290c1b30f89f1a12cbfdaae631c4f06e"
+  },
+  "Eternal_Steam/Docs/Art/Train/model-v1/modeling-notes.md": {
+    "bytes": 4402,
+    "sha256": "7fd34e69573fe15d87f881237ba32e7a71682007ec04e877f6da9ed26ba66e53"
+  },
+  "Eternal_Steam/Docs/Art/Train/model-v1/perspective.png": {
+    "bytes": 1291266,
+    "sha256": "173c26ebf2fe83d44072b6b67070e141605736bdbed899847218166d09b5cdea"
+  },
+  "Eternal_Steam/Docs/Art/Train/model-v1/side.png": {
+    "bytes": 1096362,
+    "sha256": "9fdccb0194d27d3910ae2acd4c16c98507f5f4d0364766e454d69e5726e0f7e7"
+  },
+  "Eternal_Steam/Docs/Art/Train/model-v1/top.png": {
+    "bytes": 1012036,
+    "sha256": "c165dab68bb5581a991b0217be7b0ee87bd256662585b8a2eb1ad98399d43577"
+  },
+  "Eternal_Steam/Docs/Art/Train/model-v1/train-a-v1-validation.json": {
+    "bytes": 324,
+    "sha256": "8c287c006e1a07442180e899672bba543424b2dc349bcd3902640f0f71776a44"
+  },
+  "Eternal_Steam/Docs/Art/Train/model-v1/train-a-v1.blend": {
+    "bytes": 387692,
+    "sha256": "e8d30b36926b8512a163942c37c369bbbd819143363fcf22c115d1416ec8e6bc"
+  }
+}

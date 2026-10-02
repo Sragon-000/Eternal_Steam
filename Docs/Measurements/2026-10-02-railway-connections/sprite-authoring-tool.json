@@ -1,0 +1,105 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/AuthorRailwaySprites.cs",
+      "entry": "AuthorRailwaySprites.Main"
+    },
+    "result": {
+      "diagnostics": [
+        {
+          "severity": "error",
+          "message": "The type or namespace name 'Sprites' does not exist in the namespace 'UnityEditor.U2D' (are you missing an assembly reference?)",
+          "line": 6,
+          "column": 22,
+          "id": "CS0234"
+        },
+        {
+          "severity": "error",
+          "message": "The type or namespace name 'SpriteDataProviderFactories' could not be found (are you missing a using directive or an assembly reference?)",
+          "line": 16,
+          "column": 20,
+          "id": "CS0246"
+        },
+        {
+          "severity": "error",
+          "message": "The type or namespace name 'ISpriteFrameEditCapability' could not be found (are you missing a using directive or an assembly reference?)",
+          "line": 17,
+          "column": 36,
+          "id": "CS0246"
+        },
+        {
+          "severity": "error",
+          "message": "The name 'EEditCapability' does not exist in the current context",
+          "line": 18,
+          "column": 27,
+          "id": "CS0103"
+        },
+        {
+          "severity": "error",
+          "message": "The name 'EEditCapability' does not exist in the current context",
+          "line": 18,
+          "column": 65,
+          "id": "CS0103"
+        },
+        {
+          "severity": "error",
+          "message": "The name 'EEditCapability' does not exist in the current context",
+          "line": 18,
+          "column": 96,
+          "id": "CS0103"
+        },
+        {
+          "severity": "error",
+          "message": "The name 'EEditCapability' does not exist in the current context",
+          "line": 18,
+          "column": 127,
+          "id": "CS0103"
+        },
+        {
+          "severity": "error",
+          "message": "The name 'EEditCapability' does not exist in the current context",
+          "line": 18,
+          "column": 154,
+          "id": "CS0103"
+        },
+        {
+          "severity": "error",
+          "message": "The type or namespace name 'SpriteRect' could not be found (are you missing a using directive or an assembly reference?)",
+          "line": 23,
+          "column": 67,
+          "id": "CS0246"
+        },
+        {
+          "severity": "error",
+          "message": "The type or namespace name 'ISpriteNameFileIdDataProvider' could not be found (are you missing a using directive or an assembly reference?)",
+          "line": 24,
+          "column": 38,
+          "id": "CS0246"
+        },
+        {
+          "severity": "error",
+          "message": "The type or namespace name 'SpriteNameFileIdPair' could not be found (are you missing a using directive or an assembly reference?)",
+          "line": 25,
+          "column": 75,
+          "id": "CS0246"
+        }
+      ],
+      "compileMs": 564,
+      "executeMs": 0,
+      "assemblyName": "PipelineRunScript_AuthorRailwaySprites_b049a59725f14cd9b3dfc3d1b6f9cecb",
+      "success": false,
+      "error": "Compilation Failed",
+      "errorDetails": "The script failed to compile. See diagnostics for line/column details."
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

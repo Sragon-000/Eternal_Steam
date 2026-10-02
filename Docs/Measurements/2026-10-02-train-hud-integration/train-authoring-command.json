@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/AuthorTrainConsist.cs",
+      "entry": "AuthorTrainConsist.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 656,
+      "executeMs": 485,
+      "assemblyName": "PipelineRunScript_AuthorTrainConsist_79a0c1298c4d4234954ad789feed3e16",
+      "success": true,
+      "result": "{\n  \"prefab\": \"Assets/EternalSteam/Content/Buildings/Railway/Train.prefab\",\n  \"meshes\": 27,\n  \"clip\": \"LinkedMotion\",\n  \"seconds\": 2.0,\n  \"scale\": 0.38,\n  \"forward\": \"+Z\",\n  \"socketGap1\": 0.0,\n  \"socketGap2\": 4.76837158E-07,\n  \"mount\": \"(0.00, 0.37, -5.93)\"\n}"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

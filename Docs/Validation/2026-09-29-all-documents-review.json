@@ -1,0 +1,59 @@
+{
+  "scope": "Static cross-document and source review, not full requirement-by-requirement acceptance or fresh test execution",
+  "archive_files": [
+    {
+      "file": "건물.md",
+      "sha256_verified": true
+    },
+    {
+      "file": "방어_건물.md",
+      "sha256_verified": true
+    },
+    {
+      "file": "기타_건물.md",
+      "sha256_verified": true
+    },
+    {
+      "file": "배치 수정 임시 UI.md",
+      "sha256_verified": true
+    },
+    {
+      "file": "IMG_0516.png",
+      "sha256_verified": true
+    },
+    {
+      "file": "자원_건물.md",
+      "sha256_verified": true
+    },
+    {
+      "file": "방어_건물_종류.md",
+      "sha256_verified": true
+    },
+    {
+      "file": "일정 계획.md",
+      "sha256_verified": true
+    },
+    {
+      "file": "4. 기지.md",
+      "sha256_verified": true
+    },
+    {
+      "file": "7. 맵 진행 및 에너지 오브 시스템.md",
+      "sha256_verified": true
+    },
+    {
+      "file": "4.1 추가 사항.md",
+      "sha256_verified": true
+    },
+    {
+      "file": "4.3 기차.md",
+      "sha256_verified": true
+    },
+    {
+      "file": "4.4 노선.md",
+      "sha256_verified": true
+    }
+  ],
+  "resource_definitions": 7,
+  "weapon_definitions_present": 9
+}

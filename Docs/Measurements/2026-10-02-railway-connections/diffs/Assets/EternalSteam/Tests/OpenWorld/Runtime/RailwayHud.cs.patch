@@ -1,0 +1,81 @@
+--- before/Assets/EternalSteam/Tests/OpenWorld/Runtime/RailwayHud.cs
++++ after/Assets/EternalSteam/Tests/OpenWorld/Runtime/RailwayHud.cs
+@@ -8,7 +8,7 @@
+ namespace EternalSteam.OpenWorld
+ {
+     /// <summary>Saved Canvas controls; runtime only updates text, visibility and commands.</summary>
+-    public sealed class RailwayHud:MonoBehaviour
++    public sealed partial class RailwayHud:MonoBehaviour
+     {
+         public enum EditorStage { Editing, Confirming, DiscardPrompt }
+         [Serializable] public struct CommandBinding { public string Command; public UnityEngine.UI.Button Button; }
+@@ -53,13 +53,13 @@
+         bool ShuttleDraft=>DraftMode==RailRouteMode.Shuttle;
+         bool DraftConnected=>ShuttleDraft||loopClosed;
+         string displayedRoute;int displayedStop=-1,editingRevision,displayedRevision=-1;
+-        public bool HasDraft=>drafting;
++        public bool HasDraft=>drafting||connecting;
+         public bool Typing=>(Resource!=null&&Resource.isFocused)||(Load!=null&&Load.isFocused)||(Unload!=null&&Unload.isFocused);
+         RailwayNetwork Network=>Sandbox.Content.Railway.Network;
+         List<RailRoute> Visible()=>Network.Routes.Where(r=>context==null||r.stops.Any(s=>s.stationId==context)).ToList();
+         public bool OpenFromStation(string stationId)
+         {
+-            if(Sandbox?.Content?.Railway==null||drafting||!Network.StationActive(stationId))return false;
++            if(Sandbox?.Content?.Railway==null||drafting||connecting||!Network.StationActive(stationId))return false;
+             context=stationId;selected=null;armament=false;displayedRoute=null;page=stationPage=0;Panel.SetActive(true);Refresh();return true;
+         }
+         bool Stationary=>selected!=null&&!selected.train.segmentPaid&&selected.train.status is TrainStatus.Stopped or TrainStatus.FuelWait or TrainStatus.RouteError;
+@@ -70,6 +70,7 @@
+             if(Sandbox.Content.Defeated||Sandbox.Persistence?.Blocked==true){reason="진행이 차단되었습니다.";return false;}
+             if(!Sandbox.Content.BaseRules){reason="기지 규칙이 적용된 맵에서 사용할 수 있습니다.";return false;}
+             if(!Panel.activeSelf&&command is not ("open" or "station" or "rotate")&&!command.StartsWith("build:")){reason="노선 화면을 먼저 여세요.";return false;}
++            if(connecting||command=="connect"||command.StartsWith("connection-"))return CanConnectionCommand(command,out reason);
+             if(drafting&&draft.Count>0)stopIndex=Math.Max(0,draft.FindIndex(s=>s.stationId==draftSelectionId));
+             bool allowed=false;
+             if(drafting){
+@@ -155,6 +156,7 @@
+             if(!Sandbox.Content.BaseRules){Message("철도는 기지 규칙이 적용된 StartRegionSandbox에서 사용할 수 있습니다.");return;}
+             Sandbox.Content.Railway.Refresh();string error=null;
+             if(!CanExecute(command,out error)){Message(error??"현재 화면에서는 사용할 수 없습니다.");Refresh();return;}
++            if(connecting||command=="connect"||command.StartsWith("connection-")){ExecuteConnection(command);return;}
+             if(command.StartsWith("build:")){
+                 if(drafting){Message("노선 초안을 확정하거나 취소하세요.");return;}
+                 Panel.SetActive(false);var input=Sandbox.GetComponent<OpenWorldInput>();input.BeginEditing();input.SelectContent(command=="build:track"?Track:command=="build:station"?Station:CoalProducer);return;
+@@ -205,9 +207,9 @@
+                 case "weapon-back":armament=false;break;
+                 case "weapon-next":weaponIndex++;break;
+                 case "weapon-shape":Sandbox.Content.Railway.Defense.Shape(selected,out error);weaponIndex=0;Message(error??"빈 방어칸 형태 변경");break;
+-                case "weapon-install":var choices=Sandbox.Content.Railway.Defense.Choices(selected).ToArray();if(choices.Length==0){Message("이 크기의 해금된 방어 건물이 없습니다.");break;}Sandbox.Content.Railway.Defense.Install(selected,choices[weaponIndex%choices.Length],out error);Message(error??"방어 장착 · 정차 역 기지 철 10 차감 (검증값)");break;
++                case "weapon-install":var choices=Sandbox.Content.Railway.Defense.Choices(selected).ToArray();if(choices.Length==0){Message("이 크기의 해금된 방어 건물이 없습니다.");break;}Sandbox.Content.Railway.Defense.Install(selected,choices[weaponIndex%choices.Length],out error);Message(error??"방어 장착 · 정차 역 기지 철 10 차감");break;
+                 case "weapon-remove":Sandbox.Content.Railway.Defense.Remove(selected,out error);Message(error??"방어 해제 · 환급 0 · 축전지 유지");break;
+-                case "weapon-upgrade":Sandbox.Content.Railway.Defense.Upgrade(selected,out error);Message(error??$"방어 강화 · 철 {TrainArmament.UpgradeIronPerLevel:0} × 이전 레벨 차감 (검증값)");break;
++                case "weapon-upgrade":Sandbox.Content.Railway.Defense.Upgrade(selected,out error);Message(error??$"방어 강화 · 철 {TrainArmament.UpgradeIronPerLevel:0} × 이전 레벨 차감");break;
+                 case "weapon-charge":Sandbox.Content.Railway.Defense.Charge(selected,out error);Message(error??"정차 역 소속 기지의 저장 전력을 축전지로 이동");break;
+                 case "stop":Network.Stop(selected);break;
+                 case "fuel":Network.Refuel(selected,RailwayNetwork.RefuelBatch,out error);Message(error??$"정차 역 소속 기지에서 최대 석탄 {RailwayNetwork.RefuelBatch:0}개 보급");break;
+@@ -236,6 +238,7 @@
+         }
+         public bool TryHandleDraftWorldClick(Vector3 point)
+         {
++            if(TryConnectionWorldClick(point))return true;
+             if(!Panel.activeSelf||!drafting||Sandbox.GetComponent<OpenWorldInput>().IsEditing)return false;
+             if(stage!=EditorStage.Editing)return true;
+             if(Sandbox.Content.Defeated||Sandbox.Persistence?.Blocked==true)return true;
+@@ -269,6 +272,8 @@
+                 binding.Button.interactable=CanExecute(binding.Command,out _);
+             }
+             if(!Panel.activeSelf){if(!Sandbox.GetComponent<OpenWorldInput>().ChoosingStationDirection)Sandbox.RailwayView.ClearDraftSelection();return;}
++            ConnectionPanel.SetActive(connecting);
++            if(connecting){foreach(var panel in new[]{ListPanel,DetailPanel,ArmamentPanel,DraftPanel,ConfirmPanel,DiscardPanel,DraftStopsPanel,StationContextPanel})panel.SetActive(false);Sandbox.RailwayView.ClearDraftSelection();RefreshConnection();return;}
+             ListPanel.SetActive(!drafting&&selected==null);DetailPanel.SetActive(!drafting&&selected!=null&&!armament);ArmamentPanel.SetActive(!drafting&&selected!=null&&armament);DraftPanel.SetActive(drafting&&stage==EditorStage.Editing);ConfirmPanel.SetActive(drafting&&stage==EditorStage.Confirming);DiscardPanel.SetActive(drafting&&stage==EditorStage.DiscardPrompt);
+             DraftStopsPanel.SetActive(drafting&&stage==EditorStage.Editing);
+             if(StationContextPanel!=null)StationContextPanel.SetActive(!drafting&&selected!=null&&!armament);
+@@ -294,7 +299,7 @@
+             bool writable=!drafting&&Stationary&&selected.train.status is TrainStatus.Stopped or TrainStatus.FuelWait;Resource.readOnly=!writable||selected.train.HasCargoResource;Load.readOnly=Unload.readOnly=!writable;
+             var hints=new List<string>();foreach(var command in new[]{drafting?"validate":"new","start","configure"})if(!CanExecute(command,out var why)&&why!=null&&!hints.Contains(why))hints.Add(why);CommandHints.text=string.Join(" · ",hints);CommandHints.gameObject.SetActive(drafting||selected==null);
+             if(CancelPendingButton!=null)CancelPendingButton.interactable=!drafting&&Network.HasPending(selected);
+-            if(armament&&selected!=null){selected.train.armament??=new TrainArmament();var a=selected.train.armament;var choices=Sandbox.Content.Railway.Defense.Choices(selected).ToArray();weaponIndex=choices.Length==0?0:weaponIndex%choices.Length;ArmamentChoice.text=$"방어칸 {a.footprint.x}×{a.footprint.y} · 장착 {(string.IsNullOrEmpty(a.definition)?"없음":a.definition)}\n축전지 {a.battery:0.##}/{TrainArmament.Capacity} · 후보 {(choices.Length==0?"없음":choices[weaponIndex].DisplayName)}\n검증값: 설치 철 {TrainArmament.InstallIron:0} / 강화 철 {TrainArmament.UpgradeIronPerLevel:0}×현재 레벨 / 해제 환급 0";}
++            if(armament&&selected!=null){selected.train.armament??=new TrainArmament();var a=selected.train.armament;var choices=Sandbox.Content.Railway.Defense.Choices(selected).ToArray();weaponIndex=choices.Length==0?0:weaponIndex%choices.Length;ArmamentChoice.text=$"방어칸 {a.footprint.x}×{a.footprint.y} · 장착 {(string.IsNullOrEmpty(a.definition)?"없음":a.definition)}\n축전지 {a.battery:0.##}/{TrainArmament.Capacity} · 후보 {(choices.Length==0?"없음":choices[weaponIndex].DisplayName)}\n설치 철 {TrainArmament.InstallIron:0} / 강화 철 {TrainArmament.UpgradeIronPerLevel:0}×현재 레벨 / 해제 환급 0";}
+             var text=new StringBuilder();string contextName=context==null?null:Network.StationName(context);Title.text=drafting?(stage==EditorStage.Confirming?"노선 확정 확인":stage==EditorStage.DiscardPrompt?"미저장 변경을 폐기할까요?":"노선 편집 · 확정 전 초안"):selected!=null?(contextName==null?selected.name:contextName+" · "+selected.name):contextName==null?"전체 노선":contextName+" · 노선";
+             if(!drafting&&selected==null){var list=Visible();page=Math.Min(page,Math.Max(0,(list.Count-1)/Rows.Length));for(int i=0;i<Rows.Length;i++){int index=page*Rows.Length+i;RowButtons[i].gameObject.SetActive(index<list.Count);if(index<list.Count){var r=list[index];Rows[i].text=$"{(r.id==lastRouteId?"> ":"")}{r.name} · {r.stops.Count}역 · {(r.train.waitingForStation?"역 진입 대기":Status(r.train.status))} · {r.ExpectedSeconds:0}s{(Network.HasPending(r)?" · 예약 변경":"")}";}}
+                 text.AppendLine($"등록 {list.Count}개 · 페이지 {page+1}");

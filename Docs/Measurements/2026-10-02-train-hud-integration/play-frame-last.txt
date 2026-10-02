@@ -1,0 +1,15 @@
+{
+  "result": "PASS",
+  "resolution": "3840x2160",
+  "hierarchyObjects": 446,
+  "workspaceRaycastAndPointerEvents": true,
+  "constructionAndRailwayExclusive": true,
+  "selectedStationContext": true,
+  "draftGuard": true,
+  "railwayCatalogCards": 3,
+  "detailAndDraftBounds": true,
+  "panelBoundsDisjoint": true,
+  "animationPhase": 0.0737145,
+  "combatMountMatches": true,
+  "researchExperiment": false
+}

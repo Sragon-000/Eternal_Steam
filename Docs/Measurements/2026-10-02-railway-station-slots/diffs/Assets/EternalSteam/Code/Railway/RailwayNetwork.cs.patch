@@ -1,0 +1,82 @@
+--- before/Assets/EternalSteam/Code/Railway/RailwayNetwork.cs
++++ after/Assets/EternalSteam/Code/Railway/RailwayNetwork.cs
+@@ -21,7 +21,7 @@
+     [Serializable] public sealed class TrainState
+     {
+         public TrainStatus status;public int stop;public double progress,dwell,cargo,fuel;
+-        public bool serviced,segmentPaid,reverse;public string resource="";
++        public bool serviced,segmentPaid,reverse;public bool waitingForStation,stationEntryReserved;public string resource="";
+         // JsonUtility serializes an unset string as empty; legacy null means the same thing.
+         public bool HasCargoResource=>!string.IsNullOrEmpty(resource);
+         public TrainArmament armament=new();
+@@ -178,6 +178,7 @@
+             if(!Guid.TryParseExact(requestId,"N",out _)){error="노선 요청 ID 오류";return false;}
+             if(!ValidateDraft(draft,null,out var legs,out error,mode))return false;
+             route=new RailRoute{mode=mode,id=requestId,name="노선 "+(routes.Count+1),trainId=Guid.NewGuid().ToString("N"),stops=draft.Select(s=>s.Copy()).ToList(),legs=legs};
++            route.train.waitingForStation=StationOccupied(route.stops[0].stationId,route);
+             routes.Add(route);foreach(var cell in legs.SelectMany(l=>l.cells).Distinct())assignments.Add(cell,route.id);return true;
+         }
+         public bool Edit(RailRoute route,IReadOnlyList<RailStop> stops,out string error)
+@@ -201,7 +202,7 @@
+         }
+         public bool Refuel(RailRoute route,double amount,out string error)
+         {
+-            error=null;if(!Owns(route)||route.train.status is not (TrainStatus.Stopped or TrainStatus.FuelWait)||!double.IsFinite(amount)||amount<=0){error="정차 후 보급할 수 있습니다.";return false;}
++            error=null;if(!Owns(route)||route.train.waitingForStation||route.train.status is not (TrainStatus.Stopped or TrainStatus.FuelWait)||!double.IsFinite(amount)||amount<=0){error="정차 후 보급할 수 있습니다.";return false;}
+             var b=Station(route.stops[route.train.stop].stationId);if(b==null||!StationActive(b.PersistentId)){error="역의 소속 기지 재고가 비활성입니다.";return false;}
+             double moved=inventory.Load(b.OwnerBaseId,CoalId,Math.Min(amount,route.stops.Count*FuelPerStation-route.train.fuel));route.train.fuel+=moved;
+             if(moved<=0){error="석탄이 없거나 연료칸이 가득 찼습니다.";return false;}return true;
+@@ -214,7 +215,7 @@
+             var t=route.train;if(!t.HasCargoResource){error="화물 자원을 먼저 지정하세요.";return false;}
+             if(t.segmentPaid){t.status=TrainStatus.Moving;route.error=null;return true;}
+             if(t.fuel<FuelCost(route.CurrentLeg)){t.status=TrainStatus.FuelWait;error="다음 구간의 석탄이 부족합니다.";return false;}
+-            Service(route);route.error=null;t.status=TrainStatus.Dwelling;return true;
++            if(!t.waitingForStation)Service(route);route.error=null;t.status=TrainStatus.Dwelling;return true;
+         }
+         public void Stop(RailRoute route)
+         {if(!Owns(route))return;var t=route.train;if(t.status==TrainStatus.Moving)t.status=TrainStatus.StopRequested;else if(t.status is TrainStatus.Dwelling or TrainStatus.FuelWait)t.status=TrainStatus.Stopped;}
+@@ -229,25 +230,11 @@
+             if(!ValidateDraft(route.stops,route.id,out var legs,out error,route.mode))return false;
+             if(legs.Count!=route.legs.Count||legs.Where((l,i)=>(!l.cells.SequenceEqual(route.legs[i].cells)||(route.IsShuttle&&(l.startPort!=route.legs[i].startPort||l.endPort!=route.legs[i].endPort)))).Any()){error="저장된 선로 경로가 변경되었습니다.";return false;}return true;
+         }
+-        public void Tick(double dt)
+-        {
+-            if(!double.IsFinite(dt)||dt<=0)return;
+-            foreach(var r in routes){var t=r.train;double remaining=dt;
+-                while(remaining>0){
+-                    if(t.status is not (TrainStatus.Moving or TrainStatus.StopRequested or TrainStatus.Dwelling))break;
+-                    if(!r.stops.All(s=>StationActive(s.stationId))){t.status=TrainStatus.RouteError;r.error="노선의 역이 비활성입니다.";break;}
+-                    if(t.status==TrainStatus.Dwelling){double step=Math.Min(remaining,t.dwell);t.dwell-=step;remaining-=step;if(t.dwell>1e-9)break;t.dwell=0;
+-                        double fuel=FuelCost(r.CurrentLeg);if(t.fuel<fuel){t.status=TrainStatus.FuelWait;break;}t.fuel-=fuel;t.segmentPaid=true;t.progress=0;t.status=TrainStatus.Moving;
+-                    }else{double length=r.CurrentLeg.cells.Count;double step=Math.Min(remaining,length-t.progress);remaining-=step;t.progress+=step;
+-                        if(t.progress+1e-9<length)break;bool stop=t.status==TrainStatus.StopRequested;t.stop=r.NextStopIndex;NormalizeDirection(r);t.progress=0;t.segmentPaid=false;t.serviced=false;if(t.stop==0)ApplyPendingAtBoundary(r);Service(r);t.status=stop?TrainStatus.Stopped:TrainStatus.Dwelling;}
+-                }
+-            }
+-        }
+-        [Serializable] public sealed class Snapshot {public List<RailRoute> routes=new();public List<StationLabel> labels=new();public List<BaseLabel> baseLabels=new();}
+-        public Snapshot Capture()=>JsonUtility.FromJson<Snapshot>(JsonUtility.ToJson(new Snapshot{routes=routes,labels=labels,baseLabels=baseLabels}));
++        [Serializable] public sealed class Snapshot {public int stationSlotVersion;public List<RailRoute> routes=new();public List<StationLabel> labels=new();public List<BaseLabel> baseLabels=new();}
++        public Snapshot Capture()=>JsonUtility.FromJson<Snapshot>(JsonUtility.ToJson(new Snapshot{stationSlotVersion=1,routes=routes,labels=labels,baseLabels=baseLabels}));
+         public static void ValidateSnapshot(Snapshot data,bool allowShuttle=true)
+         {
+-            if(data?.routes==null||data.routes.Count>10000)throw new ArgumentException("철도 저장 목록 오류");
++            if(data?.routes==null||data.routes.Count>10000||data.stationSlotVersion<0||data.stationSlotVersion>1)throw new ArgumentException("철도 저장 목록 오류");
+             if(data.labels==null)throw new ArgumentException("역 이름 저장 오류");var stationIds=new HashSet<string>();var ordinals=new HashSet<string>();
+             foreach(var label in data.labels)if(label==null||!Guid.TryParseExact(label.stationId,"N",out _)||!Guid.TryParseExact(label.baseId,"N",out _)||label.number<1||!stationIds.Add(label.stationId)||!ordinals.Add(label.baseId+":"+label.number))throw new ArgumentException("역 이름/순번 저장 오류");
+             // Missing/empty registry is the legacy format and is upgraded deterministically on restore.
+@@ -267,10 +254,14 @@
+                 if(t.status is TrainStatus.Moving or TrainStatus.StopRequested){if(!t.segmentPaid||!t.serviced||t.dwell!=0)throw new ArgumentException("기차 이동 저장 상태 오류");}
+                 else if(t.status!=TrainStatus.RouteError&&(t.segmentPaid||t.progress!=0))throw new ArgumentException("기차 정차 저장 상태 오류");
+             }
++            if(data.stationSlotVersion==1)ValidateStationSlots(data.routes);
+         }
+         public void Restore(Snapshot data)
+         {
+-            ValidateSnapshot(data);var copy=JsonUtility.FromJson<Snapshot>(JsonUtility.ToJson(data));routes.Clear();assignments.Clear();labels.Clear();labels.AddRange(copy.labels);baseLabels.Clear();
++            ValidateSnapshot(data);var copy=JsonUtility.FromJson<Snapshot>(JsonUtility.ToJson(data));
++            if(copy.stationSlotVersion==0)MigrateStationSlots(copy.routes);
++            ValidateStationSlots(copy.routes);
++            routes.Clear();assignments.Clear();labels.Clear();labels.AddRange(copy.labels);baseLabels.Clear();
+             if(copy.baseLabels!=null&&copy.baseLabels.Count>0)baseLabels.AddRange(copy.baseLabels);
+             else foreach(var id in labels.Select(l=>l.baseId).Distinct().OrderBy(id=>id,StringComparer.Ordinal))RegisterBaseLabel(id);
+             routes.AddRange(copy.routes);foreach(var r in routes){foreach(var c in r.legs.SelectMany(l=>l.cells).Distinct())assignments.Add(c,r.id);if(!ValidateExisting(r,out var error)){r.error=error;r.train.status=TrainStatus.RouteError;}}

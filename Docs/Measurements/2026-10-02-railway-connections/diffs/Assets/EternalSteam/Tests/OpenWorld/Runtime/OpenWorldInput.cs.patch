@@ -1,0 +1,22 @@
+--- before/Assets/EternalSteam/Tests/OpenWorld/Runtime/OpenWorldInput.cs
++++ after/Assets/EternalSteam/Tests/OpenWorld/Runtime/OpenWorldInput.cs
+@@ -95,6 +95,7 @@
+         public bool ClickWorld(Vector3 point)
+         {
+             if(Sandbox.Content.Defeated||Sandbox.Persistence?.Blocked==true)return false;
++            if(Sandbox.RailwayHud?.TryHandleDraftWorldClick(point)==true)return true;
+             string reason;
+             if(IsEditing && !Moving) {
+                 var pendingContent=Edits.ContentAt(point);if(pendingContent!=null){Edits.Remove(pendingContent);Sandbox.Message="임시 배치를 제거했습니다.";return true;}
+@@ -151,9 +152,10 @@
+             Sandbox.WorldGrid?.SetVisible(IsEditing);
+             PlacementHint="";if(preview!=null)preview.SetActive(false);
+             var mouse=Mouse.current;if(mouse==null||Edits==null)return;
+-            if((Keyboard.current?.escapeKey.wasPressedThisFrame??false)||mouse.rightButton.wasPressedThisFrame){Cancel();return;}
++            if((Keyboard.current?.escapeKey.wasPressedThisFrame??false)||mouse.rightButton.wasPressedThisFrame){if(Sandbox.RailwayHud?.HasDraft==true)Sandbox.RailwayHud.Execute("close");else Cancel();return;}
+             preview.SetActive(false);directionLine.enabled=false;
+             var screen=mouse.position.ReadValue();
++            if(mouse.leftButton.wasPressedThisFrame&&Sandbox.RailwayHud?.TryHandlePortScreenClick(screen)==true)return;
+             var ray=Sandbox.CameraRig.View.ScreenPointToRay(screen);
+             bool hasHit=Physics.Raycast(ray,out var hit,1000);
+             Vector3? worldPoint=hasHit?hit.point:(Vector3?)null;

@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/IntegrateRailwayCatalog.cs",
+      "entry": "IntegrateRailwayCatalog.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 705,
+      "executeMs": 4492,
+      "assemblyName": "PipelineRunScript_IntegrateRailwayCatalog_2372650fc7d843bd919b9ef6fd31cf9a",
+      "success": true,
+      "result": "[\n  {\n    \"scene\": \"StartRegionSandbox\",\n    \"catalogEntries\": 28,\n    \"railwayCards\": 3\n  },\n  {\n    \"scene\": \"OpenWorldSandbox\",\n    \"catalogEntries\": 26,\n    \"railwayCards\": 3\n  }\n]"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

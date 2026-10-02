@@ -1,0 +1,32 @@
+{
+  "date": "2026-09-29",
+  "scope": "Documentation consolidation; current working tree, preexisting code changes preserved",
+  "markdown_review_inventory": 97,
+  "archived_root_markdown": 47,
+  "active_root_markdown": [
+    "프로젝트_통합기준.md",
+    "README.md"
+  ],
+  "source_manifest_hashes_passed": 13,
+  "snapshot_hashes_passed": true,
+  "archived_body_preservation": "47/47 equal except explicit historical banner and local link relocation",
+  "game_assets_packages_project_settings_tools_unchanged": true,
+  "existing_non_markdown_validation_evidence_unchanged": true,
+  "validation_markdown_changed_only_link_targets": [
+    "Docs/Validation/2026-09-28-hud-layout.md",
+    "Docs/Validation/2026-09-28-compact-canvas-hud.md",
+    "Docs/Validation/2026-09-28-build-area-hologram.md",
+    "Docs/Validation/2026-09-27-hud-foundation.md"
+  ],
+  "new_broken_inline_local_link_paths": 0,
+  "preexisting_missing_original_link": [
+    {
+      "file": "Docs/Source/Attachments/건물.md",
+      "target": "assets/배치-격자-예시.svg"
+    }
+  ],
+  "link_check_limits": "Checks inline Markdown local path existence; external URLs, anchors, plain text paths and raw attachment wiki links are not validated. Original missing attachment SVG preserved unchanged.",
+  "implementation_tests": "No full NUnit runner or game build for documentation edits. FIX-01 isolated Unity probe recorded separately.",
+  "backup": "Docs/Archive/2026-09-29/documents-before.tar.gz",
+  "inventory": "Docs/Archive/2026-09-29/inventory.json"
+}

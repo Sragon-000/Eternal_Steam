@@ -1,0 +1,22 @@
+--- before/Assets/EternalSteam/Tests/OpenWorld/Runtime/CanvasWorldHud.cs
++++ after/Assets/EternalSteam/Tests/OpenWorld/Runtime/CanvasWorldHud.cs
+@@ -28,6 +28,7 @@
+         public TextBinding[] Texts;public ButtonBinding[] Buttons;public Section[] Sections;public CatalogEntry[] Catalog;
+         public UnityEngine.UI.GridLayoutGroup CatalogLayout;
+         public CanvasHudLayout Layout;
++        public bool ShowDevelopmentControls;
+         public TMP_InputField Amount;public CanvasWorldMinimap Minimap;public UnityEngine.UI.Image HealthFill;
+         public RectTransform ClockHand;public UnityEngine.UI.GraphicRaycaster Raycaster;
+         public string[] ResourcePriority=Array.Empty<string>();
+@@ -105,9 +106,9 @@
+             Text("date",$"{clock.Day}일차 · {(clock.Phase==DayPhase.Day?"낮":"밤")}");Text("remaining",$"{(clock.Phase==DayPhase.Day?"밤":"낮")}까지 {seconds/60:00}:{seconds%60:00}");
+             if(ClockHand!=null)ClockHand.localRotation=Quaternion.Euler(0,0,-360*(float)((clock.Phase==DayPhase.Day?0:.5)+clock.PhaseProgress*.5));
+             Caption("pause",actions.ProgressLabel);Caption("run",actions.RunLabel);Caption("edit",editing?"수정 종료":"수정");Caption("spawn-air",Sandbox.SpawnAir?"공중 적: 켬":"공중 적: 끔");
+-            Caption("infinite-resources",Sandbox.Content.InfiniteResources?"자원 무한: ON":"자원 무한: OFF");Show("test-shortcuts",Application.isEditor||Debug.isDebugBuild);Enable("infinite-resources",!locked);
++            Caption("infinite-resources",Sandbox.Content.InfiniteResources?"자원 무한: ON":"자원 무한: OFF");Show("test-shortcuts",ShowDevelopmentControls&&(Application.isEditor||Debug.isDebugBuild));Enable("infinite-resources",!locked);
+             bool can=actions.CanInteract(out _);Enable("quick-day",can);Enable("quick-night",can);Enable("pause",can);Enable("run",can);Enable("edit",!locked);Enable("spawn",!editing&&!locked);Enable("reset",!locked);Enable("day",can);Enable("night",can);Enable("spawn-air",!locked);
+-            Show("edit-actions",editing);Show("run",Sandbox.Assault==null);Show("developer",Application.isEditor||Debug.isDebugBuild);
++            Show("edit-actions",editing);Show("run",Sandbox.Assault==null);Show("developer",ShowDevelopmentControls&&(Application.isEditor||Debug.isDebugBuild));
+             Text("pending",editing?$"수정 중 · 임시 작업 {Input.Edits?.Count??0}개":"건물 선택: 상세 정보 · 수정: 설치와 회수");RefreshCatalog();
+             var main=Sandbox.Content.MainBase;var hp=main?.Module<HealthModule>();bool hasHp=main!=null&&main.Active&&!main.Disposed&&hp!=null;
+             Text("main-health",hasHp?$"{hp.Current:0.#} / {hp.Maximum:0.#}":Sandbox.Content.Defeated?"메인 기지 파괴":"메인 기지 없음");float healthRatio=hasHp?Mathf.Clamp01(hp.Current/Mathf.Max(1,hp.Maximum)):0;HealthFill.rectTransform.anchorMax=new Vector2(healthRatio,1);

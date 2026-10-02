@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/SetHudReviewResolution.cs",
+      "entry": "SetHudReviewResolution.Main",
+      "args": "[3840,2160]"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 33,
+      "executeMs": 3,
+      "assemblyName": "PipelineRunScript_SetHudReviewResolution_1117b7488c4249fc9b567284238fc08d",
+      "success": true,
+      "result": "3840x2160"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

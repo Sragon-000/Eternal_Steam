@@ -1,0 +1,12 @@
+[
+  {
+    "scene": "StartRegionSandbox",
+    "spriteButtons": 76,
+    "debugControlsVisible": false
+  },
+  {
+    "scene": "OpenWorldSandbox",
+    "spriteButtons": 76,
+    "debugControlsVisible": false
+  }
+]

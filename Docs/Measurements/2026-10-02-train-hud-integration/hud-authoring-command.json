@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/AuthorIntegratedHud.cs",
+      "entry": "AuthorIntegratedHud.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 675,
+      "executeMs": 4412,
+      "assemblyName": "PipelineRunScript_AuthorIntegratedHud_7fa9b618d30143b9b1a5c51acddc3042",
+      "success": true,
+      "result": "[\n  {\n    \"scene\": \"StartRegionSandbox\",\n    \"buttons\": 139,\n    \"staticWorkspace\": true,\n    \"developmentControls\": false\n  },\n  {\n    \"scene\": \"OpenWorldSandbox\",\n    \"buttons\": 137,\n    \"staticWorkspace\": true,\n    \"developmentControls\": false\n  }\n]"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

@@ -1,0 +1,10 @@
+--- before/Assets/EternalSteam/Tests/OpenWorld/Runtime/SingleMapPersistence.cs
++++ after/Assets/EternalSteam/Tests/OpenWorld/Runtime/SingleMapPersistence.cs
+@@ -177,6 +177,7 @@
+             if(data.version>=2){
+                 BaseInventoryRegistry.Validate(data.inventories);
+                 RailwayNetwork.ValidateSnapshot(data.railway,data.version>=3);
++                RailwayNetwork.ValidateTrackRecords(data.railway,data.buildings.Where(b=>defs[b.definition].Modules.OfType<RailFacilityDefinition>().Any(m=>m.Kind==RailFacilityKind.Track)).ToDictionary(b=>b.id,b=>b.cell));
+                 Require(data.inventories.All(record=>bases.Contains(record.baseId)||data.retiredBases.Contains(record.baseId)),"기지 재고의 기지 참조 오류");
+                 var savedStations=data.buildings.Where(b=>defs[b.definition].Modules.OfType<RailFacilityDefinition>().Any(m=>m.Kind==RailFacilityKind.Station)).ToDictionary(b=>b.id,StringComparer.Ordinal);
+                 foreach(var label in data.railway.labels){

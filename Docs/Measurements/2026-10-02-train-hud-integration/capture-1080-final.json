@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/CaptureIntegratedHud.cs",
+      "entry": "CaptureIntegratedHud.Capture"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 13,
+      "executeMs": 82,
+      "assemblyName": "PipelineRunScript_CaptureIntegratedHud_84b4a0a6e362433fa021cf586ba2eecb",
+      "success": true,
+      "result": "Docs/Measurements/2026-10-02-train-hud-integration/hud-live-1920.png (actual GameView render texture 1920x1080)"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

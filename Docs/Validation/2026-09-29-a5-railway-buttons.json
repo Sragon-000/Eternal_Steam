@@ -1,0 +1,31 @@
+{
+  "date": "2026-09-29",
+  "scope": "RAIL-G06 train refuel and defense command availability, A5 shared verification values",
+  "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam",
+  "changes": [
+    "RailwayHud.CanExecute disables refuel without an active owner base, tank room, or coal stock; infinite-resource mode remains valid.",
+    "Defense command availability checks the mounted state, compatible unlocked building, owner-base iron, main-level upgrade cap, and available active storage power.",
+    "Buttons and programmatic callbacks use the same CanExecute result before executing the original transactional command.",
+    "RailwayNetwork defines shared cargo capacity, per-station tank amount, refuel batch, and dwell duration; TrainArmament defines installation and per-level upgrade iron. Core validation, commands, and HUD now read these values."
+  ],
+  "verification": {
+    "editorCompilation": "completed without errors",
+    "isolatedPlayRoot": "/tmp/eternal-a5-buttons-live (copy of existing A5 v2 fixture)",
+    "probe": "Tools/VerifyA5Buttons.cs",
+    "playResult": "PASS fuel stock/tank, install iron, upgrade cap, charge stored power buttons and rejected callbacks",
+    "fullEditModeAfterSharedValues": {"Total": 194, "Passed": 194, "Failed": 0, "Skipped": 0, "Inconclusive": 0}
+  },
+  "isolation": {
+    "editorStartedByAgent": false,
+    "productionSaveTouched": false,
+    "finalPlayMode": false,
+    "saveRootRestored": true,
+    "backgroundRestored": true,
+    "sceneDirty": false
+  },
+  "limits": [
+    "The probe used saved HUD callbacks in the live scene; physical pointer, keyboard-focus, and multiple-resolution checks remain QA-06.",
+    "The same button conditions were not retested in a standalone player build.",
+    "Numeric values remain provisional balance settings; this change shares their source without changing amounts."
+  ]
+}

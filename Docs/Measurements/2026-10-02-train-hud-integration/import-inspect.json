@@ -1,0 +1,23 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "UnityEditor.AssetDatabase.Refresh(); var path=\"Assets/EternalSteam/Art/Train/TrainConsist.fbx\"; var model=UnityEditor.AssetDatabase.LoadAssetAtPath<UnityEngine.GameObject>(path); return new {children=model.GetComponentsInChildren<UnityEngine.Transform>(true).Select(t=>new {t.name,parent=t.parent==null?null:t.parent.name,pos=t.localPosition,rot=t.localEulerAngles,scale=t.localScale}).ToArray(),clips=UnityEditor.AssetDatabase.LoadAllAssetsAtPath(path).OfType<UnityEngine.AnimationClip>().Select(c=>new{c.name,c.length,c.frameRate,curves=UnityEditor.AnimationUtility.GetCurveBindings(c).Length}).ToArray()};"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": "{ children = <>f__AnonymousType1`5[System.String,System.String,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3][], clips = <>f__AnonymousType2`4[System.String,System.Single,System.Single,System.Int32][] }"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

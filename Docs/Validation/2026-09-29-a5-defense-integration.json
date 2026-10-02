@@ -1,0 +1,40 @@
+{
+  "date": "2026-09-29",
+  "scope": "A5 train defense live integration and P5/P6 joint save",
+  "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam",
+  "changes": [
+    "Initialize TrainDefenseController in live scene before persistence",
+    "Capture mounted module state before railway snapshot",
+    "Validate mounted weapon level against saved main level",
+    "Restore mounted runtime after railway snapshot",
+    "Block safe save while mounted projectile or chained attack is pending"
+  ],
+  "play": {
+    "fixture": "PASS real railway construction; unconfigured route saved through SingleMapPersistence; scene reload requested",
+    "prepare": "PASS live unlock/install/iron10/upgrade/iron5/cap rejection and pending route plus mounted weapon saved; reload requested",
+    "reload": "PASS actual v2 reload preserves pending route, mounted arc level 2 and base inventories; over-cap mounted snapshot rejected"
+  },
+  "hud": "PASS railway defense panel active, mounted defense.arc and arc blaster choice shown",
+  "editMode": {
+    "Total": 186,
+    "Passed": 186,
+    "Failed": 0,
+    "Skipped": 0,
+    "Inconclusive": 0
+  },
+  "isolation": {
+    "root": "/tmp/eternal-a5-defense-live",
+    "editorStartedByAgent": false,
+    "finalPlayMode": false,
+    "sceneDirty": false,
+    "saveRootRestored": true,
+    "backgroundRestored": true
+  },
+  "remaining": [
+    "v1-to-v2 migration end-to-end",
+    "precise ACC 007/015/019 scenarios",
+    "train enemy-path and physical input coverage",
+    "UI resolution and keyboard focus coverage",
+    "pending projectile save guard direct scenario"
+  ]
+}

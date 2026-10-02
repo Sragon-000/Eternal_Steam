@@ -1,0 +1,12 @@
+{
+  "success": false,
+  "command": "unity command eval",
+  "data": null,
+  "errors": [
+    {
+      "code": "COMMAND_FAILED",
+      "message": "Compilation Failed\n  'SingleMapPersistence' does not contain a definition for 'Reload' and no accessible extension method 'Reload' accepting a first argument of type 'SingleMapPersistence' could be found (are you missing a using directive or an assembly reference?)(1행, 116열)\n  Unreachable code detected(2행, 12열)"
+    }
+  ],
+  "warnings": []
+}

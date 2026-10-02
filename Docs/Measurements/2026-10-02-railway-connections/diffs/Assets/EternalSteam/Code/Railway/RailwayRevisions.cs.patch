@@ -1,0 +1,11 @@
+--- before/Assets/EternalSteam/Code/Railway/RailwayRevisions.cs
++++ after/Assets/EternalSteam/Code/Railway/RailwayRevisions.cs
+@@ -50,7 +50,7 @@
+             var revised=PreserveSettings(route,pending.stops);
+             foreach(var cell in route.legs.SelectMany(l=>l.cells).Distinct())assignments.Remove(cell);
+             foreach(var cell in legs.SelectMany(l=>l.cells).Distinct())assignments.Add(cell,route.id);
+-            route.stops=revised;route.legs=legs;route.train.stop=0;NormalizeDirection(route);route.revision++;
++            route.stops=revised;route.legs=legs;route.train.stop=0;NormalizeDirection(route);route.revision++;RememberConnections(route);
+             route.pending=new PendingRouteRevision();
+         }
+         static bool SamePath(IReadOnlyList<RailLeg> a,IReadOnlyList<RailLeg> b)=>a.Count==b.Count&&!a.Where((l,i)=>(!l.cells.SequenceEqual(b[i].cells)||l.startPort!=b[i].startPort||l.endPort!=b[i].endPort)).Any();

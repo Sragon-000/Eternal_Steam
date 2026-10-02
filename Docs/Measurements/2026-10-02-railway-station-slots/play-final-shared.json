@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/VerifyRailwayStationSlotsPlay.cs",
+      "entry": "VerifyRailwayStationSlotsPlay.ReloadReturnAndShare"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 43,
+      "executeMs": 153,
+      "assemblyName": "PipelineRunScript_VerifyRailwayStationSlotsPlay_1fb66e207ec54cbe8db1154769880729",
+      "success": true,
+      "result": "PASS reserved track competition and shared arrival; waiting/weapon save ready to reload."
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

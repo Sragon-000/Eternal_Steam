@@ -1,0 +1,23 @@
+--- before/Assets/EternalSteam/Tests/OpenWorld/Runtime/RailwayController.cs
++++ after/Assets/EternalSteam/Tests/OpenWorld/Runtime/RailwayController.cs
+@@ -7,17 +7,18 @@
+ {
+     public sealed class RailwayController:IDisposable
+     {
+-        readonly OpenWorldContent content;readonly RailwaySceneView view;int revision=-1;
++        readonly OpenWorldContent content;readonly RailwaySceneView view;int revision=-1,connectionRevision=-1;
+         public RailwayNetwork Network {get;}
+         public TrainDefenseController Defense {get;private set;}
+         public void InitializeDefense(ITargetQuery targets,IReadOnlyList<BuildingDefinition> definitions)=>Defense=new TrainDefenseController(content,Network,view,targets,definitions);
+         public RailwayController(OpenWorldContent content,RailwaySceneView view)
+         {this.content=content;this.view=view;Network=new RailwayNetwork(new Inventory(content),"coal",1,id=>content.Bases.Bases.TryGetValue(id,out var b)?b.Nexus.DisplayName:"상실 기지");Refresh();}
+-        public void Refresh(){content.Bases.Refresh();if(revision==content.Bases.Revision)return;revision=content.Bases.Revision;Network.Refresh(content.Bases.Buildings);
++        public void Refresh(){content.Bases.Refresh();if(revision==content.Bases.Revision&&connectionRevision==Network.ConnectionRevision)return;revision=content.Bases.Revision;Network.Refresh(content.Bases.Buildings);connectionRevision=Network.ConnectionRevision;
+             var tracks=content.Bases.Buildings.Where(b=>b.Module<RailFacility>()?.Kind==RailFacilityKind.Track).ToDictionary(b=>b.Cell);
+             foreach(var pair in tracks){if(!content.Views.TryGetValue(pair.Value,out var go)||go.GetComponent<RailTrackView>() is not RailTrackView trackView)continue;
+                 var directions=new List<Vector2Int>();foreach(var d in new[]{Vector2Int.left,Vector2Int.right,Vector2Int.up,Vector2Int.down})if(tracks.ContainsKey(pair.Key+d))directions.Add(d);
+                 foreach(var station in Network.Stations)for(int port=0;port<4;port++)if(RailwayNetwork.Port(station,port)==pair.Key){var offset=station.Cell+Vector2Int.one-pair.Key;var d=Math.Abs(offset.x)>Math.Abs(offset.y)?new Vector2Int(Math.Sign(offset.x),0):new Vector2Int(0,Math.Sign(offset.y));if(!directions.Contains(d))directions.Add(d);}
++                if(Network.TrackConnected(pair.Key))directions=Network.TrackDirections(pair.Key).ToList();
+                 var first=directions.Count>0?directions[0]:Vector2Int.down;var second=directions.Count>1?directions[1]:-first;trackView.Configure(first,second);
+             }}
+         public void Tick(double dt,bool combatEnabled=false){Refresh();Network.Tick(dt);view?.Present(Network,content);Defense?.Tick((float)dt,combatEnabled);}

@@ -1,0 +1,68 @@
+{
+  "date": "2026-09-29",
+  "scope": "A1 railway G01/G02 actual StartRegionSandbox Play acceptance",
+  "phases": {
+    "prepare": {
+      "diagnostics": [],
+      "compileMs": 78,
+      "executeMs": 300,
+      "assemblyName": "PipelineRunScript_VerifyRailwayA1_ea8b7b09a3c842c28922ad63af19b005",
+      "success": true,
+      "result": "PASS real railway construction; unconfigured route saved through SingleMapPersistence; scene reload requested"
+    },
+    "recovery": {
+      "diagnostics": [],
+      "compileMs": 78,
+      "executeMs": 203,
+      "assemblyName": "PipelineRunScript_VerifyRailwayA1_debb118c848c47cbb47771df7c42b95c",
+      "success": true,
+      "result": "PASS unconfigured exact reload and HUD first resource lock; error multi-recovery, occupied station protection, repair/manual resume/cargo/fuel preservation, moving track protection; final reload requested"
+    },
+    "final": {
+      "diagnostics": [],
+      "compileMs": 77,
+      "executeMs": 2,
+      "assemblyName": "PipelineRunScript_VerifyRailwayA1_befb0ddc62574d9591b14985353238e9",
+      "success": true,
+      "result": "PASS repaired route/train/cargo/fuel/base inventories exact actual scene reload"
+    },
+    "cleanup": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "playing": false,
+        "dirty": false,
+        "scene": "Assets/EternalSteam/Scene/Tests/StartRegionSandbox.unity",
+        "restored": true
+      }
+    }
+  },
+  "checks": [
+    "Unconfigured route persisted through SingleMapPersistence and exact scene reload",
+    "First iron configuration through RailwayHud fields/Execute accepted; later coal replacement rejected",
+    "Stopped train with 100 cargo retained fuel and cargo through break/error/recovery/repair",
+    "Occupied station plus track selection rejected atomically at Confirm",
+    "Two additional tracks recovered together while RouteError",
+    "Tracks rebuilt via WorldEditSession and route manually resumed through HUD command",
+    "No repeated service or fuel debit on resume",
+    "Moving route track recovery rejected at Confirm",
+    "Repaired route/train/inventory exact final scene reload"
+  ],
+  "limitations": [
+    "HUD Execute, input and edit commands called programmatically, not physical pointer input",
+    "Normal Scene Reload configuration only; Enter Play Mode option matrix remains QA-01",
+    "Broader base destruction/overlap/inventory cases remain QA-02/04",
+    "No runtime source change or fresh full NUnit run in this acceptance task"
+  ],
+  "fixture_notes": [
+    "Old fixed rectangular track fixture did not fit current terrain. New test searches terrain-valid independent outward/return paths without changing terrain.",
+    "Bank balance assertions hold the resolved owner ledger across construction refresh.",
+    "Recovery protection is enforced at Confirm, not at selection; tests assert atomic rejection at that boundary."
+  ],
+  "replay": "Tools/VerifyRailwayA1.cs: Prepare -> ReloadedAndRecovered -> FinalReload; Play with ETERNAL_STEAM_SAVE_TEST_ROOT=/tmp/eternal-railway-a1",
+  "snapshot_sha256": {
+    "eternal-railway-a1-before.json": "c5f29aa8260c7c95c86eb106b076d03dca75e4c1aed533bbee487384ba4e4abc",
+    "eternal-railway-a1-after.json": "305329c2146eb84369a430634672657cccffffcc3bb57c54f3269b8b93a02567"
+  }
+}
