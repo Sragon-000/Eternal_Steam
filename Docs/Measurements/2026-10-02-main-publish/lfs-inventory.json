@@ -1,0 +1,2947 @@
+{
+ "files": [
+  {
+   "name": "Assets/EternalSteam/Art/Train/TrainConsist.fbx",
+   "size": 6311452,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "74f4f78e4186021a6f1206d8fd7ba179d6196dd4886c71b2220d2901d38b69d5",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/EternalSteam/Scene/Tests/StartRegionSandbox.unity",
+   "size": 160936962,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "57170c6778371c2e51d4977ca3c78b278dc38134b5af2d2e062ed5e211aaf015",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/EternalSteam/Shared/Fonts/NotoSansCJKkr-Regular.otf",
+   "size": 16433112,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "6bcb2a0703aa137e874fc2dffa85f6c21ba9a67fa329e81b8c801663af7e992a",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/EternalSteam/Shared/UI/Railway/RailwayButton.png",
+   "size": 631086,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "9251713dc13f009affa30cf958f22824c5e76229fa467cda387b5ea039aebc4a",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/EternalSteam/Shared/UI/Railway/RailwayIcon.png",
+   "size": 374015,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "684a48ace2418a063456ad196ca0a86824f2bfe6a3f6da1757cb75a9fcab5417",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/EternalSteam/Shared/UI/Railway/RailwayPanel.png",
+   "size": 946588,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "70e558bfdb9ae10111742a216f5cc0d2eb769ac1d3ae48a5e906f14d53f0a948",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/EternalSteam/Shared/UI/ReferenceHUD/All.png",
+   "size": 249,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "42698b4facdd495e992cffd4af61e0ae181afffacd6dda9ea16b47972d7aac39",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Building_Foundation.png",
+   "size": 7911,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "2670324d957ef375b4882521fd53428d800b0e8fc9ce3a05410e082c8550683f",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Building_Generator.png",
+   "size": 18239,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "8cda696e5202f46f72cf5bc526f6de134444d2cc435dd41eb506e152f03a0f84",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Building_Main.png",
+   "size": 24578,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "3d82605d4fe3c2dbf9d9aef2d15a8679455f246eddbe014ebacba9eb47cd3e54",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Building_Outpost.png",
+   "size": 12515,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "c696afcb193c1a316c543a76d1a3db2f4662d7676f7a201637399f87199af034",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Building_PlainView.png",
+   "size": 8359,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "fe14e4494e592a0c9fc4944ae057c87bd556e31e4409500ba482e3807da53ca1",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Building_Sub.png",
+   "size": 25765,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "fb96e33eda803433dbca27871b24fae48b437199043e0f3ea010b7b1dfff4395",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Building_TowerView.png",
+   "size": 7770,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "61a4e511e8c5ea375c7d03b1ca171ee7c95b4de2d893aee205dcea8cd4b7657b",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Building_Tower_Arrow.png",
+   "size": 13242,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "393144b485fe40582b5377c097ee6045d85ddce63fc1bdd770d7169ff27681b3",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Building_Tower_Cannon.png",
+   "size": 13931,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "4d9032092e356d329da71c212a1e18a0c280f0172632060470307a0e54e46713",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Building_Tower_Frost.png",
+   "size": 15302,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "2b9ae63a728ea7cc04396a9006659524f92c3bdf3a980ed67d222a9b173736e2",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Building_Tower_MachineGun.png",
+   "size": 14869,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "2ab7297014d8210851b5130119ac63e397dcc07a7a0707031c4f0d6cbd614770",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Building_Wall.png",
+   "size": 9873,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "8adb56c926a37f44774e84a736f79da6774c9e19423896b6a90b178feb759b1d",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Building_defense.arc.png",
+   "size": 27110,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "a071ed8fdc7a2863e64da0b6c0aa05080e516d6dab51678ba7cba979515732f4",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Building_defense.emp.png",
+   "size": 31456,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "5c768c324698ee6f134700070e240d22d37b8e6de742bb4329cd461fd6f9ca0f",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Building_defense.plasma_laser.png",
+   "size": 26144,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "b7b8910737a787a92b94072e6c54cc39d41b0ca2bc41bdafd7d6c2786740be24",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Building_defense.rail_aa.png",
+   "size": 26352,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "c2335f179698c23a83be183404f7e7784fb9d6fcd3d874d0a7c1552038a03c7b",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Building_defense.railgun.png",
+   "size": 23450,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "3078c912f9dc011d3a8fa861af91348c36746e75cef4160f25e0b34e6442ccf4",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Building_defense.sky_plasma.png",
+   "size": 28955,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "d4929bef29969ada2fb8322aae865a38da4792697db0bdeb792490fb71e74927",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Building_defense.smart_missile.png",
+   "size": 23336,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "d06d5a7da527cf0297dd7a2b5254a94f33dd5faa30d6fe2bf855aef9056a4c3e",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Building_defense.tesla.png",
+   "size": 39871,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "8ee43641c4a3f52a21cb1f1cc253ff926abe0146e4d51d2b1c0c7f84e9364323",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Building_defense.vulcan_aa.png",
+   "size": 29373,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "1b3faeb543073035530379d053890a3648582e2304879e752fa723cfa33c8e8a",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Building_installation.nexus.png",
+   "size": 24578,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "3d82605d4fe3c2dbf9d9aef2d15a8679455f246eddbe014ebacba9eb47cd3e54",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Building_resource.copper.png",
+   "size": 22533,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "ef62a57bb4ed4a87ff051598920fb772ce421996e4e0f26b7caa7ab19d3b5759",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Building_resource.iron.png",
+   "size": 27696,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "676b1cff079be030ba6b15a2bb15b28af1afc838b682ce4815976fd5caf93353",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Building_resource.nanometal.png",
+   "size": 24711,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "63aebc1d391dda8449a0c49f0cb10686059f575ca15fe3434e82a1be1cc38bf1",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Building_resource.plasma_ore.png",
+   "size": 32321,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "03e39aef15937b19983ff709d77c259fe819aa5ec4981964fdd565c2bc11ba17",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Building_resource.titanium.png",
+   "size": 27683,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "46377240d7f8e025709de4ca1d4f12d4078cf67ab0cdf0dee4a4d022553c02d8",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Building_resource.tungsten.png",
+   "size": 18646,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "c3b7d067d28988ad4edece459f3969deabcf237e28ba84e119fc7c7f240b03d7",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Building_resource.uranium.png",
+   "size": 33761,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "acbe6f3ce44dd6ab790a79d4bccdaf6dd1a7e82fa30b3d5564c68b2f6f79b173",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Card.png",
+   "size": 393,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "957d31cdeb0ee2ae87ac479638203e7164640235ab0264380b0aa7abecd61f1d",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/EternalSteam/Shared/UI/ReferenceHUD/ClockFace.png",
+   "size": 7701,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "3c112d78784f3de47b3b712e48120f3c44c37af3ea8a12eed0b6804db110f49f",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Energy.png",
+   "size": 462,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "f723c15110dc7e49946673d62ff45f26152bbf5d1270bf0e8472bfa3a8ae9c9e",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Install.png",
+   "size": 323,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "63d69cded13e97e705e09857d4b98ffac4ccdf97ef16ac042c72fcfc16c56d02",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Nexus.png",
+   "size": 695,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "700fed4581a9d1e792df5c40c141d2f48f04762ffffa6c33f78e1bf86bee7691",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Panel.png",
+   "size": 511,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "b51a0640ac3a690a06d48f87661891866f042954fc71bfaf08d6d7e8be7cf2b5",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Selected.png",
+   "size": 392,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "6a7ea617d0e8b2d8e1e2fc590ae6b46f417084d517ad286986e110df27bf80cd",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Shield.png",
+   "size": 564,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "241930471b11f12946bd46e830baca6b9f05ba7a1688808bbdc989fcc350a72f",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/EternalSteam/Shared/UI/ReferenceHUD/TabActive.png",
+   "size": 394,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "5bf48205bd35f413a3a7e3702513451cbfea91650b05c72d36da0ef6524e96a8",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Tools.png",
+   "size": 590,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "6a78fa4ddfc59b67133aba320376d5e8de4e3a6b6b2f78d7c0a691c5194e480d",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/EternalSteam/Shared/UI/ReferenceHUD/copper.png",
+   "size": 703,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "d35e63b59ce876ba41a3ab9ca10323c1039d28a4a1c739dc3a4ad4280d516553",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/EternalSteam/Shared/UI/ReferenceHUD/iron.png",
+   "size": 700,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "f7206fcf11c8597fd6e43fb765954a75ac028a677426a83b8e563b9f8a774f31",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/EternalSteam/Shared/UI/ReferenceHUD/nanometal.png",
+   "size": 701,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "a59b9ab36136772e6d81e1244f5ee7b27c1e51f57d726294d70c612ebcdc98be",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/EternalSteam/Shared/UI/ReferenceHUD/plasma_ore.png",
+   "size": 699,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "e6b31c027a77af57e6b976853998c52282a93f9f0ba4e908c471c82794694841",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/EternalSteam/Shared/UI/ReferenceHUD/titanium.png",
+   "size": 700,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "c67cd73bc1ecb80fa1fd9eae112fde8c69b859413b5e6e55beaa1fd038a80108",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/EternalSteam/Shared/UI/ReferenceHUD/tungsten.png",
+   "size": 695,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "0691ab1851472a75c53aca3ab6839b161632bdf80ab28766c69e1fa991437bd0",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/EternalSteam/Shared/UI/ReferenceHUD/uranium.png",
+   "size": 698,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "a00457aab6a8ab8c863cbe7e3f5627ffb008e21ccf230df5a8e04c8bad88d1c1",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/EternalSteam/Tests/Templates/TutorialInfo/Icons/URP.png",
+   "size": 24069,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "1d17a9ff3537859abe2c008603d29d90cf43191ae77aa386167cc65e53ba03d9",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/Map/TileWorldCreatorConfiguration.asset",
+   "size": 148776658,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "1ed1fd32eb82b01b5be482cbd942b730abf0f1cc667b2e5b7f611abd97599bdc",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TextMesh Pro/Fonts/LiberationSans.ttf",
+   "size": 350200,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "e5b0af421ea2bfbc1ac8d251d647268087ae82786234c57f757d1f0b90fa8b49",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TextMesh Pro/Sprites/EmojiOne.png",
+   "size": 112319,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "a87b965a701de3dc31d7401e542b1fc946587f912c51d7a26e46ade9f098bd1a",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Res/LogoIconSmall.png",
+   "size": 3837,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "9774e686dc69f208ad0b95f9b290fc4e65dd6f63a06757fa6175d4a9d95eea24",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Res/TilePreset.png",
+   "size": 10947,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "b0d3d4d98da153764bed99f1194607c958f1d68e6cafd9f626d22e2666807550",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Res/configuration.png",
+   "size": 5640,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "629bd97205e5ae5c7a8050baea307c25478b5e89e6f0fdae5c29bd182bc917c0",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Res/samplePreviewCliffIsland.png",
+   "size": 95497,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "7ea270b0004335a81a8a03e91a802b9a655313a2ed470272d305a81cfe05dc81",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Res/samplePreviewDeepRock.png",
+   "size": 91888,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "dcd13b417f0cd241a34eb5311f79b2f23034891e522a48fab7d205d2034326e6",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Res/samplePreviewEditor.png",
+   "size": 91031,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "d17d7f2216fa4752ea08322705616192786db6cac1ca093781b1066152022112",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Res/samplePreviewIsland.png",
+   "size": 52849,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "463fe979b17235c886dfc59c5f9096a2235098e975954ed0658da242e750bfd4",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Res/samplePreviewMixTilesets.png",
+   "size": 20489,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "18c55e4d4c903acbad8095cb98a27f6201c09c1412c286a7c660fe228935a690",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Res/samplePreviewPathfinding.png",
+   "size": 26976,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "b6ea9055e8fe16e9c1de50c7890aace2ddc7f06ba36e7cf6430aeaa4bb4f18e6",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Res/samplePreviewRamps.png",
+   "size": 10975,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "384b159d7279386535d0ebf929f045d6ec5fbaa5f293653e84830b372cc6e6ec",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/2.5DTiles/2.5DGrassToBeach_Thumb.png",
+   "size": 33438,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "043d9aa35c2742a4c8bdc6ca1f0f2b2ebdd9c7f09a08858e6e4b2ed24e054a8f",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/2.5DTiles/2.5DPath_Thumb.png",
+   "size": 33744,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "35cd19c6f4ef892e8c950d3b1d34b1c68105aba134d1c2aa34f73685580a471e",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/2.5DTiles/2.5DSandOnly_Thumb.png",
+   "size": 20229,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "f54e88b66c3c60b246fa63269766ec250c1c6a4e1163528e6ce878689d17c4a1",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/2.5DTiles/Meshes/Plane_Mesh.fbx",
+   "size": 11516,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "947a74a92dea01738b810ccc252aa56609657bf93f2c80800851903631235f20",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/2.5DTiles/Textures/Grass.png",
+   "size": 1030142,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "80022386cc2dd3f442a509de3343eb3e98416502584ae59fbb49b8c6e4b0204e",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/2.5DTiles/Textures/Masks/BeachCornerMask.png",
+   "size": 20272,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "461838b6d0cc85c479f7129a1ec84d5610e29f3ab6ad5de0b06f76f83aa23d21",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/2.5DTiles/Textures/Masks/BeachDoubleCornerMask.png",
+   "size": 31156,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "9d56b8d26f40192a242faf75e32816b72ac9f8e66226ce29af2d86e080f0374b",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/2.5DTiles/Textures/Masks/BeachEdgeMask.png",
+   "size": 17845,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "0d61007497a0db11be0b2167a67b5306b35b4ee93b5d3c128a92a22ea653807f",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/2.5DTiles/Textures/Masks/BeachInteriorCornerMask.png",
+   "size": 17179,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "2ba860dac75412eee968edf5d6d28806180dd028c246e61cd7c2c374afd86ca3",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/2.5DTiles/Textures/Masks/FillBeachMask.png",
+   "size": 6956,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "88bb95a9d0e306e7311766c455cf02cbff3d92f92fb87dc685bbe954f5390504",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/2.5DTiles/Textures/Masks/FillMask.png",
+   "size": 6954,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "1d3e52b7f70fec8c413c1f0c6ed061be074f2bf6e0b0b563329035eea4d1a5a7",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/2.5DTiles/Textures/Masks/PathCornerMask.png",
+   "size": 28112,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "36b5c6002b4e109850f2f8e52829382aad744a1f75ed705098e2333159319437",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/2.5DTiles/Textures/Masks/PathDoubleCornerMask.png",
+   "size": 83714,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "951f44b726c28b22bdcd5d35bedb9d23579004dba02ff3cae1263aff9910dbcd",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/2.5DTiles/Textures/Masks/PathEdgeMask.png",
+   "size": 40622,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "14063dc2894eb046fc4e7a95ed4c00508d0f83acf432e3a4815f50a76afe97f0",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/2.5DTiles/Textures/Masks/PathInteriorCornerMask.png",
+   "size": 42991,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "e5532df9fbb6fa72875b343026941a00eac6d0d07859cd2340edaf99a4e00089",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/2.5DTiles/Textures/PathStones_01.png",
+   "size": 941383,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "026d2e5aeb2f87bf368b7fb982c3ba9b45f2ef9b19b33a20f88e760ca37bea10",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/2.5DTiles/Textures/PathStones_02.png",
+   "size": 1160929,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "4ce8ab74e056da5fa7519e9227dd5f14e08e36d6051c063dcae01c46c959a7ec",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/2.5DTiles/Textures/Sand.png",
+   "size": 648572,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "b93fe9839f19f7639ec99de452b4ade47b4d65cb4691e565adde1ef5c300e520",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/BaseBlockTiles/BaseBlockPresetBlue_Thumb.png",
+   "size": 20827,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "aee1a35e2cdc0428e3987bbb6f956a8f70b68d137fe1eae497011ac5cf6930c7",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/BaseBlockTiles/BaseBlockPresetGreenRamps_Thumb.png",
+   "size": 15398,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "91f22337bfb6f1ba99630881ff40b0ab44a2786e09e57bf88710e074e45fba9e",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/BaseBlockTiles/BaseBlockPresetGreen_Thumb.png",
+   "size": 18762,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "9c6867449e46f2a79dbe74ed2b9716c6c0f052d66d3b997cb30f62e7a163d6e5",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/BaseBlockTiles/BaseBlockPresetWater_Thumb.png",
+   "size": 31987,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "c2799d9ee9c51e3e15216fe064470180822c4aa9e36933173c018838e6c14b87",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/BaseBlockTiles/Meshes/BaseBlock_Corner_Mesh.fbx",
+   "size": 16764,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "e0df9bbf59e1bf655fa0c39e1a79ec148b1350c098a12bc09217b8b7fba106db",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/BaseBlockTiles/Meshes/BaseBlock_EdgeRamp_Mesh.fbx",
+   "size": 17852,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "876d6d49b00840e79c358369527ac5eb348af78368c59b3b164a9dffab6ca5ed",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/BaseBlockTiles/Meshes/BaseBlock_EdgeStairs_Mesh.fbx",
+   "size": 16076,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "48fdcde520ddcbce80ab7af2c2966aa0158dc7675d6854a5c70260422b5f9bbd",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/BaseBlockTiles/Meshes/BaseBlock_Edge_Mesh.fbx",
+   "size": 15404,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "a836a91e9d40b458b6a18ba1536d7cf28267a6df004682bd1abb675d29a081f1",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/BaseBlockTiles/Meshes/BaseBlock_Fill_Mesh.fbx",
+   "size": 14940,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "204a2f251f3184750ac902d69eb7b55b5f139feb7db620eb47abc25ae03b6a09",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/BaseBlockTiles/Meshes/BaseBlock_InteriorCorner_Mesh.fbx",
+   "size": 16364,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "f0a2441f4bf4883f3db5e5606870e98064705f2ff971813592d44afe409a388c",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/BaseBlockTiles/Meshes/BaseBlock_MergedCorner_Mesh.fbx",
+   "size": 16972,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "0cc4a931a2404b7902153edca773e898f4248f372121fd677671e526b797b67c",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/CliffTiles/CliffTilesThumb.png",
+   "size": 53952,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "f83b0736c55c7a9d3c8b9ae5bc518b4c33e6ff2610e1252ef7338838db0e36e0",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/CliffTiles/Mesh/Cliff_Corner_A.fbx",
+   "size": 26508,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "915e0a5478bf4a01e83072f1a599e447fb40c8a75f46268fabb660f5ab5cff2e",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/CliffTiles/Mesh/Cliff_Corner_B.fbx",
+   "size": 28124,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "f12f9df4351f1bf3b71e8d8f92c872279aefdbd21fbdb15ffecaa4f7829bb302",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/CliffTiles/Mesh/Cliff_EdgeRamp.fbx",
+   "size": 30300,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "5dd838d5f2f809982f791d05227762161ce7945a7b70c8e16a3f116a9aea90d3",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/CliffTiles/Mesh/Cliff_EdgeRamp_B.fbx",
+   "size": 41916,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "106f1f5ea452e97dbe54e4464942b720bcecce6e64c1d130557bde1feb7dd609",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/CliffTiles/Mesh/Cliff_Edge_A.fbx",
+   "size": 27772,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "90f67ac03a46362109b74192fe1d46ba6b47615e8b4fecd51634aa8980fec26b",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/CliffTiles/Mesh/Cliff_Edge_B.fbx",
+   "size": 33468,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "b276940dd9dc1dee4854013e179ae02723df2a8daf0a2716268d667afc7ab16d",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/CliffTiles/Mesh/Cliff_Fill.fbx",
+   "size": 15372,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "218f3804ec05f7a1c6042ae4b0762e4074ea6b1ed4e628df14a188dccec6ef3d",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/CliffTiles/Mesh/Cliff_InteriorCorner.fbx",
+   "size": 30460,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "ac6abd0624ae18beba513234c41be89d6e40f5631c693cd1af3376bbba03b16a",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/CliffTiles/Mesh/Cliff_MergedCorner.fbx",
+   "size": 38508,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "a68c99e526f00f807310cd37a46eaaf22dc1ee5a14fe25976cdc1a75f9ab3879",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/CliffTiles/Textures/Cliff.png",
+   "size": 16032245,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "829d4528dc9801d04af4c6cdc6f982ad9cf4f1703782cc6963d03e815d9204d3",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/CliffTiles/Textures/Cliff_Corner_A_EdgeWear_Texture.png",
+   "size": 537371,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "34d34d630ddd0701948f2809261b1fd283b8c696b6084d9fff576f00cb034e34",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/CliffTiles/Textures/Cliff_Corner_B_EdgeWear_Texture.png",
+   "size": 638107,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "483b0193d1fce78621fbedb1b985b99d455921ab296d057916ae178008352ca1",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/CliffTiles/Textures/Cliff_EdgeRamp_B_EdgeWear_Texture.png",
+   "size": 474454,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "4bda391cf63687405ec5610f00a88f3b869d27403c44d67a2de88336c3387343",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/CliffTiles/Textures/Cliff_EdgeRamp_EdgeWear_Texture.png",
+   "size": 423716,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "15ce1ae8d5d5a2af6cacddff1aa1d0303f205e9063042e6ae810c956c4c121f0",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/CliffTiles/Textures/Cliff_Edge_A_EdgeWear_Texture.png",
+   "size": 538753,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "16e6a8208e730d13520f411d501d5468b8b7447de84a1b95b5719635cf073feb",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/CliffTiles/Textures/Cliff_Edge_B_EdgeWear_Texture.png",
+   "size": 586498,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "2a716864533ead9896e3eb3f61619861c82496635abb49d46e5e8e6806ff7238",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/CliffTiles/Textures/Cliff_InteriorCorner_EdgeWear_Texture.png",
+   "size": 472313,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "308912b4598878588e74cd285d881363ae481127eb894e87d0e1c2812a9de168",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/CliffTiles/Textures/Cliff_MergedCorner_EdgeWear_Texture.png",
+   "size": 636396,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "1f517271f5e689f2b0aa94ed10606b53356a0d3b1a387d06e74b01a3add26155",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/CliffTiles/Textures/Sand.png",
+   "size": 3065937,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "1093d3c43edb0c3ec4724e6e58ed0fae9a1ea1eb2dab92db5f9442f30778e792",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/EmptyPreset/EmptyPreset_Thumb.png",
+   "size": 3217,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "224535c0f36fef6c88a7dd53c56b6f9a778d39420deb0df9d8fde42b2e9e5931",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/GrassTiles/GrassTiles_Thumb.png",
+   "size": 24136,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "18711018df49e9434c36127c89e8c226dace34b867e83aeccd67fb0dbd258b7b",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/GrassTiles/Meshes/Grass_Corner_Mesh.fbx",
+   "size": 19500,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "3583ae5d6194931e00e7a7389696f34ab6a226f2ca3d7b8db100bb24bb265f6e",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/GrassTiles/Meshes/Grass_Edge_B_Mesh.fbx",
+   "size": 19852,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "e66c68f19b93b69b6ff0c346fff6be2a641768bf8bcc7219c4d0f33c7aeb90a7",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/GrassTiles/Meshes/Grass_Edge_Mesh.fbx",
+   "size": 19836,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "efddcac052ba6fa207237388290fcabe8f3d177ff3f7cced856bfd77664d1c6e",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/GrassTiles/Meshes/Grass_Fill_Mesh.fbx",
+   "size": 14940,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "60c266bd1f5a7d2b8b1720c959adb59a6297808773d0f407829ac36dc4022cc6",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/GrassTiles/Meshes/Grass_InteriorCorner_Mesh.fbx",
+   "size": 18716,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "17c08227ec1478fde4f9b769da74a7636f1cd4be04646935c92ac80b16484940",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/GrassTiles/Meshes/Grass_MergedCorner_Mesh.fbx",
+   "size": 20716,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "dbf7e69b61b39586541a9f50d467e43abf776c302e5ecef5bcc6c0c2ecb8e9b4",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/GrassTiles/Textures/Noise.png",
+   "size": 933333,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "cb8014bd3cdf0e4c43aa3626528ec8381fd43199a2a9fadcf54caeff05a95a32",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/GrassTiles/Textures/Noise_Pixel.png",
+   "size": 458232,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "7c844fd72457c4e2b8a953c0a2b41c30de15637cf909704d27b8628b30cccce4",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/GrassTiles/Textures/Water_Normal.png",
+   "size": 1189420,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "a3379443cdc34261bd506cd201d44308f9782094fa68903d52eb3f82d91e36fb",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/RiverTiles/Meshes/RiverWaterFall_Object_Mesh.fbx",
+   "size": 27180,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "95c477e8961ad051225020ee7684a642fa1d1d0a2f96b85cd79755f194f83c3a",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/RiverTiles/Meshes/River_Corner_A_Mesh.fbx",
+   "size": 21132,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "e49490f1b5bd3130666a499f3b76d687b808d9d5147cfd4930536bb45cf491a6",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/RiverTiles/Meshes/River_Corner_B_Mesh.fbx",
+   "size": 21164,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "e3d764ccdf2954127a484a4d2312c78407d7c3aa4e6b9bea2787e2d12e209844",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/RiverTiles/Meshes/River_Edge_B_Mesh.fbx",
+   "size": 21996,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "05b371d87d7706d87edbe91c125cbfaf127814695702f778b3e1320039792b4d",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/RiverTiles/Meshes/River_Edge_Mesh.fbx",
+   "size": 21980,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "ab34503f7d0969ec56fcc206135286150d0e5c23cd703deb79a49de3e6a7e92a",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/RiverTiles/Meshes/River_Fill_Mesh.fbx",
+   "size": 16124,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "a619b1505ed301dc2edaf12482e30f7203be0c0bddd405afe5a3892b79597d4b",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/RiverTiles/Meshes/River_InteriorCorner_A_Mesh.fbx",
+   "size": 25212,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "e73f122d58c57b199bde6373ca26f28fbd3c4f0cc75a2b4b97c6185f5c31a4fc",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/RiverTiles/Meshes/River_InteriorCorner_B_Mesh.fbx",
+   "size": 25228,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "5fbc9b32174c93419b3aa96aadb732b1fe20dfa973d4f84744e12511b1162505",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/RiverTiles/Meshes/River_MergedCorner_Mesh.fbx",
+   "size": 25420,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "2bee82b15e070d193bad6e24290bcebd901ab9e837a096d1082e280ef365940d",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/RiverTiles/RiverTiles_Thumb.png",
+   "size": 36868,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "4b9fc837331b744006070d188917c599ec3f5531fdc2e91307f23378b6ad85c8",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/RiverTiles/Textures/WaterRipple.png",
+   "size": 28548,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "7dd1acb706355b6aac5061636a7b3d2a5e4366f52906008b6f960158f2fd4624",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/RiverTiles/Textures/WaterSplash.png",
+   "size": 40400,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "932f0e0e20995abd57a8b40ec69135ff1005c8a7bfa03a21b6a602b91ddded78",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/SandBlockTiles/Meshes/SandBlock_Corner_Mesh.fbx",
+   "size": 19564,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "eb408d379b4320c0eaf80a1b19ddc288c94e5f2b62d0a314666ebe161b6dd0c8",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/SandBlockTiles/Meshes/SandBlock_Edge_Mesh.fbx",
+   "size": 19868,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "c390ea5f0278b86480a24b49e46319d951f82da76a72195f400814e9195c8982",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/SandBlockTiles/Meshes/SandBlock_Fill_Mesh.fbx",
+   "size": 14940,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "780a53868092915e5dbdf3dc3727a161b7358f48aab887515161c479c2ee97d1",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/SandBlockTiles/Meshes/SandBlock_InteriorCorner_Mesh.fbx",
+   "size": 18956,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "b33d97e45dd906b3fa62e6214e08526214929253b08cc7dc79a214c97008b508",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/SandBlockTiles/Meshes/SandBlock_MergedCorner_Mesh.fbx",
+   "size": 19516,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "efa85964533310f9b53c1099e229844088b2193741a633b7f4e98744f566aaf7",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/SandBlockTiles/Meshes/SandBlock_Middle_Corner_Mesh.fbx",
+   "size": 16668,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "580cd3f2d3800272ac90d9232cef6e70410fab8b81a0bd1c41dcba7471fc3ce1",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/SandBlockTiles/Meshes/SandBlock_Middle_Edge_Mesh.fbx",
+   "size": 16668,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "ba2d53a010bcd32cc0cf380902f9db0f4ba7151a80d1771a1fea1665a38da854",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/SandBlockTiles/Meshes/SandBlock_Middle_InteriorCorner_Mesh.fbx",
+   "size": 16620,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "825a151fdba7d3385b23242ceec8afb409bb9b9cd430d35755c56359c59ce8dd",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/SandBlockTiles/Meshes/SandBlock_Middle_MergedCorner_Mesh.fbx",
+   "size": 16780,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "704e90fbac255f3486a8cf4cb28ec1290f1f6698c3663b14f39f94d5a9a59ea7",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/SandBlockTiles/SandBlockMiddleTiles_Thumb.png",
+   "size": 14807,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "29b5e8512cf48e9371624d715dcfbe905b81ec589f0e33d7dafcb5e7a6a6656d",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Assets/TileWorldCreator/Tiles URP/SandBlockTiles/SandBlockTiles_Thumb.png",
+   "size": 22055,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "1a5d9ea001fe99b868bb85fe7303214621613e36132aa856e551581136bfe4fa",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Archive/2026-09-29/documents-before.tar.gz",
+   "size": 305606,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "deaab31c467359cbc8df9c8f04ff86ba400375d3806e18c5f63d96148e382ce8",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v1-wheel-animation/preview-frames/frame-001.png",
+   "size": 420849,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "104e0b25ac24d71a77d783d51e710113b345e8e56726ff3b87b114d3a14cbef1",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v1-wheel-animation/preview-frames/frame-003.png",
+   "size": 421624,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "ec0cb5bc8b1b037d70a6f2eb6ed1c2d6e674f58da72966e8d8c83f17e3ba3b20",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v1-wheel-animation/preview-frames/frame-005.png",
+   "size": 421114,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "24911ba8852c9730ba78e12c74702b36ed142b597cef44814596c627e0779285",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v1-wheel-animation/preview-frames/frame-007.png",
+   "size": 421404,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "47131872be535da482e28f294a20eefc01d9c4aa72abe38721b8633c682b2fe5",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v1-wheel-animation/preview-frames/frame-009.png",
+   "size": 421141,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "6da1bfd341393162289b69207a4bcbd3d35f9ff586a0ada343cf145f702dce47",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v1-wheel-animation/preview-frames/frame-011.png",
+   "size": 421687,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "113f7b404b2c65af6b019d6c3ae78c960dec060a2f59c35801d16153681aef07",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v1-wheel-animation/preview-frames/frame-013.png",
+   "size": 420857,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "7166c708b6915cef2e681733c138dbcc59ce680119b6f64f28677848395671f1",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v1-wheel-animation/preview-frames/frame-015.png",
+   "size": 421723,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "9c7e9ab9d99b223930b23fac932d3b34003a749f6eb6e499afb93f01413dc4ea",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v1-wheel-animation/preview-frames/frame-017.png",
+   "size": 421090,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "fd74e61ea9d1a164b4362933a239ee0ce830750b5a6202c2c94e9cf8cdfc7ad9",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v1-wheel-animation/preview-frames/frame-019.png",
+   "size": 421389,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "4a39a57ecf3e6e15555f71ef4abfa96de89fabfb553a1d6a5283a2af3c66b503",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v1-wheel-animation/preview-frames/frame-021.png",
+   "size": 421162,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "c6a7a9c8ef5a347fc7cf852977c9cebe7999dfbb432d7e8db8f41af2797fe9d2",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v1-wheel-animation/preview-frames/frame-023.png",
+   "size": 421736,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "cdb4f608329fad86b6f0eb6d8266f45abb9a076e9e8866ae4273232d42ec790c",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v1-wheel-animation/preview-frames/frame-025.png",
+   "size": 420860,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "35860b18bb4c3400a826c7bba8b8607949b9de0baec3534e3f30d5476ce1a22b",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v1-wheel-animation/preview-frames/frame-027.png",
+   "size": 421652,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "c56c1db23e8ae93e232125bb790867624f16e58c47a14f23b285916aa60b53c9",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v1-wheel-animation/preview-frames/frame-029.png",
+   "size": 421114,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "f47df33228658d693b8bd29025c6f24b037279d755013bc773d59b5a3bf28a2b",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v1-wheel-animation/preview-frames/frame-031.png",
+   "size": 421403,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "d270bee00576c6f69a34ef0c92686efe118cfe32deafe87e56855513aa02f39c",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v1-wheel-animation/preview-frames/frame-033.png",
+   "size": 421172,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "a9218d5dc82bba9a692acc41660f1da4b0ec6ac0f9076e5ec982a80d7c5130bf",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v1-wheel-animation/preview-frames/frame-035.png",
+   "size": 421745,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "36964b6143ab129c3473849869ab325148ccf9498faf0dbe1283fd699dd08f3a",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v1-wheel-animation/preview-frames/frame-037.png",
+   "size": 420845,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "10d24ddcdb5cd26a4f6d84cc69ce6ff7f1d2470e2208d465ff0a2289c54a8dee",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v1-wheel-animation/preview-frames/frame-039.png",
+   "size": 421661,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "edd384deee3972e2c8aa56b04d4c27d9f4db7ae81515c867ee17ce9d4da09928",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v1-wheel-animation/preview-frames/frame-041.png",
+   "size": 421142,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "65622e43cf718cc6ca719e676760b6beaa4ecc91635bc2b6bc1205fd71088586",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v1-wheel-animation/preview-frames/frame-043.png",
+   "size": 421418,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "76d1dda889b46efee14c3efacaaa5235c06424ea8996579c20dc04469f23af20",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v1-wheel-animation/preview-frames/frame-045.png",
+   "size": 421158,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "0fa27cbb2383caae2f7a41dde39a1f9115e324e90010558a3a2bfbc0691b88a2",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v1-wheel-animation/preview-frames/frame-047.png",
+   "size": 421746,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "27ae93be49231159e9e67e63647b762a51593c42c8fd356d11a6ef6d664b2dd9",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v1-wheel-animation/train-a-v1-wheel-animation.blend",
+   "size": 389611,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "87a368f0d421e3ba59e3c6dad3bd673feec3c6c5396e0bc4d1edbe039059230c",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v1-wheel-animation/wheel-rotation-preview.mp4",
+   "size": 66404,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "83ed51a950fe7da3fb08da4c95ac6b51b64cf6142ecf9ca108eebd10864d1d10",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v1/front.png",
+   "size": 563581,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "241bad61bedb6eb673182baa22306935290c1b30f89f1a12cbfdaae631c4f06e",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v1/perspective.png",
+   "size": 1291266,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "173c26ebf2fe83d44072b6b67070e141605736bdbed899847218166d09b5cdea",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v1/side.png",
+   "size": 1096362,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "9fdccb0194d27d3910ae2acd4c16c98507f5f4d0364766e454d69e5726e0f7e7",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v1/top.png",
+   "size": 1012036,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "c165dab68bb5581a991b0217be7b0ee87bd256662585b8a2eb1ad98399d43577",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v1/train-a-v1.blend",
+   "size": 387692,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "e8d30b36926b8512a163942c37c369bbbd819143363fcf22c115d1416ec8e6bc",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v2-linked-animation/linked-motion-preview.mp4",
+   "size": 236335,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "53c7480bc78070669de224d9f832772d37628203d8f785a766ebc947f39d1ac6",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v2-linked-animation/preview-frames/frame-001.png",
+   "size": 733996,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "f896783a5551cb887f93b3ff96752c191d4dc45cae5b014a31cdfec8dbfe3396",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v2-linked-animation/preview-frames/frame-002.png",
+   "size": 735411,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "d00100c6fea09d7569c79ce309444b6a484a3b0724e783c2384393bbea1cc3c7",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v2-linked-animation/preview-frames/frame-003.png",
+   "size": 733709,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "5b053c098ffe74965667f16472163a55342f42261f448708f6a33d4298bfdd6a",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v2-linked-animation/preview-frames/frame-004.png",
+   "size": 734219,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "ff8af5bb365d055accfaec9e54bc39d83cc71397525b075eb70dc776976ebbaf",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v2-linked-animation/preview-frames/frame-005.png",
+   "size": 735260,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "1a058f8991c3534b892bc8394d3e1767bd84547ce1bde051e93c673b2f839442",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v2-linked-animation/preview-frames/frame-006.png",
+   "size": 736259,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "9688f8cc5c84a6dd3076dc08455a2d5cc1c6eb09c7c2b91033ffd42d6295d8f1",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v2-linked-animation/preview-frames/frame-007.png",
+   "size": 734365,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "15ce62a361797bec50d7889337f46aa47b98a2e5ca8bc8febe356dc6c015d099",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v2-linked-animation/preview-frames/frame-008.png",
+   "size": 735455,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "d7236940b8037c115fda5aebbd3198c97e9d084dca31fbef2792ab2c07c9e27d",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v2-linked-animation/preview-frames/frame-009.png",
+   "size": 735428,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "652f2258c2af4fe596ca61436e496cdd37f79db125765339c022d89c9cfe0ebd",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v2-linked-animation/preview-frames/frame-010.png",
+   "size": 735765,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "f99730a86b29fb8b85c4f1809a04029d71ef2a7c770c38923c6e8e14b56e314c",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v2-linked-animation/preview-frames/frame-011.png",
+   "size": 734925,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "57ff5fb942276e4c67885cc8c8a11cfb0915607f8276e10c0df1b96cff7507ec",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v2-linked-animation/preview-frames/frame-012.png",
+   "size": 736466,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "6ba395308ec319f02ef3d098ae3edb34c4eeb50859127a3f2f7c6824980442fc",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v2-linked-animation/preview-frames/frame-013.png",
+   "size": 735477,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "69af2497fa16fd1a25637083d884a0b00f10b26685bade65ea725245af91251d",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v2-linked-animation/preview-frames/frame-014.png",
+   "size": 735973,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "f5f4a5a10e7ac33c4f84613509f4d54b54e2f91d73384393614634c5c1328549",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v2-linked-animation/preview-frames/frame-015.png",
+   "size": 735376,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "74d0c3e41b02218f158a822b14865c42dd11641de7c7374bc04610099624d116",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v2-linked-animation/preview-frames/frame-016.png",
+   "size": 735014,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "b1ed3baea11ba6c67069a4f0f9859aaec503d87cddc952dacf5cedf9f43a22da",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v2-linked-animation/preview-frames/frame-017.png",
+   "size": 734544,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "2bb78222ca47e6818f240a8b1b58acddb72eef1ec328821ea9700a073fe3046d",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v2-linked-animation/preview-frames/frame-018.png",
+   "size": 735018,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "2ae9668aa402a25a6b6b099316ab5d7d9512acde67d5f1de261418c9377f1573",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v2-linked-animation/preview-frames/frame-019.png",
+   "size": 733977,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "33c579e31900f8dc3772c0e340620091c3de5eca0727179018c167b1857df32b",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v2-linked-animation/preview-frames/frame-020.png",
+   "size": 734942,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "0d503251906b64417389e0290079cd2479bd9c5b23b1b8442b2c1b9c4b48083f",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v2-linked-animation/preview-frames/frame-021.png",
+   "size": 733399,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "c2953934e21d99a25f9b878f9c4a556567c67ff449340bd962638f8dd54f4f4d",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v2-linked-animation/preview-frames/frame-022.png",
+   "size": 733611,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "998a874b9177dbe176c25e2a4ba1f1da822b7bd8445313e6968f78641e0b6fea",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v2-linked-animation/preview-frames/frame-023.png",
+   "size": 733124,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "ff8cc4e459a5f9ff37271b6845f0bcd433a516117683c053e304b25dbb4dd3b2",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v2-linked-animation/preview-frames/frame-024.png",
+   "size": 734046,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "1cd0fd8edbf6f0348ec8fe79f159a2cb46c1ad0355d88df36b6aed10be7f0cd7",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v2-linked-animation/preview-frames/frame-025.png",
+   "size": 732909,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "747b91375139b2a5c64d929a0c01fdc575ee704feaa7092ea94c8d5bac6b1d44",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v2-linked-animation/preview-frames/frame-026.png",
+   "size": 734050,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "a21ff6094e6a0e53676e4eef44df4e7cef315cadaeaa8a1153f943fd686ddcef",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v2-linked-animation/preview-frames/frame-027.png",
+   "size": 733301,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "538a8dfd9feb349cf88143d2e40cabcdf4535b3c868e79135f1165ffe16405aa",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v2-linked-animation/preview-frames/frame-028.png",
+   "size": 733559,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "a46c48420591cc285137904828e8dc509000c0ed977adf3bfe03bdc4b4aea017",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v2-linked-animation/preview-frames/frame-029.png",
+   "size": 733399,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "4aa563440f9213074b21324b1105f2abc50f501b5e8759fa954969cbd2c78df0",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v2-linked-animation/preview-frames/frame-030.png",
+   "size": 734234,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "3efe83b142ce45baebbb4855d8292281a6b672f4004787506db4085d5004369d",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v2-linked-animation/preview-frames/frame-031.png",
+   "size": 733092,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "0ce80e3722f8566bcca5ec80b8e308bd50cd6964484dbb489603e7246ccad676",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v2-linked-animation/preview-frames/frame-032.png",
+   "size": 735020,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "aca33b52760d8dbfe2465794536b4f610550e29e9b13b1e4f37a5ad41624a531",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v2-linked-animation/preview-frames/frame-033.png",
+   "size": 733848,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "1869da63c8a5d6e67a37df699a119f39881ca8a7b3c5a3f2077c9aae721a6447",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v2-linked-animation/preview-frames/frame-034.png",
+   "size": 734370,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "da426cb1a5bacc2596e3c70636612ca5ab780d899d302a04819a0e08c339969b",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v2-linked-animation/preview-frames/frame-035.png",
+   "size": 734230,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "e22911b1c350fca549a6e1118aa83fd736f46c9205fd5bdd50b43634e654bb5a",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v2-linked-animation/preview-frames/frame-036.png",
+   "size": 735862,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "52bd0ca25976d3359dcca483362c81048371bf833fd01a4f8b99188e96305b3c",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v2-linked-animation/preview-frames/frame-037.png",
+   "size": 735907,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "36b3558954da895c5c448811b1a3596b71f8fb510b11c21b7b7c7a0a21c79268",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v2-linked-animation/preview-frames/frame-038.png",
+   "size": 736380,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "e32874218273e4ca2a1b3b5640b4764feaffad322da48465ef6ef2060e784510",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v2-linked-animation/preview-frames/frame-039.png",
+   "size": 735133,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "0dcf8be9eeab419ade8d344b0f8a5ecf535b8fa3ed4d05a5a50ade7dc4541aae",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v2-linked-animation/preview-frames/frame-040.png",
+   "size": 734345,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "4483c5d5d9de68093f4e9d3139c34e38533151813d28b077ddf3d9a95a5b5bd0",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v2-linked-animation/preview-frames/frame-041.png",
+   "size": 735172,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "a3ac0b0573bfe01478f316b20a5d4f748c970e6da26ec7897e3bd0131778689f",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v2-linked-animation/preview-frames/frame-042.png",
+   "size": 736050,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "b4771768087288761666e930e1309215405a8896226da88a232a30fb2c90d130",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v2-linked-animation/preview-frames/frame-043.png",
+   "size": 733641,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "e65c9a4e84216feb65eee0678463d91871152e93eda6f3180489ea3de58d4e7f",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v2-linked-animation/preview-frames/frame-044.png",
+   "size": 735039,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "5c479ca402d767cd19cd64d678cc73086833107143b25fc8c63770beeea9fe3b",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v2-linked-animation/preview-frames/frame-045.png",
+   "size": 734627,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "adafdbcbc5020a7ba63cbbdad65da5ce4c0e42a663114e02057ca821f034f54e",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v2-linked-animation/preview-frames/frame-046.png",
+   "size": 734241,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "db5987ee672906f6ea064220eb694b7e9b3b0c1952c64be9588c92910f70c2d0",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v2-linked-animation/preview-frames/frame-047.png",
+   "size": 733302,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "94e2d22773de5b9ed3c626e8c194ea90207b11fa62dfd8572f4407381a672042",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v2-linked-animation/preview-frames/frame-048.png",
+   "size": 734983,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "b7e0e029da4ea5ba6be80b4b376a1ade451320aaf7322d3ec0efa3f94e590345",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v2-linked-animation/train-a-v2-linked-animation.blend",
+   "size": 402124,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "435eac0fe6d61ca399bbc5707277ab1df10b39e72c6240d9c0d6b793960db7ad",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v3-wagons/cargo-wagon.blend",
+   "size": 150672,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "e749ad5c616750dccfe01b0ab8533e68e9f0599bcf0d04a404f431bde79df2f0",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v3-wagons/consist.png",
+   "size": 1237075,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "527a0d64c858f729a14e023bd7c310c83fc8a9487da364d6b6402896134f75f2",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v3-wagons/coupler-detail.png",
+   "size": 648852,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "1f02a5e7d0036f242e3763eab2800d574b9420a18466c87cb23839494db1a6b4",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v3-wagons/train-a-v3-consist.blend",
+   "size": 538615,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "a2bbdd48aa8b6d8bfa97f334282d77d91b3804d10b1713c1d4909cbc647aac99",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v3-wagons/turret-foundation-wagon.blend",
+   "size": 145450,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "ca7df3d40bc2239588f3c4aa9e60552303b06ceb8b2f4c7a04855ee6e311530f",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v3-wagons/wagon-top.png",
+   "size": 883350,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "d389df9fc013480334b870dfe5e1ca6028e4f59e22ea110157cc30eedd6b06b2",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/model-v3-wagons/wagons.png",
+   "size": 1237313,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "89d50b75aa95a4a07fbe05046af99a3d0a533749ca74d1de3acd468baac03982",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/train-a-three-view-v1.png",
+   "size": 2045257,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "be06b8316fcd9200a0eff55cdbdf51955a816dba38fde891c07fc710417dbd29",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/train-a-three-view-v2.png",
+   "size": 2066821,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "91860d4484117058c10b8a5b9c1c68bc01318d693c01b9deeb18afd37a6128c3",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Art/Train/train-a-three-view-v3.png",
+   "size": 2132658,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "a93de46c70550ecbd1c52002db8027ea48cfbfc077da07397c187a26309abf1a",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Measurements/2026-10-02-railway-connections/OpenWorldSandbox.before.unity.gz",
+   "size": 163092,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "3cee4c18f42ff2bfd216f436f1d087f5df3313bd7af396bd3bfd795dd9eae522",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Measurements/2026-10-02-railway-connections/StartRegionSandbox.before.unity.gz",
+   "size": 38602966,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "74e1aa396262a37d975a1ce3ad37a4ac6f1a6558964516c74b801eb6228f5c09",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Measurements/2026-10-02-railway-connections/connection-ui-4k.png",
+   "size": 4793602,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "1fea2b19a7f3de2e601b87f533335780e14d12a24465a59719cf15f0ceab423a",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Measurements/2026-10-02-train-hud-integration/baseline/Assets/EternalSteam/Scene/Tests/StartRegionSandbox.unity",
+   "size": 160900282,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "ab93fbdf7e439c0ebc3f0926d9c9c23d103d74d02123099b18a497b1345534ed",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Measurements/2026-10-02-train-hud-integration/hud-initial.png",
+   "size": 5008317,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "2ff5859dfb8ee71a777e0a18d6c44b9248bab22f9421dad0a34f8dd525a3a676",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Measurements/2026-10-02-train-hud-integration/hud-live-1280.png",
+   "size": 969358,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "edcc3fbb2b2e6539b1edb2e3b04ee9c5f131c35a4e07a69fc0eaa1affdda53ec",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Measurements/2026-10-02-train-hud-integration/hud-live-1920.png",
+   "size": 1754645,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "c981be68fb90962517b073261fe7097c98201862ade0aa18ff0effea4e66191c",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Measurements/2026-10-02-train-hud-integration/hud-live-3840.png",
+   "size": 6719085,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "d6889bdeba73059142ab4f899265b93cb5c30029ecb3acdcad4e8cb712ab72b5",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Measurements/2026-10-02-train-hud-integration/hud-railway.png",
+   "size": 5016527,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "b8dafe8efabf6ca94ce2d4cf14b5216b3d8ac336fe7e3f88231ab733a99c5caf",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Measurements/2026-10-02-train-hud-integration/responsive-construction-1024x768.png",
+   "size": 758390,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "3ef6ab0d833e4b94efefa28d1b63bf8881b661729d1a3f536f521e3aaeb86ed6",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Measurements/2026-10-02-train-hud-integration/responsive-construction-1280x720.png",
+   "size": 920722,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "38dbd545aaeedac80a00eb071bb8a28cc132991542736abc25dde37b2ba5a9cf",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Measurements/2026-10-02-train-hud-integration/responsive-construction-1920x1080.png",
+   "size": 1741329,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "a02e44508ffc2224e590426d260025002814c6e6da36c3f744d5b07929d1d2ea",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Measurements/2026-10-02-train-hud-integration/responsive-construction-2560x1080.png",
+   "size": 2231316,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "b8af31922c271f388fe84cd6d2cc7fcec5d1ea2ca825e5f1f88b4e60b291a9c3",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Measurements/2026-10-02-train-hud-integration/responsive-construction-3840x1080.png",
+   "size": 3109706,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "085d87f263a3303faeb59fcdbb13329edc89b56f0af930f5821938177a491207",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Measurements/2026-10-02-train-hud-integration/responsive-construction-3840x2160.png",
+   "size": 6237906,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "ae240db5fb23d9065fcaccf603f5a91c33c8438bd488e98055c6073d60465bc6",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Measurements/2026-10-02-train-hud-integration/responsive-construction-800x600.png",
+   "size": 514626,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "2bcd085289696f777ce801d4e230e1e190c9e743599f958f820959269bf5550a",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Measurements/2026-10-02-train-hud-integration/responsive-railway-1024x768.png",
+   "size": 767212,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "e51315f6010d93e6fb9b7b2ee4e2c47065760659486805215b3494ec14f8419f",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Measurements/2026-10-02-train-hud-integration/responsive-railway-1280x720.png",
+   "size": 969078,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "e566c4021c19d5971444452431ca6eb5fc046056759f0cabfa845a8e6cb3a621",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Measurements/2026-10-02-train-hud-integration/responsive-railway-1920x1080.png",
+   "size": 1751709,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "9e3f83458b3fc11f7892fd7540274be39b4e1079b58174a5c891a7b35f0c103f",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Measurements/2026-10-02-train-hud-integration/responsive-railway-2560x1080.png",
+   "size": 2221003,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "be73c1877a2c9088e81721adbbed0d10efe1aaf028176f56d146bea926e8b11d",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Measurements/2026-10-02-train-hud-integration/responsive-railway-3840x1080.png",
+   "size": 2892487,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "72651f9e249bf1fca900cafbce635e6dbfb8324ae2514a7a3b6c45a0c505abe7",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Measurements/2026-10-02-train-hud-integration/responsive-railway-3840x2160.png",
+   "size": 6124204,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "b46ba2fa35f943530ac4de0b89a935408bd4b93a575a9a95285ad295de51ce66",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Measurements/2026-10-02-train-hud-integration/responsive-railway-800x600.png",
+   "size": 529712,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "95f51fbe1e0a6a868e1606022eeb119c12aeea2e6c6159d1bcba2ee91bb57279",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Measurements/2026-10-02-train-hud-integration/train-unity-preview.png",
+   "size": 368272,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "acc47f649a87dd70dbbad2be5f38fee1f4aa0f352cfdd01d12a45dbf1c29a1d2",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Presentations/임재원_표적탐색_최적화_연구계획.pdf",
+   "size": 641400,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "8534eccaed08e663e1fa40db159f97fd50d0120ddc0c34d524104d8b16e0b247",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/References/BELTFED_UI_시안.png",
+   "size": 2167467,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "ba9895b5b146bd77b344b4d3497a415d931ef96d5a67250ee79d093a296c36d3",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/References/BELTFED_UI_시안_v2.png",
+   "size": 2051481,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "d6714ec103b94be432812303ad634bd245d92d7b933876cde6762cbc38f7a83c",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/References/BELTFED_UI_시안_v3_강화패널.png",
+   "size": 1983025,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "3c144890f93af307770516bf994ee3f6e514bb23815f21d13f42df66d648ad1e",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/References/BELTFED_UI_시안_v4_설치.png",
+   "size": 2410614,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "8cd582f7694d94bd4a6b5c02924b2179ac68a4bf7a476a25d3ebf5b171fd70cb",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Source/Attachments/IMG_0516.png",
+   "size": 185920,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "f56f553dea7f8f82f1c928ee9f70120957709b58e5ab7297a4605fd90aabc494",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Validation/2026-09-28-canvas-game-view.png",
+   "size": 1154345,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "9476d12c596c74ba3a04cd4397566c5fb3f4f6c7ac9f2ad1ede1a886c7d3fe65",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Validation/2026-09-28-railway-1280.png",
+   "size": 949497,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "90f882810ec1d5428e9a5dcc0bbe038c2adb77b798da194066f78fe494de260a",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Validation/2026-09-28-railway-1920.png",
+   "size": 1893808,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "0ca7d1c7a551da7782c4714d175e49fb51d5075098c9e078c876a71304858dcb",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Validation/2026-09-28-railway-defense-1280.png",
+   "size": 965582,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "7239f8e6d6023205dfdf8cbe5d3c45851d8ed6f4f56d42bdd373457c4c6368bf",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Validation/2026-09-28-railway-defense-final.png",
+   "size": 954250,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "94d8bca79f86477ee2904d499606586ac9cfa396d2632b2186ba3e99863463f0",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Validation/2026-09-28-railway-pending.png",
+   "size": 1219416,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "c5920cfebbb7cc8fb8f8d073f84a267de8140cc02844badacc2e7f0d49ebccc3",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Validation/2026-09-29-railway-g12-detail.png",
+   "size": 870367,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "2ad4f9a4bb583b2fdb3d10f5cd73b297cbf7d04bffeabaf475353a813c29bc5a",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Validation/2026-09-29-test-controls.png",
+   "size": 888556,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "5b9c3e65a36ded1340fe61b0c3689d45857f891072abb49d4f4f36a68e073479",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Validation/2026-09-30-first-loop-guide.png",
+   "size": 4280395,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "9dd10714c1bb3f420f9f94887f18e3d6de27f5c3f1b16574f0f988557c9364ef",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Validation/2026-09-30-qa06-after-1280.png",
+   "size": 740286,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "d7aaf9589199fef7d65d574ed9116f5e4e7c3861d0d28e69dcc65e7dde969cee",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Validation/2026-09-30-qa06-after-1920.png",
+   "size": 1081662,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "23f2796024975b1cb6349351876083c81ef657e04038dc588deca84608671097",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Validation/2026-09-30-qa06-long-1920.png",
+   "size": 1080383,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "3c6d3265c5f04ec7f82e502b76107a4cec3f4202eb0f1de20ab3d0fe021444a1",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Validation/2026-09-30-qa06-railway-final-1280.png",
+   "size": 783039,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "9372a77333237f692f6894fe21b6292f94b671c20b834bb0b2fc8bd3fb3306a2",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Validation/2026-09-30-qa06-railway-final-1920.png",
+   "size": 1107353,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "ba34296d33f8c2321501085a74f1bc536d0fc989a64a05cd9118dc0ea2304f3b",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Validation/2026-09-30-qa06-railway-shift-1280.png",
+   "size": 747442,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "20355e9e331021f6243ff5a7d8f1d1cd83e114b6953b78e52441ca9e5592b763",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Validation/2026-09-30-qa06-route-detail-1280.png",
+   "size": 770870,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "83e9385d5e92fc1f5fa36950e4f7f4bcc47342536cc7091b1c8a0ee4ed4f216d",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Validation/2026-09-30-qa06-route-detail-1920.png",
+   "size": 1147401,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "fa1332fe495c434430ffa6b13a47ead0016e997c3be1c42308829f062700cd16",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Validation/2026-09-30-qa06-selection-1280.png",
+   "size": 752950,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "ccbb3710ea343062f3a21d0efbd81ef90edc440a4f364b5e8b102f32f05927f0",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Validation/2026-10-01-qa06-title-1280.png",
+   "size": 753714,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "be7f2a12c3db78b903fd601c42afdd3bff8b7d883c59af195dfe37cd2f7df9c8",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Validation/2026-10-01-qa06-title-1920.png",
+   "size": 1127829,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "a9131f372a761c50e8e6aac7368cc3f4b92ab9b868768a8baabf035f25ad382b",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Validation/2026-10-01-railway-replan-editor.png",
+   "size": 610517,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "5a253cde22c9afe8a79927ee5a1674df8c3631b289129b3d59df01851738308a",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Validation/CompactHUD/edit-1024.png",
+   "size": 956548,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "bf473ed747471a85b9a901362ef4437233cd9af95e816bd704cfc970e01c851a",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Validation/CompactHUD/folded-1024.png",
+   "size": 923675,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "d6d8fb9d27b9ca683c33a66009c96cdb7e6ee20ad08c9d5a6b11d7a5033041e4",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Validation/CompactHUD/menu-1024.png",
+   "size": 873235,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "cc126ee9cc9a2bac5940dcb01692f6684a2a70bc5c482e5c9ea7910da9e1bb1f",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Validation/CompactHUD/normal-1024.png",
+   "size": 885955,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "fc3e5eb03fa622d1f4d11b8206269ed397b6432cf1def982bbab199065800c3c",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Validation/CompactHUD/normal-1366.png",
+   "size": 1074101,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "c8e842832255fdcf3d115558029671d0ca0cec1feaeca3d8d72e1bc6cc592185",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Validation/CompactHUD/normal-1920.png",
+   "size": 1953932,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "280a0827a28055e41780aa0e7c40e2b5f1d9380be7cc3e16527af545ff8e5e80",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Validation/CompactHUD/normal-2560.png",
+   "size": 3652963,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "55ecb5054b76c5c7a6b1796bbb00e1c5fd011d96ee5fc5b8e1405899d4cf7975",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Validation/CompactHUD/normal-3440.png",
+   "size": 4165519,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "1a9ac2f1055e404236109b8928634386d9c59838f50ca83f24cc1c95a76b7392",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Validation/CompactHUD/selection-1024.png",
+   "size": 888594,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "02490dceb375c230c7fa7c54ab985dd354d3f2a656f1bce072246dfa47f9d2a2",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Validation/RailwayA2/confirmation.png",
+   "size": 1236191,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "52f9cacc2f39f4a8f21f31baf55c0f513a57ae02dd99467c45687ce22e25cbd7",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Validation/RailwayA3/diagnostic.png",
+   "size": 1248204,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "9c81c98c10f7fa4761602f3eee51693dd82adda737f8b5ec1c11174e73be5be4",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Validation/RailwayA3/issues.png",
+   "size": 1020866,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "3a5700d2f8bef1f3701c03e8f5f29eb89c69a1a0119080d6de556f9f1152d6ff",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Validation/RailwayA3/map.png",
+   "size": 880897,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "29351bc75ede452e47f344f42658468466b9c8f7e1037f6340b8c7aafbee0a2a",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Validation/RailwayA3/order.png",
+   "size": 1206832,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "f3ce02b23b96ca60db0d45cd5445271df713222ad7d7b3b5ee73419132bd770b",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Validation/ReferenceHUD/edit-1024.png",
+   "size": 940710,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "0d18872e35f576a8c0c224c26a1c59ef1f96dcdd0b73d09efd34cf148cae92b4",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Validation/ReferenceHUD/edit-1920.png",
+   "size": 2098750,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "57fb0a2241900422fdc8318ca90bf1d20ea22c9245db2842640df97d4466ff79",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Validation/ReferenceHUD/folded-1024.png",
+   "size": 915540,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "505de216d043e1e4ae0c7b773e494d49f074c572eb31ecb4e6a91a809830005c",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Validation/ReferenceHUD/normal-1024.png",
+   "size": 896158,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "04176e28ece93386c736d0b1f046e45655e4034ab9a19e0b1dff90f37d674a2f",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Validation/ReferenceHUD/normal-1920.png",
+   "size": 1971620,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "62c2670a1c10175b6bcbf0d0825a71fe7487b7bcb6e66d0a3b0f89b758b6e430",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Validation/ReferenceHUD/normal-3440.png",
+   "size": 4198843,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "26dd96c422451f3df8c48ea2bab73baca4ae365b84582f421499af928d515e72",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Validation/ReferenceHUD/selection-1024.png",
+   "size": 901231,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "88072e05b3542fe2401ea13c7e65120d431bba3487b67d8e36a4e178ce939275",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Validation/ReferenceHUD/selection-1920.png",
+   "size": 1946005,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "8d5413b8738318bc3c8725b2229e345832cc0ef230d6acbedae98b196cc3b579",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Validation/building-inventory-ui.png",
+   "size": 55231,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "30066335b24736f46e6935a7926d1317ab201558d0ba124d62cf95668c19996c",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Validation/document-content-ui.png",
+   "size": 80801,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "77af10540e7ebd931b01f2ecc59d3ee07b10b5d630e2dda7df31cf25a74e52d6",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Validation/minimap-start-region.png",
+   "size": 1037557,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "4ccfa10068c0caecb113b614f8e2e79b8a178ead8a7712bfb364a748ddf360ed",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Validation/nexus-ground-grid.png",
+   "size": 91053,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "a7ecaa0301a9146e4c2f4afa618d20fd62e2ab3628d413241ba2c26edbc61b00",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Validation/simple-building-models.png",
+   "size": 261025,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "09ec6a50dff17ab87a193aaffca8f2be3f3812da180250072697beec2f653366",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Validation/start-loop-expanded.png",
+   "size": 861846,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "f0404fa87557519bfd62c50b933add6cd83ee937fe5d8fad32e64c41d1d1b7ac",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Validation/start-loop-folded.png",
+   "size": 964568,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "f58c8838b1548207a8547a7bf1c2d3da3ee962ffa68d57498fe5e255ecf921ab",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Validation/twc-mountain-river-game.png",
+   "size": 500677,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "5b3f4a3539003bf1c68b2858a55b19ebd8f21e0fe4b1d109b2a7981955fabe86",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/Validation/twc-mountain-river-overview.png",
+   "size": 341631,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "ce10bd21fa674204e7cc0f82393fc11b09bd780a0faef67b35fc43a2c9d0e162",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/horde-demo-preview.png",
+   "size": 537219,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "1f9541550712773f288d2cb4fa7192000be5b91900e7500fca865e8800d19f2d",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/horde-pincer.png",
+   "size": 322632,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "c7c694ea8387f865a86ade17257ddc5eed522501481485911e2be0a69153d5c4",
+   "version": "https://git-lfs.github.com/spec/v1"
+  },
+  {
+   "name": "Docs/horde-wide-front.png",
+   "size": 495793,
+   "checkout": true,
+   "downloaded": true,
+   "oid_type": "sha256",
+   "oid": "73f63a16c6bd84f58476c1371b75b697417f4de98965bf25f8091468deb4aa4f",
+   "version": "https://git-lfs.github.com/spec/v1"
+  }
+ ]
+}
