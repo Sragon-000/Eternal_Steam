@@ -1,0 +1,45 @@
+{
+  "run": "20261003-content-coverage-01",
+  "active": false,
+  "gameSeconds": 324.2036023437977,
+  "day": 1,
+  "phase": "Night",
+  "stage": "Failed",
+  "days": {
+    "1": {
+      "spawned": 101,
+      "killed": 2,
+      "damage": 100.0,
+      "removed": 1,
+      "samples": 438,
+      "maxAlive": 101,
+      "powerShortageSamples": 0,
+      "outsideAreaConsumerSamples": 0,
+      "maximumFrameMs": 75724.99
+    }
+  },
+  "missingDefinitions": [
+    "defense.arc",
+    "defense.plasma_laser",
+    "defense.rail_aa",
+    "defense.railgun",
+    "defense.smart_missile",
+    "installation.outpost",
+    "installation.wall",
+    "openworld.legacy.Arrow",
+    "openworld.legacy.Cannon",
+    "openworld.legacy.Frost",
+    "openworld.legacy.MachineGun",
+    "railway.station",
+    "railway.track",
+    "resource.copper",
+    "resource.nanometal",
+    "resource.plasma_ore",
+    "resource.titanium",
+    "resource.tungsten",
+    "resource.uranium"
+  ],
+  "foundationUsed": false,
+  "screenshots": 14,
+  "observationErrors": 0
+}

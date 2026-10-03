@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/Testing/Balance/BalanceRecorder.cs",
+      "entry": "BalanceRecorder.Restore"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 87,
+      "executeMs": 0,
+      "assemblyName": "PipelineRunScript_BalanceRecorder_e1aa212debe74ddc8f632988bf0fe481",
+      "success": true,
+      "result": "Current scene retained; editor/save overrides restored"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

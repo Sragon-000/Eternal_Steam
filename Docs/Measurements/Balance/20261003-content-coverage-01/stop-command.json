@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/Testing/Balance/BalanceRecorder.cs",
+      "entry": "BalanceRecorder.Stop",
+      "args": "[\"natural-first-night-defeat-main-base-destroyed-coverage-incomplete\"]"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 56,
+      "executeMs": 1,
+      "assemblyName": "PipelineRunScript_BalanceRecorder_b1217d8d98b44f4b8b3922d1d8654906",
+      "success": true,
+      "result": "{\n  \"root\": \"/Users/limseth/Projects/Eternal_Steam/Eternal_Steam/Docs/Measurements/Balance/20261003-content-coverage-01\",\n  \"sequence\": 1542,\n  \"stopped\": false,\n  \"stopRequested\": \"natural-first-night-defeat-main-base-destroyed-coverage-incomplete\",\n  \"error\": null,\n  \"screenshotsPending\": 1,\n  \"day\": 1,\n  \"phase\": \"Night\"\n}"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

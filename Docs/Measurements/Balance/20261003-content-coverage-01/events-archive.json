@@ -1,0 +1,10 @@
+{
+  "file": "events.jsonl",
+  "rawSha256": "734ee17afaf6d0a01a07ba60768d2a773ebce7f7c0744720ba84262741dce7bf",
+  "rawBytes": 14656977,
+  "archive": "events.jsonl.gz",
+  "archiveSha256": "191a20ef74b9029adf1c08781ad6dc7a3e1f3865db57b36d82a67f0ab03afc79",
+  "archiveBytes": 495488,
+  "roundTripVerified": true,
+  "rawRemovedAfterVerification": true
+}

@@ -1,0 +1,59 @@
+{
+  "scope": "Fixed complete-event prefix of an active run; not a terminal audit or survival ceiling",
+  "lastSequence": 1255,
+  "gameSeconds": 320.8255086746067,
+  "day": 1,
+  "phase": "Night",
+  "passed": true,
+  "errors": [],
+  "counts": {
+    "inventory-observed": 3,
+    "building-added": 18,
+    "screenshot-request": 66,
+    "action": 42,
+    "weapon-counters": 322,
+    "sample": 322,
+    "screenshot-captured": 10,
+    "resource": 312,
+    "enemy-spawn": 101,
+    "building-damage": 59
+  },
+  "pendingScreenshotRequests": [],
+  "days": {
+    "1": {
+      "groundSpawned": 100,
+      "airSpawned": 1,
+      "killed": 0,
+      "damage": 59.0,
+      "removed": 0,
+      "maximumAlive": 101
+    }
+  },
+  "missingInstalledDefinitions": [
+    "defense.arc",
+    "defense.plasma_laser",
+    "defense.rail_aa",
+    "defense.railgun",
+    "defense.smart_missile",
+    "installation.outpost",
+    "installation.wall",
+    "openworld.legacy.Arrow",
+    "openworld.legacy.Cannon",
+    "openworld.legacy.Frost",
+    "openworld.legacy.MachineGun",
+    "railway.station",
+    "railway.track",
+    "resource.copper",
+    "resource.nanometal",
+    "resource.plasma_ore",
+    "resource.titanium",
+    "resource.tungsten",
+    "resource.uranium"
+  ],
+  "noObservedWeaponSignals": [
+    "defense.sky_plasma",
+    "defense.tesla",
+    "defense.vulcan_aa"
+  ]
+}
+Saved: /Users/limseth/Projects/Eternal_Steam/Eternal_Steam/Docs/Measurements/Balance/20261003-content-coverage-01/checkpoints/audit-prefix-000001255.json

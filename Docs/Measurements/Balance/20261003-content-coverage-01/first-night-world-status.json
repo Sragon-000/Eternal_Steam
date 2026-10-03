@@ -1,0 +1,30 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "var s=UnityEngine.Object.FindFirstObjectByType<EternalSteam.OpenWorld.OpenWorldSandbox>(); return new { defeated=s.Content.Defeated,day=s.Clock.Day,phase=s.Clock.Phase.ToString(),paused=s.Clock.Paused,alive=s.Enemies.Alive,main=s.Content.MainBase?.PersistentId };"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "defeated": true,
+        "day": 1,
+        "phase": "Night",
+        "paused": true,
+        "alive": 99,
+        "main": null
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

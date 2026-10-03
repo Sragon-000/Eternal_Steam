@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/Testing/Balance/CombatCoverageProbe.cs",
+      "entry": "CombatCoverageProbe.Stop"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 23,
+      "executeMs": 1,
+      "assemblyName": "PipelineRunScript_CombatCoverageProbe_bd97ca45c478451e97d8ceea3594c12c",
+      "success": true,
+      "result": "{\n  \"sequence\": 432,\n  \"stopped\": true,\n  \"error\": null,\n  \"day\": 1,\n  \"phase\": \"Night\",\n  \"legacy\": []\n}"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

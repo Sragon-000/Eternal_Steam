@@ -1,0 +1,3126 @@
+{
+  "combatEndGameSeconds": 324.2036023437977,
+  "run": "20261003-content-coverage-01",
+  "purpose": "normal-survival",
+  "active": false,
+  "gameSeconds": 324.2036023437977,
+  "day": 1,
+  "phase": "Night",
+  "stage": "Failed",
+  "days": {
+    "1": {
+      "spawned": 101,
+      "killed": 2,
+      "damage": 100.0,
+      "removed": 1,
+      "samples": 438,
+      "maxAlive": 101,
+      "powerShortageSamples": 0,
+      "outsideAreaConsumerSamples": 0,
+      "maximumFrameMs": 75724.99
+    }
+  },
+  "resourceNetByOperation": {
+    "d92f8b5bd8e245898569a9e44495c6f6": {
+      "iron:production-output": 158.0,
+      "coal:production-output": 158.0
+    }
+  },
+  "initialInventories": {
+    "d92f8b5bd8e245898569a9e44495c6f6": {
+      "coal": 0.0,
+      "copper": 0.0,
+      "iron": 0.0,
+      "nanometal": 0.0,
+      "plasma_ore": 0.0,
+      "titanium": 0.0,
+      "tungsten": 0.0,
+      "uranium": 0.0
+    },
+    "490d9a3f81054e5a987ec4ac2ddc77b9": {
+      "coal": 0.0,
+      "copper": 0.0,
+      "iron": 0.0,
+      "nanometal": 0.0,
+      "plasma_ore": 0.0,
+      "titanium": 0.0,
+      "tungsten": 0.0,
+      "uranium": 0.0
+    }
+  },
+  "lastInventories": {
+    "d92f8b5bd8e245898569a9e44495c6f6": {
+      "coal": 158.0,
+      "copper": 0.0,
+      "iron": 158.0,
+      "nanometal": 0.0,
+      "plasma_ore": 0.0,
+      "titanium": 0.0,
+      "tungsten": 0.0,
+      "uranium": 0.0
+    },
+    "490d9a3f81054e5a987ec4ac2ddc77b9": {
+      "coal": 0.0,
+      "copper": 0.0,
+      "iron": 0.0,
+      "nanometal": 0.0,
+      "plasma_ore": 0.0,
+      "titanium": 0.0,
+      "tungsten": 0.0,
+      "uranium": 0.0
+    }
+  },
+  "catalogAndLegacyDefinitionsBuilt": [
+    "defense.emp",
+    "defense.sky_plasma",
+    "defense.tesla",
+    "defense.vulcan_aa",
+    "installation.main_base",
+    "installation.nexus",
+    "railway.coal",
+    "resource.iron",
+    "resource.power_generator"
+  ],
+  "missingDefinitions": [
+    "defense.arc",
+    "defense.plasma_laser",
+    "defense.rail_aa",
+    "defense.railgun",
+    "defense.smart_missile",
+    "installation.outpost",
+    "installation.wall",
+    "openworld.legacy.Arrow",
+    "openworld.legacy.Cannon",
+    "openworld.legacy.Frost",
+    "openworld.legacy.MachineGun",
+    "railway.station",
+    "railway.track",
+    "resource.copper",
+    "resource.nanometal",
+    "resource.plasma_ore",
+    "resource.titanium",
+    "resource.tungsten",
+    "resource.uranium"
+  ],
+  "foundationUsed": false,
+  "screenshots": 14,
+  "observationErrors": 0,
+  "actions": [
+    {
+      "gameSeconds": 0.0,
+      "day": 1,
+      "phase": "Day",
+      "action": "run-start",
+      "detail": "Captured while Editor paused before normal simulation resumes"
+    },
+    {
+      "gameSeconds": 0.0,
+      "day": 1,
+      "phase": "Day",
+      "action": "coverage-probe-start",
+      "detail": "Passive supplemental legacy shot counters and live range opportunities. Legacy uses HordeTower.shot, not BuildingInstance.Shot; prior legacy event zeros are not evidence of inactivity. Initial counters are cumulative since construction, exact prior shot times unavailable."
+    },
+    {
+      "gameSeconds": 7.928938761819154,
+      "day": 1,
+      "phase": "Day",
+      "action": "coverage-policy",
+      "detail": "Separate normal campaign: short-range Tesla/EMP first; air-only Vulcan/Sky Plasma on boss approach; add legacy ring only after short-range participation is observed. No enemy/resource/time injection."
+    },
+    {
+      "gameSeconds": 7.928938761819154,
+      "day": 1,
+      "phase": "Day",
+      "action": "coverage-upgrade",
+      "detail": "installation.main_base -> 2"
+    },
+    {
+      "gameSeconds": 7.928938761819154,
+      "day": 1,
+      "phase": "Day",
+      "action": "coverage-upgrade",
+      "detail": "installation.main_base -> 3"
+    },
+    {
+      "gameSeconds": 7.928938761819154,
+      "day": 1,
+      "phase": "Day",
+      "action": "coverage-upgrade",
+      "detail": "installation.main_base -> 4"
+    },
+    {
+      "gameSeconds": 7.928938761819154,
+      "day": 1,
+      "phase": "Day",
+      "action": "coverage-upgrade",
+      "detail": "installation.main_base -> 5"
+    },
+    {
+      "gameSeconds": 7.928938761819154,
+      "day": 1,
+      "phase": "Day",
+      "action": "coverage-upgrade",
+      "detail": "installation.main_base -> 6"
+    },
+    {
+      "gameSeconds": 7.928938761819154,
+      "day": 1,
+      "phase": "Day",
+      "action": "coverage-upgrade",
+      "detail": "installation.main_base -> 7"
+    },
+    {
+      "gameSeconds": 7.928938761819154,
+      "day": 1,
+      "phase": "Day",
+      "action": "coverage-upgrade",
+      "detail": "installation.main_base -> 8"
+    },
+    {
+      "gameSeconds": 7.928938761819154,
+      "day": 1,
+      "phase": "Day",
+      "action": "coverage-upgrade",
+      "detail": "installation.main_base -> 9"
+    },
+    {
+      "gameSeconds": 7.928938761819154,
+      "day": 1,
+      "phase": "Day",
+      "action": "coverage-upgrade",
+      "detail": "installation.main_base -> 10"
+    },
+    {
+      "gameSeconds": 7.928938761819154,
+      "day": 1,
+      "phase": "Day",
+      "action": "coverage-build",
+      "detail": "76df60ed73fc4595a1999b81a887e9db resource.iron owner=d92f8b5bd8e245898569a9e44495c6f6 target=(32.53, 0.41, 16.97) actual=(32.53, 0.41, 16.97) operational=True"
+    },
+    {
+      "gameSeconds": 7.928938761819154,
+      "day": 1,
+      "phase": "Day",
+      "action": "coverage-build",
+      "detail": "26d1c0cb37cd448f8a30dd21347160e3 railway.coal owner=d92f8b5bd8e245898569a9e44495c6f6 target=(24.04, 0.41, 25.46) actual=(24.04, 0.41, 25.46) operational=True"
+    },
+    {
+      "gameSeconds": 7.928938761819154,
+      "day": 1,
+      "phase": "Day",
+      "action": "coverage-build",
+      "detail": "5e2f47e4455f43dd84114794b6555242 resource.power_generator owner=d92f8b5bd8e245898569a9e44495c6f6 target=(25.46, 0.41, 18.38) actual=(24.04, 0.41, 16.97) operational=True"
+    },
+    {
+      "gameSeconds": 7.928938761819154,
+      "day": 1,
+      "phase": "Day",
+      "action": "coverage-build",
+      "detail": "88157c5a651e459d84e89afae95db00c resource.power_generator owner=d92f8b5bd8e245898569a9e44495c6f6 target=(26.87, 0.41, 19.80) actual=(28.28, 0.41, 18.38) operational=True"
+    },
+    {
+      "gameSeconds": 7.928938761819154,
+      "day": 1,
+      "phase": "Day",
+      "action": "coverage-build",
+      "detail": "ebcc2e7d68a5409b8424f3aec8355b57 resource.power_generator owner=d92f8b5bd8e245898569a9e44495c6f6 target=(28.28, 0.41, 21.21) actual=(29.70, 0.41, 19.80) operational=True"
+    },
+    {
+      "gameSeconds": 7.928938761819154,
+      "day": 1,
+      "phase": "Day",
+      "action": "coverage-build",
+      "detail": "2f6612b7ce594ba79f385e310dc8711f resource.power_generator owner=d92f8b5bd8e245898569a9e44495c6f6 target=(29.70, 0.41, 22.63) actual=(31.11, 0.41, 21.21) operational=True"
+    },
+    {
+      "gameSeconds": 7.928938761819154,
+      "day": 1,
+      "phase": "Day",
+      "action": "coverage-build",
+      "detail": "50847d16bd1a4182a6c92eb8e64ba9e2 defense.tesla owner=d92f8b5bd8e245898569a9e44495c6f6 target=(32.53, 0.41, 25.46) actual=(32.53, 0.41, 25.46) operational=True"
+    },
+    {
+      "gameSeconds": 7.928938761819154,
+      "day": 1,
+      "phase": "Day",
+      "action": "coverage-build",
+      "detail": "af826371e21b46e68076c07479dae991 defense.emp owner=d92f8b5bd8e245898569a9e44495c6f6 target=(24.04, 0.41, 16.97) actual=(26.87, 0.41, 14.14) operational=True"
+    },
+    {
+      "gameSeconds": 7.928938761819154,
+      "day": 1,
+      "phase": "Day",
+      "action": "coverage-build",
+      "detail": "cdb423d3f6dc488799324819c36520ce installation.nexus owner=d92f8b5bd8e245898569a9e44495c6f6 target=(34.79, 0.41, -35.40) actual=(36.77, 0.41, -35.36) operational=True"
+    },
+    {
+      "gameSeconds": 7.928938761819154,
+      "day": 1,
+      "phase": "Day",
+      "action": "coverage-upgrade",
+      "detail": "installation.nexus -> 2"
+    },
+    {
+      "gameSeconds": 7.928938761819154,
+      "day": 1,
+      "phase": "Day",
+      "action": "coverage-upgrade",
+      "detail": "installation.nexus -> 3"
+    },
+    {
+      "gameSeconds": 7.928938761819154,
+      "day": 1,
+      "phase": "Day",
+      "action": "coverage-upgrade",
+      "detail": "installation.nexus -> 4"
+    },
+    {
+      "gameSeconds": 7.928938761819154,
+      "day": 1,
+      "phase": "Day",
+      "action": "coverage-upgrade",
+      "detail": "installation.nexus -> 5"
+    },
+    {
+      "gameSeconds": 7.928938761819154,
+      "day": 1,
+      "phase": "Day",
+      "action": "coverage-upgrade",
+      "detail": "installation.nexus -> 6"
+    },
+    {
+      "gameSeconds": 7.928938761819154,
+      "day": 1,
+      "phase": "Day",
+      "action": "coverage-upgrade",
+      "detail": "installation.nexus -> 7"
+    },
+    {
+      "gameSeconds": 7.928938761819154,
+      "day": 1,
+      "phase": "Day",
+      "action": "coverage-upgrade",
+      "detail": "installation.nexus -> 8"
+    },
+    {
+      "gameSeconds": 7.928938761819154,
+      "day": 1,
+      "phase": "Day",
+      "action": "coverage-upgrade",
+      "detail": "installation.nexus -> 9"
+    },
+    {
+      "gameSeconds": 7.928938761819154,
+      "day": 1,
+      "phase": "Day",
+      "action": "coverage-upgrade",
+      "detail": "installation.nexus -> 10"
+    },
+    {
+      "gameSeconds": 7.928938761819154,
+      "day": 1,
+      "phase": "Day",
+      "action": "coverage-build",
+      "detail": "e80e7d34dfa84db1b9fb05068fa1d96f resource.power_generator owner=490d9a3f81054e5a987ec4ac2ddc77b9 target=(32.53, 0.41, -31.11) actual=(32.53, 0.41, -31.11) operational=True"
+    },
+    {
+      "gameSeconds": 7.928938761819154,
+      "day": 1,
+      "phase": "Day",
+      "action": "coverage-build",
+      "detail": "e798d2f8d15e473982db8e3c2be5ab7d resource.power_generator owner=490d9a3f81054e5a987ec4ac2ddc77b9 target=(34.65, 0.41, -33.23) actual=(33.94, 0.41, -32.53) operational=True"
+    },
+    {
+      "gameSeconds": 7.928938761819154,
+      "day": 1,
+      "phase": "Day",
+      "action": "coverage-build",
+      "detail": "5077bae817cb4f099e819a65de0890c7 resource.power_generator owner=490d9a3f81054e5a987ec4ac2ddc77b9 target=(36.77, 0.41, -35.36) actual=(33.94, 0.41, -38.18) operational=True"
+    },
+    {
+      "gameSeconds": 7.928938761819154,
+      "day": 1,
+      "phase": "Day",
+      "action": "coverage-build",
+      "detail": "f1f17528b87d4a41a496281e858719fb resource.power_generator owner=490d9a3f81054e5a987ec4ac2ddc77b9 target=(38.89, 0.41, -37.48) actual=(39.60, 0.41, -38.18) operational=True"
+    },
+    {
+      "gameSeconds": 7.928938761819154,
+      "day": 1,
+      "phase": "Day",
+      "action": "coverage-build",
+      "detail": "bc8507a2ae614dfe8d18440b917d2d68 defense.vulcan_aa owner=490d9a3f81054e5a987ec4ac2ddc77b9 target=(42.11, 0.41, -49.37) actual=(41.01, 0.41, -48.08) operational=True"
+    },
+    {
+      "gameSeconds": 7.928938761819154,
+      "day": 1,
+      "phase": "Day",
+      "action": "coverage-build",
+      "detail": "47497f84a2e94eddae90a013eee354b2 defense.sky_plasma owner=490d9a3f81054e5a987ec4ac2ddc77b9 target=(33.21, 0.41, -26.01) actual=(33.94, 0.41, -25.46) operational=True"
+    },
+    {
+      "gameSeconds": 7.928938761819154,
+      "day": 1,
+      "phase": "Day",
+      "action": "coverage-build",
+      "detail": "d5fea9a540ff40eca74b360f7f2edd29 defense.tesla owner=490d9a3f81054e5a987ec4ac2ddc77b9 target=(42.43, 0.41, -41.01) actual=(42.43, 0.41, -41.01) operational=True"
+    },
+    {
+      "gameSeconds": 7.928938761819154,
+      "day": 1,
+      "phase": "Day",
+      "action": "coverage-build",
+      "detail": "31e3264dd689448fbc72705d237797bb defense.emp owner=490d9a3f81054e5a987ec4ac2ddc77b9 target=(31.11, 0.41, -29.70) actual=(29.70, 0.41, -28.28) operational=True"
+    },
+    {
+      "gameSeconds": 191.00273143639788,
+      "day": 1,
+      "phase": "Day",
+      "action": "coverage-camera-overview",
+      "detail": "Normal camera focus between both bases, zoom out three steps; no game state or time changes."
+    },
+    {
+      "gameSeconds": 193.00287384632975,
+      "day": 1,
+      "phase": "Day",
+      "action": "stage-change",
+      "detail": "WaitingForNight"
+    },
+    {
+      "gameSeconds": 300.0063503449783,
+      "day": 1,
+      "phase": "Night",
+      "action": "phase-change",
+      "detail": "1:Night"
+    },
+    {
+      "gameSeconds": 300.0063503449783,
+      "day": 1,
+      "phase": "Night",
+      "action": "stage-change",
+      "detail": "BossBattle"
+    },
+    {
+      "gameSeconds": 324.2036023437977,
+      "day": 1,
+      "phase": "Night",
+      "action": "stage-change",
+      "detail": "Failed"
+    }
+  ],
+  "lastState": {
+    "sequence": 1545,
+    "utc": "2026-10-03T13:43:39.9192250Z",
+    "realtime": 515.4721835898672,
+    "gameSeconds": 324.2036023437977,
+    "day": 1,
+    "phase": "Night",
+    "kind": "sample",
+    "paused": true,
+    "pendingSimulationSeconds": 0.0,
+    "stage": "Failed",
+    "energy": {
+      "earned": 900000,
+      "extracted": 900000,
+      "killReward": 0,
+      "bossReward": 0,
+      "balance": 900000,
+      "target": 1000000,
+      "perfectOrb": false
+    },
+    "enemies": {
+      "alive": 99,
+      "spawned": 101,
+      "killed": 2,
+      "budgetDay": 1,
+      "pending": 0,
+      "spawnPoints": [],
+      "bossHealth": 1000
+    },
+    "inventories": [
+      {
+        "baseId": "490d9a3f81054e5a987ec4ac2ddc77b9",
+        "stocks": [
+          {
+            "id": "coal",
+            "amount": 0.0,
+            "capacity": 1000000.0
+          },
+          {
+            "id": "copper",
+            "amount": 0.0,
+            "capacity": 1000000.0
+          },
+          {
+            "id": "iron",
+            "amount": 0.0,
+            "capacity": 1000000.0
+          },
+          {
+            "id": "nanometal",
+            "amount": 0.0,
+            "capacity": 1000000.0
+          },
+          {
+            "id": "plasma_ore",
+            "amount": 0.0,
+            "capacity": 1000000.0
+          },
+          {
+            "id": "titanium",
+            "amount": 0.0,
+            "capacity": 1000000.0
+          },
+          {
+            "id": "tungsten",
+            "amount": 0.0,
+            "capacity": 1000000.0
+          },
+          {
+            "id": "uranium",
+            "amount": 0.0,
+            "capacity": 1000000.0
+          }
+        ]
+      },
+      {
+        "baseId": "d92f8b5bd8e245898569a9e44495c6f6",
+        "stocks": [
+          {
+            "id": "coal",
+            "amount": 158.0,
+            "capacity": 1000000.0
+          },
+          {
+            "id": "copper",
+            "amount": 0.0,
+            "capacity": 1000000.0
+          },
+          {
+            "id": "iron",
+            "amount": 158.0,
+            "capacity": 1000000.0
+          },
+          {
+            "id": "nanometal",
+            "amount": 0.0,
+            "capacity": 1000000.0
+          },
+          {
+            "id": "plasma_ore",
+            "amount": 0.0,
+            "capacity": 1000000.0
+          },
+          {
+            "id": "titanium",
+            "amount": 0.0,
+            "capacity": 1000000.0
+          },
+          {
+            "id": "tungsten",
+            "amount": 0.0,
+            "capacity": 1000000.0
+          },
+          {
+            "id": "uranium",
+            "amount": 0.0,
+            "capacity": 1000000.0
+          }
+        ]
+      }
+    ],
+    "buildings": [
+      {
+        "building": "76df60ed73fc4595a1999b81a887e9db",
+        "definition": "resource.iron",
+        "name": "철 생성기",
+        "owner": "d92f8b5bd8e245898569a9e44495c6f6",
+        "baseId": null,
+        "position": {
+          "x": 32.5269127,
+          "y": 0.411048144,
+          "z": 16.97056
+        },
+        "operational": true,
+        "block": "None",
+        "level": null,
+        "health": 50.0,
+        "maximumHealth": 50.0,
+        "power": null,
+        "modules": [
+          {
+            "type": "EternalSteam.ProductionModuleDefinition+Runtime",
+            "values": [
+              {
+                "name": "elapsed",
+                "text": "0.267596155",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              }
+            ]
+          },
+          {
+            "type": "EternalSteam.HealthModule",
+            "values": [
+              {
+                "name": "Current",
+                "text": "50",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "Maximum",
+                "text": "50",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              }
+            ]
+          },
+          {
+            "type": "EternalSteam.BuildingCombatDefinition+Body",
+            "values": []
+          }
+        ]
+      },
+      {
+        "building": "26d1c0cb37cd448f8a30dd21347160e3",
+        "definition": "railway.coal",
+        "name": "석탄 생성기 · 검증용",
+        "owner": "d92f8b5bd8e245898569a9e44495c6f6",
+        "baseId": null,
+        "position": {
+          "x": 24.0416317,
+          "y": 0.411048144,
+          "z": 25.455843
+        },
+        "operational": true,
+        "block": "None",
+        "level": null,
+        "health": 50.0,
+        "maximumHealth": 50.0,
+        "power": null,
+        "modules": [
+          {
+            "type": "EternalSteam.ProductionModuleDefinition+Runtime",
+            "values": [
+              {
+                "name": "elapsed",
+                "text": "0.267596155",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              }
+            ]
+          },
+          {
+            "type": "EternalSteam.HealthModule",
+            "values": [
+              {
+                "name": "Current",
+                "text": "50",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "Maximum",
+                "text": "50",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              }
+            ]
+          },
+          {
+            "type": "EternalSteam.BuildingCombatDefinition+Body",
+            "values": []
+          }
+        ]
+      },
+      {
+        "building": "5e2f47e4455f43dd84114794b6555242",
+        "definition": "resource.power_generator",
+        "name": "전력 발전기",
+        "owner": "d92f8b5bd8e245898569a9e44495c6f6",
+        "baseId": null,
+        "position": {
+          "x": 24.0416317,
+          "y": 0.411048144,
+          "z": 16.970562
+        },
+        "operational": true,
+        "block": "None",
+        "level": null,
+        "health": 50.0,
+        "maximumHealth": 50.0,
+        "power": {
+          "role": "Producer",
+          "stored": 0.0,
+          "capacity": 200.0,
+          "production": 0.0,
+          "requested": 0.0,
+          "consumedLastSecond": 0.0,
+          "supplied": true,
+          "supply": "fce65996ca644751b9de76ad491a6fcf"
+        },
+        "modules": [
+          {
+            "type": "EternalSteam.HealthModule",
+            "values": [
+              {
+                "name": "Current",
+                "text": "50",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "Maximum",
+                "text": "50",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              }
+            ]
+          },
+          {
+            "type": "EternalSteam.BuildingCombatDefinition+Body",
+            "values": []
+          },
+          {
+            "type": "EternalSteam.PowerModule",
+            "values": [
+              {
+                "name": "Consumed",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "PendingDemand",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "PendingProduction",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "Stored",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "Supplied",
+                "text": "True",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "building": "88157c5a651e459d84e89afae95db00c",
+        "definition": "resource.power_generator",
+        "name": "전력 발전기",
+        "owner": "d92f8b5bd8e245898569a9e44495c6f6",
+        "baseId": null,
+        "position": {
+          "x": 28.2842731,
+          "y": 0.411048144,
+          "z": 18.3847752
+        },
+        "operational": true,
+        "block": "None",
+        "level": null,
+        "health": 50.0,
+        "maximumHealth": 50.0,
+        "power": {
+          "role": "Producer",
+          "stored": 0.0,
+          "capacity": 200.0,
+          "production": 0.0,
+          "requested": 0.0,
+          "consumedLastSecond": 0.0,
+          "supplied": true,
+          "supply": "fce65996ca644751b9de76ad491a6fcf"
+        },
+        "modules": [
+          {
+            "type": "EternalSteam.HealthModule",
+            "values": [
+              {
+                "name": "Current",
+                "text": "50",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "Maximum",
+                "text": "50",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              }
+            ]
+          },
+          {
+            "type": "EternalSteam.BuildingCombatDefinition+Body",
+            "values": []
+          },
+          {
+            "type": "EternalSteam.PowerModule",
+            "values": [
+              {
+                "name": "Consumed",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "PendingDemand",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "PendingProduction",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "Stored",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "Supplied",
+                "text": "True",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "building": "ebcc2e7d68a5409b8424f3aec8355b57",
+        "definition": "resource.power_generator",
+        "name": "전력 발전기",
+        "owner": "d92f8b5bd8e245898569a9e44495c6f6",
+        "baseId": null,
+        "position": {
+          "x": 29.6984863,
+          "y": 0.411048144,
+          "z": 19.7989883
+        },
+        "operational": true,
+        "block": "None",
+        "level": null,
+        "health": 50.0,
+        "maximumHealth": 50.0,
+        "power": {
+          "role": "Producer",
+          "stored": 0.0,
+          "capacity": 200.0,
+          "production": 0.0,
+          "requested": 0.0,
+          "consumedLastSecond": 0.0,
+          "supplied": true,
+          "supply": "fce65996ca644751b9de76ad491a6fcf"
+        },
+        "modules": [
+          {
+            "type": "EternalSteam.HealthModule",
+            "values": [
+              {
+                "name": "Current",
+                "text": "50",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "Maximum",
+                "text": "50",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              }
+            ]
+          },
+          {
+            "type": "EternalSteam.BuildingCombatDefinition+Body",
+            "values": []
+          },
+          {
+            "type": "EternalSteam.PowerModule",
+            "values": [
+              {
+                "name": "Consumed",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "PendingDemand",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "PendingProduction",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "Stored",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "Supplied",
+                "text": "True",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "building": "2f6612b7ce594ba79f385e310dc8711f",
+        "definition": "resource.power_generator",
+        "name": "전력 발전기",
+        "owner": "d92f8b5bd8e245898569a9e44495c6f6",
+        "baseId": null,
+        "position": {
+          "x": 31.1127,
+          "y": 0.411048144,
+          "z": 21.2132015
+        },
+        "operational": true,
+        "block": "None",
+        "level": null,
+        "health": 50.0,
+        "maximumHealth": 50.0,
+        "power": {
+          "role": "Producer",
+          "stored": 0.0,
+          "capacity": 200.0,
+          "production": 0.0,
+          "requested": 0.0,
+          "consumedLastSecond": 0.0,
+          "supplied": true,
+          "supply": "fce65996ca644751b9de76ad491a6fcf"
+        },
+        "modules": [
+          {
+            "type": "EternalSteam.HealthModule",
+            "values": [
+              {
+                "name": "Current",
+                "text": "50",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "Maximum",
+                "text": "50",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              }
+            ]
+          },
+          {
+            "type": "EternalSteam.BuildingCombatDefinition+Body",
+            "values": []
+          },
+          {
+            "type": "EternalSteam.PowerModule",
+            "values": [
+              {
+                "name": "Consumed",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "PendingDemand",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "PendingProduction",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "Stored",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "Supplied",
+                "text": "True",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "building": "50847d16bd1a4182a6c92eb8e64ba9e2",
+        "definition": "defense.tesla",
+        "name": "테슬라 타워",
+        "owner": "d92f8b5bd8e245898569a9e44495c6f6",
+        "baseId": null,
+        "position": {
+          "x": 32.5269127,
+          "y": 0.411048144,
+          "z": 25.455843
+        },
+        "operational": true,
+        "block": "None",
+        "level": 1,
+        "health": 100.0,
+        "maximumHealth": 100.0,
+        "power": {
+          "role": "Consumer",
+          "stored": 0.0,
+          "capacity": 200.0,
+          "production": 0.0,
+          "requested": 0.0,
+          "consumedLastSecond": 0.0,
+          "supplied": true,
+          "supply": "fce65996ca644751b9de76ad491a6fcf"
+        },
+        "modules": [
+          {
+            "type": "EternalSteam.WeaponRuntime",
+            "values": [
+              {
+                "name": "Kinds",
+                "text": "All",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "burstTime",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "cooldown",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "firing",
+                "text": "True",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "tracked",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              }
+            ]
+          },
+          {
+            "type": "EternalSteam.PerformanceUpgrade",
+            "values": [
+              {
+                "name": "Level",
+                "text": "1",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              }
+            ]
+          },
+          {
+            "type": "EternalSteam.TurretRotation",
+            "values": [
+              {
+                "name": "Direction",
+                "text": "",
+                "vector": {
+                  "x": 0.7071068286895752,
+                  "y": 0.0,
+                  "z": 0.7071067094802856
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "multiplier",
+                "text": "1",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              }
+            ]
+          },
+          {
+            "type": "EternalSteam.HealthModule",
+            "values": [
+              {
+                "name": "Current",
+                "text": "100",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "Maximum",
+                "text": "100",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              }
+            ]
+          },
+          {
+            "type": "EternalSteam.BuildingCombatDefinition+Body",
+            "values": []
+          },
+          {
+            "type": "EternalSteam.PowerModule",
+            "values": [
+              {
+                "name": "Consumed",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "PendingDemand",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "PendingProduction",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "Stored",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "Supplied",
+                "text": "True",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "building": "af826371e21b46e68076c07479dae991",
+        "definition": "defense.emp",
+        "name": "EMP 펄스 타워",
+        "owner": "d92f8b5bd8e245898569a9e44495c6f6",
+        "baseId": null,
+        "position": {
+          "x": 26.8700581,
+          "y": 0.411048144,
+          "z": 14.1421337
+        },
+        "operational": true,
+        "block": "None",
+        "level": 1,
+        "health": 100.0,
+        "maximumHealth": 100.0,
+        "power": {
+          "role": "Consumer",
+          "stored": 0.0,
+          "capacity": 200.0,
+          "production": 0.0,
+          "requested": 0.0,
+          "consumedLastSecond": 0.0,
+          "supplied": true,
+          "supply": "fce65996ca644751b9de76ad491a6fcf"
+        },
+        "modules": [
+          {
+            "type": "EternalSteam.WeaponRuntime",
+            "values": [
+              {
+                "name": "Kinds",
+                "text": "All",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "burstTime",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "cooldown",
+                "text": "2.00773931",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "firing",
+                "text": "True",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "tracked",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              }
+            ]
+          },
+          {
+            "type": "EternalSteam.PerformanceUpgrade",
+            "values": [
+              {
+                "name": "Level",
+                "text": "1",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              }
+            ]
+          },
+          {
+            "type": "EternalSteam.TurretRotation",
+            "values": [
+              {
+                "name": "Direction",
+                "text": "",
+                "vector": {
+                  "x": 0.7071068286895752,
+                  "y": 0.0,
+                  "z": 0.7071067094802856
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "multiplier",
+                "text": "1",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              }
+            ]
+          },
+          {
+            "type": "EternalSteam.HealthModule",
+            "values": [
+              {
+                "name": "Current",
+                "text": "100",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "Maximum",
+                "text": "100",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              }
+            ]
+          },
+          {
+            "type": "EternalSteam.BuildingCombatDefinition+Body",
+            "values": []
+          },
+          {
+            "type": "EternalSteam.PowerModule",
+            "values": [
+              {
+                "name": "Consumed",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "PendingDemand",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "PendingProduction",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "Stored",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "Supplied",
+                "text": "True",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "building": "cdb423d3f6dc488799324819c36520ce",
+        "definition": "installation.nexus",
+        "name": "서브 기지",
+        "owner": "490d9a3f81054e5a987ec4ac2ddc77b9",
+        "baseId": "490d9a3f81054e5a987ec4ac2ddc77b9",
+        "position": {
+          "x": 36.76955,
+          "y": 0.411048144,
+          "z": -35.3553429
+        },
+        "operational": true,
+        "block": "None",
+        "level": 10,
+        "health": 280.0,
+        "maximumHealth": 280.0,
+        "power": {
+          "role": "Storage",
+          "stored": 380.0,
+          "capacity": 380.0,
+          "production": 80.0,
+          "requested": 20.0,
+          "consumedLastSecond": 20.0,
+          "supplied": true,
+          "supply": null
+        },
+        "modules": [
+          {
+            "type": "EternalSteam.BuildingCombatDefinition+Body",
+            "values": []
+          },
+          {
+            "type": "EternalSteam.BaseModuleDefinition+Identity",
+            "values": [
+              {
+                "name": "BaseId",
+                "text": "490d9a3f81054e5a987ec4ac2ddc77b9",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              }
+            ]
+          },
+          {
+            "type": "EternalSteam.BuildAreaModuleDefinition+Area",
+            "values": []
+          },
+          {
+            "type": "EternalSteam.HealthModule",
+            "values": [
+              {
+                "name": "Current",
+                "text": "280",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "Maximum",
+                "text": "280",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              }
+            ]
+          },
+          {
+            "type": "EternalSteam.UpgradeModule",
+            "values": [
+              {
+                "name": "Level",
+                "text": "10",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              }
+            ]
+          },
+          {
+            "type": "EternalSteam.PowerModule",
+            "values": [
+              {
+                "name": "Consumed",
+                "text": "20",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "PendingDemand",
+                "text": "4.0720468759536743",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "PendingProduction",
+                "text": "16.288187503814697",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "Stored",
+                "text": "380",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "Supplied",
+                "text": "True",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "building": "e80e7d34dfa84db1b9fb05068fa1d96f",
+        "definition": "resource.power_generator",
+        "name": "전력 발전기",
+        "owner": "490d9a3f81054e5a987ec4ac2ddc77b9",
+        "baseId": null,
+        "position": {
+          "x": 32.52691,
+          "y": 0.411048144,
+          "z": -31.1127014
+        },
+        "operational": true,
+        "block": "None",
+        "level": null,
+        "health": 50.0,
+        "maximumHealth": 50.0,
+        "power": {
+          "role": "Producer",
+          "stored": 0.0,
+          "capacity": 200.0,
+          "production": 0.0,
+          "requested": 0.0,
+          "consumedLastSecond": 0.0,
+          "supplied": true,
+          "supply": "cdb423d3f6dc488799324819c36520ce"
+        },
+        "modules": [
+          {
+            "type": "EternalSteam.HealthModule",
+            "values": [
+              {
+                "name": "Current",
+                "text": "50",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "Maximum",
+                "text": "50",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              }
+            ]
+          },
+          {
+            "type": "EternalSteam.BuildingCombatDefinition+Body",
+            "values": []
+          },
+          {
+            "type": "EternalSteam.PowerModule",
+            "values": [
+              {
+                "name": "Consumed",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "PendingDemand",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "PendingProduction",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "Stored",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "Supplied",
+                "text": "True",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "building": "e798d2f8d15e473982db8e3c2be5ab7d",
+        "definition": "resource.power_generator",
+        "name": "전력 발전기",
+        "owner": "490d9a3f81054e5a987ec4ac2ddc77b9",
+        "baseId": null,
+        "position": {
+          "x": 33.941124,
+          "y": 0.411048144,
+          "z": -32.5269127
+        },
+        "operational": true,
+        "block": "None",
+        "level": null,
+        "health": 50.0,
+        "maximumHealth": 50.0,
+        "power": {
+          "role": "Producer",
+          "stored": 0.0,
+          "capacity": 200.0,
+          "production": 0.0,
+          "requested": 0.0,
+          "consumedLastSecond": 0.0,
+          "supplied": true,
+          "supply": "cdb423d3f6dc488799324819c36520ce"
+        },
+        "modules": [
+          {
+            "type": "EternalSteam.HealthModule",
+            "values": [
+              {
+                "name": "Current",
+                "text": "50",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "Maximum",
+                "text": "50",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              }
+            ]
+          },
+          {
+            "type": "EternalSteam.BuildingCombatDefinition+Body",
+            "values": []
+          },
+          {
+            "type": "EternalSteam.PowerModule",
+            "values": [
+              {
+                "name": "Consumed",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "PendingDemand",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "PendingProduction",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "Stored",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "Supplied",
+                "text": "True",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "building": "5077bae817cb4f099e819a65de0890c7",
+        "definition": "resource.power_generator",
+        "name": "전력 발전기",
+        "owner": "490d9a3f81054e5a987ec4ac2ddc77b9",
+        "baseId": null,
+        "position": {
+          "x": 33.941124,
+          "y": 0.411048144,
+          "z": -38.18377
+        },
+        "operational": true,
+        "block": "None",
+        "level": null,
+        "health": 50.0,
+        "maximumHealth": 50.0,
+        "power": {
+          "role": "Producer",
+          "stored": 0.0,
+          "capacity": 200.0,
+          "production": 0.0,
+          "requested": 0.0,
+          "consumedLastSecond": 0.0,
+          "supplied": true,
+          "supply": "cdb423d3f6dc488799324819c36520ce"
+        },
+        "modules": [
+          {
+            "type": "EternalSteam.HealthModule",
+            "values": [
+              {
+                "name": "Current",
+                "text": "50",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "Maximum",
+                "text": "50",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              }
+            ]
+          },
+          {
+            "type": "EternalSteam.BuildingCombatDefinition+Body",
+            "values": []
+          },
+          {
+            "type": "EternalSteam.PowerModule",
+            "values": [
+              {
+                "name": "Consumed",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "PendingDemand",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "PendingProduction",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "Stored",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "Supplied",
+                "text": "True",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "building": "f1f17528b87d4a41a496281e858719fb",
+        "definition": "resource.power_generator",
+        "name": "전력 발전기",
+        "owner": "490d9a3f81054e5a987ec4ac2ddc77b9",
+        "baseId": null,
+        "position": {
+          "x": 39.5979767,
+          "y": 0.411048144,
+          "z": -38.18377
+        },
+        "operational": true,
+        "block": "None",
+        "level": null,
+        "health": 50.0,
+        "maximumHealth": 50.0,
+        "power": {
+          "role": "Producer",
+          "stored": 0.0,
+          "capacity": 200.0,
+          "production": 0.0,
+          "requested": 0.0,
+          "consumedLastSecond": 0.0,
+          "supplied": true,
+          "supply": "cdb423d3f6dc488799324819c36520ce"
+        },
+        "modules": [
+          {
+            "type": "EternalSteam.HealthModule",
+            "values": [
+              {
+                "name": "Current",
+                "text": "50",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "Maximum",
+                "text": "50",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              }
+            ]
+          },
+          {
+            "type": "EternalSteam.BuildingCombatDefinition+Body",
+            "values": []
+          },
+          {
+            "type": "EternalSteam.PowerModule",
+            "values": [
+              {
+                "name": "Consumed",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "PendingDemand",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "PendingProduction",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "Stored",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "Supplied",
+                "text": "True",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "building": "bc8507a2ae614dfe8d18440b917d2d68",
+        "definition": "defense.vulcan_aa",
+        "name": "발칸 대공포",
+        "owner": "490d9a3f81054e5a987ec4ac2ddc77b9",
+        "baseId": null,
+        "position": {
+          "x": 41.01219,
+          "y": 0.411048144,
+          "z": -48.0832634
+        },
+        "operational": true,
+        "block": "None",
+        "level": 1,
+        "health": 100.0,
+        "maximumHealth": 100.0,
+        "power": {
+          "role": "Consumer",
+          "stored": 0.0,
+          "capacity": 200.0,
+          "production": 0.0,
+          "requested": 0.0,
+          "consumedLastSecond": 0.0,
+          "supplied": true,
+          "supply": "cdb423d3f6dc488799324819c36520ce"
+        },
+        "modules": [
+          {
+            "type": "EternalSteam.WeaponRuntime",
+            "values": [
+              {
+                "name": "Kinds",
+                "text": "Air",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "burstTime",
+                "text": "0.602921",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "cooldown",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "firing",
+                "text": "True",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "tracked",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              }
+            ]
+          },
+          {
+            "type": "EternalSteam.PerformanceUpgrade",
+            "values": [
+              {
+                "name": "Level",
+                "text": "1",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              }
+            ]
+          },
+          {
+            "type": "EternalSteam.TurretRotation",
+            "values": [
+              {
+                "name": "Direction",
+                "text": "",
+                "vector": {
+                  "x": 0.7071068286895752,
+                  "y": 0.0,
+                  "z": 0.7071067094802856
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "multiplier",
+                "text": "1",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              }
+            ]
+          },
+          {
+            "type": "EternalSteam.HealthModule",
+            "values": [
+              {
+                "name": "Current",
+                "text": "100",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "Maximum",
+                "text": "100",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              }
+            ]
+          },
+          {
+            "type": "EternalSteam.BuildingCombatDefinition+Body",
+            "values": []
+          },
+          {
+            "type": "EternalSteam.PowerModule",
+            "values": [
+              {
+                "name": "Consumed",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "PendingDemand",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "PendingProduction",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "Stored",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "Supplied",
+                "text": "True",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "building": "47497f84a2e94eddae90a013eee354b2",
+        "definition": "defense.sky_plasma",
+        "name": "스카이 플라즈마 포탑",
+        "owner": "490d9a3f81054e5a987ec4ac2ddc77b9",
+        "baseId": null,
+        "position": {
+          "x": 33.941124,
+          "y": 0.411048144,
+          "z": -25.4558468
+        },
+        "operational": true,
+        "block": "None",
+        "level": 1,
+        "health": 100.0,
+        "maximumHealth": 100.0,
+        "power": {
+          "role": "Consumer",
+          "stored": 0.0,
+          "capacity": 200.0,
+          "production": 0.0,
+          "requested": 0.0,
+          "consumedLastSecond": 0.0,
+          "supplied": true,
+          "supply": "cdb423d3f6dc488799324819c36520ce"
+        },
+        "modules": [
+          {
+            "type": "EternalSteam.WeaponRuntime",
+            "values": [
+              {
+                "name": "Kinds",
+                "text": "Air",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "burstTime",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "cooldown",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "firing",
+                "text": "True",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "tracked",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              }
+            ]
+          },
+          {
+            "type": "EternalSteam.PerformanceUpgrade",
+            "values": [
+              {
+                "name": "Level",
+                "text": "1",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              }
+            ]
+          },
+          {
+            "type": "EternalSteam.TurretRotation",
+            "values": [
+              {
+                "name": "Direction",
+                "text": "",
+                "vector": {
+                  "x": 0.7071068286895752,
+                  "y": 0.0,
+                  "z": 0.7071067094802856
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "multiplier",
+                "text": "1",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              }
+            ]
+          },
+          {
+            "type": "EternalSteam.HealthModule",
+            "values": [
+              {
+                "name": "Current",
+                "text": "100",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "Maximum",
+                "text": "100",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              }
+            ]
+          },
+          {
+            "type": "EternalSteam.BuildingCombatDefinition+Body",
+            "values": []
+          },
+          {
+            "type": "EternalSteam.PowerModule",
+            "values": [
+              {
+                "name": "Consumed",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "PendingDemand",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "PendingProduction",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "Stored",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "Supplied",
+                "text": "True",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "building": "d5fea9a540ff40eca74b360f7f2edd29",
+        "definition": "defense.tesla",
+        "name": "테슬라 타워",
+        "owner": "490d9a3f81054e5a987ec4ac2ddc77b9",
+        "baseId": null,
+        "position": {
+          "x": 42.426403,
+          "y": 0.411048144,
+          "z": -41.0121956
+        },
+        "operational": true,
+        "block": "None",
+        "level": 1,
+        "health": 100.0,
+        "maximumHealth": 100.0,
+        "power": {
+          "role": "Consumer",
+          "stored": 0.0,
+          "capacity": 200.0,
+          "production": 0.0,
+          "requested": 0.0,
+          "consumedLastSecond": 0.0,
+          "supplied": true,
+          "supply": "cdb423d3f6dc488799324819c36520ce"
+        },
+        "modules": [
+          {
+            "type": "EternalSteam.WeaponRuntime",
+            "values": [
+              {
+                "name": "Kinds",
+                "text": "All",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "burstTime",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "cooldown",
+                "text": "3.079668",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "firing",
+                "text": "True",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "tracked",
+                "text": "0.417058229",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              }
+            ]
+          },
+          {
+            "type": "EternalSteam.PerformanceUpgrade",
+            "values": [
+              {
+                "name": "Level",
+                "text": "1",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              }
+            ]
+          },
+          {
+            "type": "EternalSteam.TurretRotation",
+            "values": [
+              {
+                "name": "Direction",
+                "text": "",
+                "vector": {
+                  "x": 0.844914436340332,
+                  "y": 0.0,
+                  "z": -0.5349017381668091
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "multiplier",
+                "text": "1",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              }
+            ]
+          },
+          {
+            "type": "EternalSteam.HealthModule",
+            "values": [
+              {
+                "name": "Current",
+                "text": "100",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "Maximum",
+                "text": "100",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              }
+            ]
+          },
+          {
+            "type": "EternalSteam.BuildingCombatDefinition+Body",
+            "values": []
+          },
+          {
+            "type": "EternalSteam.PowerModule",
+            "values": [
+              {
+                "name": "Consumed",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "PendingDemand",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "PendingProduction",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "Stored",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "Supplied",
+                "text": "True",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "building": "31e3264dd689448fbc72705d237797bb",
+        "definition": "defense.emp",
+        "name": "EMP 펄스 타워",
+        "owner": "490d9a3f81054e5a987ec4ac2ddc77b9",
+        "baseId": null,
+        "position": {
+          "x": 29.6984825,
+          "y": 0.411048144,
+          "z": -28.2842731
+        },
+        "operational": true,
+        "block": "None",
+        "level": 1,
+        "health": 100.0,
+        "maximumHealth": 100.0,
+        "power": {
+          "role": "Consumer",
+          "stored": 0.0,
+          "capacity": 200.0,
+          "production": 0.0,
+          "requested": 0.0,
+          "consumedLastSecond": 0.0,
+          "supplied": true,
+          "supply": "cdb423d3f6dc488799324819c36520ce"
+        },
+        "modules": [
+          {
+            "type": "EternalSteam.WeaponRuntime",
+            "values": [
+              {
+                "name": "Kinds",
+                "text": "All",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "burstTime",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "cooldown",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "firing",
+                "text": "True",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "tracked",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              }
+            ]
+          },
+          {
+            "type": "EternalSteam.PerformanceUpgrade",
+            "values": [
+              {
+                "name": "Level",
+                "text": "1",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              }
+            ]
+          },
+          {
+            "type": "EternalSteam.TurretRotation",
+            "values": [
+              {
+                "name": "Direction",
+                "text": "",
+                "vector": {
+                  "x": 0.7071068286895752,
+                  "y": 0.0,
+                  "z": 0.7071067094802856
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "multiplier",
+                "text": "1",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              }
+            ]
+          },
+          {
+            "type": "EternalSteam.HealthModule",
+            "values": [
+              {
+                "name": "Current",
+                "text": "100",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "Maximum",
+                "text": "100",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              }
+            ]
+          },
+          {
+            "type": "EternalSteam.BuildingCombatDefinition+Body",
+            "values": []
+          },
+          {
+            "type": "EternalSteam.PowerModule",
+            "values": [
+              {
+                "name": "Consumed",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "PendingDemand",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "PendingProduction",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "Stored",
+                "text": "0",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              },
+              {
+                "name": "Supplied",
+                "text": "True",
+                "vector": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "integers": [],
+                "longs": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "routes": [],
+    "observationErrors": 0,
+    "frameMs": 65.79103
+  }
+}

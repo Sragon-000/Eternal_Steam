@@ -1,0 +1,10 @@
+{
+  "file": "combat-coverage.jsonl",
+  "rawSha256": "94c2a204885756c47eb89e4516af66a70de8435b7ffcd6b164c4001154ff6700",
+  "rawBytes": 1029759,
+  "archive": "combat-coverage.jsonl.gz",
+  "archiveSha256": "3ffa66e4a5cb2f138984fbdf6102866d6a765fe48ac8d1c2d4db4abc0005d4e0",
+  "archiveBytes": 16748,
+  "roundTripVerified": true,
+  "rawRemovedAfterVerification": true
+}
