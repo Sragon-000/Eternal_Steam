@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/Testing/Balance/VerifyCompletedReload.cs",
+      "entry": "VerifyCompletedReload.Describe"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 46,
+      "executeMs": 0,
+      "assemblyName": "PipelineRunScript_VerifyCompletedReload_8b86a86deacc452080f0e36501b6efd0",
+      "success": true,
+      "result": "Same-current-scene ContinueSaved and exact snapshot/screenshot evidence, only after a clean completed recording stop."
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

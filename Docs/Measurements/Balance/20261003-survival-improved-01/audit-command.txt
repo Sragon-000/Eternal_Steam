@@ -1,0 +1,34 @@
+{
+  "run": "20261003-survival-improved-01",
+  "purpose": "normal-survival",
+  "normalPlay": true,
+  "passed": true,
+  "errors": [],
+  "counts": {
+    "inventory-observed": 4,
+    "building-added": 65,
+    "screenshot-request": 792,
+    "action": 178,
+    "weapon-counters": 5130,
+    "sample": 5130,
+    "screenshot-captured": 578,
+    "resource": 14154,
+    "train-change": 462,
+    "enemy-spawn": 2126,
+    "enemy-killed": 2126,
+    "run-end": 1
+  },
+  "gameSeconds": 4825.800783407874,
+  "resourceOutput": {
+    "iron": 7208.0,
+    "coal": 4798.0,
+    "copper": 953.0,
+    "titanium": 476.0,
+    "tungsten": 238.0,
+    "uranium": 105.0,
+    "plasma_ore": 79.0,
+    "nanometal": 39.0
+  },
+  "streaming": true,
+  "auditToolSha256": "1989bb3af1378654b362746380aac40b39f1edaa8195bf0ead93213765522a55"
+}

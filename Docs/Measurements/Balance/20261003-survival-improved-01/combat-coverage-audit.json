@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "rows": 3118,
+  "firstGameSeconds": 1956.713251285255,
+  "lastGameSeconds": 4800.003334282432,
+  "lastKind": "end:before-orb-craft",
+  "statusSequence": 3118,
+  "legacy": [
+    {
+      "definition": "openworld.legacy.MachineGun",
+      "shots": 0,
+      "range": 22.0,
+      "operational": true
+    },
+    {
+      "definition": "openworld.legacy.Cannon",
+      "shots": 0,
+      "range": 22.0,
+      "operational": true
+    },
+    {
+      "definition": "openworld.legacy.Frost",
+      "shots": 0,
+      "range": 22.0,
+      "operational": true
+    },
+    {
+      "definition": "openworld.legacy.Arrow",
+      "shots": 0,
+      "range": 22.0,
+      "operational": true
+    }
+  ]
+}

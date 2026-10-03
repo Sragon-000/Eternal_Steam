@@ -1,0 +1,22 @@
+{
+  "comparedKeys": [
+    "run",
+    "purpose",
+    "normalPlay",
+    "passed",
+    "errors",
+    "counts",
+    "gameSeconds",
+    "screenshots",
+    "resourceOutput"
+  ],
+  "exactSemanticMatch": true,
+  "screenshotsCompared": 129,
+  "originalAuditPreserved": true,
+  "addedChecks": [
+    "PNG signature/dimensions",
+    "Duplicate screenshot filename",
+    "Terminal status sequence"
+  ],
+  "sourceToolSha256": "1989bb3af1378654b362746380aac40b39f1edaa8195bf0ead93213765522a55"
+}

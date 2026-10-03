@@ -1,0 +1,5 @@
+{
+  "passed": true,
+  "terminalAuditRawAndGzipIdentical": true,
+  "coverageSummaryRawAndGzipIdenticalExceptSourceContainerSize": true
+}

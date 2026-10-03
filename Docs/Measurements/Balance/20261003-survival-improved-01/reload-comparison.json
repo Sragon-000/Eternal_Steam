@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "sameScene": "Assets/EternalSteam/Scene/Tests/StartRegionSandbox.unity",
+  "ignored": [
+    "savedUtc",
+    "top-level buildings order only"
+  ],
+  "allOtherStateEqual": true,
+  "files": {
+    "completed-snapshot.json": "3f9a5f11c221460c5e32d8f24465f8c419974dd4371b4db4d2a6c486acf1c2b1",
+    "reloaded-snapshot.json": "f9c1c2c30d160681ded66577f9d46ce8738df342847f5b3704edcc2f732d52ca",
+    "reloaded-screen.png": "4c33837407b363f8853cfe8025f9fbbaf6f167cebc864b315628a1fd80a2a54a"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "state": "observation-checkpoint",
+  "error": null,
+  "throughDay": 10,
+  "commands": 40,
+  "day": 11,
+  "phase": "Day",
+  "alive": 0,
+  "defeated": false,
+  "servicing": []
+}

@@ -1,5 +1,8 @@
 # 개선 후 장기 생존 회차 — 실행 중
 
+**종료됨:** 10개 공세 관찰·11일차 정상 클리어·동일 씬 저장 복원·전체 감사까지 완료했다. [최종 결과와 남은 검증](2026-10-03-survival-improved-final.md). 아래는 시점별 중간 기록이며 완료 상태를 대신하지 않는다.
+
+
 회차 `20261003-survival-improved-01`, 제품 코드 `de9af47`. StartRegionSandbox를 유지하며 정상 시간 배율 1, 자원 무한 OFF, 재고·체력·에너지·시각·적 주입 없이 진행한다. 이전 기준 회차와 원본 경로를 분리했다.
 
 현재 기록은 **진행 중**이다. 원본 JSONL과 스크린샷은 프로젝트 회차 폴더에 계속 추가되며, 완료 후 압축·무결성 검증·최종 집계·GitHub 게시를 한다. [시작 프로토콜](../Measurements/Balance/20261003-survival-improved-01/protocol.json), [2일차 관찰 체크포인트](../Measurements/Balance/20261003-survival-improved-01/checkpoints/day02-observation.json).

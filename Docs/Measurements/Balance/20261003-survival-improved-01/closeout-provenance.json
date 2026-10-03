@@ -1,0 +1,17 @@
+{
+  "sourceFilesCompared": 199,
+  "productSourcesUnchanged": true,
+  "changed": [],
+  "closeoutToolHashes": {
+    "tool-sources/closeout-v1-VerifyCompletedReload.cs": "dc869966d7af5930cf53f6bc33884e0c1258c3521d7ee764c89a83face90dd5c",
+    "tool-sources/closeout-v1-NormalPlayActions.cs": "b268d3d6cabc156ad4fdf2e22d551354b8917602ba22615b86d6cc65d6f62b48",
+    "tool-sources/closeout-v1-audit_recording.py": "1989bb3af1378654b362746380aac40b39f1edaa8195bf0ead93213765522a55",
+    "tool-sources/closeout-v1-archive_recording.py": "f4abfeafc6e478191f04830f925f920c4b3aa849019701632e2b1637e3e0422e",
+    "tool-sources/closeout-v1-summarize_combat_coverage.py": "3a0babf2a91e3f1c5830c70e665b2f9b6a66f05ca2ec83e3bab031fbc1fa29ee",
+    "tool-sources/closeout-v1-analyze_operating_costs.py": "2c095a4a60160c1d7f5bddf90b4b5b7d9159d8d82d180d82103df27d044a4952",
+    "tool-sources/closeout-v1-summarize_run.py": "9df0a0f2cedc7dda0df030e97b8d3f4a8f76c9e11f1d7ff02fc03f54c0fd9e10"
+  },
+  "normalGameSecondsAtCheckpoint": 4800.003334282432,
+  "postClearDockingAndSaveSeconds": 25.797449125442,
+  "researchExperimentsStarted": false
+}

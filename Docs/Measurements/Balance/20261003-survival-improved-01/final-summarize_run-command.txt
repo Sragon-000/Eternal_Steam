@@ -1,0 +1,135 @@
+{
+  "run": "20261003-survival-improved-01",
+  "active": false,
+  "gameSeconds": 4825.800783407874,
+  "day": 11,
+  "phase": "Day",
+  "stage": "Cleared",
+  "days": {
+    "1": {
+      "spawned": 101,
+      "killed": 101,
+      "damage": 0,
+      "removed": 0,
+      "samples": 480,
+      "maxAlive": 90,
+      "powerShortageSamples": 3,
+      "outsideAreaConsumerSamples": 6,
+      "maximumFrameMs": 82381.4453
+    },
+    "2": {
+      "spawned": 125,
+      "killed": 125,
+      "damage": 0,
+      "removed": 0,
+      "samples": 477,
+      "maxAlive": 116,
+      "powerShortageSamples": 0,
+      "outsideAreaConsumerSamples": 0,
+      "maximumFrameMs": 149.331543
+    },
+    "3": {
+      "spawned": 150,
+      "killed": 150,
+      "damage": 0,
+      "removed": 0,
+      "samples": 478,
+      "maxAlive": 127,
+      "powerShortageSamples": 0,
+      "outsideAreaConsumerSamples": 0,
+      "maximumFrameMs": 150.658829
+    },
+    "4": {
+      "spawned": 175,
+      "killed": 175,
+      "damage": 0,
+      "removed": 0,
+      "samples": 478,
+      "maxAlive": 143,
+      "powerShortageSamples": 0,
+      "outsideAreaConsumerSamples": 0,
+      "maximumFrameMs": 152.75238
+    },
+    "5": {
+      "spawned": 200,
+      "killed": 200,
+      "damage": 0,
+      "removed": 0,
+      "samples": 477,
+      "maxAlive": 198,
+      "powerShortageSamples": 0,
+      "outsideAreaConsumerSamples": 0,
+      "maximumFrameMs": 151.919373
+    },
+    "6": {
+      "spawned": 225,
+      "killed": 219,
+      "damage": 0,
+      "removed": 0,
+      "samples": 478,
+      "maxAlive": 225,
+      "powerShortageSamples": 0,
+      "outsideAreaConsumerSamples": 0,
+      "maximumFrameMs": 150.682861
+    },
+    "7": {
+      "spawned": 250,
+      "killed": 256,
+      "damage": 0,
+      "removed": 0,
+      "samples": 477,
+      "maxAlive": 250,
+      "powerShortageSamples": 0,
+      "outsideAreaConsumerSamples": 0,
+      "maximumFrameMs": 152.590912
+    },
+    "8": {
+      "spawned": 275,
+      "killed": 275,
+      "damage": 0,
+      "removed": 0,
+      "samples": 478,
+      "maxAlive": 204,
+      "powerShortageSamples": 0,
+      "outsideAreaConsumerSamples": 0,
+      "maximumFrameMs": 266.3194
+    },
+    "9": {
+      "spawned": 300,
+      "killed": 300,
+      "damage": 0,
+      "removed": 0,
+      "samples": 478,
+      "maxAlive": 218,
+      "powerShortageSamples": 0,
+      "outsideAreaConsumerSamples": 0,
+      "maximumFrameMs": 150.049286
+    },
+    "10": {
+      "spawned": 325,
+      "killed": 325,
+      "damage": 0,
+      "removed": 0,
+      "samples": 477,
+      "maxAlive": 285,
+      "powerShortageSamples": 0,
+      "outsideAreaConsumerSamples": 0,
+      "maximumFrameMs": 150.526535
+    },
+    "11": {
+      "spawned": 0,
+      "killed": 0,
+      "damage": 0,
+      "removed": 0,
+      "samples": 352,
+      "maxAlive": 0,
+      "powerShortageSamples": 0,
+      "outsideAreaConsumerSamples": 0,
+      "maximumFrameMs": 113.618835
+    }
+  },
+  "missingDefinitions": [],
+  "foundationUsed": true,
+  "screenshots": 578,
+  "observationErrors": 0
+}

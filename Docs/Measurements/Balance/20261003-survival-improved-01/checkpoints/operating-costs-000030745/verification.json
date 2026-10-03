@@ -1,0 +1,92 @@
+{
+  "passed": true,
+  "prefixHashVerified": true,
+  "stocksReconciled": {
+    "coal": true,
+    "copper": true,
+    "iron": true,
+    "nanometal": true,
+    "plasma_ore": true,
+    "titanium": true,
+    "tungsten": true,
+    "uranium": true
+  },
+  "ironProduction": 7208,
+  "ironFinalBanks": 7121,
+  "ironCargo": 30,
+  "ironNonCargoCost": 57,
+  "ironDelivered": 3300,
+  "coalProduction": 4798,
+  "coalFinalBanks": 4266,
+  "coalRefueled": 532,
+  "coalFuelRemaining": 92,
+  "coalConsumed": 440,
+  "csvHashes": {
+    "train-samples.csv": "bf49df24e65045e0210c4cec163eaed7305ce98e8f9457f22ce7e6708399be2a",
+    "resource-flows.csv": "685d16d40711c2bd9e6add3ded2c4b7284cb845eddc52bcd29f71385ac461939"
+  },
+  "zeroBatterySampleContext": [
+    [
+      {
+        "gameSeconds": "4720.612586197909",
+        "day": "10",
+        "phase": "Night",
+        "route": "960ef087e05742f2b803829b9a18fb69",
+        "status": "3",
+        "fuel": "55.99999999999999",
+        "cargo": "0.0",
+        "resource": "iron",
+        "battery": "5.712721683084965",
+        "aliveEnemies": "134"
+      },
+      {
+        "gameSeconds": "4721.619173279498",
+        "day": "10",
+        "phase": "Night",
+        "route": "960ef087e05742f2b803829b9a18fb69",
+        "status": "3",
+        "fuel": "55.99999999999999",
+        "cargo": "0.0",
+        "resource": "iron",
+        "battery": "0.6797862751409411",
+        "aliveEnemies": "130"
+      },
+      {
+        "gameSeconds": "4722.623062829021",
+        "day": "10",
+        "phase": "Night",
+        "route": "960ef087e05742f2b803829b9a18fb69",
+        "status": "3",
+        "fuel": "55.99999999999999",
+        "cargo": "0.0",
+        "resource": "iron",
+        "battery": "0.0",
+        "aliveEnemies": "130"
+      },
+      {
+        "gameSeconds": "4723.625582867302",
+        "day": "10",
+        "phase": "Night",
+        "route": "960ef087e05742f2b803829b9a18fb69",
+        "status": "2",
+        "fuel": "100.0",
+        "cargo": "30.0",
+        "resource": "iron",
+        "battery": "200.0",
+        "aliveEnemies": "130"
+      },
+      {
+        "gameSeconds": "4724.629628191702",
+        "day": "10",
+        "phase": "Night",
+        "route": "960ef087e05742f2b803829b9a18fb69",
+        "status": "2",
+        "fuel": "100.0",
+        "cargo": "30.0",
+        "resource": "iron",
+        "battery": "194.97977337799966",
+        "aliveEnemies": "129"
+      }
+    ]
+  ]
+}

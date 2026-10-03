@@ -1,0 +1,33 @@
+{
+  "sequence": 3118,
+  "stopped": true,
+  "error": null,
+  "day": 11,
+  "phase": "Day",
+  "legacy": [
+    {
+      "definition": "openworld.legacy.MachineGun",
+      "shots": 0,
+      "range": 22.0,
+      "operational": true
+    },
+    {
+      "definition": "openworld.legacy.Cannon",
+      "shots": 0,
+      "range": 22.0,
+      "operational": true
+    },
+    {
+      "definition": "openworld.legacy.Frost",
+      "shots": 0,
+      "range": 22.0,
+      "operational": true
+    },
+    {
+      "definition": "openworld.legacy.Arrow",
+      "shots": 0,
+      "range": 22.0,
+      "operational": true
+    }
+  ]
+}

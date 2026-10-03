@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/Testing/Balance/BalanceRecorder.cs",
+      "entry": "BalanceRecorder.Mark",
+      "args": "[\"first-night-improvement-verified\",\"Charge stayed 200 from first train sample at game 181.75s through idle; first decrease at 450.63s during Night with one enemy alive. Mounted arc emitted combat signals. First normal stop/refuel/charge/restart cycle completed. Continuing through ten nights.\"]"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 86,
+      "executeMs": 1,
+      "assemblyName": "PipelineRunScript_BalanceRecorder_21f5f14e2ed74410802295895bc7779c",
+      "success": true,
+      "result": "{\n  \"root\": \"/Users/limseth/Projects/Eternal_Steam/Eternal_Steam/Docs/Measurements/Balance/20261003-survival-improved-01\",\n  \"sequence\": 4141,\n  \"stopped\": false,\n  \"stopRequested\": null,\n  \"error\": null,\n  \"screenshotsPending\": 1,\n  \"day\": 2,\n  \"phase\": \"Day\"\n}"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

@@ -1,0 +1,28 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "var s=UnityEngine.Object.FindFirstObjectByType<EternalSteam.OpenWorld.OpenWorldSandbox>();var cam=UnityEngine.Object.FindFirstObjectByType<EternalSteam.OpenWorld.FreeCameraRig>();cam.ChangeZoom(2);cam.MoveFocus(s.Content.Bases.Bases.Values.Select(v=>v.Nexus.Position).Aggregate(UnityEngine.Vector3.zero,(a,b)=>a+b)/s.Content.Bases.Bases.Count);s.RailwayHud.Execute(\"close\");return new {day=s.Clock.Day,phase=s.Clock.Phase.ToString(),remaining=s.Clock.RemainingSeconds,battery=s.Content.Railway.Network.Routes[0].train.armament.battery};"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "day": 1,
+        "phase": "Day",
+        "remaining": 11.631835674401373,
+        "battery": 200
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

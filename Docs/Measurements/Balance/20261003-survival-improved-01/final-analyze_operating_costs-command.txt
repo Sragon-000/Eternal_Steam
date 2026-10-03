@@ -1,0 +1,117 @@
+{
+  "run": "20261003-survival-improved-01",
+  "active": false,
+  "day": 11,
+  "phase": "Day",
+  "gameSeconds": 4825.800783407874,
+  "passed": true,
+  "errors": [],
+  "resourceNetByOperation": {
+    "iron:production-output": 7208.0,
+    "coal:production-output": 4798.0,
+    "copper:production-output": 953.0,
+    "titanium:production-output": 476.0,
+    "tungsten:production-output": 238.0,
+    "uranium:production-output": 105.0,
+    "plasma_ore:production-output": 79.0,
+    "nanometal:production-output": 39.0,
+    "iron:withdraw": -3387.0,
+    "coal:withdraw": -532.0,
+    "iron:deposit": 3300.0
+  },
+  "lastStocksByResource": {
+    "coal": 4266.0,
+    "copper": 953.0,
+    "iron": 7121.0,
+    "nanometal": 39.0,
+    "plasma_ore": 79.0,
+    "titanium": 476.0,
+    "tungsten": 238.0,
+    "uranium": 105.0
+  },
+  "trainMetrics": {
+    "960ef087e05742f2b803829b9a18fb69": {
+      "firstSampleSeconds": 181.74985561985523,
+      "initialSampleFuel": 50.0,
+      "initialSampleBattery": 200.0,
+      "samples": 4947,
+      "minFuel": 17.999999999999993,
+      "minBattery": 0.0,
+      "maxBattery": 200.0,
+      "sampledBatteryDecreases": 887.3307527322322,
+      "sampledBatteryIncreases": 865.1243862626143,
+      "sampledFuelDecreases": 440.0,
+      "sampledFuelIncreases": 482.0,
+      "zeroBatterySamples": 1,
+      "zeroBatteryWithEnemiesSamples": 1,
+      "finalFuel": 92.0,
+      "finalBattery": 177.79363353038207
+    }
+  },
+  "netCargoTransfers": [
+    {
+      "route": "960ef087e05742f2b803829b9a18fb69",
+      "resource": "iron",
+      "netLoad": 3330.0,
+      "netUnload": 3300.0
+    }
+  ],
+  "powerSamplesByDay": {
+    "1": {
+      "samples": 480,
+      "outsideAreaConsumerSamples": 6,
+      "unsuppliedOperationalConsumerSamples": 3
+    },
+    "2": {
+      "samples": 477,
+      "outsideAreaConsumerSamples": 0,
+      "unsuppliedOperationalConsumerSamples": 0
+    },
+    "3": {
+      "samples": 478,
+      "outsideAreaConsumerSamples": 0,
+      "unsuppliedOperationalConsumerSamples": 0
+    },
+    "4": {
+      "samples": 478,
+      "outsideAreaConsumerSamples": 0,
+      "unsuppliedOperationalConsumerSamples": 0
+    },
+    "5": {
+      "samples": 477,
+      "outsideAreaConsumerSamples": 0,
+      "unsuppliedOperationalConsumerSamples": 0
+    },
+    "6": {
+      "samples": 478,
+      "outsideAreaConsumerSamples": 0,
+      "unsuppliedOperationalConsumerSamples": 0
+    },
+    "7": {
+      "samples": 477,
+      "outsideAreaConsumerSamples": 0,
+      "unsuppliedOperationalConsumerSamples": 0
+    },
+    "8": {
+      "samples": 478,
+      "outsideAreaConsumerSamples": 0,
+      "unsuppliedOperationalConsumerSamples": 0
+    },
+    "9": {
+      "samples": 478,
+      "outsideAreaConsumerSamples": 0,
+      "unsuppliedOperationalConsumerSamples": 0
+    },
+    "10": {
+      "samples": 477,
+      "outsideAreaConsumerSamples": 0,
+      "unsuppliedOperationalConsumerSamples": 0
+    },
+    "11": {
+      "samples": 352,
+      "outsideAreaConsumerSamples": 0,
+      "unsuppliedOperationalConsumerSamples": 0
+    }
+  }
+}
+Saved: /Users/limseth/Projects/Eternal_Steam/Eternal_Steam/Docs/Measurements/Balance/20261003-survival-improved-01/checkpoints/operating-costs-000030745

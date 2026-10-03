@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/Testing/Balance/VerifyCompletedReload.cs",
+      "entry": "VerifyCompletedReload.Request"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 17,
+      "executeMs": 4,
+      "assemblyName": "PipelineRunScript_VerifyCompletedReload_32e7e6c7744a447ba568c53b681a9691",
+      "success": true,
+      "result": "Normal ContinueSaved requested for the same current scene: Assets/EternalSteam/Scene/Tests/StartRegionSandbox.unity"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

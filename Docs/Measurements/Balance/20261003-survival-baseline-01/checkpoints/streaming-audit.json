@@ -1,0 +1,809 @@
+{
+  "run": "20261003-survival-baseline-01",
+  "purpose": "normal-survival",
+  "normalPlay": true,
+  "passed": true,
+  "errors": [],
+  "counts": {
+    "inventory-observed": 4,
+    "building-added": 65,
+    "screenshot-request": 308,
+    "action": 134,
+    "sample": 1234,
+    "screenshot-captured": 129,
+    "resource": 3481,
+    "train-change": 87,
+    "enemy-spawn": 226,
+    "enemy-killed": 226,
+    "run-end": 1
+  },
+  "gameSeconds": 1212.115839854814,
+  "screenshots": [
+    {
+      "file": "screenshots/000001.png",
+      "sha256": "408fdf44cdcd0abbc82bfd88f714a666b03ffeab6f2d98b310a2594fed9f5e3d",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000002.png",
+      "sha256": "dd68e7aee333d00fa9a327979a0f2439a5a6ee0d17342c5238af28a4129d9e32",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000003.png",
+      "sha256": "5718879fad8aa37855ce4e8210a28aa8159e0d6433e22fe785acbb7701dd674b",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000004.png",
+      "sha256": "0ad0a768b87babe680e3aaae74701e318ef617c68de9ad9139e0a5bbe8c87752",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000005.png",
+      "sha256": "9c35a8fc9babecfe50e662c910a029990cb4024de0acbd14880f58f2be24c2d4",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000006.png",
+      "sha256": "67c0741279523fd94952e3660fce73bf9b2b62e46e014ba10e1e0e6f7fa31e4c",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000007.png",
+      "sha256": "efc2a9fb05061fa2b033b8fd3c0cd2d30424750db7e60f8f00720d2e3e5b207e",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000008.png",
+      "sha256": "a94a93040a52a223582edde3459cae55e0ec14d720a541f5dac7f541ffdc7fa0",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000009.png",
+      "sha256": "47776d593aa58e18a0e58bf1e9e1181455df166c4a76446f77059f8f55597db6",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000010.png",
+      "sha256": "b96af4b405b27605f17bf3690d997aede05d246d3a7162a43dd5f29d8f89661b",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000011.png",
+      "sha256": "ef6ffa4a3ee100563674e3fc7a0660108dc7bc9f2e201fcbe81f4f039490f328",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000012.png",
+      "sha256": "56f82374ef50de225b3e42bd6a3e5fe548e961c4c74741394a83d8ade9b39e53",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000013.png",
+      "sha256": "fb9186f407fae91c3baca1a45769fc87c34fa673353b419ed1949eebb5b173ca",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000014.png",
+      "sha256": "167c122d98ca00682cac7809e6515a21cd567f99a1a20774dcef9bd02db6a666",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000015.png",
+      "sha256": "2464c76abfb2aa6279828e46753903aac971fce14b7ae1309893739c7bfdf7c8",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000016.png",
+      "sha256": "883fc4aa2a0c26a739153f5ef1a87c53dafa1725aa065a6039fada49c4828f18",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000017.png",
+      "sha256": "9cca8951eb090b8be20c3660d08319293b1ab43fc7ed7031aea371b706443874",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000018.png",
+      "sha256": "95b2b1a852c0741a976a1950a86d24160ff39102d63585cf33ea98f5c3c62250",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000019.png",
+      "sha256": "8d9aae9433b4a26b173c8f3042df1de6f28df68f36183fa1b6c053b214213d8e",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000020.png",
+      "sha256": "76f8c18524f74289343ed9d48648cc3231a6aaaea5d23900a88f8e53f01ef9b6",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000021.png",
+      "sha256": "b070e75993f3957fc66cb36ebf5b8bcbdbfe6bfadb35ed2b43beae63384fcddb",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000022.png",
+      "sha256": "671742ab5ac09e0329382ea4367a525a644f3035686f3b0d99ec757d37010952",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000023.png",
+      "sha256": "d317a64468bbdca0e48f9d88f5b4e3eb8e8f33f8fd9768a3e6a5e58f8e00cf6e",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000024.png",
+      "sha256": "eb52a8e9e4ab48ca4f0a4502c98d472d97398e7cfc86c8612f93c8e0d7aac2dc",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000025.png",
+      "sha256": "518a566e1b7e2862eb5b99f126e05f081e9b4a9b58194539b5ec3fae86414993",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000026.png",
+      "sha256": "393642cfd102ff2cb354a6fe1355e02310e004e31b65cdd8c8f7ce86efa755f2",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000027.png",
+      "sha256": "22c26199fdd257ec6cba93f4964818a7a1326ad7cef88c328902758cb49fee77",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000028.png",
+      "sha256": "3f29400a684f01cc4e8b4a1bcc0679989aedf98d8ca9fd5bb986cab4e3bd6e79",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000029.png",
+      "sha256": "210a94ddaeaef87a05e6d7524fa69f1c131fd9623b6e9c017a3b02c681ef99b2",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000030.png",
+      "sha256": "f4378a86bb7d6e05ba64b41572c2d22fa6240cb04aecce1c9ea00f1fd5f79d9a",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000031.png",
+      "sha256": "e47c91c982f05b730c4e9cfa32c20293bcaaa1bb1a121a54aad8f99f74ac0f62",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000032.png",
+      "sha256": "5bac2caa60e735f10e86162c8f4dd4dcb87d73a423741bb85aa9f06cf2d57aa1",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000033.png",
+      "sha256": "569a20053e6931b93537c5b8ffc054e4ba3bc1d7a0440359a45de6fb31e97b2d",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000034.png",
+      "sha256": "e06675460872acdbb5fbcf9048974ee91830aae40b0acc987106cf68196be94b",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000035.png",
+      "sha256": "802d929eafa941ca1baa98e821431e113477de67fb895f1f56e63f40de15f690",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000036.png",
+      "sha256": "7793930b03d3f0556e128299c56980232e6bc6dc3745f7d2ad2892586a7a9396",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000037.png",
+      "sha256": "bbfa69c62caea2c914ce4f2937a7b96322d19b0265d1cabc6336a53ec5bcb6cd",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000038.png",
+      "sha256": "2fe0b6c03adcb4b8f2799a613e38e7a929e139289f968817559dae24258bfdfe",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000039.png",
+      "sha256": "072040059e7d4ecd79bd468932e985a3b05d854ed727d236055d03cee94afc80",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000040.png",
+      "sha256": "12337fc4fde77d135db0920b722e0752b76285c4c0dbc81c73f53ca56ac77971",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000041.png",
+      "sha256": "b1dd5ecfcdd86b488d40501df4f2cb83865b21ac0d779eedcabf199735755c0e",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000042.png",
+      "sha256": "02261f00ffa3ba3aa058990467e870135de47043ec327281f119092a8d261ca9",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000043.png",
+      "sha256": "f400d9c9c8a47daf8cb4391742ca4bc3892ad4217231072f050dcae6cbe53c3b",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000044.png",
+      "sha256": "45c3a71e46c80452d2418afa26de0c4e90604e395816e4672d5bbb141d5e0c74",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000045.png",
+      "sha256": "a0338ae56aecc4f71b5c4da1fd9bd38449caebe46004c20a8550f96d2735e45d",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000046.png",
+      "sha256": "e6678200d514f06123dcf21a09b7f32c88145bdd21e67ddfb1508f88fa2f89e3",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000047.png",
+      "sha256": "5681b1adfda6ea0aa8efd419514b33f22a3970cc870d04e47961b7bf3196930a",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000048.png",
+      "sha256": "5f9b7b0021c9829dee9085c6763d14ae4a66fef0e928af064b34f64192983cad",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000049.png",
+      "sha256": "0f2cf19f93cb54c94099b7e97374adeb02a414aba637c6921e9ee1120e13a7b0",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000050.png",
+      "sha256": "331bcb8292d0a732c17e0204523233752a40d863101e424113cda44f26c4507f",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000051.png",
+      "sha256": "a845edf55b866c4f2cd7ef8940eab86ca2ad67a45a40829798b59deeb25fc11b",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000052.png",
+      "sha256": "168fd52d7b6fe7b8a1685413ff52d7c6588d61c16d623f085f14078c24a4c253",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000053.png",
+      "sha256": "98e385df7a908813044d72e25736ae5c5b61482115375dea69844331968d88ff",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000054.png",
+      "sha256": "7a44e7f166c5a7c59215cbf45f769c00162305aee575565174158b0f43cecec6",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000055.png",
+      "sha256": "dde5a59821d302648d75c306f52229f740cfef1e7fb5be7c74ed6de1e90f7a61",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000056.png",
+      "sha256": "b08a4b4f42c35044670f6d25a90d462456155a50cc3fbfb7e2de15974016672b",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000057.png",
+      "sha256": "664d97198fdad6e96775d4bfbdad7c6b7eb872252227ec23582af2f72c4b689c",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000058.png",
+      "sha256": "929f493b070ddb97682c949546dcf2e90a9d1e04b38691467b59dd248c925338",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000059.png",
+      "sha256": "e53560e054583481a49b98ea339a09aa6d963b2e6caa402c902a5ca9732c2b02",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000060.png",
+      "sha256": "5fa813f66671bae30e186f2cde3bbd2cb51575c21562e9ceb042b8682c1bc355",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000061.png",
+      "sha256": "dc459e5d14da2ab2359bab33d5e92b61e93ffb893dcf9a79d30b2159ef7470af",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000062.png",
+      "sha256": "dc0bb044bb57e36daa26abbceaf2d929a85cea65e5d02ff8da33e75a55d09f66",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000063.png",
+      "sha256": "b6a6688c70d8d1b15fd176748050d0fe604ab90264609d15c464e478f1be0ca7",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000064.png",
+      "sha256": "3d3989e62d1063cf725651f3288326ea38d23bc1355226dc6e672e01ef48acc2",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000065.png",
+      "sha256": "08368d950309d64c32ee917436d488c4298a2b815f21dedd3f45b6fea8ced802",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000066.png",
+      "sha256": "6195c2c63e853608b09b323c16b49acc9466c5130b4f78e4128dfc2a1ce18db3",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000067.png",
+      "sha256": "5b440437d7fe87483820750fd1d28b5d090714ee5ab17b2cde0756360f50c4ae",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000068.png",
+      "sha256": "eab3f32f7e8675461c0ca0a3fee39caa48bfb7cb02900b37df6e2c18de841793",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000069.png",
+      "sha256": "e339671f037e2a3515422be738874f283a78fc0f3571df28a7da20024e5aa16f",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000070.png",
+      "sha256": "fb590d0a4bfad2c58afcdcfb3e672f3c7b9d6b32c905c71209e28dc8b5cdf828",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000071.png",
+      "sha256": "053b48c57efdb4548f091e4ad202e5b4c848e91aecdfab3e74fc92b33a644b21",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000072.png",
+      "sha256": "3ba8995e431c27154d4a42d404200a6a37f4bcf983abac68a5dc4861c827e177",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000073.png",
+      "sha256": "d188adc7188319757c7c00a07a81df0980e41d1539cd259c8587a04903949ae0",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000074.png",
+      "sha256": "fbdd15af1dacecf10ee79c4757e0fc194b41a33ec0f31b2454e1f36cc7ee199b",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000075.png",
+      "sha256": "3e64112e0de7d9a65491fc896e28071784fb3070177e148a6b89908127cac7dd",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000076.png",
+      "sha256": "d743c1e250fec100972e0ce0fec0414798239ad37446a73790585858dd4851ff",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000077.png",
+      "sha256": "b732b58f2f9c4904697a503ce10383699217937c520d45fb691a051c7cbd9397",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000078.png",
+      "sha256": "2cf2ccd223e1198d231347236d26d0370cb24aee45dc4968c23e666c95052201",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000079.png",
+      "sha256": "499badb3452710f5c557417b9775d19b2c6579ba288b98d1bc6771154c0f3fe0",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000080.png",
+      "sha256": "30eaa2d42911f2d4bbeb833b19184d4364d4f6e1d255195bd04f3d444d664692",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000081.png",
+      "sha256": "f56c2c0c27fc043dec0553eec0b50928aa71d4226d820db642c47109f1e625ee",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000082.png",
+      "sha256": "9b1f56be0ea62237c4c2725605f15605faa4b0e88ddfb8c02c2f8441302a8292",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000083.png",
+      "sha256": "c45528411bb410aa30a58daa97c81575e7b82a39289a17c6c3b7683bfd395cbc",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000084.png",
+      "sha256": "de6d16dac88dc6f6b6831d488909f5691d7d44c599f17e474273c351a0e77611",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000085.png",
+      "sha256": "3101adfbe148a51b15c1f099e0e97998354889ad70fd2f586215b39839ec398d",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000086.png",
+      "sha256": "7ec4162867612f89252a5b40c0b9aff780a032047fd50f25409f959288938706",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000087.png",
+      "sha256": "f57262025dd404632325e673a136f491bc2d9c7e9729b2caadff6d1c9ec65de8",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000088.png",
+      "sha256": "0fa4e46f1cf9e2b6f9bdc7274dc8e00828837839d844c02beae95c1bd16d395b",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000089.png",
+      "sha256": "1756edd96bb4cd4af359a2c6230c8d0b263d7303fcfd82ff51e114dcb73b775b",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000090.png",
+      "sha256": "30d441cdf46269a5db5a9039188c8969623cec1d5ff0b83de10765675bc5abbb",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000091.png",
+      "sha256": "a4bd8a31bdc9387e4608994b941ba07f4134a34a9ee74f417c81b28060e1f984",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000092.png",
+      "sha256": "d37743bea0676c7df9659d3743f8f7c4a9bfebd6694631a1196e8a464ea9a723",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000093.png",
+      "sha256": "a441a485ce174448220e938248f473d129312175e334efd2b507a910ab3789e5",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000094.png",
+      "sha256": "958f577308713779501fa605b707dbc06c8fe6efc41f0cfb6162219383c4257e",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000095.png",
+      "sha256": "b379b675fbf939d5fab2f551f09ae7a2272fc6a356891e28637d09f0ea376284",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000096.png",
+      "sha256": "ac31ae1db8b63fd5525f8c679da5acbb09be3f7dc3ae26ee4c8d14e2c9339d15",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000097.png",
+      "sha256": "58a60f48ae9415760921d3c69efd2efe64a9de3fc430a16059bb881d63f72d30",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000098.png",
+      "sha256": "bbd6512ac4ce2eff4bfbd949706d8aa4bb8357fe546feab395070ba12ef10cc7",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000099.png",
+      "sha256": "35a820fc1224adb870c2db75b78b2437688ff84df80f0c68f10481ae929df969",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000100.png",
+      "sha256": "e28b7db0a4bc2f2c860217f95d99921c36efe8a77f81ab5195bc51fcf3877346",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000101.png",
+      "sha256": "a00937a3c1b8ed8717e72e702bd85ff71cfd1f1788347e7a2279e18b6e85adac",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000102.png",
+      "sha256": "40d336854e2dce091858ab14b52922a3e7e2f535c3d15e31fc865d974b63bbfb",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000103.png",
+      "sha256": "921dee0e92447b5233afb813e00f526564a203881fee971e8930997f41531d17",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000104.png",
+      "sha256": "76a9cee35fa72098e2f8867ac5a8d7bea7ac37ff1085736dde7a62c29f9d9fb3",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000105.png",
+      "sha256": "8b9716c7aa83bb41cda3493b337414106507aed122891cbc710ac66416c0510c",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000106.png",
+      "sha256": "b7c535d555dbd4b87f9e17b590cd44e583852b9dd085508604ec36cfc02300e3",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000107.png",
+      "sha256": "0a0fcb155209d53be4a1cc27ac98fe714a3a5c9c68d45295d3794e2475850e3c",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000108.png",
+      "sha256": "a319866d592d50d285564e0dc9a5700e8d0cef60c9eee525885d2040205341f6",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000109.png",
+      "sha256": "cb4dd7f646d8860a72e5a9bd31461fab61b162148510e283dce6d3332ad010e0",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000110.png",
+      "sha256": "ac1af521527cd208cb6ad2c21eb859f2bca9fafdfede082fce7f0e81b6dfd605",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000111.png",
+      "sha256": "4eeb32506445c4ab761d70954ba3509d3b01ba9de76cc402fa9d96eb6f6aa3c9",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000112.png",
+      "sha256": "380f64ff20b641560b35bbec0386f68e03c952701222af3c6be601890dd08000",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000113.png",
+      "sha256": "f872273a71f735b6baea166b526b4aca4583818696aa33b96c8926ada54d8d16",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000114.png",
+      "sha256": "35ee4a2332edbd54c944b35076c50daeea80f74e9bb5846e0dce67c794e37619",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000115.png",
+      "sha256": "2fd6d0ff37886047c1785f9c0a40026c937a14d0b05bfaf05c78521527df2bf8",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000116.png",
+      "sha256": "94f5f56b2bfe84cf98678949fe521b415124ec2922ad4e727f2f358be59dd24c",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000117.png",
+      "sha256": "12c8ec4ea33013127d6e65ad9facdf40e0a0dd91750653f5ccacecad1b6cd638",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000118.png",
+      "sha256": "1197bd215cac350f188addd7ef69cf631a75695e56a3d12ff1809a5558af0ea4",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000119.png",
+      "sha256": "a7e233e916ca95eb1be5cce19e0e636763aab8a6a0f761f1be7523cd3fe48593",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000120.png",
+      "sha256": "0d76f3758e032bfbeb4802893b554ec3dbc852357cadd812f1dc4b95e7ea2adf",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000121.png",
+      "sha256": "088851afea38b7fe19c2dbae24543876671197f8e38a840b1f80bbe02a25d02e",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000122.png",
+      "sha256": "310d69a5e27453bc3fff5762b50ea61e2fded4483df8ab15fcc5fd7bad73f28e",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000123.png",
+      "sha256": "580a77f8149572a11cf4f1fdcab08db6c9befa333ef521a5d10f5558bbfbc673",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000124.png",
+      "sha256": "b461c8d74127277b2f6e979da5d1208a5c8cb99cfe522550ce6f58f0e02a9c60",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000125.png",
+      "sha256": "592fe0d6c5eb65e1487beb59c8301a89b39042e00a2bf297ac932bd398a1f431",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000126.png",
+      "sha256": "d94e4055ebdb710587b70ce480b3d20e648827a1c2f8429b28624866055f8ada",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000127.png",
+      "sha256": "38824ca7e6ef80772aa9ac9c9bb256d61b576d297f08cac64edb11bb79a052fb",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000128.png",
+      "sha256": "436c4a9290fae959e31dc72a8a7b8ad33125321dbf69ba91b4eb0bbe64a92b34",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000129.png",
+      "sha256": "436c4a9290fae959e31dc72a8a7b8ad33125321dbf69ba91b4eb0bbe64a92b34",
+      "width": 2560,
+      "height": 1440
+    }
+  ],
+  "resourceOutput": {
+    "iron": 1777.0,
+    "coal": 1181.0,
+    "copper": 228.0,
+    "titanium": 114.0,
+    "tungsten": 57.0,
+    "uranium": 25.0,
+    "plasma_ore": 19.0,
+    "nanometal": 9.0
+  },
+  "streaming": true,
+  "auditToolSha256": "1989bb3af1378654b362746380aac40b39f1edaa8195bf0ead93213765522a55"
+}

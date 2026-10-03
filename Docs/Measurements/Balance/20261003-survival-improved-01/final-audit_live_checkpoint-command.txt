@@ -1,0 +1,122 @@
+{
+  "scope": "Fixed complete-event prefix of an active run; not a terminal audit or survival ceiling",
+  "lastSequence": 30746,
+  "gameSeconds": 4825.800783407874,
+  "day": 11,
+  "phase": "Day",
+  "passed": true,
+  "errors": [],
+  "counts": {
+    "inventory-observed": 4,
+    "building-added": 65,
+    "screenshot-request": 792,
+    "action": 178,
+    "weapon-counters": 5130,
+    "sample": 5130,
+    "screenshot-captured": 578,
+    "resource": 14154,
+    "train-change": 462,
+    "enemy-spawn": 2126,
+    "enemy-killed": 2126,
+    "run-end": 1
+  },
+  "pendingScreenshotRequests": [],
+  "days": {
+    "1": {
+      "groundSpawned": 100,
+      "airSpawned": 1,
+      "killed": 101,
+      "damage": 0,
+      "removed": 0,
+      "maximumAlive": 90
+    },
+    "2": {
+      "groundSpawned": 125,
+      "airSpawned": 0,
+      "killed": 125,
+      "damage": 0,
+      "removed": 0,
+      "maximumAlive": 116
+    },
+    "3": {
+      "groundSpawned": 150,
+      "airSpawned": 0,
+      "killed": 150,
+      "damage": 0,
+      "removed": 0,
+      "maximumAlive": 127
+    },
+    "4": {
+      "groundSpawned": 175,
+      "airSpawned": 0,
+      "killed": 175,
+      "damage": 0,
+      "removed": 0,
+      "maximumAlive": 143
+    },
+    "5": {
+      "groundSpawned": 200,
+      "airSpawned": 0,
+      "killed": 200,
+      "damage": 0,
+      "removed": 0,
+      "maximumAlive": 198
+    },
+    "6": {
+      "groundSpawned": 225,
+      "airSpawned": 0,
+      "killed": 219,
+      "damage": 0,
+      "removed": 0,
+      "maximumAlive": 225
+    },
+    "7": {
+      "groundSpawned": 250,
+      "airSpawned": 0,
+      "killed": 256,
+      "damage": 0,
+      "removed": 0,
+      "maximumAlive": 250
+    },
+    "8": {
+      "groundSpawned": 275,
+      "airSpawned": 0,
+      "killed": 275,
+      "damage": 0,
+      "removed": 0,
+      "maximumAlive": 204
+    },
+    "9": {
+      "groundSpawned": 300,
+      "airSpawned": 0,
+      "killed": 300,
+      "damage": 0,
+      "removed": 0,
+      "maximumAlive": 218
+    },
+    "10": {
+      "groundSpawned": 325,
+      "airSpawned": 0,
+      "killed": 325,
+      "damage": 0,
+      "removed": 0,
+      "maximumAlive": 285
+    },
+    "11": {
+      "groundSpawned": 0,
+      "airSpawned": 0,
+      "killed": 0,
+      "damage": 0,
+      "removed": 0,
+      "maximumAlive": 0
+    }
+  },
+  "missingInstalledDefinitions": [],
+  "noObservedWeaponSignals": [
+    "defense.emp",
+    "defense.sky_plasma",
+    "defense.tesla",
+    "defense.vulcan_aa"
+  ]
+}
+Saved: /Users/limseth/Projects/Eternal_Steam/Eternal_Steam/Docs/Measurements/Balance/20261003-survival-improved-01/checkpoints/audit-prefix-000030746.json

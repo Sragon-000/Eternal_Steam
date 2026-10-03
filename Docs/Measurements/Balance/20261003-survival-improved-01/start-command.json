@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/Testing/Balance/BalanceRecorder.cs",
+      "entry": "BalanceRecorder.Start"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 2753,
+      "executeMs": 12,
+      "assemblyName": "PipelineRunScript_BalanceRecorder_180595a25dea4d26b97a19427a735a57",
+      "success": true,
+      "result": "{\n  \"root\": \"/Users/limseth/Projects/Eternal_Steam/Eternal_Steam/Docs/Measurements/Balance/20261003-survival-improved-01\",\n  \"sequence\": 8,\n  \"stopped\": false,\n  \"stopRequested\": null,\n  \"error\": null,\n  \"screenshotsPending\": 2,\n  \"day\": 1,\n  \"phase\": \"Day\"\n}"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}
