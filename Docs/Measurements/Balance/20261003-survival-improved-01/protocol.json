@@ -1,0 +1,20 @@
+{
+  "recordedUtc": "2026-10-03T12:11:23.047064+00:00",
+  "productCommit": "de9af47e614856654d0d84af21a183bfdecee055",
+  "scene": "Assets/EternalSteam/Scene/Tests/StartRegionSandbox.unity",
+  "classification": "normal-survival-command-driven",
+  "timeScale": 1,
+  "infiniteResources": false,
+  "inventoryHealthPhaseEnemyInjection": false,
+  "observationTarget": "Through night 10; pause at following safe dawn for review. This is a sampling boundary, not a claim of a survival ceiling.",
+  "servicePolicy": "Normal Stop, Refuel(50), station power Charge, Start when coal below 20 or battery <=20. All normal command outcomes recorded.",
+  "manualVsAutomated": "Construction and HUD command driver, followed by normal train-service automation; not human pointer-speed simulation.",
+  "weaponCounters": "Shot/Projectile presentation signals, not attributed damage or confirmed kill counts.",
+  "evidenceState": "LIVE; raw events and screenshots remain local until a controlled recording end and integrity audit.",
+  "tools": {
+    "Tools/Testing/Balance/BalanceRecorder.cs": "de6d9705e6cdd798358e03cb469231149aa92d8f2eaee319351beccfb559b990",
+    "Tools/Testing/Balance/NormalPlayActions.cs": "b01ecbf04f2d015a5d755fae1e7117c3f193bd5a3b311e03cbc8a785987a8652",
+    "Tools/Testing/Balance/SurvivalServicePilot.cs": "35537b27cae4becc18d35fc60b195af41ee7ce34aca4724e313da5c41612b485",
+    "Tools/Testing/Balance/monitor_recording.py": "96fd93083cc91be5783a4a6d5b54900f7118fba02bd6953a5d7a03902ade2028"
+  }
+}

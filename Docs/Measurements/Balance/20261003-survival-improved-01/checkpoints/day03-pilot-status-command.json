@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/Testing/Balance/SurvivalServicePilot.cs",
+      "entry": "SurvivalServicePilot.Status"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 21,
+      "executeMs": 1,
+      "assemblyName": "PipelineRunScript_SurvivalServicePilot_61aaa25c57744f28a5c76e6b76fdf3a6",
+      "success": true,
+      "result": "{\n  \"state\": \"running\",\n  \"error\": null,\n  \"throughDay\": 10,\n  \"commands\": 5,\n  \"day\": 3,\n  \"phase\": \"Day\",\n  \"alive\": 0,\n  \"defeated\": false,\n  \"servicing\": [\n    \"960ef087e05742f2b803829b9a18fb69\"\n  ]\n}"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}
