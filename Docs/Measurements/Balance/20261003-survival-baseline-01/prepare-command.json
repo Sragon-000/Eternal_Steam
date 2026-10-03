@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/Testing/Balance/NormalPlayActions.cs",
+      "entry": "NormalPlayActions.Prepare"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 72,
+      "executeMs": 724,
+      "assemblyName": "PipelineRunScript_NormalPlayActions_21bd0559d18141f9b8ccc9a81db6793c",
+      "success": true,
+      "result": "{\n  \"day\": 1,\n  \"phase\": \"Day\",\n  \"remaining\": 280.73407624848187,\n  \"paused\": false,\n  \"stage\": \"Gathering\",\n  \"energy\": 21470,\n  \"enemies\": 0,\n  \"spawned\": 0,\n  \"killed\": 0,\n  \"boss\": 0,\n  \"buildings\": 8,\n  \"bases\": [\n    {\n      \"id\": \"3d7a50bb02b24d57961e97e0ea422662\",\n      \"hp\": 100.0,\n      \"level\": 3,\n      \"stocks\": [\n        {\n          \"id\": \"coal\",\n          \"amount\": 0.0,\n          \"capacity\": 1000000.0\n        },\n        {\n          \"id\": \"copper\",\n          \"amount\": 0.0,\n          \"capacity\": 1000000.0\n        },\n        {\n          \"id\": \"iron\",\n          \"amount\": 0.0,\n          \"capacity\": 1000000.0\n        },\n        {\n          \"id\": \"nanometal\",\n          \"amount\": 0.0,\n          \"capacity\": 1000000.0\n        },\n        {\n          \"id\": \"plasma_ore\",\n          \"amount\": 0.0,\n          \"capacity\": 1000000.0\n        },\n        {\n          \"id\": \"titanium\",\n          \"amount\": 0.0,\n          \"capacity\": 1000000.0\n        },\n        {\n          \"id\": \"tungsten\",\n          \"amount\": 0.0,\n          \"capacity\": 1000000.0\n        },\n        {\n          \"id\": \"uranium\",\n          \"amount\": 0.0,\n          \"capacity\": 1000000.0\n        }\n      ]\n    }\n  ],\n  \"routes\": []\n}"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

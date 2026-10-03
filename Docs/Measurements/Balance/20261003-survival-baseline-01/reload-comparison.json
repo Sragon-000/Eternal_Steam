@@ -1,0 +1,10 @@
+{
+  "sameRun": true,
+  "ignored": [
+    "savedUtc",
+    "top-level buildings order only (sorted by id)"
+  ],
+  "routeStopAndModuleArrayOrderPreserved": true,
+  "differingTopLevelFields": [],
+  "passed": true
+}

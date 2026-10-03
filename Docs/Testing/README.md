@@ -61,3 +61,5 @@ T3~T5는 현재 씬을 유지한다. 저장 불러오기를 검증할 때만 **�
 ```sh
 python3 Tools/Testing/update_inventory.py --measurement Docs/Measurements/2026-10-03-playthrough-preflight
 ```
+
+최신 후속: [정상 기준 회차와 열차 대기 전력 개선](../Validation/2026-10-03-survival-baseline.md). 필요한 열차 회귀 4건 추가 후 296/296 통과. 기존 292개 결과는 당시 기록으로 보존한다.

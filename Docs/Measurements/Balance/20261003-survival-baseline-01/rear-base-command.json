@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/Testing/Balance/NormalPlayActions.cs",
+      "entry": "NormalPlayActions.RearBase"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 37,
+      "executeMs": 33,
+      "assemblyName": "PipelineRunScript_NormalPlayActions_3e782f5bfade41569aa2c5c128d4f022",
+      "success": false,
+      "error": "Runtime Error",
+      "errorDetails": "Exception: Placement failed installation.nexus: 토대와 겹칩니다. 기존 건물 클릭: 회수 예정 선택/해제 · 좌클릭 드래그: 사각형 선택 · 새 배치는 목록에서 선택하세요.\n  at NormalPlayActions.Install (EternalSteam.OpenWorld.OpenWorldSandbox s, System.String id, System.String owner, System.Nullable`1[T] exact, System.Int32 minZ, System.Int32 maxZ) [0x0024c] in /Users/limseth/Projects/Eternal_Steam/Eternal_Steam/Tools/Testing/Balance/NormalPlayActions.cs:53 \n  at NormalPlayActions.RearBase () [0x00007] in /Users/limseth/Projects/Eternal_Steam/Eternal_Steam/Tools/Testing/Balance/NormalPlayActions.cs:119 \n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\n  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <c5eeda5e65d44b388e164c6c5cfe0702>:0 "
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

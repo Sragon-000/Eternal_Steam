@@ -1,0 +1,56 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/Testing/Balance/NormalPlayActions.cs",
+      "entry": "NormalPlayActions.LegacyFoundation"
+    },
+    "result": {
+      "diagnostics": [
+        {
+          "severity": "error",
+          "message": "The name 'HordeTowerKind' does not exist in the current context",
+          "line": 101,
+          "column": 18,
+          "id": "CS0103"
+        },
+        {
+          "severity": "error",
+          "message": "The name 'HordeTowerKind' does not exist in the current context",
+          "line": 101,
+          "column": 44,
+          "id": "CS0103"
+        },
+        {
+          "severity": "error",
+          "message": "The name 'HordeTowerKind' does not exist in the current context",
+          "line": 101,
+          "column": 66,
+          "id": "CS0103"
+        },
+        {
+          "severity": "error",
+          "message": "The name 'HordeTowerKind' does not exist in the current context",
+          "line": 101,
+          "column": 87,
+          "id": "CS0103"
+        }
+      ],
+      "compileMs": 58,
+      "executeMs": 0,
+      "assemblyName": "PipelineRunScript_NormalPlayActions_f381cd611451480cbeaad5091c9e5591",
+      "success": false,
+      "error": "Compilation Failed",
+      "errorDetails": "The script failed to compile. See diagnostics for line/column details."
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

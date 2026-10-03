@@ -31,3 +31,5 @@
 - [2026-10-03 테스트 개편 검증](Validation/2026-10-03-test-restructure.md)
 - [개발일지](DevelopmentLog/README.md)
 - [정상 플레이 사전 로직 감사·관측 검증](Validation/2026-10-03-playthrough-preflight.md)
+
+- [정상 기준 생존 회차·자원 수지·열차 대기 전력 개선](Validation/2026-10-03-survival-baseline.md)

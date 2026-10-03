@@ -54,3 +54,5 @@ StartRegionSandbox를 고정하고 `purpose=recorder-integration`, `normalPlay=f
 `audit_recording.py`로 이벤트 순서 연속성, 스크린샷 요청의 정확히 한 번 처리, PNG 해시, 자원 이벤트 연속성과 재고 일치, 관측 오류 0, 정상 종료·대기 캡처 0을 확인했다. 두 회차 모두 데이터 무결성 통과. 대표 화면을 직접 열어 HUD와 실제 기지·생산기가 보이는 것을 확인했다. 프레임 표본은 기록했지만 관측 부하 A/B 결과로 해석하지 않는다.
 
 최종 Editor 상태는 같은 씬 1개, dirty=false, Play/일시정지/백그라운드=false, 저장 경로 재정의 없음이다([복구 확인](../Measurements/Balance/editor-restored.json)). 선행 `manifest.json`의 NOT_RUN은 작성 당시 상태이며 이 후속 결과로 대체한다. 장기 정상 생존과 학술 연구 실험은 모두 미실행 상태다.
+
+후속 상태 갱신: 정상 기준 회차와 수집을 실제 실행해 3일차 오브 제작·동일 씬 저장 복원을 완료했다. [기준 회차 결과](2026-10-03-survival-baseline.md). 이 문서의 미실행 표기는 사전 감사 당시 상태다.

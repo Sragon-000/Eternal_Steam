@@ -62,6 +62,14 @@ namespace EternalSteam
         void Clear(){current=null;tracked=0;}
         public void Activate(){}
         bool Valid(TargetInfo t)=>Sector.Contains(owner.Position,owner.Direction,Range,Angle,Kinds,t);
+        // Standby power checks use the same live kind/range rules without changing target lock.
+        public bool HasTargetInRange()
+        {
+            if(current.HasValue&&query.TryGet(current.Value,out var target)&&Valid(target))return true;
+            query.Query(owner.Position,Range,candidates);
+            foreach(var candidate in candidates)if(Valid(candidate))return true;
+            return false;
+        }
         bool Find(out TargetInfo target)
         {
             if(current.HasValue&&query.TryGet(current.Value,out target)&&Valid(target))return true;

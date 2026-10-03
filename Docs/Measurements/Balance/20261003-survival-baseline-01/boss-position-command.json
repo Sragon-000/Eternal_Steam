@@ -1,0 +1,12 @@
+{
+  "success": false,
+  "command": "unity command eval",
+  "data": null,
+  "errors": [
+    {
+      "code": "COMMAND_FAILED",
+      "message": "Compilation Failed\n  'HordeEnemyWorld.LiveIndices' does not contain a definition for 'Select' and no accessible extension method 'Select' accepting a first argument of type 'HordeEnemyWorld.LiveIndices' could be found (are you missing a using directive or an assembly reference?)(1행, 134열)\n  Unreachable code detected(2행, 12열)"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,9 @@
+{
+  "rawFile": "events.jsonl",
+  "archiveFile": "events.jsonl.gz",
+  "rawBytes": 82207415,
+  "rawSha256": "1c68513aa69f88b01e3a85a038188004d3e83faba3cc4136d77f73bfc0f624e0",
+  "compressedBytes": 5330606,
+  "compressedSha256": "1a491e08b3b0b61806af8642ee1f95ba750760c6c3acffc8364960a4f8793211",
+  "losslessRoundTripVerified": true
+}

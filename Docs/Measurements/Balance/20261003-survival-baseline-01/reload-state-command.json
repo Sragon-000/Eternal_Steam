@@ -1,0 +1,30 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "var s=UnityEngine.Object.FindFirstObjectByType<EternalSteam.OpenWorld.OpenWorldSandbox>();if(s.Persistence.Blocked)throw new System.Exception(s.Persistence.Status);var root=System.IO.Path.GetDirectoryName(System.Environment.GetEnvironmentVariable(\"ETERNAL_STEAM_SAVE_TEST_ROOT\"));System.IO.File.WriteAllText(root+\"/reloaded-snapshot.json\",UnityEngine.JsonUtility.ToJson(s.Persistence.Capture(),true));return new {scene=s.gameObject.scene.path,s.Persistence.RunId,s.Clock.Paused,s.Assault.Energy.PerfectOrb,buildings=s.Content.Bases.Buildings.Count,foundations=s.Foundations.Platforms.Count};"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "scene": "Assets/EternalSteam/Scene/Tests/StartRegionSandbox.unity",
+        "RunId": "1c9c6524d9814da0abe09b725623bbe0",
+        "Paused": true,
+        "PerfectOrb": true,
+        "buildings": 65,
+        "foundations": 1
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

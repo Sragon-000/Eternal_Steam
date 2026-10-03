@@ -1,0 +1,23 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "var s=UnityEngine.Object.FindFirstObjectByType<EternalSteam.OpenWorld.OpenWorldSandbox>(); var camera=UnityEngine.Object.FindFirstObjectByType<EternalSteam.OpenWorld.FreeCameraRig>(); camera.ChangeZoom(2); camera.MoveFocus(s.Content.Bases.Bases.Values.Select(v=>v.Nexus.Position).Aggregate(UnityEngine.Vector3.zero,(a,b)=>a+b)/s.Content.Bases.Bases.Count); UnityEngine.Object.FindFirstObjectByType<EternalSteam.OpenWorld.HudModeGroups>().Select(true); return new {camera.Focus,camera.Zoom};"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": "{ Focus = (21.21, 0.36, 23.33), Zoom = 44.05116 }"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

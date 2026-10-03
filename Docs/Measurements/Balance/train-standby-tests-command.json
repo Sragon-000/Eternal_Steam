@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/Testing/RunCurrentSceneChecks.cs",
+      "entry": "RunCurrentSceneChecks.Main",
+      "args": "[\"all\",\"Docs/Measurements/2026-10-03-train-standby-fix\"]"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 2721,
+      "executeMs": 3469,
+      "assemblyName": "PipelineRunScript_RunCurrentSceneChecks_924d99931b594437bbf8d3486dc3b836",
+      "success": true,
+      "result": "{\n  \"scene\": \"Assets/EternalSteam/Scene/Tests/StartRegionSandbox.unity\",\n  \"sceneHandleUnchanged\": true,\n  \"dirty\": false,\n  \"savedSceneBytesUnchanged\": true,\n  \"category\": \"all\",\n  \"assemblies\": [\n    {\n      \"assembly\": \"EternalSteam.EditModeTests\",\n      \"total\": 264,\n      \"passed\": 264,\n      \"failed\": 0,\n      \"skipped\": 0,\n      \"inconclusive\": 0,\n      \"xml\": \"/Users/limseth/Projects/Eternal_Steam/Eternal_Steam/Docs/Measurements/2026-10-03-train-standby-fix/all-EternalSteam.EditModeTests.xml\"\n    },\n    {\n      \"assembly\": \"EternalSteam.LegacyBuildingTests\",\n      \"total\": 10,\n      \"passed\": 10,\n      \"failed\": 0,\n      \"skipped\": 0,\n      \"inconclusive\": 0,\n      \"xml\": \"/Users/limseth/Projects/Eternal_Steam/Eternal_Steam/Docs/Measurements/2026-10-03-train-standby-fix/all-EternalSteam.LegacyBuildingTests.xml\"\n    },\n    {\n      \"assembly\": \"EternalSteam.LegacyCombatTests\",\n      \"total\": 14,\n      \"passed\": 14,\n      \"failed\": 0,\n      \"skipped\": 0,\n      \"inconclusive\": 0,\n      \"xml\": \"/Users/limseth/Projects/Eternal_Steam/Eternal_Steam/Docs/Measurements/2026-10-03-train-standby-fix/all-EternalSteam.LegacyCombatTests.xml\"\n    },\n    {\n      \"assembly\": \"EternalSteam.LegacyDeploymentTests\",\n      \"total\": 8,\n      \"passed\": 8,\n      \"failed\": 0,\n      \"skipped\": 0,\n      \"inconclusive\": 0,\n      \"xml\": \"/Users/limseth/Projects/Eternal_Steam/Eternal_Steam/Docs/Measurements/2026-10-03-train-standby-fix/all-EternalSteam.LegacyDeploymentTests.xml\"\n    }\n  ],\n  \"errors\": []\n}"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

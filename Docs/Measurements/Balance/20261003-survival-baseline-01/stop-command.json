@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/Testing/Balance/BalanceRecorder.cs",
+      "entry": "BalanceRecorder.Stop",
+      "args": "[\"baseline-orb-completed-day3-before-balance-fix\"]"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 58,
+      "executeMs": 1,
+      "assemblyName": "PipelineRunScript_BalanceRecorder_c97354d25f434ca2ae0265dcf85b1625",
+      "success": true,
+      "result": "{\n  \"root\": \"/Users/limseth/Projects/Eternal_Steam/Eternal_Steam/Docs/Measurements/Balance/20261003-survival-baseline-01\",\n  \"sequence\": 5892,\n  \"stopped\": false,\n  \"stopRequested\": \"baseline-orb-completed-day3-before-balance-fix\",\n  \"error\": null,\n  \"screenshotsPending\": 1,\n  \"day\": 3,\n  \"phase\": \"Day\"\n}"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

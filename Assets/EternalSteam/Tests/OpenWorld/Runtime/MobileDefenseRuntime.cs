@@ -9,6 +9,7 @@ namespace EternalSteam.OpenWorld
     {
         readonly BuildingDefinition composition;
         readonly double rate;
+        readonly WeaponRuntime weapon;
         public TrainArmament State {get;}
         public BuildingInstance Building {get;}
         public bool Pending=>Building.Modules.OfType<IPendingExecution>().Any(p=>p.HasPendingExecution);
@@ -23,6 +24,7 @@ namespace EternalSteam.OpenWorld
             composition.Modules=definition.Modules.Where(m=>m is WeaponModuleDefinition or TurretRotationDefinition or PerformanceUpgradeDefinition).ToList();
             try{
                 Building=new BuildingInstance(-1,composition,default,default,new BuildingServices(targets,levelLimit:levelLimit),position);
+                weapon=Building.Module<WeaponRuntime>();
                 if(state.modules.Count>0){if(state.modules.Count!=Building.Modules.Count)throw new ArgumentException("기차 방어 모듈 저장 개수 오류");foreach(var module in Building.Modules)state.modules.Single(m=>m.type==module.GetType().FullName).Restore(module);}
                 var upgrade=Building.Module<IUpgradeControl>();if(upgrade.Level>upgrade.MaximumLevel)throw new ArgumentException("기차 방어 강화 범위 오류");
                 Building.Activate();
@@ -31,6 +33,9 @@ namespace EternalSteam.OpenWorld
         public void Tick(float seconds,bool combatEnabled)
         {
             if(!float.IsFinite(seconds)||seconds<=0||!combatEnabled)return;
+            // Keep cooldowns and already fired attacks moving while no eligible target is near.
+            // Travelling through an empty map must not spend the train's limited combat charge.
+            if(rate>0&&State.battery>0&&!weapon.HasTargetInRange()){Building.Tick(seconds);return;}
             // Debit only powered time. Previously fired projectiles continue after depletion.
             float powered=rate<=0?seconds:(float)Math.Min(seconds,State.battery/rate);
             if(powered>0){State.battery=Math.Max(0,State.battery-powered*rate);Building.Tick(powered);}

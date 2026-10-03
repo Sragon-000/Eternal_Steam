@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/Testing/Balance/NormalPlayActions.cs",
+      "entry": "NormalPlayActions.AllContent"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 32,
+      "executeMs": 2245,
+      "assemblyName": "PipelineRunScript_NormalPlayActions_067945c114c046d89414b69315853340",
+      "success": true,
+      "result": "{\n  \"day\": 1,\n  \"phase\": \"Day\",\n  \"remaining\": 230.903508416377,\n  \"paused\": false,\n  \"stage\": \"Gathering\",\n  \"energy\": 112190,\n  \"enemies\": 0,\n  \"spawned\": 0,\n  \"killed\": 0,\n  \"boss\": 0,\n  \"buildings\": 34,\n  \"bases\": [\n    {\n      \"id\": \"3d7a50bb02b24d57961e97e0ea422662\",\n      \"hp\": 100.0,\n      \"level\": 10,\n      \"stocks\": [\n        {\n          \"id\": \"coal\",\n          \"amount\": 24.0,\n          \"capacity\": 1000000.0\n        },\n        {\n          \"id\": \"copper\",\n          \"amount\": 0.0,\n          \"capacity\": 1000000.0\n        },\n        {\n          \"id\": \"iron\",\n          \"amount\": 48.0,\n          \"capacity\": 1000000.0\n        },\n        {\n          \"id\": \"nanometal\",\n          \"amount\": 0.0,\n          \"capacity\": 1000000.0\n        },\n        {\n          \"id\": \"plasma_ore\",\n          \"amount\": 0.0,\n          \"capacity\": 1000000.0\n        },\n        {\n          \"id\": \"titanium\",\n          \"amount\": 0.0,\n          \"capacity\": 1000000.0\n        },\n        {\n          \"id\": \"tungsten\",\n          \"amount\": 0.0,\n          \"capacity\": 1000000.0\n        },\n        {\n          \"id\": \"uranium\",\n          \"amount\": 0.0,\n          \"capacity\": 1000000.0\n        }\n      ]\n    },\n    {\n      \"id\": \"5dd8368ea05a41f79a0e3281567c5186\",\n      \"hp\": 140.0,\n      \"level\": 3,\n      \"stocks\": [\n        {\n          \"id\": \"coal\",\n          \"amount\": 14.0,\n          \"capacity\": 1000000.0\n        },\n        {\n          \"id\": \"copper\",\n          \"amount\": 0.0,\n          \"capacity\": 1000000.0\n        },\n        {\n          \"id\": \"iron\",\n          \"amount\": 14.0,\n          \"capacity\": 1000000.0\n        },\n        {\n          \"id\": \"nanometal\",\n          \"amount\": 0.0,\n          \"capacity\": 1000000.0\n        },\n        {\n          \"id\": \"plasma_ore\",\n          \"amount\": 0.0,\n          \"capacity\": 1000000.0\n        },\n        {\n          \"id\": \"titanium\",\n          \"amount\": 0.0,\n          \"capacity\": 1000000.0\n        },\n        {\n          \"id\": \"tungsten\",\n          \"amount\": 0.0,\n          \"capacity\": 1000000.0\n        },\n        {\n          \"id\": \"uranium\",\n          \"amount\": 0.0,\n          \"capacity\": 1000000.0\n        }\n      ]\n    }\n  ],\n  \"routes\": []\n}"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

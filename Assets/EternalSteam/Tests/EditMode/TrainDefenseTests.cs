@@ -18,6 +18,30 @@ namespace EternalSteam.Tests
         [Test] public void MovingWeaponQueriesCurrentPositionAndNeverRegistersAsEnemyTarget(){var near=new Receiver();var far=new Receiver();targets.Register(1,new Vector3(1,0,0),TargetKind.Ground,near);targets.Register(2,new Vector3(101,0,0),TargetKind.Ground,far);using var m=Runtime();m.Tick(.1f,true);Assert.That(near.Damage,Is.GreaterThan(0));float previous=near.Damage;position=new Vector3(100,0,0);m.Tick(.2f,true);Assert.That(far.Damage,Is.GreaterThan(0));Assert.That(near.Damage,Is.EqualTo(previous));var registry=new BuildingTargetRegistry();registry.Register(m.Building,2,Quaternion.identity);Assert.That(registry.Count,Is.Zero);Assert.That(m.Building.Module<IDamageReceiver>(),Is.Null);Assert.That(m.Building.Module<PowerModule>(),Is.Null);}
         [Test] public void DepletedBatteryStopsNewAttacksAndPausedCombatSpendsNothing(){var enemy=new Receiver();targets.Register(1,Vector3.forward,TargetKind.Ground,enemy);state.battery=.5;using var m=Runtime();m.Tick(1,false);Assert.That(state.battery,Is.EqualTo(.5));m.Tick(1,true);Assert.That(state.battery,Is.Zero);float damage=enemy.Damage;m.Tick(1,true);Assert.That(enemy.Damage,Is.EqualTo(damage));}
         [Test] public void ProjectileCompletesAfterBatteryDepletion(){definition.Modules.OfType<WeaponModuleDefinition>().Single().Delivery=WeaponDelivery.Projectile;state.battery=.05;var enemy=new Receiver();targets.Register(1,Vector3.forward*4,TargetKind.Ground,enemy);using var m=Runtime();m.Tick(.01f,true);Assert.That(m.Pending,Is.True);m.Tick(1,true);Assert.That(enemy.Damage,Is.GreaterThan(0));Assert.That(m.Pending,Is.False);}
+        [TestCase(9f,TargetKind.Ground)][TestCase(1f,TargetKind.Air)]
+        public void StandbyIgnoresOutOfRangeAndWrongKind(float distance,TargetKind kind)
+        {
+            definition.Modules.OfType<WeaponModuleDefinition>().Single().Targets=TargetKind.Ground;
+            var enemy=new Receiver();targets.Register(1,Vector3.forward*distance,kind,enemy);
+            using var m=Runtime();m.Tick(60,true);
+            Assert.That(state.battery,Is.EqualTo(10));Assert.That(enemy.Damage,Is.Zero);
+        }
+        [Test] public void StandbyPreservesChargeThenPaysForEngagementAndHonorsMovement()
+        {
+            using var m=Runtime();m.Tick(60,true);Assert.That(state.battery,Is.EqualTo(10));
+            var enemy=new Receiver();var handle=targets.Register(1,Vector3.forward,TargetKind.Ground,enemy);
+            m.Tick(.1f,true);Assert.That(state.battery,Is.EqualTo(9.5).Within(.00001));Assert.That(enemy.Damage,Is.GreaterThan(0));
+            float damage=enemy.Damage;double charge=state.battery;targets.Move(handle,Vector3.forward*100);m.Tick(60,true);
+            Assert.That(state.battery,Is.EqualTo(charge));Assert.That(enemy.Damage,Is.EqualTo(damage));
+        }
+        [Test] public void PendingProjectileCompletesDuringStandbyWithoutExtraCharge()
+        {
+            var weapon=definition.Modules.OfType<WeaponModuleDefinition>().Single();weapon.Delivery=WeaponDelivery.Projectile;weapon.ProjectileSpeed=100;
+            var enemy=new Receiver();var handle=targets.Register(1,Vector3.forward*4,TargetKind.Ground,enemy);
+            using var m=Runtime();m.Tick(.01f,true);Assert.That(m.Pending,Is.True);double charge=state.battery;
+            targets.Move(handle,Vector3.forward*12);m.Tick(1,true);
+            Assert.That(enemy.Damage,Is.GreaterThan(0));Assert.That(m.Pending,Is.False);Assert.That(state.battery,Is.EqualTo(charge));
+        }
         sealed class LevelLimit:ILevelLimit {public int LevelCap{get;set;}=1;public bool IsExempt(BuildingInstance b)=>false;}
         [Test] public void MountedModuleHonorsInjectedMainLevelEvenWhenCalledDirectly()
         {

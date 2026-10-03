@@ -1,5 +1,6 @@
 """Audit a completed recorder run without changing its raw evidence."""
 import argparse
+import gzip
 import collections
 import hashlib
 import json
@@ -12,7 +13,11 @@ root = args.run.resolve()
 project = Path(__file__).resolve().parents[3]
 if not root.is_relative_to(project / 'Docs/Measurements/Balance'):
     raise SystemExit('Expected a project balance recording directory')
-rows = [json.loads(line) for line in (root / 'events.jsonl').read_text().splitlines()]
+event_path = root / 'events.jsonl'
+if not event_path.exists():
+    event_path = root / 'events.jsonl.gz'
+with (gzip.open(event_path, 'rt') if event_path.suffix == '.gz' else event_path.open()) as stream:
+    rows = [json.loads(line) for line in stream]
 status = json.loads((root / 'status.json').read_text())
 configuration = json.loads((root / 'configuration.json').read_text())
 errors = []
