@@ -6,5 +6,12 @@
   "rows": 8368,
   "lastSampleMatchesPrefixEnd": true,
   "lastSampleUnsuppliedOrOutsideAreaConsumers": 0,
-  "scope": "Read-only prefix audit; final run and complete screenshot publication pending."
+  "scope": "Read-only prefix audit; final run and complete screenshot publication pending.",
+  "publication": {
+    "commit": "29fdd3ce9c634e94de14d8a8ce61f7411ac30831",
+    "remoteHeadVerified": "29fdd3ce9c634e94de14d8a8ce61f7411ac30831",
+    "branch": "main",
+    "utc": "2026-10-03T12:28:34.775809+00:00",
+    "scope": "Prefix audit, tool, resource/content analysis and journal; active raw log/screenshots still pending completion."
+  }
 }
