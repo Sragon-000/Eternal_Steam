@@ -1,0 +1,9 @@
+{
+  "verifiedUtc": "2026-10-03T13:49:14.865489+00:00",
+  "branch": "main",
+  "commit": "6349a876e08e2e0ca3b7f4bc2bd033d2b52b2205",
+  "remoteHead": "6349a876e08e2e0ca3b7f4bc2bd033d2b52b2205",
+  "lfsObjectsUploaded": 13,
+  "lfsUploadReported": "32 MB",
+  "scope": "Failed first content-coverage run, all raw archives and screenshots, audit, placement findings, next plan and development journal"
+}
