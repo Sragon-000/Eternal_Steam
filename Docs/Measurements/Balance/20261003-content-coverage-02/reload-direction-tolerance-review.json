@@ -1,0 +1,20 @@
+{
+  "exactComparisonPassed": false,
+  "gameplayComparisonPassed": true,
+  "onlyDifferences": [
+    [
+      "/buildings/8/legacyDirection/x",
+      0.8975924849510193,
+      0.8975926637649536
+    ],
+    [
+      "/buildings/8/legacyDirection/z",
+      0.44082605838775635,
+      0.4408259391784668
+    ]
+  ],
+  "maximumComponentError": 1.7881393432617188e-07,
+  "acceptedDirectionComponentTolerance": 1e-06,
+  "scope": "Only legacyDirection float components; every other saved field exact after savedUtc and top-level building order normalization",
+  "reason": "Legacy orientation restores through Quaternion.LookRotation and captures Transform.forward, introducing float roundoff; no resource/health/upgrade/route/clock changes."
+}

@@ -1,0 +1,7 @@
+{
+  "scope": "Post-clear paused primary-recorder overhead QA, not combat or academic research",
+  "method": "ABBA off/on/on/off, 60 warmup frames plus 12 seconds per phase; one explicit screenshot in each on phase. Keep graphics settings unchanged. Compare complete saved-state snapshot excluding savedUtc.",
+  "secondaryObserver": "Already stopped to preserve pre-craft legacy counters",
+  "productSourceChanged": false,
+  "toolSha256": "bf668dbad6de8fdda5ebe1ecb628ae324294d3ed922b2a6c1477b1bf0573db58"
+}

@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/Testing/Balance/BalanceRecorder.cs",
+      "entry": "BalanceRecorder.Stop",
+      "args": "[\"content-roles-observed-two-waves-cleared-post-clear-qa-complete\"]"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 59,
+      "executeMs": 1,
+      "assemblyName": "PipelineRunScript_BalanceRecorder_1325a7f65ec84c80a1b76ce187e7fb0c",
+      "success": true,
+      "result": "{\n  \"root\": \"/Users/limseth/Projects/Eternal_Steam/Eternal_Steam/Docs/Measurements/Balance/20261003-content-coverage-02\",\n  \"sequence\": 4574,\n  \"stopped\": false,\n  \"stopRequested\": \"content-roles-observed-two-waves-cleared-post-clear-qa-complete\",\n  \"error\": null,\n  \"screenshotsPending\": 1,\n  \"day\": 3,\n  \"phase\": \"Day\"\n}"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

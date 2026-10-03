@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "rows": 933,
+  "lastKind": "end:before-orb-craft",
+  "gameSeconds": 934.18701547198,
+  "note": "Stopped before first craft attempt; that attempt was rejected by hidden dock transition. Main recorder continued until actual completion."
+}

@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "aggregateEvents": 42765,
+  "resourceChanges": 19105,
+  "samples": 8051,
+  "recordedScreenshots": 760,
+  "allPngFiles": 762,
+  "catalogCount": 24,
+  "weaponCount": 13,
+  "regressionPassed": 297,
+  "actualPlayPassed": 14,
+  "linksChecked": 178,
+  "brokenLinks": [],
+  "changedAssets": [
+    "Assets/EternalSteam/Tests/EditMode/CompactConstructionDockTests.cs",
+    "Assets/EternalSteam/Tests/OpenWorld/Runtime/CanvasWorldHud.cs",
+    "Assets/EternalSteam/Tests/OpenWorld/Runtime/CompactConstructionDock.cs"
+  ],
+  "productAndRegressionHashes": {
+    "Assets/EternalSteam/Tests/EditMode/CompactConstructionDockTests.cs": "528ba33d8478b130d4deff247549c0ee65c301247df136503fbc399b74cf0199",
+    "Assets/EternalSteam/Tests/OpenWorld/Runtime/CanvasWorldHud.cs": "293d8f757100ab3cb00c50cb8e56d48e7024cc82ff7c672f7f7271770426d4ac",
+    "Assets/EternalSteam/Tests/OpenWorld/Runtime/CompactConstructionDock.cs": "6322aa3493b6225104aceffa0324dd784d752330c9b43922bf0bc46722de34b1"
+  },
+  "coverageSourceHashes": {
+    "Docs/Measurements/Balance/20261003-survival-improved-01/combat-coverage-status.json": "b9b6f3bc5eb0f1d9c9a9b50aaf86bc9374bb7d2074eba6c1ca181868085a6478",
+    "Docs/Measurements/Balance/20261003-content-coverage-01/combat-coverage-status.json": "6e9e26006085b41f592b1b98e25ad69c606a36acc2a19ec699ddf7f2ba5ab94d",
+    "Docs/Measurements/Balance/20261003-content-coverage-02/combat-coverage-status.json": "77147fa5a21722e20c5f70fe7bbafb1710c9a1a8a0923f7ac278aec954933473"
+  },
+  "sourceHashCount": 16,
+  "archiveReadbackIdentical": true,
+  "overheadStatePreserved": true,
+  "researchExperimentsStarted": false
+}

@@ -1,0 +1,284 @@
+{
+  "runs": [
+    {
+      "run": "20261003-survival-baseline-01",
+      "day": 3,
+      "phase": "Day",
+      "stage": "Cleared",
+      "defeated": false,
+      "gameSeconds": 1212.115839854814,
+      "orbCraftGameSeconds": 1185.049195296131,
+      "spawned": 226,
+      "killed": 226,
+      "alive": 0,
+      "damage": 0,
+      "removed": {},
+      "recordedScreenshots": 129,
+      "allPngFiles": 129,
+      "events": 5895,
+      "resourceChanges": 3481,
+      "samples": 1234,
+      "observerErrors": 0
+    },
+    {
+      "run": "20261003-survival-improved-01",
+      "day": 11,
+      "phase": "Day",
+      "stage": "Cleared",
+      "defeated": false,
+      "gameSeconds": 4825.800783407874,
+      "orbCraftGameSeconds": 4800.003334282432,
+      "spawned": 2126,
+      "killed": 2126,
+      "alive": 0,
+      "damage": 0,
+      "removed": {},
+      "recordedScreenshots": 578,
+      "allPngFiles": 579,
+      "events": 30746,
+      "resourceChanges": 14154,
+      "samples": 5130,
+      "observerErrors": 0
+    },
+    {
+      "run": "20261003-content-coverage-01",
+      "day": 1,
+      "phase": "Night",
+      "stage": "Failed",
+      "defeated": true,
+      "gameSeconds": 324.2036023437977,
+      "orbCraftGameSeconds": null,
+      "spawned": 101,
+      "killed": 2,
+      "alive": 99,
+      "damage": 100.0,
+      "removed": {
+        "installation.main_base": 1
+      },
+      "recordedScreenshots": 14,
+      "allPngFiles": 14,
+      "events": 1546,
+      "resourceChanges": 316,
+      "samples": 438,
+      "observerErrors": 0
+    },
+    {
+      "run": "20261003-content-coverage-02",
+      "day": 3,
+      "phase": "Day",
+      "stage": "Cleared",
+      "defeated": false,
+      "gameSeconds": 1158.9976017866284,
+      "orbCraftGameSeconds": 1152.4105508853681,
+      "spawned": 226,
+      "killed": 226,
+      "alive": 0,
+      "damage": 180.0,
+      "removed": {
+        "defense.emp": 1
+      },
+      "recordedScreenshots": 39,
+      "allPngFiles": 40,
+      "events": 4578,
+      "resourceChanges": 1154,
+      "samples": 1249,
+      "observerErrors": 0
+    }
+  ],
+  "catalogDefinitions": [
+    "defense.arc",
+    "defense.emp",
+    "defense.plasma_laser",
+    "defense.rail_aa",
+    "defense.railgun",
+    "defense.sky_plasma",
+    "defense.smart_missile",
+    "defense.tesla",
+    "defense.vulcan_aa",
+    "installation.main_base",
+    "installation.nexus",
+    "installation.outpost",
+    "installation.wall",
+    "railway.coal",
+    "railway.station",
+    "railway.track",
+    "resource.copper",
+    "resource.iron",
+    "resource.nanometal",
+    "resource.plasma_ore",
+    "resource.power_generator",
+    "resource.titanium",
+    "resource.tungsten",
+    "resource.uranium"
+  ],
+  "installedDefinitions": [
+    "defense.arc",
+    "defense.emp",
+    "defense.plasma_laser",
+    "defense.rail_aa",
+    "defense.railgun",
+    "defense.sky_plasma",
+    "defense.smart_missile",
+    "defense.tesla",
+    "defense.vulcan_aa",
+    "installation.main_base",
+    "installation.nexus",
+    "installation.outpost",
+    "installation.wall",
+    "openworld.legacy.Arrow",
+    "openworld.legacy.Cannon",
+    "openworld.legacy.Frost",
+    "openworld.legacy.MachineGun",
+    "railway.coal",
+    "railway.station",
+    "railway.track",
+    "resource.copper",
+    "resource.iron",
+    "resource.nanometal",
+    "resource.plasma_ore",
+    "resource.power_generator",
+    "resource.titanium",
+    "resource.tungsten",
+    "resource.uranium"
+  ],
+  "missingInstalled": [],
+  "weaponParticipation": {
+    "defense.arc": {
+      "kind": "modern signals, not per-weapon kill counts",
+      "shots": 224,
+      "projectiles": 8562,
+      "runs": [
+        "20261003-survival-improved-01"
+      ]
+    },
+    "defense.plasma_laser": {
+      "kind": "modern signals, not per-weapon kill counts",
+      "shots": 809,
+      "projectiles": 0,
+      "runs": [
+        "20261003-survival-improved-01"
+      ]
+    },
+    "defense.tesla": {
+      "kind": "modern signals, not per-weapon kill counts",
+      "shots": 355,
+      "projectiles": 0,
+      "runs": [
+        "20261003-content-coverage-01",
+        "20261003-content-coverage-02"
+      ]
+    },
+    "defense.vulcan_aa": {
+      "kind": "modern signals, not per-weapon kill counts",
+      "shots": 26,
+      "projectiles": 0,
+      "runs": [
+        "20261003-content-coverage-02"
+      ]
+    },
+    "defense.rail_aa": {
+      "kind": "modern signals, not per-weapon kill counts",
+      "shots": 789,
+      "projectiles": 0,
+      "runs": [
+        "20261003-survival-improved-01"
+      ]
+    },
+    "defense.railgun": {
+      "kind": "modern signals, not per-weapon kill counts",
+      "shots": 121,
+      "projectiles": 0,
+      "runs": [
+        "20261003-survival-improved-01"
+      ]
+    },
+    "defense.sky_plasma": {
+      "kind": "modern signals, not per-weapon kill counts",
+      "shots": 3,
+      "projectiles": 586,
+      "runs": [
+        "20261003-content-coverage-02"
+      ]
+    },
+    "defense.smart_missile": {
+      "kind": "modern signals, not per-weapon kill counts",
+      "shots": 187,
+      "projectiles": 32249,
+      "runs": [
+        "20261003-survival-improved-01"
+      ]
+    },
+    "defense.emp": {
+      "kind": "modern signals, not per-weapon kill counts",
+      "shots": 62,
+      "projectiles": 0,
+      "runs": [
+        "20261003-content-coverage-01",
+        "20261003-content-coverage-02"
+      ]
+    },
+    "openworld.legacy.MachineGun": {
+      "kind": "actual cumulative legacy shot counter before orb reset",
+      "shots": 37,
+      "projectiles": 0,
+      "runs": [
+        "20261003-content-coverage-02"
+      ]
+    },
+    "openworld.legacy.Cannon": {
+      "kind": "actual cumulative legacy shot counter before orb reset",
+      "shots": 23,
+      "projectiles": 0,
+      "runs": [
+        "20261003-content-coverage-02"
+      ]
+    },
+    "openworld.legacy.Frost": {
+      "kind": "actual cumulative legacy shot counter before orb reset",
+      "shots": 10,
+      "projectiles": 0,
+      "runs": [
+        "20261003-content-coverage-02"
+      ]
+    },
+    "openworld.legacy.Arrow": {
+      "kind": "actual cumulative legacy shot counter before orb reset",
+      "shots": 3,
+      "projectiles": 0,
+      "runs": [
+        "20261003-content-coverage-02"
+      ]
+    }
+  },
+  "missingWeaponParticipation": [],
+  "maximumObservedDay": 11,
+  "completedNaturalNights": 10,
+  "observationLimit": "Ten-night practical checkpoint, not a theoretical maximum; independent runs are never added together.",
+  "recordedScreenshots": 760,
+  "allPngFiles": 762,
+  "sourceHashes": {
+    "Docs/Measurements/Balance/20261003-survival-baseline-01/configuration.json": "7611c4fc1595eb638dae1f583c83f9c2cca5e1b1cf2c67500a88346254a86766",
+    "Docs/Measurements/Balance/20261003-survival-baseline-01/audit.json": "d1e06e1c9651b7dbfee88844b9ebfc8dc83ecbb922ac618600f2608553758857",
+    "Docs/Measurements/Balance/20261003-survival-baseline-01/status.json": "7d95fa36ababbb4fbd60d0f1fa5be496e0cbc24c3a79546b8abd089e5212bc4c",
+    "Docs/Measurements/Balance/20261003-survival-baseline-01/events.jsonl.gz": "1a491e08b3b0b61806af8642ee1f95ba750760c6c3acffc8364960a4f8793211",
+    "Docs/Measurements/Balance/20261003-survival-improved-01/configuration.json": "d4810c51746f4087c8e22d93e88e0234c29f36341874bbca925489a1f07c036e",
+    "Docs/Measurements/Balance/20261003-survival-improved-01/audit.json": "c33f3a465e6f20d47fa0a666994ceba4db40e943c499313b4e531d87cad113d2",
+    "Docs/Measurements/Balance/20261003-survival-improved-01/status.json": "38616dcb7de3477627e42a63073f0edf0bbe0a7d96f4e9cdfdab4f5a194659dd",
+    "Docs/Measurements/Balance/20261003-survival-improved-01/events.jsonl.gz": "69f9dcd071e28161fb33c0757422608eb0b3321aa4343b671f1ae7f65bbbe800",
+    "Docs/Measurements/Balance/20261003-content-coverage-01/configuration.json": "f53489d8ab255088653f8a7a12b6b41258ed28e9253569b7cb031a38dca19306",
+    "Docs/Measurements/Balance/20261003-content-coverage-01/audit.json": "0de7ac37311240801949a40b72e34fa9d51de25c36eb4052c99eb25b4b56047e",
+    "Docs/Measurements/Balance/20261003-content-coverage-01/status.json": "d2d0d7c72b2da43c5af93d89116331f27e673eb096c5b6777f37a09786b9d6e8",
+    "Docs/Measurements/Balance/20261003-content-coverage-01/events.jsonl.gz": "191a20ef74b9029adf1c08781ad6dc7a3e1f3865db57b36d82a67f0ab03afc79",
+    "Docs/Measurements/Balance/20261003-content-coverage-02/configuration.json": "83a7581b8e250f0132a9afb06a2ec0e076b4fdef2490527bfc589fa6badd2441",
+    "Docs/Measurements/Balance/20261003-content-coverage-02/audit.json": "64ab5864d20aaf353bf4a08b63c2144ca58f4fe950b23d6cdef482a4e415921d",
+    "Docs/Measurements/Balance/20261003-content-coverage-02/status.json": "4fbcd4da4c83d61844848a2e8af709b6402635f5258d63d18f0e80a2a474571f",
+    "Docs/Measurements/Balance/20261003-content-coverage-02/events.jsonl.gz": "500dc84e08606a14d753db9b35cad35a6fa43e126efe07a8a2b073946ca55bea"
+  },
+  "limitations": [
+    "Modern action/hit presentation and projectile travel signals are not per-weapon kill or damage attribution.",
+    "Legacy pre-craft counts unavailable in baseline; use supplemental content runs.",
+    "Free construction/upgrade policy is the current game configuration, not evidence for a balanced paid economy.",
+    "Post-clear QA and paused intervals are not additional survival.",
+    "No academic research experiments were started."
+  ]
+}

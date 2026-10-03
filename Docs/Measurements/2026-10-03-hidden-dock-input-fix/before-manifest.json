@@ -1,0 +1,14 @@
+[
+  {
+    "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/CompactConstructionDock.cs",
+    "sha256": "ff92e03a5a004e23f287ff27a6ed062037bd6c63d970c13547d40a7a8d94ce8c"
+  },
+  {
+    "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/CanvasWorldHud.cs",
+    "sha256": "b6f7b520ec7375bb5d67e0eb125a0095745f3b37fd081f4ff9b5e4c725ded5ea"
+  },
+  {
+    "path": "Assets/EternalSteam/Tests/EditMode/CompactConstructionDockTests.cs",
+    "sha256": "f9e3305c8a20fe685135d6b076fb8a0fa55e33679541f0fad18fd215abc55e57"
+  }
+]

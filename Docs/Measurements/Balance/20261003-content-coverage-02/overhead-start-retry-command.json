@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/Testing/Balance/MeasureRecorderOverhead.cs",
+      "entry": "MeasureRecorderOverhead.Start"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 31,
+      "executeMs": 129,
+      "assemblyName": "PipelineRunScript_MeasureRecorderOverhead_1571f997fd3449ab9b5346a21409154b",
+      "success": true,
+      "result": "Running ABBA: recorder update off/on/on/off, 60 warmup frames and 12 real seconds each; one explicit PNG in each on phase. Poll recorder-overhead/status.json."
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

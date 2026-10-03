@@ -1,0 +1,29 @@
+{
+  "run": "20261003-content-coverage-02",
+  "purpose": "normal-survival",
+  "normalPlay": true,
+  "passed": true,
+  "errors": [],
+  "counts": {
+    "inventory-observed": 3,
+    "building-added": 28,
+    "screenshot-request": 137,
+    "action": 85,
+    "weapon-counters": 1249,
+    "sample": 1249,
+    "screenshot-captured": 39,
+    "resource": 1154,
+    "enemy-spawn": 226,
+    "enemy-killed": 226,
+    "building-damage": 180,
+    "building-removed": 1,
+    "run-end": 1
+  },
+  "gameSeconds": 1158.9976017866284,
+  "resourceOutput": {
+    "iron": 577.0,
+    "coal": 577.0
+  },
+  "streaming": true,
+  "auditToolSha256": "1989bb3af1378654b362746380aac40b39f1edaa8195bf0ead93213765522a55"
+}

@@ -1,0 +1,6 @@
+{
+  "reason": "Normal EMP placement rejected due footprint overlap within 16m after four legacy and four Tesla built. No gameplay reset or source change.",
+  "change": "FinishCore resumes remaining actions only; main EMP search permits up to 24m, normal Lv3 range 30. Other placement checks unchanged.",
+  "sha256": "1eb42553264ac78ec3b53bdb15b69c3a907c01eb1abfa17d92372b75b3ce831b",
+  "actualCommandSuccess": true
+}

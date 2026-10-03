@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/Testing/Balance/BalanceRecorder.cs",
+      "entry": "BalanceRecorder.Setup",
+      "args": "[\"20261003-content-coverage-02\",\"normal-survival\"]"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 49,
+      "executeMs": 29,
+      "assemblyName": "PipelineRunScript_BalanceRecorder_dcec03e13c814d0a9d1160c358e4969f",
+      "success": true,
+      "result": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam/Docs/Measurements/Balance/20261003-content-coverage-02"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

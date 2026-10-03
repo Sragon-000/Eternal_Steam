@@ -1,0 +1,23 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "var h=UnityEngine.Object.FindFirstObjectByType<EternalSteam.OpenWorld.CanvasWorldHud>(); h.Groups.Select(true); return \"Normal build-group selection to expose and finish the construction dock transition\";"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": "Normal build-group selection to expose and finish the construction dock transition"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

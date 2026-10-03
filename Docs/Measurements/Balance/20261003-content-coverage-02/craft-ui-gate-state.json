@@ -1,0 +1,28 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "var s=UnityEngine.Object.FindFirstObjectByType<EternalSteam.OpenWorld.OpenWorldSandbox>(); var h=UnityEngine.Object.FindFirstObjectByType<EternalSteam.OpenWorld.CanvasWorldHud>(); return new { menu=s.PauseMenu.IsOpen,allow=s.PauseMenu.AllowsHudCommand(\"orb-craft\"),transition=h.Layout.CompactDock.Transitioning,energy=s.Assault.Energy.Balance };"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "menu": false,
+        "allow": true,
+        "transition": true,
+        "energy": 1000000
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

@@ -1,0 +1,63 @@
+{
+  "run": "20261003-content-coverage-02",
+  "active": false,
+  "gameSeconds": 1158.9976017866284,
+  "day": 3,
+  "phase": "Day",
+  "stage": "Cleared",
+  "days": {
+    "1": {
+      "spawned": 101,
+      "killed": 101,
+      "damage": 180.0,
+      "removed": 1,
+      "samples": 480,
+      "maxAlive": 91,
+      "powerShortageSamples": 2,
+      "outsideAreaConsumerSamples": 0,
+      "maximumFrameMs": 46699.3477
+    },
+    "2": {
+      "spawned": 125,
+      "killed": 125,
+      "damage": 0,
+      "removed": 0,
+      "samples": 477,
+      "maxAlive": 125,
+      "powerShortageSamples": 1,
+      "outsideAreaConsumerSamples": 0,
+      "maximumFrameMs": 278.43396
+    },
+    "3": {
+      "spawned": 0,
+      "killed": 0,
+      "damage": 0,
+      "removed": 0,
+      "samples": 292,
+      "maxAlive": 0,
+      "powerShortageSamples": 0,
+      "outsideAreaConsumerSamples": 0,
+      "maximumFrameMs": 130.215286
+    }
+  },
+  "missingDefinitions": [
+    "defense.arc",
+    "defense.plasma_laser",
+    "defense.rail_aa",
+    "defense.railgun",
+    "defense.smart_missile",
+    "installation.outpost",
+    "installation.wall",
+    "railway.station",
+    "railway.track",
+    "resource.copper",
+    "resource.nanometal",
+    "resource.plasma_ore",
+    "resource.titanium",
+    "resource.tungsten",
+    "resource.uranium"
+  ],
+  "foundationUsed": false,
+  "screenshots": 39,
+  "observationErrors": 0
+}

@@ -1,0 +1,51 @@
+{
+  "sequence": 933,
+  "stopped": true,
+  "error": null,
+  "day": 2,
+  "phase": "Night",
+  "legacy": [
+    {
+      "definition": "openworld.legacy.MachineGun",
+      "shots": 37,
+      "range": 22.0,
+      "operational": true
+    },
+    {
+      "definition": "openworld.legacy.Cannon",
+      "shots": 0,
+      "range": 22.0,
+      "operational": true
+    },
+    {
+      "definition": "openworld.legacy.Frost",
+      "shots": 10,
+      "range": 22.0,
+      "operational": true
+    },
+    {
+      "definition": "openworld.legacy.Arrow",
+      "shots": 3,
+      "range": 22.0,
+      "operational": true
+    },
+    {
+      "definition": "openworld.legacy.Cannon",
+      "shots": 12,
+      "range": 22.0,
+      "operational": true
+    },
+    {
+      "definition": "openworld.legacy.Arrow",
+      "shots": 0,
+      "range": 22.0,
+      "operational": true
+    },
+    {
+      "definition": "openworld.legacy.Cannon",
+      "shots": 11,
+      "range": 22.0,
+      "operational": true
+    }
+  ]
+}

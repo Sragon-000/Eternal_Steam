@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/Testing/Balance/BalanceRecorder.cs",
+      "entry": "BalanceRecorder.Mark",
+      "args": "[\"coverage-v2-prepared\",\"Four legacy plus Lv5 Tesla ring near actual main; EMP placement rejection retained and resumed normally. Camera overview. Natural time, no injections.\"]"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 75,
+      "executeMs": 1,
+      "assemblyName": "PipelineRunScript_BalanceRecorder_df383a623a644035a7817c8b1b803f88",
+      "success": true,
+      "result": "{\n  \"root\": \"/Users/limseth/Projects/Eternal_Steam/Eternal_Steam/Docs/Measurements/Balance/20261003-content-coverage-02\",\n  \"sequence\": 497,\n  \"stopped\": false,\n  \"stopRequested\": null,\n  \"error\": null,\n  \"screenshotsPending\": 1,\n  \"day\": 1,\n  \"phase\": \"Day\"\n}"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

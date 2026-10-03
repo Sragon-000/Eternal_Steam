@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/Testing/Balance/FocusedContentActions.cs",
+      "entry": "FocusedContentActions.Describe"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 34,
+      "executeMs": 0,
+      "assemblyName": "PipelineRunScript_FocusedContentActions_81a57984bb594063a5fa1adbae076c18",
+      "success": true,
+      "result": "Prepared normal content-coverage commands; requires a separate content-coverage recording. Describe does not access or change the live world."
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

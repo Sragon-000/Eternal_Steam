@@ -1,0 +1,79 @@
+{
+  "servicingCycles": [
+    {
+      "requestSeconds": 501.398893029429,
+      "chargeSeconds": 517.5692988350056,
+      "waitSeconds": 16.170405805576593,
+      "requestDetail": "960ef087e05742f2b803829b9a18fb69 fuel 18 -> 18 battery 190.617805849761 -> 190.617805849761 ",
+      "chargeDetail": "960ef087e05742f2b803829b9a18fb69 fuel 68 -> 68 battery 190.617805849761 -> 200 "
+    },
+    {
+      "requestSeconds": 1005.1692831926048,
+      "chargeSeconds": 1022.245627891738,
+      "waitSeconds": 17.076344699133188,
+      "requestDetail": "960ef087e05742f2b803829b9a18fb69 fuel 20 -> 20 battery 167.78249399038 -> 167.78249399038 ",
+      "chargeDetail": "960ef087e05742f2b803829b9a18fb69 fuel 70 -> 70 battery 167.78249399038 -> 200 "
+    },
+    {
+      "requestSeconds": 1551.8277327162214,
+      "chargeSeconds": 1569.0130701325834,
+      "waitSeconds": 17.185337416362017,
+      "requestDetail": "960ef087e05742f2b803829b9a18fb69 fuel 18 -> 18 battery 172.443551907782 -> 172.443551907782 ",
+      "chargeDetail": "960ef087e05742f2b803829b9a18fb69 fuel 68 -> 68 battery 172.443551907782 -> 200 "
+    },
+    {
+      "requestSeconds": 2056.3880640245043,
+      "chargeSeconds": 2073.4620487811044,
+      "waitSeconds": 17.07398475660011,
+      "requestDetail": "960ef087e05742f2b803829b9a18fb69 fuel 20 -> 20 battery 175.253196863923 -> 175.253196863923 ",
+      "chargeDetail": "960ef087e05742f2b803829b9a18fb69 fuel 70 -> 70 battery 175.253196863923 -> 200 "
+    },
+    {
+      "requestSeconds": 2603.2487028478645,
+      "chargeSeconds": 2620.302919843234,
+      "waitSeconds": 17.054216995369643,
+      "requestDetail": "960ef087e05742f2b803829b9a18fb69 fuel 18 -> 18 battery 149.21516736038 -> 149.21516736038 ",
+      "chargeDetail": "960ef087e05742f2b803829b9a18fb69 fuel 68 -> 68 battery 149.21516736038 -> 200 "
+    },
+    {
+      "requestSeconds": 3107.7204382186756,
+      "chargeSeconds": 3124.787873409223,
+      "waitSeconds": 17.067435190547258,
+      "requestDetail": "960ef087e05742f2b803829b9a18fb69 fuel 20 -> 20 battery 86.213020014111 -> 86.213020014111 ",
+      "chargeDetail": "960ef087e05742f2b803829b9a18fb69 fuel 70 -> 70 battery 86.213020014111 -> 200 "
+    },
+    {
+      "requestSeconds": 3654.5668062963523,
+      "chargeSeconds": 3671.652311402373,
+      "waitSeconds": 17.08550510602072,
+      "requestDetail": "960ef087e05742f2b803829b9a18fb69 fuel 18 -> 18 battery 123.074383679777 -> 123.074383679777 ",
+      "chargeDetail": "960ef087e05742f2b803829b9a18fb69 fuel 68 -> 68 battery 123.074383679777 -> 200 "
+    },
+    {
+      "requestSeconds": 4159.029591217637,
+      "chargeSeconds": 4176.088355295826,
+      "waitSeconds": 17.058764078188688,
+      "requestDetail": "960ef087e05742f2b803829b9a18fb69 fuel 20 -> 20 battery 73.0613032262772 -> 73.0613032262772 ",
+      "chargeDetail": "960ef087e05742f2b803829b9a18fb69 fuel 70 -> 70 battery 52.7166131557897 -> 200 "
+    },
+    {
+      "requestSeconds": 4269.572074304335,
+      "chargeSeconds": 4270.577825679444,
+      "waitSeconds": 1.0057513751089573,
+      "requestDetail": "960ef087e05742f2b803829b9a18fb69 fuel 62 -> 62 battery 17.5593809154816 -> 17.5593809154816 ",
+      "chargeDetail": "960ef087e05742f2b803829b9a18fb69 fuel 100 -> 100 battery 12.5306240399368 -> 200 "
+    },
+    {
+      "requestSeconds": 4718.600923025515,
+      "chargeSeconds": 4723.625582867302,
+      "waitSeconds": 5.02465984178707,
+      "requestDetail": "960ef087e05742f2b803829b9a18fb69 fuel 56 -> 56 battery 15.7710375450552 -> 15.7710375450552 ",
+      "chargeDetail": "960ef087e05742f2b803829b9a18fb69 fuel 100 -> 100 battery 0 -> 200 "
+    }
+  ],
+  "maximumObservedWaitSeconds": 17.185337416362017,
+  "batteryConsumptionPerActiveCombatSecond": 5,
+  "worstObservedWaitAtContinuousCombat": 85.92668708181009,
+  "exampleReserveWithOneSecondPollAndTenUnitMargin": 100.92668708181009,
+  "interpretation": "Operating guidance only: 20-unit trigger provides at most four seconds continuous combat, shorter than observed docking waits. A ~101-unit reserve covers this observed maximum plus chosen poll/margin; not a proven upper bound for congestion or other routes. No product charging rule or baseline data changed."
+}

@@ -13,6 +13,8 @@ namespace EternalSteam.OpenWorld
         public UnityEngine.UI.ScrollRect CatalogScroll;
         public bool BrowsingRequested {get;private set;}
         public bool Transitioning {get;private set;}
+        // Hidden docks intentionally stop layout updates; a stale animation must not lock combat input.
+        public bool BlocksInput=>Transitioning&&Hud.Groups.Construction.gameObject.activeInHierarchy;
         public bool Placing=>Hud.Input.IsEditing&&!BrowsingRequested&&!Hud.Sandbox.RailwayHud.Panel.activeSelf;
         public float HeightPixels=>Hud.Sandbox.RailwayHud.Panel.activeSelf||NarrowSelection?52:Placing?80:156;
         public bool NarrowSelection=>Hud.Layout.Root.rect.width*Hud.Layout.Canvas.scaleFactor<1000&&Hud.Layout.SelectionPanel.gameObject.activeSelf&&!Hud.Input.IsEditing;

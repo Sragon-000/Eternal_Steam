@@ -60,7 +60,7 @@ namespace EternalSteam.OpenWorld
                 if(!menu.AllowsHudCommand(command))return;
                 if(command=="load"){menu.Execute("load");return;}
             }
-            if(Layout.CompactDock?.Transitioning==true)return;
+            if(Layout.CompactDock?.BlocksInput==true)return;
             EndTyping();
             if(Sandbox.RailwayHud?.HasDraft==true&&(command=="edit"||command.StartsWith("build:"))){Sandbox.Message="철도 연결·노선 편집을 먼저 확정하거나 닫아 주세요.";return;}
             if(command.StartsWith("fold:")){var id=command.Substring(5);if(sections.TryGetValue(id,out var body)){if(id=="minimap")Minimap.CancelInteraction();body.SetActive(!body.activeSelf);Layout?.Apply(true);}return;}
@@ -246,8 +246,8 @@ namespace EternalSteam.OpenWorld
             if(actions==null)return;var mouse=Mouse.current;bool over=false;
             if(mouse!=null&&EventSystem.current!=null){pointer??=new PointerEventData(EventSystem.current);pointer.position=mouse.position.ReadValue();hits.Clear();Raycaster.Raycast(pointer,hits);over=hits.Count>0;}
             bool modal=Sandbox.PauseMenu!=null&&Sandbox.PauseMenu.BlocksInput;
-            Input.PointerOverUI=Layout.CompactDock?.Transitioning==true||modal||over||Minimap.Interacting||(Groups!=null&&Groups.Transitioning);Sandbox.CameraRig.BlockPointer=Input.PointerOverUI||Input.Dragging;
-            Sandbox.CameraRig.BlockKeyboard=Layout.CompactDock?.Transitioning==true||modal||(Groups!=null&&Groups.Transitioning)||(Sandbox.RailwayHud?.Typing??false)||Amount.isFocused||Input.Dragging||Minimap.Interacting||(mouse!=null&&Minimap.gameObject.activeInHierarchy&&Minimap.ContainsScreenPoint(mouse.position.ReadValue()));
+            Input.PointerOverUI=Layout.CompactDock?.BlocksInput==true||modal||over||Minimap.Interacting||(Groups!=null&&Groups.Transitioning);Sandbox.CameraRig.BlockPointer=Input.PointerOverUI||Input.Dragging;
+            Sandbox.CameraRig.BlockKeyboard=Layout.CompactDock?.BlocksInput==true||modal||(Groups!=null&&Groups.Transitioning)||(Sandbox.RailwayHud?.Typing??false)||Amount.isFocused||Input.Dragging||Minimap.Interacting||(mouse!=null&&Minimap.gameObject.activeInHierarchy&&Minimap.ContainsScreenPoint(mouse.position.ReadValue()));
             if(Sandbox.PauseMenu==null&&(Keyboard.current?.escapeKey.wasPressedThisFrame??false))EndTyping();
             bool construction=Groups?.ConstructionSelected??true;
             var selection=Input.SelectedContent??Input.SelectedTower?.building;

@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/Testing/Balance/CombatCoverageProbe.cs",
+      "entry": "CombatCoverageProbe.Status"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 24,
+      "executeMs": 1,
+      "assemblyName": "PipelineRunScript_CombatCoverageProbe_05c3da37b33a4f5eafa077846457fa73",
+      "success": true,
+      "result": "{\n  \"sequence\": 475,\n  \"stopped\": false,\n  \"error\": null,\n  \"day\": 1,\n  \"phase\": \"Night\",\n  \"legacy\": [\n    {\n      \"definition\": \"openworld.legacy.MachineGun\",\n      \"shots\": 37,\n      \"range\": 22.0,\n      \"operational\": true\n    },\n    {\n      \"definition\": \"openworld.legacy.Cannon\",\n      \"shots\": 0,\n      \"range\": 22.0,\n      \"operational\": true\n    },\n    {\n      \"definition\": \"openworld.legacy.Frost\",\n      \"shots\": 10,\n      \"range\": 22.0,\n      \"operational\": true\n    },\n    {\n      \"definition\": \"openworld.legacy.Arrow\",\n      \"shots\": 3,\n      \"range\": 22.0,\n      \"operational\": true\n    },\n    {\n      \"definition\": \"openworld.legacy.Cannon\",\n      \"shots\": 0,\n      \"range\": 22.0,\n      \"operational\": true\n    },\n    {\n      \"definition\": \"openworld.legacy.Arrow\",\n      \"shots\": 0,\n      \"range\": 22.0,\n      \"operational\": true\n    }\n  ]\n}"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

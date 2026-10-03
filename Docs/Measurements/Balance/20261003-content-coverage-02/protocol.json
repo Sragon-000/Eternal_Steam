@@ -1,0 +1,23 @@
+{
+  "purpose": "Normal content participation follow-up, second placement; not academic research",
+  "productCommit": "de9af47",
+  "previousRun": "20261003-content-coverage-01",
+  "timeScale": 1,
+  "cheatsUsed": false,
+  "plan": [
+    "Record all counters before construction",
+    "Place four legacy types within 16m of actual main base before wave",
+    "Normally build and upgrade four Tesla to Lv5 and EMP to Lv3 near main",
+    "Stagger air-only Vulcan and Sky Plasma on natural boss approach",
+    "Collect participation, natural wave completion, normal orb/save and same-scene reload"
+  ],
+  "stop": "On natural defeat preserve failure; on all six remaining types participating and enemies/pending both zero, normal completion. If any remain unobserved adapt only normal player placement/upgrade commands and record every intervention.",
+  "toolHashes": {
+    "BalanceRecorder.cs": "de6d9705e6cdd798358e03cb469231149aa92d8f2eaee319351beccfb559b990",
+    "CombatCoverageProbe.cs": "d48fad9a61ab1de82692e1e8f242f145c573895f667f429d60b799bfd7efccde",
+    "FocusedContentActions.cs": "701910eeb17f38592ff274a3cee4b01dfd0a5867cdc9aa2c1b3c64fbdcd60988",
+    "NormalPlayActions.cs": "b268d3d6cabc156ad4fdf2e22d551354b8917602ba22615b86d6cc65d6f62b48",
+    "VerifyCompletedReload.cs": "dc869966d7af5930cf53f6bc33884e0c1258c3521d7ee764c89a83face90dd5c",
+    "monitor_recording.py": "96fd93083cc91be5783a4a6d5b54900f7118fba02bd6953a5d7a03902ade2028"
+  }
+}

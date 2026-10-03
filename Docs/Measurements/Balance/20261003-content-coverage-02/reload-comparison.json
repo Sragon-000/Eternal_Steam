@@ -1,0 +1,19 @@
+{
+  "passed": false,
+  "ignored": [
+    "savedUtc",
+    "top-level buildings order only"
+  ],
+  "differences": [
+    [
+      "/buildings/8/legacyDirection/x",
+      0.8975924849510193,
+      0.8975926637649536
+    ],
+    [
+      "/buildings/8/legacyDirection/z",
+      0.44082605838775635,
+      0.4408259391784668
+    ]
+  ]
+}

@@ -1,0 +1,7 @@
+day,base,resource,operation,events,requested,delta
+1,e898b53d0f7745628ca28717da7d8bc1,coal,production-output,237,237.0,237.0
+1,e898b53d0f7745628ca28717da7d8bc1,iron,production-output,237,237.0,237.0
+2,e898b53d0f7745628ca28717da7d8bc1,coal,production-output,240,240.0,240.0
+2,e898b53d0f7745628ca28717da7d8bc1,iron,production-output,240,240.0,240.0
+3,e898b53d0f7745628ca28717da7d8bc1,coal,production-output,100,100.0,100.0
+3,e898b53d0f7745628ca28717da7d8bc1,iron,production-output,100,100.0,100.0

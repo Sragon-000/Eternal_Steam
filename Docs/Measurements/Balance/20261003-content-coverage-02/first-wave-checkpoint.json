@@ -1,0 +1,176 @@
+{
+  "gameSeconds": 592.6613406348042,
+  "sequence": 2399,
+  "stage": "AwaitingCraft",
+  "enemies": {
+    "alive": 0,
+    "spawned": 101,
+    "killed": 101,
+    "budgetDay": 1,
+    "pending": 0,
+    "spawnPoints": [
+      108051,
+      87961,
+      129932
+    ],
+    "bossHealth": 0
+  },
+  "bases": [
+    {
+      "definition": "installation.main_base",
+      "baseId": "e898b53d0f7745628ca28717da7d8bc1",
+      "health": 100.0,
+      "level": 10
+    },
+    {
+      "definition": "installation.nexus",
+      "baseId": "eae1595ff6254323b43d3d6b1701cdde",
+      "health": 280.0,
+      "level": 10
+    }
+  ],
+  "weaponCounters": [
+    {
+      "building": "7d7ff551c4584224b2427d6729aa3c0d",
+      "definition": "defense.tesla",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 17,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 19.6567059,
+        "y": 0.9110003,
+        "z": 42.2970848
+      }
+    },
+    {
+      "building": "ac5ed00572314a42b4bae936436f3e46",
+      "definition": "defense.tesla",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 21,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 46.56885,
+        "y": 0.9110003,
+        "z": 23.477253
+      }
+    },
+    {
+      "building": "feb4b3aa65ae44f48a8bad361783508f",
+      "definition": "defense.tesla",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 61,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 19.68616,
+        "y": 0.9110003,
+        "z": 42.57476
+      }
+    },
+    {
+      "building": "1bb7fb0fe69e424f98d4ce226c34947d",
+      "definition": "defense.tesla",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 36,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 47.1863976,
+        "y": 0.9110003,
+        "z": 23.4356861
+      }
+    },
+    {
+      "building": "49fd181321e64f31aa90975c7a1524b3",
+      "definition": "defense.emp",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 22,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 49.4363632,
+        "y": 0.9110003,
+        "z": 24.25596
+      }
+    },
+    {
+      "building": "30358ca8a4794012b6e904e8346c5a20",
+      "definition": "defense.vulcan_aa",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 26,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 45.4942741,
+        "y": 5.91100025,
+        "z": -62.6756935
+      }
+    },
+    {
+      "building": "f77af6627bc14b5297b7096f3e664ebe",
+      "definition": "defense.sky_plasma",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 3,
+      "projectileSignals": 586,
+      "lastTarget": {
+        "x": 45.86399,
+        "y": 5.91100025,
+        "z": -63.6536636
+      }
+    },
+    {
+      "building": "f2d0baaddc014e6e8d7b2d28edb408ce",
+      "definition": "defense.tesla",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 218,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 31.4032059,
+        "y": 0.9110003,
+        "z": -31.4084778
+      }
+    },
+    {
+      "building": "e99ff06dbcf84098b42039f704633d49",
+      "definition": "defense.emp",
+      "scope": "stationary",
+      "disposed": true,
+      "shotSignals": 27,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 29.6962261,
+        "y": 0.9110003,
+        "z": -33.50978
+      }
+    }
+  ],
+  "damageByBuilding": {
+    "30358ca8a4794012b6e904e8346c5a20": 55.0,
+    "e99ff06dbcf84098b42039f704633d49": 100.0,
+    "592b2a3688df4ee69e74e58fd8833ecc": 25.0
+  },
+  "removed": [
+    {
+      "sequence": 1696,
+      "utc": "2026-10-03T14:00:44.8405030Z",
+      "realtime": 429.173900087786,
+      "gameSeconds": 379.1691185529344,
+      "day": 1,
+      "phase": "Night",
+      "kind": "building-removed",
+      "building": "e99ff06dbcf84098b42039f704633d49",
+      "definition": "defense.emp",
+      "owner": "eae1595ff6254323b43d3d6b1701cdde"
+    }
+  ],
+  "observationErrors": 0,
+  "unfinished": [
+    "Cannon actual firing; next natural wave",
+    "Normal completion and same-scene reload",
+    "Full terminal audit"
+  ]
+}

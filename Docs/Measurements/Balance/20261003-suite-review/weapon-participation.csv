@@ -1,0 +1,14 @@
+definition,evidenceKind,actionOrShotCount,projectileSignals,runs
+defense.arc,"modern signals, not per-weapon kill counts",224,8562,20261003-survival-improved-01
+defense.emp,"modern signals, not per-weapon kill counts",62,0,20261003-content-coverage-01;20261003-content-coverage-02
+defense.plasma_laser,"modern signals, not per-weapon kill counts",809,0,20261003-survival-improved-01
+defense.rail_aa,"modern signals, not per-weapon kill counts",789,0,20261003-survival-improved-01
+defense.railgun,"modern signals, not per-weapon kill counts",121,0,20261003-survival-improved-01
+defense.sky_plasma,"modern signals, not per-weapon kill counts",3,586,20261003-content-coverage-02
+defense.smart_missile,"modern signals, not per-weapon kill counts",187,32249,20261003-survival-improved-01
+defense.tesla,"modern signals, not per-weapon kill counts",355,0,20261003-content-coverage-01;20261003-content-coverage-02
+defense.vulcan_aa,"modern signals, not per-weapon kill counts",26,0,20261003-content-coverage-02
+openworld.legacy.Arrow,actual cumulative legacy shot counter before orb reset,3,0,20261003-content-coverage-02
+openworld.legacy.Cannon,actual cumulative legacy shot counter before orb reset,23,0,20261003-content-coverage-02
+openworld.legacy.Frost,actual cumulative legacy shot counter before orb reset,10,0,20261003-content-coverage-02
+openworld.legacy.MachineGun,actual cumulative legacy shot counter before orb reset,37,0,20261003-content-coverage-02

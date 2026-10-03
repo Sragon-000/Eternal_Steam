@@ -1,0 +1,5 @@
+run,day,phase,stage,gameSeconds,spawned,killed,alive,damage,recordedScreenshots,events,resourceChanges,samples
+20261003-survival-baseline-01,3,Day,Cleared,1212.115839854814,226,226,0,0,129,5895,3481,1234
+20261003-survival-improved-01,11,Day,Cleared,4825.800783407874,2126,2126,0,0,578,30746,14154,5130
+20261003-content-coverage-01,1,Night,Failed,324.2036023437977,101,2,99,100.0,14,1546,316,438
+20261003-content-coverage-02,3,Day,Cleared,1158.9976017866284,226,226,0,180.0,39,4578,1154,1249

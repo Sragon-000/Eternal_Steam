@@ -1,0 +1,33 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "var scene=UnityEngine.SceneManagement.SceneManager.GetActiveScene(); var h=UnityEngine.Object.FindFirstObjectByType<EternalSteam.OpenWorld.CanvasWorldHud>(); return new {scene=scene.path,sceneCount=UnityEngine.SceneManagement.SceneManager.sceneCount,dirty=scene.isDirty,play=UnityEditor.EditorApplication.isPlaying,paused=UnityEditor.EditorApplication.isPaused,save=System.Environment.GetEnvironmentVariable(\"ETERNAL_STEAM_SAVE_TEST_ROOT\"),background=UnityEngine.Application.runInBackground,testUi=h.ShowDevelopmentControls,compiling=UnityEditor.EditorApplication.isCompiling};"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "scene": "Assets/EternalSteam/Scene/Tests/StartRegionSandbox.unity",
+        "sceneCount": 1,
+        "dirty": false,
+        "play": false,
+        "paused": false,
+        "save": null,
+        "background": false,
+        "testUi": true,
+        "compiling": false
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

@@ -1,0 +1,175 @@
+{
+  "run": "20261003-content-coverage-02",
+  "active": false,
+  "lastSampleSequence": 4577,
+  "prefixBytes": 63260914,
+  "prefixSha256": "e128155e7ed61b32cbb4969bea8fe34cd4e40a43d3fe8f67b8fced05ea943453",
+  "gameSeconds": 1158.9976017866284,
+  "day": 3,
+  "phase": "Day",
+  "passed": true,
+  "errors": [],
+  "bases": {
+    "e898b53d0f7745628ca28717da7d8bc1": {
+      "definition": "installation.main_base",
+      "building": "3f950e6084c3450597437a0fd8740178"
+    },
+    "eae1595ff6254323b43d3d6b1701cdde": {
+      "definition": "installation.nexus",
+      "building": "1a45d39ba592458a8a4f2902bf5fff12"
+    }
+  },
+  "resourceNetByOperation": {
+    "iron:production-output": 577.0,
+    "coal:production-output": 577.0
+  },
+  "lastStocksByResource": {
+    "coal": 577.0,
+    "copper": 0.0,
+    "iron": 577.0,
+    "nanometal": 0.0,
+    "plasma_ore": 0.0,
+    "titanium": 0.0,
+    "tungsten": 0.0,
+    "uranium": 0.0
+  },
+  "lastInventories": [
+    {
+      "baseId": "e898b53d0f7745628ca28717da7d8bc1",
+      "stocks": [
+        {
+          "id": "coal",
+          "amount": 577.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "copper",
+          "amount": 0.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "iron",
+          "amount": 577.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "nanometal",
+          "amount": 0.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "plasma_ore",
+          "amount": 0.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "titanium",
+          "amount": 0.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "tungsten",
+          "amount": 0.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "uranium",
+          "amount": 0.0,
+          "capacity": 1000000.0
+        }
+      ]
+    },
+    {
+      "baseId": "eae1595ff6254323b43d3d6b1701cdde",
+      "stocks": [
+        {
+          "id": "coal",
+          "amount": 0.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "copper",
+          "amount": 0.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "iron",
+          "amount": 0.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "nanometal",
+          "amount": 0.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "plasma_ore",
+          "amount": 0.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "titanium",
+          "amount": 0.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "tungsten",
+          "amount": 0.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "uranium",
+          "amount": 0.0,
+          "capacity": 1000000.0
+        }
+      ]
+    }
+  ],
+  "lastRoutes": [],
+  "trainMetrics": {},
+  "trainStatusSecondsEstimate": [],
+  "netCargoTransfers": [],
+  "actions": {
+    "run-start": 1,
+    "coverage-probe-start": 1,
+    "coverage-policy": 1,
+    "coverage-upgrade": 38,
+    "coverage-build": 20,
+    "coverage-legacy-build": 7,
+    "coverage-legacy-ring": 1,
+    "coverage-action-failed": 1,
+    "coverage-v2-prepared": 1,
+    "stage-change": 4,
+    "phase-change": 4,
+    "coverage-front-legacy-pair": 1,
+    "coverage-approach-cannon": 1,
+    "orb-crafted": 1,
+    "completed-save": 1,
+    "post-clear-overhead-capture": 2
+  },
+  "powerSamplesByDay": {
+    "1": {
+      "samples": 480,
+      "outsideAreaConsumerSamples": 0,
+      "unsuppliedOperationalConsumerSamples": 2
+    },
+    "2": {
+      "samples": 477,
+      "outsideAreaConsumerSamples": 0,
+      "unsuppliedOperationalConsumerSamples": 1
+    },
+    "3": {
+      "samples": 292,
+      "outsideAreaConsumerSamples": 0,
+      "unsuppliedOperationalConsumerSamples": 0
+    }
+  },
+  "limitations": [
+    "Resource flows are exact recorded changes through the fixed last sample, not a completed-run audit.",
+    "Train fuel/battery sums are sampled net changes and can miss simultaneous consumption/replenishment; use as lower bounds.",
+    "Train status durations hold the previous sampled state; boundaries have approximately one-sample uncertainty.",
+    "Net cargo changes can hide simultaneous loading/unloading. This run uses separate load and unload stops; corroborate with bank ledger.",
+    "Signal/event day differs from spawn-cohort day. Use ID/generation cohort audit for wave kills.",
+    "Editor compile/pause/capture overhead is not a performance benchmark."
+  ]
+}

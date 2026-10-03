@@ -33,3 +33,6 @@
 - [정상 플레이 사전 로직 감사·관측 검증](Validation/2026-10-03-playthrough-preflight.md)
 
 - [정상 기준 생존 회차·자원 수지·열차 대기 전력 개선](Validation/2026-10-03-survival-baseline.md)
+
+- [정상 플레이 종합 결과·콘텐츠 참여·밸런스 우선순위](Validation/2026-10-03-normal-playthrough-results.md) — 10공세·11일차, 무기13종, 자원/물류·기록 감사
+- [숨은 건설 독 입력 잠금 수정·297개 회귀·실제 Play14개](Validation/2026-10-03-hidden-dock-input-fix.md)

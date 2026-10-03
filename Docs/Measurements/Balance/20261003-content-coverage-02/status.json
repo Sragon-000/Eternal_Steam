@@ -1,0 +1,11 @@
+{
+  "reason": "content-roles-observed-two-waves-cleared-post-clear-qa-complete",
+  "stopped": true,
+  "sequence": 4578,
+  "error": null,
+  "screenshotsPending": 0,
+  "day": 3,
+  "phase": "Day",
+  "defeated": false,
+  "stage": "Cleared"
+}

@@ -1,0 +1,31 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "var s=UnityEngine.Object.FindFirstObjectByType<EternalSteam.OpenWorld.OpenWorldSandbox>(); return new { day=s.Clock.Day, phase=s.Clock.Phase.ToString(), paused=s.Clock.Paused, message=s.Message, stage=s.Assault.Energy.Stage.ToString(), orb=s.Assault.Energy.PerfectOrb,alive=s.Enemies.Alive };"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "day": 3,
+        "phase": "Day",
+        "paused": false,
+        "message": "작업을 확정했습니다.",
+        "stage": "AwaitingCraft",
+        "orb": false,
+        "alive": 0
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

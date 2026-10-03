@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/Testing/Balance/MeasureRecorderOverhead.cs",
+      "entry": "MeasureRecorderOverhead.Describe"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 32,
+      "executeMs": 0,
+      "assemblyName": "PipelineRunScript_MeasureRecorderOverhead_174291f585044abfa834e270389a7ca1",
+      "success": true,
+      "result": "Read-only game-state ABBA observation-cost QA after normal clear/save, before recorder stop; preserves and restores observer enabled state."
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

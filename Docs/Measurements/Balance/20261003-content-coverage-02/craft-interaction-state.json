@@ -1,0 +1,29 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "var s=UnityEngine.Object.FindFirstObjectByType<EternalSteam.OpenWorld.OpenWorldSandbox>(); var i=s.GetComponent<EternalSteam.OpenWorld.OpenWorldInput>(); var a=new EternalSteam.OpenWorld.OpenWorldHudActions(s,i); bool can=a.CanInteract(out var reason); return new { can,reason,editing=i.IsEditing,pending=i.Edits.Count,groups=UnityEngine.Object.FindFirstObjectByType<EternalSteam.OpenWorld.CanvasWorldHud>().Groups.ConstructionSelected };"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "can": true,
+        "reason": null,
+        "editing": false,
+        "pending": 0,
+        "groups": false
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

@@ -1,0 +1,430 @@
+{
+  "utc": "2026-10-03T14:15:44.004935+00:00",
+  "sequence": 4578,
+  "terminal": true,
+  "secondsWithoutNewEvents": 0.0,
+  "gameSeconds": 1158.9976017866284,
+  "day": 3,
+  "phase": "Day",
+  "stage": "Cleared",
+  "days": {
+    "1": {
+      "spawned": 101,
+      "killed": 101,
+      "damage": 180.0,
+      "removed": 1
+    },
+    "2": {
+      "spawned": 125,
+      "killed": 125,
+      "damage": 0,
+      "removed": 0
+    },
+    "3": {
+      "spawned": 0,
+      "killed": 0,
+      "damage": 0,
+      "removed": 0
+    }
+  },
+  "counts": {
+    "inventory-observed": 3,
+    "building-added": 28,
+    "screenshot-request": 137,
+    "action": 85,
+    "weapon-counters": 1249,
+    "sample": 1249,
+    "screenshot-captured": 39,
+    "resource": 1154,
+    "enemy-spawn": 226,
+    "enemy-killed": 226,
+    "building-damage": 180,
+    "building-removed": 1,
+    "run-end": 1
+  },
+  "observerErrors": 0,
+  "bases": [
+    {
+      "definition": "installation.main_base",
+      "id": "e898b53d0f7745628ca28717da7d8bc1",
+      "health": 100.0,
+      "level": 10
+    },
+    {
+      "definition": "installation.nexus",
+      "id": "eae1595ff6254323b43d3d6b1701cdde",
+      "health": 280.0,
+      "level": 10
+    }
+  ],
+  "routes": [],
+  "firstBattery": null,
+  "firstBatteryDebit": null,
+  "weaponCounters": [
+    {
+      "building": "3f950e6084c3450597437a0fd8740178",
+      "definition": "installation.main_base",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "e059a678448c4873b50835c6a549131e",
+      "definition": "resource.iron",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "9015a774fd244192a716eeaa385e1cd7",
+      "definition": "railway.coal",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "27929ef82eb6485394b3ea2d7c169a30",
+      "definition": "resource.power_generator",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "05298058d3b54fc6953154f7f7d2f434",
+      "definition": "resource.power_generator",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "1ed0cc361143408ca079d8040d9737fd",
+      "definition": "resource.power_generator",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "0be3cba8c37c480199e740d079e7b1e9",
+      "definition": "resource.power_generator",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "d402b6b445ad47c18b462f09e250a906",
+      "definition": "openworld.legacy.MachineGun",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "fcfd441d8c3645ccb47abe67f2c5ecc7",
+      "definition": "openworld.legacy.Cannon",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "68e638a15f894c0aa054a7aab2894014",
+      "definition": "openworld.legacy.Frost",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "3071bfe3261e4077ae8e2fc109fa5b0d",
+      "definition": "openworld.legacy.Arrow",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "7d7ff551c4584224b2427d6729aa3c0d",
+      "definition": "defense.tesla",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 17,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 19.6567059,
+        "y": 0.9110003,
+        "z": 42.2970848
+      }
+    },
+    {
+      "building": "ac5ed00572314a42b4bae936436f3e46",
+      "definition": "defense.tesla",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 21,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 46.56885,
+        "y": 0.9110003,
+        "z": 23.477253
+      }
+    },
+    {
+      "building": "feb4b3aa65ae44f48a8bad361783508f",
+      "definition": "defense.tesla",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 61,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 19.68616,
+        "y": 0.9110003,
+        "z": 42.57476
+      }
+    },
+    {
+      "building": "1bb7fb0fe69e424f98d4ce226c34947d",
+      "definition": "defense.tesla",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 36,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 47.1863976,
+        "y": 0.9110003,
+        "z": 23.4356861
+      }
+    },
+    {
+      "building": "49fd181321e64f31aa90975c7a1524b3",
+      "definition": "defense.emp",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 22,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 49.4363632,
+        "y": 0.9110003,
+        "z": 24.25596
+      }
+    },
+    {
+      "building": "1a45d39ba592458a8a4f2902bf5fff12",
+      "definition": "installation.nexus",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "592b2a3688df4ee69e74e58fd8833ecc",
+      "definition": "resource.power_generator",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "26c4b9e93d85453e8c5e07581595e787",
+      "definition": "resource.power_generator",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "eb92f7f965ef489fb270ddd1da5dd3e2",
+      "definition": "resource.power_generator",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "6699e9b33ee843cca4dfc97a2c574b35",
+      "definition": "resource.power_generator",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "30358ca8a4794012b6e904e8346c5a20",
+      "definition": "defense.vulcan_aa",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 26,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 45.4942741,
+        "y": 5.91100025,
+        "z": -62.6756935
+      }
+    },
+    {
+      "building": "f77af6627bc14b5297b7096f3e664ebe",
+      "definition": "defense.sky_plasma",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 3,
+      "projectileSignals": 586,
+      "lastTarget": {
+        "x": 45.86399,
+        "y": 5.91100025,
+        "z": -63.6536636
+      }
+    },
+    {
+      "building": "f2d0baaddc014e6e8d7b2d28edb408ce",
+      "definition": "defense.tesla",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 218,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 31.4032059,
+        "y": 0.9110003,
+        "z": -31.4084778
+      }
+    },
+    {
+      "building": "e99ff06dbcf84098b42039f704633d49",
+      "definition": "defense.emp",
+      "scope": "stationary",
+      "disposed": true,
+      "shotSignals": 27,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 29.6962261,
+        "y": 0.9110003,
+        "z": -33.50978
+      }
+    },
+    {
+      "building": "c9a29465f61f4388b2ca9c4bfc960aec",
+      "definition": "openworld.legacy.Cannon",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "d4209920988c4aceaa326896db0c11f9",
+      "definition": "openworld.legacy.Arrow",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "b9bf1b0e764948008ec1d32ff9715c26",
+      "definition": "openworld.legacy.Cannon",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    }
+  ],
+  "pilotActions": {}
+}

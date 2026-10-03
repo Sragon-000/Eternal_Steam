@@ -1,0 +1,265 @@
+{
+  "run": "20261003-content-coverage-02",
+  "purpose": "normal-survival",
+  "normalPlay": true,
+  "passed": true,
+  "errors": [],
+  "counts": {
+    "inventory-observed": 3,
+    "building-added": 28,
+    "screenshot-request": 137,
+    "action": 85,
+    "weapon-counters": 1249,
+    "sample": 1249,
+    "screenshot-captured": 39,
+    "resource": 1154,
+    "enemy-spawn": 226,
+    "enemy-killed": 226,
+    "building-damage": 180,
+    "building-removed": 1,
+    "run-end": 1
+  },
+  "gameSeconds": 1158.9976017866284,
+  "screenshots": [
+    {
+      "file": "screenshots/000001.png",
+      "sha256": "78dbdf1eeeca5061991199630aedc8453099c79fcce1a981e765604783bbce72",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000002.png",
+      "sha256": "b232ad48b0a18eb79380e54f3749eb938b7bc77c7c943405253975d5c542ad93",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000003.png",
+      "sha256": "ebdb4219ed1920fb472c574ccd278020b251edd0b05c3f04ed2bb37292d8d826",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000004.png",
+      "sha256": "e384c4d7b506458360be5bb9803d2669ed06a0b0a9e608263e88d43c2b536e10",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000005.png",
+      "sha256": "026d6a946e1ddfb12772ff57b3ff93eab4ef534acbb1af570e8febf55caa9ecc",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000006.png",
+      "sha256": "606bc914f9c3ec05d11f0332e4ed525d18dfd4ff138b1483e1a02a983130a75a",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000007.png",
+      "sha256": "cec91ee3b0a5597cc946d5ed0aa7b94c9fac643ebed6cbb7919c7f804cc89942",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000008.png",
+      "sha256": "ec5b94b3e7ff4557e19fa5f8340dd4adcc062b4e332e4e3427f90465150caf84",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000009.png",
+      "sha256": "508a1e5bf53ef3d66b16a7446014eeaf11296c8d75ccb0f3ce23bbaa79265455",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000010.png",
+      "sha256": "961b8c234d5565b72a4324cd23c84300fa4ceab9a0a24a7f45fd49fce021c8f1",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000011.png",
+      "sha256": "9cadfb7bd35ad1a1e473a58da407289203e6682801c5ca59b1ed0245d50af20d",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000012.png",
+      "sha256": "0e10955cddf32331b695bcb63b15092f6dba0c604a39792fdd93785503296631",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000013.png",
+      "sha256": "746ab878743e0c3196cc164b2f010188e557ed9b66e95dfb0c94cccc7e47f5ec",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000014.png",
+      "sha256": "afefed501d4c76036852b219e10b579af221f8b4ff7fc497de687020c0b182b6",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000015.png",
+      "sha256": "4649fdc698ec985737b57b26541c341d8a0db4ba13c6c1d43143bd8404b24451",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000016.png",
+      "sha256": "cf6cbbc30a69402c011eecf5f1c4157b5e24d34434964d0d145c81033fbff25d",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000017.png",
+      "sha256": "dce0b33691be8252962d201d1075c8b337ba9bf42924da9784a2d072414bc20d",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000018.png",
+      "sha256": "2a6f6afd264b82857f8e4a28466b207ad82224dbf82956357df570fa0d6acd3b",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000019.png",
+      "sha256": "930eb85740199624d62f49f9acc8c1354faa391d1a77fb8ee7e623260a938ada",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000020.png",
+      "sha256": "749fbd476d538b0844b4e085799c7b244b10133674bcbf23f188635c39d3b4c4",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000021.png",
+      "sha256": "98d685ea2c80a8931f581a91e970e75fe19db89c52d1123d8a9f3fb58046c530",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000022.png",
+      "sha256": "c71770c7eaf33a37b01795c56c49a0c6dc7f409c1021325b5dce54b0caba4b55",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000023.png",
+      "sha256": "ba5f2bd6810368ff4c2e0cc442232f3535c21f1d689b73f4f4e6af68e86f0186",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000024.png",
+      "sha256": "3ccd3f2ec837ac7a4095233a360dd98c32f11fc321e763b8a6b7f4f35a82155b",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000025.png",
+      "sha256": "5741428b2eee1045cb25490f6a392d1879637f48f6bc111d369dbe748f1644d3",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000026.png",
+      "sha256": "45c421559434442e1617bf10b8a24bca2c6a00d6ef5349c6c94ac4fc9fb90115",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000027.png",
+      "sha256": "078b351be78c36863815c166fc113f3cd93d28e4960f493b65510c523fdfcf91",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000028.png",
+      "sha256": "87eccf26e4893e9aa8da7963e35e4a2653a7064207bdb12c8b34ac760736ec61",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000029.png",
+      "sha256": "617c6cc8bfcabde6229998b1f5e44d8b11695736d15a8d1447dd6802425a6c9e",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000030.png",
+      "sha256": "f22ddac8ef18558f8d5881bc3a282de6278b7a85405abdb5377359cb0cbd9d8e",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000031.png",
+      "sha256": "4f4e1065699929fd60d6d47c3680646081a46926e078d44235fa2a335be28388",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000032.png",
+      "sha256": "3fead7621905ac44a4ed9854bc29925034bca15f85fa5392f54d78958a61601d",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000033.png",
+      "sha256": "3fead7621905ac44a4ed9854bc29925034bca15f85fa5392f54d78958a61601d",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000034.png",
+      "sha256": "3fead7621905ac44a4ed9854bc29925034bca15f85fa5392f54d78958a61601d",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000035.png",
+      "sha256": "3fead7621905ac44a4ed9854bc29925034bca15f85fa5392f54d78958a61601d",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000036.png",
+      "sha256": "3fead7621905ac44a4ed9854bc29925034bca15f85fa5392f54d78958a61601d",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000037.png",
+      "sha256": "3fead7621905ac44a4ed9854bc29925034bca15f85fa5392f54d78958a61601d",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000038.png",
+      "sha256": "3fead7621905ac44a4ed9854bc29925034bca15f85fa5392f54d78958a61601d",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000039.png",
+      "sha256": "3fead7621905ac44a4ed9854bc29925034bca15f85fa5392f54d78958a61601d",
+      "width": 2560,
+      "height": 1440
+    }
+  ],
+  "resourceOutput": {
+    "iron": 577.0,
+    "coal": 577.0
+  },
+  "streaming": true,
+  "auditToolSha256": "1989bb3af1378654b362746380aac40b39f1edaa8195bf0ead93213765522a55"
+}

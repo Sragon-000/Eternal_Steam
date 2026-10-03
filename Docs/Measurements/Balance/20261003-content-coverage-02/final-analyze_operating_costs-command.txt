@@ -1,0 +1,43 @@
+{
+  "run": "20261003-content-coverage-02",
+  "active": false,
+  "day": 3,
+  "phase": "Day",
+  "gameSeconds": 1158.9976017866284,
+  "passed": true,
+  "errors": [],
+  "resourceNetByOperation": {
+    "iron:production-output": 577.0,
+    "coal:production-output": 577.0
+  },
+  "lastStocksByResource": {
+    "coal": 577.0,
+    "copper": 0.0,
+    "iron": 577.0,
+    "nanometal": 0.0,
+    "plasma_ore": 0.0,
+    "titanium": 0.0,
+    "tungsten": 0.0,
+    "uranium": 0.0
+  },
+  "trainMetrics": {},
+  "netCargoTransfers": [],
+  "powerSamplesByDay": {
+    "1": {
+      "samples": 480,
+      "outsideAreaConsumerSamples": 0,
+      "unsuppliedOperationalConsumerSamples": 2
+    },
+    "2": {
+      "samples": 477,
+      "outsideAreaConsumerSamples": 0,
+      "unsuppliedOperationalConsumerSamples": 1
+    },
+    "3": {
+      "samples": 292,
+      "outsideAreaConsumerSamples": 0,
+      "unsuppliedOperationalConsumerSamples": 0
+    }
+  }
+}
+Saved: /Users/limseth/Projects/Eternal_Steam/Eternal_Steam/Docs/Measurements/Balance/20261003-content-coverage-02/checkpoints/operating-costs-000004577

@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/Testing/VerifyHiddenDockInput.cs",
+      "entry": "VerifyHiddenDockInput.Setup"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 169,
+      "executeMs": 0,
+      "assemblyName": "PipelineRunScript_VerifyHiddenDockInput_9970a40679be4d14bc6a10e2c845d178",
+      "success": true,
+      "result": "Same-scene isolated input QA prepared"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

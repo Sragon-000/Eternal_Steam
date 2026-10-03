@@ -1,0 +1,23 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "var s=UnityEngine.Object.FindFirstObjectByType<EternalSteam.OpenWorld.OpenWorldSandbox>(); s.CameraRig.MoveFocus(new UnityEngine.Vector3(26.870057f,0,-12.020818f)); s.CameraRig.ChangeZoom(-3); return new { focus=s.CameraRig.Focus,zoom=s.CameraRig.Zoom };"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": "{ focus = (26.87, 0.36, -12.02), zoom = 70 }"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

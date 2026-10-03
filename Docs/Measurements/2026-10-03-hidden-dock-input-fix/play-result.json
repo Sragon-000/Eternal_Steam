@@ -1,0 +1,63 @@
+{
+  "passed": true,
+  "scene": "Assets/EternalSteam/Scene/Tests/StartRegionSandbox.unity",
+  "checks": [
+    {
+      "label": "Fresh combat group hides construction",
+      "passed": true
+    },
+    {
+      "label": "Hidden initial dock retains pending layout transition",
+      "passed": true
+    },
+    {
+      "label": "Hidden transition does not own input lock",
+      "passed": true
+    },
+    {
+      "label": "Fresh combat camera keyboard input is free",
+      "passed": true
+    },
+    {
+      "label": "Hidden transition allows real HUD pause command",
+      "passed": true
+    },
+    {
+      "label": "Second HUD pause restores clock",
+      "passed": true
+    },
+    {
+      "label": "Hidden editing changes layout state",
+      "passed": true
+    },
+    {
+      "label": "Hidden transition allows actual cancel command",
+      "passed": true
+    },
+    {
+      "label": "Visible dock transition blocks input",
+      "passed": true
+    },
+    {
+      "label": "Visible transition rejects click-through cancel",
+      "passed": true
+    },
+    {
+      "label": "Visible transition releases input when complete",
+      "passed": true
+    },
+    {
+      "label": "Cancel accepted after transition",
+      "passed": true
+    },
+    {
+      "label": "Return to combat releases dock and camera locks",
+      "passed": true
+    },
+    {
+      "label": "QA stayed in current scene",
+      "passed": true
+    }
+  ],
+  "error": null
+}

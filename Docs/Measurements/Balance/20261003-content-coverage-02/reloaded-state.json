@@ -1,0 +1,11 @@
+{
+  "scene": "Assets/EternalSteam/Scene/Tests/StartRegionSandbox.unity",
+  "run": "6bf3142a29914c628764c372c6fc750b",
+  "paused": true,
+  "perfectOrb": true,
+  "buildings": 27,
+  "foundations": 0,
+  "width": 2560,
+  "height": 1440,
+  "error": null
+}

@@ -1,0 +1,214 @@
+{
+  "sequence": 500,
+  "gameSeconds": 102.1086910883896,
+  "actors": [
+    {
+      "definition": "openworld.legacy.MachineGun",
+      "level": 1,
+      "distanceToOwnerBase": 8.602324739682818,
+      "operational": true,
+      "power": {
+        "role": "Consumer",
+        "stored": 0.0,
+        "capacity": 200.0,
+        "production": 0.0,
+        "requested": 0.0,
+        "consumedLastSecond": 0.0,
+        "supplied": true,
+        "supply": "3f950e6084c3450597437a0fd8740178"
+      }
+    },
+    {
+      "definition": "openworld.legacy.Cannon",
+      "level": 1,
+      "distanceToOwnerBase": 7.071067800000002,
+      "operational": true,
+      "power": {
+        "role": "Consumer",
+        "stored": 0.0,
+        "capacity": 200.0,
+        "production": 0.0,
+        "requested": 0.0,
+        "consumedLastSecond": 0.0,
+        "supplied": true,
+        "supply": "3f950e6084c3450597437a0fd8740178"
+      }
+    },
+    {
+      "definition": "openworld.legacy.Frost",
+      "level": 1,
+      "distanceToOwnerBase": 11.401754901646452,
+      "operational": true,
+      "power": {
+        "role": "Consumer",
+        "stored": 0.0,
+        "capacity": 200.0,
+        "production": 0.0,
+        "requested": 0.0,
+        "consumedLastSecond": 0.0,
+        "supplied": true,
+        "supply": "3f950e6084c3450597437a0fd8740178"
+      }
+    },
+    {
+      "definition": "openworld.legacy.Arrow",
+      "level": 1,
+      "distanceToOwnerBase": 10.29562920614206,
+      "operational": true,
+      "power": {
+        "role": "Consumer",
+        "stored": 0.0,
+        "capacity": 200.0,
+        "production": 0.0,
+        "requested": 0.0,
+        "consumedLastSecond": 0.0,
+        "supplied": true,
+        "supply": "3f950e6084c3450597437a0fd8740178"
+      }
+    },
+    {
+      "definition": "defense.tesla",
+      "level": 5,
+      "distanceToOwnerBase": 10.295629659431992,
+      "operational": true,
+      "power": {
+        "role": "Consumer",
+        "stored": 0.0,
+        "capacity": 280.0,
+        "production": 0.0,
+        "requested": 0.0,
+        "consumedLastSecond": 0.0,
+        "supplied": true,
+        "supply": "3f950e6084c3450597437a0fd8740178"
+      }
+    },
+    {
+      "definition": "defense.tesla",
+      "level": 5,
+      "distanceToOwnerBase": 12.083046529161296,
+      "operational": true,
+      "power": {
+        "role": "Consumer",
+        "stored": 0.0,
+        "capacity": 280.0,
+        "production": 0.0,
+        "requested": 0.0,
+        "consumedLastSecond": 0.0,
+        "supplied": true,
+        "supply": "3f950e6084c3450597437a0fd8740178"
+      }
+    },
+    {
+      "definition": "defense.tesla",
+      "level": 5,
+      "distanceToOwnerBase": 13.92838891175616,
+      "operational": true,
+      "power": {
+        "role": "Consumer",
+        "stored": 0.0,
+        "capacity": 280.0,
+        "production": 0.0,
+        "requested": 0.0,
+        "consumedLastSecond": 0.0,
+        "supplied": true,
+        "supply": "3f950e6084c3450597437a0fd8740178"
+      }
+    },
+    {
+      "definition": "defense.tesla",
+      "level": 5,
+      "distanceToOwnerBase": 13.928387916717014,
+      "operational": true,
+      "power": {
+        "role": "Consumer",
+        "stored": 0.0,
+        "capacity": 280.0,
+        "production": 0.0,
+        "requested": 0.0,
+        "consumedLastSecond": 0.0,
+        "supplied": true,
+        "supply": "3f950e6084c3450597437a0fd8740178"
+      }
+    },
+    {
+      "definition": "defense.emp",
+      "level": 3,
+      "distanceToOwnerBase": 21.213203420000088,
+      "operational": true,
+      "power": {
+        "role": "Consumer",
+        "stored": 0.0,
+        "capacity": 240.0,
+        "production": 0.0,
+        "requested": 0.0,
+        "consumedLastSecond": 0.0,
+        "supplied": true,
+        "supply": "3f950e6084c3450597437a0fd8740178"
+      }
+    },
+    {
+      "definition": "defense.vulcan_aa",
+      "level": 1,
+      "distanceToOwnerBase": 13.416406166478424,
+      "operational": true,
+      "power": {
+        "role": "Consumer",
+        "stored": 0.0,
+        "capacity": 200.0,
+        "production": 0.0,
+        "requested": 0.0,
+        "consumedLastSecond": 0.0,
+        "supplied": true,
+        "supply": "1a45d39ba592458a8a4f2902bf5fff12"
+      }
+    },
+    {
+      "definition": "defense.sky_plasma",
+      "level": 1,
+      "distanceToOwnerBase": 10.295630950621295,
+      "operational": true,
+      "power": {
+        "role": "Consumer",
+        "stored": 0.0,
+        "capacity": 200.0,
+        "production": 0.0,
+        "requested": 0.0,
+        "consumedLastSecond": 0.0,
+        "supplied": true,
+        "supply": "1a45d39ba592458a8a4f2902bf5fff12"
+      }
+    },
+    {
+      "definition": "defense.tesla",
+      "level": 3,
+      "distanceToOwnerBase": 7.999998020818898,
+      "operational": true,
+      "power": {
+        "role": "Consumer",
+        "stored": 0.0,
+        "capacity": 240.0,
+        "production": 0.0,
+        "requested": 0.0,
+        "consumedLastSecond": 0.0,
+        "supplied": true,
+        "supply": "1a45d39ba592458a8a4f2902bf5fff12"
+      }
+    },
+    {
+      "definition": "defense.emp",
+      "level": 1,
+      "distanceToOwnerBase": 10.000001185301343,
+      "operational": true,
+      "power": {
+        "role": "Consumer",
+        "stored": 0.0,
+        "capacity": 200.0,
+        "production": 0.0,
+        "requested": 0.0,
+        "consumedLastSecond": 0.0,
+        "supplied": true,
+        "supply": "1a45d39ba592458a8a4f2902bf5fff12"
+      }
+    }
+  ]
+}
