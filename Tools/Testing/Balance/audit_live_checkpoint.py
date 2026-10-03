@@ -114,12 +114,20 @@ def audit(root):
         entry['instances'] += 1
         entry['shotSignals'] += weapon['shotSignals']
         entry['projectileSignals'] += weapon['projectileSignals']
+    cohorts = {}
+    for day, values in days.items():
+        dead = [enemy for enemy in lifetime if enemy['spawnDay'] == int(day)]
+        cohorts[day] = dict(spawned=values['groundSpawned']+values['airSpawned'], killed=len(dead),
+            alive=sum(enemy['day'] == int(day) for enemy in enemies.values()),
+            killedAfterSpawnDay=sum(enemy['killDay'] > enemy['spawnDay'] for enemy in dead),
+            maximumKilledLifetimeSeconds=max((enemy['seconds'] for enemy in dead), default=None))
     report = dict(run=root.name, recordedUtc=datetime.datetime.now(datetime.timezone.utc).isoformat(),
         scope='Fixed complete-event prefix of an active run; not a terminal audit or survival ceiling',
         sourceBytesAtRead=limit, prefixBytes=observed_bytes, prefixSha256=digest.hexdigest(),
         lastSequence=previous, lastSampleSequence=last['sequence'], gameSeconds=last['gameSeconds'],
         day=last['day'], phase=last['phase'], passed=not errors, errors=errors, counts=dict(counts),
         pendingScreenshotRequests=sorted(requests-resolved), screenshots=captures, days=days,
+        dayCounterMeaning='days uses event day; spawnCohorts assigns kills to the original spawn day via ID and generation.', spawnCohorts=cohorts,
         resourceNetByOperation=[dict(base=b, resource=r, operation=o, delta=v)
             for (b,r,o),v in sorted(operations.items())],
         lastInventories=last['inventories'], lastRoutes=last['routes'],

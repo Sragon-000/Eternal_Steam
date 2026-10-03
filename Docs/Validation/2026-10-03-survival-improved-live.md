@@ -64,3 +64,15 @@
 | 스마트 미사일 | 70 | 58.45 | 42 |
 
 이 구간에서는 단거리 방어까지 적이 접근한 표본이 없고 기존 포탑의 실제 누적 발사도 0이다. 장거리 방어의 선제 처치/현재 배치가 참여 차이를 설명한다는 관찰 근거이며, 표본 사이의 모든 적 궤적을 증명한 것은 아니다. 자연 공중 적도 없으므로 대공 전용 2종의 적격 표본은 0이었다. 전력 부족이나 공격 고장으로 단정하지 않는다.
+
+## 7일차 진입·후속 검증 명령 준비
+
+여섯 번째 공세 225명까지 누적 **976명 생성/처치, 건물 피해·손실 0**이며 7일차에 진입했다([고정 체크포인트](../Measurements/Balance/20261003-survival-improved-01/checkpoints/day06-wave-complete.json)). 제품 C# 199개를 회차 시작 해시와 대조해 불일치 0을 확인했다([검사 결과](../Measurements/Balance/20261003-survival-improved-01/checkpoints/product-source-and-focused-tool-check.json)).
+
+후속 콘텐츠 명령은 현재 장기 회차를 거부하는 경로 제한을 적용했다. 최초 컴파일에서 공개 `IBuildArea`에 없는 `Center` 참조를 발견해 대칭 경계의 중점으로 고쳤다. [실패 원본](../Measurements/Balance/20261003-survival-improved-01/checkpoints/focused-actions-compile-command.json), [수정 후 컴파일](../Measurements/Balance/20261003-survival-improved-01/checkpoints/focused-actions-compile-retry-command.json), [현재 회차 거부 확인](../Measurements/Balance/20261003-survival-improved-01/checkpoints/focused-actions-scope-rejection-command.json)을 보존했다. 마지막 거부는 의도한 보호 동작이며 생존 회차 실패가 아니다. 실제 건설 명령은 아직 실행하지 않았다.
+
+종료 명령의 기준 회차 전용 ‘3일차’ 문구를 실제 관측 값으로 바꾸고, 제작 전 보조 카운터 보존과 노선 수에 독립적인 정차/저장을 준비했다. 컴파일만 확인했고 제작·종료는 미실행이다. 시작 도구 원본은 그대로 두고 [후속 도구 버전과 해시](../Measurements/Balance/20261003-survival-improved-01/checkpoints/followup-tools-provenance.json)를 별도로 보관했다.
+
+일자별 이벤트와 공세별 성과를 구분하는 집계도 추가했다. 6일차에는 225명이 생성됐지만 당일 처치는 219명이고, 나머지 6명은 7일차에 처치됐다. 처음 같은 일자 열의 생성/처치가 같아야 한다는 보조 확인 조건은 이 정상 잔존 규칙 때문에 실패했다. 실제 게임 실패로 처리하지 않고, 적 ID·생성 세대를 따라 원래 생성 일차에 처치를 연결하는 `spawnCohorts`를 추가했다.
+
+[19,128번까지 감사](../Measurements/Balance/20261003-survival-improved-01/checkpoints/audit-prefix-000019128.json)는 1~6일차 공세 모두 잔존 0, 6일차 출생 적의 최대 처치 소요 162.05초와 다음 일차 처치 6명을 확인했다. 같은 시점 7일차 새 공세 52명은 살아 있어 집계에서 분리했다. 자원 변경 9,320건/재고 표본 3,172개와 화면 374장도 오류 없이 재감사했다. 완료되지 않은 7일차 공세를 완료로 합산하지 않는다.

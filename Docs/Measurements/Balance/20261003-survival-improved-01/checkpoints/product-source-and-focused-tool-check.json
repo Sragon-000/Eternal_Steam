@@ -1,0 +1,10 @@
+{
+  "utc": "2026-10-03T12:47:06.744332+00:00",
+  "sourceFiles": 199,
+  "mismatches": [],
+  "scope": "Current product C# files compared to start-of-run hashes; no gameplay commands called by focused-tool compilation/scope validation.",
+  "focusedToolSha256": "7a395ae6fe8eb68227c943ff15590b314b1ff46ed35b86f9670a9dc44750eb79",
+  "focusedToolCompiled": true,
+  "focusedToolRejectsLongRunSave": true,
+  "focusedToolApplied": false
+}

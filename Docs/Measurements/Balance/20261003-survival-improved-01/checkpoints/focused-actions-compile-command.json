@@ -1,0 +1,42 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/Testing/Balance/FocusedContentActions.cs",
+      "entry": "FocusedContentActions.Describe"
+    },
+    "result": {
+      "diagnostics": [
+        {
+          "severity": "error",
+          "message": "'IBuildArea' does not contain a definition for 'Center' and no accessible extension method 'Center' accepting a first argument of type 'IBuildArea' could be found (are you missing a using directive or an assembly reference?)",
+          "line": 77,
+          "column": 45,
+          "id": "CS1061"
+        },
+        {
+          "severity": "error",
+          "message": "'IBuildArea' does not contain a definition for 'Center' and no accessible extension method 'Center' accepting a first argument of type 'IBuildArea' could be found (are you missing a using directive or an assembly reference?)",
+          "line": 92,
+          "column": 65,
+          "id": "CS1061"
+        }
+      ],
+      "compileMs": 53,
+      "executeMs": 0,
+      "assemblyName": "PipelineRunScript_FocusedContentActions_182a57dcfb1c48cba8ba499792f71317",
+      "success": false,
+      "error": "Compilation Failed",
+      "errorDetails": "The script failed to compile. See diagnostics for line/column details."
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

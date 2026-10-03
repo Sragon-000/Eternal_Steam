@@ -1,0 +1,975 @@
+{
+  "utc": "2026-10-03T12:52:30.737327+00:00",
+  "sequence": 18961,
+  "terminal": false,
+  "secondsWithoutNewEvents": 0.0,
+  "gameSeconds": 3165.0870829527266,
+  "day": 7,
+  "phase": "Day",
+  "stage": "AwaitingCraft",
+  "days": {
+    "1": {
+      "spawned": 101,
+      "killed": 101,
+      "damage": 0,
+      "removed": 0
+    },
+    "2": {
+      "spawned": 125,
+      "killed": 125,
+      "damage": 0,
+      "removed": 0
+    },
+    "3": {
+      "spawned": 150,
+      "killed": 150,
+      "damage": 0,
+      "removed": 0
+    },
+    "4": {
+      "spawned": 175,
+      "killed": 175,
+      "damage": 0,
+      "removed": 0
+    },
+    "5": {
+      "spawned": 200,
+      "killed": 200,
+      "damage": 0,
+      "removed": 0
+    },
+    "6": {
+      "spawned": 225,
+      "killed": 219,
+      "damage": 0,
+      "removed": 0
+    },
+    "7": {
+      "spawned": 0,
+      "killed": 6,
+      "damage": 0,
+      "removed": 0
+    }
+  },
+  "counts": {
+    "inventory-observed": 4,
+    "building-added": 65,
+    "screenshot-request": 563,
+    "action": 149,
+    "weapon-counters": 3152,
+    "sample": 3152,
+    "screenshot-captured": 369,
+    "resource": 9259,
+    "train-change": 296,
+    "enemy-spawn": 976,
+    "enemy-killed": 976
+  },
+  "observerErrors": 0,
+  "bases": [
+    {
+      "definition": "installation.main_base",
+      "id": "d5cea6c82cc04e2ca6fcf18a94493419",
+      "health": 100.0,
+      "level": 10
+    },
+    {
+      "definition": "installation.nexus",
+      "id": "d3478f2b4e5d4d72b0188459fbdbc462",
+      "health": 140.0,
+      "level": 3
+    },
+    {
+      "definition": "installation.nexus",
+      "id": "4db313e3358442e1aab5c6da76aa0155",
+      "health": 280.0,
+      "level": 10
+    }
+  ],
+  "routes": [
+    {
+      "id": "960ef087e05742f2b803829b9a18fb69",
+      "status": 1,
+      "stop": 1,
+      "fuel": 66.0,
+      "cargo": 0.0,
+      "battery": 200.0
+    }
+  ],
+  "firstBattery": {
+    "gameSeconds": 181.74985561985523,
+    "battery": 200.0
+  },
+  "firstBatteryDebit": {
+    "gameSeconds": 450.62563073495403,
+    "battery": 197.2864445997402,
+    "alive": 1,
+    "phase": "Night"
+  },
+  "weaponCounters": [
+    {
+      "building": "6a3c1576597f401bb724a84e39c494c9",
+      "definition": "installation.main_base",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "27fd52aae1a84c6288c988c03a8b35c7",
+      "definition": "resource.iron",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "7296e3541b354fa793be8c6a7780b55f",
+      "definition": "resource.iron",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "6a3d1b3970964fc1a012c613438de64d",
+      "definition": "railway.coal",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "1b2bfd2bca764b04800b3a749c18caac",
+      "definition": "resource.power_generator",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "ea9adbf00be94116b2375fd2dbdc3ff0",
+      "definition": "resource.power_generator",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "e77e266f1c9b439d93aece15983612cf",
+      "definition": "defense.arc",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 1,
+      "projectileSignals": 186,
+      "lastTarget": {
+        "x": 29.0077724,
+        "y": 1.37761259,
+        "z": 12.2263288
+      }
+    },
+    {
+      "building": "a01874c1bb1e4d84bb86ff408065a984",
+      "definition": "defense.plasma_laser",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 58,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": -0.270690769,
+        "y": 0.9110003,
+        "z": -14.4128075
+      }
+    },
+    {
+      "building": "e78895715cf44f3b8b9f059e7a27cc84",
+      "definition": "installation.nexus",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "a28bab1c271f4cafad7f7d05c1fa8ffa",
+      "definition": "resource.iron",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "742e5418e0ce4df6b46a598eb0a52c5b",
+      "definition": "railway.coal",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "1d616456e0ba4bb0a24e6e2e0acdc98a",
+      "definition": "resource.power_generator",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "5535d8405f79472fb65609c48a5ccaf8",
+      "definition": "resource.power_generator",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "09fccb9ca6094338bf73fa427e67799f",
+      "definition": "defense.arc",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "4f4fb88785974732be4e464457e4faec",
+      "definition": "defense.plasma_laser",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 196,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 63.50966,
+        "y": 0.9110003,
+        "z": 73.40916
+      }
+    },
+    {
+      "building": "404bcfba3a25447c93a520853bbf5034",
+      "definition": "defense.tesla",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "9390f04870574f398a69df37c5d4f614",
+      "definition": "defense.vulcan_aa",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "4c17b089c16f49fe97bef44d7709507a",
+      "definition": "defense.rail_aa",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 456,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": -30.6828785,
+        "y": 0.9110003,
+        "z": -10.8838644
+      }
+    },
+    {
+      "building": "829d7a732e3d430bb19ebbed30074b0c",
+      "definition": "defense.railgun",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 54,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": -27.7440815,
+        "y": 0.9110003,
+        "z": -7.94507265
+      }
+    },
+    {
+      "building": "e311266a28294672b5551732efac0c3a",
+      "definition": "defense.sky_plasma",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "8e017862b8744f7984978e2c6ac4363f",
+      "definition": "defense.smart_missile",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 130,
+      "projectileSignals": 19335,
+      "lastTarget": {
+        "x": -24.6132717,
+        "y": 0.9110003,
+        "z": -4.814264
+      }
+    },
+    {
+      "building": "2acb62d1e51d4ed7860d3fec67ed91fa",
+      "definition": "defense.emp",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "5732e47e89b044afb90bd92ed66be62b",
+      "definition": "installation.outpost",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "15649d7f7fb54a20801b70e713987d0d",
+      "definition": "installation.wall",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "345ce0fe4fb24ad6a630d700c61d97f9",
+      "definition": "resource.copper",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "3912cff6fbbf4a9280a57ad7ce710f4f",
+      "definition": "resource.nanometal",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "40f394a5131f4e0fbad5a29e23aaf612",
+      "definition": "resource.plasma_ore",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "61b4478d095a467fa986fc37f2192415",
+      "definition": "resource.titanium",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "b4090c021c9441cd9253371c1c980c3a",
+      "definition": "resource.tungsten",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "431dfee3bb84494ab0cc1820a9e49025",
+      "definition": "resource.uranium",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "8957ebd6323e4b98bf7de5ae16f9a3f8",
+      "definition": "resource.power_generator",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "eb5f9d912bd7491daf074a88398ca299",
+      "definition": "resource.power_generator",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "6fd5273406d4474c8754ecfe270f3b56",
+      "definition": "resource.power_generator",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "fc3fd70d10634620afbc125fa2399170",
+      "definition": "resource.power_generator",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "daca0b391ade4354b4a2d48d97067248",
+      "definition": "railway.station",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "b16ce7cf31514d1d80c27c7f3b523d07",
+      "definition": "railway.station",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "3818804fb3e34a96aa8bce34e56f0880",
+      "definition": "railway.track",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "ba209961bf334df3bd51bd7c5163765d",
+      "definition": "railway.track",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "f06a4481ca4f4f08bd8bb29c7c0968c4",
+      "definition": "railway.track",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "a426bab9928441328a42e6debb4f868a",
+      "definition": "railway.track",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "030f51726ee04bf48bf9ff05907824d5",
+      "definition": "railway.track",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "ddb3e7a6615c4cdabd55aedf69716dd9",
+      "definition": "railway.track",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "d7fba070205345bfa26fed2d70afb81b",
+      "definition": "railway.track",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "794239eff378497189775ff8d93c32ad",
+      "definition": "railway.track",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "6671bfe131a346fc960592c5b4671754",
+      "definition": "railway.track",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "4474a5170a614961bb1939e24892dd25",
+      "definition": "railway.track",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "637c3c14551a478f885e8d939c401d38",
+      "definition": "railway.track",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "724cfbecf5454ba6a222acf5820ceb59",
+      "definition": "railway.track",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "86603f6c21ee4b169d6690cc4954fc98",
+      "definition": "railway.track",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "c71bdc656b9d46aaae85e422507f1ba3",
+      "definition": "railway.track",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "e306b3cb8ae94266af1d1adf42978d76",
+      "definition": "railway.track",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "21c66134b895437aaa8a186bfdb5522c",
+      "definition": "railway.track",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "735a2a3ecf374a088dc22e6632988263",
+      "definition": "railway.track",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "968f7fdacfa043db985cd278fe144145",
+      "definition": "railway.track",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "031503ae65f647af8986bf63686a7f28",
+      "definition": "railway.track",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "783f50ece2ae40bba0c32d99aa0ec091",
+      "definition": "railway.track",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "7a2e5c3a7de34faeac6096d73d368420",
+      "definition": "railway.track",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "d8540d9f66de419fb094a720fd17c17e",
+      "definition": "railway.track",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "f1280062fc0e480895d72e079abe0b80",
+      "definition": "defense.arc",
+      "scope": "train:7ba980fb43154d7a9fb5ef649090cfca",
+      "disposed": false,
+      "shotSignals": 85,
+      "projectileSignals": 2480,
+      "lastTarget": {
+        "x": -15.6100788,
+        "y": 1.55482423,
+        "z": -2.841273
+      }
+    },
+    {
+      "building": "f2ee88f04386458598440ee938c869c4",
+      "definition": "openworld.legacy.MachineGun",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "bead9d4efcfb484b87b90acf1489962d",
+      "definition": "openworld.legacy.Cannon",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "eedafba92f1c4882b5eb04f0c4038537",
+      "definition": "openworld.legacy.Frost",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "075964e46b9746f9a4d0121cb9eb9331",
+      "definition": "openworld.legacy.Arrow",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "040fc96cd233461a8b611786b116d295",
+      "definition": "installation.nexus",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "6356d8424dfa401fab5e5a6056b8a2b2",
+      "definition": "resource.power_generator",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "building": "98bfd5ec3d304e05aba8a855f11ab111",
+      "definition": "resource.power_generator",
+      "scope": "stationary",
+      "disposed": false,
+      "shotSignals": 0,
+      "projectileSignals": 0,
+      "lastTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    }
+  ],
+  "pilotActions": {
+    "pilot-policy": 1,
+    "pilot-stop-request": 6,
+    "pilot-refuel": 6,
+    "pilot-charge": 6,
+    "pilot-restart": 6
+  }
+}

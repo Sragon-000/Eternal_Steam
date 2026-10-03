@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/Testing/Balance/FocusedContentActions.cs",
+      "entry": "FocusedContentActions.Status"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 32,
+      "executeMs": 0,
+      "assemblyName": "PipelineRunScript_FocusedContentActions_3d50eb5aa9ce417e8a87db5719c01a3e",
+      "success": false,
+      "error": "Runtime Error",
+      "errorDetails": "Exception: Separate content-coverage recording required; long survival run is protected\n  at FocusedContentActions.World () [0x000f1] in /Users/limseth/Projects/Eternal_Steam/Eternal_Steam/Tools/Testing/Balance/FocusedContentActions.cs:23 \n  at FocusedContentActions.Status () [0x00001] in /Users/limseth/Projects/Eternal_Steam/Eternal_Steam/Tools/Testing/Balance/FocusedContentActions.cs:101 \n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\n  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <c5eeda5e65d44b388e164c6c5cfe0702>:0 "
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

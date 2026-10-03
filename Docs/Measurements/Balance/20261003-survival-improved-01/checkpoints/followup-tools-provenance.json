@@ -1,0 +1,8 @@
+{
+  "utc": "2026-10-03T12:50:13.740162+00:00",
+  "scope": "Future normal closeout and separate content coverage; compiled only, gameplay actions not invoked. Initial tool copies remain unchanged.",
+  "files": {
+    "Tools/Testing/Balance/NormalPlayActions.cs": "b268d3d6cabc156ad4fdf2e22d551354b8917602ba22615b86d6cc65d6f62b48",
+    "Tools/Testing/Balance/FocusedContentActions.cs": "7a395ae6fe8eb68227c943ff15590b314b1ff46ed35b86f9670a9dc44750eb79"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/Testing/Balance/NormalPlayActions.cs",
+      "entry": "NormalPlayActions.Describe"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 48,
+      "executeMs": 0,
+      "assemblyName": "PipelineRunScript_NormalPlayActions_5cddcfb839224b73a8b59c8f50b2849e",
+      "success": true,
+      "result": "Normal command-driven survival actions; production and progression require real time."
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}
