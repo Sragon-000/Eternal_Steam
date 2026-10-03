@@ -1,0 +1,10 @@
+{
+  "recordedUtc": "2026-10-03T12:19:43.140219+00:00",
+  "commit": "c6d19f87fd5292444cd06bf11a6c96bd33e1ad6c",
+  "remote": "https://github.com/Sragon-000/Eternal_Steam.git",
+  "branch": "main",
+  "remoteHeadVerified": "c6d19f87fd5292444cd06bf11a6c96bd33e1ad6c",
+  "scope": "Development journal, recorder/service/monitor tools, initial configuration and protocol, immutable tool copies and day 2/3 observation checkpoints.",
+  "excludedLiveEvidence": "Growing events.jsonl, screenshots and live status are still local and recording; publish after controlled end and integrity audit.",
+  "runComplete": false
+}
