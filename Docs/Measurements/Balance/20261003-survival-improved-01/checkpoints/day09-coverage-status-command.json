@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/Testing/Balance/CombatCoverageProbe.cs",
+      "entry": "CombatCoverageProbe.Status"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 51,
+      "executeMs": 1,
+      "assemblyName": "PipelineRunScript_CombatCoverageProbe_353034ce9b3645a18b1fd9418cb6ab63",
+      "success": true,
+      "result": "{\n  \"sequence\": 2076,\n  \"stopped\": false,\n  \"error\": null,\n  \"day\": 9,\n  \"phase\": \"Day\",\n  \"legacy\": [\n    {\n      \"definition\": \"openworld.legacy.MachineGun\",\n      \"shots\": 0,\n      \"range\": 22.0,\n      \"operational\": true\n    },\n    {\n      \"definition\": \"openworld.legacy.Cannon\",\n      \"shots\": 0,\n      \"range\": 22.0,\n      \"operational\": true\n    },\n    {\n      \"definition\": \"openworld.legacy.Frost\",\n      \"shots\": 0,\n      \"range\": 22.0,\n      \"operational\": true\n    },\n    {\n      \"definition\": \"openworld.legacy.Arrow\",\n      \"shots\": 0,\n      \"range\": 22.0,\n      \"operational\": true\n    }\n  ]\n}"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

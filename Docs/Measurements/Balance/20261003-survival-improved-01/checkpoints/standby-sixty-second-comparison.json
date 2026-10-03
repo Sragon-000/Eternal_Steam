@@ -1,0 +1,37 @@
+{
+  "comparison": [
+    {
+      "run": "baseline",
+      "sourceCsv": "Docs/Measurements/Balance/20261003-survival-baseline-01/checkpoints/operating-costs-000005894/train-samples.csv",
+      "sourceSha256": "9be357934941237f80d6833e00cb4ce40106ac15de635a008c55770a4006d401",
+      "window": "First 60 game seconds after first observed charged train sample",
+      "firstGameSeconds": 108.99879010813311,
+      "lastGameSeconds": 168.38782750302926,
+      "samples": 60,
+      "aliveEnemiesAllZero": true,
+      "phaseAllDay": true,
+      "initialBattery": 198.3333332836628,
+      "finalBattery": 0.0,
+      "minimumBattery": 0.0,
+      "secondsUntilZeroFromFirstSample": 40.33427405031398,
+      "preLfNormalizationSourceSha256": "e724b3fbbed94e883684225e2c28db8e93448c6286b75afa0cae8ce0c3a72c70"
+    },
+    {
+      "run": "improved",
+      "sourceCsv": "Docs/Measurements/Balance/20261003-survival-improved-01/checkpoints/operating-costs-000021994/train-samples.csv",
+      "sourceSha256": "3ce6d91b97af4f2e01751c45da625ea777b9a3689aef3d8b6e601115a705e40d",
+      "window": "First 60 game seconds after first observed charged train sample",
+      "firstGameSeconds": 181.74985561985523,
+      "lastGameSeconds": 241.67499778140336,
+      "samples": 60,
+      "aliveEnemiesAllZero": true,
+      "phaseAllDay": true,
+      "initialBattery": 200.0,
+      "finalBattery": 200.0,
+      "minimumBattery": 200.0,
+      "secondsUntilZeroFromFirstSample": null,
+      "preLfNormalizationSourceSha256": "6a85d35415283c5cdb6a0149c92f3390fc8525f98bcc81902ddaf3e2d5348e82"
+    }
+  ],
+  "interpretation": "Direct idle-charge evidence. Whole-run combat/consumption is not a controlled A/B because construction, layout, duration and service policy differ. Values start at first observed samples, not an assumed exact charge timestamp."
+}

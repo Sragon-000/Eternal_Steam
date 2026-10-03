@@ -1,0 +1,434 @@
+{
+  "run": "20261003-survival-improved-01",
+  "active": true,
+  "lastSampleSequence": 21994,
+  "prefixBytes": 307708669,
+  "prefixSha256": "fe7acff3a6b636057469e451c742113e90cabf169b1315ce9b7019014733de11",
+  "gameSeconds": 3645.54626556905,
+  "day": 8,
+  "phase": "Day",
+  "passed": true,
+  "errors": [],
+  "bases": {
+    "d5cea6c82cc04e2ca6fcf18a94493419": {
+      "definition": "installation.main_base",
+      "building": "6a3c1576597f401bb724a84e39c494c9"
+    },
+    "d3478f2b4e5d4d72b0188459fbdbc462": {
+      "definition": "installation.nexus",
+      "building": "e78895715cf44f3b8b9f059e7a27cc84"
+    },
+    "4db313e3358442e1aab5c6da76aa0155": {
+      "definition": "installation.nexus",
+      "building": "040fc96cd233461a8b611786b116d295"
+    }
+  },
+  "resourceNetByOperation": {
+    "iron:production-output": 5436.0,
+    "coal:production-output": 3617.0,
+    "copper:production-output": 717.0,
+    "titanium:production-output": 358.0,
+    "tungsten:production-output": 179.0,
+    "uranium:production-output": 79.0,
+    "plasma_ore:production-output": 59.0,
+    "nanometal:production-output": 29.0,
+    "iron:withdraw": -2547.0,
+    "coal:withdraw": -350.0,
+    "iron:deposit": 2490.0
+  },
+  "lastStocksByResource": {
+    "coal": 3267.0,
+    "copper": 717.0,
+    "iron": 5379.0,
+    "nanometal": 29.0,
+    "plasma_ore": 59.0,
+    "titanium": 358.0,
+    "tungsten": 179.0,
+    "uranium": 79.0
+  },
+  "lastInventories": [
+    {
+      "baseId": "4db313e3358442e1aab5c6da76aa0155",
+      "stocks": [
+        {
+          "id": "coal",
+          "amount": 0.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "copper",
+          "amount": 0.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "iron",
+          "amount": 0.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "nanometal",
+          "amount": 0.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "plasma_ore",
+          "amount": 0.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "titanium",
+          "amount": 0.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "tungsten",
+          "amount": 0.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "uranium",
+          "amount": 0.0,
+          "capacity": 1000000.0
+        }
+      ]
+    },
+    {
+      "baseId": "d3478f2b4e5d4d72b0188459fbdbc462",
+      "stocks": [
+        {
+          "id": "coal",
+          "amount": 1798.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "copper",
+          "amount": 0.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "iron",
+          "amount": 4278.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "nanometal",
+          "amount": 0.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "plasma_ore",
+          "amount": 0.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "titanium",
+          "amount": 0.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "tungsten",
+          "amount": 0.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "uranium",
+          "amount": 0.0,
+          "capacity": 1000000.0
+        }
+      ]
+    },
+    {
+      "baseId": "d5cea6c82cc04e2ca6fcf18a94493419",
+      "stocks": [
+        {
+          "id": "coal",
+          "amount": 1469.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "copper",
+          "amount": 717.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "iron",
+          "amount": 1101.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "nanometal",
+          "amount": 29.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "plasma_ore",
+          "amount": 59.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "titanium",
+          "amount": 358.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "tungsten",
+          "amount": 179.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "uranium",
+          "amount": 79.0,
+          "capacity": 1000000.0
+        }
+      ]
+    }
+  ],
+  "lastRoutes": [
+    {
+      "route": "960ef087e05742f2b803829b9a18fb69",
+      "name": "노선 1",
+      "error": null,
+      "train": {
+        "status": 2,
+        "stop": 1,
+        "progress": 0.0,
+        "dwell": 8.241607840172946,
+        "cargo": 0.0,
+        "fuel": 20.599999999999994,
+        "serviced": true,
+        "segmentPaid": false,
+        "reverse": false,
+        "waitingForStation": false,
+        "stationEntryReserved": false,
+        "resource": "iron",
+        "armament": {
+          "footprint": {
+            "x": 2,
+            "y": 2
+          },
+          "definition": "defense.arc",
+          "battery": 123.07438367977738,
+          "modules": [
+            {
+              "type": "EternalSteam.WeaponRuntime",
+              "values": [
+                {
+                  "name": "Kinds",
+                  "text": "All",
+                  "vector": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  },
+                  "integers": [],
+                  "longs": []
+                },
+                {
+                  "name": "burstTime",
+                  "text": "0",
+                  "vector": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  },
+                  "integers": [],
+                  "longs": []
+                },
+                {
+                  "name": "cooldown",
+                  "text": "0",
+                  "vector": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  },
+                  "integers": [],
+                  "longs": []
+                },
+                {
+                  "name": "firing",
+                  "text": "True",
+                  "vector": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  },
+                  "integers": [],
+                  "longs": []
+                },
+                {
+                  "name": "tracked",
+                  "text": "0",
+                  "vector": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  },
+                  "integers": [],
+                  "longs": []
+                }
+              ]
+            },
+            {
+              "type": "EternalSteam.PerformanceUpgrade",
+              "values": [
+                {
+                  "name": "Level",
+                  "text": "2",
+                  "vector": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  },
+                  "integers": [],
+                  "longs": []
+                }
+              ]
+            },
+            {
+              "type": "EternalSteam.TurretRotation",
+              "values": [
+                {
+                  "name": "Direction",
+                  "text": "",
+                  "vector": {
+                    "x": 0.7071067690849304,
+                    "y": 0.0,
+                    "z": 0.7071067690849304
+                  },
+                  "integers": [],
+                  "longs": []
+                },
+                {
+                  "name": "multiplier",
+                  "text": "1",
+                  "vector": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  },
+                  "integers": [],
+                  "longs": []
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "trainMetrics": {
+    "960ef087e05742f2b803829b9a18fb69": {
+      "firstSampleSeconds": 181.74985561985523,
+      "initialSampleFuel": 50.0,
+      "initialSampleBattery": 200.0,
+      "samples": 3447,
+      "minFuel": 17.999999999999993,
+      "minBattery": 86.21302001411095,
+      "maxBattery": 200.0,
+      "sampledBatteryDecreases": 335.40038033388555,
+      "sampledBatteryIncreases": 258.47476401366293,
+      "sampledFuelDecreases": 329.4,
+      "sampledFuelIncreases": 300.0,
+      "zeroBatterySamples": 0,
+      "zeroBatteryWithEnemiesSamples": 0,
+      "finalFuel": 20.599999999999994,
+      "finalBattery": 123.07438367977738
+    }
+  },
+  "trainStatusSecondsEstimate": [
+    {
+      "route": "960ef087e05742f2b803829b9a18fb69",
+      "status": 1,
+      "seconds": 1705.496842850931
+    },
+    {
+      "route": "960ef087e05742f2b803829b9a18fb69",
+      "status": 2,
+      "seconds": 1656.7877263305709
+    },
+    {
+      "route": "960ef087e05742f2b803829b9a18fb69",
+      "status": 3,
+      "seconds": 101.51184076769277
+    }
+  ],
+  "netCargoTransfers": [
+    {
+      "route": "960ef087e05742f2b803829b9a18fb69",
+      "resource": "iron",
+      "netLoad": 2490.0,
+      "netUnload": 2490.0
+    }
+  ],
+  "actions": {
+    "run-start": 1,
+    "control-protocol": 1,
+    "upgrade": 28,
+    "build": 60,
+    "railway-route": 1,
+    "railway-hud": 14,
+    "foundation-build": 1,
+    "legacy-towers": 1,
+    "rear-base": 1,
+    "pilot-policy": 1,
+    "phase-change": 14,
+    "stage-change": 2,
+    "pilot-stop-request": 6,
+    "pilot-refuel": 6,
+    "pilot-charge": 6,
+    "pilot-restart": 6,
+    "first-night-improvement-verified": 1,
+    "coverage-probe-start": 1
+  },
+  "powerSamplesByDay": {
+    "1": {
+      "samples": 480,
+      "outsideAreaConsumerSamples": 6,
+      "unsuppliedOperationalConsumerSamples": 3
+    },
+    "2": {
+      "samples": 477,
+      "outsideAreaConsumerSamples": 0,
+      "unsuppliedOperationalConsumerSamples": 0
+    },
+    "3": {
+      "samples": 478,
+      "outsideAreaConsumerSamples": 0,
+      "unsuppliedOperationalConsumerSamples": 0
+    },
+    "4": {
+      "samples": 478,
+      "outsideAreaConsumerSamples": 0,
+      "unsuppliedOperationalConsumerSamples": 0
+    },
+    "5": {
+      "samples": 477,
+      "outsideAreaConsumerSamples": 0,
+      "unsuppliedOperationalConsumerSamples": 0
+    },
+    "6": {
+      "samples": 478,
+      "outsideAreaConsumerSamples": 0,
+      "unsuppliedOperationalConsumerSamples": 0
+    },
+    "7": {
+      "samples": 477,
+      "outsideAreaConsumerSamples": 0,
+      "unsuppliedOperationalConsumerSamples": 0
+    },
+    "8": {
+      "samples": 285,
+      "outsideAreaConsumerSamples": 0,
+      "unsuppliedOperationalConsumerSamples": 0
+    }
+  },
+  "limitations": [
+    "Resource flows are exact recorded changes through the fixed last sample, not a completed-run audit.",
+    "Train fuel/battery sums are sampled net changes and can miss simultaneous consumption/replenishment; use as lower bounds.",
+    "Train status durations hold the previous sampled state; boundaries have approximately one-sample uncertainty.",
+    "Net cargo changes can hide simultaneous loading/unloading. This run uses separate load and unload stops; corroborate with bank ledger.",
+    "Signal/event day differs from spawn-cohort day. Use ID/generation cohort audit for wave kills.",
+    "Editor compile/pause/capture overhead is not a performance benchmark."
+  ]
+}

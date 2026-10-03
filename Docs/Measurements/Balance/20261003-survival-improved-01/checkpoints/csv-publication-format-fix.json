@@ -1,0 +1,30 @@
+{
+  "reason": "git diff --cached --check rejected CRLF as trailing whitespace. Changed exporter to LF and normalized only unpublished derived CSV files.",
+  "rawEvidenceChanged": false,
+  "changes": [
+    {
+      "file": "Docs/Measurements/Balance/20261003-survival-baseline-01/checkpoints/operating-costs-000005894/train-samples.csv",
+      "previousSha256": "e724b3fbbed94e883684225e2c28db8e93448c6286b75afa0cae8ce0c3a72c70",
+      "sha256": "9be357934941237f80d6833e00cb4ce40106ac15de635a008c55770a4006d401",
+      "parsedRowsUnchanged": true
+    },
+    {
+      "file": "Docs/Measurements/Balance/20261003-survival-baseline-01/checkpoints/operating-costs-000005894/resource-flows.csv",
+      "previousSha256": "61aebb03492b41ee631bb50b3b886b01eeb1f1e4bff1a27f39d859d5a4abba83",
+      "sha256": "7f55bb50918c2487755b7ab93a17ee8ff8a8d202492d587adfdc5796c750af6e",
+      "parsedRowsUnchanged": true
+    },
+    {
+      "file": "Docs/Measurements/Balance/20261003-survival-improved-01/checkpoints/operating-costs-000021994/train-samples.csv",
+      "previousSha256": "6a85d35415283c5cdb6a0149c92f3390fc8525f98bcc81902ddaf3e2d5348e82",
+      "sha256": "3ce6d91b97af4f2e01751c45da625ea777b9a3689aef3d8b6e601115a705e40d",
+      "parsedRowsUnchanged": true
+    },
+    {
+      "file": "Docs/Measurements/Balance/20261003-survival-improved-01/checkpoints/operating-costs-000021994/resource-flows.csv",
+      "previousSha256": "83e56664a6d87b06c9029e3894c7d30a167e9e29afbd72c3378ec34bd94529eb",
+      "sha256": "e1eacb0b40befd52568cce32bde69b523df8bded28c0eb315ad45e857da5f269",
+      "parsedRowsUnchanged": true
+    }
+  ]
+}

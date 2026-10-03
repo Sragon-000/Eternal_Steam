@@ -1,0 +1,13 @@
+{
+  "sourcePrefixVerified": true,
+  "resourceTotalsMatchFinalStocks": true,
+  "netCargoMatchesFinalCargo": true,
+  "analysisToolSha256": "3291c29a100999fbf72e2129a88b489c0cfc8c06155509a60ccac28803ada4a4",
+  "files": {
+    "summary.json": "ebe205cd7d6c9f66565015becd4567038bbfe237c2506d5ffc05a705f8af91a7",
+    "train-samples.csv": "3ce6d91b97af4f2e01751c45da625ea777b9a3689aef3d8b6e601115a705e40d",
+    "resource-flows.csv": "e1eacb0b40befd52568cce32bde69b523df8bded28c0eb315ad45e857da5f269"
+  },
+  "csvFormatCorrection": "LF normalization before publication; parsed CSV rows unchanged; raw gameplay JSONL not modified.",
+  "lfExporterToolSha256": "2c095a4a60160c1d7f5bddf90b4b5b7d9159d8d82d180d82103df27d044a4952"
+}
