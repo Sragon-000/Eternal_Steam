@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/VerifyHud08Save.cs",
+      "entry": "VerifyHud08Save.Save"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 42,
+      "executeMs": 169,
+      "assemblyName": "PipelineRunScript_VerifyHud08Save_2fc28c69843941d4a61318280029d3b6",
+      "success": true,
+      "result": "Saved full isolated campaign to disk"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/VerifyHud08Dock.cs",
+      "entry": "VerifyHud08Dock.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 75,
+      "executeMs": 0,
+      "assemblyName": "PipelineRunScript_VerifyHud08Dock_1cb2a2bf7d38436cb20ced139afe2d42",
+      "success": true,
+      "result": "Queued dock matrix"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

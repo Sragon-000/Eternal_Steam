@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/BuildHud06AFixture.cs",
+      "entry": "BuildHud06AFixture.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 728,
+      "executeMs": 318,
+      "assemblyName": "PipelineRunScript_BuildHud06AFixture_8565217adea54d55bd8eeb77e514aae2",
+      "success": true,
+      "result": "Created actual two-base, two-station, five-track shuttle for overview verification"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

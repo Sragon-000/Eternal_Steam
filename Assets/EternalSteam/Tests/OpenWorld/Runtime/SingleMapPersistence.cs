@@ -62,6 +62,7 @@ namespace EternalSteam.OpenWorld
         public bool CanSave(out string reason)
         {
             reason=null;if(Blocked||s.Content.Defeated){reason="패배 또는 복원 오류 상태입니다.";return false;}if(busy){reason="저장/복원 처리 중입니다.";return false;}
+            if(s.RailwayHud?.HasDraft==true){reason="철도 초안을 확정하거나 취소하세요.";return false;}
             var input=s.GetComponent<OpenWorldInput>();if(input.IsEditing||(input.Edits?.Count??0)>0||s.Content.GroundPlacement.Pending.Count>0||s.Foundations.Platforms.Any(p=>p.Placement.Pending.Count>0)){reason="수정 작업을 확정하거나 취소하세요.";return false;}
             if(s.Clock.Phase!=DayPhase.Day){reason="낮에만 안전 저장할 수 있습니다.";return false;}
             if(s.Enemies.Alive>0||s.Assault.BossId>=0||s.Assault.Energy.Stage==MapStage.BossBattle){reason="적 또는 보스와 전투 중입니다.";return false;}

@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/VerifyHud06CLegacy.cs",
+      "entry": "VerifyHud06CLegacy.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 26,
+      "executeMs": 111,
+      "assemblyName": "PipelineRunScript_VerifyHud06CLegacy_1f0897c58e7241009677cf6879fe1e19",
+      "success": true,
+      "result": "PASS legacy controls, error selection and corrected cycle confirmation; error draft left for resolution review"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

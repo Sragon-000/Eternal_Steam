@@ -1,0 +1,1689 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="239" result="Failed(Child)" total="239" passed="231" failed="8" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-02 09:34:57Z" end-time="2026-10-02 09:35:17Z" duration="19.5499696">
+  <test-suite type="TestSuite" id="1348" name="Eternal_Steam" fullname="Eternal_Steam" runstate="Runnable" testcasecount="271" result="Failed" site="Child" start-time="2026-10-02 09:34:57Z" end-time="2026-10-02 09:35:17Z" duration="19.549970" total="239" passed="231" failed="8" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1289" name="EternalSteam.EditModeTests.dll" fullname="/Users/limseth/Projects/Eternal_Steam/Eternal_Steam/Library/ScriptAssemblies/EternalSteam.EditModeTests.dll" runstate="Runnable" testcasecount="239" result="Failed" site="Child" start-time="2026-10-02 09:34:57Z" end-time="2026-10-02 09:35:17Z" duration="19.451147" total="239" passed="231" failed="8" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="48959" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1290" name="EternalSteam" fullname="EternalSteam" runstate="Runnable" testcasecount="239" result="Failed" site="Child" start-time="2026-10-02 09:34:57Z" end-time="2026-10-02 09:35:17Z" duration="19.354837" total="239" passed="231" failed="8" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestSuite" id="1291" name="Tests" fullname="EternalSteam.Tests" runstate="Runnable" testcasecount="239" result="Failed" site="Child" start-time="2026-10-02 09:34:57Z" end-time="2026-10-02 09:35:17Z" duration="19.255531" total="239" passed="231" failed="8" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestFixture" id="1001" name="ArchitectureTests" fullname="EternalSteam.Tests.ArchitectureTests" classname="EternalSteam.Tests.ArchitectureTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-10-02 09:34:57Z" end-time="2026-10-02 09:34:58Z" duration="0.130016" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1003" name="AttackAcceptsIndependentDamageProviderAndUnsubscribesDirectionHandler" fullname="EternalSteam.Tests.ArchitectureTests.AttackAcceptsIndependentDamageProviderAndUnsubscribesDirectionHandler" methodname="AttackAcceptsIndependentDamageProviderAndUnsubscribesDirectionHandler" classname="EternalSteam.Tests.ArchitectureTests" runstate="Runnable" seed="1961219289" result="Passed" start-time="2026-10-02 09:34:57Z" end-time="2026-10-02 09:34:58Z" duration="0.018246" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1005" name="NexusAcceptsReplacementDamageCapabilityAtValidationAndRuntime" fullname="EternalSteam.Tests.ArchitectureTests.NexusAcceptsReplacementDamageCapabilityAtValidationAndRuntime" methodname="NexusAcceptsReplacementDamageCapabilityAtValidationAndRuntime" classname="EternalSteam.Tests.ArchitectureTests" runstate="Runnable" seed="1251635074" result="Passed" start-time="2026-10-02 09:34:58Z" end-time="2026-10-02 09:34:58Z" duration="0.003120" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1002" name="RuntimeAndFeatureAssembliesEnforceOneWayDependencies" fullname="EternalSteam.Tests.ArchitectureTests.RuntimeAndFeatureAssembliesEnforceOneWayDependencies" methodname="RuntimeAndFeatureAssembliesEnforceOneWayDependencies" classname="EternalSteam.Tests.ArchitectureTests" runstate="Runnable" seed="2073045265" result="Passed" start-time="2026-10-02 09:34:58Z" end-time="2026-10-02 09:34:58Z" duration="0.001623" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1004" name="UpgradesUseIndependentLevelPolicyAndHealthReceiver" fullname="EternalSteam.Tests.ArchitectureTests.UpgradesUseIndependentLevelPolicyAndHealthReceiver" methodname="UpgradesUseIndependentLevelPolicyAndHealthReceiver" classname="EternalSteam.Tests.ArchitectureTests" runstate="Runnable" seed="804085601" result="Passed" start-time="2026-10-02 09:34:58Z" end-time="2026-10-02 09:34:58Z" duration="0.001008" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1006" name="BuildAreaCoverageTests" fullname="EternalSteam.Tests.BuildAreaCoverageTests" classname="EternalSteam.Tests.BuildAreaCoverageTests" runstate="Runnable" testcasecount="7" result="Passed" start-time="2026-10-02 09:34:58Z" end-time="2026-10-02 09:34:58Z" duration="0.274017" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1012" name="CircularProviderUsesContainsForEveryWholeCell" fullname="EternalSteam.Tests.BuildAreaCoverageTests.CircularProviderUsesContainsForEveryWholeCell" methodname="CircularProviderUsesContainsForEveryWholeCell" classname="EternalSteam.Tests.BuildAreaCoverageTests" runstate="Runnable" seed="930218759" result="Passed" start-time="2026-10-02 09:34:58Z" end-time="2026-10-02 09:34:58Z" duration="0.014177" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1007" name="ForwardSquareCoversExactly121WholeCellsAndNoRearCells" fullname="EternalSteam.Tests.BuildAreaCoverageTests.ForwardSquareCoversExactly121WholeCellsAndNoRearCells" methodname="ForwardSquareCoversExactly121WholeCellsAndNoRearCells" classname="EternalSteam.Tests.BuildAreaCoverageTests" runstate="Runnable" seed="1195433815" result="Passed" start-time="2026-10-02 09:34:58Z" end-time="2026-10-02 09:34:58Z" duration="0.014798" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1009" name="GrowthDestructionAndOwnerSelectionInvalidateButStationaryQueriesDoNot" fullname="EternalSteam.Tests.BuildAreaCoverageTests.GrowthDestructionAndOwnerSelectionInvalidateButStationaryQueriesDoNot" methodname="GrowthDestructionAndOwnerSelectionInvalidateButStationaryQueriesDoNot" classname="EternalSteam.Tests.BuildAreaCoverageTests" runstate="Runnable" seed="1657506712" result="Passed" start-time="2026-10-02 09:34:58Z" end-time="2026-10-02 09:34:58Z" duration="0.027727" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1010" name="LegacyOutpostSharesOwnersCoverageButNormalModeFiltersIt" fullname="EternalSteam.Tests.BuildAreaCoverageTests.LegacyOutpostSharesOwnersCoverageButNormalModeFiltersIt" methodname="LegacyOutpostSharesOwnersCoverageButNormalModeFiltersIt" classname="EternalSteam.Tests.BuildAreaCoverageTests" runstate="Runnable" seed="1279681445" result="Passed" start-time="2026-10-02 09:34:58Z" end-time="2026-10-02 09:34:58Z" duration="0.039389" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1013" name="LostOwnerInAnotherBaseAreaKeepsOperationButSuspendsItsLedgerAndShowsBothStates" fullname="EternalSteam.Tests.BuildAreaCoverageTests.LostOwnerInAnotherBaseAreaKeepsOperationButSuspendsItsLedgerAndShowsBothStates" methodname="LostOwnerInAnotherBaseAreaKeepsOperationButSuspendsItsLedgerAndShowsBothStates" classname="EternalSteam.Tests.BuildAreaCoverageTests" runstate="Runnable" seed="1166918342" result="Passed" start-time="2026-10-02 09:34:58Z" end-time="2026-10-02 09:34:58Z" duration="0.004570" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1011" name="SelectedLegacyOwnerChangesDisplayUnionWithoutReassigningBuildings" fullname="EternalSteam.Tests.BuildAreaCoverageTests.SelectedLegacyOwnerChangesDisplayUnionWithoutReassigningBuildings" methodname="SelectedLegacyOwnerChangesDisplayUnionWithoutReassigningBuildings" classname="EternalSteam.Tests.BuildAreaCoverageTests" runstate="Runnable" seed="641691830" result="Passed" start-time="2026-10-02 09:34:58Z" end-time="2026-10-02 09:34:58Z" duration="0.000343" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1008" name="UnionDoesNotDuplicateOverlappingProvidersAndPendingProviderDoesNotExpand" fullname="EternalSteam.Tests.BuildAreaCoverageTests.UnionDoesNotDuplicateOverlappingProvidersAndPendingProviderDoesNotExpand" methodname="UnionDoesNotDuplicateOverlappingProvidersAndPendingProviderDoesNotExpand" classname="EternalSteam.Tests.BuildAreaCoverageTests" runstate="Runnable" seed="614147724" result="Passed" start-time="2026-10-02 09:34:58Z" end-time="2026-10-02 09:34:58Z" duration="0.103341" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1014" name="CanvasHierarchyTests" fullname="EternalSteam.Tests.CanvasHierarchyTests" classname="EternalSteam.Tests.CanvasHierarchyTests" runstate="Runnable" testcasecount="16" result="Failed" site="Child" start-time="2026-10-02 09:34:58Z" end-time="2026-10-02 09:35:13Z" duration="14.872610" total="16" passed="14" failed="2" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-suite type="ParameterizedMethod" id="1035" name="RailwayConfirmationAndDiscardAreAuthoredWithPersistentCommands" fullname="EternalSteam.Tests.CanvasHierarchyTests.RailwayConfirmationAndDiscardAreAuthoredWithPersistentCommands" classname="EternalSteam.Tests.CanvasHierarchyTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-02 09:34:58Z" end-time="2026-10-02 09:35:01Z" duration="3.088847" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1033" name="RailwayConfirmationAndDiscardAreAuthoredWithPersistentCommands(&quot;StartRegionSandbox&quot;)" fullname="EternalSteam.Tests.CanvasHierarchyTests.RailwayConfirmationAndDiscardAreAuthoredWithPersistentCommands(&quot;StartRegionSandbox&quot;)" methodname="RailwayConfirmationAndDiscardAreAuthoredWithPersistentCommands" classname="EternalSteam.Tests.CanvasHierarchyTests" runstate="Runnable" seed="1130407182" result="Passed" start-time="2026-10-02 09:34:58Z" end-time="2026-10-02 09:35:01Z" duration="2.805979" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1034" name="RailwayConfirmationAndDiscardAreAuthoredWithPersistentCommands(&quot;OpenWorldSandbox&quot;)" fullname="EternalSteam.Tests.CanvasHierarchyTests.RailwayConfirmationAndDiscardAreAuthoredWithPersistentCommands(&quot;OpenWorldSandbox&quot;)" methodname="RailwayConfirmationAndDiscardAreAuthoredWithPersistentCommands" classname="EternalSteam.Tests.CanvasHierarchyTests" runstate="Runnable" seed="1189408139" result="Passed" start-time="2026-10-02 09:35:01Z" end-time="2026-10-02 09:35:01Z" duration="0.182767" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="ParameterizedMethod" id="1026" name="SavedRailwayDiagnosticsHaveSelectableRows" fullname="EternalSteam.Tests.CanvasHierarchyTests.SavedRailwayDiagnosticsHaveSelectableRows" classname="EternalSteam.Tests.CanvasHierarchyTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-02 09:35:01Z" end-time="2026-10-02 09:35:04Z" duration="2.901043" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1024" name="SavedRailwayDiagnosticsHaveSelectableRows(&quot;StartRegionSandbox&quot;)" fullname="EternalSteam.Tests.CanvasHierarchyTests.SavedRailwayDiagnosticsHaveSelectableRows(&quot;StartRegionSandbox&quot;)" methodname="SavedRailwayDiagnosticsHaveSelectableRows" classname="EternalSteam.Tests.CanvasHierarchyTests" runstate="Runnable" seed="1939665724" result="Passed" start-time="2026-10-02 09:35:01Z" end-time="2026-10-02 09:35:04Z" duration="2.676930" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1025" name="SavedRailwayDiagnosticsHaveSelectableRows(&quot;OpenWorldSandbox&quot;)" fullname="EternalSteam.Tests.CanvasHierarchyTests.SavedRailwayDiagnosticsHaveSelectableRows(&quot;OpenWorldSandbox&quot;)" methodname="SavedRailwayDiagnosticsHaveSelectableRows" classname="EternalSteam.Tests.CanvasHierarchyTests" runstate="Runnable" seed="712494885" result="Passed" start-time="2026-10-02 09:35:04Z" end-time="2026-10-02 09:35:04Z" duration="0.182208" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="ParameterizedMethod" id="1029" name="SavedRailwayMapEditorHasFourPortMarkersAndSegmentRenderer" fullname="EternalSteam.Tests.CanvasHierarchyTests.SavedRailwayMapEditorHasFourPortMarkersAndSegmentRenderer" classname="EternalSteam.Tests.CanvasHierarchyTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-02 09:35:04Z" end-time="2026-10-02 09:35:04Z" duration="0.612567" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1027" name="SavedRailwayMapEditorHasFourPortMarkersAndSegmentRenderer(&quot;StartRegionSandbox&quot;)" fullname="EternalSteam.Tests.CanvasHierarchyTests.SavedRailwayMapEditorHasFourPortMarkersAndSegmentRenderer(&quot;StartRegionSandbox&quot;)" methodname="SavedRailwayMapEditorHasFourPortMarkersAndSegmentRenderer" classname="EternalSteam.Tests.CanvasHierarchyTests" runstate="Runnable" seed="659090102" result="Passed" start-time="2026-10-02 09:35:04Z" end-time="2026-10-02 09:35:04Z" duration="0.564135" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1028" name="SavedRailwayMapEditorHasFourPortMarkersAndSegmentRenderer(&quot;OpenWorldSandbox&quot;)" fullname="EternalSteam.Tests.CanvasHierarchyTests.SavedRailwayMapEditorHasFourPortMarkersAndSegmentRenderer(&quot;OpenWorldSandbox&quot;)" methodname="SavedRailwayMapEditorHasFourPortMarkersAndSegmentRenderer" classname="EternalSteam.Tests.CanvasHierarchyTests" runstate="Runnable" seed="1698109669" result="Passed" start-time="2026-10-02 09:35:04Z" end-time="2026-10-02 09:35:04Z" duration="0.037798" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="ParameterizedMethod" id="1032" name="SavedRailwayOrderEditorHasRowsAndPersistentCommands" fullname="EternalSteam.Tests.CanvasHierarchyTests.SavedRailwayOrderEditorHasRowsAndPersistentCommands" classname="EternalSteam.Tests.CanvasHierarchyTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-02 09:35:04Z" end-time="2026-10-02 09:35:08Z" duration="3.020264" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1030" name="SavedRailwayOrderEditorHasRowsAndPersistentCommands(&quot;StartRegionSandbox&quot;)" fullname="EternalSteam.Tests.CanvasHierarchyTests.SavedRailwayOrderEditorHasRowsAndPersistentCommands(&quot;StartRegionSandbox&quot;)" methodname="SavedRailwayOrderEditorHasRowsAndPersistentCommands" classname="EternalSteam.Tests.CanvasHierarchyTests" runstate="Runnable" seed="178715505" result="Passed" start-time="2026-10-02 09:35:05Z" end-time="2026-10-02 09:35:07Z" duration="2.705283" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1031" name="SavedRailwayOrderEditorHasRowsAndPersistentCommands(&quot;OpenWorldSandbox&quot;)" fullname="EternalSteam.Tests.CanvasHierarchyTests.SavedRailwayOrderEditorHasRowsAndPersistentCommands(&quot;OpenWorldSandbox&quot;)" methodname="SavedRailwayOrderEditorHasRowsAndPersistentCommands" classname="EternalSteam.Tests.CanvasHierarchyTests" runstate="Runnable" seed="765237811" result="Passed" start-time="2026-10-02 09:35:07Z" end-time="2026-10-02 09:35:08Z" duration="0.180432" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="ParameterizedMethod" id="1020" name="SavedRailwayPanelClearsResourcePanel" fullname="EternalSteam.Tests.CanvasHierarchyTests.SavedRailwayPanelClearsResourcePanel" classname="EternalSteam.Tests.CanvasHierarchyTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-02 09:35:08Z" end-time="2026-10-02 09:35:08Z" duration="0.762571" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1018" name="SavedRailwayPanelClearsResourcePanel(&quot;StartRegionSandbox&quot;)" fullname="EternalSteam.Tests.CanvasHierarchyTests.SavedRailwayPanelClearsResourcePanel(&quot;StartRegionSandbox&quot;)" methodname="SavedRailwayPanelClearsResourcePanel" classname="EternalSteam.Tests.CanvasHierarchyTests" runstate="Runnable" seed="568809537" result="Passed" start-time="2026-10-02 09:35:08Z" end-time="2026-10-02 09:35:08Z" duration="0.563648" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1019" name="SavedRailwayPanelClearsResourcePanel(&quot;OpenWorldSandbox&quot;)" fullname="EternalSteam.Tests.CanvasHierarchyTests.SavedRailwayPanelClearsResourcePanel(&quot;OpenWorldSandbox&quot;)" methodname="SavedRailwayPanelClearsResourcePanel" classname="EternalSteam.Tests.CanvasHierarchyTests" runstate="Runnable" seed="307907691" result="Passed" start-time="2026-10-02 09:35:08Z" end-time="2026-10-02 09:35:08Z" duration="0.038375" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="ParameterizedMethod" id="1017" name="SavedResourceColumnsFitLongQuantitiesWithoutOverlap" fullname="EternalSteam.Tests.CanvasHierarchyTests.SavedResourceColumnsFitLongQuantitiesWithoutOverlap" classname="EternalSteam.Tests.CanvasHierarchyTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-02 09:35:08Z" end-time="2026-10-02 09:35:09Z" duration="0.669385" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1015" name="SavedResourceColumnsFitLongQuantitiesWithoutOverlap(&quot;StartRegionSandbox&quot;)" fullname="EternalSteam.Tests.CanvasHierarchyTests.SavedResourceColumnsFitLongQuantitiesWithoutOverlap(&quot;StartRegionSandbox&quot;)" methodname="SavedResourceColumnsFitLongQuantitiesWithoutOverlap" classname="EternalSteam.Tests.CanvasHierarchyTests" runstate="Runnable" seed="941108284" result="Passed" start-time="2026-10-02 09:35:08Z" end-time="2026-10-02 09:35:09Z" duration="0.610625" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1016" name="SavedResourceColumnsFitLongQuantitiesWithoutOverlap(&quot;OpenWorldSandbox&quot;)" fullname="EternalSteam.Tests.CanvasHierarchyTests.SavedResourceColumnsFitLongQuantitiesWithoutOverlap(&quot;OpenWorldSandbox&quot;)" methodname="SavedResourceColumnsFitLongQuantitiesWithoutOverlap" classname="EternalSteam.Tests.CanvasHierarchyTests" runstate="Runnable" seed="548411990" result="Passed" start-time="2026-10-02 09:35:09Z" end-time="2026-10-02 09:35:09Z" duration="0.039681" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="ParameterizedMethod" id="1038" name="SavedSceneOwnsCanvasControlsCallbacksAndConstructionObjects" fullname="EternalSteam.Tests.CanvasHierarchyTests.SavedSceneOwnsCanvasControlsCallbacksAndConstructionObjects" classname="EternalSteam.Tests.CanvasHierarchyTests" runstate="Runnable" testcasecount="2" result="Failed" site="Child" start-time="2026-10-02 09:35:09Z" end-time="2026-10-02 09:35:10Z" duration="0.673723" total="2" passed="0" failed="2" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[One or more child tests had errors]]></message>
+              </failure>
+              <test-case id="1036" name="SavedSceneOwnsCanvasControlsCallbacksAndConstructionObjects(&quot;StartRegionSandbox&quot;)" fullname="EternalSteam.Tests.CanvasHierarchyTests.SavedSceneOwnsCanvasControlsCallbacksAndConstructionObjects(&quot;StartRegionSandbox&quot;)" methodname="SavedSceneOwnsCanvasControlsCallbacksAndConstructionObjects" classname="EternalSteam.Tests.CanvasHierarchyTests" runstate="Runnable" seed="1678699632" result="Failed" label="Error" start-time="2026-10-02 09:35:09Z" end-time="2026-10-02 09:35:10Z" duration="0.607163" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <failure>
+                  <message><![CDATA[System.NullReferenceException : Object reference not set to an instance of an object]]></message>
+                  <stack-trace><![CDATA[  at EternalSteam.Tests.CanvasHierarchyTests.SavedSceneOwnsCanvasControlsCallbacksAndConstructionObjects (System.String name) [0x005d3] in /Users/limseth/Projects/Eternal_Steam/Eternal_Steam/Assets/EternalSteam/Tests/EditMode/CanvasHierarchyTests.cs:135 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <c5eeda5e65d44b388e164c6c5cfe0702>:0 ]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case id="1037" name="SavedSceneOwnsCanvasControlsCallbacksAndConstructionObjects(&quot;OpenWorldSandbox&quot;)" fullname="EternalSteam.Tests.CanvasHierarchyTests.SavedSceneOwnsCanvasControlsCallbacksAndConstructionObjects(&quot;OpenWorldSandbox&quot;)" methodname="SavedSceneOwnsCanvasControlsCallbacksAndConstructionObjects" classname="EternalSteam.Tests.CanvasHierarchyTests" runstate="Runnable" seed="1875965554" result="Failed" label="Error" start-time="2026-10-02 09:35:10Z" end-time="2026-10-02 09:35:10Z" duration="0.052526" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <failure>
+                  <message><![CDATA[System.NullReferenceException : Object reference not set to an instance of an object]]></message>
+                  <stack-trace><![CDATA[  at EternalSteam.Tests.CanvasHierarchyTests.SavedSceneOwnsCanvasControlsCallbacksAndConstructionObjects (System.String name) [0x005d3] in /Users/limseth/Projects/Eternal_Steam/Eternal_Steam/Assets/EternalSteam/Tests/EditMode/CanvasHierarchyTests.cs:135 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <c5eeda5e65d44b388e164c6c5cfe0702>:0 ]]></stack-trace>
+                </failure>
+              </test-case>
+            </test-suite>
+            <test-suite type="ParameterizedMethod" id="1023" name="SavedStationContextHasClickableNamesAndDetailEntry" fullname="EternalSteam.Tests.CanvasHierarchyTests.SavedStationContextHasClickableNamesAndDetailEntry" classname="EternalSteam.Tests.CanvasHierarchyTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-02 09:35:10Z" end-time="2026-10-02 09:35:13Z" duration="3.048655" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1021" name="SavedStationContextHasClickableNamesAndDetailEntry(&quot;StartRegionSandbox&quot;)" fullname="EternalSteam.Tests.CanvasHierarchyTests.SavedStationContextHasClickableNamesAndDetailEntry(&quot;StartRegionSandbox&quot;)" methodname="SavedStationContextHasClickableNamesAndDetailEntry" classname="EternalSteam.Tests.CanvasHierarchyTests" runstate="Runnable" seed="1046462106" result="Passed" start-time="2026-10-02 09:35:10Z" end-time="2026-10-02 09:35:12Z" duration="2.828288" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1022" name="SavedStationContextHasClickableNamesAndDetailEntry(&quot;OpenWorldSandbox&quot;)" fullname="EternalSteam.Tests.CanvasHierarchyTests.SavedStationContextHasClickableNamesAndDetailEntry(&quot;OpenWorldSandbox&quot;)" methodname="SavedStationContextHasClickableNamesAndDetailEntry" classname="EternalSteam.Tests.CanvasHierarchyTests" runstate="Runnable" seed="284846186" result="Passed" start-time="2026-10-02 09:35:12Z" end-time="2026-10-02 09:35:13Z" duration="0.183575" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+          </test-suite>
+          <test-suite type="TestFixture" id="1039" name="ConstructionCostTests" fullname="EternalSteam.Tests.ConstructionCostTests" classname="EternalSteam.Tests.ConstructionCostTests" runstate="Runnable" testcasecount="7" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.023892" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1040" name="ConfiguredTableNeverFallsBackForMissingOrDuplicateEntries" fullname="EternalSteam.Tests.ConstructionCostTests.ConfiguredTableNeverFallsBackForMissingOrDuplicateEntries" methodname="ConfiguredTableNeverFallsBackForMissingOrDuplicateEntries" classname="EternalSteam.Tests.ConstructionCostTests" runstate="Runnable" seed="881757416" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.001010" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1047" name="ConstructionExceptionRestoresAllPayersStocksCapacityAndMode" fullname="EternalSteam.Tests.ConstructionCostTests.ConstructionExceptionRestoresAllPayersStocksCapacityAndMode" methodname="ConstructionExceptionRestoresAllPayersStocksCapacityAndMode" classname="EternalSteam.Tests.ConstructionCostTests" runstate="Runnable" seed="1687406448" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.002388" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1045" name="DuplicateResourceRowsAggregateBeforeAtomicPayment" fullname="EternalSteam.Tests.ConstructionCostTests.DuplicateResourceRowsAggregateBeforeAtomicPayment" methodname="DuplicateResourceRowsAggregateBeforeAtomicPayment" classname="EternalSteam.Tests.ConstructionCostTests" runstate="Runnable" seed="1351182304" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000743" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1046" name="GeneralPreviewAggregatesQuantityAndDetectsLiveShortage" fullname="EternalSteam.Tests.ConstructionCostTests.GeneralPreviewAggregatesQuantityAndDetectsLiveShortage" methodname="GeneralPreviewAggregatesQuantityAndDetectsLiveShortage" classname="EternalSteam.Tests.ConstructionCostTests" runstate="Runnable" seed="278491693" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.004433" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-suite type="ParameterizedMethod" id="1044" name="TableRejectsInvalidCostsEvenWithInfiniteStock" fullname="EternalSteam.Tests.ConstructionCostTests.TableRejectsInvalidCostsEvenWithInfiniteStock" classname="EternalSteam.Tests.ConstructionCostTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.002536" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1041" name="TableRejectsInvalidCostsEvenWithInfiniteStock(double.NaN)" fullname="EternalSteam.Tests.ConstructionCostTests.TableRejectsInvalidCostsEvenWithInfiniteStock(double.NaN)" methodname="TableRejectsInvalidCostsEvenWithInfiniteStock" classname="EternalSteam.Tests.ConstructionCostTests" runstate="Runnable" seed="500835347" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000219" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1042" name="TableRejectsInvalidCostsEvenWithInfiniteStock(double.PositiveInfinity)" fullname="EternalSteam.Tests.ConstructionCostTests.TableRejectsInvalidCostsEvenWithInfiniteStock(double.PositiveInfinity)" methodname="TableRejectsInvalidCostsEvenWithInfiniteStock" classname="EternalSteam.Tests.ConstructionCostTests" runstate="Runnable" seed="620555512" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000057" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1043" name="TableRejectsInvalidCostsEvenWithInfiniteStock(-1)" fullname="EternalSteam.Tests.ConstructionCostTests.TableRejectsInvalidCostsEvenWithInfiniteStock(-1)" methodname="TableRejectsInvalidCostsEvenWithInfiniteStock" classname="EternalSteam.Tests.ConstructionCostTests" runstate="Runnable" seed="1240295061" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000038" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+          </test-suite>
+          <test-suite type="TestFixture" id="1048" name="DefenseCatalogParityTests" fullname="EternalSteam.Tests.DefenseCatalogParityTests" classname="EternalSteam.Tests.DefenseCatalogParityTests" runstate="Runnable" testcasecount="10" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.010551" total="10" passed="10" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1049" name="ActiveCatalogMatchesNineAuthoredDefenseProfiles" fullname="EternalSteam.Tests.DefenseCatalogParityTests.ActiveCatalogMatchesNineAuthoredDefenseProfiles" methodname="ActiveCatalogMatchesNineAuthoredDefenseProfiles" classname="EternalSteam.Tests.DefenseCatalogParityTests" runstate="Runnable" seed="1978845630" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.002412" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-suite type="ParameterizedMethod" id="1059" name="ActiveWeaponAttacksAndUpgradeStateRoundTrips" fullname="EternalSteam.Tests.DefenseCatalogParityTests.ActiveWeaponAttacksAndUpgradeStateRoundTrips" classname="EternalSteam.Tests.DefenseCatalogParityTests" runstate="Runnable" testcasecount="9" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.007572" total="9" passed="9" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1050" name="ActiveDefense_defense.tesla" fullname="EternalSteam.Tests.DefenseCatalogParityTests.ActiveDefense_defense.tesla" methodname="ActiveWeaponAttacksAndUpgradeStateRoundTrips" classname="EternalSteam.Tests.DefenseCatalogParityTests" runstate="Runnable" seed="791704636" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.004548" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1051" name="ActiveDefense_defense.plasma_laser" fullname="EternalSteam.Tests.DefenseCatalogParityTests.ActiveDefense_defense.plasma_laser" methodname="ActiveWeaponAttacksAndUpgradeStateRoundTrips" classname="EternalSteam.Tests.DefenseCatalogParityTests" runstate="Runnable" seed="781022222" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000320" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1052" name="ActiveDefense_defense.vulcan_aa" fullname="EternalSteam.Tests.DefenseCatalogParityTests.ActiveDefense_defense.vulcan_aa" methodname="ActiveWeaponAttacksAndUpgradeStateRoundTrips" classname="EternalSteam.Tests.DefenseCatalogParityTests" runstate="Runnable" seed="1204451871" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000217" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1053" name="ActiveDefense_defense.rail_aa" fullname="EternalSteam.Tests.DefenseCatalogParityTests.ActiveDefense_defense.rail_aa" methodname="ActiveWeaponAttacksAndUpgradeStateRoundTrips" classname="EternalSteam.Tests.DefenseCatalogParityTests" runstate="Runnable" seed="437842804" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000542" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1054" name="ActiveDefense_defense.arc" fullname="EternalSteam.Tests.DefenseCatalogParityTests.ActiveDefense_defense.arc" methodname="ActiveWeaponAttacksAndUpgradeStateRoundTrips" classname="EternalSteam.Tests.DefenseCatalogParityTests" runstate="Runnable" seed="1799646208" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000345" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1055" name="ActiveDefense_defense.railgun" fullname="EternalSteam.Tests.DefenseCatalogParityTests.ActiveDefense_defense.railgun" methodname="ActiveWeaponAttacksAndUpgradeStateRoundTrips" classname="EternalSteam.Tests.DefenseCatalogParityTests" runstate="Runnable" seed="116488241" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000195" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1056" name="ActiveDefense_defense.sky_plasma" fullname="EternalSteam.Tests.DefenseCatalogParityTests.ActiveDefense_defense.sky_plasma" methodname="ActiveWeaponAttacksAndUpgradeStateRoundTrips" classname="EternalSteam.Tests.DefenseCatalogParityTests" runstate="Runnable" seed="1200832345" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000203" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1057" name="ActiveDefense_defense.smart_missile" fullname="EternalSteam.Tests.DefenseCatalogParityTests.ActiveDefense_defense.smart_missile" methodname="ActiveWeaponAttacksAndUpgradeStateRoundTrips" classname="EternalSteam.Tests.DefenseCatalogParityTests" runstate="Runnable" seed="1649499896" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000206" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1058" name="ActiveDefense_defense.emp" fullname="EternalSteam.Tests.DefenseCatalogParityTests.ActiveDefense_defense.emp" methodname="ActiveWeaponAttacksAndUpgradeStateRoundTrips" classname="EternalSteam.Tests.DefenseCatalogParityTests" runstate="Runnable" seed="1998198267" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000176" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+          </test-suite>
+          <test-suite type="TestFixture" id="1060" name="DocumentContractTests" fullname="EternalSteam.Tests.DocumentContractTests" classname="EternalSteam.Tests.DocumentContractTests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.008848" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1066" name="CompatibleFilterChangeRetainsTargetAndIncompatibleChangeClearsIt" fullname="EternalSteam.Tests.DocumentContractTests.CompatibleFilterChangeRetainsTargetAndIncompatibleChangeClearsIt" methodname="CompatibleFilterChangeRetainsTargetAndIncompatibleChangeClearsIt" classname="EternalSteam.Tests.DocumentContractTests" runstate="Runnable" seed="1459819358" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000659" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-suite type="ParameterizedMethod" id="1064" name="CrossWorldCreationFailureKeepsAllReservations" fullname="EternalSteam.Tests.DocumentContractTests.CrossWorldCreationFailureKeepsAllReservations" classname="EternalSteam.Tests.DocumentContractTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.005727" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1062" name="CrossWorldCreationFailureKeepsAllReservations(False)" fullname="EternalSteam.Tests.DocumentContractTests.CrossWorldCreationFailureKeepsAllReservations(False)" methodname="CrossWorldCreationFailureKeepsAllReservations" classname="EternalSteam.Tests.DocumentContractTests" runstate="Runnable" seed="1994331200" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.004080" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1063" name="CrossWorldCreationFailureKeepsAllReservations(True)" fullname="EternalSteam.Tests.DocumentContractTests.CrossWorldCreationFailureKeepsAllReservations(True)" methodname="CrossWorldCreationFailureKeepsAllReservations" classname="EternalSteam.Tests.DocumentContractTests" runstate="Runnable" seed="111482562" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000093" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-case id="1065" name="CrossWorldRevalidationAndRecoveryAreAllOrNothing" fullname="EternalSteam.Tests.DocumentContractTests.CrossWorldRevalidationAndRecoveryAreAllOrNothing" methodname="CrossWorldRevalidationAndRecoveryAreAllOrNothing" classname="EternalSteam.Tests.DocumentContractTests" runstate="Runnable" seed="868539059" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.001128" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1061" name="RotatedGridRoundTripsNegativeCellsAndMulticellCenters" fullname="EternalSteam.Tests.DocumentContractTests.RotatedGridRoundTripsNegativeCellsAndMulticellCenters" methodname="RotatedGridRoundTripsNegativeCellsAndMulticellCenters" classname="EternalSteam.Tests.DocumentContractTests" runstate="Runnable" seed="1597960556" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000749" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1067" name="ExtensionTests" fullname="EternalSteam.Tests.ExtensionTests" classname="EternalSteam.Tests.ExtensionTests" runstate="Runnable" testcasecount="14" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.012634" total="14" passed="14" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1068" name="AreaFiltersAirAndSectorWhileHittingNeighbours" fullname="EternalSteam.Tests.ExtensionTests.AreaFiltersAirAndSectorWhileHittingNeighbours" methodname="AreaFiltersAirAndSectorWhileHittingNeighbours" classname="EternalSteam.Tests.ExtensionTests" runstate="Runnable" seed="1061597237" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000948" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1077" name="BaseProductionAndStorageRestoreIndependentCapacities" fullname="EternalSteam.Tests.ExtensionTests.BaseProductionAndStorageRestoreIndependentCapacities" methodname="BaseProductionAndStorageRestoreIndependentCapacities" classname="EternalSteam.Tests.ExtensionTests" runstate="Runnable" seed="2127773903" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.002392" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1070" name="ChainDoesNotRepeatAndUsesDeterministicNearestHop" fullname="EternalSteam.Tests.ExtensionTests.ChainDoesNotRepeatAndUsesDeterministicNearestHop" methodname="ChainDoesNotRepeatAndUsesDeterministicNearestHop" classname="EternalSteam.Tests.ExtensionTests" runstate="Runnable" seed="356529584" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000859" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1081" name="FailedBatchRollsBackNexusStorageAndObstacleRegistration" fullname="EternalSteam.Tests.ExtensionTests.FailedBatchRollsBackNexusStorageAndObstacleRegistration" methodname="FailedBatchRollsBackNexusStorageAndObstacleRegistration" classname="EternalSteam.Tests.ExtensionTests" runstate="Runnable" seed="2067770608" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.001011" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1080" name="MissingReferencesAndNexusCompositionAreRejected" fullname="EternalSteam.Tests.ExtensionTests.MissingReferencesAndNexusCompositionAreRejected" methodname="MissingReferencesAndNexusCompositionAreRejected" classname="EternalSteam.Tests.ExtensionTests" runstate="Runnable" seed="611411966" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000640" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1075" name="NexusLossImmediatelyEndsSessionAndUnsubscribesOnDispose" fullname="EternalSteam.Tests.ExtensionTests.NexusLossImmediatelyEndsSessionAndUnsubscribesOnDispose" methodname="NexusLossImmediatelyEndsSessionAndUnsubscribesOnDispose" classname="EternalSteam.Tests.ExtensionTests" runstate="Runnable" seed="803968220" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000895" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1074" name="NexusUnlocksUpgradesAndDestructionSignalsOnceButDisposalDoesNot" fullname="EternalSteam.Tests.ExtensionTests.NexusUnlocksUpgradesAndDestructionSignalsOnceButDisposalDoesNot" methodname="NexusUnlocksUpgradesAndDestructionSignalsOnceButDisposalDoesNot" classname="EternalSteam.Tests.ExtensionTests" runstate="Runnable" seed="1709734636" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000336" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1069" name="PiercingUsesOrderedWidthLimitedHits" fullname="EternalSteam.Tests.ExtensionTests.PiercingUsesOrderedWidthLimitedHits" methodname="PiercingUsesOrderedWidthLimitedHits" classname="EternalSteam.Tests.ExtensionTests" runstate="Runnable" seed="1260235567" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000687" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1076" name="ProductionWaitsForStorageAndConversionIsAtomic" fullname="EternalSteam.Tests.ExtensionTests.ProductionWaitsForStorageAndConversionIsAtomic" methodname="ProductionWaitsForStorageAndConversionIsAtomic" classname="EternalSteam.Tests.ExtensionTests" runstate="Runnable" seed="695284519" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000181" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1072" name="ProjectileCannotHitReusedSlotAndDisposeCancelsFlights" fullname="EternalSteam.Tests.ExtensionTests.ProjectileCannotHitReusedSlotAndDisposeCancelsFlights" methodname="ProjectileCannotHitReusedSlotAndDisposeCancelsFlights" classname="EternalSteam.Tests.ExtensionTests" runstate="Runnable" seed="1848760185" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000728" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1071" name="ProjectileDelaysDamageAndFollowsBeyondRange" fullname="EternalSteam.Tests.ExtensionTests.ProjectileDelaysDamageAndFollowsBeyondRange" methodname="ProjectileDelaysDamageAndFollowsBeyondRange" classname="EternalSteam.Tests.ExtensionTests" runstate="Runnable" seed="355530702" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000208" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1078" name="ReloadRebuildsStorageCapacityAndPreservesOverflowAfterRemoval" fullname="EternalSteam.Tests.ExtensionTests.ReloadRebuildsStorageCapacityAndPreservesOverflowAfterRemoval" methodname="ReloadRebuildsStorageCapacityAndPreservesOverflowAfterRemoval" classname="EternalSteam.Tests.ExtensionTests" runstate="Runnable" seed="1924417682" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000460" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1079" name="RemovingOptionalModulesRemovesDependenciesAndMovementRegistration" fullname="EternalSteam.Tests.ExtensionTests.RemovingOptionalModulesRemovesDependenciesAndMovementRegistration" methodname="RemovingOptionalModulesRemovesDependenciesAndMovementRegistration" classname="EternalSteam.Tests.ExtensionTests" runstate="Runnable" seed="10431457" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000250" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1073" name="StatusDurationsAreIndependentAndSettingsAreCopied" fullname="EternalSteam.Tests.ExtensionTests.StatusDurationsAreIndependentAndSettingsAreCopied" methodname="StatusDurationsAreIndependentAndSettingsAreCopied" classname="EternalSteam.Tests.ExtensionTests" runstate="Runnable" seed="1662025499" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000660" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1082" name="FoundationTests" fullname="EternalSteam.Tests.FoundationTests" classname="EternalSteam.Tests.FoundationTests" runstate="Runnable" testcasecount="14" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.009253" total="14" passed="14" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1091" name="DefinitionsDoNotShareRuntimeStateOrLiveSettings" fullname="EternalSteam.Tests.FoundationTests.DefinitionsDoNotShareRuntimeStateOrLiveSettings" methodname="DefinitionsDoNotShareRuntimeStateOrLiveSettings" classname="EternalSteam.Tests.FoundationTests" runstate="Runnable" seed="940997181" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000869" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1096" name="DirectionEditIsTransactionalAndPhasePolicyGuardsCommands" fullname="EternalSteam.Tests.FoundationTests.DirectionEditIsTransactionalAndPhasePolicyGuardsCommands" methodname="DirectionEditIsTransactionalAndPhasePolicyGuardsCommands" classname="EternalSteam.Tests.FoundationTests" runstate="Runnable" seed="1532660275" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.001007" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-suite type="ParameterizedMethod" id="1088" name="FactoryFailureRollsBackWithoutLosingPendingWork" fullname="EternalSteam.Tests.FoundationTests.FactoryFailureRollsBackWithoutLosingPendingWork" classname="EternalSteam.Tests.FoundationTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.001859" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1086" name="FactoryFailureRollsBackWithoutLosingPendingWork(False)" fullname="EternalSteam.Tests.FoundationTests.FactoryFailureRollsBackWithoutLosingPendingWork(False)" methodname="FactoryFailureRollsBackWithoutLosingPendingWork" classname="EternalSteam.Tests.FoundationTests" runstate="Runnable" seed="1165111095" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000356" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1087" name="FactoryFailureRollsBackWithoutLosingPendingWork(True)" fullname="EternalSteam.Tests.FoundationTests.FactoryFailureRollsBackWithoutLosingPendingWork(True)" methodname="FactoryFailureRollsBackWithoutLosingPendingWork" classname="EternalSteam.Tests.FoundationTests" runstate="Runnable" seed="912702830" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000077" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-case id="1097" name="ModuleRemovalAndCatalogValidation" fullname="EternalSteam.Tests.FoundationTests.ModuleRemovalAndCatalogValidation" methodname="ModuleRemovalAndCatalogValidation" classname="EternalSteam.Tests.FoundationTests" runstate="Runnable" seed="1258304682" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000573" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1083" name="MultiCellBoundsAndCenter" fullname="EternalSteam.Tests.FoundationTests.MultiCellBoundsAndCenter" methodname="MultiCellBoundsAndCenter" classname="EternalSteam.Tests.FoundationTests" runstate="Runnable" seed="1709397366" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000435" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1090" name="NonRecoverableAndDestroyedBuildings" fullname="EternalSteam.Tests.FoundationTests.NonRecoverableAndDestroyedBuildings" methodname="NonRecoverableAndDestroyedBuildings" classname="EternalSteam.Tests.FoundationTests" runstate="Runnable" seed="2080155553" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000173" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1089" name="RecoveryPreservesActivityUntilCommitAndBlocksStaleBatch" fullname="EternalSteam.Tests.FoundationTests.RecoveryPreservesActivityUntilCommitAndBlocksStaleBatch" methodname="RecoveryPreservesActivityUntilCommitAndBlocksStaleBatch" classname="EternalSteam.Tests.FoundationTests" runstate="Runnable" seed="495690357" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000325" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1093" name="RecycledSlotCannotResolveOldHandle" fullname="EternalSteam.Tests.FoundationTests.RecycledSlotCannotResolveOldHandle" methodname="RecycledSlotCannotResolveOldHandle" classname="EternalSteam.Tests.FoundationTests" runstate="Runnable" seed="1432904977" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000126" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1084" name="ReservationsSurviveSelectionAndFailedMove" fullname="EternalSteam.Tests.FoundationTests.ReservationsSurviveSelectionAndFailedMove" methodname="ReservationsSurviveSelectionAndFailedMove" classname="EternalSteam.Tests.FoundationTests" runstate="Runnable" seed="113518985" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000411" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1085" name="RevalidationRejectsWholeBatchAndKeepsReservations" fullname="EternalSteam.Tests.FoundationTests.RevalidationRejectsWholeBatchAndKeepsReservations" methodname="RevalidationRejectsWholeBatchAndKeepsReservations" classname="EternalSteam.Tests.FoundationTests" runstate="Runnable" seed="865414233" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000182" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1094" name="SectorIncludesBoundariesAndIgnoresHeight" fullname="EternalSteam.Tests.FoundationTests.SectorIncludesBoundariesAndIgnoresHeight" methodname="SectorIncludesBoundariesAndIgnoresHeight" classname="EternalSteam.Tests.FoundationTests" runstate="Runnable" seed="128714451" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000205" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1095" name="TargetKindsAndEqualDistanceTieBreak" fullname="EternalSteam.Tests.FoundationTests.TargetKindsAndEqualDistanceTieBreak" methodname="TargetKindsAndEqualDistanceTieBreak" classname="EternalSteam.Tests.FoundationTests" runstate="Runnable" seed="198885590" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000264" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1092" name="TargetLockRetainsCloserArrivalAndReacquiresOnRemoval" fullname="EternalSteam.Tests.FoundationTests.TargetLockRetainsCloserArrivalAndReacquiresOnRemoval" methodname="TargetLockRetainsCloserArrivalAndReacquiresOnRemoval" classname="EternalSteam.Tests.FoundationTests" runstate="Runnable" seed="1704600859" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000201" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1098" name="HudLayoutTests" fullname="EternalSteam.Tests.HudLayoutTests" classname="EternalSteam.Tests.HudLayoutTests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.048817" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1103" name="FoldingCatalogPreservesChosenEntryAndCategory" fullname="EternalSteam.Tests.HudLayoutTests.FoldingCatalogPreservesChosenEntryAndCategory" methodname="FoldingCatalogPreservesChosenEntryAndCategory" classname="EternalSteam.Tests.HudLayoutTests" runstate="Runnable" seed="1418875183" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.044000" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1099" name="PlayerPanelsAreIndependentOfDeveloperPanel" fullname="EternalSteam.Tests.HudLayoutTests.PlayerPanelsAreIndependentOfDeveloperPanel" methodname="PlayerPanelsAreIndependentOfDeveloperPanel" classname="EternalSteam.Tests.HudLayoutTests" runstate="Runnable" seed="818560643" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.001390" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1101" name="PriorityCanExpandAndHiddenStockUpdatesAreNotLost" fullname="EternalSteam.Tests.HudLayoutTests.PriorityCanExpandAndHiddenStockUpdatesAreNotLost" methodname="PriorityCanExpandAndHiddenStockUpdatesAreNotLost" classname="EternalSteam.Tests.HudLayoutTests" runstate="Runnable" seed="892748378" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.001029" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1102" name="UnknownPriorityFallsBackToEntireCatalog" fullname="EternalSteam.Tests.HudLayoutTests.UnknownPriorityFallsBackToEntireCatalog" methodname="UnknownPriorityFallsBackToEntireCatalog" classname="EternalSteam.Tests.HudLayoutTests" runstate="Runnable" seed="827893485" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000332" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1100" name="ZeroStockAndDuplicateProductionIdsRemainAccessibleWithoutPriority" fullname="EternalSteam.Tests.HudLayoutTests.ZeroStockAndDuplicateProductionIdsRemainAccessibleWithoutPriority" methodname="ZeroStockAndDuplicateProductionIdsRemainAccessibleWithoutPriority" classname="EternalSteam.Tests.HudLayoutTests" runstate="Runnable" seed="588803856" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000134" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1104" name="HudModeGroupsTests" fullname="EternalSteam.Tests.HudModeGroupsTests" classname="EternalSteam.Tests.HudModeGroupsTests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.645713" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="ParameterizedMethod" id="1111" name="LocalMapRetainsViewCenterAndRoundTrips" fullname="EternalSteam.Tests.HudModeGroupsTests.LocalMapRetainsViewCenterAndRoundTrips" classname="EternalSteam.Tests.HudModeGroupsTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.001114" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1108" name="LocalMapRetainsViewCenterAndRoundTrips(0,0)" fullname="EternalSteam.Tests.HudModeGroupsTests.LocalMapRetainsViewCenterAndRoundTrips(0,0)" methodname="LocalMapRetainsViewCenterAndRoundTrips" classname="EternalSteam.Tests.HudModeGroupsTests" runstate="Runnable" seed="1513698274" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000587" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1109" name="LocalMapRetainsViewCenterAndRoundTrips(250,250)" fullname="EternalSteam.Tests.HudModeGroupsTests.LocalMapRetainsViewCenterAndRoundTrips(250,250)" methodname="LocalMapRetainsViewCenterAndRoundTrips" classname="EternalSteam.Tests.HudModeGroupsTests" runstate="Runnable" seed="33187799" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000026" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1110" name="LocalMapRetainsViewCenterAndRoundTrips(-300,700)" fullname="EternalSteam.Tests.HudModeGroupsTests.LocalMapRetainsViewCenterAndRoundTrips(-300,700)" methodname="LocalMapRetainsViewCenterAndRoundTrips" classname="EternalSteam.Tests.HudModeGroupsTests" runstate="Runnable" seed="1375414242" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000020" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="ParameterizedMethod" id="1107" name="SavedGroupsKeepControlsAndReverseWithoutRebuilding" fullname="EternalSteam.Tests.HudModeGroupsTests.SavedGroupsKeepControlsAndReverseWithoutRebuilding" classname="EternalSteam.Tests.HudModeGroupsTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.626988" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1105" name="SavedGroupsKeepControlsAndReverseWithoutRebuilding(&quot;StartRegionSandbox&quot;)" fullname="EternalSteam.Tests.HudModeGroupsTests.SavedGroupsKeepControlsAndReverseWithoutRebuilding(&quot;StartRegionSandbox&quot;)" methodname="SavedGroupsKeepControlsAndReverseWithoutRebuilding" classname="EternalSteam.Tests.HudModeGroupsTests" runstate="Runnable" seed="880488801" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.583508" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1106" name="SavedGroupsKeepControlsAndReverseWithoutRebuilding(&quot;OpenWorldSandbox&quot;)" fullname="EternalSteam.Tests.HudModeGroupsTests.SavedGroupsKeepControlsAndReverseWithoutRebuilding(&quot;OpenWorldSandbox&quot;)" methodname="SavedGroupsKeepControlsAndReverseWithoutRebuilding" classname="EternalSteam.Tests.HudModeGroupsTests" runstate="Runnable" seed="959247727" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.042971" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+          </test-suite>
+          <test-suite type="TestFixture" id="1112" name="MapAssaultBoundaryTests" fullname="EternalSteam.Tests.MapAssaultBoundaryTests" classname="EternalSteam.Tests.MapAssaultBoundaryTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.008349" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1113" name="BossAndFixedWaveSpawnAreasMustBeDistinct" fullname="EternalSteam.Tests.MapAssaultBoundaryTests.BossAndFixedWaveSpawnAreasMustBeDistinct" methodname="BossAndFixedWaveSpawnAreasMustBeDistinct" classname="EternalSteam.Tests.MapAssaultBoundaryTests" runstate="Runnable" seed="967203961" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.001560" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1114" name="FixedBossWavePointsReplaceUnsafeLocationAndReturnWithoutChangingBudget" fullname="EternalSteam.Tests.MapAssaultBoundaryTests.FixedBossWavePointsReplaceUnsafeLocationAndReturnWithoutChangingBudget" methodname="FixedBossWavePointsReplaceUnsafeLocationAndReturnWithoutChangingBudget" classname="EternalSteam.Tests.MapAssaultBoundaryTests" runstate="Runnable" seed="777940549" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.001851" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1115" name="ThresholdUsesExactEnergyAndBossRewardIsPaidOnce" fullname="EternalSteam.Tests.MapAssaultBoundaryTests.ThresholdUsesExactEnergyAndBossRewardIsPaidOnce" methodname="ThresholdUsesExactEnergyAndBossRewardIsPaidOnce" classname="EternalSteam.Tests.MapAssaultBoundaryTests" runstate="Runnable" seed="1010217444" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000409" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1116" name="MapClearEnemyTests" fullname="EternalSteam.Tests.MapClearEnemyTests" classname="EternalSteam.Tests.MapClearEnemyTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.002055" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1117" name="ClearDespawnsWithoutRewardsOrEscapeDamageAndSlotsCanBeReused" fullname="EternalSteam.Tests.MapClearEnemyTests.ClearDespawnsWithoutRewardsOrEscapeDamageAndSlotsCanBeReused" methodname="ClearDespawnsWithoutRewardsOrEscapeDamageAndSlotsCanBeReused" classname="EternalSteam.Tests.MapClearEnemyTests" runstate="Runnable" seed="668957225" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.001329" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1118" name="RailConnectionTransactionTests" fullname="EternalSteam.Tests.RailConnectionTransactionTests" classname="EternalSteam.Tests.RailConnectionTransactionTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.002430" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="ParameterizedMethod" id="1121" name="ConnectionFailureRollsBackBuildingsAndCostButKeepsReservations" fullname="EternalSteam.Tests.RailConnectionTransactionTests.ConnectionFailureRollsBackBuildingsAndCostButKeepsReservations" classname="EternalSteam.Tests.RailConnectionTransactionTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.001430" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1119" name="ConnectionFailureRollsBackBuildingsAndCostButKeepsReservations(False)" fullname="EternalSteam.Tests.RailConnectionTransactionTests.ConnectionFailureRollsBackBuildingsAndCostButKeepsReservations(False)" methodname="ConnectionFailureRollsBackBuildingsAndCostButKeepsReservations" classname="EternalSteam.Tests.RailConnectionTransactionTests" runstate="Runnable" seed="1664515154" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000924" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1120" name="ConnectionFailureRollsBackBuildingsAndCostButKeepsReservations(True)" fullname="EternalSteam.Tests.RailConnectionTransactionTests.ConnectionFailureRollsBackBuildingsAndCostButKeepsReservations(True)" methodname="ConnectionFailureRollsBackBuildingsAndCostButKeepsReservations" classname="EternalSteam.Tests.RailConnectionTransactionTests" runstate="Runnable" seed="1108161824" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000086" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+          </test-suite>
+          <test-suite type="TestFixture" id="1122" name="RailPathPlannerTests" fullname="EternalSteam.Tests.RailPathPlannerTests" classname="EternalSteam.Tests.RailPathPlannerTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.013915" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1125" name="BlockedAndSearchLimitAndCancellationAreDistinct" fullname="EternalSteam.Tests.RailPathPlannerTests.BlockedAndSearchLimitAndCancellationAreDistinct" methodname="BlockedAndSearchLimitAndCancellationAreDistinct" classname="EternalSteam.Tests.RailPathPlannerTests" runstate="Runnable" seed="946744502" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.003660" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1126" name="DetourRemainsContiguousAndNeverRepeatsCell" fullname="EternalSteam.Tests.RailPathPlannerTests.DetourRemainsContiguousAndNeverRepeatsCell" methodname="DetourRemainsContiguousAndNeverRepeatsCell" classname="EternalSteam.Tests.RailPathPlannerTests" runstate="Runnable" seed="757822375" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.001211" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1123" name="FiveHundredSquareSearchIsBoundedAndDeterministic" fullname="EternalSteam.Tests.RailPathPlannerTests.FiveHundredSquareSearchIsBoundedAndDeterministic" methodname="FiveHundredSquareSearchIsBoundedAndDeterministic" classname="EternalSteam.Tests.RailPathPlannerTests" runstate="Runnable" seed="1448588774" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.006589" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1124" name="ReuseWinsOverShorterAllNewPath" fullname="EternalSteam.Tests.RailPathPlannerTests.ReuseWinsOverShorterAllNewPath" methodname="ReuseWinsOverShorterAllNewPath" classname="EternalSteam.Tests.RailPathPlannerTests" runstate="Runnable" seed="1456193565" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000472" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1158" name="RailwayEconomyTests" fullname="EternalSteam.Tests.RailwayEconomyTests" classname="EternalSteam.Tests.RailwayEconomyTests" runstate="Runnable" testcasecount="13" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.004081" total="13" passed="13" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1165" name="FailedInstallAndAggregatedCostsDoNotPartiallyCharge" fullname="EternalSteam.Tests.RailwayEconomyTests.FailedInstallAndAggregatedCostsDoNotPartiallyCharge" methodname="FailedInstallAndAggregatedCostsDoNotPartiallyCharge" classname="EternalSteam.Tests.RailwayEconomyTests" runstate="Runnable" seed="1103270154" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000433" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1166" name="FailedMultiBaseInstallRestoresReservedStocksAndCapacity" fullname="EternalSteam.Tests.RailwayEconomyTests.FailedMultiBaseInstallRestoresReservedStocksAndCapacity" methodname="FailedMultiBaseInstallRestoresReservedStocksAndCapacity" classname="EternalSteam.Tests.RailwayEconomyTests" runstate="Runnable" seed="635164438" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000159" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1162" name="InfiniteConstructionStillRequiresSuccessfulPlacement" fullname="EternalSteam.Tests.RailwayEconomyTests.InfiniteConstructionStillRequiresSuccessfulPlacement" methodname="InfiniteConstructionStillRequiresSuccessfulPlacement" classname="EternalSteam.Tests.RailwayEconomyTests" runstate="Runnable" seed="25014124" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000133" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1161" name="InfiniteResourcesAppliesToNewAndRestoredBaseLedgers" fullname="EternalSteam.Tests.RailwayEconomyTests.InfiniteResourcesAppliesToNewAndRestoredBaseLedgers" methodname="InfiniteResourcesAppliesToNewAndRestoredBaseLedgers" classname="EternalSteam.Tests.RailwayEconomyTests" runstate="Runnable" seed="2036452170" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000235" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1160" name="InfiniteResourcesStillValidatesCostsCommitAndCapacity" fullname="EternalSteam.Tests.RailwayEconomyTests.InfiniteResourcesStillValidatesCostsCommitAndCapacity" methodname="InfiniteResourcesStillValidatesCostsCommitAndCapacity" classname="EternalSteam.Tests.RailwayEconomyTests" runstate="Runnable" seed="611384843" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000273" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1159" name="InfiniteResourcesTogglePreservesStockAndRestoresCharging" fullname="EternalSteam.Tests.RailwayEconomyTests.InfiniteResourcesTogglePreservesStockAndRestoresCharging" methodname="InfiniteResourcesTogglePreservesStockAndRestoresCharging" classname="EternalSteam.Tests.RailwayEconomyTests" runstate="Runnable" seed="1402041424" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000168" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-suite type="ParameterizedMethod" id="1171" name="InvalidTransfersLeaveStockUnchanged" fullname="EternalSteam.Tests.RailwayEconomyTests.InvalidTransfersLeaveStockUnchanged" classname="EternalSteam.Tests.RailwayEconomyTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000507" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1168" name="InvalidTransfersLeaveStockUnchanged(double.NaN)" fullname="EternalSteam.Tests.RailwayEconomyTests.InvalidTransfersLeaveStockUnchanged(double.NaN)" methodname="InvalidTransfersLeaveStockUnchanged" classname="EternalSteam.Tests.RailwayEconomyTests" runstate="Runnable" seed="1003531126" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000067" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1169" name="InvalidTransfersLeaveStockUnchanged(double.PositiveInfinity)" fullname="EternalSteam.Tests.RailwayEconomyTests.InvalidTransfersLeaveStockUnchanged(double.PositiveInfinity)" methodname="InvalidTransfersLeaveStockUnchanged" classname="EternalSteam.Tests.RailwayEconomyTests" runstate="Runnable" seed="620853391" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000023" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1170" name="InvalidTransfersLeaveStockUnchanged(-1)" fullname="EternalSteam.Tests.RailwayEconomyTests.InvalidTransfersLeaveStockUnchanged(-1)" methodname="InvalidTransfersLeaveStockUnchanged" classname="EternalSteam.Tests.RailwayEconomyTests" runstate="Runnable" seed="1573350249" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000022" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-case id="1164" name="MultiBasePurchaseFailureChargesNeitherBase" fullname="EternalSteam.Tests.RailwayEconomyTests.MultiBasePurchaseFailureChargesNeitherBase" methodname="MultiBasePurchaseFailureChargesNeitherBase" classname="EternalSteam.Tests.RailwayEconomyTests" runstate="Runnable" seed="109471929" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000109" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1167" name="OverCapacityStockIsPreservedAndRejectsNewDeliveries" fullname="EternalSteam.Tests.RailwayEconomyTests.OverCapacityStockIsPreservedAndRejectsNewDeliveries" methodname="OverCapacityStockIsPreservedAndRejectsNewDeliveries" classname="EternalSteam.Tests.RailwayEconomyTests" runstate="Runnable" seed="1197912379" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000072" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1172" name="RestoreValidatesBeforeReplacingLedgers" fullname="EternalSteam.Tests.RailwayEconomyTests.RestoreValidatesBeforeReplacingLedgers" methodname="RestoreValidatesBeforeReplacingLedgers" classname="EternalSteam.Tests.RailwayEconomyTests" runstate="Runnable" seed="609488658" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000219" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1163" name="SeparateBaseLedgersNeverShareOrCopyBalances" fullname="EternalSteam.Tests.RailwayEconomyTests.SeparateBaseLedgersNeverShareOrCopyBalances" methodname="SeparateBaseLedgersNeverShareOrCopyBalances" classname="EternalSteam.Tests.RailwayEconomyTests" runstate="Runnable" seed="403027448" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000152" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1127" name="RailwayMigrationTests" fullname="EternalSteam.Tests.RailwayMigrationTests" classname="EternalSteam.Tests.RailwayMigrationTests" runstate="Runnable" testcasecount="7" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.019705" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1129" name="ArchiveFailureLeavesOriginalReadable" fullname="EternalSteam.Tests.RailwayMigrationTests.ArchiveFailureLeavesOriginalReadable" methodname="ArchiveFailureLeavesOriginalReadable" classname="EternalSteam.Tests.RailwayMigrationTests" runstate="Runnable" seed="464480009" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.003155" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1134" name="CorruptOrFailedOlderSlotsAreNotAdvertisedAsAvailableProgress" fullname="EternalSteam.Tests.RailwayMigrationTests.CorruptOrFailedOlderSlotsAreNotAdvertisedAsAvailableProgress" methodname="CorruptOrFailedOlderSlotsAreNotAdvertisedAsAvailableProgress" classname="EternalSteam.Tests.RailwayMigrationTests" runstate="Runnable" seed="1602352032" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.003363" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1130" name="FailedRunCannotBeRevivedByMigrationOrBackup" fullname="EternalSteam.Tests.RailwayMigrationTests.FailedRunCannotBeRevivedByMigrationOrBackup" methodname="FailedRunCannotBeRevivedByMigrationOrBackup" classname="EternalSteam.Tests.RailwayMigrationTests" runstate="Runnable" seed="1813880192" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.002844" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1128" name="InterruptedWriteAndArchiveRetryKeepOriginalUntilSuccessfulCommit" fullname="EternalSteam.Tests.RailwayMigrationTests.InterruptedWriteAndArchiveRetryKeepOriginalUntilSuccessfulCommit" methodname="InterruptedWriteAndArchiveRetryKeepOriginalUntilSuccessfulCommit" classname="EternalSteam.Tests.RailwayMigrationTests" runstate="Runnable" seed="1466806281" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.002684" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1133" name="OlderMapSlotsAreReportedWithoutReadingArchivesOrChangingSaves" fullname="EternalSteam.Tests.RailwayMigrationTests.OlderMapSlotsAreReportedWithoutReadingArchivesOrChangingSaves" methodname="OlderMapSlotsAreReportedWithoutReadingArchivesOrChangingSaves" classname="EternalSteam.Tests.RailwayMigrationTests" runstate="Runnable" seed="1915045545" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.004942" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1131" name="V1StockMovesToMainOnceWithoutClippingOverflowOrCreditingSubBase" fullname="EternalSteam.Tests.RailwayMigrationTests.V1StockMovesToMainOnceWithoutClippingOverflowOrCreditingSubBase" methodname="V1StockMovesToMainOnceWithoutClippingOverflowOrCreditingSubBase" classname="EternalSteam.Tests.RailwayMigrationTests" runstate="Runnable" seed="653279855" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.001468" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1132" name="V1StockRejectsAmbiguousBaseOrResourceMapping" fullname="EternalSteam.Tests.RailwayMigrationTests.V1StockRejectsAmbiguousBaseOrResourceMapping" methodname="V1StockRejectsAmbiguousBaseOrResourceMapping" classname="EternalSteam.Tests.RailwayMigrationTests" runstate="Runnable" seed="1965131996" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000235" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1135" name="RailwayShuttleTests" fullname="EternalSteam.Tests.RailwayShuttleTests" classname="EternalSteam.Tests.RailwayShuttleTests" runstate="Runnable" testcasecount="22" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:14Z" duration="0.033369" total="22" passed="22" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1139" name="CorruptGraphIdentityAndDuplicateSocketsRejectBeforeReplacingLiveRoutes" fullname="EternalSteam.Tests.RailwayShuttleTests.CorruptGraphIdentityAndDuplicateSocketsRejectBeforeReplacingLiveRoutes" methodname="CorruptGraphIdentityAndDuplicateSocketsRejectBeforeReplacingLiveRoutes" classname="EternalSteam.Tests.RailwayShuttleTests" runstate="Runnable" seed="1427111429" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.014656" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1144" name="CorruptSlotOwnershipRejectedWithoutChangingLiveNetwork" fullname="EternalSteam.Tests.RailwayShuttleTests.CorruptSlotOwnershipRejectedWithoutChangingLiveNetwork" methodname="CorruptSlotOwnershipRejectedWithoutChangingLiveNetwork" classname="EternalSteam.Tests.RailwayShuttleTests" runstate="Runnable" seed="1851052661" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.002862" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1147" name="EntryReservationSurvivesReloadBeforeArrivalAndProtectsStation" fullname="EternalSteam.Tests.RailwayShuttleTests.EntryReservationSurvivesReloadBeforeArrivalAndProtectsStation" methodname="EntryReservationSurvivesReloadBeforeArrivalAndProtectsStation" classname="EternalSteam.Tests.RailwayShuttleTests" runstate="Runnable" seed="380952607" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.001370" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1137" name="ExplicitConnectionCanRegisterBeforeAnyRouteWithoutChargingOrCreatingTrain" fullname="EternalSteam.Tests.RailwayShuttleTests.ExplicitConnectionCanRegisterBeforeAnyRouteWithoutChargingOrCreatingTrain" methodname="ExplicitConnectionCanRegisterBeforeAnyRouteWithoutChargingOrCreatingTrain" classname="EternalSteam.Tests.RailwayShuttleTests" runstate="Runnable" seed="1627953849" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.001017" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1136" name="ExplicitConnectionIgnoresAdjacentTracksAndPersistsUnassignedCells" fullname="EternalSteam.Tests.RailwayShuttleTests.ExplicitConnectionIgnoresAdjacentTracksAndPersistsUnassignedCells" methodname="ExplicitConnectionIgnoresAdjacentTracksAndPersistsUnassignedCells" classname="EternalSteam.Tests.RailwayShuttleTests" runstate="Runnable" seed="787931876" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000958" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1153" name="FuelWaitAtTerminusCanRefuelAndResumeWithoutUnloadingAgain" fullname="EternalSteam.Tests.RailwayShuttleTests.FuelWaitAtTerminusCanRefuelAndResumeWithoutUnloadingAgain" methodname="FuelWaitAtTerminusCanRefuelAndResumeWithoutUnloadingAgain" classname="EternalSteam.Tests.RailwayShuttleTests" runstate="Runnable" seed="1193031774" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000363" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1138" name="GraphlessSaveMigratesRoutePathBeforeInspectingNewAdjacentTracks" fullname="EternalSteam.Tests.RailwayShuttleTests.GraphlessSaveMigratesRoutePathBeforeInspectingNewAdjacentTracks" methodname="GraphlessSaveMigratesRoutePathBeforeInspectingNewAdjacentTracks" classname="EternalSteam.Tests.RailwayShuttleTests" runstate="Runnable" seed="180146297" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000412" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1151" name="IntermediateStationIsVisitedOnceEachWayWithoutDuplicatedTerminusService" fullname="EternalSteam.Tests.RailwayShuttleTests.IntermediateStationIsVisitedOnceEachWayWithoutDuplicatedTerminusService" methodname="IntermediateStationIsVisitedOnceEachWayWithoutDuplicatedTerminusService" classname="EternalSteam.Tests.RailwayShuttleTests" runstate="Runnable" seed="813168801" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:13Z" duration="0.000738" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1156" name="InvalidDirectionAndV2ShuttlePayloadAreRejectedBeforeRestore" fullname="EternalSteam.Tests.RailwayShuttleTests.InvalidDirectionAndV2ShuttlePayloadAreRejectedBeforeRestore" methodname="InvalidDirectionAndV2ShuttlePayloadAreRejectedBeforeRestore" classname="EternalSteam.Tests.RailwayShuttleTests" runstate="Runnable" seed="27166609" result="Passed" start-time="2026-10-02 09:35:13Z" end-time="2026-10-02 09:35:14Z" duration="0.000349" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1157" name="MissingReturnTrackIsNotRequiredButRemovedOutboundTrackStopsAndRecoversSafely" fullname="EternalSteam.Tests.RailwayShuttleTests.MissingReturnTrackIsNotRequiredButRemovedOutboundTrackStopsAndRecoversSafely" methodname="MissingReturnTrackIsNotRequiredButRemovedOutboundTrackStopsAndRecoversSafely" classname="EternalSteam.Tests.RailwayShuttleTests" runstate="Runnable" seed="644470865" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000633" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1155" name="OtherRouteCannotClaimTheSamePhysicalTrackInEitherDirection" fullname="EternalSteam.Tests.RailwayShuttleTests.OtherRouteCannotClaimTheSamePhysicalTrackInEitherDirection" methodname="OtherRouteCannotClaimTheSamePhysicalTrackInEitherDirection" classname="EternalSteam.Tests.RailwayShuttleTests" runstate="Runnable" seed="211467151" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000412" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1154" name="PendingExtensionAppliesOnlyAtFirstStationReturnAndPreservesSettings" fullname="EternalSteam.Tests.RailwayShuttleTests.PendingExtensionAppliesOnlyAtFirstStationReturnAndPreservesSettings" methodname="PendingExtensionAppliesOnlyAtFirstStationReturnAndPreservesSettings" classname="EternalSteam.Tests.RailwayShuttleTests" runstate="Runnable" seed="1962573079" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.001083" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1145" name="PreSlotSaveWithTwoParkedTrainsMigratesWithoutInventoryMutation" fullname="EternalSteam.Tests.RailwayShuttleTests.PreSlotSaveWithTwoParkedTrainsMigratesWithoutInventoryMutation" methodname="PreSlotSaveWithTwoParkedTrainsMigratesWithoutInventoryMutation" classname="EternalSteam.Tests.RailwayShuttleTests" runstate="Runnable" seed="763235646" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000764" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1140" name="RegisteredBrokenConnectionDoesNotSwitchToAlternativeTrack" fullname="EternalSteam.Tests.RailwayShuttleTests.RegisteredBrokenConnectionDoesNotSwitchToAlternativeTrack" methodname="RegisteredBrokenConnectionDoesNotSwitchToAlternativeTrack" classname="EternalSteam.Tests.RailwayShuttleTests" runstate="Runnable" seed="386467434" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000405" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1146" name="ReservedExtensionLosesToCommittedRouteWithoutChangingExistingPath" fullname="EternalSteam.Tests.RailwayShuttleTests.ReservedExtensionLosesToCommittedRouteWithoutChangingExistingPath" methodname="ReservedExtensionLosesToCommittedRouteWithoutChangingExistingPath" classname="EternalSteam.Tests.RailwayShuttleTests" runstate="Runnable" seed="1691160290" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000594" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1152" name="ReturnJourneySaveRestoresDirectionProgressFuelAndServiceFlags" fullname="EternalSteam.Tests.RailwayShuttleTests.ReturnJourneySaveRestoresDirectionProgressFuelAndServiceFlags" methodname="ReturnJourneySaveRestoresDirectionProgressFuelAndServiceFlags" classname="EternalSteam.Tests.RailwayShuttleTests" runstate="Runnable" seed="1846793608" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000481" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1142" name="SharedStationArbitrationIsIndependentOfTickPartition" fullname="EternalSteam.Tests.RailwayShuttleTests.SharedStationArbitrationIsIndependentOfTickPartition" methodname="SharedStationArbitrationIsIndependentOfTickPartition" classname="EternalSteam.Tests.RailwayShuttleTests" runstate="Runnable" seed="846159692" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.001714" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1141" name="SharedStationHoldsSecondTrainOutsideAndStopRequestSurvivesReload" fullname="EternalSteam.Tests.RailwayShuttleTests.SharedStationHoldsSecondTrainOutsideAndStopRequestSurvivesReload" methodname="SharedStationHoldsSecondTrainOutsideAndStopRequestSurvivesReload" classname="EternalSteam.Tests.RailwayShuttleTests" runstate="Runnable" seed="240693939" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000778" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1149" name="SingleConnectionAllowsSameSocketBothWaysWithoutReturnTrack" fullname="EternalSteam.Tests.RailwayShuttleTests.SingleConnectionAllowsSameSocketBothWaysWithoutReturnTrack" methodname="SingleConnectionAllowsSameSocketBothWaysWithoutReturnTrack" classname="EternalSteam.Tests.RailwayShuttleTests" runstate="Runnable" seed="805138581" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000246" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1148" name="SlotLossDuringEntryKeepsPaidFuelAndResumesAfterStationRecovery" fullname="EternalSteam.Tests.RailwayShuttleTests.SlotLossDuringEntryKeepsPaidFuelAndResumesAfterStationRecovery" methodname="SlotLossDuringEntryKeepsPaidFuelAndResumesAfterStationRecovery" classname="EternalSteam.Tests.RailwayShuttleTests" runstate="Runnable" seed="1212114390" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000417" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1150" name="ThreeRoundTripsConserveCargoAndChargeEachDepartureExactlyOnce" fullname="EternalSteam.Tests.RailwayShuttleTests.ThreeRoundTripsConserveCargoAndChargeEachDepartureExactlyOnce" methodname="ThreeRoundTripsConserveCargoAndChargeEachDepartureExactlyOnce" classname="EternalSteam.Tests.RailwayShuttleTests" runstate="Runnable" seed="349975292" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000294" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1143" name="TwoRoutesCreatedAtSameStationQueueWithoutDoubleService" fullname="EternalSteam.Tests.RailwayShuttleTests.TwoRoutesCreatedAtSameStationQueueWithoutDoubleService" methodname="TwoRoutesCreatedAtSameStationQueueWithoutDoubleService" classname="EternalSteam.Tests.RailwayShuttleTests" runstate="Runnable" seed="1859560495" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000379" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1173" name="RailwayTests" fullname="EternalSteam.Tests.RailwayTests" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" testcasecount="62" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.050494" total="62" passed="62" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1230" name="Acc015_UnloadOnlyDropsRemainingFiftyWhenTargetIsEighty" fullname="EternalSteam.Tests.RailwayTests.Acc015_UnloadOnlyDropsRemainingFiftyWhenTargetIsEighty" methodname="Acc015_UnloadOnlyDropsRemainingFiftyWhenTargetIsEighty" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" seed="858675941" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.001809" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1231" name="Acc019_ThousandTargetLoadsAvailableThreeHundredThenRetriesNextVisit" fullname="EternalSteam.Tests.RailwayTests.Acc019_ThousandTargetLoadsAvailableThreeHundredThenRetriesNextVisit" methodname="Acc019_ThousandTargetLoadsAvailableThreeHundredThenRetriesNextVisit" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" seed="1010489347" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000559" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1234" name="BaseNamesAreDistinctAndSurviveReloadAndDefinitionRename" fullname="EternalSteam.Tests.RailwayTests.BaseNamesAreDistinctAndSurviveReloadAndDefinitionRename" methodname="BaseNamesAreDistinctAndSurviveReloadAndDefinitionRename" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" seed="1649900788" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.001248" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1217" name="ChangedPendingPathFailsWithoutChangingValidActiveRoute" fullname="EternalSteam.Tests.RailwayTests.ChangedPendingPathFailsWithoutChangingValidActiveRoute" methodname="ChangedPendingPathFailsWithoutChangingValidActiveRoute" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" seed="288825226" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000581" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1206" name="CommitIsIdempotentAndDoesNotStartOrLoad" fullname="EternalSteam.Tests.RailwayTests.CommitIsIdempotentAndDoesNotStartOrLoad" methodname="CommitIsIdempotentAndDoesNotStartOrLoad" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" seed="1003126403" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000425" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1212" name="CurvedCircuitEndsAtTheSameStationWithLargeAndPointOneSecondTicks" fullname="EternalSteam.Tests.RailwayTests.CurvedCircuitEndsAtTheSameStationWithLargeAndPointOneSecondTicks" methodname="CurvedCircuitEndsAtTheSameStationWithLargeAndPointOneSecondTicks" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" seed="1436532430" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.001155" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1207" name="DeliveryConservesStockAndNextStationStopDoesNotRepeatService" fullname="EternalSteam.Tests.RailwayTests.DeliveryConservesStockAndNextStationStopDoesNotRepeatService" methodname="DeliveryConservesStockAndNextStationStopDoesNotRepeatService" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" seed="25325169" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000537" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1235" name="DemolitionDoesNotReuseBaseOrStationNumbers" fullname="EternalSteam.Tests.RailwayTests.DemolitionDoesNotReuseBaseOrStationNumbers" methodname="DemolitionDoesNotReuseBaseOrStationNumbers" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" seed="580417408" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000690" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1220" name="DestinationStationLossStopsPaidSegmentAndResumeDoesNotChargeAgain" fullname="EternalSteam.Tests.RailwayTests.DestinationStationLossStopsPaidSegmentAndResumeDoesNotChargeAgain" methodname="DestinationStationLossStopsPaidSegmentAndResumeDoesNotChargeAgain" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" seed="446999364" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000735" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1233" name="EmptyCargoStillRunsAndMissingReturnCannotCommit" fullname="EternalSteam.Tests.RailwayTests.EmptyCargoStillRunsAndMissingReturnCannotCommit" methodname="EmptyCargoStillRunsAndMissingReturnCannotCommit" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" seed="1808709617" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000730" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-suite type="ParameterizedMethod" id="1205" name="EveryTransportStateRoundTripsWithoutTransfer" fullname="EternalSteam.Tests.RailwayTests.EveryTransportStateRoundTripsWithoutTransfer" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" testcasecount="6" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.004896" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1199" name="EveryTransportStateRoundTripsWithoutTransfer(Stopped)" fullname="EternalSteam.Tests.RailwayTests.EveryTransportStateRoundTripsWithoutTransfer(Stopped)" methodname="EveryTransportStateRoundTripsWithoutTransfer" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" seed="181037191" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000815" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1200" name="EveryTransportStateRoundTripsWithoutTransfer(Moving)" fullname="EternalSteam.Tests.RailwayTests.EveryTransportStateRoundTripsWithoutTransfer(Moving)" methodname="EveryTransportStateRoundTripsWithoutTransfer" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" seed="1306945942" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000663" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1201" name="EveryTransportStateRoundTripsWithoutTransfer(Dwelling)" fullname="EternalSteam.Tests.RailwayTests.EveryTransportStateRoundTripsWithoutTransfer(Dwelling)" methodname="EveryTransportStateRoundTripsWithoutTransfer" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" seed="1718535672" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000639" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1202" name="EveryTransportStateRoundTripsWithoutTransfer(StopRequested)" fullname="EternalSteam.Tests.RailwayTests.EveryTransportStateRoundTripsWithoutTransfer(StopRequested)" methodname="EveryTransportStateRoundTripsWithoutTransfer" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" seed="875204228" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000632" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1203" name="EveryTransportStateRoundTripsWithoutTransfer(FuelWait)" fullname="EternalSteam.Tests.RailwayTests.EveryTransportStateRoundTripsWithoutTransfer(FuelWait)" methodname="EveryTransportStateRoundTripsWithoutTransfer" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" seed="1896656400" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000635" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1204" name="EveryTransportStateRoundTripsWithoutTransfer(RouteError)" fullname="EternalSteam.Tests.RailwayTests.EveryTransportStateRoundTripsWithoutTransfer(RouteError)" methodname="EveryTransportStateRoundTripsWithoutTransfer" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" seed="2083466607" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000632" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-case id="1208" name="FullDestinationRetainsCargoAndMissingFuelDoesNotDepart" fullname="EternalSteam.Tests.RailwayTests.FullDestinationRetainsCargoAndMissingFuelDoesNotDepart" methodname="FullDestinationRetainsCargoAndMissingFuelDoesNotDepart" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" seed="1175446272" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000487" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1213" name="InvalidSavedAmountsAndDuplicateTrainsAreRejected" fullname="EternalSteam.Tests.RailwayTests.InvalidSavedAmountsAndDuplicateTrainsAreRejected" methodname="InvalidSavedAmountsAndDuplicateTrainsAreRejected" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" seed="1798565234" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000509" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1191" name="LaterValidSegmentKeepsItsOriginalIndexAfterEarlierFailure" fullname="EternalSteam.Tests.RailwayTests.LaterValidSegmentKeepsItsOriginalIndexAfterEarlierFailure" methodname="LaterValidSegmentKeepsItsOriginalIndexAfterEarlierFailure" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" seed="1712492693" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000675" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1236" name="LegacyBaseNamesMigrateDeterministicallyAndPersist" fullname="EternalSteam.Tests.RailwayTests.LegacyBaseNamesMigrateDeterministicallyAndPersist" methodname="LegacyBaseNamesMigrateDeterministicallyAndPersist" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" seed="989163970" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000835" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-suite type="ParameterizedMethod" id="1241" name="MalformedBaseNamesRejectRestoreWithoutMutation" fullname="EternalSteam.Tests.RailwayTests.MalformedBaseNamesRejectRestoreWithoutMutation" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.002620" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1237" name="MalformedBaseNamesRejectRestoreWithoutMutation(&quot;duplicate-number&quot;)" fullname="EternalSteam.Tests.RailwayTests.MalformedBaseNamesRejectRestoreWithoutMutation(&quot;duplicate-number&quot;)" methodname="MalformedBaseNamesRejectRestoreWithoutMutation" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" seed="1936659943" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000574" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1238" name="MalformedBaseNamesRejectRestoreWithoutMutation(&quot;duplicate-id&quot;)" fullname="EternalSteam.Tests.RailwayTests.MalformedBaseNamesRejectRestoreWithoutMutation(&quot;duplicate-id&quot;)" methodname="MalformedBaseNamesRejectRestoreWithoutMutation" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" seed="907454184" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000462" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1239" name="MalformedBaseNamesRejectRestoreWithoutMutation(&quot;missing-base&quot;)" fullname="EternalSteam.Tests.RailwayTests.MalformedBaseNamesRejectRestoreWithoutMutation(&quot;missing-base&quot;)" methodname="MalformedBaseNamesRejectRestoreWithoutMutation" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" seed="1946124562" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000468" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1240" name="MalformedBaseNamesRejectRestoreWithoutMutation(&quot;empty-name&quot;)" fullname="EternalSteam.Tests.RailwayTests.MalformedBaseNamesRejectRestoreWithoutMutation(&quot;empty-name&quot;)" methodname="MalformedBaseNamesRejectRestoreWithoutMutation" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" seed="700879434" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000461" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-case id="1219" name="MidSegmentErrorRecoveryKeepsPositionCargoAndPaidFuel" fullname="EternalSteam.Tests.RailwayTests.MidSegmentErrorRecoveryKeepsPositionCargoAndPaidFuel" methodname="MidSegmentErrorRecoveryKeepsPositionCargoAndPaidFuel" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" seed="590286815" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000569" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1198" name="MidSegmentErrorStillProtectsTrackAndStations" fullname="EternalSteam.Tests.RailwayTests.MidSegmentErrorStillProtectsTrackAndStations" methodname="MidSegmentErrorStillProtectsTrackAndStations" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" seed="806738672" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000615" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1211" name="MovingRestorePreservesFuelAndDoesNotDuplicateCargo" fullname="EternalSteam.Tests.RailwayTests.MovingRestorePreservesFuelAndDoesNotDuplicateCargo" methodname="MovingRestorePreservesFuelAndDoesNotDuplicateCargo" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" seed="778006741" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000573" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1210" name="MovingTrackRecoveryIsBlockedAndCargoResourceIsImmutable" fullname="EternalSteam.Tests.RailwayTests.MovingTrackRecoveryIsBlockedAndCargoResourceIsImmutable" methodname="MovingTrackRecoveryIsBlockedAndCargoResourceIsImmutable" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" seed="1788429854" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000463" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1190" name="MultipleBrokenSegmentsAreReportedAndCommitLeavesStateUntouched" fullname="EternalSteam.Tests.RailwayTests.MultipleBrokenSegmentsAreReportedAndCommitLeavesStateUntouched" methodname="MultipleBrokenSegmentsAreReportedAndCommitLeavesStateUntouched" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" seed="661329513" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.001039" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1192" name="MultipleStationErrorsBlockAffectedSegmentsWithoutInventingTrackFailures" fullname="EternalSteam.Tests.RailwayTests.MultipleStationErrorsBlockAffectedSegmentsWithoutInventingTrackFailures" methodname="MultipleStationErrorsBlockAffectedSegmentsWithoutInventingTrackFailures" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" seed="1748744854" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000480" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-suite type="ParameterizedMethod" id="1225" name="MultipleStationsAndRotatedPortsCompleteClosedCircuit" fullname="EternalSteam.Tests.RailwayTests.MultipleStationsAndRotatedPortsCompleteClosedCircuit" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.004518" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1221" name="MultipleStationsAndRotatedPortsCompleteClosedCircuit(3,0)" fullname="EternalSteam.Tests.RailwayTests.MultipleStationsAndRotatedPortsCompleteClosedCircuit(3,0)" methodname="MultipleStationsAndRotatedPortsCompleteClosedCircuit" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" seed="683477059" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.001264" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1222" name="MultipleStationsAndRotatedPortsCompleteClosedCircuit(3,1)" fullname="EternalSteam.Tests.RailwayTests.MultipleStationsAndRotatedPortsCompleteClosedCircuit(3,1)" methodname="MultipleStationsAndRotatedPortsCompleteClosedCircuit" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" seed="20675453" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000822" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1223" name="MultipleStationsAndRotatedPortsCompleteClosedCircuit(4,2)" fullname="EternalSteam.Tests.RailwayTests.MultipleStationsAndRotatedPortsCompleteClosedCircuit(4,2)" methodname="MultipleStationsAndRotatedPortsCompleteClosedCircuit" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" seed="399627793" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000925" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1224" name="MultipleStationsAndRotatedPortsCompleteClosedCircuit(4,3)" fullname="EternalSteam.Tests.RailwayTests.MultipleStationsAndRotatedPortsCompleteClosedCircuit(4,3)" methodname="MultipleStationsAndRotatedPortsCompleteClosedCircuit" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" seed="1145237090" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000932" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-case id="1214" name="PendingAppliesOnlyAtFirstStationAndKeepsTrainIdentity" fullname="EternalSteam.Tests.RailwayTests.PendingAppliesOnlyAtFirstStationAndKeepsTrainIdentity" methodname="PendingAppliesOnlyAtFirstStationAndKeepsTrainIdentity" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" seed="88786965" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000603" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1242" name="PendingDoesNotReserveNewTrackAndCollisionAtBoundaryKeepsOriginalRoute" fullname="EternalSteam.Tests.RailwayTests.PendingDoesNotReserveNewTrackAndCollisionAtBoundaryKeepsOriginalRoute" methodname="PendingDoesNotReserveNewTrackAndCollisionAtBoundaryKeepsOriginalRoute" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" seed="1801693457" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.001437" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1218" name="PendingRejectsChangedAnchorAndMalformedSavedRevision" fullname="EternalSteam.Tests.RailwayTests.PendingRejectsChangedAnchorAndMalformedSavedRevision" methodname="PendingRejectsChangedAnchorAndMalformedSavedRevision" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" seed="2088273767" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000661" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1215" name="PendingSaveCancelAndStaleDraftLeaveActiveRouteUntouched" fullname="EternalSteam.Tests.RailwayTests.PendingSaveCancelAndStaleDraftLeaveActiveRouteUntouched" methodname="PendingSaveCancelAndStaleDraftLeaveActiveRouteUntouched" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" seed="635852707" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000711" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1188" name="RouteLongerThanFullFuelTankIsRejectedBeforeCommit" fullname="EternalSteam.Tests.RailwayTests.RouteLongerThanFullFuelTankIsRejectedBeforeCommit" methodname="RouteLongerThanFullFuelTankIsRejectedBeforeCommit" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" seed="1293074055" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000664" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-suite type="ParameterizedMethod" id="1178" name="StationDirectionPreviewUsesTheInstalledPortPositions" fullname="EternalSteam.Tests.RailwayTests.StationDirectionPreviewUsesTheInstalledPortPositions" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.002364" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1174" name="StationDirectionPreviewUsesTheInstalledPortPositions(0)" fullname="EternalSteam.Tests.RailwayTests.StationDirectionPreviewUsesTheInstalledPortPositions(0)" methodname="StationDirectionPreviewUsesTheInstalledPortPositions" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" seed="1472825820" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000634" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1175" name="StationDirectionPreviewUsesTheInstalledPortPositions(1)" fullname="EternalSteam.Tests.RailwayTests.StationDirectionPreviewUsesTheInstalledPortPositions(1)" methodname="StationDirectionPreviewUsesTheInstalledPortPositions" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" seed="1618945850" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000346" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1176" name="StationDirectionPreviewUsesTheInstalledPortPositions(2)" fullname="EternalSteam.Tests.RailwayTests.StationDirectionPreviewUsesTheInstalledPortPositions(2)" methodname="StationDirectionPreviewUsesTheInstalledPortPositions" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" seed="109122178" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000347" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1177" name="StationDirectionPreviewUsesTheInstalledPortPositions(3)" fullname="EternalSteam.Tests.RailwayTests.StationDirectionPreviewUsesTheInstalledPortPositions(3)" methodname="StationDirectionPreviewUsesTheInstalledPortPositions" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" seed="943152247" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000319" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-case id="1197" name="StationErrorAllowsFurtherTrackRecoveryButProtectsOccupiedStation" fullname="EternalSteam.Tests.RailwayTests.StationErrorAllowsFurtherTrackRecoveryButProtectsOccupiedStation" methodname="StationErrorAllowsFurtherTrackRecoveryButProtectsOccupiedStation" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" seed="1208517468" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000541" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1216" name="StopRequestWinsAfterBoundaryApplication" fullname="EternalSteam.Tests.RailwayTests.StopRequestWinsAfterBoundaryApplication" methodname="StopRequestWinsAfterBoundaryApplication" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" seed="1083484146" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000487" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1179" name="StructuredValidationDoesNotMutateRouteInventoryOrPriorResult" fullname="EternalSteam.Tests.RailwayTests.StructuredValidationDoesNotMutateRouteInventoryOrPriorResult" methodname="StructuredValidationDoesNotMutateRouteInventoryOrPriorResult" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" seed="1689442107" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000671" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1180" name="StructuredValidationIdentifiesDuplicateVisitAndStation" fullname="EternalSteam.Tests.RailwayTests.StructuredValidationIdentifiesDuplicateVisitAndStation" methodname="StructuredValidationIdentifiesDuplicateVisitAndStation" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" seed="912517319" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000506" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1186" name="StructuredValidationMarksReturnLegAndPreservesCompletedLeg" fullname="EternalSteam.Tests.RailwayTests.StructuredValidationMarksReturnLegAndPreservesCompletedLeg" methodname="StructuredValidationMarksReturnLegAndPreservesCompletedLeg" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" seed="1889627021" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000517" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-suite type="ParameterizedMethod" id="1185" name="StructuredValidationRejectsInvalidOrIdenticalPorts" fullname="EternalSteam.Tests.RailwayTests.StructuredValidationRejectsInvalidOrIdenticalPorts" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.001726" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1182" name="StructuredValidationRejectsInvalidOrIdenticalPorts(-1,1)" fullname="EternalSteam.Tests.RailwayTests.StructuredValidationRejectsInvalidOrIdenticalPorts(-1,1)" methodname="StructuredValidationRejectsInvalidOrIdenticalPorts" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" seed="118255601" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000490" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1183" name="StructuredValidationRejectsInvalidOrIdenticalPorts(0,4)" fullname="EternalSteam.Tests.RailwayTests.StructuredValidationRejectsInvalidOrIdenticalPorts(0,4)" methodname="StructuredValidationRejectsInvalidOrIdenticalPorts" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" seed="936053283" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000357" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1184" name="StructuredValidationRejectsInvalidOrIdenticalPorts(1,1)" fullname="EternalSteam.Tests.RailwayTests.StructuredValidationRejectsInvalidOrIdenticalPorts(1,1)" methodname="StructuredValidationRejectsInvalidOrIdenticalPorts" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" seed="384193630" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000334" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-case id="1187" name="StructuredValidationSeparatesBranchFromArrivalOverrun" fullname="EternalSteam.Tests.RailwayTests.StructuredValidationSeparatesBranchFromArrivalOverrun" methodname="StructuredValidationSeparatesBranchFromArrivalOverrun" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" seed="1765720095" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000513" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1189" name="StructuredValidationSeparatesEmptyDraftAndInvalidQuantity" fullname="EternalSteam.Tests.RailwayTests.StructuredValidationSeparatesEmptyDraftAndInvalidQuantity" methodname="StructuredValidationSeparatesEmptyDraftAndInvalidQuantity" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" seed="640501513" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000372" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1181" name="StructuredValidationSeparatesInactiveStationFromMissingReference" fullname="EternalSteam.Tests.RailwayTests.StructuredValidationSeparatesInactiveStationFromMissingReference" methodname="StructuredValidationSeparatesInactiveStationFromMissingReference" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" seed="638741137" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000402" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-suite type="ParameterizedMethod" id="1229" name="ThreeBaseDistributionPreservesRemainder" fullname="EternalSteam.Tests.RailwayTests.ThreeBaseDistributionPreservesRemainder" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.003182" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1226" name="ThreeBaseDistributionPreservesRemainder(20,30,1000,30,50)" fullname="EternalSteam.Tests.RailwayTests.ThreeBaseDistributionPreservesRemainder(20,30,1000,30,50)" methodname="ThreeBaseDistributionPreservesRemainder" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" seed="2049779857" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.001246" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1227" name="ThreeBaseDistributionPreservesRemainder(30,40,25,25,45)" fullname="EternalSteam.Tests.RailwayTests.ThreeBaseDistributionPreservesRemainder(30,40,25,25,45)" methodname="ThreeBaseDistributionPreservesRemainder" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" seed="1612032057" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000709" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1228" name="ThreeBaseDistributionPreservesRemainder(30,40,1000,40,30)" fullname="EternalSteam.Tests.RailwayTests.ThreeBaseDistributionPreservesRemainder(30,40,1000,40,30)" methodname="ThreeBaseDistributionPreservesRemainder" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" seed="198004790" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000744" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-case id="1209" name="TrackSharingAndBranchesAreRejected" fullname="EternalSteam.Tests.RailwayTests.TrackSharingAndBranchesAreRejected" methodname="TrackSharingAndBranchesAreRejected" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" seed="1757532528" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000432" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1196" name="UnassignedCargoCannotHideStockInSnapshot" fullname="EternalSteam.Tests.RailwayTests.UnassignedCargoCannotHideStockInSnapshot" methodname="UnassignedCargoCannotHideStockInSnapshot" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" seed="1066588113" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000557" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-suite type="ParameterizedMethod" id="1195" name="UnassignedCargoSurvivesJsonAndAllowsOnlyFirstAssignment" fullname="EternalSteam.Tests.RailwayTests.UnassignedCargoSurvivesJsonAndAllowsOnlyFirstAssignment" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.001769" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1193" name="UnassignedCargoSurvivesJsonAndAllowsOnlyFirstAssignment(null)" fullname="EternalSteam.Tests.RailwayTests.UnassignedCargoSurvivesJsonAndAllowsOnlyFirstAssignment(null)" methodname="UnassignedCargoSurvivesJsonAndAllowsOnlyFirstAssignment" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" seed="1921187039" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000677" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1194" name="UnassignedCargoSurvivesJsonAndAllowsOnlyFirstAssignment(&quot;&quot;)" fullname="EternalSteam.Tests.RailwayTests.UnassignedCargoSurvivesJsonAndAllowsOnlyFirstAssignment(&quot;&quot;)" methodname="UnassignedCargoSurvivesJsonAndAllowsOnlyFirstAssignment" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" seed="2091785469" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000564" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-case id="1232" name="UnloadBeforeLoadAndLimitedSourceRespectVisitAmounts" fullname="EternalSteam.Tests.RailwayTests.UnloadBeforeLoadAndLimitedSourceRespectVisitAmounts" methodname="UnloadBeforeLoadAndLimitedSourceRespectVisitAmounts" classname="EternalSteam.Tests.RailwayTests" runstate="Runnable" seed="1691706131" result="Passed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.000430" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1243" name="ResponsiveHudBoundsTests" fullname="EternalSteam.Tests.ResponsiveHudBoundsTests" classname="EternalSteam.Tests.ResponsiveHudBoundsTests" runstate="Runnable" testcasecount="6" result="Failed" site="Child" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:16Z" duration="2.913698" total="6" passed="0" failed="6" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-suite type="ParameterizedMethod" id="1250" name="SavedHudFitsWideAndSmallWindowsWithExpandedCatalogueAndSelection" fullname="EternalSteam.Tests.ResponsiveHudBoundsTests.SavedHudFitsWideAndSmallWindowsWithExpandedCatalogueAndSelection" classname="EternalSteam.Tests.ResponsiveHudBoundsTests" runstate="Runnable" testcasecount="6" result="Failed" site="Child" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:16Z" duration="2.913192" total="6" passed="0" failed="6" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[One or more child tests had errors]]></message>
+              </failure>
+              <test-case id="1244" name="SavedHudFitsWideAndSmallWindowsWithExpandedCatalogueAndSelection(&quot;StartRegionSandbox&quot;,800,600)" fullname="EternalSteam.Tests.ResponsiveHudBoundsTests.SavedHudFitsWideAndSmallWindowsWithExpandedCatalogueAndSelection(&quot;StartRegionSandbox&quot;,800,600)" methodname="SavedHudFitsWideAndSmallWindowsWithExpandedCatalogueAndSelection" classname="EternalSteam.Tests.ResponsiveHudBoundsTests" runstate="Runnable" seed="1760630767" result="Failed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:14Z" duration="0.574452" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <failure>
+                  <message><![CDATA[  Minimap and selected information remain separate
+  Expected: False
+  But was:  True
+]]></message>
+                  <stack-trace><![CDATA[at EternalSteam.Tests.ResponsiveHudBoundsTests.SavedHudFitsWideAndSmallWindowsWithExpandedCatalogueAndSelection (System.String name, System.Int32 width, System.Int32 height) [0x00280] in /Users/limseth/Projects/Eternal_Steam/Eternal_Steam/Assets/EternalSteam/Tests/EditMode/ResponsiveHudBoundsTests.cs:30
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case id="1245" name="SavedHudFitsWideAndSmallWindowsWithExpandedCatalogueAndSelection(&quot;StartRegionSandbox&quot;,1280,720)" fullname="EternalSteam.Tests.ResponsiveHudBoundsTests.SavedHudFitsWideAndSmallWindowsWithExpandedCatalogueAndSelection(&quot;StartRegionSandbox&quot;,1280,720)" methodname="SavedHudFitsWideAndSmallWindowsWithExpandedCatalogueAndSelection" classname="EternalSteam.Tests.ResponsiveHudBoundsTests" runstate="Runnable" seed="1139393014" result="Failed" start-time="2026-10-02 09:35:14Z" end-time="2026-10-02 09:35:15Z" duration="0.577164" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <failure>
+                  <message><![CDATA[  Minimap and selected information remain separate
+  Expected: False
+  But was:  True
+]]></message>
+                  <stack-trace><![CDATA[at EternalSteam.Tests.ResponsiveHudBoundsTests.SavedHudFitsWideAndSmallWindowsWithExpandedCatalogueAndSelection (System.String name, System.Int32 width, System.Int32 height) [0x00280] in /Users/limseth/Projects/Eternal_Steam/Eternal_Steam/Assets/EternalSteam/Tests/EditMode/ResponsiveHudBoundsTests.cs:30
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case id="1246" name="SavedHudFitsWideAndSmallWindowsWithExpandedCatalogueAndSelection(&quot;StartRegionSandbox&quot;,1920,1080)" fullname="EternalSteam.Tests.ResponsiveHudBoundsTests.SavedHudFitsWideAndSmallWindowsWithExpandedCatalogueAndSelection(&quot;StartRegionSandbox&quot;,1920,1080)" methodname="SavedHudFitsWideAndSmallWindowsWithExpandedCatalogueAndSelection" classname="EternalSteam.Tests.ResponsiveHudBoundsTests" runstate="Runnable" seed="1936550443" result="Failed" start-time="2026-10-02 09:35:15Z" end-time="2026-10-02 09:35:15Z" duration="0.571973" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <failure>
+                  <message><![CDATA[  Minimap and selected information remain separate
+  Expected: False
+  But was:  True
+]]></message>
+                  <stack-trace><![CDATA[at EternalSteam.Tests.ResponsiveHudBoundsTests.SavedHudFitsWideAndSmallWindowsWithExpandedCatalogueAndSelection (System.String name, System.Int32 width, System.Int32 height) [0x00280] in /Users/limseth/Projects/Eternal_Steam/Eternal_Steam/Assets/EternalSteam/Tests/EditMode/ResponsiveHudBoundsTests.cs:30
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case id="1247" name="SavedHudFitsWideAndSmallWindowsWithExpandedCatalogueAndSelection(&quot;StartRegionSandbox&quot;,2560,1080)" fullname="EternalSteam.Tests.ResponsiveHudBoundsTests.SavedHudFitsWideAndSmallWindowsWithExpandedCatalogueAndSelection(&quot;StartRegionSandbox&quot;,2560,1080)" methodname="SavedHudFitsWideAndSmallWindowsWithExpandedCatalogueAndSelection" classname="EternalSteam.Tests.ResponsiveHudBoundsTests" runstate="Runnable" seed="182555942" result="Failed" start-time="2026-10-02 09:35:15Z" end-time="2026-10-02 09:35:16Z" duration="0.573360" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <failure>
+                  <message><![CDATA[  Minimap and selected information remain separate
+  Expected: False
+  But was:  True
+]]></message>
+                  <stack-trace><![CDATA[at EternalSteam.Tests.ResponsiveHudBoundsTests.SavedHudFitsWideAndSmallWindowsWithExpandedCatalogueAndSelection (System.String name, System.Int32 width, System.Int32 height) [0x00280] in /Users/limseth/Projects/Eternal_Steam/Eternal_Steam/Assets/EternalSteam/Tests/EditMode/ResponsiveHudBoundsTests.cs:30
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case id="1248" name="SavedHudFitsWideAndSmallWindowsWithExpandedCatalogueAndSelection(&quot;StartRegionSandbox&quot;,3840,1080)" fullname="EternalSteam.Tests.ResponsiveHudBoundsTests.SavedHudFitsWideAndSmallWindowsWithExpandedCatalogueAndSelection(&quot;StartRegionSandbox&quot;,3840,1080)" methodname="SavedHudFitsWideAndSmallWindowsWithExpandedCatalogueAndSelection" classname="EternalSteam.Tests.ResponsiveHudBoundsTests" runstate="Runnable" seed="1919477744" result="Failed" start-time="2026-10-02 09:35:16Z" end-time="2026-10-02 09:35:16Z" duration="0.577537" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <failure>
+                  <message><![CDATA[  Minimap and selected information remain separate
+  Expected: False
+  But was:  True
+]]></message>
+                  <stack-trace><![CDATA[at EternalSteam.Tests.ResponsiveHudBoundsTests.SavedHudFitsWideAndSmallWindowsWithExpandedCatalogueAndSelection (System.String name, System.Int32 width, System.Int32 height) [0x00280] in /Users/limseth/Projects/Eternal_Steam/Eternal_Steam/Assets/EternalSteam/Tests/EditMode/ResponsiveHudBoundsTests.cs:30
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case id="1249" name="SavedHudFitsWideAndSmallWindowsWithExpandedCatalogueAndSelection(&quot;OpenWorldSandbox&quot;,3840,1080)" fullname="EternalSteam.Tests.ResponsiveHudBoundsTests.SavedHudFitsWideAndSmallWindowsWithExpandedCatalogueAndSelection(&quot;OpenWorldSandbox&quot;,3840,1080)" methodname="SavedHudFitsWideAndSmallWindowsWithExpandedCatalogueAndSelection" classname="EternalSteam.Tests.ResponsiveHudBoundsTests" runstate="Runnable" seed="314888779" result="Failed" start-time="2026-10-02 09:35:16Z" end-time="2026-10-02 09:35:16Z" duration="0.037536" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <failure>
+                  <message><![CDATA[  Minimap and selected information remain separate
+  Expected: False
+  But was:  True
+]]></message>
+                  <stack-trace><![CDATA[at EternalSteam.Tests.ResponsiveHudBoundsTests.SavedHudFitsWideAndSmallWindowsWithExpandedCatalogueAndSelection (System.String name, System.Int32 width, System.Int32 height) [0x00280] in /Users/limseth/Projects/Eternal_Steam/Eternal_Steam/Assets/EternalSteam/Tests/EditMode/ResponsiveHudBoundsTests.cs:30
+]]></stack-trace>
+                </failure>
+              </test-case>
+            </test-suite>
+          </test-suite>
+          <test-suite type="TestFixture" id="1251" name="TerrainNavigationTests" fullname="EternalSteam.Tests.TerrainNavigationTests" classname="EternalSteam.Tests.TerrainNavigationTests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-10-02 09:35:16Z" end-time="2026-10-02 09:35:16Z" duration="0.008215" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1252" name="DetoursThroughGapWithoutCrossingTerrainOrExceedingSpeed" fullname="EternalSteam.Tests.TerrainNavigationTests.DetoursThroughGapWithoutCrossingTerrainOrExceedingSpeed" methodname="DetoursThroughGapWithoutCrossingTerrainOrExceedingSpeed" classname="EternalSteam.Tests.TerrainNavigationTests" runstate="Runnable" seed="24271401" result="Passed" start-time="2026-10-02 09:35:16Z" end-time="2026-10-02 09:35:16Z" duration="0.002638" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1253" name="DisconnectedAndDiagonalOnlyCellsAreNotReachable" fullname="EternalSteam.Tests.TerrainNavigationTests.DisconnectedAndDiagonalOnlyCellsAreNotReachable" methodname="DisconnectedAndDiagonalOnlyCellsAreNotReachable" classname="EternalSteam.Tests.TerrainNavigationTests" runstate="Runnable" seed="1896058636" result="Passed" start-time="2026-10-02 09:35:16Z" end-time="2026-10-02 09:35:16Z" duration="0.000228" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1255" name="ManyActorsReuseOneFieldAndNewGoalsRespectStepBudget" fullname="EternalSteam.Tests.TerrainNavigationTests.ManyActorsReuseOneFieldAndNewGoalsRespectStepBudget" methodname="ManyActorsReuseOneFieldAndNewGoalsRespectStepBudget" classname="EternalSteam.Tests.TerrainNavigationTests" runstate="Runnable" seed="3703643" result="Passed" start-time="2026-10-02 09:35:16Z" end-time="2026-10-02 09:35:16Z" duration="0.001399" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1256" name="RotatedGridAndReplacementMaskInvalidateDerivedRoutes" fullname="EternalSteam.Tests.TerrainNavigationTests.RotatedGridAndReplacementMaskInvalidateDerivedRoutes" methodname="RotatedGridAndReplacementMaskInvalidateDerivedRoutes" classname="EternalSteam.Tests.TerrainNavigationTests" runstate="Runnable" seed="808300635" result="Passed" start-time="2026-10-02 09:35:16Z" end-time="2026-10-02 09:35:16Z" duration="0.000391" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1254" name="ShortDiagonalStepCannotSlipBetweenBlockedCornerCells" fullname="EternalSteam.Tests.TerrainNavigationTests.ShortDiagonalStepCannotSlipBetweenBlockedCornerCells" methodname="ShortDiagonalStepCannotSlipBetweenBlockedCornerCells" classname="EternalSteam.Tests.TerrainNavigationTests" runstate="Runnable" seed="1623825670" result="Passed" start-time="2026-10-02 09:35:16Z" end-time="2026-10-02 09:35:16Z" duration="0.000118" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1257" name="TrainDefenseTests" fullname="EternalSteam.Tests.TrainDefenseTests" classname="EternalSteam.Tests.TrainDefenseTests" runstate="Runnable" testcasecount="14" result="Passed" start-time="2026-10-02 09:35:16Z" end-time="2026-10-02 09:35:17Z" duration="0.054690" total="14" passed="14" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1267" name="AllThreeMountShapesAcceptedWithoutRotationShortcut" fullname="EternalSteam.Tests.TrainDefenseTests.AllThreeMountShapesAcceptedWithoutRotationShortcut" methodname="AllThreeMountShapesAcceptedWithoutRotationShortcut" classname="EternalSteam.Tests.TrainDefenseTests" runstate="Runnable" seed="562402152" result="Passed" start-time="2026-10-02 09:35:17Z" end-time="2026-10-02 09:35:17Z" duration="0.001152" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1262" name="CaptureRestoresBatteryLevelAndCooldown" fullname="EternalSteam.Tests.TrainDefenseTests.CaptureRestoresBatteryLevelAndCooldown" methodname="CaptureRestoresBatteryLevelAndCooldown" classname="EternalSteam.Tests.TrainDefenseTests" runstate="Runnable" seed="1121455081" result="Passed" start-time="2026-10-02 09:35:17Z" end-time="2026-10-02 09:35:17Z" duration="0.003555" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1259" name="DepletedBatteryStopsNewAttacksAndPausedCombatSpendsNothing" fullname="EternalSteam.Tests.TrainDefenseTests.DepletedBatteryStopsNewAttacksAndPausedCombatSpendsNothing" methodname="DepletedBatteryStopsNewAttacksAndPausedCombatSpendsNothing" classname="EternalSteam.Tests.TrainDefenseTests" runstate="Runnable" seed="1465272914" result="Passed" start-time="2026-10-02 09:35:17Z" end-time="2026-10-02 09:35:17Z" duration="0.000653" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-suite type="ParameterizedMethod" id="1271" name="InvalidBatteryRejected" fullname="EternalSteam.Tests.TrainDefenseTests.InvalidBatteryRejected" classname="EternalSteam.Tests.TrainDefenseTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-02 09:35:17Z" end-time="2026-10-02 09:35:17Z" duration="0.001542" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1268" name="InvalidBatteryRejected(double.NaN)" fullname="EternalSteam.Tests.TrainDefenseTests.InvalidBatteryRejected(double.NaN)" methodname="InvalidBatteryRejected" classname="EternalSteam.Tests.TrainDefenseTests" runstate="Runnable" seed="553886567" result="Passed" start-time="2026-10-02 09:35:17Z" end-time="2026-10-02 09:35:17Z" duration="0.000421" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1269" name="InvalidBatteryRejected(-1)" fullname="EternalSteam.Tests.TrainDefenseTests.InvalidBatteryRejected(-1)" methodname="InvalidBatteryRejected" classname="EternalSteam.Tests.TrainDefenseTests" runstate="Runnable" seed="125126190" result="Passed" start-time="2026-10-02 09:35:17Z" end-time="2026-10-02 09:35:17Z" duration="0.000146" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1270" name="InvalidBatteryRejected(201)" fullname="EternalSteam.Tests.TrainDefenseTests.InvalidBatteryRejected(201)" methodname="InvalidBatteryRejected" classname="EternalSteam.Tests.TrainDefenseTests" runstate="Runnable" seed="540361707" result="Passed" start-time="2026-10-02 09:35:17Z" end-time="2026-10-02 09:35:17Z" duration="0.000129" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-case id="1261" name="MountedModuleHonorsInjectedMainLevelEvenWhenCalledDirectly" fullname="EternalSteam.Tests.TrainDefenseTests.MountedModuleHonorsInjectedMainLevelEvenWhenCalledDirectly" methodname="MountedModuleHonorsInjectedMainLevelEvenWhenCalledDirectly" classname="EternalSteam.Tests.TrainDefenseTests" runstate="Runnable" seed="563097877" result="Passed" start-time="2026-10-02 09:35:17Z" end-time="2026-10-02 09:35:17Z" duration="0.000519" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1258" name="MovingWeaponQueriesCurrentPositionAndNeverRegistersAsEnemyTarget" fullname="EternalSteam.Tests.TrainDefenseTests.MovingWeaponQueriesCurrentPositionAndNeverRegistersAsEnemyTarget" methodname="MovingWeaponQueriesCurrentPositionAndNeverRegistersAsEnemyTarget" classname="EternalSteam.Tests.TrainDefenseTests" runstate="Runnable" seed="2142416055" result="Passed" start-time="2026-10-02 09:35:17Z" end-time="2026-10-02 09:35:17Z" duration="0.000749" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1272" name="OlderV2MissingArmamentDefaultsToEmptyMount" fullname="EternalSteam.Tests.TrainDefenseTests.OlderV2MissingArmamentDefaultsToEmptyMount" methodname="OlderV2MissingArmamentDefaultsToEmptyMount" classname="EternalSteam.Tests.TrainDefenseTests" runstate="Runnable" seed="588587135" result="Passed" start-time="2026-10-02 09:35:17Z" end-time="2026-10-02 09:35:17Z" duration="0.000284" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-suite type="ParameterizedMethod" id="1266" name="OnlyExactMountDimensionsAreAccepted" fullname="EternalSteam.Tests.TrainDefenseTests.OnlyExactMountDimensionsAreAccepted" classname="EternalSteam.Tests.TrainDefenseTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-02 09:35:17Z" end-time="2026-10-02 09:35:17Z" duration="0.001008" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1263" name="OnlyExactMountDimensionsAreAccepted(1,1)" fullname="EternalSteam.Tests.TrainDefenseTests.OnlyExactMountDimensionsAreAccepted(1,1)" methodname="OnlyExactMountDimensionsAreAccepted" classname="EternalSteam.Tests.TrainDefenseTests" runstate="Runnable" seed="1962549733" result="Passed" start-time="2026-10-02 09:35:17Z" end-time="2026-10-02 09:35:17Z" duration="0.000205" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1264" name="OnlyExactMountDimensionsAreAccepted(3,3)" fullname="EternalSteam.Tests.TrainDefenseTests.OnlyExactMountDimensionsAreAccepted(3,3)" methodname="OnlyExactMountDimensionsAreAccepted" classname="EternalSteam.Tests.TrainDefenseTests" runstate="Runnable" seed="305494470" result="Passed" start-time="2026-10-02 09:35:17Z" end-time="2026-10-02 09:35:17Z" duration="0.000107" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1265" name="OnlyExactMountDimensionsAreAccepted(3,1)" fullname="EternalSteam.Tests.TrainDefenseTests.OnlyExactMountDimensionsAreAccepted(3,1)" methodname="OnlyExactMountDimensionsAreAccepted" classname="EternalSteam.Tests.TrainDefenseTests" runstate="Runnable" seed="636649310" result="Passed" start-time="2026-10-02 09:35:17Z" end-time="2026-10-02 09:35:17Z" duration="0.000106" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-case id="1273" name="PowerTransferConservesStoredEnergyAndRejectsInvalidRequests" fullname="EternalSteam.Tests.TrainDefenseTests.PowerTransferConservesStoredEnergyAndRejectsInvalidRequests" methodname="PowerTransferConservesStoredEnergyAndRejectsInvalidRequests" classname="EternalSteam.Tests.TrainDefenseTests" runstate="Runnable" seed="931697416" result="Passed" start-time="2026-10-02 09:35:17Z" end-time="2026-10-02 09:35:17Z" duration="0.001550" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1260" name="ProjectileCompletesAfterBatteryDepletion" fullname="EternalSteam.Tests.TrainDefenseTests.ProjectileCompletesAfterBatteryDepletion" methodname="ProjectileCompletesAfterBatteryDepletion" classname="EternalSteam.Tests.TrainDefenseTests" runstate="Runnable" seed="829352297" result="Passed" start-time="2026-10-02 09:35:17Z" end-time="2026-10-02 09:35:17Z" duration="0.000419" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1274" name="UpgradeQueryTests" fullname="EternalSteam.Tests.UpgradeQueryTests" classname="EternalSteam.Tests.UpgradeQueryTests" runstate="Runnable" testcasecount="13" result="Passed" start-time="2026-10-02 09:35:17Z" end-time="2026-10-02 09:35:17Z" duration="0.007130" total="13" passed="13" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="ParameterizedMethod" id="1279" name="AllUpgradeKindsRejectInactiveDestroyedAndMaximumWithoutMutation" fullname="EternalSteam.Tests.UpgradeQueryTests.AllUpgradeKindsRejectInactiveDestroyedAndMaximumWithoutMutation" classname="EternalSteam.Tests.UpgradeQueryTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-02 09:35:17Z" end-time="2026-10-02 09:35:17Z" duration="0.001619" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1276" name="AllUpgradeKindsRejectInactiveDestroyedAndMaximumWithoutMutation(0)" fullname="EternalSteam.Tests.UpgradeQueryTests.AllUpgradeKindsRejectInactiveDestroyedAndMaximumWithoutMutation(0)" methodname="AllUpgradeKindsRejectInactiveDestroyedAndMaximumWithoutMutation" classname="EternalSteam.Tests.UpgradeQueryTests" runstate="Runnable" seed="1311665771" result="Passed" start-time="2026-10-02 09:35:17Z" end-time="2026-10-02 09:35:17Z" duration="0.000735" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1277" name="AllUpgradeKindsRejectInactiveDestroyedAndMaximumWithoutMutation(1)" fullname="EternalSteam.Tests.UpgradeQueryTests.AllUpgradeKindsRejectInactiveDestroyedAndMaximumWithoutMutation(1)" methodname="AllUpgradeKindsRejectInactiveDestroyedAndMaximumWithoutMutation" classname="EternalSteam.Tests.UpgradeQueryTests" runstate="Runnable" seed="1990463540" result="Passed" start-time="2026-10-02 09:35:17Z" end-time="2026-10-02 09:35:17Z" duration="0.000106" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1278" name="AllUpgradeKindsRejectInactiveDestroyedAndMaximumWithoutMutation(2)" fullname="EternalSteam.Tests.UpgradeQueryTests.AllUpgradeKindsRejectInactiveDestroyedAndMaximumWithoutMutation(2)" methodname="AllUpgradeKindsRejectInactiveDestroyedAndMaximumWithoutMutation" classname="EternalSteam.Tests.UpgradeQueryTests" runstate="Runnable" seed="1948894399" result="Passed" start-time="2026-10-02 09:35:17Z" end-time="2026-10-02 09:35:17Z" duration="0.000340" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-case id="1288" name="BankQuoteAndRejectedCommitNeverDebit" fullname="EternalSteam.Tests.UpgradeQueryTests.BankQuoteAndRejectedCommitNeverDebit" methodname="BankQuoteAndRejectedCommitNeverDebit" classname="EternalSteam.Tests.UpgradeQueryTests" runstate="Runnable" seed="859609688" result="Passed" start-time="2026-10-02 09:35:17Z" end-time="2026-10-02 09:35:17Z" duration="0.000345" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1283" name="ClickRechecksFundsAndChangedCostPolicy" fullname="EternalSteam.Tests.UpgradeQueryTests.ClickRechecksFundsAndChangedCostPolicy" methodname="ClickRechecksFundsAndChangedCostPolicy" classname="EternalSteam.Tests.UpgradeQueryTests" runstate="Runnable" seed="1497791734" result="Passed" start-time="2026-10-02 09:35:17Z" end-time="2026-10-02 09:35:17Z" duration="0.001092" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1287" name="ExplicitFreePolicyStillChecksBuildingAndLevelConditions" fullname="EternalSteam.Tests.UpgradeQueryTests.ExplicitFreePolicyStillChecksBuildingAndLevelConditions" methodname="ExplicitFreePolicyStillChecksBuildingAndLevelConditions" classname="EternalSteam.Tests.UpgradeQueryTests" runstate="Runnable" seed="82104776" result="Passed" start-time="2026-10-02 09:35:17Z" end-time="2026-10-02 09:35:17Z" duration="0.000236" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1286" name="InvalidOrMissingCostsAreNotVerificationFree" fullname="EternalSteam.Tests.UpgradeQueryTests.InvalidOrMissingCostsAreNotVerificationFree" methodname="InvalidOrMissingCostsAreNotVerificationFree" classname="EternalSteam.Tests.UpgradeQueryTests" runstate="Runnable" seed="1434021240" result="Passed" start-time="2026-10-02 09:35:17Z" end-time="2026-10-02 09:35:17Z" duration="0.000412" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1285" name="LostOwnerAndChangedStockRejectPaidUpgradeWithoutMutation" fullname="EternalSteam.Tests.UpgradeQueryTests.LostOwnerAndChangedStockRejectPaidUpgradeWithoutMutation" methodname="LostOwnerAndChangedStockRejectPaidUpgradeWithoutMutation" classname="EternalSteam.Tests.UpgradeQueryTests" runstate="Runnable" seed="960903663" result="Passed" start-time="2026-10-02 09:35:17Z" end-time="2026-10-02 09:35:17Z" duration="0.000335" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1282" name="PaidQueryAggregatesDuplicateCostsAndCommitDebitsExactlyOnce" fullname="EternalSteam.Tests.UpgradeQueryTests.PaidQueryAggregatesDuplicateCostsAndCommitDebitsExactlyOnce" methodname="PaidQueryAggregatesDuplicateCostsAndCommitDebitsExactlyOnce" classname="EternalSteam.Tests.UpgradeQueryTests" runstate="Runnable" seed="1876990732" result="Passed" start-time="2026-10-02 09:35:17Z" end-time="2026-10-02 09:35:17Z" duration="0.000397" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1284" name="PaidUpgradeUsesInstalledOwnerLedger" fullname="EternalSteam.Tests.UpgradeQueryTests.PaidUpgradeUsesInstalledOwnerLedger" methodname="PaidUpgradeUsesInstalledOwnerLedger" classname="EternalSteam.Tests.UpgradeQueryTests" runstate="Runnable" seed="42597228" result="Passed" start-time="2026-10-02 09:35:17Z" end-time="2026-10-02 09:35:17Z" duration="0.000395" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1281" name="PerformanceExemptionStillHonorsOwnMaximumAndActivity" fullname="EternalSteam.Tests.UpgradeQueryTests.PerformanceExemptionStillHonorsOwnMaximumAndActivity" methodname="PerformanceExemptionStillHonorsOwnMaximumAndActivity" classname="EternalSteam.Tests.UpgradeQueryTests" runstate="Runnable" seed="1873893585" result="Passed" start-time="2026-10-02 09:35:17Z" end-time="2026-10-02 09:35:17Z" duration="0.000125" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1280" name="PerformancePurchaseRechecksLiveMainLevelAndPreservesFundsOnRejection" fullname="EternalSteam.Tests.UpgradeQueryTests.PerformancePurchaseRechecksLiveMainLevelAndPreservesFundsOnRejection" methodname="PerformancePurchaseRechecksLiveMainLevelAndPreservesFundsOnRejection" classname="EternalSteam.Tests.UpgradeQueryTests" runstate="Runnable" seed="1664589950" result="Passed" start-time="2026-10-02 09:35:17Z" end-time="2026-10-02 09:35:17Z" duration="0.000358" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1275" name="QueryDoesNotUpgradeOrScaleHealthAndCommandRechecksLevelLimit" fullname="EternalSteam.Tests.UpgradeQueryTests.QueryDoesNotUpgradeOrScaleHealthAndCommandRechecksLevelLimit" methodname="QueryDoesNotUpgradeOrScaleHealthAndCommandRechecksLevelLimit" classname="EternalSteam.Tests.UpgradeQueryTests" runstate="Runnable" seed="323563234" result="Passed" start-time="2026-10-02 09:35:17Z" end-time="2026-10-02 09:35:17Z" duration="0.000257" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Saving results to: /Users/limseth/Library/Application Support/DefaultCompany/Eternal_Steam/TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

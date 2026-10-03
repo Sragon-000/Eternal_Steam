@@ -1,0 +1,15 @@
+{
+  "result": "PASS",
+  "bases": 6,
+  "independentStocks": true,
+  "payerUnchanged": true,
+  "pagination": true,
+  "groundReservationUnchanged": true,
+  "stickyBaseCaption": true,
+  "liveRefreshPreservesScroll": true,
+  "groupReturnPreservesExpanded": true,
+  "baseLossClearsExpansion": true,
+  "savedPointerCallback": true,
+  "runtimeUICreation": false,
+  "researchExperiment": false
+}

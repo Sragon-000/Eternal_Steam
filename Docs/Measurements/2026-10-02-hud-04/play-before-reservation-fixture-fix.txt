@@ -1,0 +1,3 @@
+FAIL System.Exception: Nonempty ground reservation fixture
+  at BaseResourceProbe+<Verify>d__3.MoveNext () [0x00ef7] in /Users/limseth/Projects/Eternal_Steam/Eternal_Steam/Tools/VerifyBaseResourceAccordion.cs:21 
+  at BaseResourceProbe+<Start>d__2.MoveNext () [0x00038] in /Users/limseth/Projects/Eternal_Steam/Eternal_Steam/Tools/VerifyBaseResourceAccordion.cs:5 

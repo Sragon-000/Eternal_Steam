@@ -1,0 +1,31 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/AuthorHud08Circle.cs",
+      "entry": "AuthorHud08Circle.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 1194,
+      "executeMs": 6196,
+      "assemblyName": "PipelineRunScript_AuthorHud08Circle_fa06d6e731c7495a90147f898257c85f",
+      "success": true,
+      "result": {
+        "savedScenes": 2,
+        "mask": "Assets/EternalSteam/Shared/UI/ReferenceHUD/MinimapCircleMask.png",
+        "frame": "Assets/EternalSteam/Shared/UI/ReferenceHUD/MinimapRing.png",
+        "frameSize": "1254x1254"
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

@@ -1,0 +1,996 @@
+{
+  "stage": "HUD-08D",
+  "result": "PASS",
+  "recordedUtc": "2026-10-03T06:04:43.411979+00:00",
+  "editModePassed": 297,
+  "playResolutionCases": 14,
+  "nextStage": "HUD-08E",
+  "researchExperimentStarted": false,
+  "files": [
+    {
+      "path": "Assets/EternalSteam/Scene/Tests/FoundationSandbox.unity",
+      "bytes": 10390,
+      "sha256": "146c6624914653d01ddf8e33eeaea94375af7da06535f591d3723b0d5a858be2"
+    },
+    {
+      "path": "Assets/EternalSteam/Scene/Tests/ModuleSandbox.unity",
+      "bytes": 10412,
+      "sha256": "dce8a0334b290c1580fcd4da7bfdc32b0ebdd3f240685a6e00b1e0ea89a300d0"
+    },
+    {
+      "path": "Assets/EternalSteam/Scene/Tests/OpenWorldSandbox.unity",
+      "bytes": 4430732,
+      "sha256": "fb646b93628ab957a8cc32c3ab1ef30709cb0e088da3f8b4a36274b69ca29d60"
+    },
+    {
+      "path": "Assets/EternalSteam/Scene/Tests/StartRegionSandbox.unity",
+      "bytes": 162169943,
+      "sha256": "3c6d7967052f321d38b37e95f3a76b492455be64188e06b5763a5e7c21af9743"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/BasePowerView.cs",
+      "bytes": 1657,
+      "sha256": "8c9639e8f09c79ff3b0acdfa48c636ff29e77b4730882c2c403d4fd3d8dce483"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/BaseResourceAccordion.cs",
+      "bytes": 3323,
+      "sha256": "ef1830104c4d99f7fd26de37285f6360ed8fe705c47ef9da34dce52f9d0020e2"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/BuildAreaHologramView.cs",
+      "bytes": 6655,
+      "sha256": "706689b3232c9b63f14024e840307014e592bd3e85afce74a039dc5af6f478dd"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/BuildingHitView.cs",
+      "bytes": 1428,
+      "sha256": "0210972ac82e5fed94f761d5372ee7bac6d161c63ba07535cdf7553758ca69ea"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/BuildingInventoryView.cs",
+      "bytes": 3103,
+      "sha256": "9ba9c8b0fd1f40d2e8ae87990a8e795eddf321a88a1891d992cceec7f1fffc8f"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/BuildingOperationStatus.cs",
+      "bytes": 1236,
+      "sha256": "a519c2ee6cfe2f108bc919966ae593633fb51ec634be6f556df2aaf29ccadced"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/BuildingRectangleSelection.cs",
+      "bytes": 1570,
+      "sha256": "682c2a7f051cc7d552891efa98b46990c3afeef1e15deff5bf9ae860338e6fe2"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/CanvasClockDial.cs",
+      "bytes": 897,
+      "sha256": "f14f1e097aa715af305159a16acacdeb08ed784f5b1efe3d79c5103aff0ff143"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/CanvasHudLayout.cs",
+      "bytes": 9523,
+      "sha256": "bb7f2cc199e61ffeed818e8f3ab5f87c763cecef6932435356106c2d0229a373"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/CanvasWorldHud.cs",
+      "bytes": 27349,
+      "sha256": "f3a6e5705ea16269548e1fbd9b47f0578a00d14ebfdeb8b3aa96386ddaa0973a"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/CanvasWorldMinimap.cs",
+      "bytes": 9563,
+      "sha256": "1dceb26e42df570de34a507a1359de580800ccb6a2fd7c7c9899df2c1f8c5e06"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/CompactConstructionDock.cs",
+      "bytes": 9645,
+      "sha256": "f43ad0f2e258665f6e08738d217a631b144dd3bea0a9fde8b40e6105954dfcfd"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/ConstructionDragEditor.cs",
+      "bytes": 7962,
+      "sha256": "7ded95d86576a35f61feca2d8cf10a20ebf27c975478fe8d1c8b3c7025a1b2bb"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/ConstructionVisual.cs",
+      "bytes": 2821,
+      "sha256": "9b6e6d26c5dac97bead5f40c6bc852fb2d29150dd31a52a2667b04a61a31eb85"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/DayNightDial.cs",
+      "bytes": 1579,
+      "sha256": "69288270b59467f22a67ad14e605007849828da8280d766495de41da585351ee"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/EnemyBuildingCombat.cs",
+      "bytes": 9066,
+      "sha256": "14c30018066afbb37ee8dce6e96d776f2ea283c788b7169071ac230645848669"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/EnemySpawnLayout.cs",
+      "bytes": 1679,
+      "sha256": "7bf989d0b75b00ae3c3089aa191495cc9bf4cbfaaf64cd1820aa2ce008b867fa"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/EnemySpawnStream.cs",
+      "bytes": 4335,
+      "sha256": "2b9303945c8ce1c3c271c877879fb26866ad1a45a6a8cd5be66c3cae36a75b3d"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/FoundationPlacement.cs",
+      "bytes": 13555,
+      "sha256": "fe7f483ffbbd8323c135a24d802a6d31007b1acb75f59334062c18f1929d8a30"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/FreeCameraRig.cs",
+      "bytes": 2921,
+      "sha256": "27600a77fffecbd55632e8aec353dfcf655b9436795a144cfe44ed74f1508eac"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/GameplayHudWorkspace.cs",
+      "bytes": 2476,
+      "sha256": "69bc249b2ec9cfb3df64876c93898926d554c4413fb441ef89cb4f46ae29a314"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/HordeTargetAdapter.cs",
+      "bytes": 4786,
+      "sha256": "58f7b782ab5bd5ccf529818f5d6b6103a214e2caafc5dc589ddd1bc005ea9894"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/HudModeGroups.cs",
+      "bytes": 5411,
+      "sha256": "305c5eeb0bd921a9ce425bff8d21098a1389207cfb10e1e96ae4a8186b6793d6"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/HudPauseMenu.cs",
+      "bytes": 6083,
+      "sha256": "d5eb50cd76a4385a5a87e37b67daacdd525d1a7386f794c515bbe1f56a7cc277"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/MapAssaultController.cs",
+      "bytes": 6452,
+      "sha256": "1ef5665cb2a47d31512966f55825533d0ef21883711218c61bcf6103aacbde2d"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/MapAssaultSettings.cs",
+      "bytes": 2165,
+      "sha256": "8e177db0203c68d52d62c5d4ad8dea7b5720112d534b7b1ca87ea1720b128278"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/MapCoverage.cs",
+      "bytes": 3606,
+      "sha256": "69973f3fb4da9fd0b08b81a73394b420b3444a56558b53a35219dc1b8071ab57"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/MapProgressView.cs",
+      "bytes": 2038,
+      "sha256": "493f272a8379329249fb6be92950b4352fa07e0cd7f9969a9870f57f37ee7116"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/MinimapElement.cs",
+      "bytes": 3531,
+      "sha256": "b0d740b9b429c708ed06e9d27c1788be9fdb91067a9fc81a32b5a96e599b4a39"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/MinimapProjection.cs",
+      "bytes": 1848,
+      "sha256": "1335be72806a1d24fe39535563ecbffb791a3a7ca3aeec4ce6ced77779bce3f1"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/MobileDefenseRuntime.cs",
+      "bytes": 3267,
+      "sha256": "9a862c0470b06d66d8164c1ed9792b2174f07f6c2f43cedcca6124ddce17d668"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/NexusDestinationQuery.cs",
+      "bytes": 1545,
+      "sha256": "c39f848596209ce1d3c1ac8d8b9266baee444645adeab40933df4b25427c0a53"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/NexusGridView.cs",
+      "bytes": 2196,
+      "sha256": "131bb9682222d18e943b9cee472cbf3be62468253cff1276c4fa3013252aa8ad"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/OpenWorldContent.cs",
+      "bytes": 20763,
+      "sha256": "0363a04d612f1151907f759014147b85301c856a1f122ea1fd686cb39c914592"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/OpenWorldHud.cs",
+      "bytes": 12782,
+      "sha256": "e62f3fa5bb2b415e63865bcb474b747fea36ea4d6b11934ce8c9dede0963d637"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/OpenWorldHudActions.cs",
+      "bytes": 3569,
+      "sha256": "7a41318ed63e6531c6357f39329b0f423dbc0838af5056f38d0d031f0c9d513c"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/OpenWorldInput.cs",
+      "bytes": 21525,
+      "sha256": "33d3b030a5779d5679c154919a2fcabe0f0dd8d98f766537ff2263862f36104f"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/OpenWorldMinimap.cs",
+      "bytes": 4652,
+      "sha256": "f5d1f83f421c20c0b01268210a61245660e91d959475095c03bb5a0ae9afba06"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/OpenWorldSandbox.cs",
+      "bytes": 11871,
+      "sha256": "e1c201c5b0f600e438c6ea206284c66251560b9346cd18a5f5642bd34272a13d"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/OperationStatusView.cs",
+      "bytes": 1492,
+      "sha256": "52be745fb57d32c33e52d6d722fc846cba894eda1e73e3c8c792e1c8361d751a"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/RailRouteMarker.cs",
+      "bytes": 657,
+      "sha256": "11df72745c8b56f8c1e05f805ab7207ecc226225ac024f1e85c42ff1d344d02a"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/RailTrackView.cs",
+      "bytes": 1164,
+      "sha256": "f993c406926c42935d825ebf9f626502ed6c620841f6af37c1f2c79b2b478c06"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/RailwayConnectionHud.cs",
+      "bytes": 7288,
+      "sha256": "1c33797c45c71b907cdd1af5adc0c0d3d758c47b473e2f9b319cefbe3128d058"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/RailwayConstruction.cs",
+      "bytes": 4997,
+      "sha256": "95f3c03e37fd08d37d26cfa68ab0dccb8b1384e2b09f8c733137f8a8ab1430e2"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/RailwayController.cs",
+      "bytes": 3032,
+      "sha256": "b77543822daef2804807d9fe2782d8395fe897410371d009409e96d5d2e8e03e"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/RailwayEditorPanel.cs",
+      "bytes": 3875,
+      "sha256": "e0a6e6f8403090744daa15b61b3c3e9858d4ef9c5c1494e27b74a706d603b3ec"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/RailwayHud.cs",
+      "bytes": 43543,
+      "sha256": "3709ebbcf0ef559d1ae07962f65b70f4aa2e6e4e9e12b086bfc4b84202a4fd12"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/RailwayOverview.cs",
+      "bytes": 9788,
+      "sha256": "8e81a9be8fe85daca26631cafd1ba7f9a4242f5ed076eea24aca897fa089414f"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/RailwaySceneView.cs",
+      "bytes": 9722,
+      "sha256": "709cb25c89a7d97bba49c7bb9e71a49ba5fc9b4fa79ab0bec4fe397fafa95c27"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/RailwayServicePanel.cs",
+      "bytes": 3587,
+      "sha256": "2b0e2ed640add4ec4e76a03f9259478e1fe78096818a14c3956d34780e6b7f1a"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/ResourceStockView.cs",
+      "bytes": 2221,
+      "sha256": "54753d100008312931aeb7c9ed390c15e9a3c578a84dc53271cca5ae34cef0a7"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/SceneFoundation.cs",
+      "bytes": 369,
+      "sha256": "abb154ea540f3753fa795abe2541717b57be3dc7dc22b7a345644e312d93a674"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/SceneStartingBase.cs",
+      "bytes": 297,
+      "sha256": "f8dbe782d0f94d4bfbbaf963a9444732de964d75b724a6086c4902f78dedb625"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/SceneTower.cs",
+      "bytes": 2231,
+      "sha256": "60f52353127ce7a43724a8c865a1603758035d50b4b071bb4e28c97cb60044e4"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/SelectedBuildingView.cs",
+      "bytes": 3085,
+      "sha256": "7e09ae1e76e1f85afae53341442e1632e2c2ff510212fcc5ba7f2b014c218f3f"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/SingleMapPersistence.cs",
+      "bytes": 28911,
+      "sha256": "7be9242cdd9275373cde6c296e93b7f3a93afa09b39a5e24ceccbb4e412a239f"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/SingleMapSnapshot.cs",
+      "bytes": 5691,
+      "sha256": "d6b82995e060faa4890e21ab2eb526c1427dfcb1932028cc3c90764d0b69dc20"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/SpawnAreaValidator.cs",
+      "bytes": 1915,
+      "sha256": "4b4b683095808013fbcbabeef6c6a0c9cf9d69b29a498c05ac3365fc5bbc4b5e"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/SpawnAreaView.cs",
+      "bytes": 1206,
+      "sha256": "d19bc13c67698196655eee8a6a0f501e1932bff22a95ff80174e9649f476b651"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/SpawnQuantityInput.cs",
+      "bytes": 2843,
+      "sha256": "cf9b483ba78a2eb371f74533793f7824a72af7a6cd7006324b08bbc40d4618d4"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/TerrainFlowNavigation.cs",
+      "bytes": 4965,
+      "sha256": "42de2875f956d3e470c37eec7adeb6d0fe28cfe4194ebd705bce3b9ea70431b8"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/TileWorldGround.cs",
+      "bytes": 6018,
+      "sha256": "b61760f6da3911e1638b83205d229fc9b0971d0df7463f3446d725f67503c602"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/TrainConsistView.cs",
+      "bytes": 1263,
+      "sha256": "58df1694b396d3c910eccfd66aa8536a1eac34f701bf2a1553ce7f0d85b9e84b"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/TrainDefenseController.cs",
+      "bytes": 9755,
+      "sha256": "f58524390f4c1b8c84692a7c0fa44498509a5eea04c97db3b6ee92a57ba5bece"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/TrainDefenseView.cs",
+      "bytes": 1242,
+      "sha256": "456f0c261351a36d02dd724a64e1578171f6f7c4e403ed1e27bbb58ed10dac55"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/WallPlacementStroke.cs",
+      "bytes": 2734,
+      "sha256": "5fc911f25e210e8ce62712b811e6c9f2610d79d08e21e4ac0021868011610e8b"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/WorldClockView.cs",
+      "bytes": 1427,
+      "sha256": "56ade346935e33ad814807f50de4e04c5fedee915ea0f853f81c82fad12a209f"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/WorldEditSession.cs",
+      "bytes": 28713,
+      "sha256": "9a052f9c770b4eddeee3e17596953e54efe76e2f4b47e687f071e3da72c053f7"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/WorldGridGeometry.cs",
+      "bytes": 2844,
+      "sha256": "4a8bdd8c935cbaedc38187a3cdac2503deadd190b8cd8d120757c2e509be8790"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/WorldGridView.cs",
+      "bytes": 4095,
+      "sha256": "d42f7c7aba2f203ebc1937d0248dcb0e456e2fba561869623501adc887e96595"
+    },
+    {
+      "path": "Docs/Implementation/HudGroups/HUD-08.md",
+      "bytes": 14885,
+      "sha256": "c32888ecf5757b3cf8ad91ba738438a244636682f1ec7e08f40675018fb280c1"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/OpenWorldSandbox-1024x768-browse.png",
+      "bytes": 451082,
+      "sha256": "6f98dc04953b940362dbcb3bba8839b1fd4ba378047aad8039a165526b6436a1"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/OpenWorldSandbox-1024x768-cost.png",
+      "bytes": 566034,
+      "sha256": "e1eadda730a517840828bdb26aac326c91886485446e9f12854707a3d6c8a32b"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/OpenWorldSandbox-1024x768-placement.png",
+      "bytes": 434415,
+      "sha256": "3a07654b593bbdc3f824c0e07da5d511f415d9a425e3519548d7fa7a274692d0"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/OpenWorldSandbox-1280x720-browse.png",
+      "bytes": 498651,
+      "sha256": "e05546547b18d14308f9b28875ec9fb46690a99cb9dbd1ec55245626622ce608"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/OpenWorldSandbox-1280x720-cost.png",
+      "bytes": 600729,
+      "sha256": "c7ba67326024e20b2b8465359a35b59e59b6193429b1c62918a784a9de0e3839"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/OpenWorldSandbox-1280x720-placement.png",
+      "bytes": 491515,
+      "sha256": "07791a400f157db26c686e168263f775f1f1e2ab2444f5cc9e2be8ff8bdaf2fc"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/OpenWorldSandbox-1920x1080-browse.png",
+      "bytes": 827725,
+      "sha256": "56ced6528a9e37b5f4e3966b9a26ed75f95ec9092d4d4705994dde94150c0b30"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/OpenWorldSandbox-1920x1080-cost.png",
+      "bytes": 940133,
+      "sha256": "a496b1c0c6fa26a9c99a4bd4dae1f21992959c95640b0170e3d40cf257dce902"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/OpenWorldSandbox-1920x1080-placement.png",
+      "bytes": 815485,
+      "sha256": "dc98ac4ad8aac825d80531f2375f5248995de9fdb6b6b9ceca4c827ac7307ee5"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/OpenWorldSandbox-2560x1080-browse.png",
+      "bytes": 906179,
+      "sha256": "bdd17bea96afa93bd2594728d9d0a882e34916deb0eebfe664d06ca9d92e3db7"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/OpenWorldSandbox-2560x1080-cost.png",
+      "bytes": 1042348,
+      "sha256": "e8142255a45df90f30cb7a1e55543231a8c81a65ceb990c267bd6ce1fc9ceac5"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/OpenWorldSandbox-2560x1080-placement.png",
+      "bytes": 894370,
+      "sha256": "814fff66edce211a161df263872ffe4c635a26bee84fe5a3a000db7f3b359399"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/OpenWorldSandbox-3840x1080-browse.png",
+      "bytes": 945231,
+      "sha256": "0248cc13cf486285a0a4d33da4224191c391016672e7a96fff1085820cc164fb"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/OpenWorldSandbox-3840x1080-cost.png",
+      "bytes": 1137615,
+      "sha256": "7dea398b428e168a2282d47158bb537cbbf7cc949aec80124665d9de4bdd4807"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/OpenWorldSandbox-3840x1080-placement.png",
+      "bytes": 933230,
+      "sha256": "2474a702feeb2da279a512aa91f0f17259f0a7e1cca07d97f7e31cd3992d8c4b"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/OpenWorldSandbox-3840x2160-browse.png",
+      "bytes": 2116793,
+      "sha256": "b0486c9405640622d7f3576a73d710a54dd86b5ebb7bc91f8b66f1e26bb0e9ec"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/OpenWorldSandbox-3840x2160-cost.png",
+      "bytes": 2308883,
+      "sha256": "01afe5be538592d0dd743866e8c328aec0782a6fa6871fae10743b1ba90c9a22"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/OpenWorldSandbox-3840x2160-placement.png",
+      "bytes": 2125557,
+      "sha256": "55e2b6490080968177b1bcddf41b1ba096410cf5a2440790b777fde93d621749"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/OpenWorldSandbox-800x600-browse.png",
+      "bytes": 322884,
+      "sha256": "82d26bc4e2b45101eab14d92d68fcefa9c99eeba5ad6eb187058fad3e63737e9"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/OpenWorldSandbox-800x600-cost.png",
+      "bytes": 444400,
+      "sha256": "98e8689bb599c457a83e70ad3f0183517fcb4f69f228d1d70628fe8473975fd9"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/OpenWorldSandbox-800x600-placement.png",
+      "bytes": 314425,
+      "sha256": "2adcd018112af9acb27fe56aea434d6c0615f25ad7920951befac216b12500c3"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/OpenWorldSandbox-results.json",
+      "bytes": 2131,
+      "sha256": "d85d2d589f08e6c7378fcc91797c77d7f16ed0d0d24e58fae7a6467cdfe55b2d"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/OpenWorldSandbox-status.txt",
+      "bytes": 18,
+      "sha256": "fd9fb379c91e4c01022d7eabca6f0e42c7ea6ccc8958091be65445467a6f7519"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/StartRegionSandbox-1024x768-browse.png",
+      "bytes": 580590,
+      "sha256": "f7d53478a00588acdcf48d30a589242cc099691c3926ef581d4cccc8c423519e"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/StartRegionSandbox-1024x768-cost.png",
+      "bytes": 818127,
+      "sha256": "b6657e4aa78d4971d856275ad8b230cc16db6eee8c2251569e9d9c79195b473a"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/StartRegionSandbox-1024x768-goal.png",
+      "bytes": 693114,
+      "sha256": "ec712a78c2ff93fd3e045535b7769e33610056213786c134ce90cb2e9323aad4"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/StartRegionSandbox-1024x768-placement.png",
+      "bytes": 753848,
+      "sha256": "30bd04a45239527b33273748c2197a7126a22a8d20f322b5b26741c342ca0861"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/StartRegionSandbox-1280x720-browse.png",
+      "bytes": 776113,
+      "sha256": "66460a88f659c190c19443501ea833be37b233f8af7eac18704de8cdbe83c220"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/StartRegionSandbox-1280x720-cost.png",
+      "bytes": 984365,
+      "sha256": "77285d880310f0377022b62ff5b9b4e15e4987a3e55537f76519ffbd0ff6a6eb"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/StartRegionSandbox-1280x720-goal.png",
+      "bytes": 853612,
+      "sha256": "b4c36ae7136d4bc425b60853158e700cc0fbdfff311101b8dd235a4b4205931c"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/StartRegionSandbox-1280x720-placement.png",
+      "bytes": 937478,
+      "sha256": "dba5587e27bc14a1b927c21aa9dc89c189d28bb571bbfb1f0497c7497c0c1c21"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/StartRegionSandbox-1920x1080-browse.png",
+      "bytes": 1216138,
+      "sha256": "b555d74bc3bd53c15be4431707837565f5c480cf1abde193170f453eee0d8ffd"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/StartRegionSandbox-1920x1080-cost.png",
+      "bytes": 1811866,
+      "sha256": "5d7fa575f445a6ced5d666d75db017920e239dd7139b7742130a0a106c870f28"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/StartRegionSandbox-1920x1080-goal.png",
+      "bytes": 1337849,
+      "sha256": "a6ab2b3172be6e083987aa3777299af153b85ec9d183c45577f8d11fb0f430fc"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/StartRegionSandbox-1920x1080-placement.png",
+      "bytes": 1733335,
+      "sha256": "c80eabd0b628dcde101af8378e0824a5c70a43c6e2495bd2d126e4536b726d46"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/StartRegionSandbox-2560x1080-browse.png",
+      "bytes": 1501425,
+      "sha256": "9366238c5ddcc10aa2f8e55baaa84359cb6a76de7664e061e9ae160e19267955"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/StartRegionSandbox-2560x1080-cost.png",
+      "bytes": 2320844,
+      "sha256": "37e2abfe684adf7aed5fa23ace7c3a8d4783fc51f75917da928d3a10d912003e"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/StartRegionSandbox-2560x1080-goal.png",
+      "bytes": 1626646,
+      "sha256": "1922532b4c00aa0ef27a6cc797858d6bfcc2793eea1cc4083413f5d456201b53"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/StartRegionSandbox-2560x1080-placement.png",
+      "bytes": 2237794,
+      "sha256": "92ae457c6fda4808aaf5dc858dc27457fa06d36c5f767c2354b40eaf1d4983d3"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/StartRegionSandbox-3840x1080-browse.png",
+      "bytes": 2111221,
+      "sha256": "5952e677f9833573ccebd76002540d5fa7828f26af73ce936f029cf1df8a2314"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/StartRegionSandbox-3840x1080-cost.png",
+      "bytes": 3307588,
+      "sha256": "106e701ac235c33786e6512f2dbac1d074cf15281ec58acca798a95a5d12bc64"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/StartRegionSandbox-3840x1080-goal.png",
+      "bytes": 2232288,
+      "sha256": "b0a1a7ac3f5c0c55bfd50ce81fb33d9c7656d3bb8245df4a676851b79d880a00"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/StartRegionSandbox-3840x1080-placement.png",
+      "bytes": 3231332,
+      "sha256": "e1eb41e8bc29509d65cfc5aa5ef5344b93a7179e9f87d4861510677f190e61ca"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/StartRegionSandbox-3840x2160-browse.png",
+      "bytes": 4841761,
+      "sha256": "2394be94ad2236154aff80cc4397998dc862ecc42191155b73aacc7aa8061196"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/StartRegionSandbox-3840x2160-cost.png",
+      "bytes": 6649362,
+      "sha256": "dfe81be234d0cf133b08059f74db38efa20dc9c4a8b477b5317264fe265149b8"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/StartRegionSandbox-3840x2160-goal.png",
+      "bytes": 4964345,
+      "sha256": "de9adc06f95a306e050a713de968a49e895825573718a7f6ea11fd40819c0d3f"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/StartRegionSandbox-3840x2160-placement.png",
+      "bytes": 6565514,
+      "sha256": "1b07cd965326c04dc6891f18bd004b0d8537461d0e3bbcf6e28f093fcf606202"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/StartRegionSandbox-800x600-browse.png",
+      "bytes": 455197,
+      "sha256": "e887c6fcd04037be014314e2b5196bdff1be27b5386ca0aa2f0e13eb8a2f03dd"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/StartRegionSandbox-800x600-cost.png",
+      "bytes": 547673,
+      "sha256": "24a9ac40221456939c6242e21c696658900220009cdf70531c904371a4d93830"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/StartRegionSandbox-800x600-goal.png",
+      "bytes": 478624,
+      "sha256": "494c156a019f918dad763aaa02e73f2502c8f53fed706fd11922b9c6960e389e"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/StartRegionSandbox-800x600-placement.png",
+      "bytes": 532483,
+      "sha256": "532cb3aea6eb2f6417eb454891851441d3ba396a09b7c1321d6d987b9d6b83b3"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/StartRegionSandbox-results.json",
+      "bytes": 2131,
+      "sha256": "d85d2d589f08e6c7378fcc91797c77d7f16ed0d0d24e58fae7a6467cdfe55b2d"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/StartRegionSandbox-save/archive/20261003-052146-979e0bcc35ab410c84f5edd51e4b9e51/current.json",
+      "bytes": 1511498,
+      "sha256": "b649ba701d33cf227a09571bea6e4ca23b15ab469084239b08e31da7f98f4401"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/StartRegionSandbox-save/archive/20261003-052146-979e0bcc35ab410c84f5edd51e4b9e51/previous.json",
+      "bytes": 1511002,
+      "sha256": "6376a0eae172012613548d43e24e561b254004bca58d1b55edfc578bf8992bed"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/StartRegionSandbox-save/archive/20261003-052844-549ed3fb58254cf688642164271d988c/current.json",
+      "bytes": 1511002,
+      "sha256": "e18c0a3b0f02ade26119d65d87966c6a686ee67fb40897ea0f4e206b3088266e"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/StartRegionSandbox-save/archive/20261003-053915-0efbb22afa6b4587a4a1e58c0ba81dfa/current.json",
+      "bytes": 1511498,
+      "sha256": "4356b9c5372da9970b3d7e8dd386497d1ddc783b402fc75970b17a9284c93a07"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/StartRegionSandbox-save/archive/20261003-053915-0efbb22afa6b4587a4a1e58c0ba81dfa/previous.json",
+      "bytes": 1511002,
+      "sha256": "6232bd68c685af4e818732933bc2bc4e28d950a02eda951fa5207a281e202cb3"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/StartRegionSandbox-save/archive/20261003-054952-13eda729722b4d4a8b72f8873d87533d/current.json",
+      "bytes": 1511002,
+      "sha256": "d353303e1405b4dcc3cbfe55548bcc90977637f75df111969bffdd0e3bfc43ed"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/StartRegionSandbox-save/archive/20261003-055928-c116e978411d41e7a41f2b9c0a2ebe8f/current.json",
+      "bytes": 1511498,
+      "sha256": "848730659fb358e0a6cf1edc69e72ea2c519fcc5c13743d2fee09dcb9181b4e2"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/StartRegionSandbox-save/archive/20261003-055928-c116e978411d41e7a41f2b9c0a2ebe8f/previous.json",
+      "bytes": 1511002,
+      "sha256": "2c2c8d40de09d66e4ede42409e712c8961fe9a2240fa6c0013d4fd7a85e3ead7"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/StartRegionSandbox-save/current.json",
+      "bytes": 1511002,
+      "sha256": "86f69b459972f8d8cdf688e1de5009592e48158e815e1fe3feabc6f0d4445b2c"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/StartRegionSandbox-status.txt",
+      "bytes": 18,
+      "sha256": "fd9fb379c91e4c01022d7eabca6f0e42c7ea6ccc8958091be65445467a6f7519"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/author.json",
+      "bytes": 695,
+      "sha256": "1b1b3ecf2220f0dd724e5e3d055263ee823274cb334edea2cdcc081f64a0642a"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/baseline/CanvasHudLayout.cs",
+      "bytes": 9247,
+      "sha256": "f55d72b4ae8211ab17e53a121c2c023403cc7ae495aef5631eef6c3df9c3c2cd"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/baseline/CanvasWorldHud.cs",
+      "bytes": 27130,
+      "sha256": "d754a282fb70b92c014f7555a826d6d9e2637f0caf54838e72a42671f6fc9514"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/baseline/FoundationSandbox.unity",
+      "bytes": 10390,
+      "sha256": "146c6624914653d01ddf8e33eeaea94375af7da06535f591d3723b0d5a858be2"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/baseline/GameplayHudWorkspace.cs",
+      "bytes": 2434,
+      "sha256": "75ed0fe84457eb1e5ce53b06934c81ce1388e1648309d58d2145a57df8c8194b"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/baseline/ModuleSandbox.unity",
+      "bytes": 10412,
+      "sha256": "dce8a0334b290c1580fcd4da7bfdc32b0ebdd3f240685a6e00b1e0ea89a300d0"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/baseline/OpenWorldInput.cs",
+      "bytes": 21525,
+      "sha256": "33d3b030a5779d5679c154919a2fcabe0f0dd8d98f766537ff2263862f36104f"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/baseline/OpenWorldSandbox.unity",
+      "bytes": 4340432,
+      "sha256": "dcb92be85ba7d744bf800473af5d91aed208f2ca849168d2e01ca49dd7b06dba"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/baseline/StartRegionSandbox.unity",
+      "bytes": 162079706,
+      "sha256": "88d496a2007f2bd115a9e4cd0e0770daa9ba4897daa2af0842e21e999ef0a1ce"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/before-hierarchy.json",
+      "bytes": 58701,
+      "sha256": "c0d76783b57546e50011f3b44dc47cdd982d4cc79e1c8468685bc7b3e3a0ffab"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/details-launch.json",
+      "bytes": 685,
+      "sha256": "8b5c767439b9bd445999e9c6edd6c3387b563462ffc578a4fe371fb3dbc1df82"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/details-result.json",
+      "bytes": 179,
+      "sha256": "355a2fbf50021d3f5299557266ac2f81f5768f2297fac52f2c9911b31001d693"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/details-slide.json",
+      "bytes": 695,
+      "sha256": "8da3a62cea4cfca8698faf1a1cadc3f5faaeccfd20f58e38130e8fc3fd029b2f"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/details-status.txt",
+      "bytes": 4,
+      "sha256": "2f9acb02faa121bb2a3621951f57b4c690655337edee2e5ac350be2b3be88ea8"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/final-editor-state.json",
+      "bytes": 205,
+      "sha256": "5bfa3929baba755ab0e162b3875afffe54fcf24f9f196dbae7adde98ebb058f5"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/long-name-costs-800.png",
+      "bytes": 602083,
+      "sha256": "6550b70fc4003629287c0fc3575427e809f9dbd86ebe798fd81aded19ea0ac08"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/open-matrix-launch.json",
+      "bytes": 633,
+      "sha256": "ae3cc93d0abbb9808b43bb5f4bd04198ca49da785adddbb803c346b39be11254"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/play-result.json",
+      "bytes": 360,
+      "sha256": "0c37a50bb8743c25d39675f84fe57c3d70bb63372fce06cea23f846f9105101b"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/play-status.txt",
+      "bytes": 4,
+      "sha256": "2f9acb02faa121bb2a3621951f57b4c690655337edee2e5ac350be2b3be88ea8"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/polish.json",
+      "bytes": 659,
+      "sha256": "68b5f159ef6e8085363f444cc254639f41cb7cbc256faa05ab1f01b7d0bc6b4e"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/preview-browse.png",
+      "bytes": 453188,
+      "sha256": "f8f61b9c7eb917d13281c73394caf1b3af76735e13a1fb29db27203cd39527cc"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/preview-cost.png",
+      "bytes": 549642,
+      "sha256": "752ae00d0fb1085d95a408fd817d91b53a52e744048c8a34586534da46ac6235"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/preview-placement.png",
+      "bytes": 534654,
+      "sha256": "e8e0f351c9e5bb6eecd7dc192b27d115939415191b0094c3225af9b2fec9ff84"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/product-tests.xml",
+      "bytes": 242704,
+      "sha256": "b37863268ce8e1f0b40a5848dba905c7975ca5ebcbed1ba499b8cec4d875cb9a"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/resource-expanded-800.png",
+      "bytes": 461079,
+      "sha256": "7d6b1d28d3f425a26d9e8ba969c7f53b9ded4db4a569c37aa4979b8042568de8"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/selection-800.png",
+      "bytes": 481651,
+      "sha256": "ee5f5e173bb4e9cfed35bb3bd45ebb04c85718c445de9a3a3fcba961e66c1894"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/source-diff-check.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/start-matrix-launch.json",
+      "bytes": 633,
+      "sha256": "54702046b4d8bed8a8b509d19b75bd17d475655a86ba9c8dbdb15d1d85011d96"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/tests-command.json",
+      "bytes": 77161,
+      "sha256": "504ee53599be57dbf9ad4a30e0b6b274a792a4bc916b5c87225140d54f33f2d7"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/workflow-construction.png",
+      "bytes": 3392159,
+      "sha256": "a54b34733e20ea7696b145db104cdc3c96beca801e717a4bc74ce1d1114bdd11"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-03-hud-08d/workflow-launch.json",
+      "bytes": 663,
+      "sha256": "4aa00b8fb3a83216e6304183ee4c2b3922f8934ab16cad23c490a8824ccbbeef"
+    },
+    {
+      "path": "Docs/Validation/2026-10-03-hud-08d-compact-construction.md",
+      "bytes": 6262,
+      "sha256": "bf207b7bd6eb001286a8c1a5f82995f6a1f883f32a03ab3b2e51aac730a04b48"
+    },
+    {
+      "path": "Tools/AuthorHud08Circle.cs",
+      "bytes": 3354,
+      "sha256": "060874699068e0397b5a7056f05cbd918bb945ad7db4331af9234a07adaacd11"
+    },
+    {
+      "path": "Tools/AuthorHud08Dock.cs",
+      "bytes": 10428,
+      "sha256": "26fb3e2bf1e7f8c5d53faf7d654c320eeeb3ef6073bb945cb4dbabc1b3c82731"
+    },
+    {
+      "path": "Tools/AuthorHud08Menu.cs",
+      "bytes": 6542,
+      "sha256": "bf8aed9e78b79e6e831385a07ed6f36dde2c70fec15b38a0180c616c5aa7344e"
+    },
+    {
+      "path": "Tools/BuildHud08Fixture.cs",
+      "bytes": 4933,
+      "sha256": "fd7b6adfab5a67b42df7931f6c7e4a11f6ea26826dd5d3602ef23280bc7c7f30"
+    },
+    {
+      "path": "Tools/ExportHud08CResults.cs",
+      "bytes": 643,
+      "sha256": "168d75f66eb16ab455973d0e547360fa078aea9470c50da8a95c33838df87ad3"
+    },
+    {
+      "path": "Tools/ExportHud08DResults.cs",
+      "bytes": 643,
+      "sha256": "e9ae09d57e93cbd1b236affb8b6141c239e8fd4e73625388c92f89d1b8ff7b60"
+    },
+    {
+      "path": "Tools/ExportHud08Results.cs",
+      "bytes": 641,
+      "sha256": "2408aa0390e3a8c6f4d29ce0c44c0def2a97a555768b989231ad34aa64d8c2ee"
+    },
+    {
+      "path": "Tools/FinishHud08CValidation.cs",
+      "bytes": 2504,
+      "sha256": "7628408cdaa11c30f317458f9d746b9f6bce0ac5f319809bf12aafb5d5fdf76f"
+    },
+    {
+      "path": "Tools/FinishHud08DValidation.cs",
+      "bytes": 2504,
+      "sha256": "7082941bc67f107c4df92db60c85bc52feb90d31c2c074d5eff8901f7e6ac52e"
+    },
+    {
+      "path": "Tools/FinishHud08DockAuthoring.cs",
+      "bytes": 1722,
+      "sha256": "23543a1c2ec163f539e0cfe002d79dfd8bb92d9bbafed0a3e77abc8dbbf3601e"
+    },
+    {
+      "path": "Tools/FinishHud08Validation.cs",
+      "bytes": 2504,
+      "sha256": "099cec64bdcbf58d7dacce795f9836b6e3e0ceae445d33873f1abd9682eedcee"
+    },
+    {
+      "path": "Tools/FixHud08CircleHint.cs",
+      "bytes": 953,
+      "sha256": "8c1f468005975e69c44912bf922bb777c27a26caa9f61cebb0dcdc9adefdd7fe"
+    },
+    {
+      "path": "Tools/FixHud08MenuReferences.cs",
+      "bytes": 1784,
+      "sha256": "b5bdb040b8cefb458e558135919f6af4af0da8c88b8689c8410aebb771c3940c"
+    },
+    {
+      "path": "Tools/InspectHud08Circle.cs",
+      "bytes": 727,
+      "sha256": "7542b3fc189d3a1350ef712bda601b8babe39e87bc4b99c3ca4d63b5b32870e6"
+    },
+    {
+      "path": "Tools/InspectHud08Dock.cs",
+      "bytes": 938,
+      "sha256": "7a1342d42ba398f0d1f90893123fa29e3a93abd0f4e3289d40d33855452d6788"
+    },
+    {
+      "path": "Tools/InspectHud08Menu.cs",
+      "bytes": 699,
+      "sha256": "6df781450a0ab4516c94f6474173c388fb51623ed45bfff5062532442772fb48"
+    },
+    {
+      "path": "Tools/InspectHud08Scale.cs",
+      "bytes": 589,
+      "sha256": "b8b4f96eb47cedd19b3ea85cf6c15463335c1e4eed96cf6cabedb84638107384"
+    },
+    {
+      "path": "Tools/InspectHud08Text.cs",
+      "bytes": 599,
+      "sha256": "a9605ab3649b2021ca5a4d0ccd6fa5de1430498b784b9483dbc74863bd7efecf"
+    },
+    {
+      "path": "Tools/PolishHud08Dock.cs",
+      "bytes": 2647,
+      "sha256": "d1218291021c57f46fbbea80c629a32a0d2320916870e0ad6122e8adcec1b6e0"
+    },
+    {
+      "path": "Tools/PreviewHud08Dock.cs",
+      "bytes": 2869,
+      "sha256": "fdd7eaaed7d25ecf927824217ce3a72a07e4d77af5793d7e17d0b04dfd3c0651"
+    },
+    {
+      "path": "Tools/VerifyHud08Circle.cs",
+      "bytes": 8137,
+      "sha256": "01f09c3a0bd9b3034a22e4eb92d9429cee5970bfea899657e3f49e098ef2c94a"
+    },
+    {
+      "path": "Tools/VerifyHud08CircleEdge.cs",
+      "bytes": 3104,
+      "sha256": "b0950b3fe2a3461a29fdf1a1f7f8a8e316bd2ac144f2ad1a0f5a579fa6039446"
+    },
+    {
+      "path": "Tools/VerifyHud08DWorkflow.cs",
+      "bytes": 6364,
+      "sha256": "c2ec969e4c2c561d996ce863ceb345e4d15c5699b2bf5e08c5457ea338adb4b8"
+    },
+    {
+      "path": "Tools/VerifyHud08Dock.cs",
+      "bytes": 10159,
+      "sha256": "648277bc09fc90af9155e47cba1fb14ccadc0031dfa10fcd7b1ecc4890e4c294"
+    },
+    {
+      "path": "Tools/VerifyHud08DockDetails.cs",
+      "bytes": 5658,
+      "sha256": "284533b3a0b4c3976f16bdc96f61d403f688f9b992246a140cf9bd7695e2a277"
+    },
+    {
+      "path": "Tools/VerifyHud08Menu.cs",
+      "bytes": 6900,
+      "sha256": "98ff0a79bd6130b4d9759a8b94c7b90b52ab57ea8952b885a51e26f7a3ea2aaf"
+    },
+    {
+      "path": "Tools/VerifyHud08MenuResolutions.cs",
+      "bytes": 7119,
+      "sha256": "566a78274dc954c74a84e7068e7b21d93e2d95336ea938debf2931759f484b39"
+    },
+    {
+      "path": "Tools/VerifyHud08Save.cs",
+      "bytes": 1808,
+      "sha256": "a834c98eb5d9d6851b639a2f0c01f1755a4753854dc656c189f604d8574ed37d"
+    }
+  ]
+}

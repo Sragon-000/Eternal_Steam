@@ -1,0 +1,83 @@
+{
+  "result": "PASS",
+  "runtimeErrors": 0,
+  "cases": [
+    {
+      "width": 800,
+      "height": 600,
+      "mapDiameterPixels": 143.999939,
+      "worldDiameter": 150,
+      "circleRaycast": true,
+      "outsideDragCapture": true,
+      "reentryProjection": true,
+      "tabEscCancel": true,
+      "textureReused": true
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "mapDiameterPixels": 184.319946,
+      "worldDiameter": 150,
+      "circleRaycast": true,
+      "outsideDragCapture": true,
+      "reentryProjection": true,
+      "tabEscCancel": true,
+      "textureReused": true
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "mapDiameterPixels": 172.799927,
+      "worldDiameter": 150,
+      "circleRaycast": true,
+      "outsideDragCapture": true,
+      "reentryProjection": true,
+      "tabEscCancel": true,
+      "textureReused": true
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "mapDiameterPixels": 256.0,
+      "worldDiameter": 150,
+      "circleRaycast": true,
+      "outsideDragCapture": true,
+      "reentryProjection": true,
+      "tabEscCancel": true,
+      "textureReused": true
+    },
+    {
+      "width": 2560,
+      "height": 1080,
+      "mapDiameterPixels": 256.0,
+      "worldDiameter": 150,
+      "circleRaycast": true,
+      "outsideDragCapture": true,
+      "reentryProjection": true,
+      "tabEscCancel": true,
+      "textureReused": true
+    },
+    {
+      "width": 3840,
+      "height": 1080,
+      "mapDiameterPixels": 256.0,
+      "worldDiameter": 150,
+      "circleRaycast": true,
+      "outsideDragCapture": true,
+      "reentryProjection": true,
+      "tabEscCancel": true,
+      "textureReused": true
+    },
+    {
+      "width": 3840,
+      "height": 2160,
+      "mapDiameterPixels": 256.0,
+      "worldDiameter": 150,
+      "circleRaycast": true,
+      "outsideDragCapture": true,
+      "reentryProjection": true,
+      "tabEscCancel": true,
+      "textureReused": true
+    }
+  ]
+}

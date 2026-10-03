@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/InspectHud06APlay.cs",
+      "entry": "InspectHud06APlay.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 20,
+      "executeMs": 2,
+      "assemblyName": "PipelineRunScript_InspectHud06APlay_18e5f74799054a259db5aa0ecff6bb90",
+      "success": true,
+      "result": "{\n  \"train\": \"{\\\"status\\\":2,\\\"stop\\\":1,\\\"progress\\\":0.0,\\\"dwell\\\":4.75,\\\"cargo\\\":60.0,\\\"fuel\\\":48.6,\\\"serviced\\\":true,\\\"segmentPaid\\\":false,\\\"reverse\\\":true,\\\"waitingForStation\\\":false,\\\"stationEntryReserved\\\":false,\\\"resource\\\":\\\"iron\\\",\\\"armament\\\":{\\\"footprint\\\":{\\\"x\\\":2,\\\"y\\\":2},\\\"definition\\\":\\\"\\\",\\\"battery\\\":0.0,\\\"modules\\\":[]}}\",\n  \"pending\": \"{\\\"active\\\":false,\\\"failed\\\":false,\\\"baseRevision\\\":0,\\\"stops\\\":[],\\\"legs\\\":[],\\\"error\\\":\\\"\\\"}\",\n  \"buttons\": [\n    {\n      \"name\": \"Route0\",\n      \"text\": \"▶ 노선 1\\n역 정차 중 · 예약\",\n      \"rect\": \"(x:0.00, y:-58.00, width:338.00, height:58.00)\",\n      \"font\": 18.0,\n      \"color\": \"RGBA(0.840, 0.900, 0.890, 1.000)\",\n      \"active\": true\n    },\n    {\n      \"name\": \"Route1\",\n      \"text\": \"노선\",\n      \"rect\": \"(x:0.00, y:-58.00, width:338.00, height:58.00)\",\n      \"font\": 18.0,\n      \"color\": \"RGBA(0.840, 0.900, 0.890, 1.000)\",\n      \"active\": false\n    },\n    {\n      \"name\": \"Route2\",\n      \"text\": \"노선\",\n      \"rect\": \"(x:0.00, y:-58.00, width:338.00, height:58.00)\",\n      \"font\": 18.0,\n      \"color\": \"RGBA(0.840, 0.900, 0.890, 1.000)\",\n      \"active\": false\n    },\n    {\n      \"name\": \"Route3\",\n      \"text\": \"노선\",\n      \"rect\": \"(x:0.00, y:-58.00, width:338.00, height:58.00)\",\n      \"font\": 18.0,\n      \"color\": \"RGBA(0.840, 0.900, 0.890, 1.000)\",\n      \"active\": false\n    },\n    {\n      \"name\": \"Previous\",\n      \"text\": \"이전\",\n      \"rect\": \"(x:0.00, y:-24.00, width:159.00, height:24.00)\",\n      \"font\": 18.0,\n      \"color\": \"RGBA(0.840, 0.900, 0.890, 1.000)\",\n      \"active\": true\n    },\n    {\n      \"name\": \"Next\",\n      \"text\": \"다음\",\n      \"rect\": \"(x:0.00, y:-24.00, width:159.00, height:24.00)\",\n      \"font\": 18.0,\n      \"color\": \"RGBA(0.840, 0.900, 0.890, 1.000)\",\n      \"active\": true\n    },\n    {\n      \"name\": \"new\",\n      \"text\": \"새 노선\",\n      \"rect\": \"(x:0.00, y:-28.00, width:159.00, height:28.00)\",\n      \"font\": 18.0,\n      \"color\": \"RGBA(0.840, 0.900, 0.890, 1.000)\",\n      \"active\": true\n    },\n    {\n      \"name\": \"connect\",\n      \"text\": \"역 연결\",\n      \"rect\": \"(x:0.00, y:-28.00, width:159.00, height:28.00)\",\n      \"font\": 18.0,\n      \"color\": \"RGBA(0.840, 0.900, 0.890, 1.000)\",\n      \"active\": true\n    },\n    {\n      \"name\": \"start\",\n      \"text\": \"운행 시작\",\n      \"rect\": \"(x:0.00, y:-28.00, width:203.33, height:28.00)\",\n      \"font\": 18.0,\n      \"color\": \"RGBA(0.840, 0.900, 0.890, 1.000)\",\n      \"active\": true\n    },\n    {\n      \"name\": \"stop\",\n      \"text\": \"중지 요청\",\n      \"rect\": \"(x:0.00, y:-28.00, width:203.33, height:28.00)\",\n      \"font\": 18.0,\n      \"color\": \"RGBA(0.840, 0.900, 0.890, 1.000)\",\n      \"active\": true\n    },\n    {\n      \"name\": \"fuel\",\n      \"text\": \"석탄 보급\",\n      \"rect\": \"(x:0.00, y:-28.00, width:203.33, height:28.00)\",\n      \"font\": 18.0,\n      \"color\": \"RGBA(0.840, 0.900, 0.890, 1.000)\",\n      \"active\": true\n    },\n    {\n      \"name\": \"cargo\",\n      \"text\": \"화물·역 상세\",\n      \"rect\": \"(x:0.00, y:-28.00, width:147.50, height:28.00)\",\n      \"font\": 18.0,\n      \"color\": \"RGBA(0.840, 0.900, 0.890, 1.000)\",\n      \"active\": true\n    },\n    {\n      \"name\": \"defense\",\n      \"text\": \"방어칸\",\n      \"rect\": \"(x:0.00, y:-28.00, width:147.50, height:28.00)\",\n      \"font\": 18.0,\n      \"color\": \"RGBA(0.840, 0.900, 0.890, 1.000)\",\n      \"active\": true\n    },\n    {\n      \"name\": \"edit\",\n      \"text\": \"노선 편집\",\n      \"rect\": \"(x:0.00, y:-28.00, width:147.50, height:28.00)\",\n      \"font\": 18.0,\n      \"color\": \"RGBA(0.840, 0.900, 0.890, 1.000)\",\n      \"active\": true\n    },\n    {\n      \"name\": \"cancel-pending\",\n      \"text\": \"예약 취소\",\n      \"rect\": \"(x:0.00, y:-28.00, width:147.50, height:28.00)\",\n      \"font\": 18.0,\n      \"color\": \"RGBA(0.840, 0.900, 0.890, 1.000)\",\n      \"active\": true\n    },\n    {\n      \"name\": \"Back\",\n      \"text\": \"목록\",\n      \"rect\": \"(x:0.00, y:-24.00, width:80.00, height:24.00)\",\n      \"font\": 18.0,\n      \"color\": \"RGBA(0.840, 0.900, 0.890, 1.000)\",\n      \"active\": true\n    },\n    {\n      \"name\": \"Close\",\n      \"text\": \"닫기\",\n      \"rect\": \"(x:0.00, y:-24.00, width:76.00, height:24.00)\",\n      \"font\": 18.0,\n      \"color\": \"RGBA(0.840, 0.900, 0.890, 1.000)\",\n      \"active\": true\n    }\n  ]\n}"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

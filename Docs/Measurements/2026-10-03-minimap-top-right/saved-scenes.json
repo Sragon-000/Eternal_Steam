@@ -1,0 +1,14 @@
+[
+  {
+    "scene": "StartRegionSandbox",
+    "anchor": "(1.00, 1.00)",
+    "pivot": "(1.00, 1.00)",
+    "position": "(16.00, 84.00)"
+  },
+  {
+    "scene": "OpenWorldSandbox",
+    "anchor": "(1.00, 1.00)",
+    "pivot": "(1.00, 1.00)",
+    "position": "(16.00, 84.00)"
+  }
+]

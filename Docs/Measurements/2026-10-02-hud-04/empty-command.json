@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/FinishHud04Validation.cs",
+      "entry": "FinishHud04Validation.Check"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 54,
+      "executeMs": 16,
+      "assemblyName": "PipelineRunScript_FinishHud04Validation_dae02c6e6b184429afc7e24593e313ac",
+      "success": true,
+      "result": "Empty state passed"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

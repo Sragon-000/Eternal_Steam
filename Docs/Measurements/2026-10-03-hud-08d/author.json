@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/AuthorHud08Dock.cs",
+      "entry": "AuthorHud08Dock.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 1343,
+      "executeMs": 4549,
+      "assemblyName": "PipelineRunScript_AuthorHud08Dock_6a9cd4e97d034d88aaf9e91982f204f6",
+      "success": true,
+      "result": "Saved compact browse, placement, cost and objective controls in both scenes"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/VerifyHud08Save.cs",
+      "entry": "VerifyHud08Save.Reload"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 19,
+      "executeMs": 1,
+      "assemblyName": "PipelineRunScript_VerifyHud08Save_039e1f6a309647d6bafc7019217dc34b",
+      "success": true,
+      "result": "Requested actual scene reload through Esc menu"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/VerifyHud07Edges.cs",
+      "entry": "VerifyHud07Edges.LongNames"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 24,
+      "executeMs": 18,
+      "assemblyName": "PipelineRunScript_VerifyHud07Edges_d9b62f7fd9084f539b2d1a138965f046",
+      "success": true,
+      "result": "Maximum and above-maximum validated; long names active"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

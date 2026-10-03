@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/AuthorHudGroups.cs",
+      "entry": "AuthorHudGroups.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 671,
+      "executeMs": 5282,
+      "assemblyName": "PipelineRunScript_AuthorHudGroups_655c56f792dc4990baedf40b939bc506",
+      "success": true,
+      "result": "[\n  {\n    \"scene\": \"StartRegionSandbox\",\n    \"combatDefault\": true,\n    \"authoredGroups\": 2,\n    \"testControls\": true,\n    \"railwayCommands\": 76\n  },\n  {\n    \"scene\": \"OpenWorldSandbox\",\n    \"combatDefault\": true,\n    \"authoredGroups\": 2,\n    \"testControls\": true,\n    \"railwayCommands\": 76\n  }\n]"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

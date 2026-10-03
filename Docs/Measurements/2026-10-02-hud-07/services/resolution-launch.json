@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/VerifyHud07ServiceResolutions.cs",
+      "entry": "VerifyHud07ServiceResolutions.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 42,
+      "executeMs": 0,
+      "assemblyName": "PipelineRunScript_VerifyHud07ServiceResolutions_639fce9561d0492bba11a9c391d4f12b",
+      "success": true,
+      "result": "Queued service resolution checks"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

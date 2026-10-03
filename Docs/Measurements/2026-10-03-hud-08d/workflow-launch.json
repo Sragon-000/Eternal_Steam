@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/VerifyHud08DWorkflow.cs",
+      "entry": "VerifyHud08DPlay.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 1594,
+      "executeMs": 0,
+      "assemblyName": "PipelineRunScript_VerifyHud08DWorkflow_889ac6c9cac248f18113d491490e39a5",
+      "success": true,
+      "result": "Queued construction workflow checks"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

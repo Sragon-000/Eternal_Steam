@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/VerifyHud06AResolutions.cs",
+      "entry": "VerifyHud06AResolutions.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 35,
+      "executeMs": 0,
+      "assemblyName": "PipelineRunScript_VerifyHud06AResolutions_99f4f534af6c43ea9b399ec1d56ee4b0",
+      "success": true,
+      "result": "Queued overview resolution verification"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/BuildHud07Fixture.cs",
+      "entry": "BuildHud07Fixture.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 85,
+      "executeMs": 367,
+      "assemblyName": "PipelineRunScript_BuildHud07Fixture_aea8b79df00a44ca91a44730aed82096",
+      "success": true,
+      "result": "Created actual two-base, two-station, five-track shuttle for overview verification"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

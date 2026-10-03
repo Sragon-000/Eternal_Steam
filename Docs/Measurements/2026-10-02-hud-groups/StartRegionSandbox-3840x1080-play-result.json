@@ -1,0 +1,12 @@
+{
+  "result": "PASS",
+  "defaultCombat": true,
+  "toggleRaycast": true,
+  "pausedTransition": true,
+  "rapidReversal": true,
+  "editingPreserved": true,
+  "minimapSide": 150,
+  "minimapTracksView": true,
+  "testControlsVisible": true,
+  "researchExperiment": false
+}

@@ -1,0 +1,100 @@
+[
+  {
+    "width": 800,
+    "height": 600,
+    "mode": "cargo",
+    "scrollTargetsAccessible": true,
+    "fontPixels": 18
+  },
+  {
+    "width": 800,
+    "height": 600,
+    "mode": "defense",
+    "scrollTargetsAccessible": true,
+    "fontPixels": 18
+  },
+  {
+    "width": 1024,
+    "height": 768,
+    "mode": "cargo",
+    "scrollTargetsAccessible": true,
+    "fontPixels": 18
+  },
+  {
+    "width": 1024,
+    "height": 768,
+    "mode": "defense",
+    "scrollTargetsAccessible": true,
+    "fontPixels": 18
+  },
+  {
+    "width": 1280,
+    "height": 720,
+    "mode": "cargo",
+    "scrollTargetsAccessible": true,
+    "fontPixels": 18
+  },
+  {
+    "width": 1280,
+    "height": 720,
+    "mode": "defense",
+    "scrollTargetsAccessible": true,
+    "fontPixels": 18
+  },
+  {
+    "width": 1920,
+    "height": 1080,
+    "mode": "cargo",
+    "scrollTargetsAccessible": true,
+    "fontPixels": 18
+  },
+  {
+    "width": 1920,
+    "height": 1080,
+    "mode": "defense",
+    "scrollTargetsAccessible": true,
+    "fontPixels": 18
+  },
+  {
+    "width": 2560,
+    "height": 1080,
+    "mode": "cargo",
+    "scrollTargetsAccessible": true,
+    "fontPixels": 18
+  },
+  {
+    "width": 2560,
+    "height": 1080,
+    "mode": "defense",
+    "scrollTargetsAccessible": true,
+    "fontPixels": 18
+  },
+  {
+    "width": 3840,
+    "height": 1080,
+    "mode": "cargo",
+    "scrollTargetsAccessible": true,
+    "fontPixels": 18
+  },
+  {
+    "width": 3840,
+    "height": 1080,
+    "mode": "defense",
+    "scrollTargetsAccessible": true,
+    "fontPixels": 18
+  },
+  {
+    "width": 3840,
+    "height": 2160,
+    "mode": "cargo",
+    "scrollTargetsAccessible": true,
+    "fontPixels": 18
+  },
+  {
+    "width": 3840,
+    "height": 2160,
+    "mode": "defense",
+    "scrollTargetsAccessible": true,
+    "fontPixels": 18
+  }
+]

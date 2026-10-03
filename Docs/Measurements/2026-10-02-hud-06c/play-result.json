@@ -1,0 +1,12 @@
+{
+  "result": "PASS",
+  "previewAndCancelNoMutation": true,
+  "payerAndInsufficientGuards": true,
+  "newTrackCostOnce": true,
+  "createConfirmKeepNoDuplicate": true,
+  "groupDraftPreserved": true,
+  "reorderAndDiscard": true,
+  "occupiedAndMovingAnchorProtected": true,
+  "pendingCancelAndSnapshotApply": true,
+  "researchExperiment": false
+}

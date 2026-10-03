@@ -1,0 +1,23 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "System.Environment.SetEnvironmentVariable(\"ETERNAL_STEAM_SAVE_TEST_ROOT\",null); UnityEngine.Application.runInBackground=false; UnityEditor.SceneManagement.EditorSceneManager.OpenScene(\"Assets/EternalSteam/Scene/Tests/StartRegionSandbox.unity\"); UnityEditor.AssetDatabase.SaveAssets(); return \"Original scene restored; isolated save override cleared\";"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": "Original scene restored; isolated save override cleared"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

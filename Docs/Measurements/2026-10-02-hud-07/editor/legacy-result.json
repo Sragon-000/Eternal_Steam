@@ -1,0 +1,9 @@
+{
+  "result": "PASS",
+  "actualReturnTracks": true,
+  "legacyControlAccess": true,
+  "openClosedCycle": true,
+  "mapPortPick": true,
+  "errorSelectionAndCorrection": true,
+  "confirmation": true
+}

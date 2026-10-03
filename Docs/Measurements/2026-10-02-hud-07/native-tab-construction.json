@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/VerifyHud07Edges.cs",
+      "entry": "VerifyHud07Edges.NativeState"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 19,
+      "executeMs": 1,
+      "assemblyName": "PipelineRunScript_VerifyHud07Edges_dc8ac28c91b44b58bf12f65733a713b4",
+      "success": true,
+      "result": "{\n  \"construction\": true,\n  \"transitioning\": false\n}"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

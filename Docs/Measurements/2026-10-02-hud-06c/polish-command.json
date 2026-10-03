@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/PolishHud06C.cs",
+      "entry": "PolishHud06C.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 660,
+      "executeMs": 4202,
+      "assemblyName": "PipelineRunScript_PolishHud06C_92e583fa124e444585c4deb0e3358df2",
+      "success": true,
+      "result": "Saved wrapped editor descriptions"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

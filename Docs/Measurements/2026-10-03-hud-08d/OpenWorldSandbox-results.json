@@ -1,0 +1,76 @@
+{
+  "result": "PASS",
+  "runtimeErrors": 0,
+  "cases": [
+    {
+      "width": 800,
+      "height": 600,
+      "browseHeightWithMargin": 172.000031,
+      "placementHeightWithMargin": 96.00003,
+      "centralAreaClear": true,
+      "catalogAndCategoryReachable": true,
+      "detailsAndActionsReachable": true,
+      "scrollAndSelectionPreserved": true
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "browseHeightWithMargin": 172.0,
+      "placementHeightWithMargin": 96.0,
+      "centralAreaClear": true,
+      "catalogAndCategoryReachable": true,
+      "detailsAndActionsReachable": true,
+      "scrollAndSelectionPreserved": true
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "browseHeightWithMargin": 172.0,
+      "placementHeightWithMargin": 96.0,
+      "centralAreaClear": true,
+      "catalogAndCategoryReachable": true,
+      "detailsAndActionsReachable": true,
+      "scrollAndSelectionPreserved": true
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "browseHeightWithMargin": 172.0,
+      "placementHeightWithMargin": 96.0,
+      "centralAreaClear": true,
+      "catalogAndCategoryReachable": true,
+      "detailsAndActionsReachable": true,
+      "scrollAndSelectionPreserved": true
+    },
+    {
+      "width": 2560,
+      "height": 1080,
+      "browseHeightWithMargin": 172.0,
+      "placementHeightWithMargin": 96.0,
+      "centralAreaClear": true,
+      "catalogAndCategoryReachable": true,
+      "detailsAndActionsReachable": true,
+      "scrollAndSelectionPreserved": true
+    },
+    {
+      "width": 3840,
+      "height": 1080,
+      "browseHeightWithMargin": 172.0,
+      "placementHeightWithMargin": 96.0,
+      "centralAreaClear": true,
+      "catalogAndCategoryReachable": true,
+      "detailsAndActionsReachable": true,
+      "scrollAndSelectionPreserved": true
+    },
+    {
+      "width": 3840,
+      "height": 2160,
+      "browseHeightWithMargin": 172.0,
+      "placementHeightWithMargin": 96.0,
+      "centralAreaClear": true,
+      "catalogAndCategoryReachable": true,
+      "detailsAndActionsReachable": true,
+      "scrollAndSelectionPreserved": true
+    }
+  ]
+}

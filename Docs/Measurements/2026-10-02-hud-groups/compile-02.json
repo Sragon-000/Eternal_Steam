@@ -1,0 +1,26 @@
+{
+  "success": false,
+  "command": "recompile",
+  "data": {
+    "status": "completed",
+    "compiling": false,
+    "failed": true,
+    "compilationFailed": null,
+    "errors": [
+      {
+        "type": "compile-error",
+        "raw": "Assets/EternalSteam/Tests/OpenWorld/Runtime/HudModeGroups.cs(26,50): error CS0234: The type or namespace name 'IMECompositionString' does not exist in the namespace 'UnityEngine.InputSystem' (are you missing an assembly reference?)",
+        "file": "Assets/EternalSteam/Tests/OpenWorld/Runtime/HudModeGroups.cs",
+        "line": 26,
+        "column": 50,
+        "code": "CS0234",
+        "message": "The type or namespace name 'IMECompositionString' does not exist in the namespace 'UnityEngine.InputSystem' (are you missing an assembly reference?)"
+      }
+    ],
+    "warnings": [],
+    "summary": {
+      "errors": 1,
+      "warnings": 0
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/FinishHud07Validation.cs",
+      "entry": "FinishHud07Validation.Open"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 54,
+      "executeMs": 533,
+      "assemblyName": "PipelineRunScript_FinishHud07Validation_b4112862902e472697e7e5db0756b41c",
+      "success": true,
+      "result": "Opened empty-base scene"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

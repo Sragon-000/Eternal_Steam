@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/AuthorHud08Menu.cs",
+      "entry": "AuthorHud08Menu.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 4542,
+      "executeMs": 18230,
+      "assemblyName": "PipelineRunScript_AuthorHud08Menu_5bc74d64f6e94db0953c7fb2879f2a6d",
+      "success": true,
+      "result": "Saved Esc modal, persistent callbacks, pause/save relocation and discard prompt in both scenes"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

@@ -1,0 +1,70 @@
+{
+  "success": true,
+  "command": "command run_tests",
+  "data": {
+    "command": "run_tests",
+    "parameters": {
+      "mode": "editor",
+      "filter": "HudModeGroupsTests"
+    },
+    "result": {
+      "Summary": {
+        "Total": 5,
+        "Passed": 5,
+        "Failed": 0,
+        "Skipped": 0,
+        "Inconclusive": 0
+      },
+      "Results": [
+        {
+          "FullName": "EternalSteam.Tests.HudModeGroupsTests.LocalMapRetainsViewCenterAndRoundTrips(0,0)",
+          "Status": "Passed",
+          "Duration": 0.0058431,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "EternalSteam.Tests.HudModeGroupsTests.LocalMapRetainsViewCenterAndRoundTrips(250,250)",
+          "Status": "Passed",
+          "Duration": 0.0001005,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "EternalSteam.Tests.HudModeGroupsTests.LocalMapRetainsViewCenterAndRoundTrips(-300,700)",
+          "Status": "Passed",
+          "Duration": 0.0000259,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "EternalSteam.Tests.HudModeGroupsTests.SavedGroupsKeepControlsAndReverseWithoutRebuilding(\"StartRegionSandbox\")",
+          "Status": "Passed",
+          "Duration": 2.9582396,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "EternalSteam.Tests.HudModeGroupsTests.SavedGroupsKeepControlsAndReverseWithoutRebuilding(\"OpenWorldSandbox\")",
+          "Status": "Passed",
+          "Duration": 0.1845423,
+          "Message": null,
+          "StackTrace": null
+        }
+      ],
+      "Duration": 10.91,
+      "StatusPath": null,
+      "Mode": "EditMode",
+      "FilterApplied": "testname: HudModeGroupsTests",
+      "success": true,
+      "result": null
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

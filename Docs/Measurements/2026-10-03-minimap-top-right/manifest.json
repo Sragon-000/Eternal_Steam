@@ -1,0 +1,90 @@
+[
+  {
+    "path": "Docs/Measurements/2026-10-03-minimap-top-right/CanvasHudLayout.before.cs.txt",
+    "sha256": "bb7f2cc199e61ffeed818e8f3ab5f87c763cecef6932435356106c2d0229a373"
+  },
+  {
+    "path": "Docs/Measurements/2026-10-03-minimap-top-right/OpenWorldSandbox-1024x768-circle.png",
+    "sha256": "ca4aadc8fca3cc963366c9428dfc0bf6b68b8b3ce4f3328cb24445e61d4c0540"
+  },
+  {
+    "path": "Docs/Measurements/2026-10-03-minimap-top-right/OpenWorldSandbox-1280x720-circle.png",
+    "sha256": "72f0e2f7c7594730452cc4fab1a1ddd9a582d5b21b3ce5aa63b6a967c331733e"
+  },
+  {
+    "path": "Docs/Measurements/2026-10-03-minimap-top-right/OpenWorldSandbox-1920x1080-circle.png",
+    "sha256": "ed9641f666e3445524d5ab5d074d4112c370b5e0bc8447272eedd81da19b7640"
+  },
+  {
+    "path": "Docs/Measurements/2026-10-03-minimap-top-right/OpenWorldSandbox-2560x1080-circle.png",
+    "sha256": "9d5703eb04262df8e297f21bff473b86673d3086e330f23c9194b238364d604c"
+  },
+  {
+    "path": "Docs/Measurements/2026-10-03-minimap-top-right/OpenWorldSandbox-3840x1080-circle.png",
+    "sha256": "f75dbb9cb7d7c292a616cbd20496cf967315b55b90d10929a48ebcfe94e4efd3"
+  },
+  {
+    "path": "Docs/Measurements/2026-10-03-minimap-top-right/OpenWorldSandbox-3840x2160-circle.png",
+    "sha256": "ed0dc53d8f14ee91b153a71f97939374dacdea3891de5f822efc0882d5fae8c9"
+  },
+  {
+    "path": "Docs/Measurements/2026-10-03-minimap-top-right/OpenWorldSandbox-800x600-circle.png",
+    "sha256": "b3696ffb8fc9eeab473ec71e4951aecd5098c2af94e038e284cfefe2b751ddd2"
+  },
+  {
+    "path": "Docs/Measurements/2026-10-03-minimap-top-right/OpenWorldSandbox-results.json",
+    "sha256": "902c89523f1a377599efa1929358b156e1887f7d45c70724db93e084f38b928b"
+  },
+  {
+    "path": "Docs/Measurements/2026-10-03-minimap-top-right/OpenWorldSandbox-status.txt",
+    "sha256": "fd9fb379c91e4c01022d7eabca6f0e42c7ea6ccc8958091be65445467a6f7519"
+  },
+  {
+    "path": "Docs/Measurements/2026-10-03-minimap-top-right/StartRegionSandbox-1024x768-circle.png",
+    "sha256": "6264f0f07b600c0605be8bfe5c1a2ef489fb91fee98fdd2a47cd9b66f7d306e9"
+  },
+  {
+    "path": "Docs/Measurements/2026-10-03-minimap-top-right/StartRegionSandbox-1280x720-circle.png",
+    "sha256": "9f7c796af50836b1c9a0c8a8aa6ee3aa0bb8801c20945d144763005410ec74c7"
+  },
+  {
+    "path": "Docs/Measurements/2026-10-03-minimap-top-right/StartRegionSandbox-1920x1080-circle.png",
+    "sha256": "25202d14ddb837fd8d09de48759363f17ae6c77fe7b4168f1f08a8df906daf05"
+  },
+  {
+    "path": "Docs/Measurements/2026-10-03-minimap-top-right/StartRegionSandbox-2560x1080-circle.png",
+    "sha256": "b051b73ea8d44166d81af6ad8e35af4dc6b73f61e06376ea05069ba43325d954"
+  },
+  {
+    "path": "Docs/Measurements/2026-10-03-minimap-top-right/StartRegionSandbox-3840x1080-circle.png",
+    "sha256": "e441cb9d3357a4150aeef15fceb8ae8d463b2ff41007e982dc56d15cbf2f0bb2"
+  },
+  {
+    "path": "Docs/Measurements/2026-10-03-minimap-top-right/StartRegionSandbox-3840x2160-circle.png",
+    "sha256": "a45b347687ab779e072c75352191fa4ce3afe7fe960b806c8408d616da4cdd63"
+  },
+  {
+    "path": "Docs/Measurements/2026-10-03-minimap-top-right/StartRegionSandbox-800x600-circle.png",
+    "sha256": "e1f827dd19a43426ef4aaeb43302cd498eb0d1fd829e11dc58b5b64a6d97401d"
+  },
+  {
+    "path": "Docs/Measurements/2026-10-03-minimap-top-right/StartRegionSandbox-results.json",
+    "sha256": "902c89523f1a377599efa1929358b156e1887f7d45c70724db93e084f38b928b"
+  },
+  {
+    "path": "Docs/Measurements/2026-10-03-minimap-top-right/StartRegionSandbox-save/current.json",
+    "sha256": "709824c73797a7702c596723e8ffb3c9c23d24ffddea051fd435176c5cc1042a"
+  },
+  {
+    "path": "Docs/Measurements/2026-10-03-minimap-top-right/StartRegionSandbox-status.txt",
+    "sha256": "fd9fb379c91e4c01022d7eabca6f0e42c7ea6ccc8958091be65445467a6f7519"
+  },
+  {
+    "path": "Docs/Measurements/2026-10-03-minimap-top-right/final-editor-state.json",
+    "sha256": "5bfa3929baba755ab0e162b3875afffe54fcf24f9f196dbae7adde98ebb058f5"
+  },
+  {
+    "path": "Docs/Measurements/2026-10-03-minimap-top-right/saved-scenes.json",
+    "sha256": "5225f840ddd3da16b5b4e645cdbd070bebc420eba318f44449462353df480270"
+  }
+]

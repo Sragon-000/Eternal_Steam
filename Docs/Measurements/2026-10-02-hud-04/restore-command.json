@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/FinishHud04Validation.cs",
+      "entry": "FinishHud04Validation.Restore"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 48,
+      "executeMs": 2989,
+      "assemblyName": "PipelineRunScript_FinishHud04Validation_7572496960d94eb797a49dcb8514bc1a",
+      "success": true,
+      "result": "Restored clean StartRegionSandbox Edit state"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

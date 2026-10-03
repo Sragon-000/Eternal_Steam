@@ -1,0 +1,1969 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/InspectHud08Dock.cs",
+      "entry": "InspectHud08Dock.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 354,
+      "executeMs": 13,
+      "assemblyName": "PipelineRunScript_InspectHud08Dock_2554517bc02c4c53bee7e2f88a87add1",
+      "success": true,
+      "result": {
+        "scene": "Assets/EternalSteam/Scene/Tests/StartRegionSandbox.unity",
+        "playing": false,
+        "dirty": false,
+        "bar": [
+          {
+            "name": "ConstructionBar",
+            "parent": "BuildBottomSlide",
+            "active": true,
+            "anchor": "(0.00, 0.00)/(1.00, 0.00)",
+            "pivot": "(0.50, 0.00)",
+            "pos": "(0.00, 16.00)",
+            "size": "(-32.00, 320.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image"
+            ]
+          },
+          {
+            "name": "edit",
+            "parent": "ConstructionBar",
+            "active": true,
+            "anchor": "(1.00, 1.00)/(1.00, 1.00)",
+            "pivot": "(1.00, 1.00)",
+            "pos": "(-8.00, -6.00)",
+            "size": "(128.00, 36.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image",
+              "Button"
+            ]
+          },
+          {
+            "name": "edit-caption",
+            "parent": "edit",
+            "active": true,
+            "anchor": "(0.00, 0.00)/(1.00, 1.00)",
+            "pivot": "(0.50, 0.50)",
+            "pos": "(0.00, 0.00)",
+            "size": "(0.00, 0.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "TextMeshProUGUI"
+            ]
+          },
+          {
+            "name": "EditActions",
+            "parent": "ConstructionBar",
+            "active": false,
+            "anchor": "(1.00, 0.00)/(1.00, 0.00)",
+            "pivot": "(1.00, 0.00)",
+            "pos": "(-8.00, 8.00)",
+            "size": "(148.00, 104.00)",
+            "components": [
+              "RectTransform"
+            ]
+          },
+          {
+            "name": "confirm",
+            "parent": "EditActions",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(0.00, 0.00)",
+            "size": "(148.00, 48.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image",
+              "Button"
+            ]
+          },
+          {
+            "name": "confirm-caption",
+            "parent": "confirm",
+            "active": true,
+            "anchor": "(0.00, 0.00)/(1.00, 1.00)",
+            "pivot": "(0.50, 0.50)",
+            "pos": "(0.00, 0.00)",
+            "size": "(0.00, 0.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "TextMeshProUGUI"
+            ]
+          },
+          {
+            "name": "cancel",
+            "parent": "EditActions",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(0.00, -56.00)",
+            "size": "(148.00, 48.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image",
+              "Button"
+            ]
+          },
+          {
+            "name": "cancel-caption",
+            "parent": "cancel",
+            "active": true,
+            "anchor": "(0.00, 0.00)/(1.00, 1.00)",
+            "pivot": "(0.50, 0.50)",
+            "pos": "(0.00, 0.00)",
+            "size": "(0.00, 0.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "TextMeshProUGUI"
+            ]
+          },
+          {
+            "name": "WorkspaceConstruction",
+            "parent": "ConstructionBar",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(8.00, -6.00)",
+            "size": "(152.00, 36.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image",
+              "Button"
+            ]
+          },
+          {
+            "name": "inventory-fold-caption",
+            "parent": "WorkspaceConstruction",
+            "active": true,
+            "anchor": "(0.00, 0.00)/(1.00, 1.00)",
+            "pivot": "(0.50, 0.50)",
+            "pos": "(0.00, 0.00)",
+            "size": "(0.00, 0.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "TextMeshProUGUI"
+            ]
+          },
+          {
+            "name": "power-fold",
+            "parent": "ConstructionBar",
+            "active": true,
+            "anchor": "(1.00, 1.00)/(1.00, 1.00)",
+            "pivot": "(1.00, 1.00)",
+            "pos": "(-144.00, -6.00)",
+            "size": "(128.00, 36.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image",
+              "Button"
+            ]
+          },
+          {
+            "name": "power-fold-caption",
+            "parent": "power-fold",
+            "active": true,
+            "anchor": "(0.00, 0.00)/(1.00, 1.00)",
+            "pivot": "(0.50, 0.50)",
+            "pos": "(0.00, 0.00)",
+            "size": "(0.00, 0.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "TextMeshProUGUI"
+            ]
+          },
+          {
+            "name": "InventoryBody",
+            "parent": "ConstructionBar",
+            "active": true,
+            "anchor": "(0.00, 0.00)/(1.00, 1.00)",
+            "pivot": "(0.50, 0.50)",
+            "pos": "(0.00, 38.00)",
+            "size": "(-16.00, -164.00)",
+            "components": [
+              "RectTransform"
+            ]
+          },
+          {
+            "name": "CatalogScroll",
+            "parent": "InventoryBody",
+            "active": true,
+            "anchor": "(0.00, 0.00)/(1.00, 1.00)",
+            "pivot": "(0.50, 0.50)",
+            "pos": "(0.00, -21.00)",
+            "size": "(0.00, -42.00)",
+            "components": [
+              "RectTransform",
+              "ScrollRect"
+            ]
+          },
+          {
+            "name": "Viewport",
+            "parent": "CatalogScroll",
+            "active": true,
+            "anchor": "(0.00, 0.00)/(1.00, 1.00)",
+            "pivot": "(0.50, 0.50)",
+            "pos": "(0.00, 6.00)",
+            "size": "(0.00, -12.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image",
+              "Mask"
+            ]
+          },
+          {
+            "name": "Content",
+            "parent": "Viewport",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(0.00, 0.00)",
+            "size": "(6546.00, 84.00)",
+            "components": [
+              "RectTransform",
+              "GridLayoutGroup",
+              "ContentSizeFitter"
+            ]
+          },
+          {
+            "name": "catalog-0",
+            "parent": "Content",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(0.00, 0.00)",
+            "size": "(228.00, 84.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image",
+              "Button"
+            ]
+          },
+          {
+            "name": "catalog-0-caption",
+            "parent": "catalog-0",
+            "active": true,
+            "anchor": "(0.00, 0.00)/(1.00, 1.00)",
+            "pivot": "(0.50, 0.50)",
+            "pos": "(38.00, 0.00)",
+            "size": "(-92.00, -8.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "TextMeshProUGUI"
+            ]
+          },
+          {
+            "name": "Preview",
+            "parent": "catalog-0",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(6.00, -6.00)",
+            "size": "(72.00, 72.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image"
+            ]
+          },
+          {
+            "name": "catalog-1",
+            "parent": "Content",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(234.00, 0.00)",
+            "size": "(228.00, 84.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image",
+              "Button"
+            ]
+          },
+          {
+            "name": "catalog-1-caption",
+            "parent": "catalog-1",
+            "active": true,
+            "anchor": "(0.00, 0.00)/(1.00, 1.00)",
+            "pivot": "(0.50, 0.50)",
+            "pos": "(38.00, 0.00)",
+            "size": "(-92.00, -8.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "TextMeshProUGUI"
+            ]
+          },
+          {
+            "name": "Preview",
+            "parent": "catalog-1",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(6.00, -6.00)",
+            "size": "(72.00, 72.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image"
+            ]
+          },
+          {
+            "name": "catalog-2",
+            "parent": "Content",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(468.00, 0.00)",
+            "size": "(228.00, 84.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image",
+              "Button"
+            ]
+          },
+          {
+            "name": "catalog-2-caption",
+            "parent": "catalog-2",
+            "active": true,
+            "anchor": "(0.00, 0.00)/(1.00, 1.00)",
+            "pivot": "(0.50, 0.50)",
+            "pos": "(38.00, 0.00)",
+            "size": "(-92.00, -8.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "TextMeshProUGUI"
+            ]
+          },
+          {
+            "name": "Preview",
+            "parent": "catalog-2",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(6.00, -6.00)",
+            "size": "(72.00, 72.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image"
+            ]
+          },
+          {
+            "name": "catalog-3",
+            "parent": "Content",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(702.00, 0.00)",
+            "size": "(228.00, 84.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image",
+              "Button"
+            ]
+          },
+          {
+            "name": "catalog-3-caption",
+            "parent": "catalog-3",
+            "active": true,
+            "anchor": "(0.00, 0.00)/(1.00, 1.00)",
+            "pivot": "(0.50, 0.50)",
+            "pos": "(38.00, 0.00)",
+            "size": "(-92.00, -8.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "TextMeshProUGUI"
+            ]
+          },
+          {
+            "name": "Preview",
+            "parent": "catalog-3",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(6.00, -6.00)",
+            "size": "(72.00, 72.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image"
+            ]
+          },
+          {
+            "name": "catalog-4",
+            "parent": "Content",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(936.00, 0.00)",
+            "size": "(228.00, 84.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image",
+              "Button"
+            ]
+          },
+          {
+            "name": "catalog-4-caption",
+            "parent": "catalog-4",
+            "active": true,
+            "anchor": "(0.00, 0.00)/(1.00, 1.00)",
+            "pivot": "(0.50, 0.50)",
+            "pos": "(38.00, 0.00)",
+            "size": "(-92.00, -8.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "TextMeshProUGUI"
+            ]
+          },
+          {
+            "name": "Preview",
+            "parent": "catalog-4",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(6.00, -6.00)",
+            "size": "(72.00, 72.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image"
+            ]
+          },
+          {
+            "name": "catalog-5",
+            "parent": "Content",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(1170.00, 0.00)",
+            "size": "(228.00, 84.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image",
+              "Button"
+            ]
+          },
+          {
+            "name": "catalog-5-caption",
+            "parent": "catalog-5",
+            "active": true,
+            "anchor": "(0.00, 0.00)/(1.00, 1.00)",
+            "pivot": "(0.50, 0.50)",
+            "pos": "(38.00, 0.00)",
+            "size": "(-92.00, -8.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "TextMeshProUGUI"
+            ]
+          },
+          {
+            "name": "Preview",
+            "parent": "catalog-5",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(6.00, -6.00)",
+            "size": "(72.00, 72.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image"
+            ]
+          },
+          {
+            "name": "catalog-6",
+            "parent": "Content",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(1404.00, 0.00)",
+            "size": "(228.00, 84.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image",
+              "Button"
+            ]
+          },
+          {
+            "name": "catalog-6-caption",
+            "parent": "catalog-6",
+            "active": true,
+            "anchor": "(0.00, 0.00)/(1.00, 1.00)",
+            "pivot": "(0.50, 0.50)",
+            "pos": "(38.00, 0.00)",
+            "size": "(-92.00, -8.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "TextMeshProUGUI"
+            ]
+          },
+          {
+            "name": "Preview",
+            "parent": "catalog-6",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(6.00, -6.00)",
+            "size": "(72.00, 72.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image"
+            ]
+          },
+          {
+            "name": "catalog-7",
+            "parent": "Content",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(1638.00, 0.00)",
+            "size": "(228.00, 84.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image",
+              "Button"
+            ]
+          },
+          {
+            "name": "catalog-7-caption",
+            "parent": "catalog-7",
+            "active": true,
+            "anchor": "(0.00, 0.00)/(1.00, 1.00)",
+            "pivot": "(0.50, 0.50)",
+            "pos": "(38.00, 0.00)",
+            "size": "(-92.00, -8.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "TextMeshProUGUI"
+            ]
+          },
+          {
+            "name": "Preview",
+            "parent": "catalog-7",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(6.00, -6.00)",
+            "size": "(72.00, 72.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image"
+            ]
+          },
+          {
+            "name": "catalog-8",
+            "parent": "Content",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(1872.00, 0.00)",
+            "size": "(228.00, 84.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image",
+              "Button"
+            ]
+          },
+          {
+            "name": "catalog-8-caption",
+            "parent": "catalog-8",
+            "active": true,
+            "anchor": "(0.00, 0.00)/(1.00, 1.00)",
+            "pivot": "(0.50, 0.50)",
+            "pos": "(38.00, 0.00)",
+            "size": "(-92.00, -8.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "TextMeshProUGUI"
+            ]
+          },
+          {
+            "name": "Preview",
+            "parent": "catalog-8",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(6.00, -6.00)",
+            "size": "(72.00, 72.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image"
+            ]
+          },
+          {
+            "name": "catalog-9",
+            "parent": "Content",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(2106.00, 0.00)",
+            "size": "(228.00, 84.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image",
+              "Button"
+            ]
+          },
+          {
+            "name": "catalog-9-caption",
+            "parent": "catalog-9",
+            "active": true,
+            "anchor": "(0.00, 0.00)/(1.00, 1.00)",
+            "pivot": "(0.50, 0.50)",
+            "pos": "(38.00, 0.00)",
+            "size": "(-92.00, -8.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "TextMeshProUGUI"
+            ]
+          },
+          {
+            "name": "Preview",
+            "parent": "catalog-9",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(6.00, -6.00)",
+            "size": "(72.00, 72.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image"
+            ]
+          },
+          {
+            "name": "catalog-10",
+            "parent": "Content",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(2340.00, 0.00)",
+            "size": "(228.00, 84.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image",
+              "Button"
+            ]
+          },
+          {
+            "name": "catalog-10-caption",
+            "parent": "catalog-10",
+            "active": true,
+            "anchor": "(0.00, 0.00)/(1.00, 1.00)",
+            "pivot": "(0.50, 0.50)",
+            "pos": "(38.00, 0.00)",
+            "size": "(-92.00, -8.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "TextMeshProUGUI"
+            ]
+          },
+          {
+            "name": "Preview",
+            "parent": "catalog-10",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(6.00, -6.00)",
+            "size": "(72.00, 72.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image"
+            ]
+          },
+          {
+            "name": "catalog-11",
+            "parent": "Content",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(2574.00, 0.00)",
+            "size": "(228.00, 84.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image",
+              "Button"
+            ]
+          },
+          {
+            "name": "catalog-11-caption",
+            "parent": "catalog-11",
+            "active": true,
+            "anchor": "(0.00, 0.00)/(1.00, 1.00)",
+            "pivot": "(0.50, 0.50)",
+            "pos": "(38.00, 0.00)",
+            "size": "(-92.00, -8.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "TextMeshProUGUI"
+            ]
+          },
+          {
+            "name": "Preview",
+            "parent": "catalog-11",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(6.00, -6.00)",
+            "size": "(72.00, 72.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image"
+            ]
+          },
+          {
+            "name": "catalog-12",
+            "parent": "Content",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(2808.00, 0.00)",
+            "size": "(228.00, 84.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image",
+              "Button"
+            ]
+          },
+          {
+            "name": "catalog-12-caption",
+            "parent": "catalog-12",
+            "active": true,
+            "anchor": "(0.00, 0.00)/(1.00, 1.00)",
+            "pivot": "(0.50, 0.50)",
+            "pos": "(38.00, 0.00)",
+            "size": "(-92.00, -8.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "TextMeshProUGUI"
+            ]
+          },
+          {
+            "name": "Preview",
+            "parent": "catalog-12",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(6.00, -6.00)",
+            "size": "(72.00, 72.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image"
+            ]
+          },
+          {
+            "name": "catalog-13",
+            "parent": "Content",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(3042.00, 0.00)",
+            "size": "(228.00, 84.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image",
+              "Button"
+            ]
+          },
+          {
+            "name": "catalog-13-caption",
+            "parent": "catalog-13",
+            "active": true,
+            "anchor": "(0.00, 0.00)/(1.00, 1.00)",
+            "pivot": "(0.50, 0.50)",
+            "pos": "(38.00, 0.00)",
+            "size": "(-92.00, -8.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "TextMeshProUGUI"
+            ]
+          },
+          {
+            "name": "Preview",
+            "parent": "catalog-13",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(6.00, -6.00)",
+            "size": "(72.00, 72.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image"
+            ]
+          },
+          {
+            "name": "catalog-14",
+            "parent": "Content",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(3276.00, 0.00)",
+            "size": "(228.00, 84.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image",
+              "Button"
+            ]
+          },
+          {
+            "name": "catalog-14-caption",
+            "parent": "catalog-14",
+            "active": true,
+            "anchor": "(0.00, 0.00)/(1.00, 1.00)",
+            "pivot": "(0.50, 0.50)",
+            "pos": "(38.00, 0.00)",
+            "size": "(-92.00, -8.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "TextMeshProUGUI"
+            ]
+          },
+          {
+            "name": "Preview",
+            "parent": "catalog-14",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(6.00, -6.00)",
+            "size": "(72.00, 72.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image"
+            ]
+          },
+          {
+            "name": "catalog-15",
+            "parent": "Content",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(3510.00, 0.00)",
+            "size": "(228.00, 84.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image",
+              "Button"
+            ]
+          },
+          {
+            "name": "catalog-15-caption",
+            "parent": "catalog-15",
+            "active": true,
+            "anchor": "(0.00, 0.00)/(1.00, 1.00)",
+            "pivot": "(0.50, 0.50)",
+            "pos": "(38.00, 0.00)",
+            "size": "(-92.00, -8.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "TextMeshProUGUI"
+            ]
+          },
+          {
+            "name": "Preview",
+            "parent": "catalog-15",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(6.00, -6.00)",
+            "size": "(72.00, 72.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image"
+            ]
+          },
+          {
+            "name": "catalog-16",
+            "parent": "Content",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(3744.00, 0.00)",
+            "size": "(228.00, 84.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image",
+              "Button"
+            ]
+          },
+          {
+            "name": "catalog-16-caption",
+            "parent": "catalog-16",
+            "active": true,
+            "anchor": "(0.00, 0.00)/(1.00, 1.00)",
+            "pivot": "(0.50, 0.50)",
+            "pos": "(38.00, 0.00)",
+            "size": "(-92.00, -8.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "TextMeshProUGUI"
+            ]
+          },
+          {
+            "name": "Preview",
+            "parent": "catalog-16",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(6.00, -6.00)",
+            "size": "(72.00, 72.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image"
+            ]
+          },
+          {
+            "name": "catalog-17",
+            "parent": "Content",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(3978.00, 0.00)",
+            "size": "(228.00, 84.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image",
+              "Button"
+            ]
+          },
+          {
+            "name": "catalog-17-caption",
+            "parent": "catalog-17",
+            "active": true,
+            "anchor": "(0.00, 0.00)/(1.00, 1.00)",
+            "pivot": "(0.50, 0.50)",
+            "pos": "(38.00, 0.00)",
+            "size": "(-92.00, -8.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "TextMeshProUGUI"
+            ]
+          },
+          {
+            "name": "Preview",
+            "parent": "catalog-17",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(6.00, -6.00)",
+            "size": "(72.00, 72.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image"
+            ]
+          },
+          {
+            "name": "catalog-18",
+            "parent": "Content",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(4212.00, 0.00)",
+            "size": "(228.00, 84.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image",
+              "Button"
+            ]
+          },
+          {
+            "name": "catalog-18-caption",
+            "parent": "catalog-18",
+            "active": true,
+            "anchor": "(0.00, 0.00)/(1.00, 1.00)",
+            "pivot": "(0.50, 0.50)",
+            "pos": "(38.00, 0.00)",
+            "size": "(-92.00, -8.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "TextMeshProUGUI"
+            ]
+          },
+          {
+            "name": "Preview",
+            "parent": "catalog-18",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(6.00, -6.00)",
+            "size": "(72.00, 72.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image"
+            ]
+          },
+          {
+            "name": "catalog-19",
+            "parent": "Content",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(4446.00, 0.00)",
+            "size": "(228.00, 84.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image",
+              "Button"
+            ]
+          },
+          {
+            "name": "catalog-19-caption",
+            "parent": "catalog-19",
+            "active": true,
+            "anchor": "(0.00, 0.00)/(1.00, 1.00)",
+            "pivot": "(0.50, 0.50)",
+            "pos": "(38.00, 0.00)",
+            "size": "(-92.00, -8.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "TextMeshProUGUI"
+            ]
+          },
+          {
+            "name": "Preview",
+            "parent": "catalog-19",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(6.00, -6.00)",
+            "size": "(72.00, 72.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image"
+            ]
+          },
+          {
+            "name": "catalog-20",
+            "parent": "Content",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(4680.00, 0.00)",
+            "size": "(228.00, 84.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image",
+              "Button"
+            ]
+          },
+          {
+            "name": "catalog-20-caption",
+            "parent": "catalog-20",
+            "active": true,
+            "anchor": "(0.00, 0.00)/(1.00, 1.00)",
+            "pivot": "(0.50, 0.50)",
+            "pos": "(38.00, 0.00)",
+            "size": "(-92.00, -8.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "TextMeshProUGUI"
+            ]
+          },
+          {
+            "name": "Preview",
+            "parent": "catalog-20",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(6.00, -6.00)",
+            "size": "(72.00, 72.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image"
+            ]
+          },
+          {
+            "name": "catalog-21",
+            "parent": "Content",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(4914.00, 0.00)",
+            "size": "(228.00, 84.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image",
+              "Button"
+            ]
+          },
+          {
+            "name": "catalog-21-caption",
+            "parent": "catalog-21",
+            "active": true,
+            "anchor": "(0.00, 0.00)/(1.00, 1.00)",
+            "pivot": "(0.50, 0.50)",
+            "pos": "(38.00, 0.00)",
+            "size": "(-92.00, -8.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "TextMeshProUGUI"
+            ]
+          },
+          {
+            "name": "Preview",
+            "parent": "catalog-21",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(6.00, -6.00)",
+            "size": "(72.00, 72.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image"
+            ]
+          },
+          {
+            "name": "catalog-22",
+            "parent": "Content",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(5148.00, 0.00)",
+            "size": "(228.00, 84.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image",
+              "Button"
+            ]
+          },
+          {
+            "name": "catalog-22-caption",
+            "parent": "catalog-22",
+            "active": true,
+            "anchor": "(0.00, 0.00)/(1.00, 1.00)",
+            "pivot": "(0.50, 0.50)",
+            "pos": "(38.00, 0.00)",
+            "size": "(-92.00, -8.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "TextMeshProUGUI"
+            ]
+          },
+          {
+            "name": "Preview",
+            "parent": "catalog-22",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(6.00, -6.00)",
+            "size": "(72.00, 72.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image"
+            ]
+          },
+          {
+            "name": "catalog-23",
+            "parent": "Content",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(5382.00, 0.00)",
+            "size": "(228.00, 84.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image",
+              "Button"
+            ]
+          },
+          {
+            "name": "catalog-23-caption",
+            "parent": "catalog-23",
+            "active": true,
+            "anchor": "(0.00, 0.00)/(1.00, 1.00)",
+            "pivot": "(0.50, 0.50)",
+            "pos": "(38.00, 0.00)",
+            "size": "(-92.00, -8.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "TextMeshProUGUI"
+            ]
+          },
+          {
+            "name": "Preview",
+            "parent": "catalog-23",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(6.00, -6.00)",
+            "size": "(72.00, 72.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image"
+            ]
+          },
+          {
+            "name": "catalog-24",
+            "parent": "Content",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(5616.00, 0.00)",
+            "size": "(228.00, 84.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image",
+              "Button"
+            ]
+          },
+          {
+            "name": "catalog-24-caption",
+            "parent": "catalog-24",
+            "active": true,
+            "anchor": "(0.00, 0.00)/(1.00, 1.00)",
+            "pivot": "(0.50, 0.50)",
+            "pos": "(38.00, 0.00)",
+            "size": "(-92.00, -8.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "TextMeshProUGUI"
+            ]
+          },
+          {
+            "name": "Preview",
+            "parent": "catalog-24",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(6.00, -6.00)",
+            "size": "(72.00, 72.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image"
+            ]
+          },
+          {
+            "name": "Build_railway.station",
+            "parent": "Content",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(5850.00, 0.00)",
+            "size": "(228.00, 84.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image",
+              "Button"
+            ]
+          },
+          {
+            "name": "catalog-0-caption",
+            "parent": "Build_railway.station",
+            "active": true,
+            "anchor": "(0.00, 0.00)/(1.00, 1.00)",
+            "pivot": "(0.50, 0.50)",
+            "pos": "(38.00, 0.00)",
+            "size": "(-92.00, -8.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "TextMeshProUGUI"
+            ]
+          },
+          {
+            "name": "Preview",
+            "parent": "Build_railway.station",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(6.00, -6.00)",
+            "size": "(72.00, 72.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image"
+            ]
+          },
+          {
+            "name": "Build_railway.track",
+            "parent": "Content",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(6084.00, 0.00)",
+            "size": "(228.00, 84.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image",
+              "Button"
+            ]
+          },
+          {
+            "name": "catalog-0-caption",
+            "parent": "Build_railway.track",
+            "active": true,
+            "anchor": "(0.00, 0.00)/(1.00, 1.00)",
+            "pivot": "(0.50, 0.50)",
+            "pos": "(38.00, 0.00)",
+            "size": "(-92.00, -8.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "TextMeshProUGUI"
+            ]
+          },
+          {
+            "name": "Preview",
+            "parent": "Build_railway.track",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(6.00, -6.00)",
+            "size": "(72.00, 72.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image"
+            ]
+          },
+          {
+            "name": "Build_railway.coal",
+            "parent": "Content",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(6318.00, 0.00)",
+            "size": "(228.00, 84.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image",
+              "Button"
+            ]
+          },
+          {
+            "name": "catalog-0-caption",
+            "parent": "Build_railway.coal",
+            "active": true,
+            "anchor": "(0.00, 0.00)/(1.00, 1.00)",
+            "pivot": "(0.50, 0.50)",
+            "pos": "(38.00, 0.00)",
+            "size": "(-92.00, -8.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "TextMeshProUGUI"
+            ]
+          },
+          {
+            "name": "Preview",
+            "parent": "Build_railway.coal",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(6.00, -6.00)",
+            "size": "(72.00, 72.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image"
+            ]
+          },
+          {
+            "name": "CatalogScrollbar",
+            "parent": "CatalogScroll",
+            "active": true,
+            "anchor": "(0.00, 0.00)/(1.00, 0.00)",
+            "pivot": "(0.50, 0.00)",
+            "pos": "(0.00, 2.00)",
+            "size": "(0.00, 6.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image",
+              "Scrollbar"
+            ]
+          },
+          {
+            "name": "SlidingArea",
+            "parent": "CatalogScrollbar",
+            "active": true,
+            "anchor": "(0.00, 0.00)/(1.00, 1.00)",
+            "pivot": "(0.50, 0.50)",
+            "pos": "(0.00, 0.00)",
+            "size": "(0.00, 0.00)",
+            "components": [
+              "RectTransform"
+            ]
+          },
+          {
+            "name": "Handle",
+            "parent": "SlidingArea",
+            "active": true,
+            "anchor": "(0.00, 0.00)/(0.29, 1.00)",
+            "pivot": "(0.50, 0.50)",
+            "pos": "(0.00, 0.00)",
+            "size": "(0.00, 0.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image"
+            ]
+          },
+          {
+            "name": "CategoryStrip",
+            "parent": "InventoryBody",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(0.00, 0.00)",
+            "size": "(604.00, 36.00)",
+            "components": [
+              "RectTransform"
+            ]
+          },
+          {
+            "name": "category--1",
+            "parent": "CategoryStrip",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(0.00, 0.00)",
+            "size": "(96.00, 36.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image",
+              "Button"
+            ]
+          },
+          {
+            "name": "category--1-caption",
+            "parent": "category--1",
+            "active": true,
+            "anchor": "(0.00, 0.00)/(1.00, 1.00)",
+            "pivot": "(0.50, 0.50)",
+            "pos": "(0.00, 0.00)",
+            "size": "(0.00, 0.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "TextMeshProUGUI"
+            ]
+          },
+          {
+            "name": "CategoryIcon",
+            "parent": "category--1",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(8.00, -8.00)",
+            "size": "(20.00, 20.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image"
+            ]
+          },
+          {
+            "name": "category-0",
+            "parent": "CategoryStrip",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(100.00, 0.00)",
+            "size": "(96.00, 36.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image",
+              "Button"
+            ]
+          },
+          {
+            "name": "category-0-caption",
+            "parent": "category-0",
+            "active": true,
+            "anchor": "(0.00, 0.00)/(1.00, 1.00)",
+            "pivot": "(0.50, 0.50)",
+            "pos": "(0.00, 0.00)",
+            "size": "(0.00, 0.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "TextMeshProUGUI"
+            ]
+          },
+          {
+            "name": "CategoryIcon",
+            "parent": "category-0",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(8.00, -8.00)",
+            "size": "(20.00, 20.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image"
+            ]
+          },
+          {
+            "name": "category-1",
+            "parent": "CategoryStrip",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(200.00, 0.00)",
+            "size": "(96.00, 36.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image",
+              "Button"
+            ]
+          },
+          {
+            "name": "category-1-caption",
+            "parent": "category-1",
+            "active": true,
+            "anchor": "(0.00, 0.00)/(1.00, 1.00)",
+            "pivot": "(0.50, 0.50)",
+            "pos": "(0.00, 0.00)",
+            "size": "(0.00, 0.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "TextMeshProUGUI"
+            ]
+          },
+          {
+            "name": "CategoryIcon",
+            "parent": "category-1",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(8.00, -8.00)",
+            "size": "(20.00, 20.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image"
+            ]
+          },
+          {
+            "name": "category-2",
+            "parent": "CategoryStrip",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(300.00, 0.00)",
+            "size": "(96.00, 36.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image",
+              "Button"
+            ]
+          },
+          {
+            "name": "category-2-caption",
+            "parent": "category-2",
+            "active": true,
+            "anchor": "(0.00, 0.00)/(1.00, 1.00)",
+            "pivot": "(0.50, 0.50)",
+            "pos": "(0.00, 0.00)",
+            "size": "(0.00, 0.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "TextMeshProUGUI"
+            ]
+          },
+          {
+            "name": "CategoryIcon",
+            "parent": "category-2",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(8.00, -8.00)",
+            "size": "(20.00, 20.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image"
+            ]
+          },
+          {
+            "name": "category-3",
+            "parent": "CategoryStrip",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(400.00, 0.00)",
+            "size": "(96.00, 36.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image",
+              "Button"
+            ]
+          },
+          {
+            "name": "category-3-caption",
+            "parent": "category-3",
+            "active": true,
+            "anchor": "(0.00, 0.00)/(1.00, 1.00)",
+            "pivot": "(0.50, 0.50)",
+            "pos": "(0.00, 0.00)",
+            "size": "(0.00, 0.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "TextMeshProUGUI"
+            ]
+          },
+          {
+            "name": "CategoryIcon",
+            "parent": "category-3",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(8.00, -8.00)",
+            "size": "(20.00, 20.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image"
+            ]
+          },
+          {
+            "name": "category-4",
+            "parent": "CategoryStrip",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(500.00, 0.00)",
+            "size": "(96.00, 36.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image",
+              "Button"
+            ]
+          },
+          {
+            "name": "category-4-caption",
+            "parent": "category-4",
+            "active": true,
+            "anchor": "(0.00, 0.00)/(1.00, 1.00)",
+            "pivot": "(0.50, 0.50)",
+            "pos": "(0.00, 0.00)",
+            "size": "(0.00, 0.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "TextMeshProUGUI"
+            ]
+          },
+          {
+            "name": "CategoryIcon",
+            "parent": "category-4",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(8.00, -8.00)",
+            "size": "(20.00, 20.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image"
+            ]
+          },
+          {
+            "name": "pending",
+            "parent": "ConstructionBar",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(1.00, 1.00)",
+            "pivot": "(0.50, 1.00)",
+            "pos": "(28.00, -6.00)",
+            "size": "(-616.00, 34.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "TextMeshProUGUI"
+            ]
+          },
+          {
+            "name": "WorkspaceRailway",
+            "parent": "ConstructionBar",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(0.00, 1.00)",
+            "pivot": "(0.00, 1.00)",
+            "pos": "(168.00, -6.00)",
+            "size": "(152.00, 36.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image",
+              "Button"
+            ]
+          },
+          {
+            "name": "rail-0-caption",
+            "parent": "WorkspaceRailway",
+            "active": true,
+            "anchor": "(0.00, 0.00)/(1.00, 1.00)",
+            "pivot": "(0.50, 0.50)",
+            "pos": "(0.00, 0.00)",
+            "size": "(0.00, 0.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "TextMeshProUGUI"
+            ]
+          },
+          {
+            "name": "ConstructionSummary",
+            "parent": "ConstructionBar",
+            "active": true,
+            "anchor": "(0.00, 0.00)/(1.00, 0.00)",
+            "pivot": "(0.50, 0.00)",
+            "pos": "(-80.00, 8.00)",
+            "size": "(-176.00, 104.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image",
+              "ScrollRect"
+            ]
+          },
+          {
+            "name": "Viewport",
+            "parent": "ConstructionSummary",
+            "active": true,
+            "anchor": "(0.00, 0.00)/(1.00, 1.00)",
+            "pivot": "(0.50, 0.50)",
+            "pos": "(0.00, 0.00)",
+            "size": "(-16.00, -12.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image",
+              "Mask"
+            ]
+          },
+          {
+            "name": "Content",
+            "parent": "Viewport",
+            "active": true,
+            "anchor": "(0.00, 1.00)/(1.00, 1.00)",
+            "pivot": "(0.50, 1.00)",
+            "pos": "(0.00, 0.00)",
+            "size": "(0.00, 0.00)",
+            "components": [
+              "RectTransform",
+              "VerticalLayoutGroup",
+              "ContentSizeFitter"
+            ]
+          },
+          {
+            "name": "construction-summary",
+            "parent": "Content",
+            "active": true,
+            "anchor": "(0.50, 0.50)/(0.50, 0.50)",
+            "pivot": "(0.50, 0.50)",
+            "pos": "(0.00, 0.00)",
+            "size": "(100.00, 100.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "TextMeshProUGUI"
+            ]
+          }
+        ],
+        "sections": [
+          "clock=ClockBody",
+          "resources=BaseResourceList",
+          "minimap=MinimapBody",
+          "selection=SelectionPanel",
+          "upgrade=UpgradeControls",
+          "edit-actions=EditActions",
+          "inventory=InventoryBody",
+          "placement-hint=placement-hint",
+          "menu=PauseMenuOverlay",
+          "save-controls=SaveControls",
+          "new-game-confirmation=NewGameConfirmation",
+          "map-progress=MapProgress",
+          "power=PowerDetails",
+          "developer=Developer",
+          "developer-body=DeveloperPanel",
+          "run=run",
+          "test-shortcuts=TestShortcuts",
+          "first-loop=FirstLoopObjective"
+        ],
+        "objective": "FirstLoopObjective",
+        "notification": [
+          {
+            "name": "Notifications",
+            "parent": "GameplayCanvas",
+            "active": true,
+            "anchor": "(0.00, 0.00)/(1.00, 0.00)",
+            "pivot": "(0.50, 0.00)",
+            "pos": "(8.00, 24.00)",
+            "size": "(-624.00, 52.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "Image",
+              "CanvasGroup"
+            ]
+          },
+          {
+            "name": "message",
+            "parent": "Notifications",
+            "active": true,
+            "anchor": "(0.00, 0.00)/(1.00, 1.00)",
+            "pivot": "(0.50, 0.50)",
+            "pos": "(0.00, 13.00)",
+            "size": "(0.00, -26.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "TextMeshProUGUI"
+            ]
+          },
+          {
+            "name": "TMP SubMeshUI [LiberationSans SDF Material + NotoSansCJKkr SDF Atlas]",
+            "parent": "message",
+            "active": true,
+            "anchor": "(0.00, 0.00)/(1.00, 1.00)",
+            "pivot": "(0.50, 0.50)",
+            "pos": "(0.00, 0.00)",
+            "size": "(0.00, 0.00)",
+            "components": [
+              "RectTransform",
+              "LayoutElement",
+              "CanvasRenderer",
+              "TMP_SubMeshUI"
+            ]
+          },
+          {
+            "name": "placement-hint",
+            "parent": "Notifications",
+            "active": true,
+            "anchor": "(0.00, 0.00)/(1.00, 1.00)",
+            "pivot": "(0.50, 0.50)",
+            "pos": "(0.00, -13.00)",
+            "size": "(0.00, -26.00)",
+            "components": [
+              "RectTransform",
+              "CanvasRenderer",
+              "TextMeshProUGUI"
+            ]
+          },
+          {
+            "name": "TMP SubMeshUI [LiberationSans SDF Material + NotoSansCJKkr SDF Atlas]",
+            "parent": "placement-hint",
+            "active": true,
+            "anchor": "(0.00, 0.00)/(1.00, 1.00)",
+            "pivot": "(0.50, 0.50)",
+            "pos": "(0.00, 0.00)",
+            "size": "(0.00, 0.00)",
+            "components": [
+              "RectTransform",
+              "LayoutElement",
+              "CanvasRenderer",
+              "TMP_SubMeshUI"
+            ]
+          }
+        ]
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

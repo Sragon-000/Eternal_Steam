@@ -1,0 +1,346 @@
+{
+  "generatedUtc": "2026-10-02T13:29:47.068174+00:00",
+  "result": "PASS",
+  "files": [
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/RailwayOverview.cs",
+      "bytes": 8977,
+      "sha256": "d5ba3d2a460e3ef793c1ad78966a70100a6447413db3aba58e727559bf4e47be"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/RailwayServicePanel.cs",
+      "bytes": 3587,
+      "sha256": "2b0e2ed640add4ec4e76a03f9259478e1fe78096818a14c3956d34780e6b7f1a"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/EditMode/RailwayServicePanelTests.cs",
+      "bytes": 1661,
+      "sha256": "2d53bb7c1ca8b85fd90b998a560f33a9d6c486748169a09fb4c93805f0969d41"
+    },
+    {
+      "path": "Assets/EternalSteam/Scene/Tests/StartRegionSandbox.unity",
+      "bytes": 161683660,
+      "sha256": "ca096ef64dad37786ad0ef41146d00f783714369dcccc783a0c98de81d084900"
+    },
+    {
+      "path": "Assets/EternalSteam/Scene/Tests/OpenWorldSandbox.unity",
+      "bytes": 3944543,
+      "sha256": "9e58ed7246f4f04ac4c16fdd090c481b6da967079f581c63ad769b18bdc4cc33"
+    },
+    {
+      "path": "Docs/Validation/2026-10-02-hud-06b-railway-services.md",
+      "bytes": 4622,
+      "sha256": "1a58fc2fa767aaa2f14d7d09df127eb300f3b2e9b90cb4e0ee35d6b8950e329e"
+    },
+    {
+      "path": "Docs/Implementation/HudGroups/HUD-06B.md",
+      "bytes": 1905,
+      "sha256": "f6fb1a54a1c021d7ac223c9a00d171e385cec14831ad9608b67b227bf0e6b733"
+    },
+    {
+      "path": "Tools/VerifyHud06BResolutions.cs",
+      "bytes": 5624,
+      "sha256": "ab15ec8786ddc6741c40a83d5d2d37a5fea2afc3c47698d927220fa5142391b0"
+    },
+    {
+      "path": "Tools/PolishHud06B.cs",
+      "bytes": 1525,
+      "sha256": "9e9a35cc33c376267d3821ffc87210a176aaa4942dc4e0d4623260b1ade5c52a"
+    },
+    {
+      "path": "Tools/VerifyHud06BPlay.cs",
+      "bytes": 6571,
+      "sha256": "86e1468120b49f02a27836dbd65b366999654d8d43700da14eb98c8bcc13e402"
+    },
+    {
+      "path": "Tools/FixHud06BFontOwnership.cs",
+      "bytes": 1203,
+      "sha256": "1158ff253125995aa95ddb5d6d4f0ee267a1a01e0801a8d3cc1ac411513b8ce6"
+    },
+    {
+      "path": "Tools/BuildHud06BFixture.cs",
+      "bytes": 4932,
+      "sha256": "259156f8aba0505ec0f320f291589b5646be10a74c456fa9f541e0c476b39c10"
+    },
+    {
+      "path": "Tools/AuthorHud06B.cs",
+      "bytes": 5480,
+      "sha256": "ccb55296f11b2a8e2e47f2e18731128cf81acd4102e053d1efda4158f4c2a218"
+    },
+    {
+      "path": "Tools/FinishHud06BValidation.cs",
+      "bytes": 2467,
+      "sha256": "cbf7300fbb903a2a44314810bc481d0967c279d340c9338398f0767c086b808b"
+    },
+    {
+      "path": "Tools/ExportHud06BResults.cs",
+      "bytes": 643,
+      "sha256": "816f2cdecee73c35b54b7b0f75945100bef1900245c596c07a8a05006ac05a48"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06b/fixture-final.json",
+      "bytes": 709,
+      "sha256": "3df0d1550088734437ba8e6b71e396b1a238d109b9309ce5d4bd0106e43664e9"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06b/play-command.json",
+      "bytes": 645,
+      "sha256": "1c2d54126a663d4bd55b9f70ccf47f3ec9a44c08b8e92b788524b31e5feb761e"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06b/test-command-final.json",
+      "bytes": 73079,
+      "sha256": "2093af0b5068da3590c903a4a28f744b6bc9cba4a69c474cbb9d31e73edd3291"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06b/polish-command.json",
+      "bytes": 667,
+      "sha256": "3cdff9949f1a84080e3dd185c4e96463d0badbab04120de9d3610cdcbea344f3"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06b/play-stop-first.json",
+      "bytes": 339,
+      "sha256": "19ab965baecf9ae170afc288ec456ff6a7a78526a0e382cb1698b5135521e40f"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06b/setup.json",
+      "bytes": 666,
+      "sha256": "411aa9bcfcf0ea97c9cfc3bac5724d9f2cee8b900e6f59626eeba3fdcd13f237"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06b/setup-final.json",
+      "bytes": 667,
+      "sha256": "ef385c25bf191b3cda81cc8d17a1d83b0c603a82092798471e7eced37ca6d770"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06b/fixture-review.json",
+      "bytes": 709,
+      "sha256": "c5caf5beff11bca92e3d5bb1999879e52726feaa701b8c013dd59df78bb65a24"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06b/final-recompile.json",
+      "bytes": 271,
+      "sha256": "6bc7a00d70f163dce421aa6af6f0ff082d363670cd4dc1b67fedb969ae9ff68c"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06b/resolution-command-final.json",
+      "bytes": 671,
+      "sha256": "222e40e6152b1bf43c407aa23f5ad6c2e4ae2299c2230b00cb4ea5c783ad8f3c"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06b/font-ownership.json",
+      "bytes": 702,
+      "sha256": "d445d86ddd84fdf0bc469d019e54f06ee16591cb268b6c5f2f76c5ac3f3547dc"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06b/setup-review.json",
+      "bytes": 667,
+      "sha256": "2b566aa0912fe1147c457ac38e354c3ccc7bc2e6cdd55ca1f5d9a4f7d6891639"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06b/play-enter-review.json",
+      "bytes": 340,
+      "sha256": "1fbfaa3484682c684d691715a9dd18b5e10286f2586bc5fc6e73407d4d878465"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06b/play-result.json",
+      "bytes": 366,
+      "sha256": "a32a1d1edb079affdf22b0a6a6e13c9e777aed7e533f282aec56a79054b42305"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06b/recompile.json",
+      "bytes": 268,
+      "sha256": "981c5957c5e6dbad0c0f5566f8b064d073bb72f060499e7f89231c669e9e9d32"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06b/play-enter-final.json",
+      "bytes": 340,
+      "sha256": "1fbfaa3484682c684d691715a9dd18b5e10286f2586bc5fc6e73407d4d878465"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06b/play-stop-review.json",
+      "bytes": 339,
+      "sha256": "19ab965baecf9ae170afc288ec456ff6a7a78526a0e382cb1698b5135521e40f"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06b/author-retry.json",
+      "bytes": 834,
+      "sha256": "9ac48a6c42bdce29f9715cebe766a85ff5fa5f7d4d6c83b668313b6e5385d794"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06b/polish-recompile.json",
+      "bytes": 268,
+      "sha256": "981c5957c5e6dbad0c0f5566f8b064d073bb72f060499e7f89231c669e9e9d32"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06b/author.json",
+      "bytes": 198,
+      "sha256": "dbdfadafdf4641d2b9eeadd7c68a9d6688d58aed19c7ee36f5ab03a5d5b55416"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06b/play-command-review.json",
+      "bytes": 646,
+      "sha256": "79f4ed23f03ff09cc8e33c0d6eed25216f496c4385b9f2bd4416774a9b625b3d"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06b/final-editor-state.json",
+      "bytes": 205,
+      "sha256": "5bfa3929baba755ab0e162b3875afffe54fcf24f9f196dbae7adde98ebb058f5"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06b/play-enter.json",
+      "bytes": 340,
+      "sha256": "1fbfaa3484682c684d691715a9dd18b5e10286f2586bc5fc6e73407d4d878465"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06b/resolution-command.json",
+      "bytes": 671,
+      "sha256": "64a5da4f796077464124081bfaa8a6cf5b49c5fa50c7bbc7a9075e51f5a11e26"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06b/railway-save-fixture.json",
+      "bytes": 2861,
+      "sha256": "c0eed9a5507a5a34713f9a6312c9eb4a2ffe76899c0ee9dadd5b9d5d37358581"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06b/play-command-final.json",
+      "bytes": 645,
+      "sha256": "3d46369a7c6efb319e4348440f6c19a38b1a94539165c53d9f5d7772a0a9bbc7"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06b/author-command.json",
+      "bytes": 1225,
+      "sha256": "fcd2921609a6087d97bb794639f3b17584dea554ae63d8070836131800048491"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06b/restore-command.json",
+      "bytes": 686,
+      "sha256": "ceae591f46f76f1e47448ad85e50929d4dfdc09ba5c33c0a807a50805229f43d"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06b/fixture-command.json",
+      "bytes": 709,
+      "sha256": "04155efa9dad631e59c6dee6903e0e1dfd1142ae620cfbe16b7f0d2e10c3d9a3"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06b/tests-recompile.json",
+      "bytes": 268,
+      "sha256": "981c5957c5e6dbad0c0f5566f8b064d073bb72f060499e7f89231c669e9e9d32"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06b/test-recorder.json",
+      "bytes": 676,
+      "sha256": "8f67a9fe8492fe35a847661dfd3adab33f28ea609541675ba0bb02dc1a5db677"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06b/test-command.json",
+      "bytes": 73070,
+      "sha256": "317c7d4870483bad49846d113357e9ec494424e27c2ffea23579c5370663e6c4"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06b/resolutions.json",
+      "bytes": 1020,
+      "sha256": "a1671bef55cfbc0660415abf87815234c0720e00a9b393fcf535eb21bee9523a"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06b/play-stop-final.json",
+      "bytes": 339,
+      "sha256": "19ab965baecf9ae170afc288ec456ff6a7a78526a0e382cb1698b5135521e40f"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06b/resolution-command-review.json",
+      "bytes": 671,
+      "sha256": "034ab6db1eb0d59e9655588bd24666630a75ed54b2e7d7fc31402244efddd055"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06b/test-recorder-final.json",
+      "bytes": 677,
+      "sha256": "118d5167a542770d640a2893615ca2bfd65f912ff109c2fb61b75cd06169f2a7"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06b/product-tests.xml",
+      "bytes": 227711,
+      "sha256": "86f3576d151b9f9558222bff3f4946ba6b77a50a9a8e979541cf8d4fed74087b"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06b/service-1920x1080-defense-bottom.png",
+      "bytes": 1425209,
+      "sha256": "027b8224246db25f0edffb5eb58f7a992fb5527bd4e79bb1dd62bac446902e19"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06b/service-800x600-cargo-bottom.png",
+      "bytes": 434453,
+      "sha256": "db6b8124a21367c972b924f59076f62fc6f54b66a39fa8589851aea118efbf57"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06b/service-1920x1080-cargo-top.png",
+      "bytes": 1428266,
+      "sha256": "1a2c316831e82c15413a3132a72dcc4b3108d8d51590a0f8e3bd865b7132bfe7"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06b/service-3840x1080-defense-top.png",
+      "bytes": 2448053,
+      "sha256": "8c691c145e255c33ac033d0247938dfd113a8200127250755a9ef4ad5ddb25bb"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06b/service-1280x720-defense-bottom.png",
+      "bytes": 789712,
+      "sha256": "8a1df205583030ced520b321909cf4003731ef116db7a539cd0c91f5b917fce8"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06b/service-1280x720-cargo-bottom.png",
+      "bytes": 792882,
+      "sha256": "550fd79416068023aabcaa1143f3cfe4dbd68c1a0cb5bd88349da870fe56e11e"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06b/service-3840x1080-cargo-top.png",
+      "bytes": 2443683,
+      "sha256": "3bd6ad5c63fb0efe59d07ec0e00e3a9274e72bcc570ae661b74fb6891f9a0538"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06b/service-3840x1080-cargo-bottom.png",
+      "bytes": 2446100,
+      "sha256": "3b5e71efebc9bd24ad6c933af82077d120ce650481fee40b733de392ab4a2186"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06b/service-1920x1080-cargo-bottom.png",
+      "bytes": 1431411,
+      "sha256": "97cd3253eae0b9aa77e4bb91f9fd3dde4b08a34a18f4b451e8640f000d8a9363"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06b/service-1280x720-defense-top.png",
+      "bytes": 787105,
+      "sha256": "a95dbcba3e1aa41f4ba53d5f29febcbb5b4b09b695d5b258dadd3d8be51abad8"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06b/service-1280x720-cargo-top.png",
+      "bytes": 789534,
+      "sha256": "4c9cd6b19084ef21a9910312c6f5cfaf5761f77cf90f166bf9280560731786f6"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06b/service-800x600-defense-top.png",
+      "bytes": 446158,
+      "sha256": "c0a4e8ae861bf4ae065cfce0111b5daada179d0f80979a4bf57e8d2086daf5a6"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06b/service-800x600-defense-bottom.png",
+      "bytes": 427334,
+      "sha256": "0b2d248cd6e2d19bdd26f93cf3cbbc9115a4b387c53bf4038c23ec05cb019236"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06b/service-800x600-cargo-top.png",
+      "bytes": 441171,
+      "sha256": "2a4519e7323e4a79e401ba7b169f8604d61d0583cf06c13102b3694d0d9895bb"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06b/service-3840x1080-defense-bottom.png",
+      "bytes": 2442449,
+      "sha256": "f246f6dadba21c13292b777229d999f9a90123bad13aff423eeb2761be552942"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06b/service-1920x1080-defense-top.png",
+      "bytes": 1433685,
+      "sha256": "a0c8b061838bc1b392d5edadd17676ddfb8ad54f021e23fe313e2cba0ed73db9"
+    }
+  ]
+}

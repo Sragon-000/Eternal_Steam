@@ -1,0 +1,16 @@
+[
+  {
+    "scene": "StartRegionSandbox",
+    "combatDefault": true,
+    "authoredGroups": 2,
+    "testControls": true,
+    "railwayCommands": 76
+  },
+  {
+    "scene": "OpenWorldSandbox",
+    "combatDefault": true,
+    "authoredGroups": 2,
+    "testControls": true,
+    "railwayCommands": 76
+  }
+]

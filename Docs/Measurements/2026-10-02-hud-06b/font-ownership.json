@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/FixHud06BFontOwnership.cs",
+      "entry": "FixHud06BFontOwnership.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 643,
+      "executeMs": 5205,
+      "assemblyName": "PipelineRunScript_FixHud06BFontOwnership_3524dab5123c4b1097d55ffc79004baa",
+      "success": true,
+      "result": "Service inputs use physical 18px without legacy text rescaling"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

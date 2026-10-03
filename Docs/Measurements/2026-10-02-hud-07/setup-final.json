@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/FinishHud07Validation.cs",
+      "entry": "FinishHud07Validation.Setup"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 60,
+      "executeMs": 0,
+      "assemblyName": "PipelineRunScript_FinishHud07Validation_14633fdbea3f4df2a8eb1c487d1330c4",
+      "success": true,
+      "result": "Isolated save root configured"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

@@ -1,0 +1,744 @@
+{
+  "texts": [
+    {
+      "id": "date",
+      "name": "date",
+      "parent": "TimeSummary",
+      "font": 18.0,
+      "rect": "(x:0.00, y:-38.00, width:152.00, height:38.00)",
+      "pos": "(0.00, 0.00)"
+    },
+    {
+      "id": "remaining",
+      "name": "remaining",
+      "parent": "TimeSummary",
+      "font": 18.0,
+      "rect": "(x:0.00, y:-44.00, width:152.00, height:44.00)",
+      "pos": "(0.00, -42.00)"
+    },
+    {
+      "id": "mode",
+      "name": "mode",
+      "parent": "ModeSummary",
+      "font": 18.0,
+      "rect": "(x:0.00, y:-48.00, width:188.00, height:48.00)",
+      "pos": "(8.00, -5.00)"
+    },
+    {
+      "id": "power",
+      "name": "power",
+      "parent": "PowerSummary",
+      "font": 15.15,
+      "rect": "(x:0.00, y:-28.00, width:220.00, height:28.00)",
+      "pos": "(44.00, -7.00)"
+    },
+    {
+      "id": "pause-caption",
+      "name": "pause-caption",
+      "parent": "pause",
+      "font": 18.0,
+      "rect": "(x:-72.00, y:-22.00, width:144.00, height:44.00)",
+      "pos": "(0.00, 0.00)"
+    },
+    {
+      "id": "main-title",
+      "name": "main-title",
+      "parent": "HealthPanel",
+      "font": 18.0,
+      "rect": "(x:0.00, y:-24.00, width:160.00, height:24.00)",
+      "pos": "(62.00, -9.00)"
+    },
+    {
+      "id": "main-health",
+      "name": "main-health",
+      "parent": "HealthPanel",
+      "font": 18.0,
+      "rect": "(x:0.00, y:-23.00, width:160.00, height:23.00)",
+      "pos": "(62.00, -33.00)"
+    },
+    {
+      "id": "clock-fold-caption",
+      "name": "clock-fold-caption",
+      "parent": "clock-fold",
+      "font": 18.0,
+      "rect": "(x:-144.00, y:-14.00, width:288.00, height:28.00)",
+      "pos": "(0.00, 0.00)"
+    },
+    {
+      "id": "clock-face",
+      "name": "clock-face",
+      "parent": "ClockBody",
+      "font": 18.0,
+      "rect": "(x:0.00, y:-22.00, width:216.00, height:22.00)",
+      "pos": "(8.00, 0.00)"
+    },
+    {
+      "id": "resource-fold-caption",
+      "name": "resource-fold-caption",
+      "parent": "resource-fold",
+      "font": 18.0,
+      "rect": "(x:-144.00, y:-14.00, width:288.00, height:28.00)",
+      "pos": "(0.00, 0.00)"
+    },
+    {
+      "id": "resources",
+      "name": "resources",
+      "parent": "Content",
+      "font": 18.0,
+      "rect": "(x:-52.00, y:-220.00, width:104.00, height:440.00)",
+      "pos": "(-56.00, 0.00)"
+    },
+    {
+      "id": "resources-all-caption",
+      "name": "resources-all-caption",
+      "parent": "resources-all",
+      "font": 18.0,
+      "rect": "(x:-136.00, y:-14.00, width:272.00, height:28.00)",
+      "pos": "(0.00, 0.00)"
+    },
+    {
+      "id": "minimap-fold-caption",
+      "name": "minimap-fold-caption",
+      "parent": "minimap-fold",
+      "font": 18.0,
+      "rect": "(x:-136.00, y:-14.00, width:272.00, height:28.00)",
+      "pos": "(0.00, 0.00)"
+    },
+    {
+      "id": "selection-title",
+      "name": "selection-title",
+      "parent": "SelectionPanel",
+      "font": 18.0,
+      "rect": "(x:0.00, y:-70.00, width:148.00, height:70.00)",
+      "pos": "(82.00, -8.00)"
+    },
+    {
+      "id": "selection-close-caption",
+      "name": "selection-close-caption",
+      "parent": "selection-close",
+      "font": 18.0,
+      "rect": "(x:-15.00, y:-14.00, width:30.00, height:28.00)",
+      "pos": "(0.00, 0.00)"
+    },
+    {
+      "id": "selection-stats",
+      "name": "selection-stats",
+      "parent": "Content",
+      "font": 18.0,
+      "rect": "(x:0.00, y:-300.00, width:244.00, height:300.00)",
+      "pos": "(0.00, 0.00)"
+    },
+    {
+      "id": "upgrade-caption",
+      "name": "upgrade-caption",
+      "parent": "upgrade",
+      "font": 18.0,
+      "rect": "(x:-124.00, y:-16.00, width:248.00, height:32.00)",
+      "pos": "(0.00, 0.00)"
+    },
+    {
+      "id": "upgrade-status",
+      "name": "upgrade-status",
+      "parent": "UpgradeControls",
+      "font": 16.0,
+      "rect": "(x:0.00, y:-28.00, width:248.00, height:28.00)",
+      "pos": "(0.00, -36.00)"
+    },
+    {
+      "id": "edit-caption",
+      "name": "edit-caption",
+      "parent": "edit",
+      "font": 18.0,
+      "rect": "(x:-64.00, y:-18.00, width:128.00, height:36.00)",
+      "pos": "(0.00, 0.00)"
+    },
+    {
+      "id": "confirm-caption",
+      "name": "confirm-caption",
+      "parent": "confirm",
+      "font": 18.0,
+      "rect": "(x:-74.00, y:-24.00, width:148.00, height:48.00)",
+      "pos": "(0.00, 0.00)"
+    },
+    {
+      "id": "cancel-caption",
+      "name": "cancel-caption",
+      "parent": "cancel",
+      "font": 18.0,
+      "rect": "(x:-74.00, y:-24.00, width:148.00, height:48.00)",
+      "pos": "(0.00, 0.00)"
+    },
+    {
+      "id": "inventory-fold-caption",
+      "name": "inventory-fold-caption",
+      "parent": "WorkspaceConstruction",
+      "font": 18.0,
+      "rect": "(x:-76.00, y:-18.00, width:152.00, height:36.00)",
+      "pos": "(0.00, 0.00)"
+    },
+    {
+      "id": "power-fold-caption",
+      "name": "power-fold-caption",
+      "parent": "power-fold",
+      "font": 18.0,
+      "rect": "(x:-64.00, y:-18.00, width:128.00, height:36.00)",
+      "pos": "(0.00, 0.00)"
+    },
+    {
+      "id": "menu-fold-caption",
+      "name": "menu-fold-caption",
+      "parent": "menu-fold",
+      "font": 18.0,
+      "rect": "(x:-78.00, y:-22.00, width:156.00, height:44.00)",
+      "pos": "(0.00, 0.00)"
+    },
+    {
+      "id": "category--1-caption",
+      "name": "category--1-caption",
+      "parent": "category--1",
+      "font": 18.0,
+      "rect": "(x:-48.00, y:-18.00, width:96.00, height:36.00)",
+      "pos": "(0.00, 0.00)"
+    },
+    {
+      "id": "category-0-caption",
+      "name": "category-0-caption",
+      "parent": "category-0",
+      "font": 18.0,
+      "rect": "(x:-48.00, y:-18.00, width:96.00, height:36.00)",
+      "pos": "(0.00, 0.00)"
+    },
+    {
+      "id": "category-1-caption",
+      "name": "category-1-caption",
+      "parent": "category-1",
+      "font": 18.0,
+      "rect": "(x:-48.00, y:-18.00, width:96.00, height:36.00)",
+      "pos": "(0.00, 0.00)"
+    },
+    {
+      "id": "category-2-caption",
+      "name": "category-2-caption",
+      "parent": "category-2",
+      "font": 18.0,
+      "rect": "(x:-48.00, y:-18.00, width:96.00, height:36.00)",
+      "pos": "(0.00, 0.00)"
+    },
+    {
+      "id": "category-3-caption",
+      "name": "category-3-caption",
+      "parent": "category-3",
+      "font": 18.0,
+      "rect": "(x:-48.00, y:-18.00, width:96.00, height:36.00)",
+      "pos": "(0.00, 0.00)"
+    },
+    {
+      "id": "catalog-0-caption",
+      "name": "catalog-0-caption",
+      "parent": "catalog-0",
+      "font": 18.0,
+      "rect": "(x:-68.00, y:-38.00, width:136.00, height:76.00)",
+      "pos": "(38.00, 0.00)"
+    },
+    {
+      "id": "catalog-1-caption",
+      "name": "catalog-1-caption",
+      "parent": "catalog-1",
+      "font": 18.0,
+      "rect": "(x:-68.00, y:-38.00, width:136.00, height:76.00)",
+      "pos": "(38.00, 0.00)"
+    },
+    {
+      "id": "catalog-2-caption",
+      "name": "catalog-2-caption",
+      "parent": "catalog-2",
+      "font": 18.0,
+      "rect": "(x:-68.00, y:-38.00, width:136.00, height:76.00)",
+      "pos": "(38.00, 0.00)"
+    },
+    {
+      "id": "catalog-3-caption",
+      "name": "catalog-3-caption",
+      "parent": "catalog-3",
+      "font": 18.0,
+      "rect": "(x:-68.00, y:-38.00, width:136.00, height:76.00)",
+      "pos": "(38.00, 0.00)"
+    },
+    {
+      "id": "catalog-4-caption",
+      "name": "catalog-4-caption",
+      "parent": "catalog-4",
+      "font": 18.0,
+      "rect": "(x:-68.00, y:-38.00, width:136.00, height:76.00)",
+      "pos": "(38.00, 0.00)"
+    },
+    {
+      "id": "catalog-5-caption",
+      "name": "catalog-5-caption",
+      "parent": "catalog-5",
+      "font": 18.0,
+      "rect": "(x:-68.00, y:-38.00, width:136.00, height:76.00)",
+      "pos": "(38.00, 0.00)"
+    },
+    {
+      "id": "catalog-6-caption",
+      "name": "catalog-6-caption",
+      "parent": "catalog-6",
+      "font": 18.0,
+      "rect": "(x:-68.00, y:-38.00, width:136.00, height:76.00)",
+      "pos": "(38.00, 0.00)"
+    },
+    {
+      "id": "catalog-7-caption",
+      "name": "catalog-7-caption",
+      "parent": "catalog-7",
+      "font": 18.0,
+      "rect": "(x:-68.00, y:-38.00, width:136.00, height:76.00)",
+      "pos": "(38.00, 0.00)"
+    },
+    {
+      "id": "catalog-8-caption",
+      "name": "catalog-8-caption",
+      "parent": "catalog-8",
+      "font": 18.0,
+      "rect": "(x:-68.00, y:-38.00, width:136.00, height:76.00)",
+      "pos": "(38.00, 0.00)"
+    },
+    {
+      "id": "catalog-9-caption",
+      "name": "catalog-9-caption",
+      "parent": "catalog-9",
+      "font": 18.0,
+      "rect": "(x:-68.00, y:-38.00, width:136.00, height:76.00)",
+      "pos": "(38.00, 0.00)"
+    },
+    {
+      "id": "catalog-10-caption",
+      "name": "catalog-10-caption",
+      "parent": "catalog-10",
+      "font": 18.0,
+      "rect": "(x:-68.00, y:-38.00, width:136.00, height:76.00)",
+      "pos": "(38.00, 0.00)"
+    },
+    {
+      "id": "catalog-11-caption",
+      "name": "catalog-11-caption",
+      "parent": "catalog-11",
+      "font": 18.0,
+      "rect": "(x:-68.00, y:-38.00, width:136.00, height:76.00)",
+      "pos": "(38.00, 0.00)"
+    },
+    {
+      "id": "catalog-12-caption",
+      "name": "catalog-12-caption",
+      "parent": "catalog-12",
+      "font": 18.0,
+      "rect": "(x:-68.00, y:-38.00, width:136.00, height:76.00)",
+      "pos": "(38.00, 0.00)"
+    },
+    {
+      "id": "catalog-13-caption",
+      "name": "catalog-13-caption",
+      "parent": "catalog-13",
+      "font": 18.0,
+      "rect": "(x:-68.00, y:-38.00, width:136.00, height:76.00)",
+      "pos": "(38.00, 0.00)"
+    },
+    {
+      "id": "catalog-14-caption",
+      "name": "catalog-14-caption",
+      "parent": "catalog-14",
+      "font": 18.0,
+      "rect": "(x:-68.00, y:-38.00, width:136.00, height:76.00)",
+      "pos": "(38.00, 0.00)"
+    },
+    {
+      "id": "catalog-15-caption",
+      "name": "catalog-15-caption",
+      "parent": "catalog-15",
+      "font": 18.0,
+      "rect": "(x:-68.00, y:-38.00, width:136.00, height:76.00)",
+      "pos": "(38.00, 0.00)"
+    },
+    {
+      "id": "catalog-16-caption",
+      "name": "catalog-16-caption",
+      "parent": "catalog-16",
+      "font": 18.0,
+      "rect": "(x:-68.00, y:-38.00, width:136.00, height:76.00)",
+      "pos": "(38.00, 0.00)"
+    },
+    {
+      "id": "catalog-17-caption",
+      "name": "catalog-17-caption",
+      "parent": "catalog-17",
+      "font": 18.0,
+      "rect": "(x:-68.00, y:-38.00, width:136.00, height:76.00)",
+      "pos": "(38.00, 0.00)"
+    },
+    {
+      "id": "catalog-18-caption",
+      "name": "catalog-18-caption",
+      "parent": "catalog-18",
+      "font": 18.0,
+      "rect": "(x:-68.00, y:-38.00, width:136.00, height:76.00)",
+      "pos": "(38.00, 0.00)"
+    },
+    {
+      "id": "catalog-19-caption",
+      "name": "catalog-19-caption",
+      "parent": "catalog-19",
+      "font": 18.0,
+      "rect": "(x:-68.00, y:-38.00, width:136.00, height:76.00)",
+      "pos": "(38.00, 0.00)"
+    },
+    {
+      "id": "catalog-20-caption",
+      "name": "catalog-20-caption",
+      "parent": "catalog-20",
+      "font": 18.0,
+      "rect": "(x:-68.00, y:-38.00, width:136.00, height:76.00)",
+      "pos": "(38.00, 0.00)"
+    },
+    {
+      "id": "catalog-21-caption",
+      "name": "catalog-21-caption",
+      "parent": "catalog-21",
+      "font": 18.0,
+      "rect": "(x:-68.00, y:-38.00, width:136.00, height:76.00)",
+      "pos": "(38.00, 0.00)"
+    },
+    {
+      "id": "catalog-22-caption",
+      "name": "catalog-22-caption",
+      "parent": "catalog-22",
+      "font": 18.0,
+      "rect": "(x:-68.00, y:-38.00, width:136.00, height:76.00)",
+      "pos": "(38.00, 0.00)"
+    },
+    {
+      "id": "catalog-23-caption",
+      "name": "catalog-23-caption",
+      "parent": "catalog-23",
+      "font": 18.0,
+      "rect": "(x:-68.00, y:-38.00, width:136.00, height:76.00)",
+      "pos": "(38.00, 0.00)"
+    },
+    {
+      "id": "catalog-24-caption",
+      "name": "catalog-24-caption",
+      "parent": "catalog-24",
+      "font": 18.0,
+      "rect": "(x:-68.00, y:-38.00, width:136.00, height:76.00)",
+      "pos": "(38.00, 0.00)"
+    },
+    {
+      "id": "pending",
+      "name": "pending",
+      "parent": "ConstructionBar",
+      "font": 18.0,
+      "rect": "(x:-316.00, y:-34.00, width:632.00, height:34.00)",
+      "pos": "(28.00, -6.00)"
+    },
+    {
+      "id": "message",
+      "name": "message",
+      "parent": "Notifications",
+      "font": 16.0,
+      "rect": "(x:-328.00, y:-13.00, width:656.00, height:26.00)",
+      "pos": "(0.00, 13.00)"
+    },
+    {
+      "id": "placement-hint",
+      "name": "placement-hint",
+      "parent": "Notifications",
+      "font": 16.0,
+      "rect": "(x:-328.00, y:-13.00, width:656.00, height:26.00)",
+      "pos": "(0.00, -13.00)"
+    },
+    {
+      "id": "menu-close-caption",
+      "name": "menu-close-caption",
+      "parent": "menu-close",
+      "font": 18.0,
+      "rect": "(x:-30.00, y:-14.00, width:60.00, height:28.00)",
+      "pos": "(0.00, 0.00)"
+    },
+    {
+      "id": "save-status",
+      "name": "save-status",
+      "parent": "SaveControls",
+      "font": 18.0,
+      "rect": "(x:0.00, y:-120.00, width:546.00, height:120.00)",
+      "pos": "(0.00, 0.00)"
+    },
+    {
+      "id": "save-caption",
+      "name": "save-caption",
+      "parent": "save",
+      "font": 18.0,
+      "rect": "(x:-84.00, y:-17.00, width:168.00, height:34.00)",
+      "pos": "(0.00, 0.00)"
+    },
+    {
+      "id": "load-caption",
+      "name": "load-caption",
+      "parent": "load",
+      "font": 18.0,
+      "rect": "(x:-84.00, y:-17.00, width:168.00, height:34.00)",
+      "pos": "(0.00, 0.00)"
+    },
+    {
+      "id": "new-game-caption",
+      "name": "new-game-caption",
+      "parent": "new-game",
+      "font": 18.0,
+      "rect": "(x:-84.00, y:-17.00, width:168.00, height:34.00)",
+      "pos": "(0.00, 0.00)"
+    },
+    {
+      "id": "new-game-warning",
+      "name": "new-game-warning",
+      "parent": "NewGameConfirmation",
+      "font": 18.0,
+      "rect": "(x:0.00, y:-28.00, width:540.00, height:28.00)",
+      "pos": "(0.00, 0.00)"
+    },
+    {
+      "id": "new-game-confirm-caption",
+      "name": "new-game-confirm-caption",
+      "parent": "new-game-confirm",
+      "font": 18.0,
+      "rect": "(x:-127.00, y:-17.00, width:254.00, height:34.00)",
+      "pos": "(0.00, 0.00)"
+    },
+    {
+      "id": "new-game-cancel-caption",
+      "name": "new-game-cancel-caption",
+      "parent": "new-game-cancel",
+      "font": 18.0,
+      "rect": "(x:-127.00, y:-17.00, width:254.00, height:34.00)",
+      "pos": "(0.00, 0.00)"
+    },
+    {
+      "id": "energy",
+      "name": "energy",
+      "parent": "MapProgress",
+      "font": 18.0,
+      "rect": "(x:0.00, y:-120.00, width:540.00, height:120.00)",
+      "pos": "(0.00, 0.00)"
+    },
+    {
+      "id": "stage",
+      "name": "stage",
+      "parent": "MapProgress",
+      "font": 18.0,
+      "rect": "(x:0.00, y:-104.00, width:540.00, height:104.00)",
+      "pos": "(0.00, -124.00)"
+    },
+    {
+      "id": "orb-craft-caption",
+      "name": "orb-craft-caption",
+      "parent": "orb-craft",
+      "font": 18.0,
+      "rect": "(x:-265.00, y:-19.00, width:530.00, height:38.00)",
+      "pos": "(0.00, 0.00)"
+    },
+    {
+      "id": "developer-fold-caption",
+      "name": "developer-fold-caption",
+      "parent": "developer-fold",
+      "font": 18.0,
+      "rect": "(x:-270.00, y:-17.00, width:540.00, height:34.00)",
+      "pos": "(0.00, 0.00)"
+    },
+    {
+      "id": "power-close-caption",
+      "name": "power-close-caption",
+      "parent": "power-close",
+      "font": 18.0,
+      "rect": "(x:-227.00, y:-16.00, width:454.00, height:32.00)",
+      "pos": "(0.00, 0.00)"
+    },
+    {
+      "id": "power-details",
+      "name": "power-details",
+      "parent": "Content",
+      "font": 18.0,
+      "rect": "(x:0.00, y:-330.00, width:442.00, height:330.00)",
+      "pos": "(0.00, 0.00)"
+    },
+    {
+      "id": "developer-close-caption",
+      "name": "developer-close-caption",
+      "parent": "developer-close",
+      "font": 18.0,
+      "rect": "(x:-287.00, y:-16.00, width:574.00, height:32.00)",
+      "pos": "(0.00, 0.00)"
+    },
+    {
+      "id": "counts",
+      "name": "counts",
+      "parent": "DeveloperPanel",
+      "font": 18.0,
+      "rect": "(x:0.00, y:-98.00, width:574.00, height:98.00)",
+      "pos": "(8.00, -46.00)"
+    },
+    {
+      "id": "spawn-caption",
+      "name": "spawn-caption",
+      "parent": "spawn",
+      "font": 18.0,
+      "rect": "(x:-85.00, y:-18.00, width:170.00, height:36.00)",
+      "pos": "(0.00, 0.00)"
+    },
+    {
+      "id": "spawn-air-caption",
+      "name": "spawn-air-caption",
+      "parent": "spawn-air",
+      "font": 18.0,
+      "rect": "(x:-92.00, y:-18.00, width:184.00, height:36.00)",
+      "pos": "(0.00, 0.00)"
+    },
+    {
+      "id": "reset-caption",
+      "name": "reset-caption",
+      "parent": "reset",
+      "font": 18.0,
+      "rect": "(x:-94.00, y:-18.00, width:188.00, height:36.00)",
+      "pos": "(0.00, 0.00)"
+    },
+    {
+      "id": "run-caption",
+      "name": "run-caption",
+      "parent": "run",
+      "font": 18.0,
+      "rect": "(x:-92.00, y:-18.00, width:184.00, height:36.00)",
+      "pos": "(0.00, 0.00)"
+    },
+    {
+      "id": "day-caption",
+      "name": "day-caption",
+      "parent": "day",
+      "font": 18.0,
+      "rect": "(x:-140.00, y:-18.00, width:280.00, height:36.00)",
+      "pos": "(0.00, 0.00)"
+    },
+    {
+      "id": "night-caption",
+      "name": "night-caption",
+      "parent": "night",
+      "font": 18.0,
+      "rect": "(x:-142.00, y:-18.00, width:284.00, height:36.00)",
+      "pos": "(0.00, 0.00)"
+    },
+    {
+      "id": "amount-value",
+      "name": "amount-value",
+      "parent": "SpawnAmount",
+      "font": 18.0,
+      "rect": "(x:-102.00, y:-18.00, width:204.00, height:36.00)",
+      "pos": "(0.00, 0.00)"
+    },
+    {
+      "id": "resource-values",
+      "name": "resource-values",
+      "parent": "Content",
+      "font": 18.0,
+      "rect": "(x:-68.00, y:-220.00, width:136.00, height:440.00)",
+      "pos": "(68.00, 0.00)"
+    },
+    {
+      "id": "power-rate",
+      "name": "power-rate",
+      "parent": "PowerSummary",
+      "font": 16.0,
+      "rect": "(x:0.00, y:-20.00, width:68.00, height:20.00)",
+      "pos": "(202.00, -35.00)"
+    },
+    {
+      "id": "infinite-resources-caption",
+      "name": "day-caption",
+      "parent": "infinite-resources",
+      "font": 16.0,
+      "rect": "(x:-109.00, y:-18.00, width:218.00, height:36.00)",
+      "pos": "(0.00, 0.00)"
+    },
+    {
+      "id": "quick-day-caption",
+      "name": "day-caption",
+      "parent": "quick-day",
+      "font": 16.0,
+      "rect": "(x:-54.00, y:-18.00, width:108.00, height:36.00)",
+      "pos": "(0.00, 0.00)"
+    },
+    {
+      "id": "quick-night-caption",
+      "name": "day-caption",
+      "parent": "quick-night",
+      "font": 16.0,
+      "rect": "(x:-54.00, y:-18.00, width:108.00, height:36.00)",
+      "pos": "(0.00, 0.00)"
+    },
+    {
+      "id": "first-loop-objective",
+      "name": "NextAction",
+      "parent": "FirstLoopObjective",
+      "font": 18.0,
+      "rect": "(x:-316.00, y:-25.00, width:632.00, height:50.00)",
+      "pos": "(0.00, 0.00)"
+    },
+    {
+      "id": "construction-summary",
+      "name": "construction-summary",
+      "parent": "Content",
+      "font": 18.0,
+      "rect": "(x:-528.00, y:-39.69, width:1056.00, height:79.37)",
+      "pos": "(528.00, -39.69)"
+    },
+    {
+      "id": "category-4-caption",
+      "name": "category-4-caption",
+      "parent": "category-4",
+      "font": 18.0,
+      "rect": "(x:-48.00, y:-18.00, width:96.00, height:36.00)",
+      "pos": "(0.00, 0.00)"
+    }
+  ],
+  "objective": [
+    {
+      "name": "FirstLoopObjective",
+      "rect": "(x:-328.00, y:0.00, width:656.00, height:58.00)",
+      "pos": "(8.00, 428.00)",
+      "text": null
+    },
+    {
+      "name": "NextAction",
+      "rect": "(x:-316.00, y:-25.00, width:632.00, height:50.00)",
+      "pos": "(0.00, 0.00)",
+      "text": "첫 회차 · 에너지 3.7% · 생산 → 운송 → 방어 → 오브 제작\n목표 · 건설 메뉴 → 메인 기지 앞 파란 가동 영역에 철·석탄 생성기 → 확정"
+    },
+    {
+      "name": "TMP SubMeshUI [LiberationSans SDF Material + NotoSansCJKkr SDF Atlas]",
+      "rect": "(x:-316.00, y:-25.00, width:632.00, height:50.00)",
+      "pos": "(0.00, 0.00)",
+      "text": null
+    }
+  ],
+  "floating": [
+    {
+      "name": "ProgressAndSave",
+      "parent": "GameplayCanvas",
+      "parentRect": "(x:-640.00, y:-360.00, width:1280.00, height:720.00)",
+      "size": "(x:-580.00, y:-420.00, width:580.00, height:420.00)",
+      "scale": "(1.39, 1.39, 1.39)"
+    },
+    {
+      "name": "PowerDetails",
+      "parent": "BuildRightSlide",
+      "parentRect": "(x:-640.00, y:-360.00, width:1280.00, height:720.00)",
+      "size": "(x:-470.00, y:-260.00, width:470.00, height:260.00)",
+      "scale": "(2.00, 2.00, 2.00)"
+    }
+  ]
+}

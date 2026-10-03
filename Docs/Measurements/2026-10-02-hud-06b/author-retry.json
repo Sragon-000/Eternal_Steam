@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/AuthorHud06B.cs",
+      "entry": "AuthorHud06B.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 84,
+      "executeMs": 5356,
+      "assemblyName": "PipelineRunScript_AuthorHud06B_e173811fc55c48f29496befde9582947",
+      "success": true,
+      "result": "[\n  {\n    \"scene\": \"StartRegionSandbox\",\n    \"savedActions\": 8,\n    \"sameInputReferences\": true\n  },\n  {\n    \"scene\": \"OpenWorldSandbox\",\n    \"savedActions\": 8,\n    \"sameInputReferences\": true\n  }\n]"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

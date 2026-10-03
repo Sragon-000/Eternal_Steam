@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/AuthorHud06B.cs",
+      "entry": "AuthorHud06B.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 722,
+      "executeMs": 1894,
+      "assemblyName": "PipelineRunScript_AuthorHud06B_ec44d601aca44dc6af056723e974bd50",
+      "success": false,
+      "error": "Runtime Error",
+      "errorDetails": "Exception: Expected existing 06A only\n  at AuthorHud06B.Main () [0x0009c] in /Users/limseth/Projects/Eternal_Steam/Eternal_Steam/Tools/AuthorHud06B.cs:9 \n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\n  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <c5eeda5e65d44b388e164c6c5cfe0702>:0 "
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/FixHud08MenuReferences.cs",
+      "entry": "FixHud08MenuReferences.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 1123,
+      "executeMs": 6966,
+      "assemblyName": "PipelineRunScript_FixHud08MenuReferences_ea4fdde03a1444aebb78132bf9e72356",
+      "success": true,
+      "result": "Developer panel reference repaired in both saved scenes"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

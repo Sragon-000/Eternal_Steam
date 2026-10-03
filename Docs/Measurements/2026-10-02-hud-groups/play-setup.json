@@ -1,0 +1,23 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "System.Environment.SetEnvironmentVariable(\"ETERNAL_STEAM_SAVE_TEST_ROOT\",System.IO.Path.GetFullPath(\"Docs/Measurements/2026-10-02-hud-groups/play-save\")); UnityEngine.Application.runInBackground=true; return \"Project-local product verification slot set\";"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": "Project-local product verification slot set"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

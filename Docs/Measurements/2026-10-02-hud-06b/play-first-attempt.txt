@@ -1,0 +1,3 @@
+FAIL System.Exception: Unlocked defense candidate
+  at Hud06BProbe+<Verify>d__8.MoveNext () [0x00d59] in /Users/limseth/Projects/Eternal_Steam/Eternal_Steam/Tools/VerifyHud06BPlay.cs:14 
+  at Hud06BProbe+<Start>d__7.MoveNext () [0x00048] in /Users/limseth/Projects/Eternal_Steam/Eternal_Steam/Tools/VerifyHud06BPlay.cs:8 

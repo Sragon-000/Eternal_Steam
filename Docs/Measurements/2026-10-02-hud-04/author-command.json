@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/AuthorBaseResourceAccordion.cs",
+      "entry": "AuthorBaseResourceAccordion.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 3014,
+      "executeMs": 5719,
+      "assemblyName": "PipelineRunScript_AuthorBaseResourceAccordion_1f652626a2e442ecaa61da233bcf29da",
+      "success": true,
+      "result": "[\n  {\n    \"scene\": \"StartRegionSandbox\",\n    \"slots\": 4,\n    \"resourceTypes\": 8,\n    \"persistentCallbacks\": 6,\n    \"runtimeControlsCreated\": false\n  },\n  {\n    \"scene\": \"OpenWorldSandbox\",\n    \"slots\": 4,\n    \"resourceTypes\": 8,\n    \"persistentCallbacks\": 6,\n    \"runtimeControlsCreated\": false\n  }\n]"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

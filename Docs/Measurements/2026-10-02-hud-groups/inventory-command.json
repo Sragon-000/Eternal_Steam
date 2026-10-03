@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/InspectHudGroups.cs",
+      "entry": "InspectHudGroups.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 1284,
+      "executeMs": 14999,
+      "assemblyName": "PipelineRunScript_InspectHudGroups_9a23aff01e7d4bdd814f04c8f4273348",
+      "success": true,
+      "result": "Inventory saved for both scenes"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

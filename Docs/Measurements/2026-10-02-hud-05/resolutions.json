@@ -1,0 +1,30 @@
+[
+  {
+    "width": 800,
+    "height": 600,
+    "bounds": true,
+    "cardHeight": true,
+    "actionsUnobscured": true
+  },
+  {
+    "width": 1280,
+    "height": 720,
+    "bounds": true,
+    "cardHeight": true,
+    "actionsUnobscured": true
+  },
+  {
+    "width": 1920,
+    "height": 1080,
+    "bounds": true,
+    "cardHeight": true,
+    "actionsUnobscured": true
+  },
+  {
+    "width": 3840,
+    "height": 1080,
+    "bounds": true,
+    "cardHeight": true,
+    "actionsUnobscured": true
+  }
+]

@@ -13,8 +13,8 @@ namespace EternalSteam.OpenWorld
         {
             if(Railway.HasDraft){Railway.Execute("close");if(Railway.HasDraft)return;}
             if(Railway.Panel.activeSelf)Railway.Execute("close");
-            Hud.Layout.InventoryBody.gameObject.SetActive(true);restoreInventory=true;
-            if(!Hud.Input.IsEditing)Hud.Input.BeginEditing();Hud.Refresh();
+            Hud.Layout.InventoryBody.gameObject.SetActive(true);restoreInventory=true;Hud.Layout.CompactDock?.BrowseRequested();
+            Hud.Refresh();
         }
         public void Railways()
         {

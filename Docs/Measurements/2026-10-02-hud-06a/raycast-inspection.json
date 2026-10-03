@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/InspectHud06ARaycast.cs",
+      "entry": "InspectHud06ARaycast.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 42,
+      "executeMs": 2,
+      "assemblyName": "PipelineRunScript_InspectHud06ARaycast_803aaf4aaf104aaa8d37700cfd2d2b27",
+      "success": true,
+      "result": "[\n  {\n    \"id\": \"new\",\n    \"pos\": \"(214.00, 96.00)\",\n    \"active\": false,\n    \"raycast\": true,\n    \"culled\": false,\n    \"raycastResults\": [\n      \"RailwayOverview\"\n    ]\n  },\n  {\n    \"id\": \"connect\",\n    \"pos\": \"(586.00, 96.00)\",\n    \"active\": false,\n    \"raycast\": true,\n    \"culled\": false,\n    \"raycastResults\": [\n      \"RailwayOverview\"\n    ]\n  },\n  {\n    \"id\": \"start\",\n    \"pos\": \"(152.00, 144.00)\",\n    \"active\": true,\n    \"raycast\": true,\n    \"culled\": false,\n    \"raycastResults\": [\n      \"start\",\n      \"RailwayOverview\"\n    ]\n  },\n  {\n    \"id\": \"stop\",\n    \"pos\": \"(400.00, 144.00)\",\n    \"active\": true,\n    \"raycast\": true,\n    \"culled\": false,\n    \"raycastResults\": [\n      \"stop\",\n      \"RailwayOverview\"\n    ]\n  },\n  {\n    \"id\": \"fuel\",\n    \"pos\": \"(648.00, 144.00)\",\n    \"active\": true,\n    \"raycast\": true,\n    \"culled\": false,\n    \"raycastResults\": [\n      \"fuel\",\n      \"RailwayOverview\"\n    ]\n  },\n  {\n    \"id\": \"cargo\",\n    \"pos\": \"(121.00, 96.00)\",\n    \"active\": true,\n    \"raycast\": true,\n    \"culled\": false,\n    \"raycastResults\": [\n      \"cargo\",\n      \"RailwayOverview\"\n    ]\n  },\n  {\n    \"id\": \"defense\",\n    \"pos\": \"(307.00, 96.00)\",\n    \"active\": true,\n    \"raycast\": true,\n    \"culled\": false,\n    \"raycastResults\": [\n      \"defense\",\n      \"RailwayOverview\"\n    ]\n  },\n  {\n    \"id\": \"edit\",\n    \"pos\": \"(493.00, 96.00)\",\n    \"active\": true,\n    \"raycast\": true,\n    \"culled\": false,\n    \"raycastResults\": [\n      \"edit\",\n      \"RailwayOverview\"\n    ]\n  },\n  {\n    \"id\": \"cancel-pending\",\n    \"pos\": \"(679.00, 96.00)\",\n    \"active\": true,\n    \"raycast\": true,\n    \"culled\": false,\n    \"raycastResults\": [\n      \"cancel-pending\",\n      \"RailwayOverview\"\n    ]\n  }\n]"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

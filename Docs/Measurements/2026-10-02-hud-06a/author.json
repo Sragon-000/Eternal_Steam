@@ -1,0 +1,14 @@
+[
+  {
+    "scene": "StartRegionSandbox",
+    "savedRows": 4,
+    "savedActions": 9,
+    "legacyPreserved": true
+  },
+  {
+    "scene": "OpenWorldSandbox",
+    "savedRows": 4,
+    "savedActions": 9,
+    "legacyPreserved": true
+  }
+]

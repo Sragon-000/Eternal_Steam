@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/VerifyHudGroupsPlay.cs",
+      "entry": "VerifyHudGroupsPlay.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 653,
+      "executeMs": 0,
+      "assemblyName": "PipelineRunScript_VerifyHudGroupsPlay_2a74834e4e7a4817b07e37b9f6b26119",
+      "success": true,
+      "result": "Queued product UI validation"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

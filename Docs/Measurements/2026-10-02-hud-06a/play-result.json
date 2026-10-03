@@ -1,0 +1,11 @@
+{
+  "result": "PASS",
+  "realRoute": true,
+  "refuelStartStop": true,
+  "fuelWait": true,
+  "waitingAndErrorPresentationFixture": true,
+  "pendingCancelKeepsPaidSegment": true,
+  "legacyInputSurvivesGroup": true,
+  "commandAgreement": true,
+  "researchExperiment": false
+}

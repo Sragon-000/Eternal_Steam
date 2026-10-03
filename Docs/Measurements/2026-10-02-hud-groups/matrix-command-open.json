@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/VerifyHudGroupsMatrix.cs",
+      "entry": "VerifyHudGroupsMatrix.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 645,
+      "executeMs": 0,
+      "assemblyName": "PipelineRunScript_VerifyHudGroupsMatrix_5e5af17329f04e03af7590d6fbfc4592",
+      "success": true,
+      "result": "Queued product UI validation"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

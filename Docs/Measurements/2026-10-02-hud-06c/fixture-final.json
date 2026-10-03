@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/BuildHud06CFixture.cs",
+      "entry": "BuildHud06CFixture.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 820,
+      "executeMs": 299,
+      "assemblyName": "PipelineRunScript_BuildHud06CFixture_fe594dee02cf48ac8296dca1b3d85190",
+      "success": true,
+      "result": "Created actual two-base, two-station fixture with one reusable track for connection UI"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

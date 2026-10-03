@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/InspectHud08Menu.cs",
+      "entry": "InspectHud08Menu.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 13,
+      "executeMs": 1,
+      "assemblyName": "PipelineRunScript_InspectHud08Menu_84a2830032294d78bfe5376c465595ee",
+      "success": true,
+      "result": "{\n  \"open\": false,\n  \"blocks\": false,\n  \"paused\": true,\n  \"alpha\": 0.0,\n  \"active\": false,\n  \"confirm\": false,\n  \"developer\": false,\n  \"clock\": 287.62145712971687,\n  \"enabled\": true,\n  \"frame\": 3017,\n  \"components\": [\n    \"GameplayCanvas\"\n  ]\n}"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/FixHud06AReferences.cs",
+      "entry": "FixHud06AReferences.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 42,
+      "executeMs": 5544,
+      "assemblyName": "PipelineRunScript_FixHud06AReferences_d8b11b38502e4c469332a6b673d31018",
+      "success": true,
+      "result": "Saved missing legacy CanvasGroup references"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

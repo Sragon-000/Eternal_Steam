@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/ExportHud06BResults.cs",
+      "entry": "ExportHud06BResults.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 567,
+      "executeMs": 0,
+      "assemblyName": "PipelineRunScript_ExportHud06BResults_c525aa74daa1406b9d2b93a3a102f5df",
+      "success": true,
+      "result": "Authoritative full result XML callback registered"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

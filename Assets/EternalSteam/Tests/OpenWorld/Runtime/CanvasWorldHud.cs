@@ -29,6 +29,8 @@ namespace EternalSteam.OpenWorld
         public UnityEngine.UI.GridLayoutGroup CatalogLayout;
         public CanvasHudLayout Layout;
         public bool ShowDevelopmentControls;
+        public HudModeGroups Groups;
+        public BaseResourceAccordion BaseResources;
         public TMP_InputField Amount;public CanvasWorldMinimap Minimap;public UnityEngine.UI.Image HealthFill;
         public RectTransform ClockHand;public UnityEngine.UI.GraphicRaycaster Raycaster;
         public string[] ResourcePriority=Array.Empty<string>();
@@ -50,16 +52,26 @@ namespace EternalSteam.OpenWorld
         void EndTyping(){if(Amount!=null&&Amount.isFocused)Amount.DeactivateInputField();EventSystem.current?.SetSelectedGameObject(null);}
         public void Execute(string command)
         {
-            if(actions==null)return;EndTyping();
+            if(actions==null)return;
+            var menu=Sandbox.PauseMenu;
+            if(menu!=null){
+                if(command=="fold:menu"){menu.SetOpen(!menu.IsOpen);return;}
+                if(!menu.AllowsHudCommand(command))return;
+                if(command=="load"){menu.Execute("load");return;}
+            }
+            if(Layout.CompactDock?.Transitioning==true)return;
+            EndTyping();
             if(Sandbox.RailwayHud?.HasDraft==true&&(command=="edit"||command.StartsWith("build:"))){Sandbox.Message="철도 연결·노선 편집을 먼저 확정하거나 닫아 주세요.";return;}
             if(command.StartsWith("fold:")){var id=command.Substring(5);if(sections.TryGetValue(id,out var body)){if(id=="minimap")Minimap.CancelInteraction();body.SetActive(!body.activeSelf);Layout?.Apply(true);}return;}
             if(command.StartsWith("category:")){category=int.Parse(command.Substring(9));RefreshCatalog();return;}
             if(command.StartsWith("build:")){
-                int index=int.Parse(command.Substring(6));if(!Input.IsEditing){Sandbox.Message="건설 메뉴에서 건물을 선택하세요.";return;}
-                var entry=Catalog[index];if(entry.Definition!=null)Input.SelectContent(entry.Definition);else Input.Select(entry.Tool,entry.Kind);Refresh();return;
+                int index=int.Parse(command.Substring(6));if(index<0||index>=Catalog.Length)return;
+                if(Sandbox.Content.Defeated||Sandbox.Persistence?.Blocked==true)return;
+                if(!Input.IsEditing)Input.BeginEditing();
+                var entry=Catalog[index];if(entry.Definition!=null)Input.SelectContent(entry.Definition);else Input.Select(entry.Tool,entry.Kind);Layout.CompactDock?.PlacementSelected();Refresh();return;
             }
             switch(command){
-                case "edit":if(Input.IsEditing)Input.Cancel();else Input.BeginEditing();break;
+                case "edit":if(Input.IsEditing&&(Input.Edits?.Count??0)>0){Sandbox.Message="대기 작업은 확정 또는 전체 취소로 마무리하세요.";break;}if(Input.IsEditing)Input.Cancel();else Input.BeginEditing();break;
                 case "confirm":if(Input.IsEditing){if((Input.Edits?.Count??0)==0)Input.Cancel();else Input.Confirm();}break;
                 case "cancel":Input.Cancel();break;
                 case "selection-close":Input.ClearSelection();break;
@@ -88,13 +100,13 @@ namespace EternalSteam.OpenWorld
             bool locked=Sandbox.Content.Defeated||Sandbox.Persistence?.Blocked==true;
             foreach(var entry in Catalog){
                 bool available=entry.Definition==null||Sandbox.Content.MeetsBaseLevel(entry.Definition,out _);
-                bool visible=available&&(category<0||(int)entry.Category==category);
+                bool visible=available&&(category<0||(category==4?entry.Definition?.Id.StartsWith("railway.")==true:(int)entry.Category==category));
                 if(entry.View.gameObject.activeSelf!=visible)entry.View.gameObject.SetActive(visible);
-                entry.View.interactable=available&&Input.IsEditing&&!locked;
+                entry.View.interactable=available&&!locked&&Sandbox.RailwayHud?.HasDraft!=true;
                 bool selected=Input.IsEditing&&(entry.Definition!=null?ReferenceEquals(Input.SelectedDefinition,entry.Definition):Input.Tool==entry.Tool&&(entry.Tool!=WorldTool.Tower||Input.Kind==entry.Kind));
                 if(entry.View.targetGraphic is UnityEngine.UI.Image frame&&CardFrame!=null)frame.sprite=selected?SelectedFrame:CardFrame;
             }
-            for(int i=-1;i<4;i++)if(buttons.TryGetValue("category-"+i,out var tab)&&tab.targetGraphic is UnityEngine.UI.Image frame&&CardFrame!=null){
+            for(int i=-1;i<5;i++)if(buttons.TryGetValue("category-"+i,out var tab)&&tab.targetGraphic is UnityEngine.UI.Image frame&&CardFrame!=null){
                 frame.sprite=category==i?CategoryFrame:CardFrame;
                 if(texts.TryGetValue("category-"+i+"-caption",out var label))label.color=category==i?new Color(1,.82f,.38f):new Color(.7f,.8f,.84f);
             }
@@ -106,13 +118,14 @@ namespace EternalSteam.OpenWorld
             var clock=Sandbox.Clock;long seconds=(long)Math.Ceiling(clock.RemainingSeconds);
             Text("date",$"{clock.Day}일차 · {(clock.Phase==DayPhase.Day?"낮":"밤")}");Text("remaining",$"{(clock.Phase==DayPhase.Day?"밤":"낮")}까지 {seconds/60:00}:{seconds%60:00}");
             if(ClockHand!=null)ClockHand.localRotation=Quaternion.Euler(0,0,-360*(float)((clock.Phase==DayPhase.Day?0:.5)+clock.PhaseProgress*.5));
-            Caption("pause",actions.ProgressLabel);Caption("run",actions.RunLabel);Caption("edit",editing?"건설 종료":"건설 시작");Caption("spawn-air",Sandbox.SpawnAir?"공중 적: 켬":"공중 적: 끔");
+            Caption("pause",Sandbox.PauseMenu?.IsOpen==true?"복귀 후 "+(Sandbox.Clock.Paused?"정지":"진행")+" · 전환":actions.ProgressLabel);Caption("run",actions.RunLabel);Caption("edit",editing?"편집 종료":"회수 선택");Caption("spawn-air",Sandbox.SpawnAir?"공중 적: 켬":"공중 적: 끔");
             Caption("infinite-resources",Sandbox.Content.InfiniteResources?"자원 무한: ON":"자원 무한: OFF");Show("test-shortcuts",ShowDevelopmentControls&&(Application.isEditor||Debug.isDebugBuild));Enable("infinite-resources",!locked);
             bool can=actions.CanInteract(out _);Enable("quick-day",can);Enable("quick-night",can);Enable("pause",can);Enable("run",can);Enable("edit",!locked);Enable("spawn",!editing&&!locked);Enable("reset",!locked);Enable("day",can);Enable("night",can);Enable("spawn-air",!locked);
-            Show("edit-actions",editing);Show("run",Sandbox.Assault==null);Show("developer",ShowDevelopmentControls&&(Application.isEditor||Debug.isDebugBuild));
-            Text("pending",editing?$"건설 중 · 대기 작업 {Input.Edits?.Count??0}개":"건물 선택: 상세 정보 · 건설 메뉴: 설치와 회수");RefreshCatalog();
+            Show("edit-actions",editing);Enable("edit",!locked&&(Input.Edits?.Count??0)==0);Enable("confirm",!locked&&Input.CanConfirm&&(Input.Edits.RecoveryCount>0||Input.Edits.Quote().Affordable));Enable("cancel",editing);Caption("cancel",Layout.CompactDock!=null?"취소":"전체 취소");Show("run",Sandbox.Assault==null);Show("developer",ShowDevelopmentControls&&(Application.isEditor||Debug.isDebugBuild));
+            Text("pending",editing?$"대기 작업 {Input.Edits?.Count??0}개":"카드를 선택하면 배치를 시작합니다.");RefreshConstructionSummary();RefreshCatalog();
             var main=Sandbox.Content.MainBase;var hp=main?.Module<HealthModule>();bool hasHp=main!=null&&main.Active&&!main.Disposed&&hp!=null;
             Text("main-health",hasHp?$"{hp.Current:0.#} / {hp.Maximum:0.#}":Sandbox.Content.Defeated?"메인 기지 파괴":"메인 기지 없음");float healthRatio=hasHp?Mathf.Clamp01(hp.Current/Mathf.Max(1,hp.Maximum)):0;HealthFill.rectTransform.anchorMax=new Vector2(healthRatio,1);
+            if(BaseResources==null){
             foreach(var icon in ResourceIcons){bool visible=showAll||Array.IndexOf(ResourcePriority,icon.Id)>=0;if(icon.View.gameObject.activeSelf!=visible)icon.View.gameObject.SetActive(visible);}int visibleResourceRows=0;
             buffer.Clear();for(int i=0;i<resources.Count;i++){var r=resources[i];if(!showAll&&Array.IndexOf(ResourcePriority,r.OutputId)<0)continue;foreach(var icon in ResourceIcons)if(icon.Id==r.OutputId){icon.View.anchoredPosition=new Vector2(0,-visibleResourceRows*26-2);}
                 visibleResourceRows++;buffer.Append(resourceNames[i]).Append('\n');}
@@ -120,12 +133,31 @@ namespace EternalSteam.OpenWorld
             Text("resource-values","<line-height=26>"+buffer.ToString());Text("resource-fold-caption","보유 자원 · "+BaseName(Sandbox.Content.Bases.SelectedBaseId));
             if(texts.TryGetValue("resources",out var resourceText)){var content=(RectTransform)resourceText.transform.parent;float h=Mathf.Max(26,resourceRows*26);if(!Mathf.Approximately(content.sizeDelta.y,h))content.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical,h);}
             Caption("resources-all",hasPriority?(showAll?"주요 자원":"전체 자원"):"전체 자원 표시 중");Enable("resources-all",hasPriority);
+            }
             var selected=Input.SelectedContent??Input.SelectedTower?.building;if(selected?.Disposed==true)selected=null;
             if(buttons.TryGetValue("station-railway",out var stationButton)){bool isStation=selected?.Module<RailFacility>()?.Kind==RailFacilityKind.Station&&!editing&&!locked;stationButton.gameObject.SetActive(isStation);stationButton.interactable=isStation;}
             Show("selection",selected!=null&&selected.Active&&!editing);if(selected!=null)RefreshSelection(selected);
             RefreshPower(selected);RefreshProgress(editing,locked);
             var p=Sandbox.Persistence;Show("save-controls",p!=null);if(p!=null){bool save=p.CanSave(out var reason);Text("save-status",p.Status+(string.IsNullOrEmpty(p.CompatibilityNotice)?"":"\n"+p.CompatibilityNotice)+"\n마지막 저장: "+(p.LastSavedUtc??"없음")+(save?"":"\n"+reason));Enable("save",save);Enable("load",p.HasContinue&&!locked);}
             Text("counts",$"토대 {Sandbox.Foundations.Platforms.Count} · 포탑 {Sandbox.Towers.Count}\n적 {Sandbox.Enemies.Alive:N0} / {Sandbox.Enemies.MaxCount:N0} · 처치 {Sandbox.Enemies.Killed:N0}\n소환 대기 {Sandbox.SpawnStream.Pending:N0}");
+        }
+        void RefreshConstructionSummary()
+        {
+            if(!texts.ContainsKey("construction-summary")||Input.Edits==null)return;
+            var edits=Input.Edits;var quote=edits.Quote();
+            string Describe(WorldEditSession.ConstructionQuote q){
+                var lines=new List<string>();foreach(var line in q.Lines){var name=ResourceName(line.Resource);if(name=="미지정")name=line.Resource;lines.Add($"{name} {line.Required:N0} / 보유 {line.Available:N0}");}
+                return (lines.Count==0?"비용 없음":string.Join(" · ",lines))+(Sandbox.Content.InfiniteResources?" · 자원 무한":"")+(q.Reason==null?"":"\n"+q.Reason);
+            }
+            string selected=Input.SelectedDefinition?.DisplayName??(Input.Tool==WorldTool.Foundation?"토대":Input.Tool==WorldTool.Tower?Input.Kind.ToString():"없음");
+            selected=selected.Split(" · ")[0];
+            string value=$"선택: {selected} · 대기 {edits.Count}개 · 지불: "+(Sandbox.Content.BaseRules?BaseName(Sandbox.Content.Bases.SelectedBaseId):"공용 재고");
+            value+="\n확정 비용: "+(edits.RecoveryCount>0?"회수 "+edits.RecoveryCount+"개":Describe(quote));
+            if(Input.SelectedDefinition!=null||Input.Tool==WorldTool.Foundation||Input.Tool==WorldTool.Tower){
+                var candidate=Input.SelectedDefinition??(Input.Tool==WorldTool.Tower?Sandbox.Foundations.Definition(Input.Kind):null);
+                value+="\n다음 1개 추가 후: "+Describe(edits.Quote(candidate,foundation:Input.Tool==WorldTool.Foundation));
+            }else if(!Input.IsEditing)value+="\n건물 카드: 설치 · 회수 선택: 기존 건물 선택";
+            Text("construction-summary",value);
         }
         void RefreshSelection(BuildingInstance b)
         {
@@ -212,9 +244,10 @@ namespace EternalSteam.OpenWorld
         {
             if(actions==null)return;var mouse=Mouse.current;bool over=false;
             if(mouse!=null&&EventSystem.current!=null){pointer??=new PointerEventData(EventSystem.current);pointer.position=mouse.position.ReadValue();hits.Clear();Raycaster.Raycast(pointer,hits);over=hits.Count>0;}
-            Input.PointerOverUI=over||Minimap.Interacting;Sandbox.CameraRig.BlockPointer=Input.PointerOverUI||Input.Dragging;
-            Sandbox.CameraRig.BlockKeyboard=(Sandbox.RailwayHud?.Typing??false)||Amount.isFocused||Input.Dragging||Minimap.Interacting||(mouse!=null&&Minimap.gameObject.activeInHierarchy&&RectTransformUtility.RectangleContainsScreenPoint(Minimap.rectTransform,mouse.position.ReadValue()));
-            if(Keyboard.current?.escapeKey.wasPressedThisFrame??false)EndTyping();Refresh();
+            bool modal=Sandbox.PauseMenu!=null&&Sandbox.PauseMenu.BlocksInput;
+            Input.PointerOverUI=Layout.CompactDock?.Transitioning==true||modal||over||Minimap.Interacting||(Groups!=null&&Groups.Transitioning);Sandbox.CameraRig.BlockPointer=Input.PointerOverUI||Input.Dragging;
+            Sandbox.CameraRig.BlockKeyboard=Layout.CompactDock?.Transitioning==true||modal||(Groups!=null&&Groups.Transitioning)||(Sandbox.RailwayHud?.Typing??false)||Amount.isFocused||Input.Dragging||Minimap.Interacting||(mouse!=null&&Minimap.gameObject.activeInHierarchy&&Minimap.ContainsScreenPoint(mouse.position.ReadValue()));
+            if(Sandbox.PauseMenu==null&&(Keyboard.current?.escapeKey.wasPressedThisFrame??false))EndTyping();Refresh();
         }
         void OnDisable(){if(Input!=null)Input.PointerOverUI=false;if(Sandbox?.CameraRig!=null){Sandbox.CameraRig.BlockPointer=false;Sandbox.CameraRig.BlockKeyboard=false;}Minimap?.CancelInteraction();}
     }

@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/VerifyHud07EditorResolutions.cs",
+      "entry": "VerifyHud07EditorResolutions.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 55,
+      "executeMs": 0,
+      "assemblyName": "PipelineRunScript_VerifyHud07EditorResolutions_d175136d72bf46fcb4b206d644ec752c",
+      "success": true,
+      "result": "Queued five-state resolution checks"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

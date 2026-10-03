@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/VerifyHud08Menu.cs",
+      "entry": "VerifyHud08Menu.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 38,
+      "executeMs": 0,
+      "assemblyName": "PipelineRunScript_VerifyHud08Menu_de19d5942504452cb370b724633dc705",
+      "success": true,
+      "result": "Queued Esc menu verification"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

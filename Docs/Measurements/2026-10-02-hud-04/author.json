@@ -1,0 +1,16 @@
+[
+  {
+    "scene": "StartRegionSandbox",
+    "slots": 4,
+    "resourceTypes": 8,
+    "persistentCallbacks": 6,
+    "runtimeControlsCreated": false
+  },
+  {
+    "scene": "OpenWorldSandbox",
+    "slots": 4,
+    "resourceTypes": 8,
+    "persistentCallbacks": 6,
+    "runtimeControlsCreated": false
+  }
+]

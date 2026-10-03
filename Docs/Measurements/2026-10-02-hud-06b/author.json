@@ -1,0 +1,12 @@
+[
+  {
+    "scene": "StartRegionSandbox",
+    "savedActions": 8,
+    "sameInputReferences": true
+  },
+  {
+    "scene": "OpenWorldSandbox",
+    "savedActions": 8,
+    "sameInputReferences": true
+  }
+]

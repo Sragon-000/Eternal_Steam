@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/VerifyHud07Input.cs",
+      "entry": "VerifyHud07Input.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 27,
+      "executeMs": 0,
+      "assemblyName": "PipelineRunScript_VerifyHud07Input_ebe9b0968387488499f5d513182f86b9",
+      "success": true,
+      "result": "Queued input and map acceptance"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

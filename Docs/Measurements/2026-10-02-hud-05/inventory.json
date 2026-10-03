@@ -1,0 +1,3065 @@
+{
+  "texts": [
+    {
+      "id": "date",
+      "text": "1일차 · 낮",
+      "rect": {
+        "path": "GameplayCanvas/CombatGroup/CombatLeftSlide/LeftStatus/ClockPanel/ClockBody/TimeSummary/date",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(0.00, -38.00)",
+        "offsetMax": "(152.00, 0.00)",
+        "size": "(152.00, 38.00)"
+      }
+    },
+    {
+      "id": "remaining",
+      "text": "전환까지 05:00",
+      "rect": {
+        "path": "GameplayCanvas/CombatGroup/CombatLeftSlide/LeftStatus/ClockPanel/ClockBody/TimeSummary/remaining",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(0.00, -86.00)",
+        "offsetMax": "(152.00, -42.00)",
+        "size": "(152.00, 44.00)"
+      }
+    },
+    {
+      "id": "mode",
+      "text": "준비",
+      "rect": {
+        "path": "GameplayCanvas/TopBar/ModeSummary/mode",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(8.00, -53.00)",
+        "offsetMax": "(196.00, -5.00)",
+        "size": "(188.00, 48.00)"
+      }
+    },
+    {
+      "id": "power",
+      "text": "기지 전력",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildTopSlide/PowerSummary/power",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(44.00, -35.00)",
+        "offsetMax": "(264.00, -7.00)",
+        "size": "(220.00, 28.00)"
+      }
+    },
+    {
+      "id": "pause-caption",
+      "text": "일시정지",
+      "rect": {
+        "path": "GameplayCanvas/TopBar/pause/pause-caption",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(0.00, 0.00)",
+        "offsetMax": "(0.00, 0.00)",
+        "size": "(144.00, 44.00)"
+      }
+    },
+    {
+      "id": "main-title",
+      "text": "메인 기지",
+      "rect": {
+        "path": "GameplayCanvas/CombatGroup/CombatLeftSlide/LeftStatus/HealthPanel/main-title",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(62.00, -33.00)",
+        "offsetMax": "(222.00, -9.00)",
+        "size": "(160.00, 24.00)"
+      }
+    },
+    {
+      "id": "main-health",
+      "text": "체력",
+      "rect": {
+        "path": "GameplayCanvas/CombatGroup/CombatLeftSlide/LeftStatus/HealthPanel/main-health",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(62.00, -56.00)",
+        "offsetMax": "(222.00, -33.00)",
+        "size": "(160.00, 23.00)"
+      }
+    },
+    {
+      "id": "clock-fold-caption",
+      "text": "낮 / 밤",
+      "rect": {
+        "path": "GameplayCanvas/CombatGroup/CombatLeftSlide/LeftStatus/ClockPanel/clock-fold/clock-fold-caption",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(0.00, 0.00)",
+        "offsetMax": "(0.00, 0.00)",
+        "size": "(288.00, 28.00)"
+      }
+    },
+    {
+      "id": "clock-face",
+      "text": "낮        밤",
+      "rect": {
+        "path": "GameplayCanvas/CombatGroup/CombatLeftSlide/LeftStatus/ClockPanel/ClockBody/clock-face",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(8.00, -22.00)",
+        "offsetMax": "(224.00, 0.00)",
+        "size": "(216.00, 22.00)"
+      }
+    },
+    {
+      "id": "resource-fold-caption",
+      "text": "기지별 보유 자원",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/BuildResources/ResourcePanel/resource-fold/resource-fold-caption",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(0.00, 0.00)",
+        "offsetMax": "(0.00, 0.00)",
+        "size": "(288.00, 28.00)"
+      }
+    },
+    {
+      "id": "resources",
+      "text": "자원 현황",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/BuildResources/ResourcePanel/LegacyResourceBody/ResourceScroll/Viewport/Content/resources",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(28.00, 0.00)",
+        "offsetMax": "(-140.00, 0.00)",
+        "size": "(104.00, 440.00)"
+      }
+    },
+    {
+      "id": "resources-all-caption",
+      "text": "전체 자원",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/BuildResources/ResourcePanel/LegacyResourceBody/resources-all/resources-all-caption",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(0.00, 0.00)",
+        "offsetMax": "(0.00, 0.00)",
+        "size": "(272.00, 28.00)"
+      }
+    },
+    {
+      "id": "minimap-fold-caption",
+      "text": "미니맵",
+      "rect": {
+        "path": "GameplayCanvas/CombatGroup/CombatRightSlide/RightStatus/MinimapPanel/minimap-fold/minimap-fold-caption",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(0.00, 0.00)",
+        "offsetMax": "(0.00, 0.00)",
+        "size": "(272.00, 28.00)"
+      }
+    },
+    {
+      "id": "selection-title",
+      "text": "선택 건물",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildRightSlide/BuildSelection/SelectionPanel/selection-title",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(82.00, -78.00)",
+        "offsetMax": "(230.00, -8.00)",
+        "size": "(148.00, 70.00)"
+      }
+    },
+    {
+      "id": "selection-close-caption",
+      "text": "×",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildRightSlide/BuildSelection/SelectionPanel/selection-close/selection-close-caption",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(0.00, 0.00)",
+        "offsetMax": "(0.00, 0.00)",
+        "size": "(30.00, 28.00)"
+      }
+    },
+    {
+      "id": "selection-stats",
+      "text": "건물 상세",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildRightSlide/BuildSelection/SelectionPanel/SelectionScroll/Viewport/Content/selection-stats",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(0.00, -300.00)",
+        "offsetMax": "(244.00, 0.00)",
+        "size": "(244.00, 300.00)"
+      }
+    },
+    {
+      "id": "upgrade-caption",
+      "text": "강화",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildRightSlide/BuildSelection/SelectionPanel/UpgradeControls/upgrade/upgrade-caption",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(0.00, 0.00)",
+        "offsetMax": "(0.00, 0.00)",
+        "size": "(248.00, 32.00)"
+      }
+    },
+    {
+      "id": "upgrade-status",
+      "text": "강화 상태",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildRightSlide/BuildSelection/SelectionPanel/UpgradeControls/upgrade-status",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(0.00, -64.00)",
+        "offsetMax": "(248.00, -36.00)",
+        "size": "(248.00, 28.00)"
+      }
+    },
+    {
+      "id": "edit-caption",
+      "text": "수정",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/edit/edit-caption",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(0.00, 0.00)",
+        "offsetMax": "(0.00, 0.00)",
+        "size": "(128.00, 36.00)"
+      }
+    },
+    {
+      "id": "confirm-caption",
+      "text": "확정",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/EditActions/confirm/confirm-caption",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(0.00, 0.00)",
+        "offsetMax": "(0.00, 0.00)",
+        "size": "(94.00, 36.00)"
+      }
+    },
+    {
+      "id": "cancel-caption",
+      "text": "취소",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/EditActions/cancel/cancel-caption",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(0.00, 0.00)",
+        "offsetMax": "(0.00, 0.00)",
+        "size": "(94.00, 36.00)"
+      }
+    },
+    {
+      "id": "inventory-fold-caption",
+      "text": "건설 메뉴",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/WorkspaceConstruction/inventory-fold-caption",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(0.00, 0.00)",
+        "offsetMax": "(0.00, 0.00)",
+        "size": "(152.00, 36.00)"
+      }
+    },
+    {
+      "id": "power-fold-caption",
+      "text": "전력 상세",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/power-fold/power-fold-caption",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(0.00, 0.00)",
+        "offsetMax": "(0.00, 0.00)",
+        "size": "(128.00, 36.00)"
+      }
+    },
+    {
+      "id": "menu-fold-caption",
+      "text": "진행 · 저장",
+      "rect": {
+        "path": "GameplayCanvas/TopBar/menu-fold/menu-fold-caption",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(0.00, 0.00)",
+        "offsetMax": "(0.00, 0.00)",
+        "size": "(156.00, 44.00)"
+      }
+    },
+    {
+      "id": "category--1-caption",
+      "text": "전체",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CategoryStrip/category--1/category--1-caption",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(0.00, 0.00)",
+        "offsetMax": "(0.00, 0.00)",
+        "size": "(96.00, 36.00)"
+      }
+    },
+    {
+      "id": "category-0-caption",
+      "text": "방어",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CategoryStrip/category-0/category-0-caption",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(0.00, 0.00)",
+        "offsetMax": "(0.00, 0.00)",
+        "size": "(96.00, 36.00)"
+      }
+    },
+    {
+      "id": "category-1-caption",
+      "text": "자원",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CategoryStrip/category-1/category-1-caption",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(0.00, 0.00)",
+        "offsetMax": "(0.00, 0.00)",
+        "size": "(96.00, 36.00)"
+      }
+    },
+    {
+      "id": "category-2-caption",
+      "text": "설치",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CategoryStrip/category-2/category-2-caption",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(0.00, 0.00)",
+        "offsetMax": "(0.00, 0.00)",
+        "size": "(96.00, 36.00)"
+      }
+    },
+    {
+      "id": "category-3-caption",
+      "text": "기타",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CategoryStrip/category-3/category-3-caption",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(0.00, 0.00)",
+        "offsetMax": "(0.00, 0.00)",
+        "size": "(96.00, 36.00)"
+      }
+    },
+    {
+      "id": "catalog-0-caption",
+      "text": "서브 기지",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-0/catalog-0-caption",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(84.00, 4.00)",
+        "offsetMax": "(-8.00, -4.00)",
+        "size": "(136.00, 76.00)"
+      }
+    },
+    {
+      "id": "catalog-1-caption",
+      "text": "테슬라 타워",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-1/catalog-1-caption",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(84.00, 4.00)",
+        "offsetMax": "(-8.00, -4.00)",
+        "size": "(136.00, 76.00)"
+      }
+    },
+    {
+      "id": "catalog-2-caption",
+      "text": "플라즈마 레이저 포탑",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-2/catalog-2-caption",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(84.00, 4.00)",
+        "offsetMax": "(-8.00, -4.00)",
+        "size": "(136.00, 76.00)"
+      }
+    },
+    {
+      "id": "catalog-3-caption",
+      "text": "발칸 대공포",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-3/catalog-3-caption",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(84.00, 4.00)",
+        "offsetMax": "(-8.00, -4.00)",
+        "size": "(136.00, 76.00)"
+      }
+    },
+    {
+      "id": "catalog-4-caption",
+      "text": "레일 대공포",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-4/catalog-4-caption",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(84.00, 4.00)",
+        "offsetMax": "(-8.00, -4.00)",
+        "size": "(136.00, 76.00)"
+      }
+    },
+    {
+      "id": "catalog-5-caption",
+      "text": "아크 블래스터",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-5/catalog-5-caption",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(84.00, 4.00)",
+        "offsetMax": "(-8.00, -4.00)",
+        "size": "(136.00, 76.00)"
+      }
+    },
+    {
+      "id": "catalog-6-caption",
+      "text": "레일건 터렛",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-6/catalog-6-caption",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(84.00, 4.00)",
+        "offsetMax": "(-8.00, -4.00)",
+        "size": "(136.00, 76.00)"
+      }
+    },
+    {
+      "id": "catalog-7-caption",
+      "text": "스카이 플라즈마 포탑",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-7/catalog-7-caption",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(84.00, 4.00)",
+        "offsetMax": "(-8.00, -4.00)",
+        "size": "(136.00, 76.00)"
+      }
+    },
+    {
+      "id": "catalog-8-caption",
+      "text": "스마트 미사일 발사대",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-8/catalog-8-caption",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(84.00, 4.00)",
+        "offsetMax": "(-8.00, -4.00)",
+        "size": "(136.00, 76.00)"
+      }
+    },
+    {
+      "id": "catalog-9-caption",
+      "text": "EMP 펄스 타워",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-9/catalog-9-caption",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(84.00, 4.00)",
+        "offsetMax": "(-8.00, -4.00)",
+        "size": "(136.00, 76.00)"
+      }
+    },
+    {
+      "id": "catalog-10-caption",
+      "text": "외부 전초",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-10/catalog-10-caption",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(84.00, 4.00)",
+        "offsetMax": "(-8.00, -4.00)",
+        "size": "(136.00, 76.00)"
+      }
+    },
+    {
+      "id": "catalog-11-caption",
+      "text": "방벽",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-11/catalog-11-caption",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(84.00, 4.00)",
+        "offsetMax": "(-8.00, -4.00)",
+        "size": "(136.00, 76.00)"
+      }
+    },
+    {
+      "id": "catalog-12-caption",
+      "text": "구리 생성기",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-12/catalog-12-caption",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(84.00, 4.00)",
+        "offsetMax": "(-8.00, -4.00)",
+        "size": "(136.00, 76.00)"
+      }
+    },
+    {
+      "id": "catalog-13-caption",
+      "text": "철 생성기",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-13/catalog-13-caption",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(84.00, 4.00)",
+        "offsetMax": "(-8.00, -4.00)",
+        "size": "(136.00, 76.00)"
+      }
+    },
+    {
+      "id": "catalog-14-caption",
+      "text": "나노메탈 생성기",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-14/catalog-14-caption",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(84.00, 4.00)",
+        "offsetMax": "(-8.00, -4.00)",
+        "size": "(136.00, 76.00)"
+      }
+    },
+    {
+      "id": "catalog-15-caption",
+      "text": "플라즈마 생성기",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-15/catalog-15-caption",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(84.00, 4.00)",
+        "offsetMax": "(-8.00, -4.00)",
+        "size": "(136.00, 76.00)"
+      }
+    },
+    {
+      "id": "catalog-16-caption",
+      "text": "티타늄 생성기",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-16/catalog-16-caption",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(84.00, 4.00)",
+        "offsetMax": "(-8.00, -4.00)",
+        "size": "(136.00, 76.00)"
+      }
+    },
+    {
+      "id": "catalog-17-caption",
+      "text": "텅스텐 생성기",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-17/catalog-17-caption",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(84.00, 4.00)",
+        "offsetMax": "(-8.00, -4.00)",
+        "size": "(136.00, 76.00)"
+      }
+    },
+    {
+      "id": "catalog-18-caption",
+      "text": "우라늄 생성기",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-18/catalog-18-caption",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(84.00, 4.00)",
+        "offsetMax": "(-8.00, -4.00)",
+        "size": "(136.00, 76.00)"
+      }
+    },
+    {
+      "id": "catalog-19-caption",
+      "text": "전력 발전기",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-19/catalog-19-caption",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(84.00, 4.00)",
+        "offsetMax": "(-8.00, -4.00)",
+        "size": "(136.00, 76.00)"
+      }
+    },
+    {
+      "id": "catalog-20-caption",
+      "text": "기관총",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-20/catalog-20-caption",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(84.00, 4.00)",
+        "offsetMax": "(-8.00, -4.00)",
+        "size": "(136.00, 76.00)"
+      }
+    },
+    {
+      "id": "catalog-21-caption",
+      "text": "화염",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-21/catalog-21-caption",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(84.00, 4.00)",
+        "offsetMax": "(-8.00, -4.00)",
+        "size": "(136.00, 76.00)"
+      }
+    },
+    {
+      "id": "catalog-22-caption",
+      "text": "미사일",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-22/catalog-22-caption",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(84.00, 4.00)",
+        "offsetMax": "(-8.00, -4.00)",
+        "size": "(136.00, 76.00)"
+      }
+    },
+    {
+      "id": "catalog-23-caption",
+      "text": "레이저",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-23/catalog-23-caption",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(84.00, 4.00)",
+        "offsetMax": "(-8.00, -4.00)",
+        "size": "(136.00, 76.00)"
+      }
+    },
+    {
+      "id": "catalog-24-caption",
+      "text": "토대 8×8m",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-24/catalog-24-caption",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(84.00, 4.00)",
+        "offsetMax": "(-8.00, -4.00)",
+        "size": "(136.00, 76.00)"
+      }
+    },
+    {
+      "id": "pending",
+      "text": "건물 선택: 상세 정보 · 건설 메뉴: 설치와 회수",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/pending",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 0.00)",
+        "offsetMin": "(8.00, 4.00)",
+        "offsetMax": "(-8.00, 28.00)",
+        "size": "(1872.00, 24.00)"
+      }
+    },
+    {
+      "id": "message",
+      "text": "WASD 이동 · 수정으로 설치",
+      "rect": {
+        "path": "GameplayCanvas/Notifications/message",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(0.00, 26.00)",
+        "offsetMax": "(0.00, 0.00)",
+        "size": "(1296.00, 26.00)"
+      }
+    },
+    {
+      "id": "placement-hint",
+      "text": "설치 위치 안내",
+      "rect": {
+        "path": "GameplayCanvas/Notifications/placement-hint",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(0.00, 0.00)",
+        "offsetMax": "(0.00, -26.00)",
+        "size": "(1296.00, 26.00)"
+      }
+    },
+    {
+      "id": "menu-close-caption",
+      "text": "닫기",
+      "rect": {
+        "path": "GameplayCanvas/ProgressAndSave/menu-close/menu-close-caption",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(0.00, 0.00)",
+        "offsetMax": "(0.00, 0.00)",
+        "size": "(60.00, 28.00)"
+      }
+    },
+    {
+      "id": "save-status",
+      "text": "저장 상태",
+      "rect": {
+        "path": "GameplayCanvas/ProgressAndSave/MenuScroll/Viewport/Content/SaveControls/save-status",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(0.00, -120.00)",
+        "offsetMax": "(546.00, 0.00)",
+        "size": "(546.00, 120.00)"
+      }
+    },
+    {
+      "id": "save-caption",
+      "text": "저장",
+      "rect": {
+        "path": "GameplayCanvas/ProgressAndSave/MenuScroll/Viewport/Content/SaveControls/save/save-caption",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(0.00, 0.00)",
+        "offsetMax": "(0.00, 0.00)",
+        "size": "(168.00, 34.00)"
+      }
+    },
+    {
+      "id": "load-caption",
+      "text": "이어하기",
+      "rect": {
+        "path": "GameplayCanvas/ProgressAndSave/MenuScroll/Viewport/Content/SaveControls/load/load-caption",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(0.00, 0.00)",
+        "offsetMax": "(0.00, 0.00)",
+        "size": "(168.00, 34.00)"
+      }
+    },
+    {
+      "id": "new-game-caption",
+      "text": "새 게임",
+      "rect": {
+        "path": "GameplayCanvas/ProgressAndSave/MenuScroll/Viewport/Content/SaveControls/new-game/new-game-caption",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(0.00, 0.00)",
+        "offsetMax": "(0.00, 0.00)",
+        "size": "(168.00, 34.00)"
+      }
+    },
+    {
+      "id": "new-game-warning",
+      "text": "현재 진행을 초기화하고 새 게임을 시작합니다.",
+      "rect": {
+        "path": "GameplayCanvas/ProgressAndSave/MenuScroll/Viewport/Content/SaveControls/NewGameConfirmation/new-game-warning",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(0.00, -28.00)",
+        "offsetMax": "(540.00, 0.00)",
+        "size": "(540.00, 28.00)"
+      }
+    },
+    {
+      "id": "new-game-confirm-caption",
+      "text": "새 게임 시작",
+      "rect": {
+        "path": "GameplayCanvas/ProgressAndSave/MenuScroll/Viewport/Content/SaveControls/NewGameConfirmation/new-game-confirm/new-game-confirm-caption",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(0.00, 0.00)",
+        "offsetMax": "(0.00, 0.00)",
+        "size": "(254.00, 34.00)"
+      }
+    },
+    {
+      "id": "new-game-cancel-caption",
+      "text": "돌아가기",
+      "rect": {
+        "path": "GameplayCanvas/ProgressAndSave/MenuScroll/Viewport/Content/SaveControls/NewGameConfirmation/new-game-cancel/new-game-cancel-caption",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(0.00, 0.00)",
+        "offsetMax": "(0.00, 0.00)",
+        "size": "(254.00, 34.00)"
+      }
+    },
+    {
+      "id": "energy",
+      "text": "맵 에너지",
+      "rect": {
+        "path": "GameplayCanvas/ProgressAndSave/MenuScroll/Viewport/Content/MapProgress/energy",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(0.00, -120.00)",
+        "offsetMax": "(540.00, 0.00)",
+        "size": "(540.00, 120.00)"
+      }
+    },
+    {
+      "id": "stage",
+      "text": "맵 진행",
+      "rect": {
+        "path": "GameplayCanvas/ProgressAndSave/MenuScroll/Viewport/Content/MapProgress/stage",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(0.00, -228.00)",
+        "offsetMax": "(540.00, -124.00)",
+        "size": "(540.00, 104.00)"
+      }
+    },
+    {
+      "id": "orb-craft-caption",
+      "text": "완벽한 에너지 오브 제작",
+      "rect": {
+        "path": "GameplayCanvas/ProgressAndSave/MenuScroll/Viewport/Content/MapProgress/orb-craft/orb-craft-caption",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(0.00, 0.00)",
+        "offsetMax": "(0.00, 0.00)",
+        "size": "(530.00, 38.00)"
+      }
+    },
+    {
+      "id": "developer-fold-caption",
+      "text": "개발자",
+      "rect": {
+        "path": "GameplayCanvas/ProgressAndSave/MenuScroll/Viewport/Content/developer-fold/developer-fold-caption",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(0.00, 0.00)",
+        "offsetMax": "(0.00, 0.00)",
+        "size": "(540.00, 34.00)"
+      }
+    },
+    {
+      "id": "power-close-caption",
+      "text": "전력 상세 닫기",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildRightSlide/PowerDetails/power-close/power-close-caption",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(0.00, 0.00)",
+        "offsetMax": "(0.00, 0.00)",
+        "size": "(454.00, 32.00)"
+      }
+    },
+    {
+      "id": "power-details",
+      "text": "기지 전력 상세",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildRightSlide/PowerDetails/PowerScroll/Viewport/Content/power-details",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(0.00, -330.00)",
+        "offsetMax": "(442.00, 0.00)",
+        "size": "(442.00, 330.00)"
+      }
+    },
+    {
+      "id": "developer-close-caption",
+      "text": "개발자 닫기",
+      "rect": {
+        "path": "GameplayCanvas/Developer/DeveloperPanel/developer-close/developer-close-caption",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(0.00, 0.00)",
+        "offsetMax": "(0.00, 0.00)",
+        "size": "(574.00, 32.00)"
+      }
+    },
+    {
+      "id": "counts",
+      "text": "검증 통계",
+      "rect": {
+        "path": "GameplayCanvas/Developer/DeveloperPanel/counts",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(8.00, -144.00)",
+        "offsetMax": "(582.00, -46.00)",
+        "size": "(574.00, 98.00)"
+      }
+    },
+    {
+      "id": "spawn-caption",
+      "text": "소환",
+      "rect": {
+        "path": "GameplayCanvas/Developer/DeveloperPanel/spawn/spawn-caption",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(0.00, 0.00)",
+        "offsetMax": "(0.00, 0.00)",
+        "size": "(170.00, 36.00)"
+      }
+    },
+    {
+      "id": "spawn-air-caption",
+      "text": "공중 적: 끔",
+      "rect": {
+        "path": "GameplayCanvas/Developer/DeveloperPanel/spawn-air/spawn-air-caption",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(0.00, 0.00)",
+        "offsetMax": "(0.00, 0.00)",
+        "size": "(184.00, 36.00)"
+      }
+    },
+    {
+      "id": "reset-caption",
+      "text": "적 초기화",
+      "rect": {
+        "path": "GameplayCanvas/Developer/DeveloperPanel/reset/reset-caption",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(0.00, 0.00)",
+        "offsetMax": "(0.00, 0.00)",
+        "size": "(188.00, 36.00)"
+      }
+    },
+    {
+      "id": "run-caption",
+      "text": "전투 실행",
+      "rect": {
+        "path": "GameplayCanvas/Developer/DeveloperPanel/run/run-caption",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(0.00, 0.00)",
+        "offsetMax": "(0.00, 0.00)",
+        "size": "(184.00, 36.00)"
+      }
+    },
+    {
+      "id": "day-caption",
+      "text": "낮으로",
+      "rect": {
+        "path": "GameplayCanvas/Developer/DeveloperPanel/day/day-caption",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(0.00, 0.00)",
+        "offsetMax": "(0.00, 0.00)",
+        "size": "(280.00, 36.00)"
+      }
+    },
+    {
+      "id": "night-caption",
+      "text": "밤으로",
+      "rect": {
+        "path": "GameplayCanvas/Developer/DeveloperPanel/night/night-caption",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(0.00, 0.00)",
+        "offsetMax": "(0.00, 0.00)",
+        "size": "(284.00, 36.00)"
+      }
+    },
+    {
+      "id": "amount-value",
+      "text": "100",
+      "rect": {
+        "path": "GameplayCanvas/Developer/DeveloperPanel/SpawnAmount/amount-value",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(0.00, 0.00)",
+        "offsetMax": "(0.00, 0.00)",
+        "size": "(204.00, 36.00)"
+      }
+    },
+    {
+      "id": "resource-values",
+      "text": "자원 현황",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/BuildResources/ResourcePanel/LegacyResourceBody/ResourceScroll/Viewport/Content/resource-values",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(136.00, 0.00)",
+        "offsetMax": "(0.00, 0.00)",
+        "size": "(136.00, 440.00)"
+      }
+    },
+    {
+      "id": "power-rate",
+      "text": "0/s",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildTopSlide/PowerSummary/power-rate",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(202.00, -55.00)",
+        "offsetMax": "(270.00, -35.00)",
+        "size": "(68.00, 20.00)"
+      }
+    },
+    {
+      "id": "infinite-resources-caption",
+      "text": "자원 무한: OFF",
+      "rect": {
+        "path": "GameplayCanvas/TestShortcuts/infinite-resources/day-caption",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(0.00, 0.00)",
+        "offsetMax": "(0.00, 0.00)",
+        "size": "(218.00, 36.00)"
+      }
+    },
+    {
+      "id": "quick-day-caption",
+      "text": "낮으로",
+      "rect": {
+        "path": "GameplayCanvas/TestShortcuts/quick-day/day-caption",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(0.00, 0.00)",
+        "offsetMax": "(0.00, 0.00)",
+        "size": "(108.00, 36.00)"
+      }
+    },
+    {
+      "id": "quick-night-caption",
+      "text": "밤으로",
+      "rect": {
+        "path": "GameplayCanvas/TestShortcuts/quick-night/day-caption",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(0.00, 0.00)",
+        "offsetMax": "(0.00, 0.00)",
+        "size": "(108.00, 36.00)"
+      }
+    },
+    {
+      "id": "first-loop-objective",
+      "text": "첫 회차 · 생산 → 운송 → 방어 → 오브 제작\n목표 · 건설 메뉴 → 파란 가동 영역 안에 철·석탄 생성기 → 확정",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/FirstLoopObjective/NextAction",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(12.00, 4.00)",
+        "offsetMax": "(-12.00, -4.00)",
+        "size": "(1272.00, 50.00)"
+      }
+    }
+  ],
+  "buttons": [
+    {
+      "id": "pause",
+      "rect": {
+        "path": "GameplayCanvas/TopBar/pause",
+        "anchorMin": "(1.00, 1.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(-312.00, -52.00)",
+        "offsetMax": "(-168.00, -8.00)",
+        "size": "(144.00, 44.00)"
+      }
+    },
+    {
+      "id": "clock-fold",
+      "rect": {
+        "path": "GameplayCanvas/CombatGroup/CombatLeftSlide/LeftStatus/ClockPanel/clock-fold",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(0.00, -28.00)",
+        "offsetMax": "(0.00, 0.00)",
+        "size": "(288.00, 28.00)"
+      }
+    },
+    {
+      "id": "resource-fold",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/BuildResources/ResourcePanel/resource-fold",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(0.00, -28.00)",
+        "offsetMax": "(288.00, 0.00)",
+        "size": "(288.00, 28.00)"
+      }
+    },
+    {
+      "id": "resources-all",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/BuildResources/ResourcePanel/LegacyResourceBody/resources-all",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(1.00, 0.00)",
+        "offsetMin": "(0.00, 0.00)",
+        "offsetMax": "(0.00, 28.00)",
+        "size": "(272.00, 28.00)"
+      }
+    },
+    {
+      "id": "minimap-fold",
+      "rect": {
+        "path": "GameplayCanvas/CombatGroup/CombatRightSlide/RightStatus/MinimapPanel/minimap-fold",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(0.00, -28.00)",
+        "offsetMax": "(272.00, 0.00)",
+        "size": "(272.00, 28.00)"
+      }
+    },
+    {
+      "id": "selection-close",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildRightSlide/BuildSelection/SelectionPanel/selection-close",
+        "anchorMin": "(1.00, 1.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(-38.00, -32.00)",
+        "offsetMax": "(-8.00, -4.00)",
+        "size": "(30.00, 28.00)"
+      }
+    },
+    {
+      "id": "upgrade",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildRightSlide/BuildSelection/SelectionPanel/UpgradeControls/upgrade",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(0.00, -32.00)",
+        "offsetMax": "(248.00, 0.00)",
+        "size": "(248.00, 32.00)"
+      }
+    },
+    {
+      "id": "edit",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/edit",
+        "anchorMin": "(1.00, 1.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(-136.00, -40.00)",
+        "offsetMax": "(-8.00, -4.00)",
+        "size": "(128.00, 36.00)"
+      }
+    },
+    {
+      "id": "confirm",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/EditActions/confirm",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(0.00, -36.00)",
+        "offsetMax": "(94.00, 0.00)",
+        "size": "(94.00, 36.00)"
+      }
+    },
+    {
+      "id": "cancel",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/EditActions/cancel",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(102.00, -36.00)",
+        "offsetMax": "(196.00, 0.00)",
+        "size": "(94.00, 36.00)"
+      }
+    },
+    {
+      "id": "inventory-fold",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/WorkspaceConstruction",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(8.00, -42.00)",
+        "offsetMax": "(160.00, -6.00)",
+        "size": "(152.00, 36.00)"
+      }
+    },
+    {
+      "id": "power-fold",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/power-fold",
+        "anchorMin": "(1.00, 1.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(-476.00, -40.00)",
+        "offsetMax": "(-348.00, -4.00)",
+        "size": "(128.00, 36.00)"
+      }
+    },
+    {
+      "id": "menu-fold",
+      "rect": {
+        "path": "GameplayCanvas/TopBar/menu-fold",
+        "anchorMin": "(1.00, 1.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(-156.00, -52.00)",
+        "offsetMax": "(0.00, -8.00)",
+        "size": "(156.00, 44.00)"
+      }
+    },
+    {
+      "id": "category--1",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CategoryStrip/category--1",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(0.00, -36.00)",
+        "offsetMax": "(96.00, 0.00)",
+        "size": "(96.00, 36.00)"
+      }
+    },
+    {
+      "id": "category-0",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CategoryStrip/category-0",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(100.00, -36.00)",
+        "offsetMax": "(196.00, 0.00)",
+        "size": "(96.00, 36.00)"
+      }
+    },
+    {
+      "id": "category-1",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CategoryStrip/category-1",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(200.00, -36.00)",
+        "offsetMax": "(296.00, 0.00)",
+        "size": "(96.00, 36.00)"
+      }
+    },
+    {
+      "id": "category-2",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CategoryStrip/category-2",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(300.00, -36.00)",
+        "offsetMax": "(396.00, 0.00)",
+        "size": "(96.00, 36.00)"
+      }
+    },
+    {
+      "id": "category-3",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CategoryStrip/category-3",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(400.00, -36.00)",
+        "offsetMax": "(496.00, 0.00)",
+        "size": "(96.00, 36.00)"
+      }
+    },
+    {
+      "id": "catalog-0",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-0",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(0.00, -84.00)",
+        "offsetMax": "(228.00, 0.00)",
+        "size": "(228.00, 84.00)"
+      }
+    },
+    {
+      "id": "catalog-1",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-1",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(234.00, -84.00)",
+        "offsetMax": "(462.00, 0.00)",
+        "size": "(228.00, 84.00)"
+      }
+    },
+    {
+      "id": "catalog-2",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-2",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(468.00, -84.00)",
+        "offsetMax": "(696.00, 0.00)",
+        "size": "(228.00, 84.00)"
+      }
+    },
+    {
+      "id": "catalog-3",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-3",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(702.00, -84.00)",
+        "offsetMax": "(930.00, 0.00)",
+        "size": "(228.00, 84.00)"
+      }
+    },
+    {
+      "id": "catalog-4",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-4",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(936.00, -84.00)",
+        "offsetMax": "(1164.00, 0.00)",
+        "size": "(228.00, 84.00)"
+      }
+    },
+    {
+      "id": "catalog-5",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-5",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(1170.00, -84.00)",
+        "offsetMax": "(1398.00, 0.00)",
+        "size": "(228.00, 84.00)"
+      }
+    },
+    {
+      "id": "catalog-6",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-6",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(1404.00, -84.00)",
+        "offsetMax": "(1632.00, 0.00)",
+        "size": "(228.00, 84.00)"
+      }
+    },
+    {
+      "id": "catalog-7",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-7",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(1638.00, -84.00)",
+        "offsetMax": "(1866.00, 0.00)",
+        "size": "(228.00, 84.00)"
+      }
+    },
+    {
+      "id": "catalog-8",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-8",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(1872.00, -84.00)",
+        "offsetMax": "(2100.00, 0.00)",
+        "size": "(228.00, 84.00)"
+      }
+    },
+    {
+      "id": "catalog-9",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-9",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(2106.00, -84.00)",
+        "offsetMax": "(2334.00, 0.00)",
+        "size": "(228.00, 84.00)"
+      }
+    },
+    {
+      "id": "catalog-10",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-10",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(2340.00, -84.00)",
+        "offsetMax": "(2568.00, 0.00)",
+        "size": "(228.00, 84.00)"
+      }
+    },
+    {
+      "id": "catalog-11",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-11",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(2574.00, -84.00)",
+        "offsetMax": "(2802.00, 0.00)",
+        "size": "(228.00, 84.00)"
+      }
+    },
+    {
+      "id": "catalog-12",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-12",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(2808.00, -84.00)",
+        "offsetMax": "(3036.00, 0.00)",
+        "size": "(228.00, 84.00)"
+      }
+    },
+    {
+      "id": "catalog-13",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-13",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(3042.00, -84.00)",
+        "offsetMax": "(3270.00, 0.00)",
+        "size": "(228.00, 84.00)"
+      }
+    },
+    {
+      "id": "catalog-14",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-14",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(3276.00, -84.00)",
+        "offsetMax": "(3504.00, 0.00)",
+        "size": "(228.00, 84.00)"
+      }
+    },
+    {
+      "id": "catalog-15",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-15",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(3510.00, -84.00)",
+        "offsetMax": "(3738.00, 0.00)",
+        "size": "(228.00, 84.00)"
+      }
+    },
+    {
+      "id": "catalog-16",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-16",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(3744.00, -84.00)",
+        "offsetMax": "(3972.00, 0.00)",
+        "size": "(228.00, 84.00)"
+      }
+    },
+    {
+      "id": "catalog-17",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-17",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(3978.00, -84.00)",
+        "offsetMax": "(4206.00, 0.00)",
+        "size": "(228.00, 84.00)"
+      }
+    },
+    {
+      "id": "catalog-18",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-18",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(4212.00, -84.00)",
+        "offsetMax": "(4440.00, 0.00)",
+        "size": "(228.00, 84.00)"
+      }
+    },
+    {
+      "id": "catalog-19",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-19",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(4446.00, -84.00)",
+        "offsetMax": "(4674.00, 0.00)",
+        "size": "(228.00, 84.00)"
+      }
+    },
+    {
+      "id": "catalog-20",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-20",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(4680.00, -84.00)",
+        "offsetMax": "(4908.00, 0.00)",
+        "size": "(228.00, 84.00)"
+      }
+    },
+    {
+      "id": "catalog-21",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-21",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(4914.00, -84.00)",
+        "offsetMax": "(5142.00, 0.00)",
+        "size": "(228.00, 84.00)"
+      }
+    },
+    {
+      "id": "catalog-22",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-22",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(5148.00, -84.00)",
+        "offsetMax": "(5376.00, 0.00)",
+        "size": "(228.00, 84.00)"
+      }
+    },
+    {
+      "id": "catalog-23",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-23",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(5382.00, -84.00)",
+        "offsetMax": "(5610.00, 0.00)",
+        "size": "(228.00, 84.00)"
+      }
+    },
+    {
+      "id": "catalog-24",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-24",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(5616.00, -84.00)",
+        "offsetMax": "(5844.00, 0.00)",
+        "size": "(228.00, 84.00)"
+      }
+    },
+    {
+      "id": "menu-close",
+      "rect": {
+        "path": "GameplayCanvas/ProgressAndSave/menu-close",
+        "anchorMin": "(1.00, 1.00)",
+        "anchorMax": "(1.00, 1.00)",
+        "offsetMin": "(-68.00, -36.00)",
+        "offsetMax": "(-8.00, -8.00)",
+        "size": "(60.00, 28.00)"
+      }
+    },
+    {
+      "id": "save",
+      "rect": {
+        "path": "GameplayCanvas/ProgressAndSave/MenuScroll/Viewport/Content/SaveControls/save",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(0.00, -162.00)",
+        "offsetMax": "(168.00, -128.00)",
+        "size": "(168.00, 34.00)"
+      }
+    },
+    {
+      "id": "load",
+      "rect": {
+        "path": "GameplayCanvas/ProgressAndSave/MenuScroll/Viewport/Content/SaveControls/load",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(180.00, -162.00)",
+        "offsetMax": "(348.00, -128.00)",
+        "size": "(168.00, 34.00)"
+      }
+    },
+    {
+      "id": "new-game",
+      "rect": {
+        "path": "GameplayCanvas/ProgressAndSave/MenuScroll/Viewport/Content/SaveControls/new-game",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(360.00, -162.00)",
+        "offsetMax": "(528.00, -128.00)",
+        "size": "(168.00, 34.00)"
+      }
+    },
+    {
+      "id": "new-game-confirm",
+      "rect": {
+        "path": "GameplayCanvas/ProgressAndSave/MenuScroll/Viewport/Content/SaveControls/NewGameConfirmation/new-game-confirm",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(0.00, -64.00)",
+        "offsetMax": "(254.00, -30.00)",
+        "size": "(254.00, 34.00)"
+      }
+    },
+    {
+      "id": "new-game-cancel",
+      "rect": {
+        "path": "GameplayCanvas/ProgressAndSave/MenuScroll/Viewport/Content/SaveControls/NewGameConfirmation/new-game-cancel",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(266.00, -64.00)",
+        "offsetMax": "(520.00, -30.00)",
+        "size": "(254.00, 34.00)"
+      }
+    },
+    {
+      "id": "orb-craft",
+      "rect": {
+        "path": "GameplayCanvas/ProgressAndSave/MenuScroll/Viewport/Content/MapProgress/orb-craft",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(0.00, -272.00)",
+        "offsetMax": "(530.00, -234.00)",
+        "size": "(530.00, 38.00)"
+      }
+    },
+    {
+      "id": "developer-fold",
+      "rect": {
+        "path": "GameplayCanvas/ProgressAndSave/MenuScroll/Viewport/Content/developer-fold",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(0.00, -640.00)",
+        "offsetMax": "(540.00, -606.00)",
+        "size": "(540.00, 34.00)"
+      }
+    },
+    {
+      "id": "power-close",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildRightSlide/PowerDetails/power-close",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(8.00, -40.00)",
+        "offsetMax": "(462.00, -8.00)",
+        "size": "(454.00, 32.00)"
+      }
+    },
+    {
+      "id": "developer-close",
+      "rect": {
+        "path": "GameplayCanvas/Developer/DeveloperPanel/developer-close",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(8.00, -40.00)",
+        "offsetMax": "(582.00, -8.00)",
+        "size": "(574.00, 32.00)"
+      }
+    },
+    {
+      "id": "spawn",
+      "rect": {
+        "path": "GameplayCanvas/Developer/DeveloperPanel/spawn",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(220.00, -194.00)",
+        "offsetMax": "(390.00, -158.00)",
+        "size": "(170.00, 36.00)"
+      }
+    },
+    {
+      "id": "spawn-air",
+      "rect": {
+        "path": "GameplayCanvas/Developer/DeveloperPanel/spawn-air",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(398.00, -194.00)",
+        "offsetMax": "(582.00, -158.00)",
+        "size": "(184.00, 36.00)"
+      }
+    },
+    {
+      "id": "reset",
+      "rect": {
+        "path": "GameplayCanvas/Developer/DeveloperPanel/reset",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(8.00, -240.00)",
+        "offsetMax": "(196.00, -204.00)",
+        "size": "(188.00, 36.00)"
+      }
+    },
+    {
+      "id": "run",
+      "rect": {
+        "path": "GameplayCanvas/Developer/DeveloperPanel/run",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(204.00, -240.00)",
+        "offsetMax": "(388.00, -204.00)",
+        "size": "(184.00, 36.00)"
+      }
+    },
+    {
+      "id": "day",
+      "rect": {
+        "path": "GameplayCanvas/Developer/DeveloperPanel/day",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(8.00, -286.00)",
+        "offsetMax": "(288.00, -250.00)",
+        "size": "(280.00, 36.00)"
+      }
+    },
+    {
+      "id": "night",
+      "rect": {
+        "path": "GameplayCanvas/Developer/DeveloperPanel/night",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(298.00, -286.00)",
+        "offsetMax": "(582.00, -250.00)",
+        "size": "(284.00, 36.00)"
+      }
+    },
+    {
+      "id": "infinite-resources",
+      "rect": {
+        "path": "GameplayCanvas/TestShortcuts/infinite-resources",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(4.00, -40.00)",
+        "offsetMax": "(222.00, -4.00)",
+        "size": "(218.00, 36.00)"
+      }
+    },
+    {
+      "id": "quick-day",
+      "rect": {
+        "path": "GameplayCanvas/TestShortcuts/quick-day",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(226.00, -40.00)",
+        "offsetMax": "(334.00, -4.00)",
+        "size": "(108.00, 36.00)"
+      }
+    },
+    {
+      "id": "quick-night",
+      "rect": {
+        "path": "GameplayCanvas/TestShortcuts/quick-night",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(338.00, -40.00)",
+        "offsetMax": "(446.00, -4.00)",
+        "size": "(108.00, 36.00)"
+      }
+    },
+    {
+      "id": "station-railway",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildRightSlide/BuildSelection/SelectionPanel/station-railway",
+        "anchorMin": "(0.00, 0.00)",
+        "anchorMax": "(0.00, 0.00)",
+        "offsetMin": "(12.00, 48.00)",
+        "offsetMax": "(260.00, 80.00)",
+        "size": "(248.00, 32.00)"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "clock",
+      "path": "GameplayCanvas/CombatGroup/CombatLeftSlide/LeftStatus/ClockPanel/ClockBody"
+    },
+    {
+      "id": "resources",
+      "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/BuildResources/ResourcePanel/BaseResourceList"
+    },
+    {
+      "id": "minimap",
+      "path": "GameplayCanvas/CombatGroup/CombatRightSlide/RightStatus/MinimapPanel/MinimapBody"
+    },
+    {
+      "id": "selection",
+      "path": "GameplayCanvas/ConstructionGroup/BuildRightSlide/BuildSelection/SelectionPanel"
+    },
+    {
+      "id": "upgrade",
+      "path": "GameplayCanvas/ConstructionGroup/BuildRightSlide/BuildSelection/SelectionPanel/UpgradeControls"
+    },
+    {
+      "id": "edit-actions",
+      "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/EditActions"
+    },
+    {
+      "id": "inventory",
+      "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody"
+    },
+    {
+      "id": "placement-hint",
+      "path": "GameplayCanvas/Notifications/placement-hint"
+    },
+    {
+      "id": "menu",
+      "path": "GameplayCanvas/ProgressAndSave"
+    },
+    {
+      "id": "save-controls",
+      "path": "GameplayCanvas/ProgressAndSave/MenuScroll/Viewport/Content/SaveControls"
+    },
+    {
+      "id": "new-game-confirmation",
+      "path": "GameplayCanvas/ProgressAndSave/MenuScroll/Viewport/Content/SaveControls/NewGameConfirmation"
+    },
+    {
+      "id": "map-progress",
+      "path": "GameplayCanvas/ProgressAndSave/MenuScroll/Viewport/Content/MapProgress"
+    },
+    {
+      "id": "power",
+      "path": "GameplayCanvas/ConstructionGroup/BuildRightSlide/PowerDetails"
+    },
+    {
+      "id": "developer",
+      "path": "GameplayCanvas/Developer"
+    },
+    {
+      "id": "developer-body",
+      "path": "GameplayCanvas/Developer/DeveloperPanel"
+    },
+    {
+      "id": "run",
+      "path": "GameplayCanvas/Developer/DeveloperPanel/run"
+    },
+    {
+      "id": "test-shortcuts",
+      "path": "GameplayCanvas/TestShortcuts"
+    },
+    {
+      "id": "first-loop",
+      "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/FirstLoopObjective"
+    }
+  ],
+  "catalog": [
+    {
+      "i": 0,
+      "id": "installation.nexus",
+      "name": "서브 기지",
+      "tool": "Content",
+      "category": "Installation",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-0",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(0.00, -84.00)",
+        "offsetMax": "(228.00, 0.00)",
+        "size": "(228.00, 84.00)"
+      }
+    },
+    {
+      "i": 1,
+      "id": "defense.tesla",
+      "name": "테슬라 타워",
+      "tool": "Content",
+      "category": "Defense",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-1",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(234.00, -84.00)",
+        "offsetMax": "(462.00, 0.00)",
+        "size": "(228.00, 84.00)"
+      }
+    },
+    {
+      "i": 2,
+      "id": "defense.plasma_laser",
+      "name": "플라즈마 레이저 포탑",
+      "tool": "Content",
+      "category": "Defense",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-2",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(468.00, -84.00)",
+        "offsetMax": "(696.00, 0.00)",
+        "size": "(228.00, 84.00)"
+      }
+    },
+    {
+      "i": 3,
+      "id": "defense.vulcan_aa",
+      "name": "발칸 대공포",
+      "tool": "Content",
+      "category": "Defense",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-3",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(702.00, -84.00)",
+        "offsetMax": "(930.00, 0.00)",
+        "size": "(228.00, 84.00)"
+      }
+    },
+    {
+      "i": 4,
+      "id": "defense.rail_aa",
+      "name": "레일 대공포",
+      "tool": "Content",
+      "category": "Defense",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-4",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(936.00, -84.00)",
+        "offsetMax": "(1164.00, 0.00)",
+        "size": "(228.00, 84.00)"
+      }
+    },
+    {
+      "i": 5,
+      "id": "defense.arc",
+      "name": "아크 블래스터",
+      "tool": "Content",
+      "category": "Defense",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-5",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(1170.00, -84.00)",
+        "offsetMax": "(1398.00, 0.00)",
+        "size": "(228.00, 84.00)"
+      }
+    },
+    {
+      "i": 6,
+      "id": "defense.railgun",
+      "name": "레일건 터렛",
+      "tool": "Content",
+      "category": "Defense",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-6",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(1404.00, -84.00)",
+        "offsetMax": "(1632.00, 0.00)",
+        "size": "(228.00, 84.00)"
+      }
+    },
+    {
+      "i": 7,
+      "id": "defense.sky_plasma",
+      "name": "스카이 플라즈마 포탑",
+      "tool": "Content",
+      "category": "Defense",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-7",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(1638.00, -84.00)",
+        "offsetMax": "(1866.00, 0.00)",
+        "size": "(228.00, 84.00)"
+      }
+    },
+    {
+      "i": 8,
+      "id": "defense.smart_missile",
+      "name": "스마트 미사일 발사대",
+      "tool": "Content",
+      "category": "Defense",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-8",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(1872.00, -84.00)",
+        "offsetMax": "(2100.00, 0.00)",
+        "size": "(228.00, 84.00)"
+      }
+    },
+    {
+      "i": 9,
+      "id": "defense.emp",
+      "name": "EMP 펄스 타워",
+      "tool": "Content",
+      "category": "Defense",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-9",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(2106.00, -84.00)",
+        "offsetMax": "(2334.00, 0.00)",
+        "size": "(228.00, 84.00)"
+      }
+    },
+    {
+      "i": 10,
+      "id": "installation.outpost",
+      "name": "외부 전초",
+      "tool": "Content",
+      "category": "Installation",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-10",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(2340.00, -84.00)",
+        "offsetMax": "(2568.00, 0.00)",
+        "size": "(228.00, 84.00)"
+      }
+    },
+    {
+      "i": 11,
+      "id": "installation.wall",
+      "name": "방벽",
+      "tool": "Content",
+      "category": "Installation",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-11",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(2574.00, -84.00)",
+        "offsetMax": "(2802.00, 0.00)",
+        "size": "(228.00, 84.00)"
+      }
+    },
+    {
+      "i": 12,
+      "id": "resource.copper",
+      "name": "구리 생성기",
+      "tool": "Content",
+      "category": "Resource",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-12",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(2808.00, -84.00)",
+        "offsetMax": "(3036.00, 0.00)",
+        "size": "(228.00, 84.00)"
+      }
+    },
+    {
+      "i": 13,
+      "id": "resource.iron",
+      "name": "철 생성기",
+      "tool": "Content",
+      "category": "Resource",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-13",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(3042.00, -84.00)",
+        "offsetMax": "(3270.00, 0.00)",
+        "size": "(228.00, 84.00)"
+      }
+    },
+    {
+      "i": 14,
+      "id": "resource.nanometal",
+      "name": "나노메탈 생성기",
+      "tool": "Content",
+      "category": "Resource",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-14",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(3276.00, -84.00)",
+        "offsetMax": "(3504.00, 0.00)",
+        "size": "(228.00, 84.00)"
+      }
+    },
+    {
+      "i": 15,
+      "id": "resource.plasma_ore",
+      "name": "플라즈마 생성기",
+      "tool": "Content",
+      "category": "Resource",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-15",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(3510.00, -84.00)",
+        "offsetMax": "(3738.00, 0.00)",
+        "size": "(228.00, 84.00)"
+      }
+    },
+    {
+      "i": 16,
+      "id": "resource.titanium",
+      "name": "티타늄 생성기",
+      "tool": "Content",
+      "category": "Resource",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-16",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(3744.00, -84.00)",
+        "offsetMax": "(3972.00, 0.00)",
+        "size": "(228.00, 84.00)"
+      }
+    },
+    {
+      "i": 17,
+      "id": "resource.tungsten",
+      "name": "텅스텐 생성기",
+      "tool": "Content",
+      "category": "Resource",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-17",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(3978.00, -84.00)",
+        "offsetMax": "(4206.00, 0.00)",
+        "size": "(228.00, 84.00)"
+      }
+    },
+    {
+      "i": 18,
+      "id": "resource.uranium",
+      "name": "우라늄 생성기",
+      "tool": "Content",
+      "category": "Resource",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-18",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(4212.00, -84.00)",
+        "offsetMax": "(4440.00, 0.00)",
+        "size": "(228.00, 84.00)"
+      }
+    },
+    {
+      "i": 19,
+      "id": "resource.power_generator",
+      "name": "전력 발전기",
+      "tool": "Content",
+      "category": "Resource",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-19",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(4446.00, -84.00)",
+        "offsetMax": "(4674.00, 0.00)",
+        "size": "(228.00, 84.00)"
+      }
+    },
+    {
+      "i": 20,
+      "id": null,
+      "name": null,
+      "tool": "Tower",
+      "category": "Defense",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-20",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(4680.00, -84.00)",
+        "offsetMax": "(4908.00, 0.00)",
+        "size": "(228.00, 84.00)"
+      }
+    },
+    {
+      "i": 21,
+      "id": null,
+      "name": null,
+      "tool": "Tower",
+      "category": "Defense",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-21",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(4914.00, -84.00)",
+        "offsetMax": "(5142.00, 0.00)",
+        "size": "(228.00, 84.00)"
+      }
+    },
+    {
+      "i": 22,
+      "id": null,
+      "name": null,
+      "tool": "Tower",
+      "category": "Defense",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-22",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(5148.00, -84.00)",
+        "offsetMax": "(5376.00, 0.00)",
+        "size": "(228.00, 84.00)"
+      }
+    },
+    {
+      "i": 23,
+      "id": null,
+      "name": null,
+      "tool": "Tower",
+      "category": "Defense",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-23",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(5382.00, -84.00)",
+        "offsetMax": "(5610.00, 0.00)",
+        "size": "(228.00, 84.00)"
+      }
+    },
+    {
+      "i": 24,
+      "id": null,
+      "name": null,
+      "tool": "Foundation",
+      "category": "Installation",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-24",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(5616.00, -84.00)",
+        "offsetMax": "(5844.00, 0.00)",
+        "size": "(228.00, 84.00)"
+      }
+    },
+    {
+      "i": 25,
+      "id": "railway.station",
+      "name": "기차역 · 검증비 철 10",
+      "tool": "Explore",
+      "category": "Installation",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/Build_railway.station",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(5850.00, -84.00)",
+        "offsetMax": "(6078.00, 0.00)",
+        "size": "(228.00, 84.00)"
+      }
+    },
+    {
+      "i": 26,
+      "id": "railway.track",
+      "name": "선로 · 검증비 철 1",
+      "tool": "Explore",
+      "category": "Installation",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/Build_railway.track",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(6084.00, -84.00)",
+        "offsetMax": "(6312.00, 0.00)",
+        "size": "(228.00, 84.00)"
+      }
+    },
+    {
+      "i": 27,
+      "id": "railway.coal",
+      "name": "석탄 생성기 · 검증용",
+      "tool": "Explore",
+      "category": "Resource",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/Build_railway.coal",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(6318.00, -84.00)",
+        "offsetMax": "(6546.00, 0.00)",
+        "size": "(228.00, 84.00)"
+      }
+    }
+  ],
+  "rail": [
+    {
+      "id": "open",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildBottomSlide/ConstructionBar/WorkspaceRailway",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(168.00, -42.00)",
+        "offsetMax": "(320.00, -6.00)",
+        "size": "(152.00, 36.00)"
+      }
+    },
+    {
+      "id": "station",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayToolbar/rail-1",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(0.00, -36.00)",
+        "offsetMax": "(204.00, 0.00)",
+        "size": "(204.00, 36.00)"
+      }
+    },
+    {
+      "id": "build:station",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayToolbar/rail-2",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(208.00, -36.00)",
+        "offsetMax": "(412.00, 0.00)",
+        "size": "(204.00, 36.00)"
+      }
+    },
+    {
+      "id": "build:track",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayToolbar/rail-3",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(416.00, -36.00)",
+        "offsetMax": "(620.00, 0.00)",
+        "size": "(204.00, 36.00)"
+      }
+    },
+    {
+      "id": "build:coal",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayToolbar/rail-4",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(0.00, -78.00)",
+        "offsetMax": "(204.00, -42.00)",
+        "size": "(204.00, 36.00)"
+      }
+    },
+    {
+      "id": "rotate",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayToolbar/rail-5",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(208.00, -78.00)",
+        "offsetMax": "(412.00, -42.00)",
+        "size": "(204.00, 36.00)"
+      }
+    },
+    {
+      "id": "close",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/rail-close",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(450.00, -38.00)",
+        "offsetMax": "(608.00, -8.00)",
+        "size": "(158.00, 30.00)"
+      }
+    },
+    {
+      "id": "row:0",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayList/RouteRow0",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(0.00, -34.00)",
+        "offsetMax": "(596.00, 0.00)",
+        "size": "(596.00, 34.00)"
+      }
+    },
+    {
+      "id": "row:1",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayList/RouteRow1",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(0.00, -72.00)",
+        "offsetMax": "(596.00, -38.00)",
+        "size": "(596.00, 34.00)"
+      }
+    },
+    {
+      "id": "row:2",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayList/RouteRow2",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(0.00, -110.00)",
+        "offsetMax": "(596.00, -76.00)",
+        "size": "(596.00, 34.00)"
+      }
+    },
+    {
+      "id": "row:3",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayList/RouteRow3",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(0.00, -148.00)",
+        "offsetMax": "(596.00, -114.00)",
+        "size": "(596.00, 34.00)"
+      }
+    },
+    {
+      "id": "page-prev",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayList/list-page-prev",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(0.00, -194.00)",
+        "offsetMax": "(190.00, -160.00)",
+        "size": "(190.00, 34.00)"
+      }
+    },
+    {
+      "id": "page-next",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayList/list-page-next",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(198.00, -194.00)",
+        "offsetMax": "(388.00, -160.00)",
+        "size": "(190.00, 34.00)"
+      }
+    },
+    {
+      "id": "new",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayList/list-new",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(396.00, -194.00)",
+        "offsetMax": "(486.00, -160.00)",
+        "size": "(90.00, 34.00)"
+      }
+    },
+    {
+      "id": "connect",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayList/connect",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(492.00, -196.00)",
+        "offsetMax": "(586.00, -160.00)",
+        "size": "(94.00, 36.00)"
+      }
+    },
+    {
+      "id": "start",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDetail/detail-start",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(0.00, -34.00)",
+        "offsetMax": "(190.00, 0.00)",
+        "size": "(190.00, 34.00)"
+      }
+    },
+    {
+      "id": "stop",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDetail/detail-stop",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(198.00, -34.00)",
+        "offsetMax": "(388.00, 0.00)",
+        "size": "(190.00, 34.00)"
+      }
+    },
+    {
+      "id": "fuel",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDetail/detail-fuel",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(396.00, -34.00)",
+        "offsetMax": "(586.00, 0.00)",
+        "size": "(190.00, 34.00)"
+      }
+    },
+    {
+      "id": "next-stop",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDetail/detail-next-stop",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(0.00, -74.00)",
+        "offsetMax": "(190.00, -40.00)",
+        "size": "(190.00, 34.00)"
+      }
+    },
+    {
+      "id": "edit",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDetail/detail-edit",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(198.00, -74.00)",
+        "offsetMax": "(388.00, -40.00)",
+        "size": "(190.00, 34.00)"
+      }
+    },
+    {
+      "id": "list",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDetail/detail-list",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(396.00, -74.00)",
+        "offsetMax": "(586.00, -40.00)",
+        "size": "(190.00, 34.00)"
+      }
+    },
+    {
+      "id": "configure",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDetail/configure",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(0.00, -188.00)",
+        "offsetMax": "(390.00, -154.00)",
+        "size": "(390.00, 34.00)"
+      }
+    },
+    {
+      "id": "cancel-pending",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDetail/cancel-pending",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(396.00, -188.00)",
+        "offsetMax": "(596.00, -154.00)",
+        "size": "(200.00, 34.00)"
+      }
+    },
+    {
+      "id": "defense",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDetail/defense",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(0.00, -228.00)",
+        "offsetMax": "(596.00, -194.00)",
+        "size": "(596.00, 34.00)"
+      }
+    },
+    {
+      "id": "add",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraft/draft-add",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(0.00, -36.00)",
+        "offsetMax": "(190.00, 0.00)",
+        "size": "(190.00, 36.00)"
+      }
+    },
+    {
+      "id": "next-stop",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraft/draft-next-stop",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(198.00, -36.00)",
+        "offsetMax": "(388.00, 0.00)",
+        "size": "(190.00, 36.00)"
+      }
+    },
+    {
+      "id": "remove",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraft/draft-remove",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(396.00, -36.00)",
+        "offsetMax": "(586.00, 0.00)",
+        "size": "(190.00, 36.00)"
+      }
+    },
+    {
+      "id": "up",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraft/draft-up",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(0.00, -78.00)",
+        "offsetMax": "(190.00, -42.00)",
+        "size": "(190.00, 36.00)"
+      }
+    },
+    {
+      "id": "arrival",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraft/draft-arrival",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(198.00, -78.00)",
+        "offsetMax": "(388.00, -42.00)",
+        "size": "(190.00, 36.00)"
+      }
+    },
+    {
+      "id": "departure",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraft/draft-departure",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(396.00, -78.00)",
+        "offsetMax": "(586.00, -42.00)",
+        "size": "(190.00, 36.00)"
+      }
+    },
+    {
+      "id": "validate",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraft/draft-validate",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(0.00, -120.00)",
+        "offsetMax": "(190.00, -84.00)",
+        "size": "(190.00, 36.00)"
+      }
+    },
+    {
+      "id": "cancel",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraft/draft-cancel",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(396.00, -120.00)",
+        "offsetMax": "(586.00, -84.00)",
+        "size": "(190.00, 36.00)"
+      }
+    },
+    {
+      "id": "weapon-next",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayArmament/weapon-next",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(0.00, -114.00)",
+        "offsetMax": "(190.00, -80.00)",
+        "size": "(190.00, 34.00)"
+      }
+    },
+    {
+      "id": "weapon-install",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayArmament/weapon-install",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(198.00, -114.00)",
+        "offsetMax": "(388.00, -80.00)",
+        "size": "(190.00, 34.00)"
+      }
+    },
+    {
+      "id": "weapon-charge",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayArmament/weapon-charge",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(396.00, -114.00)",
+        "offsetMax": "(586.00, -80.00)",
+        "size": "(190.00, 34.00)"
+      }
+    },
+    {
+      "id": "weapon-shape",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayArmament/weapon-shape",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(0.00, -156.00)",
+        "offsetMax": "(190.00, -122.00)",
+        "size": "(190.00, 34.00)"
+      }
+    },
+    {
+      "id": "weapon-upgrade",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayArmament/weapon-upgrade",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(198.00, -156.00)",
+        "offsetMax": "(388.00, -122.00)",
+        "size": "(190.00, 34.00)"
+      }
+    },
+    {
+      "id": "weapon-remove",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayArmament/weapon-remove",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(396.00, -156.00)",
+        "offsetMax": "(586.00, -122.00)",
+        "size": "(190.00, 34.00)"
+      }
+    },
+    {
+      "id": "weapon-back",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayArmament/weapon-back",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(0.00, -198.00)",
+        "offsetMax": "(190.00, -164.00)",
+        "size": "(190.00, 34.00)"
+      }
+    },
+    {
+      "id": "commit",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayConfirm/draft-commit",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(0.00, -36.00)",
+        "offsetMax": "(190.00, 0.00)",
+        "size": "(190.00, 36.00)"
+      }
+    },
+    {
+      "id": "back-edit",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayConfirm/back-edit",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(198.00, -36.00)",
+        "offsetMax": "(388.00, 0.00)",
+        "size": "(190.00, 36.00)"
+      }
+    },
+    {
+      "id": "cancel",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayConfirm/cancel",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(396.00, -36.00)",
+        "offsetMax": "(586.00, 0.00)",
+        "size": "(190.00, 36.00)"
+      }
+    },
+    {
+      "id": "keep",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDiscard/keep",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(0.00, -36.00)",
+        "offsetMax": "(190.00, 0.00)",
+        "size": "(190.00, 36.00)"
+      }
+    },
+    {
+      "id": "discard",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDiscard/discard",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(198.00, -36.00)",
+        "offsetMax": "(388.00, 0.00)",
+        "size": "(190.00, 36.00)"
+      }
+    },
+    {
+      "id": "draft-row:0",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/draft-row:0",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(10.00, -144.00)",
+        "offsetMax": "(310.00, -108.00)",
+        "size": "(300.00, 36.00)"
+      }
+    },
+    {
+      "id": "draft-row:1",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/draft-row:1",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(10.00, -186.00)",
+        "offsetMax": "(310.00, -150.00)",
+        "size": "(300.00, 36.00)"
+      }
+    },
+    {
+      "id": "draft-row:2",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/draft-row:2",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(10.00, -228.00)",
+        "offsetMax": "(310.00, -192.00)",
+        "size": "(300.00, 36.00)"
+      }
+    },
+    {
+      "id": "draft-row:3",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/draft-row:3",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(10.00, -270.00)",
+        "offsetMax": "(310.00, -234.00)",
+        "size": "(300.00, 36.00)"
+      }
+    },
+    {
+      "id": "draft-prev",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/draft-prev",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(10.00, -316.00)",
+        "offsetMax": "(155.00, -280.00)",
+        "size": "(145.00, 36.00)"
+      }
+    },
+    {
+      "id": "draft-next",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/draft-next",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(165.00, -316.00)",
+        "offsetMax": "(310.00, -280.00)",
+        "size": "(145.00, 36.00)"
+      }
+    },
+    {
+      "id": "down",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/down",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(10.00, -358.00)",
+        "offsetMax": "(155.00, -322.00)",
+        "size": "(145.00, 36.00)"
+      }
+    },
+    {
+      "id": "first",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/first",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(165.00, -358.00)",
+        "offsetMax": "(310.00, -322.00)",
+        "size": "(145.00, 36.00)"
+      }
+    },
+    {
+      "id": "open-loop",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/open-loop",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(10.00, -400.00)",
+        "offsetMax": "(155.00, -364.00)",
+        "size": "(145.00, 36.00)"
+      }
+    },
+    {
+      "id": "close-loop",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/close-loop",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(165.00, -400.00)",
+        "offsetMax": "(310.00, -364.00)",
+        "size": "(145.00, 36.00)"
+      }
+    },
+    {
+      "id": "map-arrival",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/map-arrival",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(10.00, -444.00)",
+        "offsetMax": "(106.00, -408.00)",
+        "size": "(96.00, 36.00)"
+      }
+    },
+    {
+      "id": "map-departure",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/map-departure",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(112.00, -444.00)",
+        "offsetMax": "(208.00, -408.00)",
+        "size": "(96.00, 36.00)"
+      }
+    },
+    {
+      "id": "map-cancel",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/map-cancel",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(214.00, -444.00)",
+        "offsetMax": "(310.00, -408.00)",
+        "size": "(96.00, 36.00)"
+      }
+    },
+    {
+      "id": "issue:0",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/issue:0",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(10.00, -680.00)",
+        "offsetMax": "(310.00, -644.00)",
+        "size": "(300.00, 36.00)"
+      }
+    },
+    {
+      "id": "issue:1",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/issue:1",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(10.00, -718.00)",
+        "offsetMax": "(310.00, -682.00)",
+        "size": "(300.00, 36.00)"
+      }
+    },
+    {
+      "id": "issue:2",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/issue:2",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(10.00, -756.00)",
+        "offsetMax": "(310.00, -720.00)",
+        "size": "(300.00, 36.00)"
+      }
+    },
+    {
+      "id": "issue-prev",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/issue-prev",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(10.00, -798.00)",
+        "offsetMax": "(155.00, -762.00)",
+        "size": "(145.00, 36.00)"
+      }
+    },
+    {
+      "id": "issue-next",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/issue-next",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(165.00, -798.00)",
+        "offsetMax": "(310.00, -762.00)",
+        "size": "(145.00, 36.00)"
+      }
+    },
+    {
+      "id": "station-row:0",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayStationContext/station-row:0",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(10.00, -126.00)",
+        "offsetMax": "(310.00, -90.00)",
+        "size": "(300.00, 36.00)"
+      }
+    },
+    {
+      "id": "station-row:1",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayStationContext/station-row:1",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(10.00, -168.00)",
+        "offsetMax": "(310.00, -132.00)",
+        "size": "(300.00, 36.00)"
+      }
+    },
+    {
+      "id": "station-row:2",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayStationContext/station-row:2",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(10.00, -210.00)",
+        "offsetMax": "(310.00, -174.00)",
+        "size": "(300.00, 36.00)"
+      }
+    },
+    {
+      "id": "station-row:3",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayStationContext/station-row:3",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(10.00, -252.00)",
+        "offsetMax": "(310.00, -216.00)",
+        "size": "(300.00, 36.00)"
+      }
+    },
+    {
+      "id": "station-prev",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayStationContext/station-prev",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(10.00, -304.00)",
+        "offsetMax": "(155.00, -268.00)",
+        "size": "(145.00, 36.00)"
+      }
+    },
+    {
+      "id": "station-next",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayStationContext/station-next",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(165.00, -304.00)",
+        "offsetMax": "(310.00, -268.00)",
+        "size": "(145.00, 36.00)"
+      }
+    },
+    {
+      "id": "station-context",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayStationContext/station-context",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(10.00, -346.00)",
+        "offsetMax": "(310.00, -310.00)",
+        "size": "(300.00, 36.00)"
+      }
+    },
+    {
+      "id": "connection-from",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayConnection/connection-from",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(0.00, -36.00)",
+        "offsetMax": "(586.00, 0.00)",
+        "size": "(586.00, 36.00)"
+      }
+    },
+    {
+      "id": "connection-to",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayConnection/connection-to",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(0.00, -80.00)",
+        "offsetMax": "(586.00, -44.00)",
+        "size": "(586.00, 36.00)"
+      }
+    },
+    {
+      "id": "connection-from-port",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayConnection/connection-from-port",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(0.00, -124.00)",
+        "offsetMax": "(286.00, -88.00)",
+        "size": "(286.00, 36.00)"
+      }
+    },
+    {
+      "id": "connection-to-port",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayConnection/connection-to-port",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(300.00, -124.00)",
+        "offsetMax": "(586.00, -88.00)",
+        "size": "(286.00, 36.00)"
+      }
+    },
+    {
+      "id": "connection-preview",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayConnection/connection-preview",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(0.00, -172.00)",
+        "offsetMax": "(186.00, -136.00)",
+        "size": "(186.00, 36.00)"
+      }
+    },
+    {
+      "id": "connection-confirm",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayConnection/connection-confirm",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(200.00, -172.00)",
+        "offsetMax": "(386.00, -136.00)",
+        "size": "(186.00, 36.00)"
+      }
+    },
+    {
+      "id": "connection-cancel",
+      "rect": {
+        "path": "GameplayCanvas/ConstructionGroup/BuildLeftSlide/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayConnection/connection-cancel",
+        "anchorMin": "(0.00, 1.00)",
+        "anchorMax": "(0.00, 1.00)",
+        "offsetMin": "(400.00, -172.00)",
+        "offsetMax": "(586.00, -136.00)",
+        "size": "(186.00, 36.00)"
+      }
+    }
+  ]
+}

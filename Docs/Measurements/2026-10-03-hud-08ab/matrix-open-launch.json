@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/VerifyHud08MenuResolutions.cs",
+      "entry": "VerifyHud08MenuResolutions.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 1142,
+      "executeMs": 0,
+      "assemblyName": "PipelineRunScript_VerifyHud08MenuResolutions_0a90cc3b93c64afd9a00d666d78226c1",
+      "success": true,
+      "result": "Queued menu resolution validation"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

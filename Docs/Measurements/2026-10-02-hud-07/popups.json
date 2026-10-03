@@ -1,0 +1,86 @@
+[
+  {
+    "size": "(800, 600)",
+    "panel": "ProgressAndSave",
+    "fontPixelsMinimum": 18,
+    "bounds": true
+  },
+  {
+    "size": "(800, 600)",
+    "panel": "PowerDetails",
+    "fontPixelsMinimum": 18,
+    "bounds": true
+  },
+  {
+    "size": "(1024, 768)",
+    "panel": "ProgressAndSave",
+    "fontPixelsMinimum": 18,
+    "bounds": true
+  },
+  {
+    "size": "(1024, 768)",
+    "panel": "PowerDetails",
+    "fontPixelsMinimum": 18,
+    "bounds": true
+  },
+  {
+    "size": "(1280, 720)",
+    "panel": "ProgressAndSave",
+    "fontPixelsMinimum": 18,
+    "bounds": true
+  },
+  {
+    "size": "(1280, 720)",
+    "panel": "PowerDetails",
+    "fontPixelsMinimum": 18,
+    "bounds": true
+  },
+  {
+    "size": "(1920, 1080)",
+    "panel": "ProgressAndSave",
+    "fontPixelsMinimum": 18,
+    "bounds": true
+  },
+  {
+    "size": "(1920, 1080)",
+    "panel": "PowerDetails",
+    "fontPixelsMinimum": 18,
+    "bounds": true
+  },
+  {
+    "size": "(2560, 1080)",
+    "panel": "ProgressAndSave",
+    "fontPixelsMinimum": 18,
+    "bounds": true
+  },
+  {
+    "size": "(2560, 1080)",
+    "panel": "PowerDetails",
+    "fontPixelsMinimum": 18,
+    "bounds": true
+  },
+  {
+    "size": "(3840, 1080)",
+    "panel": "ProgressAndSave",
+    "fontPixelsMinimum": 18,
+    "bounds": true
+  },
+  {
+    "size": "(3840, 1080)",
+    "panel": "PowerDetails",
+    "fontPixelsMinimum": 18,
+    "bounds": true
+  },
+  {
+    "size": "(3840, 2160)",
+    "panel": "ProgressAndSave",
+    "fontPixelsMinimum": 18,
+    "bounds": true
+  },
+  {
+    "size": "(3840, 2160)",
+    "panel": "PowerDetails",
+    "fontPixelsMinimum": 18,
+    "bounds": true
+  }
+]

@@ -1,0 +1,48 @@
+--- baseline/CanvasHudLayout.cs
++++ applied/CanvasHudLayout.cs
+@@ -11,6 +11,8 @@
+         public RectTransform Root,ClockPanel,ClockBody,ResourcePanel,ResourceBody,ResourceScroll;
+         public RectTransform MapPanel,MapBody,SelectionPanel,SelectionScroll,ConstructionBar,InventoryBody,StatusRow,Notifications;
+         public RectTransform CategoryStrip;
++        public RectTransform ConstructionSummary,FirstLoopObjective;
++        public RectTransform EditHeader,PowerHeader,EditActions;
+         public RectTransform[] FloatingPanels=Array.Empty<RectTransform>();
+         public bool SingleRowCatalog;
+         public float SelectionMaximumHeight=240;
+@@ -29,9 +31,17 @@
+             int state=(ClockBody.gameObject.activeSelf?1:0)|(ResourceBody.gameObject.activeSelf?2:0)|(MapBody.gameObject.activeSelf?4:0)|(SelectionPanel.gameObject.activeSelf?8:0)|(InventoryBody.gameObject.activeSelf?16:0)|((GetComponent<HudModeGroups>()?.ConstructionSelected??true)?32:0);
+             if(!force&&size==previousSize&&Mathf.Approximately(scale,previousScale)&&state==previousState)return;
+             previousSize=size;previousScale=scale;previousState=state;Revision++;
+-            float bottom=(state&16)!=0?(SingleRowCatalog?Mathf.Max(ExpandedHeight,132+Mathf.Max(CellHeight,MinimumCellHeightPixels/scale)):ExpandedHeight):CollapsedHeight;
++            float summaryHeight=Mathf.Max(104,76/scale);
++            float bottom=(state&16)!=0?(SingleRowCatalog?Mathf.Max(ExpandedHeight,(ConstructionSummary!=null?114+summaryHeight:132)+Mathf.Max(CellHeight,MinimumCellHeightPixels/scale)):ExpandedHeight):CollapsedHeight;
+             ConstructionBar.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical,bottom);
+             StatusRow.gameObject.SetActive((state&16)!=0);
++            if(ConstructionSummary!=null){
++                ConstructionSummary.gameObject.SetActive((state&16)!=0);ConstructionSummary.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical,summaryHeight);
++                var inset=InventoryBody.offsetMin;inset.y=summaryHeight+16;InventoryBody.offsetMin=inset;
++                if(EditHeader!=null&&PowerHeader!=null){float buttonWidth=Mathf.Max(128,90/scale);EditHeader.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal,buttonWidth);PowerHeader.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal,buttonWidth);PowerHeader.anchoredPosition=new Vector2(-16-buttonWidth,-6);StatusRow.offsetMax=new Vector2(-24-2*buttonWidth,-6);}
++                if(EditActions!=null){EditActions.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical,summaryHeight);float height=(summaryHeight-8)*.5f;for(int j=0;j<EditActions.childCount;j++){var action=EditActions.GetChild(j) as RectTransform;action.anchoredPosition=new Vector2(0,-j*(height+8));action.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical,height);}}
++            }
++            if(FirstLoopObjective!=null){var pos=FirstLoopObjective.anchoredPosition;pos.y=bottom+108;FirstLoopObjective.anchoredPosition=pos;}
+             if(CategoryStrip!=null)CategoryStrip.gameObject.SetActive((state&16)!=0);
+             float clockHeight=(state&1)!=0?156:28;
+             ClockPanel.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical,clockHeight);
+@@ -49,7 +59,7 @@
+             MapBody.sizeDelta=new Vector2(mapSide,mapSide);
+             MapBody.anchoredPosition=new Vector2((MapPanel.rect.width-mapSide)*.5f,-36);
+             SelectionPanel.anchoredPosition=new Vector2(0,grouped?0:-mapHeight-8);
+-            float selectionHeight=Mathf.Max(0,Mathf.Min(SelectionMaximumHeight,rightAvailable-mapHeight-8));
++            float selectionHeight=Mathf.Max(0,Mathf.Min(SelectionMaximumHeight,grouped?rightAvailable:rightAvailable-mapHeight-8));
+             SelectionPanel.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical,selectionHeight);
+             Notifications.anchoredPosition=new Vector2(Notifications.anchoredPosition.x,grouped&&(state&32)==0?24:bottom+24);
+             foreach(var panel in FloatingPanels)if(panel!=null){
+@@ -62,7 +72,7 @@
+             Catalog.constraint=SingleRowCatalog?UnityEngine.UI.GridLayoutGroup.Constraint.FixedRowCount:UnityEngine.UI.GridLayoutGroup.Constraint.FixedColumnCount;
+             Catalog.constraintCount=SingleRowCatalog?1:columns;Catalog.spacing=new Vector2(Gap,Gap);
+             Catalog.cellSize=new Vector2(SingleRowCatalog?Mathf.Max(MinimumCellWidth,MinimumCellPixels/scale):Mathf.Max(1,(width-(columns-1)*Gap)/columns),Mathf.Max(CellHeight,MinimumCellHeightPixels/scale));
+-            for(int i=0;i<Texts.Length;i++)if(Texts[i]!=null){float minimum=FontSizes[i]<=16?12:14;if(!Texts[i].enableAutoSizing)Texts[i].fontSize=Mathf.Clamp(minimum/scale,FontSizes[i],FontSizes[i]*1.15f);}
++            for(int i=0;i<Texts.Length;i++)if(Texts[i]!=null){float minimum=FontSizes[i]<=16?12:14;if(!Texts[i].enableAutoSizing)Texts[i].fontSize=(ConstructionSummary!=null&&Texts[i].transform.IsChildOf(ConstructionBar)?Mathf.Max(14/scale,FontSizes[i]):Mathf.Clamp(minimum/scale,FontSizes[i],FontSizes[i]*1.15f));}
+         }
+     }
+ }

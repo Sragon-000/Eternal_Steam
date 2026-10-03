@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/AuthorHud07.cs",
+      "entry": "AuthorHud07.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 59,
+      "executeMs": 4682,
+      "assemblyName": "PipelineRunScript_AuthorHud07_a42939da8dc34114b6d81c7bfa30ae5d",
+      "success": true,
+      "result": "Reference resolution 1280x720; power summary belongs to construction at top left"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

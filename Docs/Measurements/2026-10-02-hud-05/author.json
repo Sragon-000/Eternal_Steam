@@ -1,0 +1,14 @@
+[
+  {
+    "scene": "StartRegionSandbox",
+    "catalogCards": 28,
+    "summarySaved": true,
+    "persistentConfirm": 1
+  },
+  {
+    "scene": "OpenWorldSandbox",
+    "catalogCards": 26,
+    "summarySaved": true,
+    "persistentConfirm": 1
+  }
+]

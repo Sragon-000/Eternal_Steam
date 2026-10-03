@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/FinishHud08DockAuthoring.cs",
+      "entry": "FinishHud08DockAuthoring.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 1334,
+      "executeMs": 5728,
+      "assemblyName": "PipelineRunScript_FinishHud08DockAuthoring_408e6bdd1eed4bf88dd663a0b7f76eab",
+      "success": true,
+      "result": "Details follow the saved right-edge group easing"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

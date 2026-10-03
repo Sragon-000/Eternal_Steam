@@ -1,0 +1,12 @@
+{
+  "Assets/EternalSteam/Tests/OpenWorld/Runtime/BaseResourceAccordion.cs": "ef1830104c4d99f7fd26de37285f6360ed8fe705c47ef9da34dce52f9d0020e2",
+  "Assets/EternalSteam/Tests/OpenWorld/Runtime/CanvasWorldHud.cs": "2519dcb0c196375f4c5eac245b0ef26c1ae76ea1ff1b953cc1f04b4072020333",
+  "Assets/EternalSteam/Scene/Tests/ModuleSandbox.unity": "dce8a0334b290c1580fcd4da7bfdc32b0ebdd3f240685a6e00b1e0ea89a300d0",
+  "Assets/EternalSteam/Scene/Tests/OpenWorldSandbox.unity": "0f7a7b6258b69320ca910a709400feb9d87eae9a9d4cb4189f1e8319ea2f4568",
+  "Assets/EternalSteam/Scene/Tests/StartRegionSandbox.unity": "d8c59234176629d440b418965c87f1d3702df40cbf094c650f5b5b57dd9f6f9c",
+  "Assets/EternalSteam/Scene/Tests/FoundationSandbox.unity": "146c6624914653d01ddf8e33eeaea94375af7da06535f591d3723b0d5a858be2",
+  "Docs/Measurements/2026-10-02-hud-04/product-tests.xml": "fc7e83f01f25e5492634ec16a7547bb52ac6f6466c8e7cffe765763645cfae33",
+  "Docs/Measurements/2026-10-02-hud-04/play-result.json": "a98137071379e1d820737342720d81bd9ae19707603be2723eb1c81f81b2c8c1",
+  "Docs/Measurements/2026-10-02-hud-04/empty-state.json": "19011e7839024bf676769ae97a2402db2fb5a6a13587f9be116f658441dbd4fe",
+  "Docs/Measurements/2026-10-02-hud-04/accordion.png": "8812b0f0e54d4741fe54897422ae597516047aac06d131e9e3c8c4bd1623d10b"
+}

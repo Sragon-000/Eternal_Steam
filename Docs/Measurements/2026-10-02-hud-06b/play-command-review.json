@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/VerifyHud06BPlay.cs",
+      "entry": "VerifyHud06BPlay.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 105,
+      "executeMs": 0,
+      "assemblyName": "PipelineRunScript_VerifyHud06BPlay_c64c273a745646cd88daafe58b6fe661",
+      "success": true,
+      "result": "Queued service verification"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

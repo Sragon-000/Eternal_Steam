@@ -1,0 +1,4 @@
+FAIL System.NullReferenceException: Object reference not set to an instance of an object
+  at HudGroupsProbe+<Verify>d__5.MoveNext () [0x00134] in /Users/limseth/Projects/Eternal_Steam/Eternal_Steam/Tools/VerifyHudGroupsMatrix.cs:8 
+  at HudGroupsProbe+<Matrix>d__4.MoveNext () [0x00183] in /Users/limseth/Projects/Eternal_Steam/Eternal_Steam/Tools/VerifyHudGroupsMatrix.cs:7 
+  at HudGroupsProbe+<Start>d__2.MoveNext () [0x00038] in /Users/limseth/Projects/Eternal_Steam/Eternal_Steam/Tools/VerifyHudGroupsMatrix.cs:5 

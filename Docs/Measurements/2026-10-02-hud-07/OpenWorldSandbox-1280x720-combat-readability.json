@@ -1,0 +1,32 @@
+[
+  {
+    "button": "pause",
+    "fontPixels": 18.0,
+    "captionVisible": true
+  },
+  {
+    "button": "menu-fold",
+    "fontPixels": 18.0,
+    "captionVisible": true
+  },
+  {
+    "button": "infinite-resources",
+    "fontPixels": 16.0,
+    "captionVisible": true
+  },
+  {
+    "button": "quick-day",
+    "fontPixels": 16.0,
+    "captionVisible": true
+  },
+  {
+    "button": "quick-night",
+    "fontPixels": 16.0,
+    "captionVisible": true
+  },
+  {
+    "button": "HudGroupToggle",
+    "fontPixels": 18.0,
+    "captionVisible": true
+  }
+]

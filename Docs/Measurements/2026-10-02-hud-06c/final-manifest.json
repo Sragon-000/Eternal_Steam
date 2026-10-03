@@ -1,0 +1,521 @@
+{
+  "generatedUtc": "2026-10-02T13:52:03.656357+00:00",
+  "result": "PASS",
+  "files": [
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/RailwayOverview.cs",
+      "bytes": 9788,
+      "sha256": "8e81a9be8fe85daca26631cafd1ba7f9a4242f5ed076eea24aca897fa089414f"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/RailwayEditorPanel.cs",
+      "bytes": 3875,
+      "sha256": "e0a6e6f8403090744daa15b61b3c3e9858d4ef9c5c1494e27b74a706d603b3ec"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/EditMode/RailwayEditorPanelTests.cs",
+      "bytes": 1877,
+      "sha256": "7d8c2faf676109b73551524f247111d8b719ae355ea7b167848a7d3dee622742"
+    },
+    {
+      "path": "Assets/EternalSteam/Scene/Tests/StartRegionSandbox.unity",
+      "bytes": 162042895,
+      "sha256": "3113b974543d83e18a117804b4231466914fd0a6e725a597892a03c95b60e48a"
+    },
+    {
+      "path": "Assets/EternalSteam/Scene/Tests/OpenWorldSandbox.unity",
+      "bytes": 4303685,
+      "sha256": "0a0419dbb7f735868966e17fec7236f91a35952525a9656fab80a9019dfca51a"
+    },
+    {
+      "path": "Docs/Validation/2026-10-02-hud-06c-railway-editor.md",
+      "bytes": 4305,
+      "sha256": "bc7679fc3b6770d8fc1adeaff4aece830770da10a90bb60e0e1254e50f9816e3"
+    },
+    {
+      "path": "Docs/Implementation/HudGroups/HUD-06C.md",
+      "bytes": 2098,
+      "sha256": "e488c5f6d6a6db2fcf8a1d85e64fb1300861a6fa375746cfdc3f9250839eab5e"
+    },
+    {
+      "path": "Tools/PolishHud06C.cs",
+      "bytes": 1057,
+      "sha256": "927a17c4d3cbab06b338c4a487bfceacbd8e4ba2d912ccd7cf5688531d8a4298"
+    },
+    {
+      "path": "Tools/BuildHud06CFixture.cs",
+      "bytes": 4150,
+      "sha256": "b76ca3277ae4e98e4037b6bf6c687bdef681ab795ccd6aef260163441734b3ef"
+    },
+    {
+      "path": "Tools/VerifyHud06CPlay.cs",
+      "bytes": 7425,
+      "sha256": "8baff929e3d5b9fa7f4ae82310718dbec98742ae0db6aca55f172a323891af0e"
+    },
+    {
+      "path": "Tools/ExportHud06CResults.cs",
+      "bytes": 643,
+      "sha256": "ac8ef3e633c1a53b89486852a51f96089faad7416ad1a7efc49bac169c16f9e3"
+    },
+    {
+      "path": "Tools/VerifyHud06CResolutions.cs",
+      "bytes": 7014,
+      "sha256": "76b3ec4ede69e3252a7878e470492d0bdbafb1b36ad6730a49091b2647eb9ac7"
+    },
+    {
+      "path": "Tools/AuthorHud06C.cs",
+      "bytes": 6138,
+      "sha256": "3c740b67d2a7b30104d6972a2c7457ca3ec2c74b27092903ca6a4305ec070e1c"
+    },
+    {
+      "path": "Tools/VerifyHud06CLegacy.cs",
+      "bytes": 3316,
+      "sha256": "ef205ffd364fb19032fc561e7fe9ab43ffa2a86940c4475d9f8bb8453d090d1d"
+    },
+    {
+      "path": "Tools/FinishHud06CValidation.cs",
+      "bytes": 2467,
+      "sha256": "3200c692aa21defa2dba799b506e1d6818e3572dc3c642abcd27d3b54f9be3db"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/editor-800x600-confirm-top.png",
+      "bytes": 470679,
+      "sha256": "f746e21b30a3500b935a875c43e0cc363678156c1bcb5b6c1b1d2d86172924ca"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/editor-800x600-connection-top.png",
+      "bytes": 472861,
+      "sha256": "8574c950cba01d910d5130b455e35923fe79d66bd7c8e349f1d9f8122d2da279"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/editor-1280x720-discard-top.png",
+      "bytes": 768211,
+      "sha256": "e6e67c64bb5d5ef3fcd0291fe033989ce27a91faec7bbfd231101dc67ff3c57e"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/editor-800x600-issues-bottom.png",
+      "bytes": 481807,
+      "sha256": "e158aa60f9dbe56da13bc5aebeb49df1af063a87147586517c0d39c2e9446fec"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/editor-800x600-discard-top.png",
+      "bytes": 445203,
+      "sha256": "f1d5405d3df0e845256500884339fd57ab60d191a3982ad1513783933b630e0f"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/editor-1280x720-confirm-top.png",
+      "bytes": 808862,
+      "sha256": "74a82e157ab79c852264076d971396a4b52676bedb6d0ccb39baf2369d89705a"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/fixture-final.json",
+      "bytes": 713,
+      "sha256": "8bff31be2f2dfcb13f55899399fa94722ce25346eb92ee8fac686ba9148edfe7"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/legacy-command-final.json",
+      "bytes": 736,
+      "sha256": "1b0d497221ee519dc9622fd0301b04b07fdca37ac5479dc846da70e7f31270b6"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/play-command.json",
+      "bytes": 650,
+      "sha256": "9f1101b3b234267b7a3d4aa4cf005f23ba920895d42ef4cf2fafe86b234cceb5"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/editor-1280x720-issues-bottom.png",
+      "bytes": 843561,
+      "sha256": "cb44ff93b54814bb945b03d7fb1bc2a70426ed0602e81450a7a811e47b4addf3"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/editor-1920x1080-issues-bottom.png",
+      "bytes": 1263044,
+      "sha256": "0990a82f2b80942948505283d39f70f8402548f3a4e7270b1c8123787778950b"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/test-command-final.json",
+      "bytes": 73600,
+      "sha256": "56602bf2267ac9730fbcc9332c5d67bc2f54e9b54405f4b7990c866bd89261d9"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/polish-command.json",
+      "bytes": 643,
+      "sha256": "fa720c5ef054fac34ba2465b16cc6f68af7e7b55f449b398629e6a6234eae91e"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/editor-3840x1080-connection-bottom.png",
+      "bytes": 2213197,
+      "sha256": "9cc200ef66ed355695b2bc1a920f52640ff383ee3d7607d7beaead8d7f91af20"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/play-stop-first.json",
+      "bytes": 339,
+      "sha256": "19ab965baecf9ae170afc288ec456ff6a7a78526a0e382cb1698b5135521e40f"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/setup.json",
+      "bytes": 667,
+      "sha256": "4c157486aa9373377009ac0466abb79b939f3aec3ef270de22189cbf8c9c8f18"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/editor-3840x1080-discard-bottom.png",
+      "bytes": 2125202,
+      "sha256": "0dfb1e06d54e11409247e557a3e05f2c0d33885d2baf2aadf6160a0e2d660e3a"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/editor-800x600-connection-bottom.png",
+      "bytes": 500720,
+      "sha256": "618e270de6d114fb3f08efc47e4556a12095c0ed65f4fc28b034c62efbd9f3ce"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/connection-quote.png",
+      "bytes": 2925139,
+      "sha256": "8e88552ba5dfc9f82e0a71ca666cf2bc15a8fd02e08825d4db15fd73eba3c010"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/setup-final.json",
+      "bytes": 667,
+      "sha256": "cbbb157b5496e168dc371d7da84574f472ce144a53b3814b2b22e739f2accdb6"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/editor-800x600-confirm-bottom.png",
+      "bytes": 470061,
+      "sha256": "b1943c198da463ed8c40dd0954850a62aa4fe47ae5387fe8df7afd6f5b0bd594"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/empty-state.txt",
+      "bytes": 46,
+      "sha256": "956fbf32454d142ec8d09fb5995ae5dad47866371de07412d6e23c6ba605fac0"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/new-route-confirm.png",
+      "bytes": 2861812,
+      "sha256": "c07d33b117a4550789a8e311ea51dabea9e68ed6bddf9bd29fdce03c65048d6f"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/editor-1920x1080-confirm-bottom.png",
+      "bytes": 1188293,
+      "sha256": "273f1e195c0133b61051c09afe28f839bb1602899b5f60497c081423ff8b3593"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/pending-snapshot.json",
+      "bytes": 2244,
+      "sha256": "6d50764ebab21525c244677923c75a9f55405039e96f80e79834b45fc1735f64"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/editor-1280x720-issues-top.png",
+      "bytes": 812839,
+      "sha256": "477f59aba4ac5ad67bf7f38dd56c9ebf6b59484a31e895cf51351395bc815aec"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/resolution-command-final.json",
+      "bytes": 674,
+      "sha256": "ef966d9a0c65ecfd6418e0b0569ba86ac78d4bde18fdb7f4aa8231f56fe27458"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/editor-3840x1080-confirm-top.png",
+      "bytes": 2158064,
+      "sha256": "701a2f2afab9d2bd1949a5a9a3e6b5e909869f8215a2bf308ac9e3e96a46aa82"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/editor-1280x720-discard-bottom.png",
+      "bytes": 764190,
+      "sha256": "eb68dbd6043a531ca4b459e1f1a34af4db26e7022d8d9af2fb3ce8625cca0e69"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/play-result.json",
+      "bytes": 342,
+      "sha256": "4c9d656d8efd7ef1407e089c4750e343ad3d5dcb66fe99cc75ae2da400084e44"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/editor-3840x1080-discard-top.png",
+      "bytes": 2125202,
+      "sha256": "0dfb1e06d54e11409247e557a3e05f2c0d33885d2baf2aadf6160a0e2d660e3a"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/editor-3840x1080-stations-top.png",
+      "bytes": 2198612,
+      "sha256": "17d82506ee34caf0f36f3d6d615d487e31ceecb28dcdaa9ba840014d00215749"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/editor-1920x1080-connection-top.png",
+      "bytes": 1242844,
+      "sha256": "1d194b7cf80541d74f2c7ab56ad103c23d85f7fef22a4fe6dfca133a654ae0c8"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/editor-1280x720-stations-top.png",
+      "bytes": 825080,
+      "sha256": "b16bb2058a83f567246f19c6851cb7f3b45284fdde703c06aad21c7b1099d286"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/editor-1920x1080-stations-top.png",
+      "bytes": 1232589,
+      "sha256": "edf65207bc5ceceafd0ea0f117ab5822077e3c5d44df346657f2cf79dd0e8537"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/recompile.json",
+      "bytes": 268,
+      "sha256": "981c5957c5e6dbad0c0f5566f8b064d073bb72f060499e7f89231c669e9e9d32"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/play-enter-final.json",
+      "bytes": 340,
+      "sha256": "1fbfaa3484682c684d691715a9dd18b5e10286f2586bc5fc6e73407d4d878465"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/polish-recompile.json",
+      "bytes": 268,
+      "sha256": "981c5957c5e6dbad0c0f5566f8b064d073bb72f060499e7f89231c669e9e9d32"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/author.json",
+      "bytes": 178,
+      "sha256": "c4891b962ff36fbdba22bfb44aef37ee2933e18939068e60ca03b11aa598a732"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/editor-1920x1080-connection-bottom.png",
+      "bytes": 1242844,
+      "sha256": "1d194b7cf80541d74f2c7ab56ad103c23d85f7fef22a4fe6dfca133a654ae0c8"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/editor-3840x1080-connection-top.png",
+      "bytes": 2213197,
+      "sha256": "9cc200ef66ed355695b2bc1a920f52640ff383ee3d7607d7beaead8d7f91af20"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/source-whitespace-check.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/final-editor-state.json",
+      "bytes": 205,
+      "sha256": "5bfa3929baba755ab0e162b3875afffe54fcf24f9f196dbae7adde98ebb058f5"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/play-enter.json",
+      "bytes": 340,
+      "sha256": "1fbfaa3484682c684d691715a9dd18b5e10286f2586bc5fc6e73407d4d878465"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/resolution-command.json",
+      "bytes": 674,
+      "sha256": "620155a642e28639f981420b41743be419834fccc0e69715cb6a25c861e9a84f"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/editor-3840x1080-confirm-bottom.png",
+      "bytes": 2158064,
+      "sha256": "701a2f2afab9d2bd1949a5a9a3e6b5e909869f8215a2bf308ac9e3e96a46aa82"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/editor-1920x1080-discard-top.png",
+      "bytes": 1153323,
+      "sha256": "4d91c3d81e14cb4342c2b65b167cc1b1766809bde1688899f6e25c4c128f75ca"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/editor-800x600-stations-top.png",
+      "bytes": 475754,
+      "sha256": "21ffeeea91e0f0900397d5524d106e87d9b64794de1de9dd52c465f6ca09d072"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/editor-1920x1080-confirm-top.png",
+      "bytes": 1196631,
+      "sha256": "b93ef9d03ccbc4f8a7bf5a12e215b19f38aa61a8cbed5f91aa24fc13442fdce8"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/play-command-final.json",
+      "bytes": 650,
+      "sha256": "45d3ab223a492a56b479cb486dfbbec78c58225ab2cbf372d6a2748ff27e67df"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/author-command.json",
+      "bytes": 815,
+      "sha256": "d385daa24cdea6c2a0d22b787ca699e89e65a6a947bf663327ccec2ac9bde096"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/editor-800x600-discard-bottom.png",
+      "bytes": 443830,
+      "sha256": "22410dec9339cdb90aa68e946cb2e81b66808e3d1b58df5451955aa44999cbe3"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/play-status.txt",
+      "bytes": 4,
+      "sha256": "2f9acb02faa121bb2a3621951f57b4c690655337edee2e5ac350be2b3be88ea8"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/restore-command.json",
+      "bytes": 686,
+      "sha256": "312ee92ab946232bfddf29c06834f5825d3ea34e481e5e96e7153ee9d2496f02"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/editor-1920x1080-discard-bottom.png",
+      "bytes": 1153323,
+      "sha256": "4d91c3d81e14cb4342c2b65b167cc1b1766809bde1688899f6e25c4c128f75ca"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/legacy-command.json",
+      "bytes": 736,
+      "sha256": "46c9283dbfbdebb712d8cd301a298eacb7ebb74198a26e8dc0027c858deac6fb"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/fixture-command.json",
+      "bytes": 713,
+      "sha256": "a16e73df5aa45d590fd4f296ea35f15e1d34f32e40966855eb7e50d5cce591ee"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/editor-3840x1080-issues-bottom.png",
+      "bytes": 2234296,
+      "sha256": "f076b95aea41476847c9d57093317927e8b3d41d9ba1584827dadf19d310283e"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/editor-3840x1080-issues-top.png",
+      "bytes": 2193103,
+      "sha256": "4f96ded5f318af1b0556dc0536e8459826264f1133fbdcdca51f263c8cfd8ce1"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/tests-recompile.json",
+      "bytes": 268,
+      "sha256": "981c5957c5e6dbad0c0f5566f8b064d073bb72f060499e7f89231c669e9e9d32"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/editor-1280x720-connection-bottom.png",
+      "bytes": 842467,
+      "sha256": "7f596805256d5a39841c63bca90ac6eb1dda764476488a4408ec4bd94b834498"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/editor-1280x720-connection-top.png",
+      "bytes": 841749,
+      "sha256": "a656d30def6444e5ea6d34a2e64f5f4b7b634db082bc794730aa67f3c314c33c"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/editor-800x600-issues-top.png",
+      "bytes": 464092,
+      "sha256": "a3df16e58a1f423c7bdf2edf626ea01ef6290db591736dd53c5e46c77a00b832"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/resolution-status.txt",
+      "bytes": 4,
+      "sha256": "2f9acb02faa121bb2a3621951f57b4c690655337edee2e5ac350be2b3be88ea8"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/test-recorder.json",
+      "bytes": 677,
+      "sha256": "630de11ae6bdb7f937a2e0bd6fdfb01d41d490e22b4b63953240fb6d78c712d1"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/editor-1280x720-stations-bottom.png",
+      "bytes": 828933,
+      "sha256": "3bcf82d20d2123a62d930e702b4b2bb102ed7e941b5b86eca3a207a7f227411a"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/test-command.json",
+      "bytes": 73611,
+      "sha256": "160f36c4887f240ad6beb1ee38b8bd77bebc9596f2412b1d2239735cfb7454e0"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/editor-1280x720-confirm-bottom.png",
+      "bytes": 800603,
+      "sha256": "5600d8329fe4f6e913f5ec70ca3b9f88f949c7e2b5ae764c5d26af60106f070c"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/resolutions.json",
+      "bytes": 3199,
+      "sha256": "7b98480410998a6955596b9c18ae99cfe09fe58f5626f503aed10211236ca5cd"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/legacy-result.json",
+      "bytes": 196,
+      "sha256": "3107d4c68657448bb3d0e04675bee8141e1b2b4eccddb3d4b7b1454269897352"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/play-stop-final.json",
+      "bytes": 339,
+      "sha256": "19ab965baecf9ae170afc288ec456ff6a7a78526a0e382cb1698b5135521e40f"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/editor-1920x1080-stations-bottom.png",
+      "bytes": 1237711,
+      "sha256": "5238ea73142caeb438bc9068a5b0f73b28eeb98ccb133d8a92bc6fe6f0c2ce1b"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/editor-3840x1080-stations-bottom.png",
+      "bytes": 2210911,
+      "sha256": "877aed43dba4921f8a54f64c1053559a1bb7ac0c0ce9f6bf8824aed5c7883703"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/editor-1920x1080-issues-top.png",
+      "bytes": 1222937,
+      "sha256": "09a3c22d61046d4716195d9835251c3d288758fc1332eadd03f68e1955650538"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/editor-800x600-stations-bottom.png",
+      "bytes": 476436,
+      "sha256": "aa8acaa482f75ec4510a2c10b3f72a046e39dd876abd7b253b406dbbc0812a9d"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/test-recorder-final.json",
+      "bytes": 676,
+      "sha256": "8918aef39c10838903bb6a55492fe6eb3b19621c00b418908e7907aa1e382333"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/product-tests.xml",
+      "bytes": 230060,
+      "sha256": "65d6d7bdf4de6bda0be4b11997f5eb89ed021a0101a409c0e8af18c41a2ab338"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/baseline/RailwayOverview.cs",
+      "bytes": 8977,
+      "sha256": "d5ba3d2a460e3ef793c1ad78966a70100a6447413db3aba58e727559bf4e47be"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/baseline/OpenWorldSandbox.unity",
+      "bytes": 3944543,
+      "sha256": "9e58ed7246f4f04ac4c16fdd090c481b6da967079f581c63ad769b18bdc4cc33"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/baseline/RailwayHud.cs",
+      "bytes": 43543,
+      "sha256": "3709ebbcf0ef559d1ae07962f65b70f4aa2e6e4e9e12b086bfc4b84202a4fd12"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/baseline/StartRegionSandbox.unity",
+      "bytes": 161683660,
+      "sha256": "ca096ef64dad37786ad0ef41146d00f783714369dcccc783a0c98de81d084900"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/baseline/RailwayConnectionHud.cs",
+      "bytes": 7288,
+      "sha256": "1c33797c45c71b907cdd1af5adc0c0d3d758c47b473e2f9b319cefbe3128d058"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/play-save/current.json",
+      "bytes": 1511495,
+      "sha256": "54edafaa5cf70498902f106d88c512890991eb716d619b28bbdaa64c32612205"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/play-save/previous.json",
+      "bytes": 1511002,
+      "sha256": "6861b8effe1bbfd36f059f68fd0c9ce1b7a52677d58f85d8ff0b3c3e2ee0bcd0"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/first-render/editor-800x600-stations-top.png",
+      "bytes": 478597,
+      "sha256": "b15f95f8b9a04e5b9546a42316b19738795bdde1c0566fadda7e43eee25a2c49"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/first-render/resolutions.json",
+      "bytes": 3199,
+      "sha256": "7b98480410998a6955596b9c18ae99cfe09fe58f5626f503aed10211236ca5cd"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/play-save/archive/20261002-134749-2d3302cf13d048919ceb7597861bde4e/current.json",
+      "bytes": 1511498,
+      "sha256": "f762b5aad3e961798a1f968939675250767ef636423a6df768d844281cf3cff0"
+    },
+    {
+      "path": "Docs/Measurements/2026-10-02-hud-06c/play-save/archive/20261002-134749-2d3302cf13d048919ceb7597861bde4e/previous.json",
+      "bytes": 1511002,
+      "sha256": "c08cefce8acc097694efb39d4f055d4e9fd75c5d027d32df40b3ab9a8bf78fef"
+    }
+  ]
+}

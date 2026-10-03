@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/VerifyHud06CPlay.cs",
+      "entry": "VerifyHud06CPlay.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 167,
+      "executeMs": 0,
+      "assemblyName": "PipelineRunScript_VerifyHud06CPlay_b4984b2ec8b14cef84e0de8ac98c681c",
+      "success": true,
+      "result": "Queued editor flow verification"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

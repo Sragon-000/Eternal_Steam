@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/VerifyHud07Edges.cs",
+      "entry": "VerifyHud07Edges.BaseLoss"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 19,
+      "executeMs": 6,
+      "assemblyName": "PipelineRunScript_VerifyHud07Edges_ebbfde64906a45ababe1213e39ca9f79",
+      "success": true,
+      "result": "Expanded sub-base loss handled"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

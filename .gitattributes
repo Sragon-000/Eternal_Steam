@@ -174,3 +174,6 @@ LightingData.asset     binary
 Assets/EternalSteam/Scene/Tests/StartRegionSandbox.unity filter=lfs diff=lfs merge=lfs -text
 Docs/Measurements/2026-10-02-train-hud-integration/baseline/Assets/EternalSteam/Scene/Tests/StartRegionSandbox.unity filter=lfs diff=lfs merge=lfs -text
 Assets/Map/TileWorldCreatorConfiguration.asset filter=lfs diff=lfs merge=lfs -text
+
+# Scene snapshots retained with HUD validation evidence
+Docs/Measurements/**/*.unity filter=lfs diff=lfs merge=lfs -text

@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/PolishHudGroups.cs",
+      "entry": "PolishHudGroups.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 629,
+      "executeMs": 5202,
+      "assemblyName": "PipelineRunScript_PolishHudGroups_9429f3527a3f4447b69a95870f89b10d",
+      "success": true,
+      "result": "Time font rules and group ownership saved"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

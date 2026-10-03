@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/VerifyHud08Save.cs",
+      "entry": "VerifyHud08Save.Check"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 38,
+      "executeMs": 145,
+      "assemblyName": "PipelineRunScript_VerifyHud08Save_42971346206045f4ba3feab9475d75eb",
+      "success": true,
+      "result": "Exact full snapshot restored except savedUtc"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

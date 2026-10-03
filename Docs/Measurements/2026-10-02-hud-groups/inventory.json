@@ -1,0 +1,3688 @@
+[
+  {
+    "scene": "StartRegionSandbox",
+    "hud": "GameplayCanvas",
+    "rail": "GameplayCanvas/RailwayInterface",
+    "sections": [
+      {
+        "id": "clock",
+        "path": "GameplayCanvas/LeftStatus/ClockPanel/ClockBody"
+      },
+      {
+        "id": "resources",
+        "path": "GameplayCanvas/LeftStatus/ResourcePanel/ResourceBody"
+      },
+      {
+        "id": "minimap",
+        "path": "GameplayCanvas/RightStatus/MinimapPanel/MinimapBody"
+      },
+      {
+        "id": "selection",
+        "path": "GameplayCanvas/RightStatus/SelectionPanel"
+      },
+      {
+        "id": "upgrade",
+        "path": "GameplayCanvas/RightStatus/SelectionPanel/UpgradeControls"
+      },
+      {
+        "id": "edit-actions",
+        "path": "GameplayCanvas/ConstructionBar/EditActions"
+      },
+      {
+        "id": "inventory",
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody"
+      },
+      {
+        "id": "placement-hint",
+        "path": "GameplayCanvas/Notifications/placement-hint"
+      },
+      {
+        "id": "menu",
+        "path": "GameplayCanvas/ProgressAndSave"
+      },
+      {
+        "id": "save-controls",
+        "path": "GameplayCanvas/ProgressAndSave/MenuScroll/Viewport/Content/SaveControls"
+      },
+      {
+        "id": "new-game-confirmation",
+        "path": "GameplayCanvas/ProgressAndSave/MenuScroll/Viewport/Content/SaveControls/NewGameConfirmation"
+      },
+      {
+        "id": "map-progress",
+        "path": "GameplayCanvas/ProgressAndSave/MenuScroll/Viewport/Content/MapProgress"
+      },
+      {
+        "id": "power",
+        "path": "GameplayCanvas/PowerDetails"
+      },
+      {
+        "id": "developer",
+        "path": "GameplayCanvas/Developer"
+      },
+      {
+        "id": "developer-body",
+        "path": "GameplayCanvas/Developer/DeveloperPanel"
+      },
+      {
+        "id": "run",
+        "path": "GameplayCanvas/Developer/DeveloperPanel/run"
+      },
+      {
+        "id": "test-shortcuts",
+        "path": "GameplayCanvas/TestShortcuts"
+      },
+      {
+        "id": "first-loop",
+        "path": "GameplayCanvas/Notifications/FirstLoopObjective"
+      }
+    ],
+    "commands": [
+      {
+        "command": "open",
+        "path": "GameplayCanvas/ConstructionBar/WorkspaceRailway",
+        "label": "철도 관리"
+      },
+      {
+        "command": "station",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayToolbar/rail-1",
+        "label": "선택 역 노선"
+      },
+      {
+        "command": "build:station",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayToolbar/rail-2",
+        "label": "기차역"
+      },
+      {
+        "command": "build:track",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayToolbar/rail-3",
+        "label": "선로"
+      },
+      {
+        "command": "build:coal",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayToolbar/rail-4",
+        "label": "석탄 생성기"
+      },
+      {
+        "command": "rotate",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayToolbar/rail-5",
+        "label": "역 방향 90°"
+      },
+      {
+        "command": "close",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/rail-close",
+        "label": "닫기 · 초안 취소"
+      },
+      {
+        "command": "row:0",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayList/RouteRow0",
+        "label": "노선"
+      },
+      {
+        "command": "row:1",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayList/RouteRow1",
+        "label": "노선"
+      },
+      {
+        "command": "row:2",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayList/RouteRow2",
+        "label": "노선"
+      },
+      {
+        "command": "row:3",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayList/RouteRow3",
+        "label": "노선"
+      },
+      {
+        "command": "page-prev",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayList/list-page-prev",
+        "label": "이전 목록"
+      },
+      {
+        "command": "page-next",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayList/list-page-next",
+        "label": "다음 목록"
+      },
+      {
+        "command": "new",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayList/list-new",
+        "label": "새 노선"
+      },
+      {
+        "command": "connect",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayList/connect",
+        "label": "역 연결"
+      },
+      {
+        "command": "start",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDetail/detail-start",
+        "label": "운행 시작"
+      },
+      {
+        "command": "stop",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDetail/detail-stop",
+        "label": "다음 역 중지"
+      },
+      {
+        "command": "fuel",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDetail/detail-fuel",
+        "label": "석탄 +50"
+      },
+      {
+        "command": "next-stop",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDetail/detail-next-stop",
+        "label": "다음 역 설정"
+      },
+      {
+        "command": "edit",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDetail/detail-edit",
+        "label": "노선 편집"
+      },
+      {
+        "command": "list",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDetail/detail-list",
+        "label": "목록으로"
+      },
+      {
+        "command": "configure",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDetail/configure",
+        "label": "선택 역 화물 설정 저장"
+      },
+      {
+        "command": "cancel-pending",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDetail/cancel-pending",
+        "label": "예약 변경 취소"
+      },
+      {
+        "command": "defense",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDetail/defense",
+        "label": "기차 방어 · 장착 / 충전"
+      },
+      {
+        "command": "add",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraft/draft-add",
+        "label": "선택 역 추가"
+      },
+      {
+        "command": "next-stop",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraft/draft-next-stop",
+        "label": "다음 역 선택"
+      },
+      {
+        "command": "remove",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraft/draft-remove",
+        "label": "선택 역 제거"
+      },
+      {
+        "command": "up",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraft/draft-up",
+        "label": "선택 역 위로"
+      },
+      {
+        "command": "arrival",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraft/draft-arrival",
+        "label": "진입 포트 변경"
+      },
+      {
+        "command": "departure",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraft/draft-departure",
+        "label": "진출 포트 변경"
+      },
+      {
+        "command": "validate",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraft/draft-validate",
+        "label": "순환 검증"
+      },
+      {
+        "command": "cancel",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraft/draft-cancel",
+        "label": "초안 취소"
+      },
+      {
+        "command": "weapon-next",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayArmament/weapon-next",
+        "label": "다음 장착 후보"
+      },
+      {
+        "command": "weapon-install",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayArmament/weapon-install",
+        "label": "선택 방어 장착"
+      },
+      {
+        "command": "weapon-charge",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayArmament/weapon-charge",
+        "label": "축전지 충전"
+      },
+      {
+        "command": "weapon-shape",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayArmament/weapon-shape",
+        "label": "빈 칸 형태 변경"
+      },
+      {
+        "command": "weapon-upgrade",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayArmament/weapon-upgrade",
+        "label": "장착 방어 강화"
+      },
+      {
+        "command": "weapon-remove",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayArmament/weapon-remove",
+        "label": "방어 해제 · 환급 없음"
+      },
+      {
+        "command": "weapon-back",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayArmament/weapon-back",
+        "label": "노선 상세로"
+      },
+      {
+        "command": "commit",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayConfirm/draft-commit",
+        "label": "노선 확정"
+      },
+      {
+        "command": "back-edit",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayConfirm/back-edit",
+        "label": "편집으로 돌아가기"
+      },
+      {
+        "command": "cancel",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayConfirm/cancel",
+        "label": "취소"
+      },
+      {
+        "command": "keep",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDiscard/keep",
+        "label": "계속 편집"
+      },
+      {
+        "command": "discard",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDiscard/discard",
+        "label": "변경 폐기"
+      },
+      {
+        "command": "draft-row:0",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/draft-row:0",
+        "label": "역 1"
+      },
+      {
+        "command": "draft-row:1",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/draft-row:1",
+        "label": "역 2"
+      },
+      {
+        "command": "draft-row:2",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/draft-row:2",
+        "label": "역 3"
+      },
+      {
+        "command": "draft-row:3",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/draft-row:3",
+        "label": "역 4"
+      },
+      {
+        "command": "draft-prev",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/draft-prev",
+        "label": "이전"
+      },
+      {
+        "command": "draft-next",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/draft-next",
+        "label": "다음"
+      },
+      {
+        "command": "down",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/down",
+        "label": "선택 역 아래로"
+      },
+      {
+        "command": "first",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/first",
+        "label": "선택 역을 첫 역으로"
+      },
+      {
+        "command": "open-loop",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/open-loop",
+        "label": "순환 연결 해제"
+      },
+      {
+        "command": "close-loop",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/close-loop",
+        "label": "마지막 → 첫 역 연결"
+      },
+      {
+        "command": "map-arrival",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/map-arrival",
+        "label": "지도 진입"
+      },
+      {
+        "command": "map-departure",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/map-departure",
+        "label": "지도 진출"
+      },
+      {
+        "command": "map-cancel",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/map-cancel",
+        "label": "선택 취소"
+      },
+      {
+        "command": "issue:0",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/issue:0",
+        "label": "오류 1"
+      },
+      {
+        "command": "issue:1",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/issue:1",
+        "label": "오류 2"
+      },
+      {
+        "command": "issue:2",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/issue:2",
+        "label": "오류 3"
+      },
+      {
+        "command": "issue-prev",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/issue-prev",
+        "label": "이전 오류"
+      },
+      {
+        "command": "issue-next",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/issue-next",
+        "label": "다음 오류"
+      },
+      {
+        "command": "station-row:0",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayStationContext/station-row:0",
+        "label": "역 1"
+      },
+      {
+        "command": "station-row:1",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayStationContext/station-row:1",
+        "label": "역 2"
+      },
+      {
+        "command": "station-row:2",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayStationContext/station-row:2",
+        "label": "역 3"
+      },
+      {
+        "command": "station-row:3",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayStationContext/station-row:3",
+        "label": "역 4"
+      },
+      {
+        "command": "station-prev",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayStationContext/station-prev",
+        "label": "이전"
+      },
+      {
+        "command": "station-next",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayStationContext/station-next",
+        "label": "다음"
+      },
+      {
+        "command": "station-context",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayStationContext/station-context",
+        "label": "이 역의 노선 보기"
+      },
+      {
+        "command": "connection-from",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayConnection/connection-from",
+        "label": "출발 역"
+      },
+      {
+        "command": "connection-to",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayConnection/connection-to",
+        "label": "도착 역"
+      },
+      {
+        "command": "connection-from-port",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayConnection/connection-from-port",
+        "label": "출발 연결구 · 자동"
+      },
+      {
+        "command": "connection-to-port",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayConnection/connection-to-port",
+        "label": "도착 연결구 · 자동"
+      },
+      {
+        "command": "connection-preview",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayConnection/connection-preview",
+        "label": "경로 미리보기"
+      },
+      {
+        "command": "connection-confirm",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayConnection/connection-confirm",
+        "label": "연결 확정"
+      },
+      {
+        "command": "connection-cancel",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayConnection/connection-cancel",
+        "label": "취소"
+      }
+    ],
+    "hudButtons": [
+      {
+        "id": "pause",
+        "path": "GameplayCanvas/TopBar/pause"
+      },
+      {
+        "id": "clock-fold",
+        "path": "GameplayCanvas/LeftStatus/ClockPanel/clock-fold"
+      },
+      {
+        "id": "resource-fold",
+        "path": "GameplayCanvas/LeftStatus/ResourcePanel/resource-fold"
+      },
+      {
+        "id": "resources-all",
+        "path": "GameplayCanvas/LeftStatus/ResourcePanel/ResourceBody/resources-all"
+      },
+      {
+        "id": "minimap-fold",
+        "path": "GameplayCanvas/RightStatus/MinimapPanel/minimap-fold"
+      },
+      {
+        "id": "selection-close",
+        "path": "GameplayCanvas/RightStatus/SelectionPanel/selection-close"
+      },
+      {
+        "id": "upgrade",
+        "path": "GameplayCanvas/RightStatus/SelectionPanel/UpgradeControls/upgrade"
+      },
+      {
+        "id": "edit",
+        "path": "GameplayCanvas/ConstructionBar/edit"
+      },
+      {
+        "id": "confirm",
+        "path": "GameplayCanvas/ConstructionBar/EditActions/confirm"
+      },
+      {
+        "id": "cancel",
+        "path": "GameplayCanvas/ConstructionBar/EditActions/cancel"
+      },
+      {
+        "id": "inventory-fold",
+        "path": "GameplayCanvas/ConstructionBar/WorkspaceConstruction"
+      },
+      {
+        "id": "power-fold",
+        "path": "GameplayCanvas/ConstructionBar/power-fold"
+      },
+      {
+        "id": "menu-fold",
+        "path": "GameplayCanvas/TopBar/menu-fold"
+      },
+      {
+        "id": "category--1",
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CategoryStrip/category--1"
+      },
+      {
+        "id": "category-0",
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CategoryStrip/category-0"
+      },
+      {
+        "id": "category-1",
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CategoryStrip/category-1"
+      },
+      {
+        "id": "category-2",
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CategoryStrip/category-2"
+      },
+      {
+        "id": "category-3",
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CategoryStrip/category-3"
+      },
+      {
+        "id": "catalog-0",
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-0"
+      },
+      {
+        "id": "catalog-1",
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-1"
+      },
+      {
+        "id": "catalog-2",
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-2"
+      },
+      {
+        "id": "catalog-3",
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-3"
+      },
+      {
+        "id": "catalog-4",
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-4"
+      },
+      {
+        "id": "catalog-5",
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-5"
+      },
+      {
+        "id": "catalog-6",
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-6"
+      },
+      {
+        "id": "catalog-7",
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-7"
+      },
+      {
+        "id": "catalog-8",
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-8"
+      },
+      {
+        "id": "catalog-9",
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-9"
+      },
+      {
+        "id": "catalog-10",
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-10"
+      },
+      {
+        "id": "catalog-11",
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-11"
+      },
+      {
+        "id": "catalog-12",
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-12"
+      },
+      {
+        "id": "catalog-13",
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-13"
+      },
+      {
+        "id": "catalog-14",
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-14"
+      },
+      {
+        "id": "catalog-15",
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-15"
+      },
+      {
+        "id": "catalog-16",
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-16"
+      },
+      {
+        "id": "catalog-17",
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-17"
+      },
+      {
+        "id": "catalog-18",
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-18"
+      },
+      {
+        "id": "catalog-19",
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-19"
+      },
+      {
+        "id": "catalog-20",
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-20"
+      },
+      {
+        "id": "catalog-21",
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-21"
+      },
+      {
+        "id": "catalog-22",
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-22"
+      },
+      {
+        "id": "catalog-23",
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-23"
+      },
+      {
+        "id": "catalog-24",
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-24"
+      },
+      {
+        "id": "menu-close",
+        "path": "GameplayCanvas/ProgressAndSave/menu-close"
+      },
+      {
+        "id": "save",
+        "path": "GameplayCanvas/ProgressAndSave/MenuScroll/Viewport/Content/SaveControls/save"
+      },
+      {
+        "id": "load",
+        "path": "GameplayCanvas/ProgressAndSave/MenuScroll/Viewport/Content/SaveControls/load"
+      },
+      {
+        "id": "new-game",
+        "path": "GameplayCanvas/ProgressAndSave/MenuScroll/Viewport/Content/SaveControls/new-game"
+      },
+      {
+        "id": "new-game-confirm",
+        "path": "GameplayCanvas/ProgressAndSave/MenuScroll/Viewport/Content/SaveControls/NewGameConfirmation/new-game-confirm"
+      },
+      {
+        "id": "new-game-cancel",
+        "path": "GameplayCanvas/ProgressAndSave/MenuScroll/Viewport/Content/SaveControls/NewGameConfirmation/new-game-cancel"
+      },
+      {
+        "id": "orb-craft",
+        "path": "GameplayCanvas/ProgressAndSave/MenuScroll/Viewport/Content/MapProgress/orb-craft"
+      },
+      {
+        "id": "developer-fold",
+        "path": "GameplayCanvas/ProgressAndSave/MenuScroll/Viewport/Content/developer-fold"
+      },
+      {
+        "id": "power-close",
+        "path": "GameplayCanvas/PowerDetails/power-close"
+      },
+      {
+        "id": "developer-close",
+        "path": "GameplayCanvas/Developer/DeveloperPanel/developer-close"
+      },
+      {
+        "id": "spawn",
+        "path": "GameplayCanvas/Developer/DeveloperPanel/spawn"
+      },
+      {
+        "id": "spawn-air",
+        "path": "GameplayCanvas/Developer/DeveloperPanel/spawn-air"
+      },
+      {
+        "id": "reset",
+        "path": "GameplayCanvas/Developer/DeveloperPanel/reset"
+      },
+      {
+        "id": "run",
+        "path": "GameplayCanvas/Developer/DeveloperPanel/run"
+      },
+      {
+        "id": "day",
+        "path": "GameplayCanvas/Developer/DeveloperPanel/day"
+      },
+      {
+        "id": "night",
+        "path": "GameplayCanvas/Developer/DeveloperPanel/night"
+      },
+      {
+        "id": "infinite-resources",
+        "path": "GameplayCanvas/TestShortcuts/infinite-resources"
+      },
+      {
+        "id": "quick-day",
+        "path": "GameplayCanvas/TestShortcuts/quick-day"
+      },
+      {
+        "id": "quick-night",
+        "path": "GameplayCanvas/TestShortcuts/quick-night"
+      },
+      {
+        "id": "station-railway",
+        "path": "GameplayCanvas/RightStatus/SelectionPanel/station-railway"
+      }
+    ],
+    "nodes": [
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel",
+        "rect": "(x:0.00, y:-570.00, width:620.00, height:570.00)",
+        "position": "(0.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/rail-close",
+        "rect": "(x:0.00, y:-30.00, width:158.00, height:30.00)",
+        "position": "(450.00, -8.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwaySummary/Viewport",
+        "rect": "(x:-298.00, y:-111.00, width:596.00, height:222.00)",
+        "position": "(0.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayList/RouteRow0",
+        "rect": "(x:0.00, y:-34.00, width:596.00, height:34.00)",
+        "position": "(0.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayList/RouteRow1",
+        "rect": "(x:0.00, y:-34.00, width:596.00, height:34.00)",
+        "position": "(0.00, -38.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayList/RouteRow2",
+        "rect": "(x:0.00, y:-34.00, width:596.00, height:34.00)",
+        "position": "(0.00, -76.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayList/RouteRow3",
+        "rect": "(x:0.00, y:-34.00, width:596.00, height:34.00)",
+        "position": "(0.00, -114.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayList/list-page-prev",
+        "rect": "(x:0.00, y:-34.00, width:190.00, height:34.00)",
+        "position": "(0.00, -160.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayList/list-page-next",
+        "rect": "(x:0.00, y:-34.00, width:190.00, height:34.00)",
+        "position": "(198.00, -160.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayList/list-new",
+        "rect": "(x:0.00, y:-34.00, width:90.00, height:34.00)",
+        "position": "(396.00, -160.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayList/connect",
+        "rect": "(x:0.00, y:-36.00, width:94.00, height:36.00)",
+        "position": "(492.00, -160.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDetail/detail-start",
+        "rect": "(x:0.00, y:-34.00, width:190.00, height:34.00)",
+        "position": "(0.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDetail/detail-stop",
+        "rect": "(x:0.00, y:-34.00, width:190.00, height:34.00)",
+        "position": "(198.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDetail/detail-fuel",
+        "rect": "(x:0.00, y:-34.00, width:190.00, height:34.00)",
+        "position": "(396.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDetail/detail-next-stop",
+        "rect": "(x:0.00, y:-34.00, width:190.00, height:34.00)",
+        "position": "(0.00, -40.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDetail/detail-edit",
+        "rect": "(x:0.00, y:-34.00, width:190.00, height:34.00)",
+        "position": "(198.00, -40.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDetail/detail-list",
+        "rect": "(x:0.00, y:-34.00, width:190.00, height:34.00)",
+        "position": "(396.00, -40.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDetail/RailInput0",
+        "rect": "(x:0.00, y:-34.00, width:190.00, height:34.00)",
+        "position": "(0.00, -110.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDetail/RailInput1",
+        "rect": "(x:0.00, y:-34.00, width:190.00, height:34.00)",
+        "position": "(198.00, -110.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDetail/RailInput2",
+        "rect": "(x:0.00, y:-34.00, width:190.00, height:34.00)",
+        "position": "(396.00, -110.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDetail/configure",
+        "rect": "(x:0.00, y:-34.00, width:390.00, height:34.00)",
+        "position": "(0.00, -154.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDetail/cancel-pending",
+        "rect": "(x:0.00, y:-34.00, width:200.00, height:34.00)",
+        "position": "(396.00, -154.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDetail/defense",
+        "rect": "(x:0.00, y:-34.00, width:596.00, height:34.00)",
+        "position": "(0.00, -194.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraft/draft-add",
+        "rect": "(x:0.00, y:-36.00, width:190.00, height:36.00)",
+        "position": "(0.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraft/draft-next-stop",
+        "rect": "(x:0.00, y:-36.00, width:190.00, height:36.00)",
+        "position": "(198.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraft/draft-remove",
+        "rect": "(x:0.00, y:-36.00, width:190.00, height:36.00)",
+        "position": "(396.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraft/draft-up",
+        "rect": "(x:0.00, y:-36.00, width:190.00, height:36.00)",
+        "position": "(0.00, -42.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraft/draft-arrival",
+        "rect": "(x:0.00, y:-36.00, width:190.00, height:36.00)",
+        "position": "(198.00, -42.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraft/draft-departure",
+        "rect": "(x:0.00, y:-36.00, width:190.00, height:36.00)",
+        "position": "(396.00, -42.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraft/draft-validate",
+        "rect": "(x:0.00, y:-36.00, width:190.00, height:36.00)",
+        "position": "(0.00, -84.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraft/draft-cancel",
+        "rect": "(x:0.00, y:-36.00, width:190.00, height:36.00)",
+        "position": "(396.00, -84.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayArmament/weapon-next",
+        "rect": "(x:0.00, y:-34.00, width:190.00, height:34.00)",
+        "position": "(0.00, -80.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayArmament/weapon-install",
+        "rect": "(x:0.00, y:-34.00, width:190.00, height:34.00)",
+        "position": "(198.00, -80.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayArmament/weapon-charge",
+        "rect": "(x:0.00, y:-34.00, width:190.00, height:34.00)",
+        "position": "(396.00, -80.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayArmament/weapon-shape",
+        "rect": "(x:0.00, y:-34.00, width:190.00, height:34.00)",
+        "position": "(0.00, -122.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayArmament/weapon-upgrade",
+        "rect": "(x:0.00, y:-34.00, width:190.00, height:34.00)",
+        "position": "(198.00, -122.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayArmament/weapon-remove",
+        "rect": "(x:0.00, y:-34.00, width:190.00, height:34.00)",
+        "position": "(396.00, -122.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayArmament/weapon-back",
+        "rect": "(x:0.00, y:-34.00, width:190.00, height:34.00)",
+        "position": "(0.00, -164.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayConfirm/draft-commit",
+        "rect": "(x:0.00, y:-36.00, width:190.00, height:36.00)",
+        "position": "(0.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayConfirm/back-edit",
+        "rect": "(x:0.00, y:-36.00, width:190.00, height:36.00)",
+        "position": "(198.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayConfirm/cancel",
+        "rect": "(x:0.00, y:-36.00, width:190.00, height:36.00)",
+        "position": "(396.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDiscard/keep",
+        "rect": "(x:0.00, y:-36.00, width:190.00, height:36.00)",
+        "position": "(0.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDiscard/discard",
+        "rect": "(x:0.00, y:-36.00, width:190.00, height:36.00)",
+        "position": "(198.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations",
+        "rect": "(x:0.00, y:-810.00, width:320.00, height:810.00)",
+        "position": "(628.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/draft-row:0",
+        "rect": "(x:0.00, y:-36.00, width:300.00, height:36.00)",
+        "position": "(10.00, -108.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/draft-row:1",
+        "rect": "(x:0.00, y:-36.00, width:300.00, height:36.00)",
+        "position": "(10.00, -150.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/draft-row:2",
+        "rect": "(x:0.00, y:-36.00, width:300.00, height:36.00)",
+        "position": "(10.00, -192.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/draft-row:3",
+        "rect": "(x:0.00, y:-36.00, width:300.00, height:36.00)",
+        "position": "(10.00, -234.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/draft-prev",
+        "rect": "(x:0.00, y:-36.00, width:145.00, height:36.00)",
+        "position": "(10.00, -280.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/draft-next",
+        "rect": "(x:0.00, y:-36.00, width:145.00, height:36.00)",
+        "position": "(165.00, -280.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/down",
+        "rect": "(x:0.00, y:-36.00, width:145.00, height:36.00)",
+        "position": "(10.00, -322.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/first",
+        "rect": "(x:0.00, y:-36.00, width:145.00, height:36.00)",
+        "position": "(165.00, -322.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/open-loop",
+        "rect": "(x:0.00, y:-36.00, width:145.00, height:36.00)",
+        "position": "(10.00, -364.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/close-loop",
+        "rect": "(x:0.00, y:-36.00, width:145.00, height:36.00)",
+        "position": "(165.00, -364.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/map-arrival",
+        "rect": "(x:0.00, y:-36.00, width:96.00, height:36.00)",
+        "position": "(10.00, -408.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/map-departure",
+        "rect": "(x:0.00, y:-36.00, width:96.00, height:36.00)",
+        "position": "(112.00, -408.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/map-cancel",
+        "rect": "(x:0.00, y:-36.00, width:96.00, height:36.00)",
+        "position": "(214.00, -408.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/issue:0",
+        "rect": "(x:0.00, y:-36.00, width:300.00, height:36.00)",
+        "position": "(10.00, -644.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/issue:1",
+        "rect": "(x:0.00, y:-36.00, width:300.00, height:36.00)",
+        "position": "(10.00, -682.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/issue:2",
+        "rect": "(x:0.00, y:-36.00, width:300.00, height:36.00)",
+        "position": "(10.00, -720.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/issue-prev",
+        "rect": "(x:0.00, y:-36.00, width:145.00, height:36.00)",
+        "position": "(10.00, -762.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/issue-next",
+        "rect": "(x:0.00, y:-36.00, width:145.00, height:36.00)",
+        "position": "(165.00, -762.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayStationContext",
+        "rect": "(x:0.00, y:-390.00, width:320.00, height:390.00)",
+        "position": "(628.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayStationContext/station-row:0",
+        "rect": "(x:0.00, y:-36.00, width:300.00, height:36.00)",
+        "position": "(10.00, -90.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayStationContext/station-row:1",
+        "rect": "(x:0.00, y:-36.00, width:300.00, height:36.00)",
+        "position": "(10.00, -132.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayStationContext/station-row:2",
+        "rect": "(x:0.00, y:-36.00, width:300.00, height:36.00)",
+        "position": "(10.00, -174.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayStationContext/station-row:3",
+        "rect": "(x:0.00, y:-36.00, width:300.00, height:36.00)",
+        "position": "(10.00, -216.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayStationContext/station-prev",
+        "rect": "(x:0.00, y:-36.00, width:145.00, height:36.00)",
+        "position": "(10.00, -268.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayStationContext/station-next",
+        "rect": "(x:0.00, y:-36.00, width:145.00, height:36.00)",
+        "position": "(165.00, -268.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayStationContext/station-context",
+        "rect": "(x:0.00, y:-36.00, width:300.00, height:36.00)",
+        "position": "(10.00, -310.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayConnection/connection-from",
+        "rect": "(x:0.00, y:-36.00, width:586.00, height:36.00)",
+        "position": "(0.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayConnection/connection-to",
+        "rect": "(x:0.00, y:-36.00, width:586.00, height:36.00)",
+        "position": "(0.00, -44.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayConnection/connection-from-port",
+        "rect": "(x:0.00, y:-36.00, width:286.00, height:36.00)",
+        "position": "(0.00, -88.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayConnection/connection-to-port",
+        "rect": "(x:0.00, y:-36.00, width:286.00, height:36.00)",
+        "position": "(300.00, -88.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayConnection/connection-preview",
+        "rect": "(x:0.00, y:-36.00, width:186.00, height:36.00)",
+        "position": "(0.00, -136.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayConnection/connection-confirm",
+        "rect": "(x:0.00, y:-36.00, width:186.00, height:36.00)",
+        "position": "(200.00, -136.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayConnection/connection-cancel",
+        "rect": "(x:0.00, y:-36.00, width:186.00, height:36.00)",
+        "position": "(400.00, -136.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayTitleIcon",
+        "rect": "(x:0.00, y:-30.00, width:26.00, height:30.00)",
+        "position": "(14.00, -7.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayToolbar",
+        "rect": "(x:0.00, y:-88.00, width:620.00, height:88.00)",
+        "position": "(0.00, -578.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayToolbar/rail-1",
+        "rect": "(x:0.00, y:-36.00, width:204.00, height:36.00)",
+        "position": "(0.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayToolbar/rail-2",
+        "rect": "(x:0.00, y:-36.00, width:204.00, height:36.00)",
+        "position": "(208.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayToolbar/rail-3",
+        "rect": "(x:0.00, y:-36.00, width:204.00, height:36.00)",
+        "position": "(416.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayToolbar/rail-4",
+        "rect": "(x:0.00, y:-36.00, width:204.00, height:36.00)",
+        "position": "(0.00, -42.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayToolbar/rail-5",
+        "rect": "(x:0.00, y:-36.00, width:204.00, height:36.00)",
+        "position": "(208.00, -42.00)"
+      },
+      {
+        "path": "GameplayCanvas/TopBar",
+        "rect": "(x:-792.00, y:-60.00, width:1584.00, height:60.00)",
+        "position": "(152.00, -16.00)"
+      },
+      {
+        "path": "GameplayCanvas/TopBar/pause",
+        "rect": "(x:-144.00, y:-44.00, width:144.00, height:44.00)",
+        "position": "(-168.00, -8.00)"
+      },
+      {
+        "path": "GameplayCanvas/TopBar/TimeSummary",
+        "rect": "(x:0.00, y:-60.00, width:420.00, height:60.00)",
+        "position": "(0.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/TopBar/ModeSummary",
+        "rect": "(x:0.00, y:-60.00, width:204.00, height:60.00)",
+        "position": "(352.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/TopBar/PowerSummary",
+        "rect": "(x:-284.00, y:-60.00, width:284.00, height:60.00)",
+        "position": "(-330.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/TopBar/PowerSummary/EnergyIcon",
+        "rect": "(x:0.00, y:-32.00, width:26.00, height:32.00)",
+        "position": "(10.00, -12.00)"
+      },
+      {
+        "path": "GameplayCanvas/TopBar/PowerSummary/PowerTrack",
+        "rect": "(x:0.00, y:-6.00, width:148.00, height:6.00)",
+        "position": "(44.00, -40.00)"
+      },
+      {
+        "path": "GameplayCanvas/TopBar/PowerSummary/PowerTrack/PowerFill",
+        "rect": "(x:-74.00, y:-3.00, width:148.00, height:6.00)",
+        "position": "(0.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/TopBar/menu-fold",
+        "rect": "(x:-156.00, y:-44.00, width:156.00, height:44.00)",
+        "position": "(0.00, -8.00)"
+      },
+      {
+        "path": "GameplayCanvas/LeftStatus",
+        "rect": "(x:0.00, y:-640.00, width:288.00, height:640.00)",
+        "position": "(16.00, -16.00)"
+      },
+      {
+        "path": "GameplayCanvas/LeftStatus/HealthPanel",
+        "rect": "(x:-144.00, y:-76.00, width:288.00, height:76.00)",
+        "position": "(0.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/LeftStatus/HealthPanel/HealthTrack",
+        "rect": "(x:0.00, y:-6.00, width:156.00, height:6.00)",
+        "position": "(62.00, -62.00)"
+      },
+      {
+        "path": "GameplayCanvas/LeftStatus/HealthPanel/HealthTrack/HealthFill",
+        "rect": "(x:-78.00, y:-3.00, width:156.00, height:6.00)",
+        "position": "(0.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/LeftStatus/HealthPanel/NexusIcon",
+        "rect": "(x:0.00, y:-40.00, width:40.00, height:40.00)",
+        "position": "(12.00, -18.00)"
+      },
+      {
+        "path": "GameplayCanvas/LeftStatus/ClockPanel",
+        "rect": "(x:-144.00, y:-156.00, width:288.00, height:156.00)",
+        "position": "(0.00, -84.00)"
+      },
+      {
+        "path": "GameplayCanvas/LeftStatus/ClockPanel/clock-fold",
+        "rect": "(x:-144.00, y:-28.00, width:288.00, height:28.00)",
+        "position": "(0.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/LeftStatus/ClockPanel/ClockBody/ClockDial/ClockArtwork",
+        "rect": "(x:-60.00, y:-60.00, width:120.00, height:120.00)",
+        "position": "(0.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/LeftStatus/ClockPanel/ClockBody/ClockDial/ClockHand",
+        "rect": "(x:-1.00, y:0.00, width:2.00, height:49.00)",
+        "position": "(0.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/LeftStatus/ResourcePanel",
+        "rect": "(x:0.00, y:-280.00, width:288.00, height:280.00)",
+        "position": "(0.00, -248.00)"
+      },
+      {
+        "path": "GameplayCanvas/LeftStatus/ResourcePanel/resource-fold",
+        "rect": "(x:0.00, y:-28.00, width:288.00, height:28.00)",
+        "position": "(0.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/LeftStatus/ResourcePanel/ResourceBody/ResourceScroll/Viewport",
+        "rect": "(x:-136.00, y:-100.00, width:272.00, height:200.00)",
+        "position": "(0.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/LeftStatus/ResourcePanel/ResourceBody/ResourceScroll/Viewport/Content/ResourceIcon_copper",
+        "rect": "(x:0.00, y:-20.00, width:20.00, height:20.00)",
+        "position": "(0.00, -2.00)"
+      },
+      {
+        "path": "GameplayCanvas/LeftStatus/ResourcePanel/ResourceBody/ResourceScroll/Viewport/Content/ResourceIcon_iron",
+        "rect": "(x:0.00, y:-20.00, width:20.00, height:20.00)",
+        "position": "(0.00, -28.00)"
+      },
+      {
+        "path": "GameplayCanvas/LeftStatus/ResourcePanel/ResourceBody/ResourceScroll/Viewport/Content/ResourceIcon_nanometal",
+        "rect": "(x:0.00, y:-20.00, width:20.00, height:20.00)",
+        "position": "(0.00, -54.00)"
+      },
+      {
+        "path": "GameplayCanvas/LeftStatus/ResourcePanel/ResourceBody/ResourceScroll/Viewport/Content/ResourceIcon_plasma_ore",
+        "rect": "(x:0.00, y:-20.00, width:20.00, height:20.00)",
+        "position": "(0.00, -80.00)"
+      },
+      {
+        "path": "GameplayCanvas/LeftStatus/ResourcePanel/ResourceBody/ResourceScroll/Viewport/Content/ResourceIcon_titanium",
+        "rect": "(x:0.00, y:-20.00, width:20.00, height:20.00)",
+        "position": "(0.00, -106.00)"
+      },
+      {
+        "path": "GameplayCanvas/LeftStatus/ResourcePanel/ResourceBody/ResourceScroll/Viewport/Content/ResourceIcon_tungsten",
+        "rect": "(x:0.00, y:-20.00, width:20.00, height:20.00)",
+        "position": "(0.00, -132.00)"
+      },
+      {
+        "path": "GameplayCanvas/LeftStatus/ResourcePanel/ResourceBody/ResourceScroll/Viewport/Content/ResourceIcon_uranium",
+        "rect": "(x:0.00, y:-20.00, width:20.00, height:20.00)",
+        "position": "(0.00, -158.00)"
+      },
+      {
+        "path": "GameplayCanvas/LeftStatus/ResourcePanel/ResourceBody/resources-all",
+        "rect": "(x:-136.00, y:0.00, width:272.00, height:28.00)",
+        "position": "(0.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/RightStatus",
+        "rect": "(x:-272.00, y:-700.00, width:272.00, height:700.00)",
+        "position": "(-16.00, -84.00)"
+      },
+      {
+        "path": "GameplayCanvas/RightStatus/SelectionPanel",
+        "rect": "(x:-136.00, y:-400.00, width:272.00, height:400.00)",
+        "position": "(0.00, -300.00)"
+      },
+      {
+        "path": "GameplayCanvas/RightStatus/SelectionPanel/selection-close",
+        "rect": "(x:-30.00, y:-28.00, width:30.00, height:28.00)",
+        "position": "(-8.00, -4.00)"
+      },
+      {
+        "path": "GameplayCanvas/RightStatus/SelectionPanel/SelectionScroll/Viewport",
+        "rect": "(x:-124.00, y:-111.00, width:248.00, height:222.00)",
+        "position": "(0.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/RightStatus/SelectionPanel/SelectionPortrait",
+        "rect": "(x:0.00, y:-66.00, width:66.00, height:66.00)",
+        "position": "(8.00, -12.00)"
+      },
+      {
+        "path": "GameplayCanvas/RightStatus/SelectionPanel/SelectionHealthTrack",
+        "rect": "(x:0.00, y:-5.00, width:248.00, height:5.00)",
+        "position": "(12.00, -86.00)"
+      },
+      {
+        "path": "GameplayCanvas/RightStatus/SelectionPanel/SelectionHealthTrack/SelectionHealthFill",
+        "rect": "(x:-124.00, y:-2.50, width:248.00, height:5.00)",
+        "position": "(0.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/RightStatus/SelectionPanel/UpgradeControls/upgrade",
+        "rect": "(x:0.00, y:-32.00, width:248.00, height:32.00)",
+        "position": "(0.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/RightStatus/SelectionPanel/station-railway",
+        "rect": "(x:0.00, y:0.00, width:248.00, height:32.00)",
+        "position": "(12.00, 48.00)"
+      },
+      {
+        "path": "GameplayCanvas/RightStatus/MinimapPanel",
+        "rect": "(x:-136.00, y:-292.00, width:272.00, height:292.00)",
+        "position": "(0.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/RightStatus/MinimapPanel/minimap-fold",
+        "rect": "(x:0.00, y:-28.00, width:272.00, height:28.00)",
+        "position": "(0.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar",
+        "rect": "(x:-944.00, y:0.00, width:1888.00, height:216.00)",
+        "position": "(0.00, 16.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/edit",
+        "rect": "(x:-128.00, y:-36.00, width:128.00, height:36.00)",
+        "position": "(-8.00, -4.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/EditActions/confirm",
+        "rect": "(x:0.00, y:-36.00, width:94.00, height:36.00)",
+        "position": "(0.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/EditActions/cancel",
+        "rect": "(x:0.00, y:-36.00, width:94.00, height:36.00)",
+        "position": "(102.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/WorkspaceConstruction",
+        "rect": "(x:0.00, y:-36.00, width:152.00, height:36.00)",
+        "position": "(8.00, -6.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/power-fold",
+        "rect": "(x:-128.00, y:-36.00, width:128.00, height:36.00)",
+        "position": "(-348.00, -4.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport",
+        "rect": "(x:-936.00, y:-45.00, width:1872.00, height:90.00)",
+        "position": "(0.00, 6.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-0",
+        "rect": "(x:0.00, y:-84.00, width:228.00, height:84.00)",
+        "position": "(0.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-0/Preview",
+        "rect": "(x:0.00, y:-72.00, width:72.00, height:72.00)",
+        "position": "(6.00, -6.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-1",
+        "rect": "(x:0.00, y:-84.00, width:228.00, height:84.00)",
+        "position": "(234.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-1/Preview",
+        "rect": "(x:0.00, y:-72.00, width:72.00, height:72.00)",
+        "position": "(6.00, -6.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-2",
+        "rect": "(x:0.00, y:-84.00, width:228.00, height:84.00)",
+        "position": "(468.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-2/Preview",
+        "rect": "(x:0.00, y:-72.00, width:72.00, height:72.00)",
+        "position": "(6.00, -6.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-3",
+        "rect": "(x:0.00, y:-84.00, width:228.00, height:84.00)",
+        "position": "(702.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-3/Preview",
+        "rect": "(x:0.00, y:-72.00, width:72.00, height:72.00)",
+        "position": "(6.00, -6.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-4",
+        "rect": "(x:0.00, y:-84.00, width:228.00, height:84.00)",
+        "position": "(936.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-4/Preview",
+        "rect": "(x:0.00, y:-72.00, width:72.00, height:72.00)",
+        "position": "(6.00, -6.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-5",
+        "rect": "(x:0.00, y:-84.00, width:228.00, height:84.00)",
+        "position": "(1170.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-5/Preview",
+        "rect": "(x:0.00, y:-72.00, width:72.00, height:72.00)",
+        "position": "(6.00, -6.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-6",
+        "rect": "(x:0.00, y:-84.00, width:228.00, height:84.00)",
+        "position": "(1404.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-6/Preview",
+        "rect": "(x:0.00, y:-72.00, width:72.00, height:72.00)",
+        "position": "(6.00, -6.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-7",
+        "rect": "(x:0.00, y:-84.00, width:228.00, height:84.00)",
+        "position": "(1638.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-7/Preview",
+        "rect": "(x:0.00, y:-72.00, width:72.00, height:72.00)",
+        "position": "(6.00, -6.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-8",
+        "rect": "(x:0.00, y:-84.00, width:228.00, height:84.00)",
+        "position": "(1872.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-8/Preview",
+        "rect": "(x:0.00, y:-72.00, width:72.00, height:72.00)",
+        "position": "(6.00, -6.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-9",
+        "rect": "(x:0.00, y:-84.00, width:228.00, height:84.00)",
+        "position": "(2106.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-9/Preview",
+        "rect": "(x:0.00, y:-72.00, width:72.00, height:72.00)",
+        "position": "(6.00, -6.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-10",
+        "rect": "(x:0.00, y:-84.00, width:228.00, height:84.00)",
+        "position": "(2340.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-10/Preview",
+        "rect": "(x:0.00, y:-72.00, width:72.00, height:72.00)",
+        "position": "(6.00, -6.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-11",
+        "rect": "(x:0.00, y:-84.00, width:228.00, height:84.00)",
+        "position": "(2574.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-11/Preview",
+        "rect": "(x:0.00, y:-72.00, width:72.00, height:72.00)",
+        "position": "(6.00, -6.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-12",
+        "rect": "(x:0.00, y:-84.00, width:228.00, height:84.00)",
+        "position": "(2808.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-12/Preview",
+        "rect": "(x:0.00, y:-72.00, width:72.00, height:72.00)",
+        "position": "(6.00, -6.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-13",
+        "rect": "(x:0.00, y:-84.00, width:228.00, height:84.00)",
+        "position": "(3042.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-13/Preview",
+        "rect": "(x:0.00, y:-72.00, width:72.00, height:72.00)",
+        "position": "(6.00, -6.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-14",
+        "rect": "(x:0.00, y:-84.00, width:228.00, height:84.00)",
+        "position": "(3276.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-14/Preview",
+        "rect": "(x:0.00, y:-72.00, width:72.00, height:72.00)",
+        "position": "(6.00, -6.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-15",
+        "rect": "(x:0.00, y:-84.00, width:228.00, height:84.00)",
+        "position": "(3510.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-15/Preview",
+        "rect": "(x:0.00, y:-72.00, width:72.00, height:72.00)",
+        "position": "(6.00, -6.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-16",
+        "rect": "(x:0.00, y:-84.00, width:228.00, height:84.00)",
+        "position": "(3744.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-16/Preview",
+        "rect": "(x:0.00, y:-72.00, width:72.00, height:72.00)",
+        "position": "(6.00, -6.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-17",
+        "rect": "(x:0.00, y:-84.00, width:228.00, height:84.00)",
+        "position": "(3978.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-17/Preview",
+        "rect": "(x:0.00, y:-72.00, width:72.00, height:72.00)",
+        "position": "(6.00, -6.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-18",
+        "rect": "(x:0.00, y:-84.00, width:228.00, height:84.00)",
+        "position": "(4212.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-18/Preview",
+        "rect": "(x:0.00, y:-72.00, width:72.00, height:72.00)",
+        "position": "(6.00, -6.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-19",
+        "rect": "(x:0.00, y:-84.00, width:228.00, height:84.00)",
+        "position": "(4446.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-19/Preview",
+        "rect": "(x:0.00, y:-72.00, width:72.00, height:72.00)",
+        "position": "(6.00, -6.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-20",
+        "rect": "(x:0.00, y:-84.00, width:228.00, height:84.00)",
+        "position": "(4680.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-20/Preview",
+        "rect": "(x:0.00, y:-72.00, width:72.00, height:72.00)",
+        "position": "(6.00, -6.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-21",
+        "rect": "(x:0.00, y:-84.00, width:228.00, height:84.00)",
+        "position": "(4914.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-21/Preview",
+        "rect": "(x:0.00, y:-72.00, width:72.00, height:72.00)",
+        "position": "(6.00, -6.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-22",
+        "rect": "(x:0.00, y:-84.00, width:228.00, height:84.00)",
+        "position": "(5148.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-22/Preview",
+        "rect": "(x:0.00, y:-72.00, width:72.00, height:72.00)",
+        "position": "(6.00, -6.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-23",
+        "rect": "(x:0.00, y:-84.00, width:228.00, height:84.00)",
+        "position": "(5382.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-23/Preview",
+        "rect": "(x:0.00, y:-72.00, width:72.00, height:72.00)",
+        "position": "(6.00, -6.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-24",
+        "rect": "(x:0.00, y:-84.00, width:228.00, height:84.00)",
+        "position": "(5616.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-24/Preview",
+        "rect": "(x:0.00, y:-72.00, width:72.00, height:72.00)",
+        "position": "(6.00, -6.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/Build_railway.station",
+        "rect": "(x:0.00, y:-84.00, width:228.00, height:84.00)",
+        "position": "(5850.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/Build_railway.station/Preview",
+        "rect": "(x:0.00, y:-72.00, width:72.00, height:72.00)",
+        "position": "(6.00, -6.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/Build_railway.track",
+        "rect": "(x:0.00, y:-84.00, width:228.00, height:84.00)",
+        "position": "(6084.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/Build_railway.track/Preview",
+        "rect": "(x:0.00, y:-72.00, width:72.00, height:72.00)",
+        "position": "(6.00, -6.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/Build_railway.coal",
+        "rect": "(x:0.00, y:-84.00, width:228.00, height:84.00)",
+        "position": "(6318.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/Build_railway.coal/Preview",
+        "rect": "(x:0.00, y:-72.00, width:72.00, height:72.00)",
+        "position": "(6.00, -6.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/CatalogScrollbar",
+        "rect": "(x:-936.00, y:0.00, width:1872.00, height:6.00)",
+        "position": "(0.00, 2.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/CatalogScrollbar/SlidingArea/Handle",
+        "rect": "(x:-267.67, y:-3.00, width:535.35, height:6.00)",
+        "position": "(0.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CategoryStrip/category--1",
+        "rect": "(x:0.00, y:-36.00, width:96.00, height:36.00)",
+        "position": "(0.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CategoryStrip/category--1/CategoryIcon",
+        "rect": "(x:0.00, y:-20.00, width:20.00, height:20.00)",
+        "position": "(8.00, -8.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CategoryStrip/category-0",
+        "rect": "(x:0.00, y:-36.00, width:96.00, height:36.00)",
+        "position": "(100.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CategoryStrip/category-0/CategoryIcon",
+        "rect": "(x:0.00, y:-20.00, width:20.00, height:20.00)",
+        "position": "(8.00, -8.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CategoryStrip/category-1",
+        "rect": "(x:0.00, y:-36.00, width:96.00, height:36.00)",
+        "position": "(200.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CategoryStrip/category-1/CategoryIcon",
+        "rect": "(x:0.00, y:-20.00, width:20.00, height:20.00)",
+        "position": "(8.00, -8.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CategoryStrip/category-2",
+        "rect": "(x:0.00, y:-36.00, width:96.00, height:36.00)",
+        "position": "(300.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CategoryStrip/category-2/CategoryIcon",
+        "rect": "(x:0.00, y:-20.00, width:20.00, height:20.00)",
+        "position": "(8.00, -8.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CategoryStrip/category-3",
+        "rect": "(x:0.00, y:-36.00, width:96.00, height:36.00)",
+        "position": "(400.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CategoryStrip/category-3/CategoryIcon",
+        "rect": "(x:0.00, y:-20.00, width:20.00, height:20.00)",
+        "position": "(8.00, -8.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/WorkspaceRailway",
+        "rect": "(x:0.00, y:-36.00, width:152.00, height:36.00)",
+        "position": "(168.00, -6.00)"
+      },
+      {
+        "path": "GameplayCanvas/Notifications",
+        "rect": "(x:-648.00, y:0.00, width:1296.00, height:52.00)",
+        "position": "(8.00, 240.00)"
+      },
+      {
+        "path": "GameplayCanvas/Notifications/FirstLoopObjective",
+        "rect": "(x:-648.00, y:0.00, width:1296.00, height:64.00)",
+        "position": "(0.00, 12.00)"
+      },
+      {
+        "path": "GameplayCanvas/ProgressAndSave",
+        "rect": "(x:-580.00, y:-420.00, width:580.00, height:420.00)",
+        "position": "(-304.00, -84.00)"
+      },
+      {
+        "path": "GameplayCanvas/ProgressAndSave/menu-close",
+        "rect": "(x:-60.00, y:-28.00, width:60.00, height:28.00)",
+        "position": "(-8.00, -8.00)"
+      },
+      {
+        "path": "GameplayCanvas/ProgressAndSave/MenuScroll/Viewport",
+        "rect": "(x:-282.00, y:-182.00, width:564.00, height:364.00)",
+        "position": "(0.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ProgressAndSave/MenuScroll/Viewport/Content/SaveControls/save",
+        "rect": "(x:0.00, y:-34.00, width:168.00, height:34.00)",
+        "position": "(0.00, -128.00)"
+      },
+      {
+        "path": "GameplayCanvas/ProgressAndSave/MenuScroll/Viewport/Content/SaveControls/load",
+        "rect": "(x:0.00, y:-34.00, width:168.00, height:34.00)",
+        "position": "(180.00, -128.00)"
+      },
+      {
+        "path": "GameplayCanvas/ProgressAndSave/MenuScroll/Viewport/Content/SaveControls/new-game",
+        "rect": "(x:0.00, y:-34.00, width:168.00, height:34.00)",
+        "position": "(360.00, -128.00)"
+      },
+      {
+        "path": "GameplayCanvas/ProgressAndSave/MenuScroll/Viewport/Content/SaveControls/NewGameConfirmation/new-game-confirm",
+        "rect": "(x:0.00, y:-34.00, width:254.00, height:34.00)",
+        "position": "(0.00, -30.00)"
+      },
+      {
+        "path": "GameplayCanvas/ProgressAndSave/MenuScroll/Viewport/Content/SaveControls/NewGameConfirmation/new-game-cancel",
+        "rect": "(x:0.00, y:-34.00, width:254.00, height:34.00)",
+        "position": "(266.00, -30.00)"
+      },
+      {
+        "path": "GameplayCanvas/ProgressAndSave/MenuScroll/Viewport/Content/MapProgress/orb-craft",
+        "rect": "(x:0.00, y:-38.00, width:530.00, height:38.00)",
+        "position": "(0.00, -234.00)"
+      },
+      {
+        "path": "GameplayCanvas/ProgressAndSave/MenuScroll/Viewport/Content/developer-fold",
+        "rect": "(x:0.00, y:-34.00, width:540.00, height:34.00)",
+        "position": "(0.00, -606.00)"
+      },
+      {
+        "path": "GameplayCanvas/PowerDetails",
+        "rect": "(x:-470.00, y:-260.00, width:470.00, height:260.00)",
+        "position": "(-304.00, -84.00)"
+      },
+      {
+        "path": "GameplayCanvas/PowerDetails/power-close",
+        "rect": "(x:0.00, y:-32.00, width:454.00, height:32.00)",
+        "position": "(8.00, -8.00)"
+      },
+      {
+        "path": "GameplayCanvas/PowerDetails/PowerScroll/Viewport",
+        "rect": "(x:-227.00, y:-102.00, width:454.00, height:204.00)",
+        "position": "(0.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/Developer/DeveloperPanel",
+        "rect": "(x:-295.00, y:-215.00, width:590.00, height:430.00)",
+        "position": "(0.00, 5.00)"
+      },
+      {
+        "path": "GameplayCanvas/Developer/DeveloperPanel/developer-close",
+        "rect": "(x:0.00, y:-32.00, width:574.00, height:32.00)",
+        "position": "(8.00, -8.00)"
+      },
+      {
+        "path": "GameplayCanvas/Developer/DeveloperPanel/spawn",
+        "rect": "(x:0.00, y:-36.00, width:170.00, height:36.00)",
+        "position": "(220.00, -158.00)"
+      },
+      {
+        "path": "GameplayCanvas/Developer/DeveloperPanel/spawn-air",
+        "rect": "(x:0.00, y:-36.00, width:184.00, height:36.00)",
+        "position": "(398.00, -158.00)"
+      },
+      {
+        "path": "GameplayCanvas/Developer/DeveloperPanel/reset",
+        "rect": "(x:0.00, y:-36.00, width:188.00, height:36.00)",
+        "position": "(8.00, -204.00)"
+      },
+      {
+        "path": "GameplayCanvas/Developer/DeveloperPanel/run",
+        "rect": "(x:0.00, y:-36.00, width:184.00, height:36.00)",
+        "position": "(204.00, -204.00)"
+      },
+      {
+        "path": "GameplayCanvas/Developer/DeveloperPanel/day",
+        "rect": "(x:0.00, y:-36.00, width:280.00, height:36.00)",
+        "position": "(8.00, -250.00)"
+      },
+      {
+        "path": "GameplayCanvas/Developer/DeveloperPanel/night",
+        "rect": "(x:0.00, y:-36.00, width:284.00, height:36.00)",
+        "position": "(298.00, -250.00)"
+      },
+      {
+        "path": "GameplayCanvas/Developer/DeveloperPanel/SpawnAmount",
+        "rect": "(x:0.00, y:-36.00, width:204.00, height:36.00)",
+        "position": "(8.00, -158.00)"
+      },
+      {
+        "path": "GameplayCanvas/TestShortcuts",
+        "rect": "(x:-225.00, y:-44.00, width:450.00, height:44.00)",
+        "position": "(0.00, -126.00)"
+      },
+      {
+        "path": "GameplayCanvas/TestShortcuts/infinite-resources",
+        "rect": "(x:0.00, y:-36.00, width:218.00, height:36.00)",
+        "position": "(4.00, -4.00)"
+      },
+      {
+        "path": "GameplayCanvas/TestShortcuts/quick-day",
+        "rect": "(x:0.00, y:-36.00, width:108.00, height:36.00)",
+        "position": "(226.00, -4.00)"
+      },
+      {
+        "path": "GameplayCanvas/TestShortcuts/quick-night",
+        "rect": "(x:0.00, y:-36.00, width:108.00, height:36.00)",
+        "position": "(338.00, -4.00)"
+      }
+    ]
+  },
+  {
+    "scene": "OpenWorldSandbox",
+    "hud": "GameplayCanvas",
+    "rail": "GameplayCanvas/RailwayInterface",
+    "sections": [
+      {
+        "id": "clock",
+        "path": "GameplayCanvas/LeftStatus/ClockPanel/ClockBody"
+      },
+      {
+        "id": "resources",
+        "path": "GameplayCanvas/LeftStatus/ResourcePanel/ResourceBody"
+      },
+      {
+        "id": "minimap",
+        "path": "GameplayCanvas/RightStatus/MinimapPanel/MinimapBody"
+      },
+      {
+        "id": "selection",
+        "path": "GameplayCanvas/RightStatus/SelectionPanel"
+      },
+      {
+        "id": "upgrade",
+        "path": "GameplayCanvas/RightStatus/SelectionPanel/UpgradeControls"
+      },
+      {
+        "id": "edit-actions",
+        "path": "GameplayCanvas/ConstructionBar/EditActions"
+      },
+      {
+        "id": "inventory",
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody"
+      },
+      {
+        "id": "placement-hint",
+        "path": "GameplayCanvas/Notifications/placement-hint"
+      },
+      {
+        "id": "menu",
+        "path": "GameplayCanvas/ProgressAndSave"
+      },
+      {
+        "id": "save-controls",
+        "path": "GameplayCanvas/ProgressAndSave/MenuScroll/Viewport/Content/SaveControls"
+      },
+      {
+        "id": "new-game-confirmation",
+        "path": "GameplayCanvas/ProgressAndSave/MenuScroll/Viewport/Content/SaveControls/NewGameConfirmation"
+      },
+      {
+        "id": "map-progress",
+        "path": "GameplayCanvas/ProgressAndSave/MenuScroll/Viewport/Content/MapProgress"
+      },
+      {
+        "id": "power",
+        "path": "GameplayCanvas/PowerDetails"
+      },
+      {
+        "id": "developer",
+        "path": "GameplayCanvas/Developer"
+      },
+      {
+        "id": "developer-body",
+        "path": "GameplayCanvas/Developer/DeveloperPanel"
+      },
+      {
+        "id": "run",
+        "path": "GameplayCanvas/Developer/DeveloperPanel/run"
+      },
+      {
+        "id": "test-shortcuts",
+        "path": "GameplayCanvas/TestShortcuts"
+      },
+      {
+        "id": "first-loop",
+        "path": "GameplayCanvas/Notifications/FirstLoopObjective"
+      }
+    ],
+    "commands": [
+      {
+        "command": "open",
+        "path": "GameplayCanvas/ConstructionBar/WorkspaceRailway",
+        "label": "철도 관리"
+      },
+      {
+        "command": "station",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayToolbar/rail-1",
+        "label": "선택 역 노선"
+      },
+      {
+        "command": "build:station",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayToolbar/rail-2",
+        "label": "기차역"
+      },
+      {
+        "command": "build:track",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayToolbar/rail-3",
+        "label": "선로"
+      },
+      {
+        "command": "build:coal",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayToolbar/rail-4",
+        "label": "석탄 생성기"
+      },
+      {
+        "command": "rotate",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayToolbar/rail-5",
+        "label": "역 방향 90°"
+      },
+      {
+        "command": "close",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/rail-close",
+        "label": "닫기 · 초안 취소"
+      },
+      {
+        "command": "row:0",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayList/RouteRow0",
+        "label": "노선"
+      },
+      {
+        "command": "row:1",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayList/RouteRow1",
+        "label": "노선"
+      },
+      {
+        "command": "row:2",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayList/RouteRow2",
+        "label": "노선"
+      },
+      {
+        "command": "row:3",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayList/RouteRow3",
+        "label": "노선"
+      },
+      {
+        "command": "page-prev",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayList/list-page-prev",
+        "label": "이전 목록"
+      },
+      {
+        "command": "page-next",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayList/list-page-next",
+        "label": "다음 목록"
+      },
+      {
+        "command": "new",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayList/list-new",
+        "label": "새 노선"
+      },
+      {
+        "command": "connect",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayList/connect",
+        "label": "역 연결"
+      },
+      {
+        "command": "start",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDetail/detail-start",
+        "label": "운행 시작"
+      },
+      {
+        "command": "stop",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDetail/detail-stop",
+        "label": "다음 역 중지"
+      },
+      {
+        "command": "fuel",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDetail/detail-fuel",
+        "label": "석탄 +50"
+      },
+      {
+        "command": "next-stop",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDetail/detail-next-stop",
+        "label": "다음 역 설정"
+      },
+      {
+        "command": "edit",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDetail/detail-edit",
+        "label": "노선 편집"
+      },
+      {
+        "command": "list",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDetail/detail-list",
+        "label": "목록으로"
+      },
+      {
+        "command": "configure",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDetail/configure",
+        "label": "선택 역 화물 설정 저장"
+      },
+      {
+        "command": "cancel-pending",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDetail/cancel-pending",
+        "label": "예약 변경 취소"
+      },
+      {
+        "command": "defense",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDetail/defense",
+        "label": "기차 방어 · 장착 / 충전"
+      },
+      {
+        "command": "add",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraft/draft-add",
+        "label": "선택 역 추가"
+      },
+      {
+        "command": "next-stop",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraft/draft-next-stop",
+        "label": "다음 역 선택"
+      },
+      {
+        "command": "remove",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraft/draft-remove",
+        "label": "선택 역 제거"
+      },
+      {
+        "command": "up",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraft/draft-up",
+        "label": "선택 역 위로"
+      },
+      {
+        "command": "arrival",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraft/draft-arrival",
+        "label": "진입 포트 변경"
+      },
+      {
+        "command": "departure",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraft/draft-departure",
+        "label": "진출 포트 변경"
+      },
+      {
+        "command": "validate",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraft/draft-validate",
+        "label": "순환 검증"
+      },
+      {
+        "command": "cancel",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraft/draft-cancel",
+        "label": "초안 취소"
+      },
+      {
+        "command": "weapon-next",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayArmament/weapon-next",
+        "label": "다음 장착 후보"
+      },
+      {
+        "command": "weapon-install",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayArmament/weapon-install",
+        "label": "선택 방어 장착"
+      },
+      {
+        "command": "weapon-charge",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayArmament/weapon-charge",
+        "label": "축전지 충전"
+      },
+      {
+        "command": "weapon-shape",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayArmament/weapon-shape",
+        "label": "빈 칸 형태 변경"
+      },
+      {
+        "command": "weapon-upgrade",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayArmament/weapon-upgrade",
+        "label": "장착 방어 강화"
+      },
+      {
+        "command": "weapon-remove",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayArmament/weapon-remove",
+        "label": "방어 해제 · 환급 없음"
+      },
+      {
+        "command": "weapon-back",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayArmament/weapon-back",
+        "label": "노선 상세로"
+      },
+      {
+        "command": "commit",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayConfirm/draft-commit",
+        "label": "노선 확정"
+      },
+      {
+        "command": "back-edit",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayConfirm/back-edit",
+        "label": "편집으로 돌아가기"
+      },
+      {
+        "command": "cancel",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayConfirm/cancel",
+        "label": "취소"
+      },
+      {
+        "command": "keep",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDiscard/keep",
+        "label": "계속 편집"
+      },
+      {
+        "command": "discard",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDiscard/discard",
+        "label": "변경 폐기"
+      },
+      {
+        "command": "draft-row:0",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/draft-row:0",
+        "label": "역 1"
+      },
+      {
+        "command": "draft-row:1",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/draft-row:1",
+        "label": "역 2"
+      },
+      {
+        "command": "draft-row:2",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/draft-row:2",
+        "label": "역 3"
+      },
+      {
+        "command": "draft-row:3",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/draft-row:3",
+        "label": "역 4"
+      },
+      {
+        "command": "draft-prev",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/draft-prev",
+        "label": "이전"
+      },
+      {
+        "command": "draft-next",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/draft-next",
+        "label": "다음"
+      },
+      {
+        "command": "down",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/down",
+        "label": "선택 역 아래로"
+      },
+      {
+        "command": "first",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/first",
+        "label": "선택 역을 첫 역으로"
+      },
+      {
+        "command": "open-loop",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/open-loop",
+        "label": "순환 연결 해제"
+      },
+      {
+        "command": "close-loop",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/close-loop",
+        "label": "마지막 → 첫 역 연결"
+      },
+      {
+        "command": "map-arrival",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/map-arrival",
+        "label": "지도 진입"
+      },
+      {
+        "command": "map-departure",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/map-departure",
+        "label": "지도 진출"
+      },
+      {
+        "command": "map-cancel",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/map-cancel",
+        "label": "선택 취소"
+      },
+      {
+        "command": "issue:0",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/issue:0",
+        "label": "오류 1"
+      },
+      {
+        "command": "issue:1",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/issue:1",
+        "label": "오류 2"
+      },
+      {
+        "command": "issue:2",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/issue:2",
+        "label": "오류 3"
+      },
+      {
+        "command": "issue-prev",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/issue-prev",
+        "label": "이전 오류"
+      },
+      {
+        "command": "issue-next",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/issue-next",
+        "label": "다음 오류"
+      },
+      {
+        "command": "station-row:0",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayStationContext/station-row:0",
+        "label": "역 1"
+      },
+      {
+        "command": "station-row:1",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayStationContext/station-row:1",
+        "label": "역 2"
+      },
+      {
+        "command": "station-row:2",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayStationContext/station-row:2",
+        "label": "역 3"
+      },
+      {
+        "command": "station-row:3",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayStationContext/station-row:3",
+        "label": "역 4"
+      },
+      {
+        "command": "station-prev",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayStationContext/station-prev",
+        "label": "이전"
+      },
+      {
+        "command": "station-next",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayStationContext/station-next",
+        "label": "다음"
+      },
+      {
+        "command": "station-context",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayStationContext/station-context",
+        "label": "이 역의 노선 보기"
+      },
+      {
+        "command": "connection-from",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayConnection/connection-from",
+        "label": "출발 역"
+      },
+      {
+        "command": "connection-to",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayConnection/connection-to",
+        "label": "도착 역"
+      },
+      {
+        "command": "connection-from-port",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayConnection/connection-from-port",
+        "label": "출발 연결구 · 자동"
+      },
+      {
+        "command": "connection-to-port",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayConnection/connection-to-port",
+        "label": "도착 연결구 · 자동"
+      },
+      {
+        "command": "connection-preview",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayConnection/connection-preview",
+        "label": "경로 미리보기"
+      },
+      {
+        "command": "connection-confirm",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayConnection/connection-confirm",
+        "label": "연결 확정"
+      },
+      {
+        "command": "connection-cancel",
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayConnection/connection-cancel",
+        "label": "취소"
+      }
+    ],
+    "hudButtons": [
+      {
+        "id": "pause",
+        "path": "GameplayCanvas/TopBar/pause"
+      },
+      {
+        "id": "clock-fold",
+        "path": "GameplayCanvas/LeftStatus/ClockPanel/clock-fold"
+      },
+      {
+        "id": "resource-fold",
+        "path": "GameplayCanvas/LeftStatus/ResourcePanel/resource-fold"
+      },
+      {
+        "id": "resources-all",
+        "path": "GameplayCanvas/LeftStatus/ResourcePanel/ResourceBody/resources-all"
+      },
+      {
+        "id": "minimap-fold",
+        "path": "GameplayCanvas/RightStatus/MinimapPanel/minimap-fold"
+      },
+      {
+        "id": "selection-close",
+        "path": "GameplayCanvas/RightStatus/SelectionPanel/selection-close"
+      },
+      {
+        "id": "upgrade",
+        "path": "GameplayCanvas/RightStatus/SelectionPanel/UpgradeControls/upgrade"
+      },
+      {
+        "id": "edit",
+        "path": "GameplayCanvas/ConstructionBar/edit"
+      },
+      {
+        "id": "confirm",
+        "path": "GameplayCanvas/ConstructionBar/EditActions/confirm"
+      },
+      {
+        "id": "cancel",
+        "path": "GameplayCanvas/ConstructionBar/EditActions/cancel"
+      },
+      {
+        "id": "inventory-fold",
+        "path": "GameplayCanvas/ConstructionBar/WorkspaceConstruction"
+      },
+      {
+        "id": "power-fold",
+        "path": "GameplayCanvas/ConstructionBar/power-fold"
+      },
+      {
+        "id": "menu-fold",
+        "path": "GameplayCanvas/TopBar/menu-fold"
+      },
+      {
+        "id": "category--1",
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CategoryStrip/category--1"
+      },
+      {
+        "id": "category-0",
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CategoryStrip/category-0"
+      },
+      {
+        "id": "category-1",
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CategoryStrip/category-1"
+      },
+      {
+        "id": "category-2",
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CategoryStrip/category-2"
+      },
+      {
+        "id": "category-3",
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CategoryStrip/category-3"
+      },
+      {
+        "id": "catalog-0",
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-0"
+      },
+      {
+        "id": "catalog-1",
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-1"
+      },
+      {
+        "id": "catalog-2",
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-2"
+      },
+      {
+        "id": "catalog-3",
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-3"
+      },
+      {
+        "id": "catalog-4",
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-4"
+      },
+      {
+        "id": "catalog-5",
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-5"
+      },
+      {
+        "id": "catalog-6",
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-6"
+      },
+      {
+        "id": "catalog-7",
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-7"
+      },
+      {
+        "id": "catalog-8",
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-8"
+      },
+      {
+        "id": "catalog-9",
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-9"
+      },
+      {
+        "id": "catalog-10",
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-10"
+      },
+      {
+        "id": "catalog-11",
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-11"
+      },
+      {
+        "id": "catalog-12",
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-12"
+      },
+      {
+        "id": "catalog-13",
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-13"
+      },
+      {
+        "id": "catalog-14",
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-14"
+      },
+      {
+        "id": "catalog-15",
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-15"
+      },
+      {
+        "id": "catalog-16",
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-16"
+      },
+      {
+        "id": "catalog-17",
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-17"
+      },
+      {
+        "id": "catalog-18",
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-18"
+      },
+      {
+        "id": "catalog-19",
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-19"
+      },
+      {
+        "id": "catalog-20",
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-20"
+      },
+      {
+        "id": "catalog-21",
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-21"
+      },
+      {
+        "id": "catalog-22",
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-22"
+      },
+      {
+        "id": "menu-close",
+        "path": "GameplayCanvas/ProgressAndSave/menu-close"
+      },
+      {
+        "id": "save",
+        "path": "GameplayCanvas/ProgressAndSave/MenuScroll/Viewport/Content/SaveControls/save"
+      },
+      {
+        "id": "load",
+        "path": "GameplayCanvas/ProgressAndSave/MenuScroll/Viewport/Content/SaveControls/load"
+      },
+      {
+        "id": "new-game",
+        "path": "GameplayCanvas/ProgressAndSave/MenuScroll/Viewport/Content/SaveControls/new-game"
+      },
+      {
+        "id": "new-game-confirm",
+        "path": "GameplayCanvas/ProgressAndSave/MenuScroll/Viewport/Content/SaveControls/NewGameConfirmation/new-game-confirm"
+      },
+      {
+        "id": "new-game-cancel",
+        "path": "GameplayCanvas/ProgressAndSave/MenuScroll/Viewport/Content/SaveControls/NewGameConfirmation/new-game-cancel"
+      },
+      {
+        "id": "orb-craft",
+        "path": "GameplayCanvas/ProgressAndSave/MenuScroll/Viewport/Content/MapProgress/orb-craft"
+      },
+      {
+        "id": "developer-fold",
+        "path": "GameplayCanvas/ProgressAndSave/MenuScroll/Viewport/Content/developer-fold"
+      },
+      {
+        "id": "power-close",
+        "path": "GameplayCanvas/PowerDetails/power-close"
+      },
+      {
+        "id": "developer-close",
+        "path": "GameplayCanvas/Developer/DeveloperPanel/developer-close"
+      },
+      {
+        "id": "spawn",
+        "path": "GameplayCanvas/Developer/DeveloperPanel/spawn"
+      },
+      {
+        "id": "spawn-air",
+        "path": "GameplayCanvas/Developer/DeveloperPanel/spawn-air"
+      },
+      {
+        "id": "reset",
+        "path": "GameplayCanvas/Developer/DeveloperPanel/reset"
+      },
+      {
+        "id": "run",
+        "path": "GameplayCanvas/Developer/DeveloperPanel/run"
+      },
+      {
+        "id": "day",
+        "path": "GameplayCanvas/Developer/DeveloperPanel/day"
+      },
+      {
+        "id": "night",
+        "path": "GameplayCanvas/Developer/DeveloperPanel/night"
+      },
+      {
+        "id": "infinite-resources",
+        "path": "GameplayCanvas/TestShortcuts/infinite-resources"
+      },
+      {
+        "id": "quick-day",
+        "path": "GameplayCanvas/TestShortcuts/quick-day"
+      },
+      {
+        "id": "quick-night",
+        "path": "GameplayCanvas/TestShortcuts/quick-night"
+      },
+      {
+        "id": "station-railway",
+        "path": "GameplayCanvas/RightStatus/SelectionPanel/station-railway"
+      }
+    ],
+    "nodes": [
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel",
+        "rect": "(x:0.00, y:-570.00, width:620.00, height:570.00)",
+        "position": "(0.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/rail-close",
+        "rect": "(x:0.00, y:-30.00, width:158.00, height:30.00)",
+        "position": "(450.00, -8.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwaySummary/Viewport",
+        "rect": "(x:-298.00, y:-111.00, width:596.00, height:222.00)",
+        "position": "(0.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayList/RouteRow0",
+        "rect": "(x:0.00, y:-34.00, width:596.00, height:34.00)",
+        "position": "(0.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayList/RouteRow1",
+        "rect": "(x:0.00, y:-34.00, width:596.00, height:34.00)",
+        "position": "(0.00, -38.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayList/RouteRow2",
+        "rect": "(x:0.00, y:-34.00, width:596.00, height:34.00)",
+        "position": "(0.00, -76.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayList/RouteRow3",
+        "rect": "(x:0.00, y:-34.00, width:596.00, height:34.00)",
+        "position": "(0.00, -114.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayList/list-page-prev",
+        "rect": "(x:0.00, y:-34.00, width:190.00, height:34.00)",
+        "position": "(0.00, -160.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayList/list-page-next",
+        "rect": "(x:0.00, y:-34.00, width:190.00, height:34.00)",
+        "position": "(198.00, -160.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayList/list-new",
+        "rect": "(x:0.00, y:-34.00, width:90.00, height:34.00)",
+        "position": "(396.00, -160.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayList/connect",
+        "rect": "(x:0.00, y:-36.00, width:94.00, height:36.00)",
+        "position": "(492.00, -160.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDetail/detail-start",
+        "rect": "(x:0.00, y:-34.00, width:190.00, height:34.00)",
+        "position": "(0.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDetail/detail-stop",
+        "rect": "(x:0.00, y:-34.00, width:190.00, height:34.00)",
+        "position": "(198.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDetail/detail-fuel",
+        "rect": "(x:0.00, y:-34.00, width:190.00, height:34.00)",
+        "position": "(396.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDetail/detail-next-stop",
+        "rect": "(x:0.00, y:-34.00, width:190.00, height:34.00)",
+        "position": "(0.00, -40.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDetail/detail-edit",
+        "rect": "(x:0.00, y:-34.00, width:190.00, height:34.00)",
+        "position": "(198.00, -40.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDetail/detail-list",
+        "rect": "(x:0.00, y:-34.00, width:190.00, height:34.00)",
+        "position": "(396.00, -40.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDetail/RailInput0",
+        "rect": "(x:0.00, y:-34.00, width:190.00, height:34.00)",
+        "position": "(0.00, -110.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDetail/RailInput1",
+        "rect": "(x:0.00, y:-34.00, width:190.00, height:34.00)",
+        "position": "(198.00, -110.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDetail/RailInput2",
+        "rect": "(x:0.00, y:-34.00, width:190.00, height:34.00)",
+        "position": "(396.00, -110.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDetail/configure",
+        "rect": "(x:0.00, y:-34.00, width:390.00, height:34.00)",
+        "position": "(0.00, -154.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDetail/cancel-pending",
+        "rect": "(x:0.00, y:-34.00, width:200.00, height:34.00)",
+        "position": "(396.00, -154.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDetail/defense",
+        "rect": "(x:0.00, y:-34.00, width:596.00, height:34.00)",
+        "position": "(0.00, -194.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraft/draft-add",
+        "rect": "(x:0.00, y:-36.00, width:190.00, height:36.00)",
+        "position": "(0.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraft/draft-next-stop",
+        "rect": "(x:0.00, y:-36.00, width:190.00, height:36.00)",
+        "position": "(198.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraft/draft-remove",
+        "rect": "(x:0.00, y:-36.00, width:190.00, height:36.00)",
+        "position": "(396.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraft/draft-up",
+        "rect": "(x:0.00, y:-36.00, width:190.00, height:36.00)",
+        "position": "(0.00, -42.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraft/draft-arrival",
+        "rect": "(x:0.00, y:-36.00, width:190.00, height:36.00)",
+        "position": "(198.00, -42.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraft/draft-departure",
+        "rect": "(x:0.00, y:-36.00, width:190.00, height:36.00)",
+        "position": "(396.00, -42.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraft/draft-validate",
+        "rect": "(x:0.00, y:-36.00, width:190.00, height:36.00)",
+        "position": "(0.00, -84.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraft/draft-cancel",
+        "rect": "(x:0.00, y:-36.00, width:190.00, height:36.00)",
+        "position": "(396.00, -84.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayArmament/weapon-next",
+        "rect": "(x:0.00, y:-34.00, width:190.00, height:34.00)",
+        "position": "(0.00, -80.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayArmament/weapon-install",
+        "rect": "(x:0.00, y:-34.00, width:190.00, height:34.00)",
+        "position": "(198.00, -80.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayArmament/weapon-charge",
+        "rect": "(x:0.00, y:-34.00, width:190.00, height:34.00)",
+        "position": "(396.00, -80.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayArmament/weapon-shape",
+        "rect": "(x:0.00, y:-34.00, width:190.00, height:34.00)",
+        "position": "(0.00, -122.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayArmament/weapon-upgrade",
+        "rect": "(x:0.00, y:-34.00, width:190.00, height:34.00)",
+        "position": "(198.00, -122.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayArmament/weapon-remove",
+        "rect": "(x:0.00, y:-34.00, width:190.00, height:34.00)",
+        "position": "(396.00, -122.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayArmament/weapon-back",
+        "rect": "(x:0.00, y:-34.00, width:190.00, height:34.00)",
+        "position": "(0.00, -164.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayConfirm/draft-commit",
+        "rect": "(x:0.00, y:-36.00, width:190.00, height:36.00)",
+        "position": "(0.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayConfirm/back-edit",
+        "rect": "(x:0.00, y:-36.00, width:190.00, height:36.00)",
+        "position": "(198.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayConfirm/cancel",
+        "rect": "(x:0.00, y:-36.00, width:190.00, height:36.00)",
+        "position": "(396.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDiscard/keep",
+        "rect": "(x:0.00, y:-36.00, width:190.00, height:36.00)",
+        "position": "(0.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDiscard/discard",
+        "rect": "(x:0.00, y:-36.00, width:190.00, height:36.00)",
+        "position": "(198.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations",
+        "rect": "(x:0.00, y:-810.00, width:320.00, height:810.00)",
+        "position": "(628.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/draft-row:0",
+        "rect": "(x:0.00, y:-36.00, width:300.00, height:36.00)",
+        "position": "(10.00, -108.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/draft-row:1",
+        "rect": "(x:0.00, y:-36.00, width:300.00, height:36.00)",
+        "position": "(10.00, -150.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/draft-row:2",
+        "rect": "(x:0.00, y:-36.00, width:300.00, height:36.00)",
+        "position": "(10.00, -192.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/draft-row:3",
+        "rect": "(x:0.00, y:-36.00, width:300.00, height:36.00)",
+        "position": "(10.00, -234.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/draft-prev",
+        "rect": "(x:0.00, y:-36.00, width:145.00, height:36.00)",
+        "position": "(10.00, -280.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/draft-next",
+        "rect": "(x:0.00, y:-36.00, width:145.00, height:36.00)",
+        "position": "(165.00, -280.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/down",
+        "rect": "(x:0.00, y:-36.00, width:145.00, height:36.00)",
+        "position": "(10.00, -322.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/first",
+        "rect": "(x:0.00, y:-36.00, width:145.00, height:36.00)",
+        "position": "(165.00, -322.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/open-loop",
+        "rect": "(x:0.00, y:-36.00, width:145.00, height:36.00)",
+        "position": "(10.00, -364.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/close-loop",
+        "rect": "(x:0.00, y:-36.00, width:145.00, height:36.00)",
+        "position": "(165.00, -364.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/map-arrival",
+        "rect": "(x:0.00, y:-36.00, width:96.00, height:36.00)",
+        "position": "(10.00, -408.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/map-departure",
+        "rect": "(x:0.00, y:-36.00, width:96.00, height:36.00)",
+        "position": "(112.00, -408.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/map-cancel",
+        "rect": "(x:0.00, y:-36.00, width:96.00, height:36.00)",
+        "position": "(214.00, -408.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/issue:0",
+        "rect": "(x:0.00, y:-36.00, width:300.00, height:36.00)",
+        "position": "(10.00, -644.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/issue:1",
+        "rect": "(x:0.00, y:-36.00, width:300.00, height:36.00)",
+        "position": "(10.00, -682.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/issue:2",
+        "rect": "(x:0.00, y:-36.00, width:300.00, height:36.00)",
+        "position": "(10.00, -720.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/issue-prev",
+        "rect": "(x:0.00, y:-36.00, width:145.00, height:36.00)",
+        "position": "(10.00, -762.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayDraftStations/issue-next",
+        "rect": "(x:0.00, y:-36.00, width:145.00, height:36.00)",
+        "position": "(165.00, -762.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayStationContext",
+        "rect": "(x:0.00, y:-390.00, width:320.00, height:390.00)",
+        "position": "(628.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayStationContext/station-row:0",
+        "rect": "(x:0.00, y:-36.00, width:300.00, height:36.00)",
+        "position": "(10.00, -90.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayStationContext/station-row:1",
+        "rect": "(x:0.00, y:-36.00, width:300.00, height:36.00)",
+        "position": "(10.00, -132.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayStationContext/station-row:2",
+        "rect": "(x:0.00, y:-36.00, width:300.00, height:36.00)",
+        "position": "(10.00, -174.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayStationContext/station-row:3",
+        "rect": "(x:0.00, y:-36.00, width:300.00, height:36.00)",
+        "position": "(10.00, -216.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayStationContext/station-prev",
+        "rect": "(x:0.00, y:-36.00, width:145.00, height:36.00)",
+        "position": "(10.00, -268.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayStationContext/station-next",
+        "rect": "(x:0.00, y:-36.00, width:145.00, height:36.00)",
+        "position": "(165.00, -268.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayStationContext/station-context",
+        "rect": "(x:0.00, y:-36.00, width:300.00, height:36.00)",
+        "position": "(10.00, -310.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayConnection/connection-from",
+        "rect": "(x:0.00, y:-36.00, width:586.00, height:36.00)",
+        "position": "(0.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayConnection/connection-to",
+        "rect": "(x:0.00, y:-36.00, width:586.00, height:36.00)",
+        "position": "(0.00, -44.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayConnection/connection-from-port",
+        "rect": "(x:0.00, y:-36.00, width:286.00, height:36.00)",
+        "position": "(0.00, -88.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayConnection/connection-to-port",
+        "rect": "(x:0.00, y:-36.00, width:286.00, height:36.00)",
+        "position": "(300.00, -88.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayConnection/connection-preview",
+        "rect": "(x:0.00, y:-36.00, width:186.00, height:36.00)",
+        "position": "(0.00, -136.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayConnection/connection-confirm",
+        "rect": "(x:0.00, y:-36.00, width:186.00, height:36.00)",
+        "position": "(200.00, -136.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayConnection/connection-cancel",
+        "rect": "(x:0.00, y:-36.00, width:186.00, height:36.00)",
+        "position": "(400.00, -136.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayTitleIcon",
+        "rect": "(x:0.00, y:-30.00, width:26.00, height:30.00)",
+        "position": "(14.00, -7.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayToolbar",
+        "rect": "(x:0.00, y:-88.00, width:620.00, height:88.00)",
+        "position": "(0.00, -578.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayToolbar/rail-1",
+        "rect": "(x:0.00, y:-36.00, width:204.00, height:36.00)",
+        "position": "(0.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayToolbar/rail-2",
+        "rect": "(x:0.00, y:-36.00, width:204.00, height:36.00)",
+        "position": "(208.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayToolbar/rail-3",
+        "rect": "(x:0.00, y:-36.00, width:204.00, height:36.00)",
+        "position": "(416.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayToolbar/rail-4",
+        "rect": "(x:0.00, y:-36.00, width:204.00, height:36.00)",
+        "position": "(0.00, -42.00)"
+      },
+      {
+        "path": "GameplayCanvas/RailwayInterface/RailwayWorkspace/RailwayPanel/RailwayToolbar/rail-5",
+        "rect": "(x:0.00, y:-36.00, width:204.00, height:36.00)",
+        "position": "(208.00, -42.00)"
+      },
+      {
+        "path": "GameplayCanvas/TopBar",
+        "rect": "(x:-792.00, y:-60.00, width:1584.00, height:60.00)",
+        "position": "(152.00, -16.00)"
+      },
+      {
+        "path": "GameplayCanvas/TopBar/pause",
+        "rect": "(x:-144.00, y:-44.00, width:144.00, height:44.00)",
+        "position": "(-168.00, -8.00)"
+      },
+      {
+        "path": "GameplayCanvas/TopBar/TimeSummary",
+        "rect": "(x:0.00, y:-60.00, width:420.00, height:60.00)",
+        "position": "(0.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/TopBar/ModeSummary",
+        "rect": "(x:0.00, y:-60.00, width:204.00, height:60.00)",
+        "position": "(352.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/TopBar/PowerSummary",
+        "rect": "(x:-284.00, y:-60.00, width:284.00, height:60.00)",
+        "position": "(-330.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/TopBar/PowerSummary/EnergyIcon",
+        "rect": "(x:0.00, y:-32.00, width:26.00, height:32.00)",
+        "position": "(10.00, -12.00)"
+      },
+      {
+        "path": "GameplayCanvas/TopBar/PowerSummary/PowerTrack",
+        "rect": "(x:0.00, y:-6.00, width:148.00, height:6.00)",
+        "position": "(44.00, -40.00)"
+      },
+      {
+        "path": "GameplayCanvas/TopBar/PowerSummary/PowerTrack/PowerFill",
+        "rect": "(x:-74.00, y:-3.00, width:148.00, height:6.00)",
+        "position": "(0.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/TopBar/menu-fold",
+        "rect": "(x:-156.00, y:-44.00, width:156.00, height:44.00)",
+        "position": "(0.00, -8.00)"
+      },
+      {
+        "path": "GameplayCanvas/LeftStatus",
+        "rect": "(x:0.00, y:-640.00, width:288.00, height:640.00)",
+        "position": "(16.00, -16.00)"
+      },
+      {
+        "path": "GameplayCanvas/LeftStatus/HealthPanel",
+        "rect": "(x:-144.00, y:-76.00, width:288.00, height:76.00)",
+        "position": "(0.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/LeftStatus/HealthPanel/HealthTrack",
+        "rect": "(x:0.00, y:-6.00, width:156.00, height:6.00)",
+        "position": "(62.00, -62.00)"
+      },
+      {
+        "path": "GameplayCanvas/LeftStatus/HealthPanel/HealthTrack/HealthFill",
+        "rect": "(x:-78.00, y:-3.00, width:156.00, height:6.00)",
+        "position": "(0.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/LeftStatus/HealthPanel/NexusIcon",
+        "rect": "(x:0.00, y:-40.00, width:40.00, height:40.00)",
+        "position": "(12.00, -18.00)"
+      },
+      {
+        "path": "GameplayCanvas/LeftStatus/ClockPanel",
+        "rect": "(x:-144.00, y:-156.00, width:288.00, height:156.00)",
+        "position": "(0.00, -84.00)"
+      },
+      {
+        "path": "GameplayCanvas/LeftStatus/ClockPanel/clock-fold",
+        "rect": "(x:-144.00, y:-28.00, width:288.00, height:28.00)",
+        "position": "(0.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/LeftStatus/ClockPanel/ClockBody/ClockDial/ClockArtwork",
+        "rect": "(x:-60.00, y:-60.00, width:120.00, height:120.00)",
+        "position": "(0.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/LeftStatus/ClockPanel/ClockBody/ClockDial/ClockHand",
+        "rect": "(x:-1.00, y:0.00, width:2.00, height:49.00)",
+        "position": "(0.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/LeftStatus/ResourcePanel",
+        "rect": "(x:0.00, y:-280.00, width:288.00, height:280.00)",
+        "position": "(0.00, -248.00)"
+      },
+      {
+        "path": "GameplayCanvas/LeftStatus/ResourcePanel/resource-fold",
+        "rect": "(x:0.00, y:-28.00, width:288.00, height:28.00)",
+        "position": "(0.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/LeftStatus/ResourcePanel/ResourceBody/ResourceScroll/Viewport",
+        "rect": "(x:-136.00, y:-100.00, width:272.00, height:200.00)",
+        "position": "(0.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/LeftStatus/ResourcePanel/ResourceBody/ResourceScroll/Viewport/Content/ResourceIcon_iron",
+        "rect": "(x:0.00, y:-20.00, width:20.00, height:20.00)",
+        "position": "(0.00, -2.00)"
+      },
+      {
+        "path": "GameplayCanvas/LeftStatus/ResourcePanel/ResourceBody/ResourceScroll/Viewport/Content/ResourceIcon_copper",
+        "rect": "(x:0.00, y:-20.00, width:20.00, height:20.00)",
+        "position": "(0.00, -28.00)"
+      },
+      {
+        "path": "GameplayCanvas/LeftStatus/ResourcePanel/ResourceBody/ResourceScroll/Viewport/Content/ResourceIcon_titanium",
+        "rect": "(x:0.00, y:-20.00, width:20.00, height:20.00)",
+        "position": "(0.00, -54.00)"
+      },
+      {
+        "path": "GameplayCanvas/LeftStatus/ResourcePanel/ResourceBody/ResourceScroll/Viewport/Content/ResourceIcon_tungsten",
+        "rect": "(x:0.00, y:-20.00, width:20.00, height:20.00)",
+        "position": "(0.00, -80.00)"
+      },
+      {
+        "path": "GameplayCanvas/LeftStatus/ResourcePanel/ResourceBody/ResourceScroll/Viewport/Content/ResourceIcon_uranium",
+        "rect": "(x:0.00, y:-20.00, width:20.00, height:20.00)",
+        "position": "(0.00, -106.00)"
+      },
+      {
+        "path": "GameplayCanvas/LeftStatus/ResourcePanel/ResourceBody/ResourceScroll/Viewport/Content/ResourceIcon_plasma_ore",
+        "rect": "(x:0.00, y:-20.00, width:20.00, height:20.00)",
+        "position": "(0.00, -132.00)"
+      },
+      {
+        "path": "GameplayCanvas/LeftStatus/ResourcePanel/ResourceBody/ResourceScroll/Viewport/Content/ResourceIcon_nanometal",
+        "rect": "(x:0.00, y:-20.00, width:20.00, height:20.00)",
+        "position": "(0.00, -158.00)"
+      },
+      {
+        "path": "GameplayCanvas/LeftStatus/ResourcePanel/ResourceBody/resources-all",
+        "rect": "(x:-136.00, y:0.00, width:272.00, height:28.00)",
+        "position": "(0.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/RightStatus",
+        "rect": "(x:-272.00, y:-700.00, width:272.00, height:700.00)",
+        "position": "(-16.00, -84.00)"
+      },
+      {
+        "path": "GameplayCanvas/RightStatus/SelectionPanel",
+        "rect": "(x:-136.00, y:-400.00, width:272.00, height:400.00)",
+        "position": "(0.00, -300.00)"
+      },
+      {
+        "path": "GameplayCanvas/RightStatus/SelectionPanel/selection-close",
+        "rect": "(x:-30.00, y:-28.00, width:30.00, height:28.00)",
+        "position": "(-8.00, -4.00)"
+      },
+      {
+        "path": "GameplayCanvas/RightStatus/SelectionPanel/SelectionScroll/Viewport",
+        "rect": "(x:-124.00, y:-111.00, width:248.00, height:222.00)",
+        "position": "(0.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/RightStatus/SelectionPanel/SelectionPortrait",
+        "rect": "(x:0.00, y:-66.00, width:66.00, height:66.00)",
+        "position": "(8.00, -12.00)"
+      },
+      {
+        "path": "GameplayCanvas/RightStatus/SelectionPanel/SelectionHealthTrack",
+        "rect": "(x:0.00, y:-5.00, width:248.00, height:5.00)",
+        "position": "(12.00, -86.00)"
+      },
+      {
+        "path": "GameplayCanvas/RightStatus/SelectionPanel/SelectionHealthTrack/SelectionHealthFill",
+        "rect": "(x:-124.00, y:-2.50, width:248.00, height:5.00)",
+        "position": "(0.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/RightStatus/SelectionPanel/UpgradeControls/upgrade",
+        "rect": "(x:0.00, y:-32.00, width:248.00, height:32.00)",
+        "position": "(0.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/RightStatus/SelectionPanel/station-railway",
+        "rect": "(x:0.00, y:0.00, width:248.00, height:32.00)",
+        "position": "(12.00, 48.00)"
+      },
+      {
+        "path": "GameplayCanvas/RightStatus/MinimapPanel",
+        "rect": "(x:-136.00, y:-292.00, width:272.00, height:292.00)",
+        "position": "(0.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/RightStatus/MinimapPanel/minimap-fold",
+        "rect": "(x:0.00, y:-28.00, width:272.00, height:28.00)",
+        "position": "(0.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar",
+        "rect": "(x:-944.00, y:0.00, width:1888.00, height:216.00)",
+        "position": "(0.00, 16.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/edit",
+        "rect": "(x:-128.00, y:-36.00, width:128.00, height:36.00)",
+        "position": "(-8.00, -4.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/EditActions/confirm",
+        "rect": "(x:0.00, y:-36.00, width:94.00, height:36.00)",
+        "position": "(0.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/EditActions/cancel",
+        "rect": "(x:0.00, y:-36.00, width:94.00, height:36.00)",
+        "position": "(102.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/WorkspaceConstruction",
+        "rect": "(x:0.00, y:-36.00, width:152.00, height:36.00)",
+        "position": "(8.00, -6.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/power-fold",
+        "rect": "(x:-128.00, y:-36.00, width:128.00, height:36.00)",
+        "position": "(-348.00, -4.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport",
+        "rect": "(x:-936.00, y:-45.00, width:1872.00, height:90.00)",
+        "position": "(0.00, 6.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-0",
+        "rect": "(x:0.00, y:-84.00, width:228.00, height:84.00)",
+        "position": "(0.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-0/Preview",
+        "rect": "(x:0.00, y:-72.00, width:72.00, height:72.00)",
+        "position": "(6.00, -6.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-1",
+        "rect": "(x:0.00, y:-84.00, width:228.00, height:84.00)",
+        "position": "(234.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-1/Preview",
+        "rect": "(x:0.00, y:-72.00, width:72.00, height:72.00)",
+        "position": "(6.00, -6.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-2",
+        "rect": "(x:0.00, y:-84.00, width:228.00, height:84.00)",
+        "position": "(468.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-2/Preview",
+        "rect": "(x:0.00, y:-72.00, width:72.00, height:72.00)",
+        "position": "(6.00, -6.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-3",
+        "rect": "(x:0.00, y:-84.00, width:228.00, height:84.00)",
+        "position": "(702.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-3/Preview",
+        "rect": "(x:0.00, y:-72.00, width:72.00, height:72.00)",
+        "position": "(6.00, -6.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-4",
+        "rect": "(x:0.00, y:-84.00, width:228.00, height:84.00)",
+        "position": "(936.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-4/Preview",
+        "rect": "(x:0.00, y:-72.00, width:72.00, height:72.00)",
+        "position": "(6.00, -6.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-5",
+        "rect": "(x:0.00, y:-84.00, width:228.00, height:84.00)",
+        "position": "(1170.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-5/Preview",
+        "rect": "(x:0.00, y:-72.00, width:72.00, height:72.00)",
+        "position": "(6.00, -6.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-6",
+        "rect": "(x:0.00, y:-84.00, width:228.00, height:84.00)",
+        "position": "(1404.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-6/Preview",
+        "rect": "(x:0.00, y:-72.00, width:72.00, height:72.00)",
+        "position": "(6.00, -6.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-7",
+        "rect": "(x:0.00, y:-84.00, width:228.00, height:84.00)",
+        "position": "(1638.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-7/Preview",
+        "rect": "(x:0.00, y:-72.00, width:72.00, height:72.00)",
+        "position": "(6.00, -6.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-8",
+        "rect": "(x:0.00, y:-84.00, width:228.00, height:84.00)",
+        "position": "(1872.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-8/Preview",
+        "rect": "(x:0.00, y:-72.00, width:72.00, height:72.00)",
+        "position": "(6.00, -6.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-9",
+        "rect": "(x:0.00, y:-84.00, width:228.00, height:84.00)",
+        "position": "(2106.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-9/Preview",
+        "rect": "(x:0.00, y:-72.00, width:72.00, height:72.00)",
+        "position": "(6.00, -6.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-10",
+        "rect": "(x:0.00, y:-84.00, width:228.00, height:84.00)",
+        "position": "(2340.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-10/Preview",
+        "rect": "(x:0.00, y:-72.00, width:72.00, height:72.00)",
+        "position": "(6.00, -6.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-11",
+        "rect": "(x:0.00, y:-84.00, width:228.00, height:84.00)",
+        "position": "(2574.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-11/Preview",
+        "rect": "(x:0.00, y:-72.00, width:72.00, height:72.00)",
+        "position": "(6.00, -6.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-12",
+        "rect": "(x:0.00, y:-84.00, width:228.00, height:84.00)",
+        "position": "(2808.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-12/Preview",
+        "rect": "(x:0.00, y:-72.00, width:72.00, height:72.00)",
+        "position": "(6.00, -6.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-13",
+        "rect": "(x:0.00, y:-84.00, width:228.00, height:84.00)",
+        "position": "(3042.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-13/Preview",
+        "rect": "(x:0.00, y:-72.00, width:72.00, height:72.00)",
+        "position": "(6.00, -6.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-14",
+        "rect": "(x:0.00, y:-84.00, width:228.00, height:84.00)",
+        "position": "(3276.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-14/Preview",
+        "rect": "(x:0.00, y:-72.00, width:72.00, height:72.00)",
+        "position": "(6.00, -6.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-15",
+        "rect": "(x:0.00, y:-84.00, width:228.00, height:84.00)",
+        "position": "(3510.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-15/Preview",
+        "rect": "(x:0.00, y:-72.00, width:72.00, height:72.00)",
+        "position": "(6.00, -6.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-16",
+        "rect": "(x:0.00, y:-84.00, width:228.00, height:84.00)",
+        "position": "(3744.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-16/Preview",
+        "rect": "(x:0.00, y:-72.00, width:72.00, height:72.00)",
+        "position": "(6.00, -6.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-17",
+        "rect": "(x:0.00, y:-84.00, width:228.00, height:84.00)",
+        "position": "(3978.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-17/Preview",
+        "rect": "(x:0.00, y:-72.00, width:72.00, height:72.00)",
+        "position": "(6.00, -6.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-18",
+        "rect": "(x:0.00, y:-84.00, width:228.00, height:84.00)",
+        "position": "(4212.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-18/Preview",
+        "rect": "(x:0.00, y:-72.00, width:72.00, height:72.00)",
+        "position": "(6.00, -6.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-19",
+        "rect": "(x:0.00, y:-84.00, width:228.00, height:84.00)",
+        "position": "(4446.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-19/Preview",
+        "rect": "(x:0.00, y:-72.00, width:72.00, height:72.00)",
+        "position": "(6.00, -6.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-20",
+        "rect": "(x:0.00, y:-84.00, width:228.00, height:84.00)",
+        "position": "(4680.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-20/Preview",
+        "rect": "(x:0.00, y:-72.00, width:72.00, height:72.00)",
+        "position": "(6.00, -6.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-21",
+        "rect": "(x:0.00, y:-84.00, width:228.00, height:84.00)",
+        "position": "(4914.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-21/Preview",
+        "rect": "(x:0.00, y:-72.00, width:72.00, height:72.00)",
+        "position": "(6.00, -6.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-22",
+        "rect": "(x:0.00, y:-84.00, width:228.00, height:84.00)",
+        "position": "(5148.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/catalog-22/Preview",
+        "rect": "(x:0.00, y:-72.00, width:72.00, height:72.00)",
+        "position": "(6.00, -6.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/Build_railway.station",
+        "rect": "(x:0.00, y:-84.00, width:228.00, height:84.00)",
+        "position": "(5382.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/Build_railway.station/Preview",
+        "rect": "(x:0.00, y:-72.00, width:72.00, height:72.00)",
+        "position": "(6.00, -6.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/Build_railway.track",
+        "rect": "(x:0.00, y:-84.00, width:228.00, height:84.00)",
+        "position": "(5616.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/Build_railway.track/Preview",
+        "rect": "(x:0.00, y:-72.00, width:72.00, height:72.00)",
+        "position": "(6.00, -6.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/Build_railway.coal",
+        "rect": "(x:0.00, y:-84.00, width:228.00, height:84.00)",
+        "position": "(5850.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/Viewport/Content/Build_railway.coal/Preview",
+        "rect": "(x:0.00, y:-72.00, width:72.00, height:72.00)",
+        "position": "(6.00, -6.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/CatalogScrollbar",
+        "rect": "(x:-936.00, y:0.00, width:1872.00, height:6.00)",
+        "position": "(0.00, 2.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CatalogScroll/CatalogScrollbar/SlidingArea/Handle",
+        "rect": "(x:-288.28, y:-3.00, width:576.57, height:6.00)",
+        "position": "(0.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CategoryStrip/category--1",
+        "rect": "(x:0.00, y:-36.00, width:96.00, height:36.00)",
+        "position": "(0.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CategoryStrip/category--1/CategoryIcon",
+        "rect": "(x:0.00, y:-20.00, width:20.00, height:20.00)",
+        "position": "(8.00, -8.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CategoryStrip/category-0",
+        "rect": "(x:0.00, y:-36.00, width:96.00, height:36.00)",
+        "position": "(100.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CategoryStrip/category-0/CategoryIcon",
+        "rect": "(x:0.00, y:-20.00, width:20.00, height:20.00)",
+        "position": "(8.00, -8.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CategoryStrip/category-1",
+        "rect": "(x:0.00, y:-36.00, width:96.00, height:36.00)",
+        "position": "(200.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CategoryStrip/category-1/CategoryIcon",
+        "rect": "(x:0.00, y:-20.00, width:20.00, height:20.00)",
+        "position": "(8.00, -8.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CategoryStrip/category-2",
+        "rect": "(x:0.00, y:-36.00, width:96.00, height:36.00)",
+        "position": "(300.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CategoryStrip/category-2/CategoryIcon",
+        "rect": "(x:0.00, y:-20.00, width:20.00, height:20.00)",
+        "position": "(8.00, -8.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CategoryStrip/category-3",
+        "rect": "(x:0.00, y:-36.00, width:96.00, height:36.00)",
+        "position": "(400.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/InventoryBody/CategoryStrip/category-3/CategoryIcon",
+        "rect": "(x:0.00, y:-20.00, width:20.00, height:20.00)",
+        "position": "(8.00, -8.00)"
+      },
+      {
+        "path": "GameplayCanvas/ConstructionBar/WorkspaceRailway",
+        "rect": "(x:0.00, y:-36.00, width:152.00, height:36.00)",
+        "position": "(168.00, -6.00)"
+      },
+      {
+        "path": "GameplayCanvas/Notifications",
+        "rect": "(x:-648.00, y:0.00, width:1296.00, height:52.00)",
+        "position": "(8.00, 240.00)"
+      },
+      {
+        "path": "GameplayCanvas/Notifications/FirstLoopObjective",
+        "rect": "(x:-648.00, y:0.00, width:1296.00, height:64.00)",
+        "position": "(0.00, 12.00)"
+      },
+      {
+        "path": "GameplayCanvas/ProgressAndSave",
+        "rect": "(x:-580.00, y:-420.00, width:580.00, height:420.00)",
+        "position": "(-304.00, -84.00)"
+      },
+      {
+        "path": "GameplayCanvas/ProgressAndSave/menu-close",
+        "rect": "(x:-60.00, y:-28.00, width:60.00, height:28.00)",
+        "position": "(-8.00, -8.00)"
+      },
+      {
+        "path": "GameplayCanvas/ProgressAndSave/MenuScroll/Viewport",
+        "rect": "(x:-282.00, y:-182.00, width:564.00, height:364.00)",
+        "position": "(0.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/ProgressAndSave/MenuScroll/Viewport/Content/SaveControls/save",
+        "rect": "(x:0.00, y:-34.00, width:168.00, height:34.00)",
+        "position": "(0.00, -128.00)"
+      },
+      {
+        "path": "GameplayCanvas/ProgressAndSave/MenuScroll/Viewport/Content/SaveControls/load",
+        "rect": "(x:0.00, y:-34.00, width:168.00, height:34.00)",
+        "position": "(180.00, -128.00)"
+      },
+      {
+        "path": "GameplayCanvas/ProgressAndSave/MenuScroll/Viewport/Content/SaveControls/new-game",
+        "rect": "(x:0.00, y:-34.00, width:168.00, height:34.00)",
+        "position": "(360.00, -128.00)"
+      },
+      {
+        "path": "GameplayCanvas/ProgressAndSave/MenuScroll/Viewport/Content/SaveControls/NewGameConfirmation/new-game-confirm",
+        "rect": "(x:0.00, y:-34.00, width:254.00, height:34.00)",
+        "position": "(0.00, -30.00)"
+      },
+      {
+        "path": "GameplayCanvas/ProgressAndSave/MenuScroll/Viewport/Content/SaveControls/NewGameConfirmation/new-game-cancel",
+        "rect": "(x:0.00, y:-34.00, width:254.00, height:34.00)",
+        "position": "(266.00, -30.00)"
+      },
+      {
+        "path": "GameplayCanvas/ProgressAndSave/MenuScroll/Viewport/Content/MapProgress/orb-craft",
+        "rect": "(x:0.00, y:-38.00, width:530.00, height:38.00)",
+        "position": "(0.00, -234.00)"
+      },
+      {
+        "path": "GameplayCanvas/ProgressAndSave/MenuScroll/Viewport/Content/developer-fold",
+        "rect": "(x:0.00, y:-34.00, width:540.00, height:34.00)",
+        "position": "(0.00, -606.00)"
+      },
+      {
+        "path": "GameplayCanvas/PowerDetails",
+        "rect": "(x:-470.00, y:-260.00, width:470.00, height:260.00)",
+        "position": "(-304.00, -84.00)"
+      },
+      {
+        "path": "GameplayCanvas/PowerDetails/power-close",
+        "rect": "(x:0.00, y:-32.00, width:454.00, height:32.00)",
+        "position": "(8.00, -8.00)"
+      },
+      {
+        "path": "GameplayCanvas/PowerDetails/PowerScroll/Viewport",
+        "rect": "(x:-227.00, y:-102.00, width:454.00, height:204.00)",
+        "position": "(0.00, 0.00)"
+      },
+      {
+        "path": "GameplayCanvas/Developer/DeveloperPanel",
+        "rect": "(x:-295.00, y:-215.00, width:590.00, height:430.00)",
+        "position": "(0.00, 5.00)"
+      },
+      {
+        "path": "GameplayCanvas/Developer/DeveloperPanel/developer-close",
+        "rect": "(x:0.00, y:-32.00, width:574.00, height:32.00)",
+        "position": "(8.00, -8.00)"
+      },
+      {
+        "path": "GameplayCanvas/Developer/DeveloperPanel/spawn",
+        "rect": "(x:0.00, y:-36.00, width:170.00, height:36.00)",
+        "position": "(220.00, -158.00)"
+      },
+      {
+        "path": "GameplayCanvas/Developer/DeveloperPanel/spawn-air",
+        "rect": "(x:0.00, y:-36.00, width:184.00, height:36.00)",
+        "position": "(398.00, -158.00)"
+      },
+      {
+        "path": "GameplayCanvas/Developer/DeveloperPanel/reset",
+        "rect": "(x:0.00, y:-36.00, width:188.00, height:36.00)",
+        "position": "(8.00, -204.00)"
+      },
+      {
+        "path": "GameplayCanvas/Developer/DeveloperPanel/run",
+        "rect": "(x:0.00, y:-36.00, width:184.00, height:36.00)",
+        "position": "(204.00, -204.00)"
+      },
+      {
+        "path": "GameplayCanvas/Developer/DeveloperPanel/day",
+        "rect": "(x:0.00, y:-36.00, width:280.00, height:36.00)",
+        "position": "(8.00, -250.00)"
+      },
+      {
+        "path": "GameplayCanvas/Developer/DeveloperPanel/night",
+        "rect": "(x:0.00, y:-36.00, width:284.00, height:36.00)",
+        "position": "(298.00, -250.00)"
+      },
+      {
+        "path": "GameplayCanvas/Developer/DeveloperPanel/SpawnAmount",
+        "rect": "(x:0.00, y:-36.00, width:204.00, height:36.00)",
+        "position": "(8.00, -158.00)"
+      },
+      {
+        "path": "GameplayCanvas/TestShortcuts",
+        "rect": "(x:-225.00, y:-44.00, width:450.00, height:44.00)",
+        "position": "(0.00, -126.00)"
+      },
+      {
+        "path": "GameplayCanvas/TestShortcuts/infinite-resources",
+        "rect": "(x:0.00, y:-36.00, width:218.00, height:36.00)",
+        "position": "(4.00, -4.00)"
+      },
+      {
+        "path": "GameplayCanvas/TestShortcuts/quick-day",
+        "rect": "(x:0.00, y:-36.00, width:108.00, height:36.00)",
+        "position": "(226.00, -4.00)"
+      },
+      {
+        "path": "GameplayCanvas/TestShortcuts/quick-night",
+        "rect": "(x:0.00, y:-36.00, width:108.00, height:36.00)",
+        "position": "(338.00, -4.00)"
+      }
+    ]
+  }
+]

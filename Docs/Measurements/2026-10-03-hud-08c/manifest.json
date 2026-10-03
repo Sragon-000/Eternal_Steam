@@ -1,0 +1,189 @@
+{
+  "createdUtc": "2026-10-03T04:17:12.528802+00:00",
+  "scope": "HUD-08C",
+  "testsPassed": 295,
+  "sceneResolutionCases": 14,
+  "edgeCases": 2,
+  "files": {
+    "OpenWorldSandbox-1024x768-circle.png": {
+      "bytes": 389722,
+      "sha256": "28764a360390a1fafa9bf825dff72d2531c91f046ae6ac44566eb0e4bb937e87"
+    },
+    "OpenWorldSandbox-1280x720-circle.png": {
+      "bytes": 437334,
+      "sha256": "af0aea39eb803cf3889a6faf26e14e65c3c6579a44d4a41cc834d97ffb0302c1"
+    },
+    "OpenWorldSandbox-1920x1080-circle.png": {
+      "bytes": 866847,
+      "sha256": "67bfdcddb6ae39757b7dafccce6828a1b6c753e70cb03584be6578f6da274070"
+    },
+    "OpenWorldSandbox-2560x1080-circle.png": {
+      "bytes": 973901,
+      "sha256": "a6cd9125ed6a5f10ccea4bd3dc5750bdb4810a29a6d2549eba09d3887b7134bf"
+    },
+    "OpenWorldSandbox-3840x1080-circle.png": {
+      "bytes": 1044772,
+      "sha256": "10126a8b027000d19a52c8a1e9bd7a565df0c4339ab8495a2a77422dff22bc72"
+    },
+    "OpenWorldSandbox-3840x2160-circle.png": {
+      "bytes": 2547833,
+      "sha256": "7e7da9bff24a96fe5c8b1d517fa5d46c07f91a94a0b5559101365093ddbf56d1"
+    },
+    "OpenWorldSandbox-800x600-circle.png": {
+      "bytes": 252247,
+      "sha256": "edf253bfa02a66e1b8a1997b9967262a691aafa60a6a0b8121ad232b5b758a24"
+    },
+    "OpenWorldSandbox-edge-wide-view.png": {
+      "bytes": 160474,
+      "sha256": "06879e362b63e14836a719bc193227af0b5c80261ed90fd12974701704d1b034"
+    },
+    "OpenWorldSandbox-edge.json": {
+      "bytes": 130,
+      "sha256": "87d59854f78e865e22f8a40ca67f5f5c75808d01c6d1f55916306536d108a565"
+    },
+    "OpenWorldSandbox-results.json": {
+      "bytes": 1962,
+      "sha256": "4486e346e99b5cfeb69965e54ad0b2f387a3a1984bc53e99f5406855e2b841bc"
+    },
+    "OpenWorldSandbox-status.txt": {
+      "bytes": 18,
+      "sha256": "fd9fb379c91e4c01022d7eabca6f0e42c7ea6ccc8958091be65445467a6f7519"
+    },
+    "StartRegionSandbox-1024x768-circle.png": {
+      "bytes": 575314,
+      "sha256": "dc90175694d68aaea1731590e2d16c5f63762f50bea1811e754d6caaa19b6c91"
+    },
+    "StartRegionSandbox-1280x720-circle.png": {
+      "bytes": 801398,
+      "sha256": "631fc518c1ef0afa92b31f0ab86a8f7e05151e69537a82b7248d5e482be17e01"
+    },
+    "StartRegionSandbox-1920x1080-circle.png": {
+      "bytes": 1232306,
+      "sha256": "41ec069665a365c040c15879507d3aea14efa5f18d5bd68cf8736d1e81a4de24"
+    },
+    "StartRegionSandbox-2560x1080-circle.png": {
+      "bytes": 1544581,
+      "sha256": "9ef190aa99dd03f3ac218c27cf68e168c28c8af0e05f576fb72dfd41a944c7f1"
+    },
+    "StartRegionSandbox-3840x1080-circle.png": {
+      "bytes": 2163158,
+      "sha256": "02b826bd39d115244e39f792371ea8a4be3705a2978b411bf637c53eb3295296"
+    },
+    "StartRegionSandbox-3840x2160-circle.png": {
+      "bytes": 5034671,
+      "sha256": "6ff1674c67f41b9a953d05124b3d8396231ab9c73289d78c3ea4189fdcb32107"
+    },
+    "StartRegionSandbox-800x600-circle.png": {
+      "bytes": 454441,
+      "sha256": "c76ab42956099989bb6e91936ab4a0b494f0915c0b1c63ca97c9282844de412c"
+    },
+    "StartRegionSandbox-edge-wide-view.png": {
+      "bytes": 1388108,
+      "sha256": "1b9fa2aa89581be57246ac58eedd704fa3775695f115b73019ea2cc8e0d4d927"
+    },
+    "StartRegionSandbox-edge.json": {
+      "bytes": 130,
+      "sha256": "87d59854f78e865e22f8a40ca67f5f5c75808d01c6d1f55916306536d108a565"
+    },
+    "StartRegionSandbox-results.json": {
+      "bytes": 1962,
+      "sha256": "4486e346e99b5cfeb69965e54ad0b2f387a3a1984bc53e99f5406855e2b841bc"
+    },
+    "StartRegionSandbox-save/archive/20261003-041333-61c54614cc434996ab6666624812723d/current.json": {
+      "bytes": 1511002,
+      "sha256": "8da628859bfddd7fcc3665ed6777246c387c1e4561fb83e01d3ac93ab5a6ffad"
+    },
+    "StartRegionSandbox-save/current.json": {
+      "bytes": 1511002,
+      "sha256": "1d3ba15723d465cdd7beabd06bf24dc0e5a230db219b5e8ce91769194834b240"
+    },
+    "StartRegionSandbox-status.txt": {
+      "bytes": 18,
+      "sha256": "fd9fb379c91e4c01022d7eabca6f0e42c7ea6ccc8958091be65445467a6f7519"
+    },
+    "author.json": {
+      "bytes": 855,
+      "sha256": "4005c61d949cc174d14a4b4995726c0dd04676f8678aa897dbb5fc1619ef689a"
+    },
+    "baseline/CanvasHudLayout.cs": {
+      "bytes": 8483,
+      "sha256": "bef6d1f09cbb5965cd68adabba90fb51f87646fc04141220f4ff913b9544148e"
+    },
+    "baseline/CanvasWorldHud.cs": {
+      "bytes": 27174,
+      "sha256": "e5ef305ced79b93f5c7a266934895cff2b5cb146522cdb22898a0192aa1207be"
+    },
+    "baseline/CanvasWorldMinimap.cs": {
+      "bytes": 8808,
+      "sha256": "d06d1f77568be1f787e0a0c718fcad4164964fc77edf512594898dc15270cce6"
+    },
+    "baseline/FoundationSandbox.unity": {
+      "bytes": 10390,
+      "sha256": "146c6624914653d01ddf8e33eeaea94375af7da06535f591d3723b0d5a858be2"
+    },
+    "baseline/HudModeGroups.cs": {
+      "bytes": 5366,
+      "sha256": "1fb72db7982904e01a956fca6f9451d462f80d1b86610a794ddd215bbdd646a4"
+    },
+    "baseline/ModuleSandbox.unity": {
+      "bytes": 10412,
+      "sha256": "dce8a0334b290c1580fcd4da7bfdc32b0ebdd3f240685a6e00b1e0ea89a300d0"
+    },
+    "baseline/OpenWorldSandbox.unity": {
+      "bytes": 4336534,
+      "sha256": "635c2360f28d192e04723e11b9def97e5fd4263b04a86ea33abea49608a57810"
+    },
+    "baseline/StartRegionSandbox.unity": {
+      "bytes": 162075804,
+      "sha256": "0ba4d9f8f4ecb76cea282932567a2db851b152586ea8f6184657bb8f893eadb7"
+    },
+    "final-editor-state.json": {
+      "bytes": 205,
+      "sha256": "5bfa3929baba755ab0e162b3875afffe54fcf24f9f196dbae7adde98ebb058f5"
+    },
+    "final-open-probe-launch.json": {
+      "bytes": 653,
+      "sha256": "093d72e9f764366145a739bc8e4d746f3195138fd5cb53ea3a6ccbd72e5b426d"
+    },
+    "final-start-probe-launch.json": {
+      "bytes": 653,
+      "sha256": "96103a88f5076b2b87927512063ea2e9fd29ef425426b0a15c6bbd34f070f27a"
+    },
+    "hint-layout.json": {
+      "bytes": 674,
+      "sha256": "9924f8c7cac814a332bd057ff85dd40a8c389b40883da0d2db1b7d8a6f3eb1c3"
+    },
+    "open-world-probe-launch.json": {
+      "bytes": 653,
+      "sha256": "2640e074e209b1684364f3486d2f7a3e07f08fbc33693effe02b99729f1b63e7"
+    },
+    "probe-launch.json": {
+      "bytes": 653,
+      "sha256": "b9bcd9fd240c7fd1eb33c67b590fdeff07e0acaa16be9ae3eb77a1cbf15acac0"
+    },
+    "product-tests.xml": {
+      "bytes": 240240,
+      "sha256": "69e99eff8e5909b3ba3ddad0badc31db0ed1b230d6e5db63c32b8b32055ae845"
+    },
+    "restore.json": {
+      "bytes": 686,
+      "sha256": "95d8a23bcb9e0ed631b77d5a5c341e840e12bbf37f3ab0ee7552898a8669fada"
+    },
+    "source-diff-check.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "sprite-generation.txt": {
+      "bytes": 985,
+      "sha256": "2860dca39e16ce9c1c1fddfe18854910da3b7afb91ccebbe7f9782ddd17feb1a"
+    },
+    "tests-command.json": {
+      "bytes": 76596,
+      "sha256": "12c8ef400ed27be3a990e776511c2fb30361fc42b8271630713a534c26e3e114"
+    }
+  },
+  "assets": {
+    "Assets/EternalSteam/Shared/UI/ReferenceHUD/MinimapRing.png": "ea637f4d3f80da7c586df138324760fa459b1f4818fbb7268ff3ba0d141e9c61",
+    "Assets/EternalSteam/Shared/UI/ReferenceHUD/MinimapCircleMask.png": "8a370294194b060a2e7acb7727e8527ba39235c5e8acf6d43bcb41164e070146"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/FixHud08CircleHint.cs",
+      "entry": "FixHud08CircleHint.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 1065,
+      "executeMs": 5169,
+      "assemblyName": "PipelineRunScript_FixHud08CircleHint_d22b772c49224a86aec6df5a562d2ff3",
+      "success": true,
+      "result": "Saved physical Esc hint layout in both scenes"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

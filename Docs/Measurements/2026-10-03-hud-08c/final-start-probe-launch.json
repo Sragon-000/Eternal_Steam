@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/VerifyHud08Circle.cs",
+      "entry": "VerifyHud08Circle.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 1261,
+      "executeMs": 0,
+      "assemblyName": "PipelineRunScript_VerifyHud08Circle_29b5f78fc7ba4c80b2ae32f2453cfe7b",
+      "success": true,
+      "result": "Queued circular minimap checks"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

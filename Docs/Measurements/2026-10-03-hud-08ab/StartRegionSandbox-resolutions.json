@@ -1,0 +1,58 @@
+[
+  {
+    "width": 800,
+    "height": 600,
+    "fontPixels": 18,
+    "allMenuButtonsReachable": true,
+    "backgroundInputBlocked": true,
+    "confirmationReachable": true
+  },
+  {
+    "width": 1024,
+    "height": 768,
+    "fontPixels": 18,
+    "allMenuButtonsReachable": true,
+    "backgroundInputBlocked": true,
+    "confirmationReachable": true
+  },
+  {
+    "width": 1280,
+    "height": 720,
+    "fontPixels": 18,
+    "allMenuButtonsReachable": true,
+    "backgroundInputBlocked": true,
+    "confirmationReachable": true
+  },
+  {
+    "width": 1920,
+    "height": 1080,
+    "fontPixels": 18,
+    "allMenuButtonsReachable": true,
+    "backgroundInputBlocked": true,
+    "confirmationReachable": true
+  },
+  {
+    "width": 2560,
+    "height": 1080,
+    "fontPixels": 18,
+    "allMenuButtonsReachable": true,
+    "backgroundInputBlocked": true,
+    "confirmationReachable": true
+  },
+  {
+    "width": 3840,
+    "height": 1080,
+    "fontPixels": 18,
+    "allMenuButtonsReachable": true,
+    "backgroundInputBlocked": true,
+    "confirmationReachable": true
+  },
+  {
+    "width": 3840,
+    "height": 2160,
+    "fontPixels": 18,
+    "allMenuButtonsReachable": true,
+    "backgroundInputBlocked": true,
+    "confirmationReachable": true
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/PolishHud05.cs",
+      "entry": "PolishHud05.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 675,
+      "executeMs": 5186,
+      "assemblyName": "PipelineRunScript_PolishHud05_f53aac87db5d4ef49620bf08155d719a",
+      "success": true,
+      "result": "Common railway category and responsive card height saved"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

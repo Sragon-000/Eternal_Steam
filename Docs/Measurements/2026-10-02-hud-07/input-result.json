@@ -1,0 +1,13 @@
+{
+  "result": "PASS",
+  "inputSystemTabAndRapidParity": true,
+  "imeEventDefersToggle": true,
+  "nativeOSCompositionVerified": false,
+  "inputAndFocusRestored": true,
+  "activeDragBlocksToggle": true,
+  "testControls": true,
+  "minimapZoomCenter": true,
+  "minimapOutsideAndFallback": true,
+  "terrainTextureReused": true,
+  "researchExperiment": false
+}

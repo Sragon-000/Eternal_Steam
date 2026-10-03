@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/PolishHud06B.cs",
+      "entry": "PolishHud06B.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 632,
+      "executeMs": 4432,
+      "assemblyName": "PipelineRunScript_PolishHud06B_42366fe168f34aa0bf66aa321b0a8b25",
+      "success": true,
+      "result": "Saved scroll hint, neutral summaries and input boundaries"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

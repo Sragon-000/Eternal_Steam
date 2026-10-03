@@ -1,0 +1,13 @@
+{
+  "result": "PASS",
+  "initialCargoLock": true,
+  "invalidQuantities": true,
+  "selectedStationApply": true,
+  "groupAndReturnInputPreserved": true,
+  "defenseInstallOnceNoRefund": true,
+  "upgradeExactCostAndLevelCap": true,
+  "batteryConservationAndRemovalRetention": true,
+  "movingRestrictions": true,
+  "snapshotRestore": true,
+  "researchExperiment": false
+}

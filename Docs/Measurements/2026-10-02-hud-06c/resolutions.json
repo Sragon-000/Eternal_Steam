@@ -1,0 +1,162 @@
+[
+  {
+    "width": 800,
+    "height": 600,
+    "mode": "stations",
+    "allVisibleCommandsReachable": true,
+    "mapInputClear": true,
+    "fontPixels": 18
+  },
+  {
+    "width": 800,
+    "height": 600,
+    "mode": "issues",
+    "allVisibleCommandsReachable": true,
+    "mapInputClear": true,
+    "fontPixels": 18
+  },
+  {
+    "width": 800,
+    "height": 600,
+    "mode": "confirm",
+    "allVisibleCommandsReachable": true,
+    "mapInputClear": true,
+    "fontPixels": 18
+  },
+  {
+    "width": 800,
+    "height": 600,
+    "mode": "discard",
+    "allVisibleCommandsReachable": true,
+    "mapInputClear": true,
+    "fontPixels": 18
+  },
+  {
+    "width": 800,
+    "height": 600,
+    "mode": "connection",
+    "allVisibleCommandsReachable": true,
+    "mapInputClear": true,
+    "fontPixels": 18
+  },
+  {
+    "width": 1280,
+    "height": 720,
+    "mode": "stations",
+    "allVisibleCommandsReachable": true,
+    "mapInputClear": true,
+    "fontPixels": 18
+  },
+  {
+    "width": 1280,
+    "height": 720,
+    "mode": "issues",
+    "allVisibleCommandsReachable": true,
+    "mapInputClear": true,
+    "fontPixels": 18
+  },
+  {
+    "width": 1280,
+    "height": 720,
+    "mode": "confirm",
+    "allVisibleCommandsReachable": true,
+    "mapInputClear": true,
+    "fontPixels": 18
+  },
+  {
+    "width": 1280,
+    "height": 720,
+    "mode": "discard",
+    "allVisibleCommandsReachable": true,
+    "mapInputClear": true,
+    "fontPixels": 18
+  },
+  {
+    "width": 1280,
+    "height": 720,
+    "mode": "connection",
+    "allVisibleCommandsReachable": true,
+    "mapInputClear": true,
+    "fontPixels": 18
+  },
+  {
+    "width": 1920,
+    "height": 1080,
+    "mode": "stations",
+    "allVisibleCommandsReachable": true,
+    "mapInputClear": true,
+    "fontPixels": 18
+  },
+  {
+    "width": 1920,
+    "height": 1080,
+    "mode": "issues",
+    "allVisibleCommandsReachable": true,
+    "mapInputClear": true,
+    "fontPixels": 18
+  },
+  {
+    "width": 1920,
+    "height": 1080,
+    "mode": "confirm",
+    "allVisibleCommandsReachable": true,
+    "mapInputClear": true,
+    "fontPixels": 18
+  },
+  {
+    "width": 1920,
+    "height": 1080,
+    "mode": "discard",
+    "allVisibleCommandsReachable": true,
+    "mapInputClear": true,
+    "fontPixels": 18
+  },
+  {
+    "width": 1920,
+    "height": 1080,
+    "mode": "connection",
+    "allVisibleCommandsReachable": true,
+    "mapInputClear": true,
+    "fontPixels": 18
+  },
+  {
+    "width": 3840,
+    "height": 1080,
+    "mode": "stations",
+    "allVisibleCommandsReachable": true,
+    "mapInputClear": true,
+    "fontPixels": 18
+  },
+  {
+    "width": 3840,
+    "height": 1080,
+    "mode": "issues",
+    "allVisibleCommandsReachable": true,
+    "mapInputClear": true,
+    "fontPixels": 18
+  },
+  {
+    "width": 3840,
+    "height": 1080,
+    "mode": "confirm",
+    "allVisibleCommandsReachable": true,
+    "mapInputClear": true,
+    "fontPixels": 18
+  },
+  {
+    "width": 3840,
+    "height": 1080,
+    "mode": "discard",
+    "allVisibleCommandsReachable": true,
+    "mapInputClear": true,
+    "fontPixels": 18
+  },
+  {
+    "width": 3840,
+    "height": 1080,
+    "mode": "connection",
+    "allVisibleCommandsReachable": true,
+    "mapInputClear": true,
+    "fontPixels": 18
+  }
+]

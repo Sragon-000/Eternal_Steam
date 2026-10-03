@@ -129,12 +129,13 @@ namespace EternalSteam.OpenWorld
 
         [Saved(0)] double pendingTime;
         public double PendingSimulationTime {get=>pendingTime;set=>pendingTime=value;}
-        public bool SimulationPaused=>(input!=null&&input.IsEditing)||Clock.Paused;
+        public HudPauseMenu PauseMenu;
+        public bool SimulationPaused=>(PauseMenu!=null&&PauseMenu.BlocksInput)||(input!=null&&input.IsEditing)||Clock.Paused;
         void Start(){if(Persistence!=null&&Persistence.LastSavedUtc==null&&!Persistence.Blocked)Persistence.RequestAutoSave();}
         void Update()
         {
             AdvanceSimulation(Time.deltaTime);
-            Persistence?.Tick(Time.unscaledDeltaTime);
+            if(PauseMenu==null||!PauseMenu.BlocksInput)Persistence?.Tick(Time.unscaledDeltaTime);
             renderer.Draw();
         }
         // One time source for extraction, generation, production, movement and damage.

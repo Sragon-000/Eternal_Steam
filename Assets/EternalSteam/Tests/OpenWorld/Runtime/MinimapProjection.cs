@@ -8,6 +8,7 @@ namespace EternalSteam.OpenWorld
         public MinimapProjection(Rect bounds){Bounds=bounds;}
         public Vector2 ToMap(Vector3 world)=>new((world.x-Bounds.xMin)/Bounds.width,1-(world.z-Bounds.yMin)/Bounds.height);
         public Vector3 ToWorld(Vector2 point)=>new(Bounds.xMin+Mathf.Clamp01(point.x)*Bounds.width,0,Bounds.yMin+(1-Mathf.Clamp01(point.y))*Bounds.height);
+        public static MinimapProjection Around(Vector3 center,float side=150)=>new(new Rect(new Vector2(center.x,center.z)-Vector2.one*side*.5f,Vector2.one*side));
         public static MinimapProjection ForTerrain(Terrain terrain)
         {
             var origin=terrain.transform.position;var size=terrain.terrainData.size;var bounds=new Rect(origin.x,origin.z,size.x,size.z);
