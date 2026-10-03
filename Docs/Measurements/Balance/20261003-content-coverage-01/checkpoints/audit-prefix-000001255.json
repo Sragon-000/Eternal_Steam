@@ -1,0 +1,259 @@
+{
+  "run": "20261003-content-coverage-01",
+  "recordedUtc": "2026-10-03T13:41:44.198003+00:00",
+  "scope": "Fixed complete-event prefix of an active run; not a terminal audit or survival ceiling",
+  "sourceBytesAtRead": 10875696,
+  "prefixBytes": 10875696,
+  "prefixSha256": "8d68ab380389c9c38fa4872f5eb83d0138e2fb9b752a585ebd54ef17514ec66d",
+  "lastSequence": 1255,
+  "lastSampleSequence": 1255,
+  "gameSeconds": 320.8255086746067,
+  "day": 1,
+  "phase": "Night",
+  "passed": true,
+  "errors": [],
+  "counts": {
+    "inventory-observed": 3,
+    "building-added": 18,
+    "screenshot-request": 66,
+    "action": 42,
+    "weapon-counters": 322,
+    "sample": 322,
+    "screenshot-captured": 10,
+    "resource": 312,
+    "enemy-spawn": 101,
+    "building-damage": 59
+  },
+  "pendingScreenshotRequests": [],
+  "screenshots": [
+    {
+      "file": "screenshots/000001.png",
+      "sha256": "408fdf44cdcd0abbc82bfd88f714a666b03ffeab6f2d98b310a2594fed9f5e3d",
+      "sequence": 14
+    },
+    {
+      "file": "screenshots/000002.png",
+      "sha256": "2597e4577400c3e1a1e4f840c3094737c9a421611c2f1fa353d86061dc6c56d7",
+      "sequence": 140
+    },
+    {
+      "file": "screenshots/000003.png",
+      "sha256": "47559189aad7d28b10f42b7c9d6f5f03031b35ec9a1320822ce12a117685ae64",
+      "sequence": 286
+    },
+    {
+      "file": "screenshots/000004.png",
+      "sha256": "c7a49489fe0f246b0e32131874f75ae74e8df47fabd8d4da3ab3b8abef2d8fe5",
+      "sequence": 468
+    },
+    {
+      "file": "screenshots/000005.png",
+      "sha256": "295e8c1f6b7205b796fdb152a73a5e133955bd12a4d53fb9436c421300fcf332",
+      "sequence": 650
+    },
+    {
+      "file": "screenshots/000006.png",
+      "sha256": "346c189f9de77713a60bee02b28c06f7896fe467d18aa90ae555fb2b09cb9753",
+      "sequence": 693
+    },
+    {
+      "file": "screenshots/000007.png",
+      "sha256": "259986b772bd784878e4e2c8bbcfc02c71ebce05efb045d39f9ffb05550fc927",
+      "sequence": 702
+    },
+    {
+      "file": "screenshots/000008.png",
+      "sha256": "1a6f0605be2cc953b851fe660e5007a5a7e6ac8988a3c3b7514f048fd0584bc2",
+      "sequence": 838
+    },
+    {
+      "file": "screenshots/000009.png",
+      "sha256": "0b5d2b87c1e46fd77360222f16345d94119eeab41740c76f06d8bec9f9786691",
+      "sequence": 1018
+    },
+    {
+      "file": "screenshots/000010.png",
+      "sha256": "e232ea81f0b40706f3957da6d8be61611ba61c4fafa3f63eff01fb27946e5da4",
+      "sequence": 1034
+    }
+  ],
+  "days": {
+    "1": {
+      "groundSpawned": 100,
+      "airSpawned": 1,
+      "killed": 0,
+      "damage": 59.0,
+      "removed": 0,
+      "maximumAlive": 101
+    }
+  },
+  "dayCounterMeaning": "days uses event day; spawnCohorts assigns kills to the original spawn day via ID and generation.",
+  "spawnCohorts": {
+    "1": {
+      "spawned": 101,
+      "killed": 0,
+      "alive": 101,
+      "killedAfterSpawnDay": 0,
+      "maximumKilledLifetimeSeconds": null
+    }
+  },
+  "resourceNetByOperation": [
+    {
+      "base": "d92f8b5bd8e245898569a9e44495c6f6",
+      "resource": "coal",
+      "operation": "production-output",
+      "delta": 156.0
+    },
+    {
+      "base": "d92f8b5bd8e245898569a9e44495c6f6",
+      "resource": "iron",
+      "operation": "production-output",
+      "delta": 156.0
+    }
+  ],
+  "lastInventories": [
+    {
+      "baseId": "490d9a3f81054e5a987ec4ac2ddc77b9",
+      "stocks": [
+        {
+          "id": "coal",
+          "amount": 0.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "copper",
+          "amount": 0.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "iron",
+          "amount": 0.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "nanometal",
+          "amount": 0.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "plasma_ore",
+          "amount": 0.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "titanium",
+          "amount": 0.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "tungsten",
+          "amount": 0.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "uranium",
+          "amount": 0.0,
+          "capacity": 1000000.0
+        }
+      ]
+    },
+    {
+      "baseId": "d92f8b5bd8e245898569a9e44495c6f6",
+      "stocks": [
+        {
+          "id": "coal",
+          "amount": 156.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "copper",
+          "amount": 0.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "iron",
+          "amount": 156.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "nanometal",
+          "amount": 0.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "plasma_ore",
+          "amount": 0.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "titanium",
+          "amount": 0.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "tungsten",
+          "amount": 0.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "uranium",
+          "amount": 0.0,
+          "capacity": 1000000.0
+        }
+      ]
+    }
+  ],
+  "lastRoutes": [],
+  "missingInstalledDefinitions": [
+    "defense.arc",
+    "defense.plasma_laser",
+    "defense.rail_aa",
+    "defense.railgun",
+    "defense.smart_missile",
+    "installation.outpost",
+    "installation.wall",
+    "openworld.legacy.Arrow",
+    "openworld.legacy.Cannon",
+    "openworld.legacy.Frost",
+    "openworld.legacy.MachineGun",
+    "railway.station",
+    "railway.track",
+    "resource.copper",
+    "resource.nanometal",
+    "resource.plasma_ore",
+    "resource.titanium",
+    "resource.tungsten",
+    "resource.uranium"
+  ],
+  "weaponSignals": {
+    "defense.tesla": {
+      "instances": 2,
+      "shotSignals": 0,
+      "projectileSignals": 0
+    },
+    "defense.emp": {
+      "instances": 2,
+      "shotSignals": 13,
+      "projectileSignals": 0
+    },
+    "defense.vulcan_aa": {
+      "instances": 1,
+      "shotSignals": 0,
+      "projectileSignals": 0
+    },
+    "defense.sky_plasma": {
+      "instances": 1,
+      "shotSignals": 0,
+      "projectileSignals": 0
+    }
+  },
+  "noObservedWeaponSignals": [
+    "defense.sky_plasma",
+    "defense.tesla",
+    "defense.vulcan_aa"
+  ],
+  "unsupportedLegacySignalDefinitions": [],
+  "weaponSignalLimitation": "Presentation signals: not damage, hit, kill, or projectile counts; absence is not proof of a defect. Legacy combat bypasses these events; use combat-coverage.jsonl legacyCumulativeShots.",
+  "aliveEnemyIdentities": 101,
+  "enemyLifetimes": []
+}

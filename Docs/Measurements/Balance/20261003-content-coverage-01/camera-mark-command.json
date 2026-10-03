@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/Testing/Balance/BalanceRecorder.cs",
+      "entry": "BalanceRecorder.Mark",
+      "args": "[\"coverage-camera-overview\",\"Normal camera focus between both bases, zoom out three steps; no game state or time changes.\"]"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 88,
+      "executeMs": 1,
+      "assemblyName": "PipelineRunScript_BalanceRecorder_6294eab5a693436dace24e3a098ec260",
+      "success": true,
+      "result": "{\n  \"root\": \"/Users/limseth/Projects/Eternal_Steam/Eternal_Steam/Docs/Measurements/Balance/20261003-content-coverage-01\",\n  \"sequence\": 692,\n  \"stopped\": false,\n  \"stopRequested\": null,\n  \"error\": null,\n  \"screenshotsPending\": 1,\n  \"day\": 1,\n  \"phase\": \"Day\"\n}"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

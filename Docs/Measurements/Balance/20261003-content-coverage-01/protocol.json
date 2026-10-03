@@ -1,0 +1,23 @@
+{
+  "purpose": "Normal content participation follow-up; not academic research",
+  "productCommit": "de9af47",
+  "workingCommit": "1f4623d3681cfee591908dd521a39033f2412e05",
+  "scene": "Assets/EternalSteam/Scene/Tests/StartRegionSandbox.unity",
+  "noResourceEnemyTimeInjection": true,
+  "timeScale": 1,
+  "plan": [
+    "Observe legacy counters from before construction",
+    "Build Tesla/EMP and air-only Vulcan/Sky Plasma before natural first boss",
+    "Add legacy ring after short-range participation, retaining counters before orb craft",
+    "Normal completion and same-scene save reload; preserve defeat or placement failures if any"
+  ],
+  "stoppingRule": "After all eight missing weapon types have observed real participation and a natural wave completes, normally craft/save; if defeat occurs, preserve evidence and review before retry.",
+  "toolHashes": {
+    "BalanceRecorder.cs": "de6d9705e6cdd798358e03cb469231149aa92d8f2eaee319351beccfb559b990",
+    "CombatCoverageProbe.cs": "d48fad9a61ab1de82692e1e8f242f145c573895f667f429d60b799bfd7efccde",
+    "FocusedContentActions.cs": "7a395ae6fe8eb68227c943ff15590b314b1ff46ed35b86f9670a9dc44750eb79",
+    "NormalPlayActions.cs": "b268d3d6cabc156ad4fdf2e22d551354b8917602ba22615b86d6cc65d6f62b48",
+    "VerifyCompletedReload.cs": "dc869966d7af5930cf53f6bc33884e0c1258c3521d7ee764c89a83face90dd5c",
+    "monitor_recording.py": "96fd93083cc91be5783a4a6d5b54900f7118fba02bd6953a5d7a03902ade2028"
+  }
+}
