@@ -1,0 +1,3908 @@
+{
+  "run": "20261003-survival-improved-01",
+  "recordedUtc": "2026-10-03T12:22:58.914755+00:00",
+  "scope": "Fixed complete-event prefix of an active run; not a terminal audit or survival ceiling",
+  "sourceBytesAtRead": 112418980,
+  "prefixBytes": 112418980,
+  "prefixSha256": "a8569c491db00a376b62bd9d290d00b4e9cbf7e34d090e33fbe3cdfd162d05ec",
+  "lastSequence": 8368,
+  "lastSampleSequence": 8368,
+  "gameSeconds": 1392.2518130498938,
+  "day": 3,
+  "phase": "Night",
+  "passed": true,
+  "errors": [],
+  "counts": {
+    "inventory-observed": 4,
+    "building-added": 65,
+    "screenshot-request": 334,
+    "action": 125,
+    "weapon-counters": 1388,
+    "sample": 1388,
+    "screenshot-captured": 156,
+    "resource": 4036,
+    "train-change": 120,
+    "enemy-spawn": 376,
+    "enemy-killed": 376
+  },
+  "pendingScreenshotRequests": [],
+  "screenshots": [
+    {
+      "file": "screenshots/000001.png",
+      "sha256": "408fdf44cdcd0abbc82bfd88f714a666b03ffeab6f2d98b310a2594fed9f5e3d",
+      "sequence": 12
+    },
+    {
+      "file": "screenshots/000002.png",
+      "sha256": "6b1b9d64494a5fceba6c8342979f8ac6c8bcb1754308243a8bcd49cc677d9c3d",
+      "sequence": 69
+    },
+    {
+      "file": "screenshots/000003.png",
+      "sha256": "80eebfe2e174a2df794f34a4c7b3c2de82456f17c30e711f656196f0f8e3ba1c",
+      "sequence": 260
+    },
+    {
+      "file": "screenshots/000004.png",
+      "sha256": "65e950afb62d1bc8eaf9478ca86f3e33e010e356ed0a94ee7647a310c614d033",
+      "sequence": 388
+    },
+    {
+      "file": "screenshots/000005.png",
+      "sha256": "bb6034441546c6233f5f932cb1970de75d4a70b4aad6dff98d9f304eb5cf9177",
+      "sequence": 681
+    },
+    {
+      "file": "screenshots/000006.png",
+      "sha256": "be12a54348a8b97bfa2072492ff07135a227dc488f72eb13c319520fa352cd6c",
+      "sequence": 977
+    },
+    {
+      "file": "screenshots/000007.png",
+      "sha256": "6da721fae4b749c69a9405dca4a33eac7e0c7c3c415dd5adb8bd72dd2005a20f",
+      "sequence": 1158
+    },
+    {
+      "file": "screenshots/000008.png",
+      "sha256": "739b927def841e5259dfc71b75718ce1154ade89a0cf26015818607ccbf46475",
+      "sequence": 1203
+    },
+    {
+      "file": "screenshots/000009.png",
+      "sha256": "fe6a2bdbdaf9f149b49fc70d0385e228c9b3f1b755440db7c16986f76dab223a",
+      "sequence": 1232
+    },
+    {
+      "file": "screenshots/000010.png",
+      "sha256": "ef966d5c9554469ceca00a189249f515226abc9b0a15e469f73e28d17add7e4e",
+      "sequence": 1284
+    },
+    {
+      "file": "screenshots/000011.png",
+      "sha256": "d942cf4d4b39a70323c1494ece571c25aead6403b8969a87a827f7bd2c820208",
+      "sequence": 1371
+    },
+    {
+      "file": "screenshots/000012.png",
+      "sha256": "2be9e88bf7e24aa4bc1c4088d8ae0e0e0d9b2cf8da2276a22dbe0a550e992900",
+      "sequence": 1398
+    },
+    {
+      "file": "screenshots/000013.png",
+      "sha256": "8cbda22b3f6ffcde3d9f594c9196bb1e57ec24334babd9ef3c0ef9af001fd577",
+      "sequence": 1465
+    },
+    {
+      "file": "screenshots/000014.png",
+      "sha256": "14b7269e533739d5bbd0ad20d33ddeb2215f3dc0f03258582bf04b6b9e65de3d",
+      "sequence": 1468
+    },
+    {
+      "file": "screenshots/000015.png",
+      "sha256": "a7df5255bc140d0e01f7f6df481b6c157b135c280149365f763d3068226e2097",
+      "sequence": 1500
+    },
+    {
+      "file": "screenshots/000016.png",
+      "sha256": "56611808d3571309d004b7e03b2e4159716bef9daa4290902277b2e39f3065fb",
+      "sequence": 1507
+    },
+    {
+      "file": "screenshots/000017.png",
+      "sha256": "ead5e92ae61506aeaa34cd0245fb9e77605634c33320120ac9f3fdb5fc80f30e",
+      "sequence": 1554
+    },
+    {
+      "file": "screenshots/000018.png",
+      "sha256": "6e9032c1e21df1fe3f7bd0180a84e3177719c84d45eabf661653bc1433e34bb2",
+      "sequence": 1639
+    },
+    {
+      "file": "screenshots/000019.png",
+      "sha256": "11f7c8a47fbd02a2303abbcaa918be2bd90df175804b87e4778646cc0610e0b5",
+      "sequence": 1690
+    },
+    {
+      "file": "screenshots/000020.png",
+      "sha256": "a42e18443953671ea49cf20ceb26db6604d96bfa34b246b3d1ef880728be26b9",
+      "sequence": 1720
+    },
+    {
+      "file": "screenshots/000021.png",
+      "sha256": "0f185baf2bfce9874d6f839ec4169656ac5b6b999a88bede6f26eca9371b6834",
+      "sequence": 1772
+    },
+    {
+      "file": "screenshots/000022.png",
+      "sha256": "f5baf075af9c623824329107055c9501c93230a48d789542e1f4ca5de36dd979",
+      "sequence": 1786
+    },
+    {
+      "file": "screenshots/000023.png",
+      "sha256": "b6d5557a7e54147cbfd18dcb8d9214c16e23cc44baa87cd8c6299fdce063d2b3",
+      "sequence": 1828
+    },
+    {
+      "file": "screenshots/000024.png",
+      "sha256": "727ccb15a7ddffb8495d779d241c0a773e17214f0a949ee61b940832fae94d3e",
+      "sequence": 1946
+    },
+    {
+      "file": "screenshots/000025.png",
+      "sha256": "fb9139f11874cf2ea9ee2e1ffc5158a413d82c66dc0a5f976d7dc341511ae70e",
+      "sequence": 2040
+    },
+    {
+      "file": "screenshots/000026.png",
+      "sha256": "23a3e50b2428cb7b85f90b43e64a8395d20335d942da3f241fa21af4b4f4ea25",
+      "sequence": 2056
+    },
+    {
+      "file": "screenshots/000027.png",
+      "sha256": "8a344b8887c2c5a525e4f10c073f87121c579a6bebfa67ba620b551d29014a77",
+      "sequence": 2078
+    },
+    {
+      "file": "screenshots/000028.png",
+      "sha256": "54e8947840bff446be981c2f331c568bc131b716d1b93de21f744fac074251ea",
+      "sequence": 2150
+    },
+    {
+      "file": "screenshots/000029.png",
+      "sha256": "ac8bacf8f5b96ef503baa0abeca98efc8b9c4e24b28590fc062ec0b4f89aec50",
+      "sequence": 2238
+    },
+    {
+      "file": "screenshots/000030.png",
+      "sha256": "141061a578479602185f48d529fbc81aa1cf9c44f12fc70ae6acbcbd1b27c745",
+      "sequence": 2257
+    },
+    {
+      "file": "screenshots/000031.png",
+      "sha256": "6e2f015f224703415d3c8e0b207b027a3fc253e7d726ac63b1809deee73f759c",
+      "sequence": 2293
+    },
+    {
+      "file": "screenshots/000032.png",
+      "sha256": "2bcf432dd6441f59715337eeed7f0fc66967362fb20c037900586798768b31d0",
+      "sequence": 2321
+    },
+    {
+      "file": "screenshots/000033.png",
+      "sha256": "f4e93b857a4dd573c097f046f9bfafc1f4831112230f013ed8df7030979c9789",
+      "sequence": 2373
+    },
+    {
+      "file": "screenshots/000034.png",
+      "sha256": "a8cc8b36390e023e79610175fff8849abc7c5ac50aa0f5f7c8d97ef7cf12eafb",
+      "sequence": 2459
+    },
+    {
+      "file": "screenshots/000035.png",
+      "sha256": "39e06c5e285655c2df13af9a3224b5684957280dca5777777ac6037ed6dedab4",
+      "sequence": 2511
+    },
+    {
+      "file": "screenshots/000036.png",
+      "sha256": "4c88f79e35eb818d751e4090432a44e7ec29f9ebb83162492deb23a3657c56da",
+      "sequence": 2539
+    },
+    {
+      "file": "screenshots/000037.png",
+      "sha256": "54644cfc6f1729414941658ba908fdb496ab4bc689f08691f921a6bea7ed513a",
+      "sequence": 2576
+    },
+    {
+      "file": "screenshots/000038.png",
+      "sha256": "caabe8923be77dc54cbe8e1c743e856c6b2a89cba1c48875a97cce0a9d83bf1d",
+      "sequence": 2595
+    },
+    {
+      "file": "screenshots/000039.png",
+      "sha256": "1f487ccae3f9783b6affdbbab8f794e73549879837f01b33cb070563f49a1d28",
+      "sequence": 2725
+    },
+    {
+      "file": "screenshots/000040.png",
+      "sha256": "db24432d5f1099c8f7608e7a54c54fbadd81a5bda2e8bd53f3f6588e1010639b",
+      "sequence": 2782
+    },
+    {
+      "file": "screenshots/000041.png",
+      "sha256": "6cb4bba4b6d89c23631118d8e4655438ad6b764e10586b3ddfdb165c36b9f319",
+      "sequence": 2811
+    },
+    {
+      "file": "screenshots/000042.png",
+      "sha256": "854e92552463fbc6f28965b5b64e42814b61da30b03fc5038bc3e076368d3322",
+      "sequence": 2834
+    },
+    {
+      "file": "screenshots/000043.png",
+      "sha256": "0ae0c64c8313a981a4fd9e1c76a00665404ccaddc441423c4b8a28b4dbda5d45",
+      "sequence": 2867
+    },
+    {
+      "file": "screenshots/000044.png",
+      "sha256": "43a664e301d7e8e313742a5c463b5a5c883775506be635f4a5c901b5acb4f24b",
+      "sequence": 2939
+    },
+    {
+      "file": "screenshots/000045.png",
+      "sha256": "fb24fde6ff8954e18dd601cb813dbf674e0050b22c0d48e754805d369ddb0291",
+      "sequence": 2954
+    },
+    {
+      "file": "screenshots/000046.png",
+      "sha256": "d0f7d6a9d7aacb0d01ee57e1e026dee98257dba7ea48a8f5672caedc827cb1ac",
+      "sequence": 2984
+    },
+    {
+      "file": "screenshots/000047.png",
+      "sha256": "b28eb265966642b92d1e854bce7dfae67d9071d154c78f0e2042304d559390ee",
+      "sequence": 3010
+    },
+    {
+      "file": "screenshots/000048.png",
+      "sha256": "b3261288fc657a8df6999bad59425d66d1b099ed6bb38660f4edfddf97322a03",
+      "sequence": 3039
+    },
+    {
+      "file": "screenshots/000049.png",
+      "sha256": "907e7757a7eae6f6fb767624aa006c282b81d020fe997832f9b1de6dbb382d08",
+      "sequence": 3091
+    },
+    {
+      "file": "screenshots/000050.png",
+      "sha256": "8a4202d7425117b26a620c5f30acaaa436c1a3a339bd3d6ca405d7b788b713af",
+      "sequence": 3100
+    },
+    {
+      "file": "screenshots/000051.png",
+      "sha256": "dac1509a941823bcea085b51b81be802cd548a14e3c3e7ebd8edbf9e5f3dcfb4",
+      "sequence": 3184
+    },
+    {
+      "file": "screenshots/000052.png",
+      "sha256": "dac1509a941823bcea085b51b81be802cd548a14e3c3e7ebd8edbf9e5f3dcfb4",
+      "sequence": 3194
+    },
+    {
+      "file": "screenshots/000053.png",
+      "sha256": "c55bcf62b8a40c7074dd0d925d5e2552eefb9f5f6c6d30d45b44662d8321618d",
+      "sequence": 3245
+    },
+    {
+      "file": "screenshots/000054.png",
+      "sha256": "ff4c11085ff998d8d2ccd941273d7627fa2014e06598adc5e54951947cd9587f",
+      "sequence": 3275
+    },
+    {
+      "file": "screenshots/000055.png",
+      "sha256": "9fb52717f88dc1f124b9299aa0f1d82594a5246644db42c6611425965e8df695",
+      "sequence": 3277
+    },
+    {
+      "file": "screenshots/000056.png",
+      "sha256": "145ecbe9dbd69764472be532ab21bfeae8664f78f49e53434c01b7eac024e47d",
+      "sequence": 3331
+    },
+    {
+      "file": "screenshots/000057.png",
+      "sha256": "6b8c0f520f6617feeea3069f1abe2ef569143b516263210b5e166d9ab825dc48",
+      "sequence": 3416
+    },
+    {
+      "file": "screenshots/000058.png",
+      "sha256": "b672d710980763c770b3e6bada4671ec5cb4d99fe1278034478095287e6244f1",
+      "sequence": 3467
+    },
+    {
+      "file": "screenshots/000059.png",
+      "sha256": "d96f20a35ade66075858cf718a6a3ed12a431d8c94fab6db7b1527f3c2ba3e9a",
+      "sequence": 3497
+    },
+    {
+      "file": "screenshots/000060.png",
+      "sha256": "6fe4eac231f336d9404e0568725461ed0cfc52723d7ed46308e6d11dd6e71822",
+      "sequence": 3549
+    },
+    {
+      "file": "screenshots/000061.png",
+      "sha256": "ab74b8a35e08cbb33ec0256e773fd7e1632f0e577e1fb98eb38f077c3b3d7853",
+      "sequence": 3590
+    },
+    {
+      "file": "screenshots/000062.png",
+      "sha256": "69bef81569eea6571c7283f32c1de127875f072f856e6d54636d30e8f2bbe267",
+      "sequence": 3638
+    },
+    {
+      "file": "screenshots/000063.png",
+      "sha256": "3cebd181021a7ab4ce872ce8b8764d1193831ca072cec2b0b59c59022f8ef2a4",
+      "sequence": 3689
+    },
+    {
+      "file": "screenshots/000064.png",
+      "sha256": "78d848d03c1f4a1fb601120f853be5beeff325fb26542e14ab6b8e68b2be8d9f",
+      "sequence": 3721
+    },
+    {
+      "file": "screenshots/000065.png",
+      "sha256": "4c9f3137ed9f273844c96627877902b8683a8a258e0bb9beb6e1479820bed53d",
+      "sequence": 3772
+    },
+    {
+      "file": "screenshots/000066.png",
+      "sha256": "4dc6d9392b9517de1d16655ed4543754fa53a7eb43f6d4170c38ede9e11105f9",
+      "sequence": 3856
+    },
+    {
+      "file": "screenshots/000067.png",
+      "sha256": "48454d50313753d4752105d1dd709a906cbf9d4f9b842c6a4b1755d2eb15c2b6",
+      "sequence": 3904
+    },
+    {
+      "file": "screenshots/000068.png",
+      "sha256": "33b8d51317f15444b0ad88b69f12bbc3fa45377e02a1db592905be730f3daef0",
+      "sequence": 3907
+    },
+    {
+      "file": "screenshots/000069.png",
+      "sha256": "2f42f6e3fdbdac1e28917d43801d9927041686ec43442a6570618c546a5ace34",
+      "sequence": 3941
+    },
+    {
+      "file": "screenshots/000070.png",
+      "sha256": "912230047255ee7b651373639ab443fa67a98f396615d41510ead92cbd04fe18",
+      "sequence": 3992
+    },
+    {
+      "file": "screenshots/000071.png",
+      "sha256": "48029a82c74cc3221636e3c33828bd7746f7be314be24b21d501dfcb43b903b9",
+      "sequence": 4075
+    },
+    {
+      "file": "screenshots/000072.png",
+      "sha256": "5697ded964f2bba445bc9947c890ad72c0730adc2bfad095c68cad58e9fea83c",
+      "sequence": 4127
+    },
+    {
+      "file": "screenshots/000073.png",
+      "sha256": "f7899d08889418644faa0b303dd19cbc303de29121a6bf82dd13f94ff1f41d9f",
+      "sequence": 4142
+    },
+    {
+      "file": "screenshots/000074.png",
+      "sha256": "dec2c9ff4bc9317de60fdc6a8f34cd6f54efd38ab84dc80a5681f9e1ae36438d",
+      "sequence": 4162
+    },
+    {
+      "file": "screenshots/000075.png",
+      "sha256": "2b6fa3451d61ae44879f45e861b5aff04ff36714908eec303862be90cb379466",
+      "sequence": 4213
+    },
+    {
+      "file": "screenshots/000076.png",
+      "sha256": "4c2888c820afdff0dc241795501edd56817e846ce508765f4a167bfc08326e77",
+      "sequence": 4225
+    },
+    {
+      "file": "screenshots/000077.png",
+      "sha256": "353757b0322163f770014ab9c24b2f572a8b2f97642b0531ffb10dcd13c06ed9",
+      "sequence": 4301
+    },
+    {
+      "file": "screenshots/000078.png",
+      "sha256": "f03711a41e1dcb03348920484ca0dd46610a6230f4238e79cbb829cb20972333",
+      "sequence": 4354
+    },
+    {
+      "file": "screenshots/000079.png",
+      "sha256": "77895e94a71c235e76683dda5819d6646a3487ea309c5362597f3b5d7be26718",
+      "sequence": 4384
+    },
+    {
+      "file": "screenshots/000080.png",
+      "sha256": "4823333f955433f7ea3fca1b0f52703744f991ca22f907325efc85156708197e",
+      "sequence": 4435
+    },
+    {
+      "file": "screenshots/000081.png",
+      "sha256": "3c3c6e109c628460660cc5e01b95837ac743648487935c62ff1880e37ef901cb",
+      "sequence": 4519
+    },
+    {
+      "file": "screenshots/000082.png",
+      "sha256": "1d458dc33816952f3d894d8bb06ca8b5665803ad9ac6e9cb313e18bc395b9161",
+      "sequence": 4538
+    },
+    {
+      "file": "screenshots/000083.png",
+      "sha256": "792ca61f392196c115d95fb70ff5c941e40c49127ea47b2a72c24127be067b31",
+      "sequence": 4576
+    },
+    {
+      "file": "screenshots/000084.png",
+      "sha256": "7e5d0735bdf766e00102b4540f4b2e2ffaa1a28bd35486459fa87d238af579c4",
+      "sequence": 4582
+    },
+    {
+      "file": "screenshots/000085.png",
+      "sha256": "f0255addded1150bbcc6cab209d0d83589ffdb056064b29619b201170f891ed8",
+      "sequence": 4657
+    },
+    {
+      "file": "screenshots/000086.png",
+      "sha256": "083c5cfb92e6aaee0a02c8886bb0a470a7a34163d2f8c55ab817d0a737888bcf",
+      "sequence": 4794
+    },
+    {
+      "file": "screenshots/000087.png",
+      "sha256": "35cb7626636f80a2b252ab209b431e78a727c95dcf501548f397bace458c7333",
+      "sequence": 4902
+    },
+    {
+      "file": "screenshots/000088.png",
+      "sha256": "c937fd7f1cedca2e4adb2deeb2eb951e890f26142b97642abe9409b7b10ebba3",
+      "sequence": 4955
+    },
+    {
+      "file": "screenshots/000089.png",
+      "sha256": "0c6ffb8a169255e0d65c4b49e8afa88277f45cbfcc39bbe0bdfef06dd6748881",
+      "sequence": 4986
+    },
+    {
+      "file": "screenshots/000090.png",
+      "sha256": "adf4f82f575ceea1c56606abab9564f507584368a6f7db751f7f0fe2e132a49a",
+      "sequence": 5016
+    },
+    {
+      "file": "screenshots/000091.png",
+      "sha256": "cc057c6b58cd5559dfed76f802490fab483a371ed63f36b5ed41e36d2a04708f",
+      "sequence": 5041
+    },
+    {
+      "file": "screenshots/000092.png",
+      "sha256": "5dc2d964a186cdff6e1a91c44ec9a10aa30f4ee15e0e2e3b1736ef153a1501de",
+      "sequence": 5149
+    },
+    {
+      "file": "screenshots/000093.png",
+      "sha256": "b7ebf1cd7fa6c4441fb68e266b28418259c535cafdbe2ae684e0f58b4b70e8d2",
+      "sequence": 5206
+    },
+    {
+      "file": "screenshots/000094.png",
+      "sha256": "43f6402892864ad7880eba125608279c9960a66dc28efe8b77f4af6b2bb94286",
+      "sequence": 5240
+    },
+    {
+      "file": "screenshots/000095.png",
+      "sha256": "a075e71f7183aae75f633a346fac321d8d7f57f7a3e056ad0d0b4bc572c6ac7f",
+      "sequence": 5302
+    },
+    {
+      "file": "screenshots/000096.png",
+      "sha256": "ec1affa1981d5bd17f320405b008876c78af24171a9883cee476ca3155838838",
+      "sequence": 5388
+    },
+    {
+      "file": "screenshots/000097.png",
+      "sha256": "97f0cedeab6dce37e49303345df789ab320a85ff1016e243e564017338752683",
+      "sequence": 5403
+    },
+    {
+      "file": "screenshots/000098.png",
+      "sha256": "da7688ab4974e8f8efb2747bc575575ee43602488e67e133bb2df5d9c3236cca",
+      "sequence": 5460
+    },
+    {
+      "file": "screenshots/000099.png",
+      "sha256": "f0df4d06c6427355e79f3c780887edc4c0b06d26238bd3f6cf10277f9798ea33",
+      "sequence": 5493
+    },
+    {
+      "file": "screenshots/000100.png",
+      "sha256": "2affca68aa37a3d47c6d2b6bc09e8bc4db9e3ae89a06ebf1783ce1a04d308f40",
+      "sequence": 5556
+    },
+    {
+      "file": "screenshots/000101.png",
+      "sha256": "f70663a7f0a51fd8d93a3dc3b5a53c56f6d34cc33500699be7ff271dba7c305c",
+      "sequence": 5657
+    },
+    {
+      "file": "screenshots/000102.png",
+      "sha256": "3ade93924b63a711d6599c0693d63ee889a9e22f250ca4ba653795a8b0575493",
+      "sequence": 5708
+    },
+    {
+      "file": "screenshots/000103.png",
+      "sha256": "76a950cbaa1f66ff89b540548f05576f9e2034e87778688cf4a4ec8143f8b5eb",
+      "sequence": 5738
+    },
+    {
+      "file": "screenshots/000104.png",
+      "sha256": "f29387c2979cb659448271d0229d1d4593df250ee94fb523817174490f1c8c41",
+      "sequence": 5740
+    },
+    {
+      "file": "screenshots/000105.png",
+      "sha256": "85a14218fc569e05c0280a5867aeac1eded630557657590f8d14bfc03148ee59",
+      "sequence": 5782
+    },
+    {
+      "file": "screenshots/000106.png",
+      "sha256": "f92cde6b3748600c2d5d7ef11928720d07d212b77c40aeeafcc5fef961601179",
+      "sequence": 5797
+    },
+    {
+      "file": "screenshots/000107.png",
+      "sha256": "81bd48aba08cc22d1b97a034f4ac12a55934d2322022cbc0dbf9adaae9129070",
+      "sequence": 5881
+    },
+    {
+      "file": "screenshots/000108.png",
+      "sha256": "6c6b6dd00f1ac2a8f6345c1556a73a21e284f9d1efb8888b42b4dc880e971b6e",
+      "sequence": 5932
+    },
+    {
+      "file": "screenshots/000109.png",
+      "sha256": "d8f2cbc97d5d1a2b2e3b29db99e6d2e81f26fd5522f37b95e2dd258100185cf1",
+      "sequence": 5962
+    },
+    {
+      "file": "screenshots/000110.png",
+      "sha256": "f7943fbd2f212316ef4ebc597a7095367225a8c8484684d908333eb111035d9a",
+      "sequence": 6015
+    },
+    {
+      "file": "screenshots/000111.png",
+      "sha256": "c90e9aa6b34c90541dc192b7387f889c29ff226c514b93c877bb0ac5ec63f156",
+      "sequence": 6020
+    },
+    {
+      "file": "screenshots/000112.png",
+      "sha256": "38d460fee352d803b9a153c501a9810c8bfc8307181f120443791b0048bab48f",
+      "sequence": 6061
+    },
+    {
+      "file": "screenshots/000113.png",
+      "sha256": "9755532d154f916d4403f4558cb7afdb9b443e291f568994286e53107c8d85dd",
+      "sequence": 6109
+    },
+    {
+      "file": "screenshots/000114.png",
+      "sha256": "3c07b4061a4dc5c7f8fd92b92959c887d56f7d855b00e5c14bd4581e5827f167",
+      "sequence": 6122
+    },
+    {
+      "file": "screenshots/000115.png",
+      "sha256": "95add5b5712dc49199ce9cd9b6007e795ac9b63b491db288a3ed7aebfcd5ddc1",
+      "sequence": 6173
+    },
+    {
+      "file": "screenshots/000116.png",
+      "sha256": "556425cb5ff61737b69d7d7eb1e35fc1c70d445dc59d16d6c474b7550360fc85",
+      "sequence": 6202
+    },
+    {
+      "file": "screenshots/000117.png",
+      "sha256": "3b7de13cd099ecea626075d496a018b26796b3df9ef800a49e65e10f383b5bf3",
+      "sequence": 6254
+    },
+    {
+      "file": "screenshots/000118.png",
+      "sha256": "52eec3bca1438e56c4b0b8ecd02030be5215406bef464ade8ac7909cd08d8c7f",
+      "sequence": 6340
+    },
+    {
+      "file": "screenshots/000119.png",
+      "sha256": "f9bd24cc286050e22c9d981e5ecf0db01ebab13b9c309a6ff3690517fa2f3744",
+      "sequence": 6385
+    },
+    {
+      "file": "screenshots/000120.png",
+      "sha256": "f753c1fd065963486a88095d5bd3b9df1b14c8a9954c379fc2cabd0f903c2050",
+      "sequence": 6393
+    },
+    {
+      "file": "screenshots/000121.png",
+      "sha256": "b69dc69e6b313bf40539c0f5a64348598aae8a6f8cbfc050c8672301c5c86fd2",
+      "sequence": 6423
+    },
+    {
+      "file": "screenshots/000122.png",
+      "sha256": "7f9c91b8f2a362e14cd214ccbdddb75490f5ca6970c47b827c615f7e0e1a1b41",
+      "sequence": 6474
+    },
+    {
+      "file": "screenshots/000123.png",
+      "sha256": "798c949a38f379d5e4ff017bed43523868452862c119408d8f500468aae4d902",
+      "sequence": 6561
+    },
+    {
+      "file": "screenshots/000124.png",
+      "sha256": "a398f45075cd8ba76cc336b7799e006690aae469655312530791d9fa8160d057",
+      "sequence": 6612
+    },
+    {
+      "file": "screenshots/000125.png",
+      "sha256": "4d902bf3c8856c1d72b03e35b3673b36e7b36a8f960b91697c60231d4b95c410",
+      "sequence": 6641
+    },
+    {
+      "file": "screenshots/000126.png",
+      "sha256": "d568ec98fc09fdebfc04f784d0162c1d1eb25fbec89911f238e41f3ffaf3a7b8",
+      "sequence": 6692
+    },
+    {
+      "file": "screenshots/000127.png",
+      "sha256": "4f26259d94c863c606b90c1f525a4b1ec824dec201a642731ca10df0460ce692",
+      "sequence": 6702
+    },
+    {
+      "file": "screenshots/000128.png",
+      "sha256": "751dd3be44272144cfd0484ac136b911535b166ac7c38794708285adf159912b",
+      "sequence": 6785
+    },
+    {
+      "file": "screenshots/000129.png",
+      "sha256": "60bbb6f8865159e85d98d1ae03ea6bb8e89a3a13cdf913d79c0182bbc9e51df3",
+      "sequence": 6837
+    },
+    {
+      "file": "screenshots/000130.png",
+      "sha256": "e689891dc2a5b1a5c7084523e38a3d9bd93940a80fb9fdb39b55be9140f0f8cd",
+      "sequence": 6864
+    },
+    {
+      "file": "screenshots/000131.png",
+      "sha256": "5c2069f64cbe803324dd90b2c3900ece1756aedc5d32150e83ef6cf330fdb3d9",
+      "sequence": 6915
+    },
+    {
+      "file": "screenshots/000132.png",
+      "sha256": "68289de3e00e67442f465a15467c401327fb35385d817704ecf3354a7292cdf8",
+      "sequence": 7001
+    },
+    {
+      "file": "screenshots/000133.png",
+      "sha256": "65084939a156552463cb046d77aa486ca77c4ccd06acd2e9ed45d68af679629d",
+      "sequence": 7017
+    },
+    {
+      "file": "screenshots/000134.png",
+      "sha256": "ed3f7fe2da5d291e1f4bd82cfc8521ebbee9c66e2364ff723d04be871566128b",
+      "sequence": 7056
+    },
+    {
+      "file": "screenshots/000135.png",
+      "sha256": "492baa99172366c18992f48492e9a7d99bb3ea813f37e36707b045d83a8b9809",
+      "sequence": 7083
+    },
+    {
+      "file": "screenshots/000136.png",
+      "sha256": "bfe753aa00a9c15ad01aa3ee075ec2673df8ddc645d2969abcd3c747829f7952",
+      "sequence": 7134
+    },
+    {
+      "file": "screenshots/000137.png",
+      "sha256": "b4d4f5c9d3389aad1cdff51de86899524ecb6440070ed36f727faec2a6aa37f7",
+      "sequence": 7223
+    },
+    {
+      "file": "screenshots/000138.png",
+      "sha256": "371238f8ee434d722cf8095ae264310f3821060aff7308b781ac6fd70ca9e670",
+      "sequence": 7275
+    },
+    {
+      "file": "screenshots/000139.png",
+      "sha256": "410e1b0ce77b40dcf7d171b2a91b5f0028ca2f918dab665f5b556880eacbaf3b",
+      "sequence": 7303
+    },
+    {
+      "file": "screenshots/000140.png",
+      "sha256": "191b2bb570eeb4f54ddb9e71616e1a8b0868e370f75579a57562787e52cac0ec",
+      "sequence": 7333
+    },
+    {
+      "file": "screenshots/000141.png",
+      "sha256": "073f23029179d0bec964d93d4d9761203a4e44816bd0d851620baaff6598dd14",
+      "sequence": 7359
+    },
+    {
+      "file": "screenshots/000142.png",
+      "sha256": "31fc9e92c1012c9b0319f6b0d4fe70fc269c5fe3eedb690fe97d3e47b5f602a9",
+      "sequence": 7376
+    },
+    {
+      "file": "screenshots/000143.png",
+      "sha256": "6fdc0baf979e205f27645296a020f5154b98384a08894204c6d24e96d1701845",
+      "sequence": 7615
+    },
+    {
+      "file": "screenshots/000144.png",
+      "sha256": "7c202623658f350cb19adc3c3c6c38e1575ae95343ccb8a287e6799d6a99b3f3",
+      "sequence": 7688
+    },
+    {
+      "file": "screenshots/000145.png",
+      "sha256": "f2bd1123f909709925dd1beaa5c781843c59ac408a1b3def6238486d2c95dd51",
+      "sequence": 7716
+    },
+    {
+      "file": "screenshots/000146.png",
+      "sha256": "e499e8bb6f70fc9d1714111c18194fe24da11dbdee5414c053043c8442e9d336",
+      "sequence": 7772
+    },
+    {
+      "file": "screenshots/000147.png",
+      "sha256": "dc3cb8abbba28087049edb513229ed50e90e3ef440c790f2d0e65145bd4a6050",
+      "sequence": 7843
+    },
+    {
+      "file": "screenshots/000148.png",
+      "sha256": "56c49b9bbe44fdac16e14127170d2285e6cde7ca439f23eac7fe2e7af45b86e6",
+      "sequence": 7867
+    },
+    {
+      "file": "screenshots/000149.png",
+      "sha256": "021486b068097ddf62da2f8cceea20af13ab5f6e8e1dcb89a752dece9743b4b3",
+      "sequence": 7939
+    },
+    {
+      "file": "screenshots/000150.png",
+      "sha256": "5f57aef8cc670769a2603d7654d4fabde2c034b357d56fb261b8f663258bc7d4",
+      "sequence": 7975
+    },
+    {
+      "file": "screenshots/000151.png",
+      "sha256": "a670faf58a23d5077ea06f6cc2698993778c96055127bf02111e8a62bded1ed0",
+      "sequence": 8036
+    },
+    {
+      "file": "screenshots/000152.png",
+      "sha256": "60064fe3b48ac0d3a0537f4ebfb89ad39a416bc137ae4de1007257be091f3716",
+      "sequence": 8180
+    },
+    {
+      "file": "screenshots/000153.png",
+      "sha256": "b45776a476f6a8abfa57794d64445c1d4f31a76234d41ee55f7f8d2c51dd4c95",
+      "sequence": 8241
+    },
+    {
+      "file": "screenshots/000154.png",
+      "sha256": "90049f0af121aca22b2ecd6bc80466b09225511786818c149bd3ac60cb99f8a9",
+      "sequence": 8264
+    },
+    {
+      "file": "screenshots/000155.png",
+      "sha256": "0536d9be33ad3f0e7e856c2c9ebbeb9b1d8f17c32e5a7dc0a20fda08d67d7f63",
+      "sequence": 8270
+    },
+    {
+      "file": "screenshots/000156.png",
+      "sha256": "1bb1d3c84705fafd2c14858e2c02e7b136ef93122602564f7657ac3e43a91382",
+      "sequence": 8324
+    }
+  ],
+  "days": {
+    "1": {
+      "groundSpawned": 100,
+      "airSpawned": 1,
+      "killed": 101,
+      "damage": 0,
+      "removed": 0,
+      "maximumAlive": 90
+    },
+    "2": {
+      "groundSpawned": 125,
+      "airSpawned": 0,
+      "killed": 125,
+      "damage": 0,
+      "removed": 0,
+      "maximumAlive": 116
+    },
+    "3": {
+      "groundSpawned": 150,
+      "airSpawned": 0,
+      "killed": 150,
+      "damage": 0,
+      "removed": 0,
+      "maximumAlive": 127
+    }
+  },
+  "resourceNetByOperation": [
+    {
+      "base": "d3478f2b4e5d4d72b0188459fbdbc462",
+      "resource": "coal",
+      "operation": "production-output",
+      "delta": 671.0
+    },
+    {
+      "base": "d3478f2b4e5d4d72b0188459fbdbc462",
+      "resource": "iron",
+      "operation": "deposit",
+      "delta": 870.0
+    },
+    {
+      "base": "d3478f2b4e5d4d72b0188459fbdbc462",
+      "resource": "iron",
+      "operation": "production-output",
+      "delta": 671.0
+    },
+    {
+      "base": "d3478f2b4e5d4d72b0188459fbdbc462",
+      "resource": "iron",
+      "operation": "withdraw",
+      "delta": -10.0
+    },
+    {
+      "base": "d5cea6c82cc04e2ca6fcf18a94493419",
+      "resource": "coal",
+      "operation": "production-output",
+      "delta": 693.0
+    },
+    {
+      "base": "d5cea6c82cc04e2ca6fcf18a94493419",
+      "resource": "coal",
+      "operation": "withdraw",
+      "delta": -150.0
+    },
+    {
+      "base": "d5cea6c82cc04e2ca6fcf18a94493419",
+      "resource": "copper",
+      "operation": "production-output",
+      "delta": 267.0
+    },
+    {
+      "base": "d5cea6c82cc04e2ca6fcf18a94493419",
+      "resource": "iron",
+      "operation": "production-output",
+      "delta": 1386.0
+    },
+    {
+      "base": "d5cea6c82cc04e2ca6fcf18a94493419",
+      "resource": "iron",
+      "operation": "withdraw",
+      "delta": -917.0
+    },
+    {
+      "base": "d5cea6c82cc04e2ca6fcf18a94493419",
+      "resource": "nanometal",
+      "operation": "production-output",
+      "delta": 11.0
+    },
+    {
+      "base": "d5cea6c82cc04e2ca6fcf18a94493419",
+      "resource": "plasma_ore",
+      "operation": "production-output",
+      "delta": 22.0
+    },
+    {
+      "base": "d5cea6c82cc04e2ca6fcf18a94493419",
+      "resource": "titanium",
+      "operation": "production-output",
+      "delta": 133.0
+    },
+    {
+      "base": "d5cea6c82cc04e2ca6fcf18a94493419",
+      "resource": "tungsten",
+      "operation": "production-output",
+      "delta": 66.0
+    },
+    {
+      "base": "d5cea6c82cc04e2ca6fcf18a94493419",
+      "resource": "uranium",
+      "operation": "production-output",
+      "delta": 29.0
+    }
+  ],
+  "lastInventories": [
+    {
+      "baseId": "4db313e3358442e1aab5c6da76aa0155",
+      "stocks": [
+        {
+          "id": "coal",
+          "amount": 0.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "copper",
+          "amount": 0.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "iron",
+          "amount": 0.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "nanometal",
+          "amount": 0.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "plasma_ore",
+          "amount": 0.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "titanium",
+          "amount": 0.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "tungsten",
+          "amount": 0.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "uranium",
+          "amount": 0.0,
+          "capacity": 1000000.0
+        }
+      ]
+    },
+    {
+      "baseId": "d3478f2b4e5d4d72b0188459fbdbc462",
+      "stocks": [
+        {
+          "id": "coal",
+          "amount": 671.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "copper",
+          "amount": 0.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "iron",
+          "amount": 1531.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "nanometal",
+          "amount": 0.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "plasma_ore",
+          "amount": 0.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "titanium",
+          "amount": 0.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "tungsten",
+          "amount": 0.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "uranium",
+          "amount": 0.0,
+          "capacity": 1000000.0
+        }
+      ]
+    },
+    {
+      "baseId": "d5cea6c82cc04e2ca6fcf18a94493419",
+      "stocks": [
+        {
+          "id": "coal",
+          "amount": 543.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "copper",
+          "amount": 267.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "iron",
+          "amount": 469.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "nanometal",
+          "amount": 11.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "plasma_ore",
+          "amount": 22.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "titanium",
+          "amount": 133.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "tungsten",
+          "amount": 66.0,
+          "capacity": 1000000.0
+        },
+        {
+          "id": "uranium",
+          "amount": 29.0,
+          "capacity": 1000000.0
+        }
+      ]
+    }
+  ],
+  "lastRoutes": [
+    {
+      "route": "960ef087e05742f2b803829b9a18fb69",
+      "name": "노선 1",
+      "error": null,
+      "train": {
+        "status": 1,
+        "stop": 1,
+        "progress": 9.006185158155859,
+        "dwell": 0.0,
+        "cargo": 0.0,
+        "fuel": 33.99999999999999,
+        "serviced": true,
+        "segmentPaid": true,
+        "reverse": false,
+        "waitingForStation": false,
+        "stationEntryReserved": false,
+        "resource": "iron",
+        "armament": {
+          "footprint": {
+            "x": 2,
+            "y": 2
+          },
+          "definition": "defense.arc",
+          "battery": 172.4435519077815,
+          "modules": [
+            {
+              "type": "EternalSteam.WeaponRuntime",
+              "values": [
+                {
+                  "name": "Kinds",
+                  "text": "All",
+                  "vector": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  },
+                  "integers": [],
+                  "longs": []
+                },
+                {
+                  "name": "burstTime",
+                  "text": "0",
+                  "vector": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  },
+                  "integers": [],
+                  "longs": []
+                },
+                {
+                  "name": "cooldown",
+                  "text": "0",
+                  "vector": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  },
+                  "integers": [],
+                  "longs": []
+                },
+                {
+                  "name": "firing",
+                  "text": "True",
+                  "vector": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  },
+                  "integers": [],
+                  "longs": []
+                },
+                {
+                  "name": "tracked",
+                  "text": "0",
+                  "vector": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  },
+                  "integers": [],
+                  "longs": []
+                }
+              ]
+            },
+            {
+              "type": "EternalSteam.PerformanceUpgrade",
+              "values": [
+                {
+                  "name": "Level",
+                  "text": "2",
+                  "vector": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  },
+                  "integers": [],
+                  "longs": []
+                }
+              ]
+            },
+            {
+              "type": "EternalSteam.TurretRotation",
+              "values": [
+                {
+                  "name": "Direction",
+                  "text": "",
+                  "vector": {
+                    "x": 0.7071066498756409,
+                    "y": 0.0,
+                    "z": 0.70710688829422
+                  },
+                  "integers": [],
+                  "longs": []
+                },
+                {
+                  "name": "multiplier",
+                  "text": "1",
+                  "vector": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  },
+                  "integers": [],
+                  "longs": []
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "missingInstalledDefinitions": [],
+  "weaponSignals": {
+    "defense.arc": {
+      "instances": 3,
+      "shotSignals": 37,
+      "projectileSignals": 987
+    },
+    "defense.plasma_laser": {
+      "instances": 2,
+      "shotSignals": 56,
+      "projectileSignals": 0
+    },
+    "defense.tesla": {
+      "instances": 1,
+      "shotSignals": 0,
+      "projectileSignals": 0
+    },
+    "defense.vulcan_aa": {
+      "instances": 1,
+      "shotSignals": 0,
+      "projectileSignals": 0
+    },
+    "defense.rail_aa": {
+      "instances": 1,
+      "shotSignals": 218,
+      "projectileSignals": 0
+    },
+    "defense.railgun": {
+      "instances": 1,
+      "shotSignals": 16,
+      "projectileSignals": 0
+    },
+    "defense.sky_plasma": {
+      "instances": 1,
+      "shotSignals": 0,
+      "projectileSignals": 0
+    },
+    "defense.smart_missile": {
+      "instances": 1,
+      "shotSignals": 53,
+      "projectileSignals": 8178
+    },
+    "defense.emp": {
+      "instances": 1,
+      "shotSignals": 0,
+      "projectileSignals": 0
+    },
+    "openworld.legacy.MachineGun": {
+      "instances": 1,
+      "shotSignals": 0,
+      "projectileSignals": 0
+    },
+    "openworld.legacy.Cannon": {
+      "instances": 1,
+      "shotSignals": 0,
+      "projectileSignals": 0
+    },
+    "openworld.legacy.Frost": {
+      "instances": 1,
+      "shotSignals": 0,
+      "projectileSignals": 0
+    },
+    "openworld.legacy.Arrow": {
+      "instances": 1,
+      "shotSignals": 0,
+      "projectileSignals": 0
+    }
+  },
+  "noObservedWeaponSignals": [
+    "defense.emp",
+    "defense.sky_plasma",
+    "defense.tesla",
+    "defense.vulcan_aa",
+    "openworld.legacy.Arrow",
+    "openworld.legacy.Cannon",
+    "openworld.legacy.Frost",
+    "openworld.legacy.MachineGun"
+  ],
+  "weaponSignalLimitation": "Presentation signals: not damage, hit, kill, or projectile counts; absence is not proof of a defect.",
+  "aliveEnemyIdentities": 0,
+  "enemyLifetimes": [
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 0.18858254747465253
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 4.994465155061334
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 4.588855954352766
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 4.190669950097799
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 7.723044746555388
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 8.119907868094742
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 6.922218993771821
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 7.317786873318255
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 6.11507962225005
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 6.515978699550033
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 6.391639998182654
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 5.9948180806823075
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 5.590532248839736
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 8.90395683515817
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 9.00831961678341
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 9.011425079777837
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 8.993631494231522
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 8.59593861643225
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 8.193615828175098
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 8.877653365489095
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 8.882132329512388
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 8.883092498406768
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 8.886375202331692
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 8.88633096171543
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 8.888187624514103
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 20.199392249342054
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 19.801002914551646
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 19.396148461382836
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 22.95736891636625
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 23.067759082186967
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 23.070728881750256
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 22.803340843878686
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 22.40883054723963
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 22.007147297263145
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 23.070304001215845
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 23.076415004208684
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 23.074023713357747
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 23.080743800848722
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 23.088962262496352
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 23.09492721501738
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 23.09972559241578
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 22.95324317831546
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 23.069356509950012
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 23.00785130262375
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 22.606149634346366
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 22.213323635980487
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 23.071492879185826
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 23.078487013000995
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 23.12057321984321
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 23.12197354482487
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 112.01904897019267
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 111.62065963540226
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 112.01904897019267
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 116.21974884858355
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 116.62460330175236
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 115.82019329955801
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 116.21974884858355
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 115.4228891748935
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 115.82019329955801
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 115.02258609328419
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 115.4228891748935
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 114.62068739114329
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 115.02258609328419
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 114.22617709450424
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 114.62068739114329
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 118.82594396267086
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 119.22762721264735
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 118.42464846232906
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 118.82594396267086
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 118.02628346113488
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 118.42464846232906
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 117.62145659234375
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 118.02628346113488
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 117.2243832605891
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 117.62145659234375
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 116.82522042794153
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 122.23126009805128
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 121.43382342765108
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 121.83209726540372
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 121.03401651140302
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 121.43382342765108
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 120.63402980519459
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 121.03401651140302
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 120.2286583064124
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 120.63402980519459
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 119.83022326556966
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 125.23243801714852
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 124.4323013080284
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 124.83400297630578
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 124.03947530966252
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 124.4323013080284
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 123.63440284505486
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 124.03947530966252
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 123.238237015903
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 123.63440284505486
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 127.84003239497542
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 128.241653021425
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 127.44129544030875
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 127.84003239497542
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 127.44129544030875
+    },
+    {
+      "air": true,
+      "health": 1000,
+      "spawnDay": 1,
+      "killDay": 1,
+      "seconds": 132.95665375655517
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 0.8576607927680016
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 0.4614586248062551
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 0.06127912504598498
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 4.871028832159936
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 4.46680907625705
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 4.069988037925214
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 8.66719854157418
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 8.273561707697809
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 7.870764832943678
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 12.472523742355406
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 12.07402799418196
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 11.672895071096718
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 13.40775586059317
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 13.575137243140489
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 13.571950163692236
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 13.58619099156931
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 13.591086621861905
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 13.590640407521278
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 13.597297322470695
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 13.474415828008205
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 13.075727407820523
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 12.674164575524628
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 13.574159579817206
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 13.57751974184066
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 13.580662698484957
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 13.407053946051747
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 13.57410407345742
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 13.574736078735441
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 13.579382870811969
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 13.586961667053401
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 13.591476494446397
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 13.5990464896895
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 63.160365554038435
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 67.76526650926098
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 67.36508700950071
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 66.96721676038578
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 66.56286683958024
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 66.16227980097756
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 65.76536684064195
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 65.36550521850586
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 64.96783697186038
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 64.56878542713821
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 64.16722117550671
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 63.690333588048816
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 63.36888513434678
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 62.96185217797756
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 67.57076105987653
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 67.1690583107993
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 66.7696468476206
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 66.36967593617737
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 65.9731583124958
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 65.56824443815276
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 65.1738475211896
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 64.77344622462988
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 64.36947902105749
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 63.970839854795486
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 63.570114640984684
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 63.172540307510644
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 67.77569626737386
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 67.373224650044
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 66.97443560604006
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 66.57218364579603
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 66.17019413784146
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 83.17598318122327
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 82.77978101326153
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 87.3862314647995
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 86.98836121568456
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 91.58790717180818
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 91.1873201332055
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 92.96918349992484
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 93.44607108738273
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 94.2466868837364
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 93.84763533901423
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 94.64435513038188
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 95.04421675251797
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 93.39993213489652
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 92.9928991785273
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 97.38274480449036
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 97.20008972333744
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 95.30021810019389
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 94.89981680363417
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 95.69461501715705
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 96.49604651518166
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 96.09952889150009
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 96.8960174266249
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 93.77335121762007
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 94.17534072557464
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 94.57759268581867
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 94.9763817298226
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 95.37885334715247
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 95.77701788814738
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 96.57531743543223
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 96.17459222162142
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 96.97395660169423
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 119.78200717875734
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 124.39256710140035
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 123.99238760164008
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 128.60410143900663
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 128.19975151820108
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 132.81125069921836
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 132.41433773888275
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 134.83281215745956
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 135.63114819861948
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 135.1542606111616
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 136.03271245025098
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 136.82943224161863
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 136.43176399497315
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 134.6194852865301
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 134.22186170471832
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 138.82306361291558
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 138.98642368707806
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 136.68919165292755
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 137.09315885649994
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 137.88795707002282
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 137.49356015305966
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 138.29287094436586
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 138.68938856804743
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 136.31121231243014
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 136.7132018203847
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 137.11545378062874
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 137.51424282463267
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 137.91671444196254
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 138.31487898295745
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 139.1131785302423
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 2,
+      "killDay": 2,
+      "seconds": 138.7124533164315
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 0.9450685014016926
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 0.5424719187431037
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 0.14570295484736562
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 4.953939959872514
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 4.548758504912257
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 4.152812294661999
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 3.7476698360405862
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 3.353766130749136
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 2.947424251586199
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 2.5510511728934944
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 2.1514261714182794
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 1.7484103399328887
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 1.3525222521275282
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 5.956665337085724
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 5.555989628192037
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 5.1577606671489775
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 4.758486837614328
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 4.354217754676938
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 3.958291295915842
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 3.5589230922050774
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 3.1587233836762607
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 2.7570154685527086
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 2.3525970093905926
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 6.962190764490515
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 6.562308180611581
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 6.1643824693746865
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 5.762429428752512
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 5.359144677873701
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 4.959974587429315
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 4.562454963568598
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 4.162076130975038
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 3.766464380081743
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 8.367505471222103
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 7.9698456334881485
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 7.5663191373459995
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 7.163312424439937
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 6.762643680442125
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 6.367672343272716
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 33.51634409464896
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 33.11374751199037
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 37.719778718426824
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 37.31404863856733
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 41.92438638629392
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 41.52235555462539
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 46.13204585574567
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 45.72578410804272
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 49.54055906832218
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 49.93725423282012
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 40.73621493205428
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 40.33317105425522
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 53.738416275475174
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 53.34032015269622
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 50.54284452367574
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 53.73999102413654
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 53.34301727777347
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 50.94403715804219
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 54.5044426061213
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 54.0991821475327
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 53.70468894438818
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 53.3045180272311
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 54.73950865678489
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 54.34424053737894
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 54.74124290747568
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 54.342714234720916
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 55.15433736471459
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 55.15439235791564
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 55.161644771229476
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 55.15834476985037
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 55.17172635300085
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 55.171863187570125
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 55.1768681043759
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 55.173823861870915
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 54.14331380883232
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 53.74793069018051
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 54.14455460943282
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 53.74243964953348
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 73.54896780848503
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 73.14637122582644
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 77.75129109947011
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 76.23302260739729
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 75.83625310659409
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 76.63928435510024
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 77.4385901009664
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 77.83323772717267
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 77.03655926929787
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 79.95816336106509
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 80.44776427512988
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 78.85234131431207
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 78.45784811116755
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 79.25760177290067
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 79.65590985864401
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 80.05288360500708
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 80.45474256994203
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 77.6797751346603
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 78.07504080375656
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 78.47896947572008
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 78.87699322355911
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 79.27552189631388
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 80.07368414197117
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 79.67841602256522
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 80.47908064769581
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 80.87941784970462
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 81.27982810279354
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 77.75536559708416
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 77.36290680104867
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 89.36033431533724
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 89.36263931216672
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 89.37063122587278
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 89.36906147794798
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 76.52250589057803
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 76.92565388744697
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 77.32103700609878
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 77.72069913428277
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 78.12374301208183
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 78.92526409262791
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 78.52125322446227
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 79.32308146869764
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 89.37980860099196
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 89.38362597720698
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 89.39142639515921
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 89.39182277489454
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 89.39789585303515
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 89.40179152367637
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 89.3990031867288
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 89.16580194188282
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 88.76394297694787
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 88.3669692305848
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 87.96866114484146
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 87.56340068625286
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 87.16890748310834
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 86.76873656595126
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 86.36832631286234
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 85.96798911085352
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 85.56259260512888
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 85.16732448572293
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 88.23734073108062
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 87.83881205832586
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 87.03685963852331
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 87.44078831048682
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 86.64159396942705
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 86.23530455632135
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 87.3753238064237
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 86.97200572257861
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 86.57418834650889
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 86.17017747834325
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 85.77266726596281
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 85.36962338816375
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 84.96996125997975
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 84.57457814132795
+    },
+    {
+      "air": false,
+      "health": 10,
+      "spawnDay": 3,
+      "killDay": 3,
+      "seconds": 84.17143014445901
+    }
+  ]
+}

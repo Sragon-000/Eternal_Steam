@@ -1,0 +1,10 @@
+{
+  "utc": "2026-10-03T12:27:04.036866+00:00",
+  "auditTool": "Tools/Testing/Balance/audit_live_checkpoint.py",
+  "auditToolSha256": "a6ae7f3921dafb9f85d822c73e9e10f1c08971fd72038c6cd61dde236093d1cc",
+  "independentlyRehashedPrefix": "a8569c491db00a376b62bd9d290d00b4e9cbf7e34d090e33fbe3cdfd162d05ec",
+  "rows": 8368,
+  "lastSampleMatchesPrefixEnd": true,
+  "lastSampleUnsuppliedOrOutsideAreaConsumers": 0,
+  "scope": "Read-only prefix audit; final run and complete screenshot publication pending."
+}
