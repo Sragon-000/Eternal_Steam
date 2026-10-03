@@ -23,7 +23,7 @@ namespace EternalSteam.OpenWorld
         public void PreviousPage(){Page=Mathf.Max(0,Page-1);ResetScroll();Refresh();}
         public void NextPage(){Page=Mathf.Min(Mathf.Max(0,(BaseCount-1)/Mathf.Max(1,Rows.Length)),Page+1);ResetScroll();Refresh();}
         void ResetScroll(){Scroll.StopMovement();Scroll.verticalNormalizedPosition=1;}
-        void Update(){if(Time.unscaledTime>=nextRefresh){nextRefresh=Time.unscaledTime+.2f;Refresh();}}
+        void Update(){if(Hud.Groups.Construction.gameObject.activeInHierarchy&&Time.unscaledTime>=nextRefresh){nextRefresh=Time.unscaledTime+.2f;Refresh();}}
         public void Refresh()
         {
             if(Hud?.Sandbox?.Content==null||Rows.Length==0)return;

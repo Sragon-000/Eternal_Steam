@@ -45,7 +45,7 @@ namespace EternalSteam.Demo
         public void ApplyPiercingShot(Vector3 origin, Vector3 direction, float range,float minimumDistance=1.2f)
         {
             // A single ray per shot keeps the prototype cheap and cannot hit a slot twice.
-            for (int i = 0; i < world.MaxCount; i++)
+            foreach (int i in world.ActiveIndices)
             {
                 if (!enemies[i].alive) continue;
                 Vector3 delta = enemies[i].position - origin;

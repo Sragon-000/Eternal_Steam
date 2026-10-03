@@ -30,7 +30,7 @@ namespace EternalSteam.OpenWorld
             if(now<nextView)return;nextView=now+.05;var next=MinimapProjection.Around(ViewCenter(),VisibleWorldSide);if(next.Bounds!=projection.Bounds){projection=next;nextObjects=0;}
             if(now>=nextObjects){nextObjects=now+.2;ObjectRefreshCount++;buildings.Clear();Array.Clear(density,0,density.Length);
                 foreach(var b in sandbox.Content.Bases.Buildings)if(b.Active&&!b.Disposed)buildings.Add(new Marker{Point=projection.ToMap(b.Position),Base=b.Module<IBaseIdentity>()!=null});
-                if(sandbox.Enemies.Alive>0)for(int i=0;i<sandbox.Enemies.MaxCount;i++){ref readonly var e=ref sandbox.Enemies.GetEnemy(i);if(!e.alive)continue;var p=projection.ToMap(e.position);if(!Inside(p))continue;density[Mathf.Min(31,(int)(p.y*32))*32+Mathf.Min(31,(int)(p.x*32))]++;}
+                if(sandbox.Enemies.Alive>0)foreach(int i in sandbox.Enemies.ActiveIndices){ref readonly var e=ref sandbox.Enemies.GetEnemy(i);if(!e.alive)continue;var p=projection.ToMap(e.position);if(!Inside(p))continue;density[Mathf.Min(31,(int)(p.y*32))*32+Mathf.Min(31,(int)(p.x*32))]++;}
                 int id=sandbox.Assault?.BossId??-1;hasBoss=id>=0&&id<sandbox.Enemies.MaxCount&&sandbox.Enemies.GetEnemy(id).alive&&sandbox.Enemies.Generation(id)==sandbox.Assault.BossGeneration;if(hasBoss)boss=projection.ToMap(sandbox.Enemies.GetEnemy(id).position);
             }
             focus=projection.ToMap(sandbox.CameraRig.Focus);var plane=new Plane(Vector3.up,sandbox.CameraRig.Focus);hasViewport=true;

@@ -1,0 +1,533 @@
+{
+  "label": "before-editor-detail",
+  "scene": "StartRegionSandbox",
+  "unity": "6000.3.14f1",
+  "device": "Mac16,7",
+  "gpu": "Apple M4 Pro",
+  "width": 2560,
+  "height": 1440,
+  "construction": false,
+  "enemies": 0,
+  "frameCount": 240,
+  "profileFrames": 200,
+  "frameMs": {
+    "mean": 85.6530364913245,
+    "median": 85.660956799983978,
+    "p95": 86.92091703414917,
+    "max": 88.858291506767273
+  },
+  "gcBytes": {
+    "mean": 23967.116666666665,
+    "median": 23485.0,
+    "p95": 24855.0,
+    "max": 47813.0
+  },
+  "drawCalls": {
+    "mean": 3731.0666666666666,
+    "median": 3731.0,
+    "p95": 3732.0,
+    "max": 3732.0
+  },
+  "samples": [
+    {
+      "name": "DrawGizmos",
+      "inclusiveMeanMs": 147.9543560492294,
+      "maxSampleMs": 75.82049560546875
+    },
+    {
+      "name": "UpdateScene",
+      "inclusiveMeanMs": 88.1359008705616,
+      "maxSampleMs": 87.297714233398438
+    },
+    {
+      "name": "Main Thread",
+      "inclusiveMeanMs": 85.696380271911622,
+      "maxSampleMs": 88.807830810546875
+    },
+    {
+      "name": "EditorLoop",
+      "inclusiveMeanMs": 84.8065726852417,
+      "maxSampleMs": 87.7439193725586
+    },
+    {
+      "name": "Application.Tick",
+      "inclusiveMeanMs": 84.550387725830078,
+      "maxSampleMs": 87.4889144897461
+    },
+    {
+      "name": "Application.UpdateScene",
+      "inclusiveMeanMs": 84.318972091674809,
+      "maxSampleMs": 87.298789978027344
+    },
+    {
+      "name": "UpdateSceneIfNeeded",
+      "inclusiveMeanMs": 84.318487396240229,
+      "maxSampleMs": 87.298248291015625
+    },
+    {
+      "name": "GUIView.RepaintAll.PlayerLoopController",
+      "inclusiveMeanMs": 80.476804656982424,
+      "maxSampleMs": 83.234413146972656
+    },
+    {
+      "name": "UnityEngine.IMGUIModule.dll!UnityEngine::GUIUtility.ProcessEvent() [Invoke]",
+      "inclusiveMeanMs": 79.82569767653942,
+      "maxSampleMs": 80.735336303710938
+    },
+    {
+      "name": "UIElementsUtility.DoDispatch(Repaint Event)",
+      "inclusiveMeanMs": 79.809201036095615,
+      "maxSampleMs": 80.723503112792969
+    },
+    {
+      "name": "UIR.DrawChain",
+      "inclusiveMeanMs": 79.7182635653019,
+      "maxSampleMs": 80.660835266113281
+    },
+    {
+      "name": "IMGUIContainer",
+      "inclusiveMeanMs": 79.598879097397443,
+      "maxSampleMs": 80.059417724609375
+    },
+    {
+      "name": "OnGUI",
+      "inclusiveMeanMs": 79.454633933800437,
+      "maxSampleMs": 78.798080444335938
+    },
+    {
+      "name": "SceneView.Repaint",
+      "inclusiveMeanMs": 78.412652778625485,
+      "maxSampleMs": 80.75103759765625
+    },
+    {
+      "name": "SceneView.Render",
+      "inclusiveMeanMs": 78.348732299804681,
+      "maxSampleMs": 80.665206909179688
+    },
+    {
+      "name": "UnityEngine.CoreModule.dll!UnityEngine.Rendering::RenderPipelineManager.DoRenderLoop_Internal() [Invoke]",
+      "inclusiveMeanMs": 76.066677775383,
+      "maxSampleMs": 77.098541259765625
+    },
+    {
+      "name": "Inl_UniversalRenderTotal",
+      "inclusiveMeanMs": 76.031324378550053,
+      "maxSampleMs": 77.086585998535156
+    },
+    {
+      "name": "SceneCamera.Render",
+      "inclusiveMeanMs": 75.641401567459113,
+      "maxSampleMs": 77.186248779296875
+    },
+    {
+      "name": "Inl_ScriptableRenderContext.Submit",
+      "inclusiveMeanMs": 74.7296928858012,
+      "maxSampleMs": 76.326828002929688
+    },
+    {
+      "name": "ExecuteRenderGraph",
+      "inclusiveMeanMs": 74.6006907428801,
+      "maxSampleMs": 76.2222900390625
+    },
+    {
+      "name": "UniversalRenderPipeline.RenderSingleCameraInternal: SceneCamera",
+      "inclusiveMeanMs": 74.398057365417486,
+      "maxSampleMs": 76.233627319335938
+    },
+    {
+      "name": "GizmoManager.DrawGizmos",
+      "inclusiveMeanMs": 73.973488326128574,
+      "maxSampleMs": 75.818290710449219
+    },
+    {
+      "name": "GiantGrey.TileWorldCreator.dll!GiantGrey.TileWorldCreator::TileWorldCreatorManager.OnDrawGizmos() [Invoke]",
+      "inclusiveMeanMs": 73.783916740417482,
+      "maxSampleMs": 75.661247253417969
+    },
+    {
+      "name": "PlayerLoop",
+      "inclusiveMeanMs": 4.6576274743722754,
+      "maxSampleMs": 5.1483750343322754
+    },
+    {
+      "name": "WaitForLastPresentation",
+      "inclusiveMeanMs": 2.9554380689561368,
+      "maxSampleMs": 3.8345000743865967
+    },
+    {
+      "name": "Semaphore.WaitForSignal",
+      "inclusiveMeanMs": 2.9547503907978534,
+      "maxSampleMs": 3.8338329792022705
+    },
+    {
+      "name": "GameView.Repaint",
+      "inclusiveMeanMs": 1.4412335616350174,
+      "maxSampleMs": 1.9051250219345093
+    },
+    {
+      "name": "GameView.Render",
+      "inclusiveMeanMs": 1.3775358057022096,
+      "maxSampleMs": 1.8410420417785645
+    },
+    {
+      "name": "Profiler.FlushCounters",
+      "inclusiveMeanMs": 0.85121396899223323,
+      "maxSampleMs": 1.3498749732971191
+    },
+    {
+      "name": "RenderPlayModeViewCameras",
+      "inclusiveMeanMs": 0.83931185901165006,
+      "maxSampleMs": 1.0691670179367065
+    },
+    {
+      "name": "Profiler.FlushMemoryCounters",
+      "inclusiveMeanMs": 0.83706689745187757,
+      "maxSampleMs": 1.3299579620361328
+    },
+    {
+      "name": "Update.ScriptRunBehaviourUpdate",
+      "inclusiveMeanMs": 0.79517042160034179,
+      "maxSampleMs": 1.1551669836044312
+    },
+    {
+      "name": "BehaviourUpdate",
+      "inclusiveMeanMs": 0.79489417284727093,
+      "maxSampleMs": 1.1548750400543213
+    },
+    {
+      "name": "Inl_RenderCameraStack",
+      "inclusiveMeanMs": 0.76327622860670086,
+      "maxSampleMs": 0.99704098701477051
+    },
+    {
+      "name": "Inl_UniversalRenderPipeline.RenderSingleCameraInternal: SceneCamera",
+      "inclusiveMeanMs": 0.69501979827880855,
+      "maxSampleMs": 1.1216249465942383
+    },
+    {
+      "name": "RenderLoop.ScheduleDraw",
+      "inclusiveMeanMs": 0.67773976337837671,
+      "maxSampleMs": 0.17420899868011475
+    },
+    {
+      "name": "EternalSteam.OpenWorldSandbox.dll!EternalSteam.OpenWorld::OpenWorldSandbox.Update() [Invoke]",
+      "inclusiveMeanMs": 0.52281541436910628,
+      "maxSampleMs": 0.824167013168335
+    },
+    {
+      "name": "CullScriptable",
+      "inclusiveMeanMs": 0.47266059897840024,
+      "maxSampleMs": 0.32170799374580383
+    },
+    {
+      "name": "Inl_UniversalRenderPipeline.RenderSingleCameraInternal: Top View Camera",
+      "inclusiveMeanMs": 0.466659362912178,
+      "maxSampleMs": 0.6837499737739563
+    },
+    {
+      "name": "WaitForJobGroupID",
+      "inclusiveMeanMs": 0.38896290880780726,
+      "maxSampleMs": 0.15116700530052185
+    },
+    {
+      "name": "Inl_RecordRenderGraph",
+      "inclusiveMeanMs": 0.29747546385973694,
+      "maxSampleMs": 0.29354098439216614
+    },
+    {
+      "name": "Inl_On Record Render Graph",
+      "inclusiveMeanMs": 0.28900452945381405,
+      "maxSampleMs": 0.28187498450279236
+    },
+    {
+      "name": "PreLateUpdate.ScriptRunBehaviourLateUpdate",
+      "inclusiveMeanMs": 0.28201458372175692,
+      "maxSampleMs": 0.4774169921875
+    },
+    {
+      "name": "LateBehaviourUpdate",
+      "inclusiveMeanMs": 0.281610154658556,
+      "maxSampleMs": 0.47712498903274536
+    },
+    {
+      "name": "RenderLoop.DrawSRPBatcher",
+      "inclusiveMeanMs": 0.2758156295027584,
+      "maxSampleMs": 0.11179199814796448
+    },
+    {
+      "name": "EndRenderQueueExtraction",
+      "inclusiveMeanMs": 0.27078350483439861,
+      "maxSampleMs": 0.16641700267791748
+    },
+    {
+      "name": "CullResults.CreateSharedRendererScene",
+      "inclusiveMeanMs": 0.25996297949925062,
+      "maxSampleMs": 0.18254199624061584
+    },
+    {
+      "name": "Inl_ExecuteRenderGraph",
+      "inclusiveMeanMs": 0.25490525458008051,
+      "maxSampleMs": 0.27133399248123169
+    },
+    {
+      "name": "EternalSteam.OpenWorldSandbox.dll!EternalSteam.OpenWorld::CompactConstructionDock.LateUpdate() [Invoke]",
+      "inclusiveMeanMs": 0.23337084956467152,
+      "maxSampleMs": 0.42812499403953552
+    },
+    {
+      "name": "UniversalRenderPipeline.RenderSingleCameraInternal: Top View Camera",
+      "inclusiveMeanMs": 0.22450794979929925,
+      "maxSampleMs": 0.38687500357627869
+    },
+    {
+      "name": "SRPBatcher.Flush",
+      "inclusiveMeanMs": 0.19611775433222647,
+      "maxSampleMs": 0.061625000089406967
+    },
+    {
+      "name": "DrawDepthNormalPrepass",
+      "inclusiveMeanMs": 0.19104858953505754,
+      "maxSampleMs": 0.17299999296665192
+    },
+    {
+      "name": "EngineJob",
+      "inclusiveMeanMs": 0.19033655936542346,
+      "maxSampleMs": 0.13833299279212952
+    },
+    {
+      "name": "EternalSteam.OpenWorldSandbox.dll!EternalSteam.OpenWorld::CanvasWorldHud.Update() [Invoke]",
+      "inclusiveMeanMs": 0.15805662456899883,
+      "maxSampleMs": 0.30187499523162842
+    },
+    {
+      "name": "ExecuteRenderQueueJob",
+      "inclusiveMeanMs": 0.15237932941876353,
+      "maxSampleMs": 0.13833299279212952
+    },
+    {
+      "name": "SceneCulling",
+      "inclusiveMeanMs": 0.134076224938035,
+      "maxSampleMs": 0.13033300638198853
+    },
+    {
+      "name": "Material.SetPassFast",
+      "inclusiveMeanMs": 0.13097804980287037,
+      "maxSampleMs": 0.035000000149011612
+    },
+    {
+      "name": "DrawOpaqueObjects",
+      "inclusiveMeanMs": 0.12898427449166774,
+      "maxSampleMs": 0.17458300292491913
+    },
+    {
+      "name": "DestroyCullResults",
+      "inclusiveMeanMs": 0.12691059981705621,
+      "maxSampleMs": 0.098292000591754913
+    },
+    {
+      "name": "RenderLoop.CleanupNodeQueue",
+      "inclusiveMeanMs": 0.1239626948096702,
+      "maxSampleMs": 0.092290997505187988
+    },
+    {
+      "name": "Draw Main Light Shadowmap",
+      "inclusiveMeanMs": 0.10382249481255712,
+      "maxSampleMs": 0.1492909938097
+    },
+    {
+      "name": "MainLightShadow",
+      "inclusiveMeanMs": 0.10324376970529556,
+      "maxSampleMs": 0.14883400499820709
+    },
+    {
+      "name": "Shadows.ExecuteDrawShadows",
+      "inclusiveMeanMs": 0.10153001975268125,
+      "maxSampleMs": 0.09974999725818634
+    },
+    {
+      "name": "Shadows.ScheduleRenderJobs",
+      "inclusiveMeanMs": 0.094593519736081363,
+      "maxSampleMs": 0.096207998692989349
+    },
+    {
+      "name": "Application.TickSceneTracker",
+      "inclusiveMeanMs": 0.090610674824565654,
+      "maxSampleMs": 0.70824998617172241
+    },
+    {
+      "name": "PostLateUpdate.PlayerUpdateCanvases",
+      "inclusiveMeanMs": 0.087296899594366553,
+      "maxSampleMs": 0.27125000953674316
+    },
+    {
+      "name": "EditorResources.Load",
+      "inclusiveMeanMs": 0.085670484755537471,
+      "maxSampleMs": 0.037833001464605331
+    },
+    {
+      "name": "UIEvents.WillRenderCanvases",
+      "inclusiveMeanMs": 0.077687069866806263,
+      "maxSampleMs": 0.26225000619888306
+    },
+    {
+      "name": "UGUI.Rendering.UpdateBatches",
+      "inclusiveMeanMs": 0.077520884964615108,
+      "maxSampleMs": 0.26204198598861694
+    },
+    {
+      "name": "TMP.SetArraySizes",
+      "inclusiveMeanMs": 0.075098994900472463,
+      "maxSampleMs": 0.11691699922084808
+    },
+    {
+      "name": "Profiler.IntegrateSessionData",
+      "inclusiveMeanMs": 0.073961885087192064,
+      "maxSampleMs": 0.17200000584125519
+    },
+    {
+      "name": "UnityEditor.CoreModule.dll!UnityEditor::EditorApplication.Internal_CallUpdateFunctions() [Invoke]",
+      "inclusiveMeanMs": 0.069289984852075576,
+      "maxSampleMs": 0.673416018486023
+    },
+    {
+      "name": "Profiler.AddFrameDataAndTransferOwnership",
+      "inclusiveMeanMs": 0.068213739823549988,
+      "maxSampleMs": 0.16099999845027924
+    },
+    {
+      "name": "SRPBRender.ApplyShader",
+      "inclusiveMeanMs": 0.066314424759038954,
+      "maxSampleMs": 0.0244159996509552
+    },
+    {
+      "name": "Shadows.DrawSRPBatcher",
+      "inclusiveMeanMs": 0.064409449843224137,
+      "maxSampleMs": 0.082708999514579773
+    },
+    {
+      "name": "AssetDatabase.GetGUIDFromAssetPathV2",
+      "inclusiveMeanMs": 0.058200545053841778,
+      "maxSampleMs": 0.018208000808954239
+    },
+    {
+      "name": "UnityEngine.UIModule.dll!UnityEngine::Canvas.SendWillRenderCanvases() [Invoke]",
+      "inclusiveMeanMs": 0.053593104798346759,
+      "maxSampleMs": 0.15879200398921967
+    },
+    {
+      "name": "Scheduler.Tick",
+      "inclusiveMeanMs": 0.050151439793407915,
+      "maxSampleMs": 0.12183400243520737
+    },
+    {
+      "name": "GameObject.Activate",
+      "inclusiveMeanMs": 0.049356954830800534,
+      "maxSampleMs": 0.061999998986721039
+    },
+    {
+      "name": "TerrainManager.CullAllTerrains",
+      "inclusiveMeanMs": 0.049340294809080663,
+      "maxSampleMs": 0.057000000029802322
+    },
+    {
+      "name": "UnityEditor.UIElementsModule.dll!UnityEditor::RetainedMode.UpdateSchedulers() [Invoke]",
+      "inclusiveMeanMs": 0.049320829827338458,
+      "maxSampleMs": 0.12095800042152405
+    },
+    {
+      "name": "GameObject.ActivateAwakeRecursively",
+      "inclusiveMeanMs": 0.049163614833523751,
+      "maxSampleMs": 0.061999998986721039
+    },
+    {
+      "name": "Inl_Setup Forward Lights",
+      "inclusiveMeanMs": 0.048866684902459386,
+      "maxSampleMs": 0.065292000770568848
+    },
+    {
+      "name": "Inl_Setup Light Constants",
+      "inclusiveMeanMs": 0.047967124856077133,
+      "maxSampleMs": 0.064291998744010925
+    },
+    {
+      "name": "UnityEngine.IMGUIModule.dll!UnityEngine::GUIStyle.GetMeshInfo() [Invoke]",
+      "inclusiveMeanMs": 0.047212494793930089,
+      "maxSampleMs": 0.14354099333286285
+    },
+    {
+      "name": "DrawScreenSpaceUI",
+      "inclusiveMeanMs": 0.0470460198726505,
+      "maxSampleMs": 0.10066699981689453
+    },
+    {
+      "name": "Inl_Forward+ Setup",
+      "inclusiveMeanMs": 0.046652089897543193,
+      "maxSampleMs": 0.051458001136779785
+    },
+    {
+      "name": "UIElements.UpdateRenderData",
+      "inclusiveMeanMs": 0.046297134915366772,
+      "maxSampleMs": 0.06870800256729126
+    },
+    {
+      "name": "RenderTreeManager.Process",
+      "inclusiveMeanMs": 0.045127779878675937,
+      "maxSampleMs": 0.067500002682209015
+    },
+    {
+      "name": "Render",
+      "inclusiveMeanMs": 0.043831264944747088,
+      "maxSampleMs": 0.1450829952955246
+    },
+    {
+      "name": "CanvasUpdate.PreRender",
+      "inclusiveMeanMs": 0.042258320013061165,
+      "maxSampleMs": 0.14241600036621094
+    },
+    {
+      "name": "Shadows.PrepareDrawShadows",
+      "inclusiveMeanMs": 0.041268414894584569,
+      "maxSampleMs": 0.054999999701976776
+    },
+    {
+      "name": "SceneView.PrepareRepaint",
+      "inclusiveMeanMs": 0.039785604905337092,
+      "maxSampleMs": 0.10741700232028961
+    },
+    {
+      "name": "FindObjectsOfType",
+      "inclusiveMeanMs": 0.039607259859330952,
+      "maxSampleMs": 0.042582999914884567
+    },
+    {
+      "name": "Terrain.UpdateSplatProperties",
+      "inclusiveMeanMs": 0.03787895988440141,
+      "maxSampleMs": 0.043958000838756561
+    },
+    {
+      "name": "Graphics.Blit",
+      "inclusiveMeanMs": 0.03737677985103801,
+      "maxSampleMs": 0.03399999812245369
+    },
+    {
+      "name": "GameView.PrepareRepaint",
+      "inclusiveMeanMs": 0.037110204892233017,
+      "maxSampleMs": 0.11716699600219727
+    },
+    {
+      "name": "Profiler.GatherChartInformation",
+      "inclusiveMeanMs": 0.036525879902765152,
+      "maxSampleMs": 0.068625003099441528
+    },
+    {
+      "name": "Application.TickGlobalCallbacks",
+      "inclusiveMeanMs": 0.036460414929315448,
+      "maxSampleMs": 0.0832500010728836
+    },
+    {
+      "name": "UI.RenderOverlays",
+      "inclusiveMeanMs": 0.036430999841541051,
+      "maxSampleMs": 0.0827919989824295
+    }
+  ]
+}

@@ -19,6 +19,7 @@ namespace EternalSteam.OpenWorld
         int state=-1;float progress=1,browseVisibility=1,placementVisibility,fromHeight=156;bool wasEditing;string placementProblem;
         public CanvasGroup DockInput;
         readonly Vector3[] powerCorners=new Vector3[4];
+        double nextLabels;string objectiveText;float objectiveWidth;
         float CurrentScale=>Mathf.Max(.01f,Hud.Layout.Canvas.scaleFactor);
         public void PlacementSelected(){BrowsingRequested=false;placementProblem=null;CloseDetails();}
         public void BrowseRequested(){BrowsingRequested=true;CloseDetails();}
@@ -35,7 +36,7 @@ namespace EternalSteam.OpenWorld
             }
         }
         public void CloseDetails(){CostPanel.gameObject.SetActive(false);GoalPanel.gameObject.SetActive(false);}
-        void LateUpdate(){Apply(Time.unscaledDeltaTime);}
+        void LateUpdate(){if(Hud.Groups.Construction.gameObject.activeInHierarchy)Apply(Time.unscaledDeltaTime);}
         public void Apply(float delta=0)
         {
             if(Hud==null)return;
@@ -61,15 +62,15 @@ namespace EternalSteam.OpenWorld
             CategoryScroll.offsetMin=new Vector2(208,-36);CategoryScroll.offsetMax=new Vector2(-208,0);
             Hud.Layout.Catalog.cellSize=new Vector2(190,60);Hud.Layout.Catalog.spacing=new Vector2(6,0);
             if(rail)CloseDetails();
-            foreach(var p in new[]{CostPanel,GoalPanel}){p.localScale=Vector3.one/scale;p.sizeDelta=new Vector2(Mathf.Min(560,pixels.x-32),Mathf.Min(320,pixels.y-HeightPixels-140));p.anchoredPosition=new Vector2(-16/scale,(HeightPixels+24)/scale);}
+            for(int panelIndex=0;panelIndex<2;panelIndex++){var p=panelIndex==0?CostPanel:GoalPanel;p.localScale=Vector3.one/scale;p.sizeDelta=new Vector2(Mathf.Min(560,pixels.x-32),Mathf.Min(320,pixels.y-HeightPixels-140));p.anchoredPosition=new Vector2(-16/scale,(HeightPixels+24)/scale);}
             GoalStrip.localScale=Vector3.one/scale;GoalStrip.sizeDelta=new Vector2(Mathf.Min(560,pixels.x*.4f),36);var test=Hud.Layout.TestShortcuts;float top=(-test.anchoredPosition.y+test.rect.height)*scale+8;GoalStrip.anchoredPosition=new Vector2(0,-top/scale);GoalStrip.gameObject.SetActive(Hud.Sandbox.Assault!=null);
             bool construction=Hud.Groups.ConstructionSelected;
             var notifications=Hud.Layout.Notifications.GetComponent<CanvasGroup>();notifications.alpha=construction?0:1;notifications.blocksRaycasts=false;
             PowerSummary.GetWorldCorners(powerCorners);
             float resourceTop=Mathf.Max(84,(Hud.Layout.Root.rect.yMax-Hud.Layout.Root.InverseTransformPoint(powerCorners[0]).y)*scale+8);
             var bank=Hud.Layout.ResourcePanel;bank.localScale=Vector3.one/scale;bank.anchoredPosition=new Vector2(16/scale-16,84-resourceTop/scale);bank.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal,Mathf.Min(272,pixels.x*.3f-24));bank.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical,Mathf.Min(280,pixels.y-resourceTop-HeightPixels-40));Hud.Layout.ResourceBody.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical,bank.rect.height-44);
-            if(Hud.Layout.FirstLoopObjective!=null){var text=Hud.Layout.FirstLoopObjective.GetComponentInChildren<TMP_Text>(true);if(text!=null)Hud.Layout.FirstLoopObjective.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical,Mathf.Max(100,text.GetPreferredValues(text.text,Mathf.Max(1,GoalPanel.rect.width-48),Mathf.Infinity).y+32));}
-            UpdateLabels();
+            if(Hud.Layout.FirstLoopObjective!=null){var text=Hud.Layout.FirstLoopObjective.GetComponentInChildren<TMP_Text>(true);if(text!=null&&(objectiveText!=text.text||objectiveWidth!=GoalPanel.rect.width)){objectiveText=text.text;objectiveWidth=GoalPanel.rect.width;Hud.Layout.FirstLoopObjective.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical,Mathf.Max(100,text.GetPreferredValues(text.text,Mathf.Max(1,objectiveWidth-48),Mathf.Infinity).y+32));}}
+            if(delta==0||Time.unscaledTimeAsDouble>=nextLabels){nextLabels=Time.unscaledTimeAsDouble+.1;UpdateLabels();}
         }
         void SetGroup(CanvasGroup group,bool visible,float ease)
         {

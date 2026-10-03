@@ -1,0 +1,47 @@
+{
+  "label": "before",
+  "hudRefresh": {
+    "calls": 240,
+    "medianMs": 0.031900000000000005,
+    "p95Ms": 0.037700000000000004,
+    "maxMs": 0.050800000000000005,
+    "bytesPerCall": 0.0
+  },
+  "dockApply": {
+    "calls": 240,
+    "medianMs": 0.1208,
+    "p95Ms": 0.1373,
+    "maxMs": 0.2233,
+    "bytesPerCall": 0.0
+  },
+  "simulationEmpty": {
+    "calls": 240,
+    "medianMs": 0.28190000000000004,
+    "p95Ms": 0.4005,
+    "maxMs": 0.53260000000000007,
+    "bytesPerCall": 0.0
+  },
+  "move0": {
+    "calls": 240,
+    "medianMs": 0.1681,
+    "p95Ms": 0.18580000000000002,
+    "maxMs": 0.21230000000000002,
+    "bytesPerCall": 0.0
+  },
+  "move1000": {
+    "calls": 240,
+    "medianMs": 0.20500000000000002,
+    "p95Ms": 0.22390000000000002,
+    "maxMs": 0.27290000000000003,
+    "bytesPerCall": 0.0
+  },
+  "move10000": {
+    "calls": 240,
+    "medianMs": 0.5555,
+    "p95Ms": 0.59510000000000007,
+    "maxMs": 0.66,
+    "bytesPerCall": 0.0
+  },
+  "gridFirstMs": 233.46820000000002,
+  "gridRebuilds": 9
+}

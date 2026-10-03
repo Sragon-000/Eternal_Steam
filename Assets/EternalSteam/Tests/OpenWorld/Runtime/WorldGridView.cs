@@ -17,6 +17,11 @@ namespace EternalSteam.OpenWorld
         readonly List<Vector3> vertices=new();readonly List<int> indices=new();
         FreeCameraRig cameraRig;Terrain terrain;TileWorldGround tiles;
         Vector2Int current=new(int.MinValue,int.MinValue);
+        static readonly Vector2Int[] offsets={Vector2Int.zero,Vector2Int.up,Vector2Int.right,Vector2Int.down,Vector2Int.left,new(1,1),new(-1,1),new(1,-1),new(-1,-1)};
+        readonly System.Diagnostics.Stopwatch buildTimer=new();
+        int buildingSlot=-1,buildingRow;
+        Vector2Int buildingKey;
+        public int PendingChunkCount {get;private set;}
         public int RebuildCount {get;private set;}
         public void Initialize(FreeCameraRig camera,Terrain ground) {
             if(initialized)return;
@@ -31,14 +36,26 @@ namespace EternalSteam.OpenWorld
         }
         void LateUpdate() {
             if(!Visible)return;
-            var center=WorldGridGeometry.Cell(cameraRig.Focus,Span);if(center==current)return;current=center;
-            for(int z=-1;z<=1;z++)for(int x=-1;x<=1;x++) {
-                var key=center+new Vector2Int(x,z);int slot=((key.x%3+3)%3)+3*((key.y%3+3)%3);
-                if(keys[slot]==key)continue;keys[slot]=key;Rebuild(meshes[slot],key);
+            var center=WorldGridGeometry.Cell(cameraRig.Focus,Span);
+            if(center!=current){current=center;buildingSlot=-1;}
+            PendingChunkCount=0;
+            foreach(var offset in offsets){var key=center+offset;int slot=Slot(key);if(keys[slot]!=key){PendingChunkCount++;renderers[slot].enabled=false;}}
+            if(PendingChunkCount==0)return;
+            // Bound first-open and camera-boundary work; publish only complete chunks.
+            buildTimer.Restart();
+            while(buildTimer.Elapsed.TotalMilliseconds<3){
+                if(buildingSlot<0){
+                    foreach(var offset in offsets){var key=center+offset;int slot=Slot(key);if(keys[slot]==key)continue;buildingSlot=slot;buildingKey=key;buildingRow=0;vertices.Clear();indices.Clear();break;}
+                    if(buildingSlot<0)break;
+                }
+                BuildRow(buildingKey,buildingRow++);
+                if(buildingRow<Cells)continue;
+                var mesh=meshes[buildingSlot];mesh.Clear();mesh.SetVertices(vertices);mesh.SetTriangles(indices,0);mesh.RecalculateBounds();
+                keys[buildingSlot]=buildingKey;renderers[buildingSlot].enabled=true;buildingSlot=-1;RebuildCount++;PendingChunkCount--;
             }
         }
-        void Rebuild(Mesh mesh,Vector2Int key) {
-            vertices.Clear();indices.Clear();RebuildCount++;
+        static int Slot(Vector2Int key)=>((key.x%3+3)%3)+3*((key.y%3+3)%3);
+        void BuildRow(Vector2Int key,int line) {
             Vector3 Point(Vector2 p) {
                 var world=WorldGridGeometry.ToWorld(new Vector3(p.x,0,p.y));
                 world.y=terrain.SampleHeight(world)+terrain.transform.position.y+.08f;
@@ -54,11 +71,10 @@ namespace EternalSteam.OpenWorld
                 indices.Add(n);indices.Add(n+2);indices.Add(n+1);indices.Add(n+1);indices.Add(n+2);indices.Add(n+3);
             }
             var start=new Vector2(key.x*Span,key.y*Span);
-            for(int line=0;line<Cells;line++)for(int segment=0;segment<Cells;segment++) {
+            for(int segment=0;segment<Cells;segment++) {
                 Segment(start+new Vector2(line,segment)*CellSize,start+new Vector2(line,segment+1)*CellSize);
                 Segment(start+new Vector2(segment,line)*CellSize,start+new Vector2(segment+1,line)*CellSize);
             }
-            mesh.Clear();mesh.SetVertices(vertices);mesh.SetTriangles(indices,0);mesh.RecalculateBounds();
         }
         void OnDestroy(){foreach(var mesh in meshes)if(mesh!=null)Destroy(mesh);}
     }

@@ -1,0 +1,7 @@
+{
+  "scene": "Assets/EternalSteam/Scene/Tests/OpenWorldSandbox.unity",
+  "researchExperiment": false,
+  "campaignAvailable": false,
+  "campaignPlaythrough": "NOT_APPLICABLE: current scene has no campaign persistence",
+  "result": "PASS"
+}

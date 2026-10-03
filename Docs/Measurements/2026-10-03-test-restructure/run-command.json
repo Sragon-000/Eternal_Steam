@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/Testing/RunCurrentSceneChecks.cs",
+      "entry": "RunCurrentSceneChecks.Main",
+      "args": "[\"all\"]"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 2527,
+      "executeMs": 2026,
+      "assemblyName": "PipelineRunScript_RunCurrentSceneChecks_85a556892d1e4087b19732b59c533092",
+      "success": true,
+      "result": "{\n  \"scene\": \"Assets/EternalSteam/Scene/Tests/OpenWorldSandbox.unity\",\n  \"sceneHandleUnchanged\": true,\n  \"dirty\": false,\n  \"savedSceneBytesUnchanged\": true,\n  \"category\": \"all\",\n  \"assemblies\": [\n    {\n      \"assembly\": \"EternalSteam.EditModeTests\",\n      \"total\": 253,\n      \"passed\": 253,\n      \"failed\": 0,\n      \"skipped\": 0,\n      \"inconclusive\": 0,\n      \"xml\": \"Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml\"\n    },\n    {\n      \"assembly\": \"EternalSteam.LegacyBuildingTests\",\n      \"total\": 10,\n      \"passed\": 10,\n      \"failed\": 0,\n      \"skipped\": 0,\n      \"inconclusive\": 0,\n      \"xml\": \"Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.LegacyBuildingTests.xml\"\n    },\n    {\n      \"assembly\": \"EternalSteam.LegacyCombatTests\",\n      \"total\": 14,\n      \"passed\": 14,\n      \"failed\": 0,\n      \"skipped\": 0,\n      \"inconclusive\": 0,\n      \"xml\": \"Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.LegacyCombatTests.xml\"\n    },\n    {\n      \"assembly\": \"EternalSteam.LegacyDeploymentTests\",\n      \"total\": 8,\n      \"passed\": 8,\n      \"failed\": 0,\n      \"skipped\": 0,\n      \"inconclusive\": 0,\n      \"xml\": \"Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.LegacyDeploymentTests.xml\"\n    }\n  ],\n  \"errors\": []\n}"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

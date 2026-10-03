@@ -1,0 +1,7 @@
+{
+  "alive": 1000,
+  "defeated": true,
+  "pendingSimulationSeconds": 0.0,
+  "result": "FAIL",
+  "researchExperiment": false
+}

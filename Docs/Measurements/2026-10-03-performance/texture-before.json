@@ -1,0 +1,470 @@
+[
+  {
+    "path": "Assets/EternalSteam/Shared/UI/Railway/RailwayButton.png",
+    "width": 2172,
+    "height": 724,
+    "wasReadable": false,
+    "isReadable": false,
+    "beforeBytes": 12581184,
+    "afterBytes": 12581184
+  },
+  {
+    "path": "Assets/EternalSteam/Shared/UI/Railway/RailwayIcon.png",
+    "width": 1254,
+    "height": 1254,
+    "wasReadable": false,
+    "isReadable": false,
+    "beforeBytes": 6291024,
+    "afterBytes": 6291024
+  },
+  {
+    "path": "Assets/EternalSteam/Shared/UI/Railway/RailwayPanel.png",
+    "width": 1308,
+    "height": 1202,
+    "wasReadable": false,
+    "isReadable": false,
+    "beforeBytes": 12578688,
+    "afterBytes": 12578688
+  },
+  {
+    "path": "Assets/EternalSteam/Shared/UI/ReferenceHUD/All.png",
+    "width": 64,
+    "height": 64,
+    "wasReadable": false,
+    "isReadable": false,
+    "beforeBytes": 17344,
+    "afterBytes": 17344
+  },
+  {
+    "path": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Building_defense.arc.png",
+    "width": 512,
+    "height": 512,
+    "wasReadable": false,
+    "isReadable": false,
+    "beforeBytes": 1049536,
+    "afterBytes": 1049536
+  },
+  {
+    "path": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Building_defense.emp.png",
+    "width": 512,
+    "height": 512,
+    "wasReadable": false,
+    "isReadable": false,
+    "beforeBytes": 1049536,
+    "afterBytes": 1049536
+  },
+  {
+    "path": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Building_defense.plasma_laser.png",
+    "width": 512,
+    "height": 512,
+    "wasReadable": false,
+    "isReadable": false,
+    "beforeBytes": 1049536,
+    "afterBytes": 1049536
+  },
+  {
+    "path": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Building_defense.rail_aa.png",
+    "width": 512,
+    "height": 512,
+    "wasReadable": false,
+    "isReadable": false,
+    "beforeBytes": 1049536,
+    "afterBytes": 1049536
+  },
+  {
+    "path": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Building_defense.railgun.png",
+    "width": 512,
+    "height": 512,
+    "wasReadable": false,
+    "isReadable": false,
+    "beforeBytes": 1049536,
+    "afterBytes": 1049536
+  },
+  {
+    "path": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Building_defense.sky_plasma.png",
+    "width": 512,
+    "height": 512,
+    "wasReadable": false,
+    "isReadable": false,
+    "beforeBytes": 1049536,
+    "afterBytes": 1049536
+  },
+  {
+    "path": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Building_defense.smart_missile.png",
+    "width": 512,
+    "height": 512,
+    "wasReadable": false,
+    "isReadable": false,
+    "beforeBytes": 1049536,
+    "afterBytes": 1049536
+  },
+  {
+    "path": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Building_defense.tesla.png",
+    "width": 512,
+    "height": 512,
+    "wasReadable": false,
+    "isReadable": false,
+    "beforeBytes": 1049536,
+    "afterBytes": 1049536
+  },
+  {
+    "path": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Building_defense.vulcan_aa.png",
+    "width": 512,
+    "height": 512,
+    "wasReadable": false,
+    "isReadable": false,
+    "beforeBytes": 1049536,
+    "afterBytes": 1049536
+  },
+  {
+    "path": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Building_Foundation.png",
+    "width": 512,
+    "height": 512,
+    "wasReadable": false,
+    "isReadable": false,
+    "beforeBytes": 1049536,
+    "afterBytes": 1049536
+  },
+  {
+    "path": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Building_Generator.png",
+    "width": 512,
+    "height": 512,
+    "wasReadable": false,
+    "isReadable": false,
+    "beforeBytes": 1049536,
+    "afterBytes": 1049536
+  },
+  {
+    "path": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Building_installation.nexus.png",
+    "width": 512,
+    "height": 512,
+    "wasReadable": false,
+    "isReadable": false,
+    "beforeBytes": 1049536,
+    "afterBytes": 1049536
+  },
+  {
+    "path": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Building_Main.png",
+    "width": 512,
+    "height": 512,
+    "wasReadable": false,
+    "isReadable": false,
+    "beforeBytes": 1049536,
+    "afterBytes": 1049536
+  },
+  {
+    "path": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Building_Outpost.png",
+    "width": 512,
+    "height": 512,
+    "wasReadable": false,
+    "isReadable": false,
+    "beforeBytes": 1049536,
+    "afterBytes": 1049536
+  },
+  {
+    "path": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Building_PlainView.png",
+    "width": 512,
+    "height": 512,
+    "wasReadable": false,
+    "isReadable": false,
+    "beforeBytes": 1049536,
+    "afterBytes": 1049536
+  },
+  {
+    "path": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Building_resource.copper.png",
+    "width": 512,
+    "height": 512,
+    "wasReadable": false,
+    "isReadable": false,
+    "beforeBytes": 1049536,
+    "afterBytes": 1049536
+  },
+  {
+    "path": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Building_resource.iron.png",
+    "width": 512,
+    "height": 512,
+    "wasReadable": false,
+    "isReadable": false,
+    "beforeBytes": 1049536,
+    "afterBytes": 1049536
+  },
+  {
+    "path": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Building_resource.nanometal.png",
+    "width": 512,
+    "height": 512,
+    "wasReadable": false,
+    "isReadable": false,
+    "beforeBytes": 1049536,
+    "afterBytes": 1049536
+  },
+  {
+    "path": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Building_resource.plasma_ore.png",
+    "width": 512,
+    "height": 512,
+    "wasReadable": false,
+    "isReadable": false,
+    "beforeBytes": 1049536,
+    "afterBytes": 1049536
+  },
+  {
+    "path": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Building_resource.titanium.png",
+    "width": 512,
+    "height": 512,
+    "wasReadable": false,
+    "isReadable": false,
+    "beforeBytes": 1049536,
+    "afterBytes": 1049536
+  },
+  {
+    "path": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Building_resource.tungsten.png",
+    "width": 512,
+    "height": 512,
+    "wasReadable": false,
+    "isReadable": false,
+    "beforeBytes": 1049536,
+    "afterBytes": 1049536
+  },
+  {
+    "path": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Building_resource.uranium.png",
+    "width": 512,
+    "height": 512,
+    "wasReadable": false,
+    "isReadable": false,
+    "beforeBytes": 1049536,
+    "afterBytes": 1049536
+  },
+  {
+    "path": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Building_Sub.png",
+    "width": 512,
+    "height": 512,
+    "wasReadable": false,
+    "isReadable": false,
+    "beforeBytes": 1049536,
+    "afterBytes": 1049536
+  },
+  {
+    "path": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Building_Tower_Arrow.png",
+    "width": 512,
+    "height": 512,
+    "wasReadable": false,
+    "isReadable": false,
+    "beforeBytes": 1049536,
+    "afterBytes": 1049536
+  },
+  {
+    "path": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Building_Tower_Cannon.png",
+    "width": 512,
+    "height": 512,
+    "wasReadable": false,
+    "isReadable": false,
+    "beforeBytes": 1049536,
+    "afterBytes": 1049536
+  },
+  {
+    "path": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Building_Tower_Frost.png",
+    "width": 512,
+    "height": 512,
+    "wasReadable": false,
+    "isReadable": false,
+    "beforeBytes": 1049536,
+    "afterBytes": 1049536
+  },
+  {
+    "path": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Building_Tower_MachineGun.png",
+    "width": 512,
+    "height": 512,
+    "wasReadable": false,
+    "isReadable": false,
+    "beforeBytes": 1049536,
+    "afterBytes": 1049536
+  },
+  {
+    "path": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Building_TowerView.png",
+    "width": 512,
+    "height": 512,
+    "wasReadable": false,
+    "isReadable": false,
+    "beforeBytes": 1049536,
+    "afterBytes": 1049536
+  },
+  {
+    "path": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Building_Wall.png",
+    "width": 512,
+    "height": 512,
+    "wasReadable": false,
+    "isReadable": false,
+    "beforeBytes": 1049536,
+    "afterBytes": 1049536
+  },
+  {
+    "path": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Card.png",
+    "width": 64,
+    "height": 64,
+    "wasReadable": false,
+    "isReadable": false,
+    "beforeBytes": 17344,
+    "afterBytes": 17344
+  },
+  {
+    "path": "Assets/EternalSteam/Shared/UI/ReferenceHUD/ClockFace.png",
+    "width": 256,
+    "height": 256,
+    "wasReadable": false,
+    "isReadable": false,
+    "beforeBytes": 525248,
+    "afterBytes": 525248
+  },
+  {
+    "path": "Assets/EternalSteam/Shared/UI/ReferenceHUD/copper.png",
+    "width": 64,
+    "height": 64,
+    "wasReadable": false,
+    "isReadable": false,
+    "beforeBytes": 17344,
+    "afterBytes": 17344
+  },
+  {
+    "path": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Energy.png",
+    "width": 64,
+    "height": 64,
+    "wasReadable": false,
+    "isReadable": false,
+    "beforeBytes": 17344,
+    "afterBytes": 17344
+  },
+  {
+    "path": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Install.png",
+    "width": 64,
+    "height": 64,
+    "wasReadable": false,
+    "isReadable": false,
+    "beforeBytes": 17344,
+    "afterBytes": 17344
+  },
+  {
+    "path": "Assets/EternalSteam/Shared/UI/ReferenceHUD/iron.png",
+    "width": 64,
+    "height": 64,
+    "wasReadable": false,
+    "isReadable": false,
+    "beforeBytes": 17344,
+    "afterBytes": 17344
+  },
+  {
+    "path": "Assets/EternalSteam/Shared/UI/ReferenceHUD/MinimapCircleMask.png",
+    "width": 512,
+    "height": 512,
+    "wasReadable": false,
+    "isReadable": false,
+    "beforeBytes": 2098112,
+    "afterBytes": 2098112
+  },
+  {
+    "path": "Assets/EternalSteam/Shared/UI/ReferenceHUD/MinimapRing.png",
+    "width": 1254,
+    "height": 1254,
+    "wasReadable": false,
+    "isReadable": false,
+    "beforeBytes": 12581088,
+    "afterBytes": 12581088
+  },
+  {
+    "path": "Assets/EternalSteam/Shared/UI/ReferenceHUD/nanometal.png",
+    "width": 64,
+    "height": 64,
+    "wasReadable": false,
+    "isReadable": false,
+    "beforeBytes": 17344,
+    "afterBytes": 17344
+  },
+  {
+    "path": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Nexus.png",
+    "width": 64,
+    "height": 64,
+    "wasReadable": false,
+    "isReadable": false,
+    "beforeBytes": 33728,
+    "afterBytes": 33728
+  },
+  {
+    "path": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Panel.png",
+    "width": 64,
+    "height": 64,
+    "wasReadable": false,
+    "isReadable": false,
+    "beforeBytes": 17344,
+    "afterBytes": 17344
+  },
+  {
+    "path": "Assets/EternalSteam/Shared/UI/ReferenceHUD/plasma_ore.png",
+    "width": 64,
+    "height": 64,
+    "wasReadable": false,
+    "isReadable": false,
+    "beforeBytes": 17344,
+    "afterBytes": 17344
+  },
+  {
+    "path": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Selected.png",
+    "width": 64,
+    "height": 64,
+    "wasReadable": false,
+    "isReadable": false,
+    "beforeBytes": 17344,
+    "afterBytes": 17344
+  },
+  {
+    "path": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Shield.png",
+    "width": 64,
+    "height": 64,
+    "wasReadable": false,
+    "isReadable": false,
+    "beforeBytes": 17344,
+    "afterBytes": 17344
+  },
+  {
+    "path": "Assets/EternalSteam/Shared/UI/ReferenceHUD/TabActive.png",
+    "width": 64,
+    "height": 64,
+    "wasReadable": false,
+    "isReadable": false,
+    "beforeBytes": 17344,
+    "afterBytes": 17344
+  },
+  {
+    "path": "Assets/EternalSteam/Shared/UI/ReferenceHUD/titanium.png",
+    "width": 64,
+    "height": 64,
+    "wasReadable": false,
+    "isReadable": false,
+    "beforeBytes": 17344,
+    "afterBytes": 17344
+  },
+  {
+    "path": "Assets/EternalSteam/Shared/UI/ReferenceHUD/Tools.png",
+    "width": 64,
+    "height": 64,
+    "wasReadable": false,
+    "isReadable": false,
+    "beforeBytes": 17344,
+    "afterBytes": 17344
+  },
+  {
+    "path": "Assets/EternalSteam/Shared/UI/ReferenceHUD/tungsten.png",
+    "width": 64,
+    "height": 64,
+    "wasReadable": false,
+    "isReadable": false,
+    "beforeBytes": 17344,
+    "afterBytes": 17344
+  },
+  {
+    "path": "Assets/EternalSteam/Shared/UI/ReferenceHUD/uranium.png",
+    "width": 64,
+    "height": 64,
+    "wasReadable": false,
+    "isReadable": false,
+    "beforeBytes": 17344,
+    "afterBytes": 17344
+  }
+]

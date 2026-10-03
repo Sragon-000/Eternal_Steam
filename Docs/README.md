@@ -6,6 +6,7 @@
 - [HUD 실제 적용계획](프로젝트_통합기준.md#7316-hud-대형-개편-실제-적용계획--단계별-실행-기준-2026-10-02) — HUD-00~07, 단계별 적용 진행
 - [프로젝트 실행 안내](../README.md)
 - [사용자 제공 원본과 출처](Source/README.md) — 원본 변경 금지
+- [프로젝트 구조 평가와 성능 최적화](Validation/2026-10-03-project-performance.md) — Editor 병목·게임 실행 경로·측정 및 회귀 검증
 - [검증 증거](Validation) — 실행 당시의 범위와 조건
 - [표적 탐색 최적화 연구 확장 검토](Presentations/표적탐색_최적화_연구_확장_검토.md) — 연구 범위와 비교 실험 설계
 - [500×500 시작 맵 교체 상태](Validation/2026-09-29-start-region-500-map.md)
@@ -23,3 +24,9 @@
 - [HUD-08D 건설 하단 UI 축소·검증](Validation/2026-10-03-hud-08d-compact-construction.md)
 
 - [미니맵 우상단 정렬](Validation/2026-10-03-minimap-top-right.md)
+
+- [HUD-08E 통합 인수·Esc 입력 보존 수정](Validation/2026-10-03-hud-08e-integration.md)
+
+- [현재 씬 중심 테스트 기준·전체 항목](Testing/README.md)
+- [2026-10-03 테스트 개편 검증](Validation/2026-10-03-test-restructure.md)
+- [개발일지](DevelopmentLog/README.md)

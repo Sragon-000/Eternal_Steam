@@ -1,0 +1,10 @@
+[
+  {
+    "scene": "StartRegionSandbox",
+    "inputsPreserveTextOnEscape": 4
+  },
+  {
+    "scene": "OpenWorldSandbox",
+    "inputsPreserveTextOnEscape": 4
+  }
+]

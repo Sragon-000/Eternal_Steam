@@ -1,6 +1,6 @@
 # HUD-08 원형 미니맵과 Esc 메뉴 및 건설 화면 축소 적용계획
 
-상태: HUD-08A/B/C/D 적용·단계 검증 완료. 다음 적용 단위는 HUD-08E 통합 인수이며 OS IME 검증은 남아 있다. 건설 UI 결과는 [HUD-08D 적용 기록](../../Validation/2026-10-03-hud-08d-compact-construction.md)을 참조한다. 원형 미니맵 결과는 [HUD-08C 적용 기록](../../Validation/2026-10-03-hud-08c-circular-minimap.md)을 참조한다.
+상태: HUD-08A~E 적용·로컬 Unity Editor 통합 인수 완료. Esc 입력 보존 수정, 최종 297개 회귀, 두 씬 × 7해상도, 실제 macOS 한글/Tab/Esc 및 저장 재로드 결과는 [HUD-08E 통합 기록](../../Validation/2026-10-03-hud-08e-integration.md)을 참조한다. 다른 OS/배포 빌드는 이 완료 범위에 포함하지 않는다.
 
 ## 1. 목적과 현재 원인
 

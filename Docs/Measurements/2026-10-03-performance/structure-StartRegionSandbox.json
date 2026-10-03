@@ -1,0 +1,576 @@
+{
+  "scene": "Assets/EternalSteam/Scene/Tests/StartRegionSandbox.unity",
+  "playing": true,
+  "gameObjects": 2390,
+  "activeObjects": 1365,
+  "renderers": 1513,
+  "activeRenderers": 1137,
+  "colliders": 1462,
+  "targetFrameRate": -1,
+  "vSync": 0,
+  "quality": "PC",
+  "roots": [
+    {
+      "name": "TWC Height Cache · hidden Terrain",
+      "active": true,
+      "objects": 1,
+      "renderers": 0
+    },
+    {
+      "name": "Top View Camera",
+      "active": true,
+      "objects": 1,
+      "renderers": 0
+    },
+    {
+      "name": "Sun",
+      "active": true,
+      "objects": 1,
+      "renderers": 0
+    },
+    {
+      "name": "Open World Test Space",
+      "active": true,
+      "objects": 18,
+      "renderers": 12
+    },
+    {
+      "name": "Test Space HUD",
+      "active": false,
+      "objects": 1,
+      "renderers": 0
+    },
+    {
+      "name": "TWC · Mountain River",
+      "active": false,
+      "objects": 344,
+      "renderers": 330
+    },
+    {
+      "name": "Spawn areas · normal 1 cell · boss 9 cells",
+      "active": true,
+      "objects": 14,
+      "renderers": 13
+    },
+    {
+      "name": "ConstructionPresentation",
+      "active": true,
+      "objects": 25,
+      "renderers": 22
+    },
+    {
+      "name": "GameplayCanvas",
+      "active": true,
+      "objects": 835,
+      "renderers": 0
+    },
+    {
+      "name": "GameplayEventSystem",
+      "active": true,
+      "objects": 1,
+      "renderers": 0
+    },
+    {
+      "name": "RailwayPresentation",
+      "active": true,
+      "objects": 15,
+      "renderers": 6
+    },
+    {
+      "name": "TWC · Start Region 500",
+      "active": true,
+      "objects": 1134,
+      "renderers": 1130
+    }
+  ],
+  "scripts": [
+    {
+      "type": "GiantGrey.TileWorldCreator.Components.ClusterIdentifier",
+      "count": 1460,
+      "active": 1130
+    },
+    {
+      "type": "GiantGrey.TileWorldCreator.Utilities.MeshCombiner",
+      "count": 1460,
+      "active": 1130
+    },
+    {
+      "type": "UnityEngine.UI.Image",
+      "count": 361,
+      "active": 70
+    },
+    {
+      "type": "TMPro.TextMeshProUGUI",
+      "count": 358,
+      "active": 40
+    },
+    {
+      "type": "UnityEngine.UI.Button",
+      "count": 224,
+      "active": 33
+    },
+    {
+      "type": "UnityEngine.UI.LayoutElement",
+      "count": 101,
+      "active": 40
+    },
+    {
+      "type": "TMPro.TMP_SubMeshUI",
+      "count": 42,
+      "active": 38
+    },
+    {
+      "type": "GiantGrey.TileWorldCreator.Components.LayerIdentifier",
+      "count": 16,
+      "active": 3
+    },
+    {
+      "type": "UnityEngine.UI.Mask",
+      "count": 14,
+      "active": 3
+    },
+    {
+      "type": "UnityEngine.UI.ScrollRect",
+      "count": 13,
+      "active": 3
+    },
+    {
+      "type": "UnityEngine.UI.ContentSizeFitter",
+      "count": 8,
+      "active": 2
+    },
+    {
+      "type": "UnityEngine.UI.VerticalLayoutGroup",
+      "count": 7,
+      "active": 1
+    },
+    {
+      "type": "TMPro.TMP_InputField",
+      "count": 4,
+      "active": 0
+    },
+    {
+      "type": "GiantGrey.TileWorldCreator.TileWorldCreatorManager",
+      "count": 2,
+      "active": 1
+    },
+    {
+      "type": "UnityEngine.UI.Scrollbar",
+      "count": 2,
+      "active": 2
+    },
+    {
+      "type": "EternalSteam.OpenWorld.TileWorldGround",
+      "count": 1,
+      "active": 1
+    },
+    {
+      "type": "EternalSteam.OpenWorld.FreeCameraRig",
+      "count": 1,
+      "active": 1
+    },
+    {
+      "type": "UnityEngine.Rendering.Universal.UniversalAdditionalCameraData",
+      "count": 1,
+      "active": 1
+    },
+    {
+      "type": "UnityEngine.Rendering.Universal.UniversalAdditionalLightData",
+      "count": 1,
+      "active": 1
+    },
+    {
+      "type": "EternalSteam.OpenWorld.OpenWorldSandbox",
+      "count": 1,
+      "active": 1
+    },
+    {
+      "type": "EternalSteam.OpenWorld.OpenWorldInput",
+      "count": 1,
+      "active": 1
+    },
+    {
+      "type": "EternalSteam.OpenWorld.SceneStartingBase",
+      "count": 1,
+      "active": 1
+    },
+    {
+      "type": "EternalSteam.OpenWorld.ContentBuildingView",
+      "count": 1,
+      "active": 1
+    },
+    {
+      "type": "EternalSteam.OpenWorld.BuildingHitView",
+      "count": 1,
+      "active": 1
+    },
+    {
+      "type": "EternalSteam.OpenWorld.OperationStatusView",
+      "count": 1,
+      "active": 1
+    },
+    {
+      "type": "UnityEngine.UIElements.UIDocument",
+      "count": 1,
+      "active": 0
+    },
+    {
+      "type": "EternalSteam.OpenWorld.OpenWorldHud",
+      "count": 1,
+      "active": 0
+    },
+    {
+      "type": "EternalSteam.OpenWorld.SpawnAreaView",
+      "count": 1,
+      "active": 1
+    },
+    {
+      "type": "EternalSteam.OpenWorld.WorldGridView",
+      "count": 1,
+      "active": 1
+    },
+    {
+      "type": "EternalSteam.OpenWorld.BuildAreaHologramView",
+      "count": 1,
+      "active": 1
+    },
+    {
+      "type": "UnityEngine.UI.CanvasScaler",
+      "count": 1,
+      "active": 1
+    },
+    {
+      "type": "UnityEngine.UI.GraphicRaycaster",
+      "count": 1,
+      "active": 1
+    },
+    {
+      "type": "EternalSteam.OpenWorld.CanvasWorldHud",
+      "count": 1,
+      "active": 1
+    },
+    {
+      "type": "EternalSteam.OpenWorld.CanvasHudLayout",
+      "count": 1,
+      "active": 1
+    },
+    {
+      "type": "EternalSteam.OpenWorld.GameplayHudWorkspace",
+      "count": 1,
+      "active": 1
+    },
+    {
+      "type": "EternalSteam.OpenWorld.HudModeGroups",
+      "count": 1,
+      "active": 1
+    },
+    {
+      "type": "EternalSteam.OpenWorld.BaseResourceAccordion",
+      "count": 1,
+      "active": 1
+    },
+    {
+      "type": "EternalSteam.OpenWorld.HudPauseMenu",
+      "count": 1,
+      "active": 1
+    },
+    {
+      "type": "EternalSteam.OpenWorld.CompactConstructionDock",
+      "count": 1,
+      "active": 1
+    },
+    {
+      "type": "EternalSteam.OpenWorld.CanvasClockDial",
+      "count": 1,
+      "active": 0
+    },
+    {
+      "type": "EternalSteam.OpenWorld.CanvasWorldMinimap",
+      "count": 1,
+      "active": 0
+    },
+    {
+      "type": "EternalSteam.OpenWorld.RailwayHud",
+      "count": 1,
+      "active": 1
+    },
+    {
+      "type": "EternalSteam.OpenWorld.RailwayOverview",
+      "count": 1,
+      "active": 1
+    },
+    {
+      "type": "EternalSteam.OpenWorld.RailwayServicePanel",
+      "count": 1,
+      "active": 1
+    },
+    {
+      "type": "EternalSteam.OpenWorld.RailwayEditorPanel",
+      "count": 1,
+      "active": 1
+    },
+    {
+      "type": "UnityEngine.UI.RectMask2D",
+      "count": 1,
+      "active": 1
+    },
+    {
+      "type": "UnityEngine.UI.GridLayoutGroup",
+      "count": 1,
+      "active": 1
+    },
+    {
+      "type": "UnityEngine.EventSystems.EventSystem",
+      "count": 1,
+      "active": 1
+    },
+    {
+      "type": "UnityEngine.InputSystem.UI.InputSystemUIInputModule",
+      "count": 1,
+      "active": 1
+    },
+    {
+      "type": "EternalSteam.OpenWorld.RailwaySceneView",
+      "count": 1,
+      "active": 1
+    }
+  ],
+  "textures": [
+    {
+      "name": "GUIViewHDRRT",
+      "path": "",
+      "width": 864,
+      "height": 1876,
+      "bytes": 105357344
+    },
+    {
+      "name": "_CameraDepthAttachment_2560x1440_D32_SFloat_S8_UInt_Tex2D",
+      "path": "",
+      "width": 2560,
+      "height": 1440,
+      "bytes": 36865300
+    },
+    {
+      "name": "_CameraDepthTexture_2560x1440_D32_SFloat_S8_UInt_Tex2D",
+      "path": "",
+      "width": 2560,
+      "height": 1440,
+      "bytes": 36865294
+    },
+    {
+      "name": "ProfilerScreenshotFull",
+      "path": "",
+      "width": 2560,
+      "height": 1440,
+      "bytes": 33178784
+    },
+    {
+      "name": "GameView RT",
+      "path": "",
+      "width": 2560,
+      "height": 1440,
+      "bytes": 33178784
+    },
+    {
+      "name": "GizmoIconAtlas_pix32",
+      "path": "",
+      "width": 2048,
+      "height": 1024,
+      "bytes": 22370584
+    },
+    {
+      "name": "GUIViewHDRRT",
+      "path": "",
+      "width": 1606,
+      "height": 716,
+      "bytes": 14949832
+    },
+    {
+      "name": "GUIViewHDRRT",
+      "path": "",
+      "width": 986,
+      "height": 1160,
+      "bytes": 14870064
+    },
+    {
+      "name": "_CameraTargetAttachment_2560x1440_B10G11R11_UFloatPack32_Tex2D",
+      "path": "",
+      "width": 2560,
+      "height": 1440,
+      "bytes": 14746910
+    },
+    {
+      "name": "_SSAO_OcclusionTexture1_2560x1440_R8G8B8A8_UNorm_Tex2D",
+      "path": "",
+      "width": 2560,
+      "height": 1440,
+      "bytes": 14746894
+    },
+    {
+      "name": "_SSAO_OcclusionTexture0_2560x1440_R8G8B8A8_UNorm_Tex2D",
+      "path": "",
+      "width": 2560,
+      "height": 1440,
+      "bytes": 14746894
+    },
+    {
+      "name": "_CameraNormalsTexture_2560x1440_R8G8B8A8_SNorm_Tex2D",
+      "path": "",
+      "width": 2560,
+      "height": 1440,
+      "bytes": 14746890
+    },
+    {
+      "name": "SceneView RT",
+      "path": "",
+      "width": 1604,
+      "height": 612,
+      "bytes": 12761968
+    },
+    {
+      "name": "RailwayButton",
+      "path": "Assets/EternalSteam/Shared/UI/Railway/RailwayButton.png",
+      "width": 2172,
+      "height": 724,
+      "bytes": 12581184
+    },
+    {
+      "name": "RailwayIcon",
+      "path": "Assets/EternalSteam/Shared/UI/Railway/RailwayIcon.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 12581088
+    },
+    {
+      "name": "MinimapRing",
+      "path": "Assets/EternalSteam/Shared/UI/ReferenceHUD/MinimapRing.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 12581088
+    },
+    {
+      "name": "RailwayPanel",
+      "path": "Assets/EternalSteam/Shared/UI/Railway/RailwayPanel.png",
+      "width": 1308,
+      "height": 1202,
+      "bytes": 12578688
+    },
+    {
+      "name": "_CameraDepthAttachment_1604x612_D32_SFloat_S8_UInt_Tex2D",
+      "path": "",
+      "width": 1604,
+      "height": 612,
+      "bytes": 9817778
+    },
+    {
+      "name": "_CameraDepthTexture_1604x612_D32_SFloat_S8_UInt_Tex2D",
+      "path": "",
+      "width": 1604,
+      "height": 612,
+      "bytes": 9817772
+    },
+    {
+      "name": "GUIViewHDRRT",
+      "path": "",
+      "width": 986,
+      "height": 716,
+      "bytes": 9178872
+    },
+    {
+      "name": "_MainLightShadowmapTexture_2048x2048_Shadowmap",
+      "path": "",
+      "width": 2048,
+      "height": 2048,
+      "bytes": 8389886
+    },
+    {
+      "name": "_CameraTargetAttachment_1604x612_R16G16B16A16_SFloat_Tex2D",
+      "path": "",
+      "width": 1604,
+      "height": 612,
+      "bytes": 7854486
+    },
+    {
+      "name": "_SSAO_OcclusionTexture1_1604x612_R8G8B8A8_UNorm_Tex2D",
+      "path": "",
+      "width": 1604,
+      "height": 612,
+      "bytes": 3927884
+    },
+    {
+      "name": "_SSAO_OcclusionTexture0_1604x612_R8G8B8A8_UNorm_Tex2D",
+      "path": "",
+      "width": 1604,
+      "height": 612,
+      "bytes": 3927884
+    },
+    {
+      "name": "_CameraNormalsTexture_1604x612_R8G8B8A8_SNorm_Tex2D",
+      "path": "",
+      "width": 1604,
+      "height": 612,
+      "bytes": 3927880
+    },
+    {
+      "name": "LDRSceneTarget",
+      "path": "",
+      "width": 1604,
+      "height": 612,
+      "bytes": 3927776
+    },
+    {
+      "name": "_CameraOpaqueTexture_1280x720_B10G11R11_UFloatPack32_Tex2D",
+      "path": "",
+      "width": 1280,
+      "height": 720,
+      "bytes": 3687702
+    },
+    {
+      "name": "_ScreenSpaceOcclusionTexture_2560x1440_R8_UNorm_Tex2D",
+      "path": "",
+      "width": 2560,
+      "height": 1440,
+      "bytes": 3687692
+    },
+    {
+      "name": "GUIViewHDRRT",
+      "path": "",
+      "width": 3456,
+      "height": 72,
+      "bytes": 3236000
+    },
+    {
+      "name": "Arial - Regular Atlas",
+      "path": "",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 2098112
+    }
+  ],
+  "meshGroups": [
+    {
+      "material": "matSandTiles",
+      "count": 765
+    },
+    {
+      "material": "matSandCorner",
+      "count": 342
+    },
+    {
+      "material": "matSandEdge",
+      "count": 21
+    },
+    {
+      "material": "Model_Steel",
+      "count": 6
+    },
+    {
+      "material": "matSandFill",
+      "count": 2
+    },
+    {
+      "material": "resource.nanometal",
+      "count": 1
+    }
+  ]
+}

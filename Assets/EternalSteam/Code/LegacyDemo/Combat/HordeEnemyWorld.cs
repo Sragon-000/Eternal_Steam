@@ -28,12 +28,44 @@ namespace EternalSteam.Demo
         internal readonly Enemy[] enemies;
         public int MaxCount => enemies.Length;
         internal readonly int[] heads;
+        readonly int[] occupiedCells;int occupiedCellCount;
         internal int IndexWidth { get; }
         internal int IndexHeight { get; }
         readonly Vector2 indexOrigin;
         internal readonly int[] next;
         readonly int[] free;
         readonly int[] generations;
+        readonly ulong[] liveWords;
+        // Ascending stable slot order preserves targeting ties and same-step damage ordering.
+        // The value-type iterator skips empty 64-slot blocks without allocations.
+        public LiveIndices ActiveIndices => new LiveIndices(this);
+        public readonly struct LiveIndices
+        {
+            readonly HordeEnemyWorld world;
+            internal LiveIndices(HordeEnemyWorld world){this.world=world;}
+            public Enumerator GetEnumerator()=>new Enumerator(world);
+            public struct Enumerator
+            {
+                readonly HordeEnemyWorld world;int current;
+                internal Enumerator(HordeEnemyWorld world){this.world=world;current=-1;}
+                public int Current=>current;
+                public bool MoveNext(){if(current>=world.MaxCount)return false;int next=world.NextAlive(current+1);current=next<0?world.MaxCount:next;return next>=0;}
+            }
+        }
+        int NextAlive(int start)
+        {
+            if(Alive==0||start>=MaxCount)return -1;
+            int word=start>>6;ulong bits=liveWords[word] & (ulong.MaxValue << (start&63));
+            while(bits==0){if(++word>=liveWords.Length)return -1;bits=liveWords[word];}
+            int bit=0;
+            if((bits&0xffffffffUL)==0){bit+=32;bits>>=32;}
+            if((bits&0xffffUL)==0){bit+=16;bits>>=16;}
+            if((bits&0xffUL)==0){bit+=8;bits>>=8;}
+            if((bits&0xfUL)==0){bit+=4;bits>>=4;}
+            if((bits&3UL)==0){bit+=2;bits>>=2;}
+            if((bits&1UL)==0)bit++;
+            return (word<<6)+bit;
+        }
         public int Generation(int index)=>generations[index];
         public void SetMovementPenalty(int index,float value){enemies[index].movementPenalty=Mathf.Clamp01(value);}
         public void SetDestination(int index,Vector3? destination)
@@ -70,7 +102,8 @@ namespace EternalSteam.Demo
             indexOrigin = bounds.position;
             IndexWidth = Mathf.CeilToInt(bounds.width/CellSize); IndexHeight = Mathf.CeilToInt(bounds.height/CellSize);
             heads = new int[IndexWidth*IndexHeight];
-            enemies = new Enemy[capacity]; next = new int[capacity]; free = new int[capacity]; generations=new int[capacity];
+            occupiedCells=new int[Math.Min(capacity,heads.Length)];
+            enemies = new Enemy[capacity]; next = new int[capacity]; free = new int[capacity]; generations=new int[capacity];liveWords=new ulong[(capacity+63)/64];
             this.groundHeight = groundHeight; this.damageOnEscape = damageOnEscape; Reset();
         }
         public bool TrySpawn(Vector3 position, Vector3 destination, float speed = 2, int health = 20, bool air = false)
@@ -81,6 +114,7 @@ namespace EternalSteam.Demo
             int id = free[--FreeCount];generations[id]++;
             enemies[id] = new Enemy { alive = true, health = health, position = position, destination = destination, speed = speed, air=air };
             if(air){enemies[id].position.y+=5;enemies[id].destination.y+=5;}
+            liveWords[id>>6]|=1UL<<(id&63);
             Alive++; Spawned++; SpawnedEnemy?.Invoke(id);return true;
         }
         public void Reset()
@@ -95,7 +129,8 @@ namespace EternalSteam.Demo
         public void DespawnAll()
         {
             Array.Clear(enemies, 0, enemies.Length);
-            Array.Fill(heads, -1);
+            Array.Clear(liveWords,0,liveWords.Length);
+            Array.Fill(heads, -1);occupiedCellCount=0;
             for (int i = 0; i < MaxCount; i++) free[i] = MaxCount - 1 - i;
             FreeCount = MaxCount;
             Alive = 0;
@@ -113,14 +148,17 @@ namespace EternalSteam.Demo
                 destination = end,
                 speed = (mapKind == HordeMapKind.Lane ? 1.7f : 3.8f) + (float)random.NextDouble() * 0.8f
             };
+            liveWords[id>>6]|=1UL<<(id&63);
             Alive++;
             Spawned++;SpawnedEnemy?.Invoke(id);
         }
 
         public void MoveAndIndex(float dt)
         {
-            Array.Fill(heads, -1);
-            for (int i = 0; i < MaxCount; i++)
+            // Clear exactly the buckets populated by the previous step, including dead actors.
+            for(int cellIndex=0;cellIndex<occupiedCellCount;cellIndex++)heads[occupiedCells[cellIndex]]=-1;
+            occupiedCellCount=0;
+            foreach (int i in ActiveIndices)
             {
                 if (Defeated) break;
                 if (!enemies[i].alive) continue;
@@ -140,6 +178,7 @@ namespace EternalSteam.Demo
                     continue;
                 }
                 int cell = Cell(enemies[i].position);
+                if(heads[cell]<0)occupiedCells[occupiedCellCount++]=cell;
                 next[i] = heads[cell];
                 heads[cell] = i;
             }
@@ -153,6 +192,7 @@ namespace EternalSteam.Demo
         {
             if (!enemies[id].alive) return;
             enemies[id].alive = false;
+            liveWords[id>>6]&=~(1UL<<(id&63));
             free[FreeCount++] = id;
             Alive--;
             if (killed) { Killed++;KilledEnemy?.Invoke(id,generations[id]); }

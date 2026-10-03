@@ -340,6 +340,7 @@ namespace EternalSteam.OpenWorld
             if(drafting&&stage==EditorStage.DiscardPrompt)text.AppendLine("계속 편집하면 초안을 유지합니다. 폐기하면 실제 노선은 변경하지 않습니다.");
             Summary.text=text.ToString();var rect=Summary.rectTransform;float height=Math.Max(222,Summary.preferredHeight+12);rect.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical,height);((RectTransform)rect.parent).SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical,height);
         }
-        void Update(){Refresh();}
+        double nextRefresh;
+        void Update(){if(Panel.activeSelf&&Panel.activeInHierarchy&&Time.unscaledTimeAsDouble>=nextRefresh){nextRefresh=Time.unscaledTimeAsDouble+.1;Refresh();}}
     }
 }

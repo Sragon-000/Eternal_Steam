@@ -1,0 +1,18 @@
+[
+  {
+    "manager": "TWC · Start Region 500",
+    "configPath": "Assets/Map/TileWorldCreatorConfiguration.asset",
+    "showPaintGrid": true,
+    "debugClusters": false,
+    "width": 500,
+    "height": 500
+  },
+  {
+    "manager": "TWC · Mountain River",
+    "configPath": "Assets/EternalSteam/Content/Environments/TileWorldMountainRiver/Generated/Configuration.asset",
+    "showPaintGrid": false,
+    "debugClusters": false,
+    "width": 96,
+    "height": 96
+  }
+]

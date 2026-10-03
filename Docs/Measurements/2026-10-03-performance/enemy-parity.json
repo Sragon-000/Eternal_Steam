@@ -1,0 +1,9 @@
+{
+  "result": "PASS",
+  "operations": 3000,
+  "capacity": 257,
+  "slotStateAndGenerationsIdentical": true,
+  "spatialQueryOrderIdentical": true,
+  "seed": 8137,
+  "purpose": "Product behavior regression; no research experiment"
+}

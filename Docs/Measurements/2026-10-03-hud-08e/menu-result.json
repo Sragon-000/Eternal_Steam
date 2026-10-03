@@ -1,0 +1,15 @@
+{
+  "result": "PASS",
+  "escapeInputSystem": true,
+  "independentPause": true,
+  "pausedStatePreserved": true,
+  "worldCameraTestAndTabBlocked": true,
+  "pointerOnlyAbort": true,
+  "constructionReservationsAndStockPreserved": true,
+  "railDraftAndSaveGuard": true,
+  "loadDiscardConfirmation": true,
+  "imeEventAndFocus": true,
+  "nativeOSIMEVerified": false,
+  "actualSaveButton": true,
+  "researchExperiment": false
+}

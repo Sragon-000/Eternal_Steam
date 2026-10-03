@@ -1,0 +1,30 @@
+[
+  {
+    "kind": "composition",
+    "value": "ㅎ"
+  },
+  {
+    "kind": "composition",
+    "value": "ㅎ"
+  },
+  {
+    "kind": "composition",
+    "value": ""
+  },
+  {
+    "kind": "text",
+    "value": "ㅎ"
+  },
+  {
+    "kind": "text",
+    "value": "\t"
+  },
+  {
+    "kind": "text",
+    "value": "1"
+  },
+  {
+    "kind": "text",
+    "value": "\u001b"
+  }
+]

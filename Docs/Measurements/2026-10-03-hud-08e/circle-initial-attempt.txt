@@ -1,0 +1,3 @@
+FAIL System.Exception: Frame bounds
+  at MinimapCornerProbe+<Verify>d__9.MoveNext () [0x00f57] in /Users/limseth/Projects/Eternal_Steam/Eternal_Steam/Tools/VerifyHud08ECircle.cs:22 
+  at MinimapCornerProbe+<Start>d__8.MoveNext () [0x00085] in /Users/limseth/Projects/Eternal_Steam/Eternal_Steam/Tools/VerifyHud08ECircle.cs:8 

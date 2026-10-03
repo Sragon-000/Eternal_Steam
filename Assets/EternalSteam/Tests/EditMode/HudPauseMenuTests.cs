@@ -5,14 +5,17 @@ using UnityEngine;
 using EternalSteam.OpenWorld;
 namespace EternalSteam.Tests
 {
- public sealed class HudPauseMenuTests
+ [Category("CurrentScene")]
+public sealed class HudPauseMenuTests
  {
-  [TestCase("StartRegionSandbox")][TestCase("OpenWorldSandbox")]
-  public void SavedModalOwnsPauseAndSaveAndPreservesConstructionGroup(string name)
+[Test]
+
+  public void SavedModalOwnsPauseAndSaveAndPreservesConstructionGroup()
   {
-   var scene=EditorSceneManager.OpenPreviewScene("Assets/EternalSteam/Scene/Tests/"+name+".unity");
+   var scene=CurrentSceneFixture.Open();var name=scene.name;
    try{
     var h=scene.GetRootGameObjects().SelectMany(r=>r.GetComponentsInChildren<CanvasWorldHud>(true)).Single();var m=h.Sandbox.PauseMenu;
+    foreach(var input in h.GetComponentsInChildren<TMPro.TMP_InputField>(true))Assert.That(input.restoreOriginalTextOnEscape,Is.False,"Esc must preserve new input: "+input.name);
     Assert.That(m,Is.Not.Null);Assert.That(m.Content,Is.Not.Null);Assert.That(m.SaveSection,Is.Not.Null);Assert.That(m.ProgressSection,Is.Not.Null);Assert.That(m.Scroll,Is.Not.Null);Assert.That(m.DeveloperEntry,Is.Not.Null);Assert.That(m.Content.transform,Is.SameAs(m.Panel));Assert.That(m.Hud,Is.SameAs(h));Assert.That(m.Overlay.gameObject.activeSelf,Is.False);
     Assert.That(h.Buttons.Single(b=>b.Id=="pause").View.transform.IsChildOf(m.Panel),Is.True);
     Assert.That(h.Buttons.Single(b=>b.Id=="save").View.transform.IsChildOf(m.Panel),Is.True);
@@ -26,7 +29,7 @@ namespace EternalSteam.Tests
     Assert.That(m.AllowsHudCommand("infinite-resources"),Is.False);Assert.That(m.AllowsHudCommand("save"),Is.True);
     m.LoadConfirmation.SetActive(true);m.Escape();Assert.That(m.IsOpen,Is.True);Assert.That(m.LoadConfirmation.activeSelf,Is.False);
     m.Escape();m.Advance(1);Assert.That(m.IsOpen,Is.False);Assert.That(h.Groups.ConstructionSelected,Is.True);
-   }finally{EditorSceneManager.ClosePreviewScene(scene);}
+   }finally{CurrentSceneFixture.Close(scene);}
   }
  }
 }

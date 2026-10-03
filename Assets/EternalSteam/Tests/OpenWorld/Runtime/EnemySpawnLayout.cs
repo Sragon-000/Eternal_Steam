@@ -16,7 +16,7 @@ namespace EternalSteam.OpenWorld
         public void Begin(HordeEnemyWorld enemies, float minimumSpacing)
         {
             spacing = Mathf.Max(.5f, minimumSpacing); heads.Clear(); used = 0;
-            for (int i = 0; i < enemies.MaxCount; i++)
+            foreach (int i in enemies.ActiveIndices)
                 if (enemies.GetEnemy(i).alive) Add(enemies.GetEnemy(i).position);
         }
         Vector2Int Key(Vector3 p) => new(Mathf.FloorToInt(p.x / spacing), Mathf.FloorToInt(p.z / spacing));

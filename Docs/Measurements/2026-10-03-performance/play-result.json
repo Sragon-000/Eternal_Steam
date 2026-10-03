@@ -1,0 +1,13 @@
+{
+  "result": "PASS",
+  "catalogToWorldPlacement": true,
+  "candidateAndPendingCost": true,
+  "finiteShortage": true,
+  "infiniteToggleRevalidation": true,
+  "confirmationPaidOnce": true,
+  "cancelWithoutPayment": true,
+  "combatReturnPreservesDraft": true,
+  "railSwitchProtectsDraft": true,
+  "confirmPointerUnobscured": true,
+  "researchExperiment": false
+}

@@ -1,0 +1,9 @@
+{
+  "result": "PASS",
+  "exactVertexAndTriangleParity": true,
+  "originalSynchronousMs": 238.95270000000002,
+  "cameraMoveInterruptRecovered": true,
+  "boundedCalls": 9,
+  "maxCallMs": 3.3392,
+  "meshCount": 9
+}

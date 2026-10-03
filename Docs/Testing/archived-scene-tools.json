@@ -1,0 +1,127 @@
+[
+  {
+    "previous": "Tools/FinishHud04Validation.cs",
+    "archive": "Tools/Archive/SceneSwitching/FinishHud04Validation.cs.txt",
+    "sha256": "e4a2eee16790161f668eef203691f3c51b00c55804c06b0f3365a2101986d0a4"
+  },
+  {
+    "previous": "Tools/FinishHud05Validation.cs",
+    "archive": "Tools/Archive/SceneSwitching/FinishHud05Validation.cs.txt",
+    "sha256": "316af8f79f8224cfad674ca3bf2169abc847428dc225df2677494eb5b3db92ef"
+  },
+  {
+    "previous": "Tools/FinishHud06AValidation.cs",
+    "archive": "Tools/Archive/SceneSwitching/FinishHud06AValidation.cs.txt",
+    "sha256": "91fe19deaa7ad13b97172bb7f878666c1ad446cdba1dc21bae977f447181e64e"
+  },
+  {
+    "previous": "Tools/FinishHud06BValidation.cs",
+    "archive": "Tools/Archive/SceneSwitching/FinishHud06BValidation.cs.txt",
+    "sha256": "cbf7300fbb903a2a44314810bc481d0967c279d340c9338398f0767c086b808b"
+  },
+  {
+    "previous": "Tools/FinishHud06CValidation.cs",
+    "archive": "Tools/Archive/SceneSwitching/FinishHud06CValidation.cs.txt",
+    "sha256": "3200c692aa21defa2dba799b506e1d6818e3572dc3c642abcd27d3b54f9be3db"
+  },
+  {
+    "previous": "Tools/FinishHud07Validation.cs",
+    "archive": "Tools/Archive/SceneSwitching/FinishHud07Validation.cs.txt",
+    "sha256": "8164af8a09428563aa8091804cb4087d854e5729fab4984f5c02f34ac1bfaa4a"
+  },
+  {
+    "previous": "Tools/FinishHud08CValidation.cs",
+    "archive": "Tools/Archive/SceneSwitching/FinishHud08CValidation.cs.txt",
+    "sha256": "7628408cdaa11c30f317458f9d746b9f6bce0ac5f319809bf12aafb5d5fdf76f"
+  },
+  {
+    "previous": "Tools/FinishHud08DValidation.cs",
+    "archive": "Tools/Archive/SceneSwitching/FinishHud08DValidation.cs.txt",
+    "sha256": "7082941bc67f107c4df92db60c85bc52feb90d31c2c074d5eff8901f7e6ac52e"
+  },
+  {
+    "previous": "Tools/FinishHud08DockAuthoring.cs",
+    "archive": "Tools/Archive/SceneSwitching/FinishHud08DockAuthoring.cs.txt",
+    "sha256": "23543a1c2ec163f539e0cfe002d79dfd8bb92d9bbafed0a3e77abc8dbbf3601e"
+  },
+  {
+    "previous": "Tools/FinishHud08EValidation.cs",
+    "archive": "Tools/Archive/SceneSwitching/FinishHud08EValidation.cs.txt",
+    "sha256": "7abe7dab39cd3ebb5869a5f125f6698be6f556968417fa977f801e9cfce31689"
+  },
+  {
+    "previous": "Tools/FinishHud08Validation.cs",
+    "archive": "Tools/Archive/SceneSwitching/FinishHud08Validation.cs.txt",
+    "sha256": "099cec64bdcbf58d7dacce795f9836b6e3e0ceae445d33873f1abd9682eedcee"
+  },
+  {
+    "previous": "Tools/FinishMinimapCornerValidation.cs",
+    "archive": "Tools/Archive/SceneSwitching/FinishMinimapCornerValidation.cs.txt",
+    "sha256": "520bd7baa9509a0f637976a7ea251cb912718314bf5228eabb2f4e674955d96e"
+  },
+  {
+    "previous": "Tools/InspectHud07Bounds.cs",
+    "archive": "Tools/Archive/SceneSwitching/InspectHud07Bounds.cs.txt",
+    "sha256": "954a0735ebf618b7e753afbd0d85a2a58436c4872c1f52d0b2de5b638f32dcda"
+  },
+  {
+    "previous": "Tools/InspectHudGroups.cs",
+    "archive": "Tools/Archive/SceneSwitching/InspectHudGroups.cs.txt",
+    "sha256": "799e3e8266e91c1aa50313ab99cba216d3cc6b3d76f1284e343d5030dbb443d9"
+  },
+  {
+    "previous": "Tools/VerifyBuildSurfaces.cs",
+    "archive": "Tools/Archive/SceneSwitching/VerifyBuildSurfaces.cs.txt",
+    "sha256": "61611e1cf09e625b8c0d3cffaefe6136827dca926a805dbbfd6f70e35924a763"
+  },
+  {
+    "previous": "Tools/VerifyFoundationRegression.cs",
+    "archive": "Tools/Archive/SceneSwitching/VerifyFoundationRegression.cs.txt",
+    "sha256": "6931aaf51e2677238de979553d568089922c831f7ca091f216f57490bb99e55a"
+  },
+  {
+    "previous": "Tools/VerifyIntegratedPresentation.cs",
+    "archive": "Tools/Archive/SceneSwitching/VerifyIntegratedPresentation.cs.txt",
+    "sha256": "f1387c52f97d1aabd6b86d783983011ff4919c7cf6bc8b0feb229508a618317a"
+  },
+  {
+    "previous": "Tools/VerifyLegacyBuildingWorld.cs",
+    "archive": "Tools/Archive/SceneSwitching/VerifyLegacyBuildingWorld.cs.txt",
+    "sha256": "c3104959e883e1cefda02ed614a1b9998ab1416dd6fa61e8dec14810d11e0f1b"
+  },
+  {
+    "previous": "Tools/VerifyLegacyCombatPresentation.cs",
+    "archive": "Tools/Archive/SceneSwitching/VerifyLegacyCombatPresentation.cs.txt",
+    "sha256": "98f2f0b4fa4b94fe96ff6522d88a82e6d9d78253c6f86d46c8dd759c2d666a1e"
+  },
+  {
+    "previous": "Tools/VerifyLegacyDeployment.cs",
+    "archive": "Tools/Archive/SceneSwitching/VerifyLegacyDeployment.cs.txt",
+    "sha256": "8d811dda02e365837614d4b8af369c71d1976715d2bac7e20ac32f229a29cb8e"
+  },
+  {
+    "previous": "Tools/VerifyRailwayConnections.cs",
+    "archive": "Tools/Archive/SceneSwitching/VerifyRailwayConnections.cs.txt",
+    "sha256": "f672cb91f535071479f45c8d045487d4a0ec60e45e3cdb12b6c5d073ff31248c"
+  },
+  {
+    "previous": "Tools/VerifyRailwayPlay.cs",
+    "archive": "Tools/Archive/SceneSwitching/VerifyRailwayPlay.cs.txt",
+    "sha256": "7f2b53d58380030b807c0659ae782f9e47b894e6b4dfb81db0bc4b5fba767a94"
+  },
+  {
+    "previous": "Tools/VerifyResponsiveMatrix.cs",
+    "archive": "Tools/Archive/SceneSwitching/VerifyResponsiveMatrix.cs.txt",
+    "sha256": "0dacff82bb6e3d61301f54570308a4ebe16d0522a060912408ee338437353bf8"
+  },
+  {
+    "previous": "Tools/VerifySceneAuthoring.cs",
+    "archive": "Tools/Archive/SceneSwitching/VerifySceneAuthoring.cs.txt",
+    "sha256": "a6ea1733c0ebaec545d7f281c160a599a92e0714c453c606ab21636e51071889"
+  },
+  {
+    "previous": "Tools/VerifySingleMapSave.cs",
+    "archive": "Tools/Archive/SceneSwitching/VerifySingleMapSave.cs.txt",
+    "sha256": "03b9b1fbf64d9a32152434fbb589abb21b357b192223688da9598c7d342d65c3"
+  }
+]

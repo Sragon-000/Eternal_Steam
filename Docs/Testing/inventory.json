@@ -1,0 +1,2026 @@
+{
+  "scene": "Assets/EternalSteam/Scene/Tests/OpenWorldSandbox.unity",
+  "oldEditModeCount": 303,
+  "currentEditModeCount": 285,
+  "removedDuplicateSceneCases": 18,
+  "legacyPlayModeOptionalCount": 4,
+  "archivedCrossSceneTools": 25,
+  "policyCheck": "PASS",
+  "oldCaseNames": [
+    "EternalSteam.Tests.ActiveEnemyIterationTests.ArrivalRemovalAndIndexRebuildLeaveNoGhostTargets",
+    "EternalSteam.Tests.ActiveEnemyIterationTests.RemovalDuringIterationVisitsEveryOriginalLivingSlotOnce",
+    "EternalSteam.Tests.ActiveEnemyIterationTests.RemovedFutureSlotAndRespawnRespectForwardIterationOrder",
+    "EternalSteam.Tests.ActiveEnemyIterationTests.SparseSlotsRecycleInStableAscendingOrder(1)",
+    "EternalSteam.Tests.ActiveEnemyIterationTests.SparseSlotsRecycleInStableAscendingOrder(65)",
+    "EternalSteam.Tests.ActiveEnemyIterationTests.SparseSlotsRecycleInStableAscendingOrder(130)",
+    "EternalSteam.Tests.ArchitectureTests.AttackAcceptsIndependentDamageProviderAndUnsubscribesDirectionHandler",
+    "EternalSteam.Tests.ArchitectureTests.NexusAcceptsReplacementDamageCapabilityAtValidationAndRuntime",
+    "EternalSteam.Tests.ArchitectureTests.RuntimeAndFeatureAssembliesEnforceOneWayDependencies",
+    "EternalSteam.Tests.ArchitectureTests.UpgradesUseIndependentLevelPolicyAndHealthReceiver",
+    "EternalSteam.Tests.BaseResourceAccordionTests.AuthoredRowsHaveIndependentLookupAndPersistentNavigation(\"StartRegionSandbox\")",
+    "EternalSteam.Tests.BaseResourceAccordionTests.AuthoredRowsHaveIndependentLookupAndPersistentNavigation(\"OpenWorldSandbox\")",
+    "EternalSteam.Tests.BuildAreaCoverageTests.CircularProviderUsesContainsForEveryWholeCell",
+    "EternalSteam.Tests.BuildAreaCoverageTests.ForwardSquareCoversExactly121WholeCellsAndNoRearCells",
+    "EternalSteam.Tests.BuildAreaCoverageTests.GrowthDestructionAndOwnerSelectionInvalidateButStationaryQueriesDoNot",
+    "EternalSteam.Tests.BuildAreaCoverageTests.LegacyOutpostSharesOwnersCoverageButNormalModeFiltersIt",
+    "EternalSteam.Tests.BuildAreaCoverageTests.LostOwnerInAnotherBaseAreaKeepsOperationButSuspendsItsLedgerAndShowsBothStates",
+    "EternalSteam.Tests.BuildAreaCoverageTests.SelectedLegacyOwnerChangesDisplayUnionWithoutReassigningBuildings",
+    "EternalSteam.Tests.BuildAreaCoverageTests.UnionDoesNotDuplicateOverlappingProvidersAndPendingProviderDoesNotExpand",
+    "EternalSteam.Tests.CanvasHierarchyTests.RailwayConfirmationAndDiscardAreAuthoredWithPersistentCommands(\"StartRegionSandbox\")",
+    "EternalSteam.Tests.CanvasHierarchyTests.RailwayConfirmationAndDiscardAreAuthoredWithPersistentCommands(\"OpenWorldSandbox\")",
+    "EternalSteam.Tests.CanvasHierarchyTests.SavedRailwayDiagnosticsHaveSelectableRows(\"StartRegionSandbox\")",
+    "EternalSteam.Tests.CanvasHierarchyTests.SavedRailwayDiagnosticsHaveSelectableRows(\"OpenWorldSandbox\")",
+    "EternalSteam.Tests.CanvasHierarchyTests.SavedRailwayMapEditorHasFourPortMarkersAndSegmentRenderer(\"StartRegionSandbox\")",
+    "EternalSteam.Tests.CanvasHierarchyTests.SavedRailwayMapEditorHasFourPortMarkersAndSegmentRenderer(\"OpenWorldSandbox\")",
+    "EternalSteam.Tests.CanvasHierarchyTests.SavedRailwayOrderEditorHasRowsAndPersistentCommands(\"StartRegionSandbox\")",
+    "EternalSteam.Tests.CanvasHierarchyTests.SavedRailwayOrderEditorHasRowsAndPersistentCommands(\"OpenWorldSandbox\")",
+    "EternalSteam.Tests.CanvasHierarchyTests.SavedRailwayPanelClearsResourcePanel(\"StartRegionSandbox\")",
+    "EternalSteam.Tests.CanvasHierarchyTests.SavedRailwayPanelClearsResourcePanel(\"OpenWorldSandbox\")",
+    "EternalSteam.Tests.CanvasHierarchyTests.SavedResourceColumnsFitLongQuantitiesWithoutOverlap(\"StartRegionSandbox\")",
+    "EternalSteam.Tests.CanvasHierarchyTests.SavedResourceColumnsFitLongQuantitiesWithoutOverlap(\"OpenWorldSandbox\")",
+    "EternalSteam.Tests.CanvasHierarchyTests.SavedSceneOwnsCanvasControlsCallbacksAndConstructionObjects(\"StartRegionSandbox\")",
+    "EternalSteam.Tests.CanvasHierarchyTests.SavedSceneOwnsCanvasControlsCallbacksAndConstructionObjects(\"OpenWorldSandbox\")",
+    "EternalSteam.Tests.CanvasHierarchyTests.SavedStationContextHasClickableNamesAndDetailEntry(\"StartRegionSandbox\")",
+    "EternalSteam.Tests.CanvasHierarchyTests.SavedStationContextHasClickableNamesAndDetailEntry(\"OpenWorldSandbox\")",
+    "EternalSteam.Tests.CircularMinimapTests.CircularInputBoundary(0.5f,0.5f,True)",
+    "EternalSteam.Tests.CircularMinimapTests.CircularInputBoundary(1,0.5f,True)",
+    "EternalSteam.Tests.CircularMinimapTests.CircularInputBoundary(0.5f,0,True)",
+    "EternalSteam.Tests.CircularMinimapTests.CircularInputBoundary(0,0,False)",
+    "EternalSteam.Tests.CircularMinimapTests.CircularInputBoundary(1,1,False)",
+    "EternalSteam.Tests.CircularMinimapTests.CircularInputBoundary(1.001f,0.5f,False)",
+    "EternalSteam.Tests.CircularMinimapTests.CircularInputBoundary(0.85f,0.85f,True)",
+    "EternalSteam.Tests.CircularMinimapTests.CircularInputBoundary(0.86f,0.86f,False)",
+    "EternalSteam.Tests.CircularMinimapTests.SavedCircleAndInputAgree(\"StartRegionSandbox\")",
+    "EternalSteam.Tests.CircularMinimapTests.SavedCircleAndInputAgree(\"OpenWorldSandbox\")",
+    "EternalSteam.Tests.CompactConstructionDockTests.SavedControlsKeepActionsAndSeparateDetails(\"StartRegionSandbox\")",
+    "EternalSteam.Tests.CompactConstructionDockTests.SavedControlsKeepActionsAndSeparateDetails(\"OpenWorldSandbox\")",
+    "EternalSteam.Tests.ConstructionCostTests.ConfiguredTableNeverFallsBackForMissingOrDuplicateEntries",
+    "EternalSteam.Tests.ConstructionCostTests.ConstructionExceptionRestoresAllPayersStocksCapacityAndMode",
+    "EternalSteam.Tests.ConstructionCostTests.DuplicateResourceRowsAggregateBeforeAtomicPayment",
+    "EternalSteam.Tests.ConstructionCostTests.GeneralPreviewAggregatesQuantityAndDetectsLiveShortage",
+    "EternalSteam.Tests.ConstructionCostTests.TableRejectsInvalidCostsEvenWithInfiniteStock(double.NaN)",
+    "EternalSteam.Tests.ConstructionCostTests.TableRejectsInvalidCostsEvenWithInfiniteStock(double.PositiveInfinity)",
+    "EternalSteam.Tests.ConstructionCostTests.TableRejectsInvalidCostsEvenWithInfiniteStock(-1)",
+    "EternalSteam.Tests.ConstructionHudWorkflowTests.SavedConstructionSummaryAndActionsStaySeparate(\"StartRegionSandbox\",800,600)",
+    "EternalSteam.Tests.ConstructionHudWorkflowTests.SavedConstructionSummaryAndActionsStaySeparate(\"StartRegionSandbox\",1920,1080)",
+    "EternalSteam.Tests.ConstructionHudWorkflowTests.SavedConstructionSummaryAndActionsStaySeparate(\"OpenWorldSandbox\",800,600)",
+    "EternalSteam.Tests.ConstructionHudWorkflowTests.SavedConstructionSummaryAndActionsStaySeparate(\"OpenWorldSandbox\",2560,1440)",
+    "EternalSteam.Tests.DefenseCatalogParityTests.ActiveCatalogMatchesNineAuthoredDefenseProfiles",
+    "EternalSteam.Tests.DefenseCatalogParityTests.ActiveDefense_defense.tesla",
+    "EternalSteam.Tests.DefenseCatalogParityTests.ActiveDefense_defense.plasma_laser",
+    "EternalSteam.Tests.DefenseCatalogParityTests.ActiveDefense_defense.vulcan_aa",
+    "EternalSteam.Tests.DefenseCatalogParityTests.ActiveDefense_defense.rail_aa",
+    "EternalSteam.Tests.DefenseCatalogParityTests.ActiveDefense_defense.arc",
+    "EternalSteam.Tests.DefenseCatalogParityTests.ActiveDefense_defense.railgun",
+    "EternalSteam.Tests.DefenseCatalogParityTests.ActiveDefense_defense.sky_plasma",
+    "EternalSteam.Tests.DefenseCatalogParityTests.ActiveDefense_defense.smart_missile",
+    "EternalSteam.Tests.DefenseCatalogParityTests.ActiveDefense_defense.emp",
+    "EternalSteam.Tests.DocumentContractTests.CompatibleFilterChangeRetainsTargetAndIncompatibleChangeClearsIt",
+    "EternalSteam.Tests.DocumentContractTests.CrossWorldCreationFailureKeepsAllReservations(False)",
+    "EternalSteam.Tests.DocumentContractTests.CrossWorldCreationFailureKeepsAllReservations(True)",
+    "EternalSteam.Tests.DocumentContractTests.CrossWorldRevalidationAndRecoveryAreAllOrNothing",
+    "EternalSteam.Tests.DocumentContractTests.RotatedGridRoundTripsNegativeCellsAndMulticellCenters",
+    "EternalSteam.Tests.ExtensionTests.AreaFiltersAirAndSectorWhileHittingNeighbours",
+    "EternalSteam.Tests.ExtensionTests.BaseProductionAndStorageRestoreIndependentCapacities",
+    "EternalSteam.Tests.ExtensionTests.ChainDoesNotRepeatAndUsesDeterministicNearestHop",
+    "EternalSteam.Tests.ExtensionTests.FailedBatchRollsBackNexusStorageAndObstacleRegistration",
+    "EternalSteam.Tests.ExtensionTests.MissingReferencesAndNexusCompositionAreRejected",
+    "EternalSteam.Tests.ExtensionTests.NexusLossImmediatelyEndsSessionAndUnsubscribesOnDispose",
+    "EternalSteam.Tests.ExtensionTests.NexusUnlocksUpgradesAndDestructionSignalsOnceButDisposalDoesNot",
+    "EternalSteam.Tests.ExtensionTests.PiercingUsesOrderedWidthLimitedHits",
+    "EternalSteam.Tests.ExtensionTests.ProductionWaitsForStorageAndConversionIsAtomic",
+    "EternalSteam.Tests.ExtensionTests.ProjectileCannotHitReusedSlotAndDisposeCancelsFlights",
+    "EternalSteam.Tests.ExtensionTests.ProjectileDelaysDamageAndFollowsBeyondRange",
+    "EternalSteam.Tests.ExtensionTests.ReloadRebuildsStorageCapacityAndPreservesOverflowAfterRemoval",
+    "EternalSteam.Tests.ExtensionTests.RemovingOptionalModulesRemovesDependenciesAndMovementRegistration",
+    "EternalSteam.Tests.ExtensionTests.StatusDurationsAreIndependentAndSettingsAreCopied",
+    "EternalSteam.Tests.FoundationTests.DefinitionsDoNotShareRuntimeStateOrLiveSettings",
+    "EternalSteam.Tests.FoundationTests.DirectionEditIsTransactionalAndPhasePolicyGuardsCommands",
+    "EternalSteam.Tests.FoundationTests.FactoryFailureRollsBackWithoutLosingPendingWork(False)",
+    "EternalSteam.Tests.FoundationTests.FactoryFailureRollsBackWithoutLosingPendingWork(True)",
+    "EternalSteam.Tests.FoundationTests.ModuleRemovalAndCatalogValidation",
+    "EternalSteam.Tests.FoundationTests.MultiCellBoundsAndCenter",
+    "EternalSteam.Tests.FoundationTests.NonRecoverableAndDestroyedBuildings",
+    "EternalSteam.Tests.FoundationTests.RecoveryPreservesActivityUntilCommitAndBlocksStaleBatch",
+    "EternalSteam.Tests.FoundationTests.RecycledSlotCannotResolveOldHandle",
+    "EternalSteam.Tests.FoundationTests.ReservationsSurviveSelectionAndFailedMove",
+    "EternalSteam.Tests.FoundationTests.RevalidationRejectsWholeBatchAndKeepsReservations",
+    "EternalSteam.Tests.FoundationTests.SectorIncludesBoundariesAndIgnoresHeight",
+    "EternalSteam.Tests.FoundationTests.TargetKindsAndEqualDistanceTieBreak",
+    "EternalSteam.Tests.FoundationTests.TargetLockRetainsCloserArrivalAndReacquiresOnRemoval",
+    "EternalSteam.Tests.HudLayoutTests.FoldingCatalogPreservesChosenEntryAndCategory",
+    "EternalSteam.Tests.HudLayoutTests.PlayerPanelsAreIndependentOfDeveloperPanel",
+    "EternalSteam.Tests.HudLayoutTests.PriorityCanExpandAndHiddenStockUpdatesAreNotLost",
+    "EternalSteam.Tests.HudLayoutTests.UnknownPriorityFallsBackToEntireCatalog",
+    "EternalSteam.Tests.HudLayoutTests.ZeroStockAndDuplicateProductionIdsRemainAccessibleWithoutPriority",
+    "EternalSteam.Tests.HudModeGroupsTests.LocalMapRetainsViewCenterAndRoundTrips(0,0)",
+    "EternalSteam.Tests.HudModeGroupsTests.LocalMapRetainsViewCenterAndRoundTrips(250,250)",
+    "EternalSteam.Tests.HudModeGroupsTests.LocalMapRetainsViewCenterAndRoundTrips(-300,700)",
+    "EternalSteam.Tests.HudModeGroupsTests.SavedGroupsKeepControlsAndReverseWithoutRebuilding(\"StartRegionSandbox\")",
+    "EternalSteam.Tests.HudModeGroupsTests.SavedGroupsKeepControlsAndReverseWithoutRebuilding(\"OpenWorldSandbox\")",
+    "EternalSteam.Tests.HudPauseMenuTests.SavedModalOwnsPauseAndSaveAndPreservesConstructionGroup(\"StartRegionSandbox\")",
+    "EternalSteam.Tests.HudPauseMenuTests.SavedModalOwnsPauseAndSaveAndPreservesConstructionGroup(\"OpenWorldSandbox\")",
+    "EternalSteam.Tests.MapAssaultBoundaryTests.BossAndFixedWaveSpawnAreasMustBeDistinct",
+    "EternalSteam.Tests.MapAssaultBoundaryTests.FixedBossWavePointsReplaceUnsafeLocationAndReturnWithoutChangingBudget",
+    "EternalSteam.Tests.MapAssaultBoundaryTests.ThresholdUsesExactEnergyAndBossRewardIsPaidOnce",
+    "EternalSteam.Tests.MapClearEnemyTests.ClearDespawnsWithoutRewardsOrEscapeDamageAndSlotsCanBeReused",
+    "EternalSteam.Tests.RailConnectionTransactionTests.ConnectionFailureRollsBackBuildingsAndCostButKeepsReservations(False)",
+    "EternalSteam.Tests.RailConnectionTransactionTests.ConnectionFailureRollsBackBuildingsAndCostButKeepsReservations(True)",
+    "EternalSteam.Tests.RailPathPlannerTests.BlockedAndSearchLimitAndCancellationAreDistinct",
+    "EternalSteam.Tests.RailPathPlannerTests.DetourRemainsContiguousAndNeverRepeatsCell",
+    "EternalSteam.Tests.RailPathPlannerTests.FiveHundredSquareSearchIsBoundedAndDeterministic",
+    "EternalSteam.Tests.RailPathPlannerTests.ReuseWinsOverShorterAllNewPath",
+    "EternalSteam.Tests.RailwayEconomyTests.FailedInstallAndAggregatedCostsDoNotPartiallyCharge",
+    "EternalSteam.Tests.RailwayEconomyTests.FailedMultiBaseInstallRestoresReservedStocksAndCapacity",
+    "EternalSteam.Tests.RailwayEconomyTests.InfiniteConstructionStillRequiresSuccessfulPlacement",
+    "EternalSteam.Tests.RailwayEconomyTests.InfiniteResourcesAppliesToNewAndRestoredBaseLedgers",
+    "EternalSteam.Tests.RailwayEconomyTests.InfiniteResourcesStillValidatesCostsCommitAndCapacity",
+    "EternalSteam.Tests.RailwayEconomyTests.InfiniteResourcesTogglePreservesStockAndRestoresCharging",
+    "EternalSteam.Tests.RailwayEconomyTests.InvalidTransfersLeaveStockUnchanged(double.NaN)",
+    "EternalSteam.Tests.RailwayEconomyTests.InvalidTransfersLeaveStockUnchanged(double.PositiveInfinity)",
+    "EternalSteam.Tests.RailwayEconomyTests.InvalidTransfersLeaveStockUnchanged(-1)",
+    "EternalSteam.Tests.RailwayEconomyTests.MultiBasePurchaseFailureChargesNeitherBase",
+    "EternalSteam.Tests.RailwayEconomyTests.OverCapacityStockIsPreservedAndRejectsNewDeliveries",
+    "EternalSteam.Tests.RailwayEconomyTests.RestoreValidatesBeforeReplacingLedgers",
+    "EternalSteam.Tests.RailwayEconomyTests.SeparateBaseLedgersNeverShareOrCopyBalances",
+    "EternalSteam.Tests.RailwayEditorPanelTests.EditorCommandsAndPagesAreAuthored(\"StartRegionSandbox\")",
+    "EternalSteam.Tests.RailwayEditorPanelTests.EditorCommandsAndPagesAreAuthored(\"OpenWorldSandbox\")",
+    "EternalSteam.Tests.RailwayMigrationTests.ArchiveFailureLeavesOriginalReadable",
+    "EternalSteam.Tests.RailwayMigrationTests.CorruptOrFailedOlderSlotsAreNotAdvertisedAsAvailableProgress",
+    "EternalSteam.Tests.RailwayMigrationTests.FailedRunCannotBeRevivedByMigrationOrBackup",
+    "EternalSteam.Tests.RailwayMigrationTests.InterruptedWriteAndArchiveRetryKeepOriginalUntilSuccessfulCommit",
+    "EternalSteam.Tests.RailwayMigrationTests.OlderMapSlotsAreReportedWithoutReadingArchivesOrChangingSaves",
+    "EternalSteam.Tests.RailwayMigrationTests.V1StockMovesToMainOnceWithoutClippingOverflowOrCreditingSubBase",
+    "EternalSteam.Tests.RailwayMigrationTests.V1StockRejectsAmbiguousBaseOrResourceMapping",
+    "EternalSteam.Tests.RailwayOverviewTests.OverviewIsAuthoredAndPreservesLegacyControls(\"StartRegionSandbox\")",
+    "EternalSteam.Tests.RailwayOverviewTests.OverviewIsAuthoredAndPreservesLegacyControls(\"OpenWorldSandbox\")",
+    "EternalSteam.Tests.RailwayServicePanelTests.ServiceInputsAndCommandsAreSaved(\"StartRegionSandbox\")",
+    "EternalSteam.Tests.RailwayServicePanelTests.ServiceInputsAndCommandsAreSaved(\"OpenWorldSandbox\")",
+    "EternalSteam.Tests.RailwayShuttleTests.CorruptGraphIdentityAndDuplicateSocketsRejectBeforeReplacingLiveRoutes",
+    "EternalSteam.Tests.RailwayShuttleTests.CorruptSlotOwnershipRejectedWithoutChangingLiveNetwork",
+    "EternalSteam.Tests.RailwayShuttleTests.EntryReservationSurvivesReloadBeforeArrivalAndProtectsStation",
+    "EternalSteam.Tests.RailwayShuttleTests.ExplicitConnectionCanRegisterBeforeAnyRouteWithoutChargingOrCreatingTrain",
+    "EternalSteam.Tests.RailwayShuttleTests.ExplicitConnectionIgnoresAdjacentTracksAndPersistsUnassignedCells",
+    "EternalSteam.Tests.RailwayShuttleTests.FuelWaitAtTerminusCanRefuelAndResumeWithoutUnloadingAgain",
+    "EternalSteam.Tests.RailwayShuttleTests.GraphlessSaveMigratesRoutePathBeforeInspectingNewAdjacentTracks",
+    "EternalSteam.Tests.RailwayShuttleTests.IntermediateStationIsVisitedOnceEachWayWithoutDuplicatedTerminusService",
+    "EternalSteam.Tests.RailwayShuttleTests.InvalidDirectionAndV2ShuttlePayloadAreRejectedBeforeRestore",
+    "EternalSteam.Tests.RailwayShuttleTests.MissingReturnTrackIsNotRequiredButRemovedOutboundTrackStopsAndRecoversSafely",
+    "EternalSteam.Tests.RailwayShuttleTests.OtherRouteCannotClaimTheSamePhysicalTrackInEitherDirection",
+    "EternalSteam.Tests.RailwayShuttleTests.PendingExtensionAppliesOnlyAtFirstStationReturnAndPreservesSettings",
+    "EternalSteam.Tests.RailwayShuttleTests.PreSlotSaveWithTwoParkedTrainsMigratesWithoutInventoryMutation",
+    "EternalSteam.Tests.RailwayShuttleTests.RegisteredBrokenConnectionDoesNotSwitchToAlternativeTrack",
+    "EternalSteam.Tests.RailwayShuttleTests.ReservedExtensionLosesToCommittedRouteWithoutChangingExistingPath",
+    "EternalSteam.Tests.RailwayShuttleTests.ReturnJourneySaveRestoresDirectionProgressFuelAndServiceFlags",
+    "EternalSteam.Tests.RailwayShuttleTests.SharedStationArbitrationIsIndependentOfTickPartition",
+    "EternalSteam.Tests.RailwayShuttleTests.SharedStationHoldsSecondTrainOutsideAndStopRequestSurvivesReload",
+    "EternalSteam.Tests.RailwayShuttleTests.SingleConnectionAllowsSameSocketBothWaysWithoutReturnTrack",
+    "EternalSteam.Tests.RailwayShuttleTests.SlotLossDuringEntryKeepsPaidFuelAndResumesAfterStationRecovery",
+    "EternalSteam.Tests.RailwayShuttleTests.ThreeRoundTripsConserveCargoAndChargeEachDepartureExactlyOnce",
+    "EternalSteam.Tests.RailwayShuttleTests.TwoRoutesCreatedAtSameStationQueueWithoutDoubleService",
+    "EternalSteam.Tests.RailwayTests.Acc015_UnloadOnlyDropsRemainingFiftyWhenTargetIsEighty",
+    "EternalSteam.Tests.RailwayTests.Acc019_ThousandTargetLoadsAvailableThreeHundredThenRetriesNextVisit",
+    "EternalSteam.Tests.RailwayTests.BaseNamesAreDistinctAndSurviveReloadAndDefinitionRename",
+    "EternalSteam.Tests.RailwayTests.ChangedPendingPathFailsWithoutChangingValidActiveRoute",
+    "EternalSteam.Tests.RailwayTests.CommitIsIdempotentAndDoesNotStartOrLoad",
+    "EternalSteam.Tests.RailwayTests.CurvedCircuitEndsAtTheSameStationWithLargeAndPointOneSecondTicks",
+    "EternalSteam.Tests.RailwayTests.DeliveryConservesStockAndNextStationStopDoesNotRepeatService",
+    "EternalSteam.Tests.RailwayTests.DemolitionDoesNotReuseBaseOrStationNumbers",
+    "EternalSteam.Tests.RailwayTests.DestinationStationLossStopsPaidSegmentAndResumeDoesNotChargeAgain",
+    "EternalSteam.Tests.RailwayTests.EmptyCargoStillRunsAndMissingReturnCannotCommit",
+    "EternalSteam.Tests.RailwayTests.EveryTransportStateRoundTripsWithoutTransfer(Stopped)",
+    "EternalSteam.Tests.RailwayTests.EveryTransportStateRoundTripsWithoutTransfer(Moving)",
+    "EternalSteam.Tests.RailwayTests.EveryTransportStateRoundTripsWithoutTransfer(Dwelling)",
+    "EternalSteam.Tests.RailwayTests.EveryTransportStateRoundTripsWithoutTransfer(StopRequested)",
+    "EternalSteam.Tests.RailwayTests.EveryTransportStateRoundTripsWithoutTransfer(FuelWait)",
+    "EternalSteam.Tests.RailwayTests.EveryTransportStateRoundTripsWithoutTransfer(RouteError)",
+    "EternalSteam.Tests.RailwayTests.FullDestinationRetainsCargoAndMissingFuelDoesNotDepart",
+    "EternalSteam.Tests.RailwayTests.InvalidSavedAmountsAndDuplicateTrainsAreRejected",
+    "EternalSteam.Tests.RailwayTests.LaterValidSegmentKeepsItsOriginalIndexAfterEarlierFailure",
+    "EternalSteam.Tests.RailwayTests.LegacyBaseNamesMigrateDeterministicallyAndPersist",
+    "EternalSteam.Tests.RailwayTests.MalformedBaseNamesRejectRestoreWithoutMutation(\"duplicate-number\")",
+    "EternalSteam.Tests.RailwayTests.MalformedBaseNamesRejectRestoreWithoutMutation(\"duplicate-id\")",
+    "EternalSteam.Tests.RailwayTests.MalformedBaseNamesRejectRestoreWithoutMutation(\"missing-base\")",
+    "EternalSteam.Tests.RailwayTests.MalformedBaseNamesRejectRestoreWithoutMutation(\"empty-name\")",
+    "EternalSteam.Tests.RailwayTests.MidSegmentErrorRecoveryKeepsPositionCargoAndPaidFuel",
+    "EternalSteam.Tests.RailwayTests.MidSegmentErrorStillProtectsTrackAndStations",
+    "EternalSteam.Tests.RailwayTests.MovingRestorePreservesFuelAndDoesNotDuplicateCargo",
+    "EternalSteam.Tests.RailwayTests.MovingTrackRecoveryIsBlockedAndCargoResourceIsImmutable",
+    "EternalSteam.Tests.RailwayTests.MultipleBrokenSegmentsAreReportedAndCommitLeavesStateUntouched",
+    "EternalSteam.Tests.RailwayTests.MultipleStationErrorsBlockAffectedSegmentsWithoutInventingTrackFailures",
+    "EternalSteam.Tests.RailwayTests.MultipleStationsAndRotatedPortsCompleteClosedCircuit(3,0)",
+    "EternalSteam.Tests.RailwayTests.MultipleStationsAndRotatedPortsCompleteClosedCircuit(3,1)",
+    "EternalSteam.Tests.RailwayTests.MultipleStationsAndRotatedPortsCompleteClosedCircuit(4,2)",
+    "EternalSteam.Tests.RailwayTests.MultipleStationsAndRotatedPortsCompleteClosedCircuit(4,3)",
+    "EternalSteam.Tests.RailwayTests.PendingAppliesOnlyAtFirstStationAndKeepsTrainIdentity",
+    "EternalSteam.Tests.RailwayTests.PendingDoesNotReserveNewTrackAndCollisionAtBoundaryKeepsOriginalRoute",
+    "EternalSteam.Tests.RailwayTests.PendingRejectsChangedAnchorAndMalformedSavedRevision",
+    "EternalSteam.Tests.RailwayTests.PendingSaveCancelAndStaleDraftLeaveActiveRouteUntouched",
+    "EternalSteam.Tests.RailwayTests.RouteLongerThanFullFuelTankIsRejectedBeforeCommit",
+    "EternalSteam.Tests.RailwayTests.StationDirectionPreviewUsesTheInstalledPortPositions(0)",
+    "EternalSteam.Tests.RailwayTests.StationDirectionPreviewUsesTheInstalledPortPositions(1)",
+    "EternalSteam.Tests.RailwayTests.StationDirectionPreviewUsesTheInstalledPortPositions(2)",
+    "EternalSteam.Tests.RailwayTests.StationDirectionPreviewUsesTheInstalledPortPositions(3)",
+    "EternalSteam.Tests.RailwayTests.StationErrorAllowsFurtherTrackRecoveryButProtectsOccupiedStation",
+    "EternalSteam.Tests.RailwayTests.StopRequestWinsAfterBoundaryApplication",
+    "EternalSteam.Tests.RailwayTests.StructuredValidationDoesNotMutateRouteInventoryOrPriorResult",
+    "EternalSteam.Tests.RailwayTests.StructuredValidationIdentifiesDuplicateVisitAndStation",
+    "EternalSteam.Tests.RailwayTests.StructuredValidationMarksReturnLegAndPreservesCompletedLeg",
+    "EternalSteam.Tests.RailwayTests.StructuredValidationRejectsInvalidOrIdenticalPorts(-1,1)",
+    "EternalSteam.Tests.RailwayTests.StructuredValidationRejectsInvalidOrIdenticalPorts(0,4)",
+    "EternalSteam.Tests.RailwayTests.StructuredValidationRejectsInvalidOrIdenticalPorts(1,1)",
+    "EternalSteam.Tests.RailwayTests.StructuredValidationSeparatesBranchFromArrivalOverrun",
+    "EternalSteam.Tests.RailwayTests.StructuredValidationSeparatesEmptyDraftAndInvalidQuantity",
+    "EternalSteam.Tests.RailwayTests.StructuredValidationSeparatesInactiveStationFromMissingReference",
+    "EternalSteam.Tests.RailwayTests.ThreeBaseDistributionPreservesRemainder(20,30,1000,30,50)",
+    "EternalSteam.Tests.RailwayTests.ThreeBaseDistributionPreservesRemainder(30,40,25,25,45)",
+    "EternalSteam.Tests.RailwayTests.ThreeBaseDistributionPreservesRemainder(30,40,1000,40,30)",
+    "EternalSteam.Tests.RailwayTests.TrackSharingAndBranchesAreRejected",
+    "EternalSteam.Tests.RailwayTests.UnassignedCargoCannotHideStockInSnapshot",
+    "EternalSteam.Tests.RailwayTests.UnassignedCargoSurvivesJsonAndAllowsOnlyFirstAssignment(null)",
+    "EternalSteam.Tests.RailwayTests.UnassignedCargoSurvivesJsonAndAllowsOnlyFirstAssignment(\"\")",
+    "EternalSteam.Tests.RailwayTests.UnloadBeforeLoadAndLimitedSourceRespectVisitAmounts",
+    "EternalSteam.Tests.ResponsiveHudBoundsTests.SavedHudFitsWideAndSmallWindowsWithExpandedCatalogueAndSelection(\"StartRegionSandbox\",800,600)",
+    "EternalSteam.Tests.ResponsiveHudBoundsTests.SavedHudFitsWideAndSmallWindowsWithExpandedCatalogueAndSelection(\"StartRegionSandbox\",1280,720)",
+    "EternalSteam.Tests.ResponsiveHudBoundsTests.SavedHudFitsWideAndSmallWindowsWithExpandedCatalogueAndSelection(\"StartRegionSandbox\",1920,1080)",
+    "EternalSteam.Tests.ResponsiveHudBoundsTests.SavedHudFitsWideAndSmallWindowsWithExpandedCatalogueAndSelection(\"StartRegionSandbox\",2560,1080)",
+    "EternalSteam.Tests.ResponsiveHudBoundsTests.SavedHudFitsWideAndSmallWindowsWithExpandedCatalogueAndSelection(\"StartRegionSandbox\",3840,1080)",
+    "EternalSteam.Tests.ResponsiveHudBoundsTests.SavedHudFitsWideAndSmallWindowsWithExpandedCatalogueAndSelection(\"OpenWorldSandbox\",3840,1080)",
+    "EternalSteam.Tests.TerrainNavigationTests.DetoursThroughGapWithoutCrossingTerrainOrExceedingSpeed",
+    "EternalSteam.Tests.TerrainNavigationTests.DisconnectedAndDiagonalOnlyCellsAreNotReachable",
+    "EternalSteam.Tests.TerrainNavigationTests.ManyActorsReuseOneFieldAndNewGoalsRespectStepBudget",
+    "EternalSteam.Tests.TerrainNavigationTests.RotatedGridAndReplacementMaskInvalidateDerivedRoutes",
+    "EternalSteam.Tests.TerrainNavigationTests.ShortDiagonalStepCannotSlipBetweenBlockedCornerCells",
+    "EternalSteam.Tests.TrainDefenseTests.AllThreeMountShapesAcceptedWithoutRotationShortcut",
+    "EternalSteam.Tests.TrainDefenseTests.CaptureRestoresBatteryLevelAndCooldown",
+    "EternalSteam.Tests.TrainDefenseTests.DepletedBatteryStopsNewAttacksAndPausedCombatSpendsNothing",
+    "EternalSteam.Tests.TrainDefenseTests.InvalidBatteryRejected(double.NaN)",
+    "EternalSteam.Tests.TrainDefenseTests.InvalidBatteryRejected(-1)",
+    "EternalSteam.Tests.TrainDefenseTests.InvalidBatteryRejected(201)",
+    "EternalSteam.Tests.TrainDefenseTests.MountedModuleHonorsInjectedMainLevelEvenWhenCalledDirectly",
+    "EternalSteam.Tests.TrainDefenseTests.MovingWeaponQueriesCurrentPositionAndNeverRegistersAsEnemyTarget",
+    "EternalSteam.Tests.TrainDefenseTests.OlderV2MissingArmamentDefaultsToEmptyMount",
+    "EternalSteam.Tests.TrainDefenseTests.OnlyExactMountDimensionsAreAccepted(1,1)",
+    "EternalSteam.Tests.TrainDefenseTests.OnlyExactMountDimensionsAreAccepted(3,3)",
+    "EternalSteam.Tests.TrainDefenseTests.OnlyExactMountDimensionsAreAccepted(3,1)",
+    "EternalSteam.Tests.TrainDefenseTests.PowerTransferConservesStoredEnergyAndRejectsInvalidRequests",
+    "EternalSteam.Tests.TrainDefenseTests.ProjectileCompletesAfterBatteryDepletion",
+    "EternalSteam.Tests.UpgradeQueryTests.AllUpgradeKindsRejectInactiveDestroyedAndMaximumWithoutMutation(0)",
+    "EternalSteam.Tests.UpgradeQueryTests.AllUpgradeKindsRejectInactiveDestroyedAndMaximumWithoutMutation(1)",
+    "EternalSteam.Tests.UpgradeQueryTests.AllUpgradeKindsRejectInactiveDestroyedAndMaximumWithoutMutation(2)",
+    "EternalSteam.Tests.UpgradeQueryTests.BankQuoteAndRejectedCommitNeverDebit",
+    "EternalSteam.Tests.UpgradeQueryTests.ClickRechecksFundsAndChangedCostPolicy",
+    "EternalSteam.Tests.UpgradeQueryTests.ExplicitFreePolicyStillChecksBuildingAndLevelConditions",
+    "EternalSteam.Tests.UpgradeQueryTests.InvalidOrMissingCostsAreNotVerificationFree",
+    "EternalSteam.Tests.UpgradeQueryTests.LostOwnerAndChangedStockRejectPaidUpgradeWithoutMutation",
+    "EternalSteam.Tests.UpgradeQueryTests.PaidQueryAggregatesDuplicateCostsAndCommitDebitsExactlyOnce",
+    "EternalSteam.Tests.UpgradeQueryTests.PaidUpgradeUsesInstalledOwnerLedger",
+    "EternalSteam.Tests.UpgradeQueryTests.PerformanceExemptionStillHonorsOwnMaximumAndActivity",
+    "EternalSteam.Tests.UpgradeQueryTests.PerformancePurchaseRechecksLiveMainLevelAndPreservesFundsOnRejection",
+    "EternalSteam.Tests.UpgradeQueryTests.QueryDoesNotUpgradeOrScaleHealthAndCommandRechecksLevelLimit",
+    "EternalSteam.Demo.Tests.HordeBuildingTests.AdapterDoesNotReferenceSimulationAssembly",
+    "EternalSteam.Demo.Tests.HordeBuildingTests.AllCellsMatchOriginalPlacementFootprintRule(Lane)",
+    "EternalSteam.Demo.Tests.HordeBuildingTests.AllCellsMatchOriginalPlacementFootprintRule(WideFront)",
+    "EternalSteam.Demo.Tests.HordeBuildingTests.AllCellsMatchOriginalPlacementFootprintRule(Pincer)",
+    "EternalSteam.Demo.Tests.HordeBuildingTests.FailedCreationRollsBackWorldLegacyListAndReservations(False)",
+    "EternalSteam.Demo.Tests.HordeBuildingTests.FailedCreationRollsBackWorldLegacyListAndReservations(True)",
+    "EternalSteam.Demo.Tests.HordeBuildingTests.InvalidDirectionRangeAndKindCannotLeaveState",
+    "EternalSteam.Demo.Tests.HordeBuildingTests.OffsetGridPreservesDefaultCentersAndLegacyEvenCenters",
+    "EternalSteam.Demo.Tests.HordeBuildingTests.PhaseAndCapacityAreRecheckedBeforeCommit",
+    "EternalSteam.Demo.Tests.HordeBuildingTests.PlacementSharesOccupancyLifetimeAndStableDefinitionId",
+    "LegacyCombatTests.AreaIncludesRadiusBoundaryAndSkipsAlreadyDeadSlots",
+    "LegacyCombatTests.CapacityIsIndependentOfStageLimits",
+    "LegacyCombatTests.CombatAssemblyDoesNotReferenceSimulationOrPresentation",
+    "LegacyCombatTests.CustomSpawnFollowsTerrainAndCanEscapeWithoutDefeat",
+    "LegacyCombatTests.CustomSpawnRejectsInvalidValuesWithoutConsumingSlots",
+    "LegacyCombatTests.EscapeStopsMovementImmediatelyAtDefeat",
+    "LegacyCombatTests.FrostFiltersSectorAndIntegratesPartialSlowExpiry",
+    "LegacyCombatTests.PiercingHitsEveryForwardTargetOnceIncludingRangeBoundary",
+    "LegacyCombatTests.RayUsesNearestAlongAndPreservesExclusiveFarBoundary",
+    "LegacyCombatTests.ResetReplaysSeedAndClearsIndex(Lane)",
+    "LegacyCombatTests.ResetReplaysSeedAndClearsIndex(WideFront)",
+    "LegacyCombatTests.ResetReplaysSeedAndClearsIndex(Pincer)",
+    "LegacyCombatTests.ReusedSlotStartsWithFreshHealthAndSlowState",
+    "LegacyCombatTests.WorldsAndDamageRemainIndependent",
+    "EternalSteam.Demo.Tests.HordeDeploymentTests.AimingBeyondMapClampsRangeWhileIdleOutsideMapIsHidden",
+    "EternalSteam.Demo.Tests.HordeDeploymentTests.CameraFramingRejectsNonfiniteViewportAndFitsBothMapSizes",
+    "EternalSteam.Demo.Tests.HordeDeploymentTests.CombatAndUiBlockingCannotCommit(False,False)",
+    "EternalSteam.Demo.Tests.HordeDeploymentTests.CombatAndUiBlockingCannotCommit(True,True)",
+    "EternalSteam.Demo.Tests.HordeDeploymentTests.DeploymentHasNoSimulationOrInputSystemDependency",
+    "EternalSteam.Demo.Tests.HordeDeploymentTests.FailedPlacementKeepsEditAndCancellationNeedsNoPointer",
+    "EternalSteam.Demo.Tests.HordeDeploymentTests.InvalidGridCannotBeginAndConfirmationRevalidatesThroughCommand",
+    "EternalSteam.Demo.Tests.HordeDeploymentTests.TwoClicksCommitSnappedPositionAndPointerDirection"
+  ],
+  "currentCases": [
+    {
+      "name": "EternalSteam.Tests.ActiveEnemyIterationTests.ArrivalRemovalAndIndexRebuildLeaveNoGhostTargets",
+      "result": "Passed",
+      "duration": "0.041945",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.ActiveEnemyIterationTests.RemovalDuringIterationVisitsEveryOriginalLivingSlotOnce",
+      "result": "Passed",
+      "duration": "0.000360",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.ActiveEnemyIterationTests.RemovedFutureSlotAndRespawnRespectForwardIterationOrder",
+      "result": "Passed",
+      "duration": "0.000760",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.ActiveEnemyIterationTests.SparseSlotsRecycleInStableAscendingOrder(1)",
+      "result": "Passed",
+      "duration": "0.000229",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.ActiveEnemyIterationTests.SparseSlotsRecycleInStableAscendingOrder(65)",
+      "result": "Passed",
+      "duration": "0.000165",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.ActiveEnemyIterationTests.SparseSlotsRecycleInStableAscendingOrder(130)",
+      "result": "Passed",
+      "duration": "0.000469",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.ArchitectureTests.AttackAcceptsIndependentDamageProviderAndUnsubscribesDirectionHandler",
+      "result": "Passed",
+      "duration": "0.040508",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.ArchitectureTests.NexusAcceptsReplacementDamageCapabilityAtValidationAndRuntime",
+      "result": "Passed",
+      "duration": "0.001315",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.ArchitectureTests.RuntimeAndFeatureAssembliesEnforceOneWayDependencies",
+      "result": "Passed",
+      "duration": "0.000976",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.ArchitectureTests.UpgradesUseIndependentLevelPolicyAndHealthReceiver",
+      "result": "Passed",
+      "duration": "0.000593",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.BaseResourceAccordionTests.AuthoredRowsHaveIndependentLookupAndPersistentNavigation",
+      "result": "Passed",
+      "duration": "0.061548",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.BuildAreaCoverageTests.CircularProviderUsesContainsForEveryWholeCell",
+      "result": "Passed",
+      "duration": "0.029532",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.BuildAreaCoverageTests.ForwardSquareCoversExactly121WholeCellsAndNoRearCells",
+      "result": "Passed",
+      "duration": "0.010127",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.BuildAreaCoverageTests.GrowthDestructionAndOwnerSelectionInvalidateButStationaryQueriesDoNot",
+      "result": "Passed",
+      "duration": "0.020809",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.BuildAreaCoverageTests.LegacyOutpostSharesOwnersCoverageButNormalModeFiltersIt",
+      "result": "Passed",
+      "duration": "0.035686",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.BuildAreaCoverageTests.LostOwnerInAnotherBaseAreaKeepsOperationButSuspendsItsLedgerAndShowsBothStates",
+      "result": "Passed",
+      "duration": "0.004338",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.BuildAreaCoverageTests.SelectedLegacyOwnerChangesDisplayUnionWithoutReassigningBuildings",
+      "result": "Passed",
+      "duration": "0.000314",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.BuildAreaCoverageTests.UnionDoesNotDuplicateOverlappingProvidersAndPendingProviderDoesNotExpand",
+      "result": "Passed",
+      "duration": "0.099598",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.CanvasHierarchyTests.RailwayConfirmationAndDiscardAreAuthoredWithPersistentCommands",
+      "result": "Passed",
+      "duration": "0.047687",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.CanvasHierarchyTests.SavedRailwayDiagnosticsHaveSelectableRows",
+      "result": "Passed",
+      "duration": "0.044314",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.CanvasHierarchyTests.SavedRailwayMapEditorHasFourPortMarkersAndSegmentRenderer",
+      "result": "Passed",
+      "duration": "0.044429",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.CanvasHierarchyTests.SavedRailwayOrderEditorHasRowsAndPersistentCommands",
+      "result": "Passed",
+      "duration": "0.043888",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.CanvasHierarchyTests.SavedRailwayPanelClearsResourcePanel",
+      "result": "Passed",
+      "duration": "0.045729",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.CanvasHierarchyTests.SavedResourceColumnsFitLongQuantitiesWithoutOverlap",
+      "result": "Passed",
+      "duration": "0.042308",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.CanvasHierarchyTests.SavedSceneOwnsCanvasControlsCallbacksAndConstructionObjects",
+      "result": "Passed",
+      "duration": "0.047470",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.CanvasHierarchyTests.SavedStationContextHasClickableNamesAndDetailEntry",
+      "result": "Passed",
+      "duration": "0.040470",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.CircularMinimapTests.CircularInputBoundary(0.5f,0.5f,True)",
+      "result": "Passed",
+      "duration": "0.000196",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.CircularMinimapTests.CircularInputBoundary(1,0.5f,True)",
+      "result": "Passed",
+      "duration": "0.000020",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.CircularMinimapTests.CircularInputBoundary(0.5f,0,True)",
+      "result": "Passed",
+      "duration": "0.000017",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.CircularMinimapTests.CircularInputBoundary(0,0,False)",
+      "result": "Passed",
+      "duration": "0.000050",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.CircularMinimapTests.CircularInputBoundary(1,1,False)",
+      "result": "Passed",
+      "duration": "0.000020",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.CircularMinimapTests.CircularInputBoundary(1.001f,0.5f,False)",
+      "result": "Passed",
+      "duration": "0.000015",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.CircularMinimapTests.CircularInputBoundary(0.85f,0.85f,True)",
+      "result": "Passed",
+      "duration": "0.000016",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.CircularMinimapTests.CircularInputBoundary(0.86f,0.86f,False)",
+      "result": "Passed",
+      "duration": "0.000016",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.CircularMinimapTests.SavedCircleAndInputAgree",
+      "result": "Passed",
+      "duration": "0.039942",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.CompactConstructionDockTests.SavedControlsKeepActionsAndSeparateDetails",
+      "result": "Passed",
+      "duration": "0.040066",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.ConstructionCostTests.ConfiguredTableNeverFallsBackForMissingOrDuplicateEntries",
+      "result": "Passed",
+      "duration": "0.018865",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.ConstructionCostTests.ConstructionExceptionRestoresAllPayersStocksCapacityAndMode",
+      "result": "Passed",
+      "duration": "0.002342",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.ConstructionCostTests.DuplicateResourceRowsAggregateBeforeAtomicPayment",
+      "result": "Passed",
+      "duration": "0.000725",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.ConstructionCostTests.GeneralPreviewAggregatesQuantityAndDetectsLiveShortage",
+      "result": "Passed",
+      "duration": "0.004761",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.ConstructionCostTests.TableRejectsInvalidCostsEvenWithInfiniteStock(double.NaN)",
+      "result": "Passed",
+      "duration": "0.000104",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.ConstructionCostTests.TableRejectsInvalidCostsEvenWithInfiniteStock(double.PositiveInfinity)",
+      "result": "Passed",
+      "duration": "0.000028",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.ConstructionCostTests.TableRejectsInvalidCostsEvenWithInfiniteStock(-1)",
+      "result": "Passed",
+      "duration": "0.000031",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.ConstructionHudWorkflowTests.SavedConstructionSummaryAndActionsStaySeparate(800,600)",
+      "result": "Passed",
+      "duration": "0.049534",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.ConstructionHudWorkflowTests.SavedConstructionSummaryAndActionsStaySeparate(1920,1080)",
+      "result": "Passed",
+      "duration": "0.052838",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.ConstructionHudWorkflowTests.SavedConstructionSummaryAndActionsStaySeparate(2560,1440)",
+      "result": "Passed",
+      "duration": "0.048533",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.DefenseCatalogParityTests.ActiveCatalogMatchesNineAuthoredDefenseProfiles",
+      "result": "Passed",
+      "duration": "0.003095",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.DefenseCatalogParityTests.ActiveDefense_defense.tesla",
+      "result": "Passed",
+      "duration": "0.005873",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.DefenseCatalogParityTests.ActiveDefense_defense.plasma_laser",
+      "result": "Passed",
+      "duration": "0.000445",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.DefenseCatalogParityTests.ActiveDefense_defense.vulcan_aa",
+      "result": "Passed",
+      "duration": "0.000335",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.DefenseCatalogParityTests.ActiveDefense_defense.rail_aa",
+      "result": "Passed",
+      "duration": "0.000645",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.DefenseCatalogParityTests.ActiveDefense_defense.arc",
+      "result": "Passed",
+      "duration": "0.000418",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.DefenseCatalogParityTests.ActiveDefense_defense.railgun",
+      "result": "Passed",
+      "duration": "0.000301",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.DefenseCatalogParityTests.ActiveDefense_defense.sky_plasma",
+      "result": "Passed",
+      "duration": "0.000337",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.DefenseCatalogParityTests.ActiveDefense_defense.smart_missile",
+      "result": "Passed",
+      "duration": "0.000304",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.DefenseCatalogParityTests.ActiveDefense_defense.emp",
+      "result": "Passed",
+      "duration": "0.000222",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.DocumentContractTests.CompatibleFilterChangeRetainsTargetAndIncompatibleChangeClearsIt",
+      "result": "Passed",
+      "duration": "0.020282",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.DocumentContractTests.CrossWorldCreationFailureKeepsAllReservations(False)",
+      "result": "Passed",
+      "duration": "0.004361",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.DocumentContractTests.CrossWorldCreationFailureKeepsAllReservations(True)",
+      "result": "Passed",
+      "duration": "0.000136",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.DocumentContractTests.CrossWorldRevalidationAndRecoveryAreAllOrNothing",
+      "result": "Passed",
+      "duration": "0.001333",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.DocumentContractTests.RotatedGridRoundTripsNegativeCellsAndMulticellCenters",
+      "result": "Passed",
+      "duration": "0.001092",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.ExtensionTests.AreaFiltersAirAndSectorWhileHittingNeighbours",
+      "result": "Passed",
+      "duration": "0.019947",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.ExtensionTests.BaseProductionAndStorageRestoreIndependentCapacities",
+      "result": "Passed",
+      "duration": "0.002654",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.ExtensionTests.ChainDoesNotRepeatAndUsesDeterministicNearestHop",
+      "result": "Passed",
+      "duration": "0.000878",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.ExtensionTests.FailedBatchRollsBackNexusStorageAndObstacleRegistration",
+      "result": "Passed",
+      "duration": "0.001219",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.ExtensionTests.MissingReferencesAndNexusCompositionAreRejected",
+      "result": "Passed",
+      "duration": "0.000850",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.ExtensionTests.NexusLossImmediatelyEndsSessionAndUnsubscribesOnDispose",
+      "result": "Passed",
+      "duration": "0.001248",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.ExtensionTests.NexusUnlocksUpgradesAndDestructionSignalsOnceButDisposalDoesNot",
+      "result": "Passed",
+      "duration": "0.000367",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.ExtensionTests.PiercingUsesOrderedWidthLimitedHits",
+      "result": "Passed",
+      "duration": "0.000703",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.ExtensionTests.ProductionWaitsForStorageAndConversionIsAtomic",
+      "result": "Passed",
+      "duration": "0.000219",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.ExtensionTests.ProjectileCannotHitReusedSlotAndDisposeCancelsFlights",
+      "result": "Passed",
+      "duration": "0.000696",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.ExtensionTests.ProjectileDelaysDamageAndFollowsBeyondRange",
+      "result": "Passed",
+      "duration": "0.000229",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.ExtensionTests.ReloadRebuildsStorageCapacityAndPreservesOverflowAfterRemoval",
+      "result": "Passed",
+      "duration": "0.000434",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.ExtensionTests.RemovingOptionalModulesRemovesDependenciesAndMovementRegistration",
+      "result": "Passed",
+      "duration": "0.000142",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.ExtensionTests.StatusDurationsAreIndependentAndSettingsAreCopied",
+      "result": "Passed",
+      "duration": "0.000667",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.FoundationTests.DefinitionsDoNotShareRuntimeStateOrLiveSettings",
+      "result": "Passed",
+      "duration": "0.019399",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.FoundationTests.DirectionEditIsTransactionalAndPhasePolicyGuardsCommands",
+      "result": "Passed",
+      "duration": "0.001131",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.FoundationTests.FactoryFailureRollsBackWithoutLosingPendingWork(False)",
+      "result": "Passed",
+      "duration": "0.000306",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.FoundationTests.FactoryFailureRollsBackWithoutLosingPendingWork(True)",
+      "result": "Passed",
+      "duration": "0.000079",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.FoundationTests.ModuleRemovalAndCatalogValidation",
+      "result": "Passed",
+      "duration": "0.000564",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.FoundationTests.MultiCellBoundsAndCenter",
+      "result": "Passed",
+      "duration": "0.000372",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.FoundationTests.NonRecoverableAndDestroyedBuildings",
+      "result": "Passed",
+      "duration": "0.000165",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.FoundationTests.RecoveryPreservesActivityUntilCommitAndBlocksStaleBatch",
+      "result": "Passed",
+      "duration": "0.000374",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.FoundationTests.RecycledSlotCannotResolveOldHandle",
+      "result": "Passed",
+      "duration": "0.000126",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.FoundationTests.ReservationsSurviveSelectionAndFailedMove",
+      "result": "Passed",
+      "duration": "0.000384",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.FoundationTests.RevalidationRejectsWholeBatchAndKeepsReservations",
+      "result": "Passed",
+      "duration": "0.000192",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.FoundationTests.SectorIncludesBoundariesAndIgnoresHeight",
+      "result": "Passed",
+      "duration": "0.000146",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.FoundationTests.TargetKindsAndEqualDistanceTieBreak",
+      "result": "Passed",
+      "duration": "0.000248",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.FoundationTests.TargetLockRetainsCloserArrivalAndReacquiresOnRemoval",
+      "result": "Passed",
+      "duration": "0.000184",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.HudLayoutTests.FoldingCatalogPreservesChosenEntryAndCategory",
+      "result": "Passed",
+      "duration": "0.037198",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.HudLayoutTests.PlayerPanelsAreIndependentOfDeveloperPanel",
+      "result": "Passed",
+      "duration": "0.002178",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.HudLayoutTests.PriorityCanExpandAndHiddenStockUpdatesAreNotLost",
+      "result": "Passed",
+      "duration": "0.019471",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.HudLayoutTests.UnknownPriorityFallsBackToEntireCatalog",
+      "result": "Passed",
+      "duration": "0.000377",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.HudLayoutTests.ZeroStockAndDuplicateProductionIdsRemainAccessibleWithoutPriority",
+      "result": "Passed",
+      "duration": "0.000164",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.HudModeGroupsTests.LocalMapRetainsViewCenterAndRoundTrips(0,0)",
+      "result": "Passed",
+      "duration": "0.000449",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.HudModeGroupsTests.LocalMapRetainsViewCenterAndRoundTrips(250,250)",
+      "result": "Passed",
+      "duration": "0.000061",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.HudModeGroupsTests.LocalMapRetainsViewCenterAndRoundTrips(-300,700)",
+      "result": "Passed",
+      "duration": "0.000032",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.HudModeGroupsTests.SavedGroupsKeepControlsAndReverseWithoutRebuilding",
+      "result": "Passed",
+      "duration": "0.109189",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.HudPauseMenuTests.SavedModalOwnsPauseAndSaveAndPreservesConstructionGroup",
+      "result": "Passed",
+      "duration": "0.051082",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.MapAssaultBoundaryTests.BossAndFixedWaveSpawnAreasMustBeDistinct",
+      "result": "Passed",
+      "duration": "0.001413",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.MapAssaultBoundaryTests.FixedBossWavePointsReplaceUnsafeLocationAndReturnWithoutChangingBudget",
+      "result": "Passed",
+      "duration": "0.001603",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.MapAssaultBoundaryTests.ThresholdUsesExactEnergyAndBossRewardIsPaidOnce",
+      "result": "Passed",
+      "duration": "0.000387",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.MapClearEnemyTests.ClearDespawnsWithoutRewardsOrEscapeDamageAndSlotsCanBeReused",
+      "result": "Passed",
+      "duration": "0.000399",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailConnectionTransactionTests.ConnectionFailureRollsBackBuildingsAndCostButKeepsReservations(False)",
+      "result": "Passed",
+      "duration": "0.000698",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailConnectionTransactionTests.ConnectionFailureRollsBackBuildingsAndCostButKeepsReservations(True)",
+      "result": "Passed",
+      "duration": "0.000063",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailPathPlannerTests.BlockedAndSearchLimitAndCancellationAreDistinct",
+      "result": "Passed",
+      "duration": "0.003611",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailPathPlannerTests.DetourRemainsContiguousAndNeverRepeatsCell",
+      "result": "Passed",
+      "duration": "0.001216",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailPathPlannerTests.FiveHundredSquareSearchIsBoundedAndDeterministic",
+      "result": "Passed",
+      "duration": "0.006333",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailPathPlannerTests.ReuseWinsOverShorterAllNewPath",
+      "result": "Passed",
+      "duration": "0.000310",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayEconomyTests.FailedInstallAndAggregatedCostsDoNotPartiallyCharge",
+      "result": "Passed",
+      "duration": "0.000295",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayEconomyTests.FailedMultiBaseInstallRestoresReservedStocksAndCapacity",
+      "result": "Passed",
+      "duration": "0.000134",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayEconomyTests.InfiniteConstructionStillRequiresSuccessfulPlacement",
+      "result": "Passed",
+      "duration": "0.000107",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayEconomyTests.InfiniteResourcesAppliesToNewAndRestoredBaseLedgers",
+      "result": "Passed",
+      "duration": "0.000206",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayEconomyTests.InfiniteResourcesStillValidatesCostsCommitAndCapacity",
+      "result": "Passed",
+      "duration": "0.000247",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayEconomyTests.InfiniteResourcesTogglePreservesStockAndRestoresCharging",
+      "result": "Passed",
+      "duration": "0.000302",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayEconomyTests.InvalidTransfersLeaveStockUnchanged(double.NaN)",
+      "result": "Passed",
+      "duration": "0.000062",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayEconomyTests.InvalidTransfersLeaveStockUnchanged(double.PositiveInfinity)",
+      "result": "Passed",
+      "duration": "0.000016",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayEconomyTests.InvalidTransfersLeaveStockUnchanged(-1)",
+      "result": "Passed",
+      "duration": "0.000015",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayEconomyTests.MultiBasePurchaseFailureChargesNeitherBase",
+      "result": "Passed",
+      "duration": "0.000088",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayEconomyTests.OverCapacityStockIsPreservedAndRejectsNewDeliveries",
+      "result": "Passed",
+      "duration": "0.000058",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayEconomyTests.RestoreValidatesBeforeReplacingLedgers",
+      "result": "Passed",
+      "duration": "0.000173",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayEconomyTests.SeparateBaseLedgersNeverShareOrCopyBalances",
+      "result": "Passed",
+      "duration": "0.000121",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayEditorPanelTests.EditorCommandsAndPagesAreAuthored",
+      "result": "Passed",
+      "duration": "0.043678",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayMigrationTests.ArchiveFailureLeavesOriginalReadable",
+      "result": "Passed",
+      "duration": "0.003956",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayMigrationTests.CorruptOrFailedOlderSlotsAreNotAdvertisedAsAvailableProgress",
+      "result": "Passed",
+      "duration": "0.003202",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayMigrationTests.FailedRunCannotBeRevivedByMigrationOrBackup",
+      "result": "Passed",
+      "duration": "0.002832",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayMigrationTests.InterruptedWriteAndArchiveRetryKeepOriginalUntilSuccessfulCommit",
+      "result": "Passed",
+      "duration": "0.002305",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayMigrationTests.OlderMapSlotsAreReportedWithoutReadingArchivesOrChangingSaves",
+      "result": "Passed",
+      "duration": "0.004754",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayMigrationTests.V1StockMovesToMainOnceWithoutClippingOverflowOrCreditingSubBase",
+      "result": "Passed",
+      "duration": "0.001785",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayMigrationTests.V1StockRejectsAmbiguousBaseOrResourceMapping",
+      "result": "Passed",
+      "duration": "0.000216",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayOverviewTests.OverviewIsAuthoredAndPreservesLegacyControls",
+      "result": "Passed",
+      "duration": "0.045850",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayServicePanelTests.ServiceInputsAndCommandsAreSaved",
+      "result": "Passed",
+      "duration": "0.044899",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayShuttleTests.CorruptGraphIdentityAndDuplicateSocketsRejectBeforeReplacingLiveRoutes",
+      "result": "Passed",
+      "duration": "0.014836",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayShuttleTests.CorruptSlotOwnershipRejectedWithoutChangingLiveNetwork",
+      "result": "Passed",
+      "duration": "0.002212",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayShuttleTests.EntryReservationSurvivesReloadBeforeArrivalAndProtectsStation",
+      "result": "Passed",
+      "duration": "0.001234",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayShuttleTests.ExplicitConnectionCanRegisterBeforeAnyRouteWithoutChargingOrCreatingTrain",
+      "result": "Passed",
+      "duration": "0.000921",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayShuttleTests.ExplicitConnectionIgnoresAdjacentTracksAndPersistsUnassignedCells",
+      "result": "Passed",
+      "duration": "0.000943",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayShuttleTests.FuelWaitAtTerminusCanRefuelAndResumeWithoutUnloadingAgain",
+      "result": "Passed",
+      "duration": "0.000316",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayShuttleTests.GraphlessSaveMigratesRoutePathBeforeInspectingNewAdjacentTracks",
+      "result": "Passed",
+      "duration": "0.000375",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayShuttleTests.IntermediateStationIsVisitedOnceEachWayWithoutDuplicatedTerminusService",
+      "result": "Passed",
+      "duration": "0.000717",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayShuttleTests.InvalidDirectionAndV2ShuttlePayloadAreRejectedBeforeRestore",
+      "result": "Passed",
+      "duration": "0.000318",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayShuttleTests.MissingReturnTrackIsNotRequiredButRemovedOutboundTrackStopsAndRecoversSafely",
+      "result": "Passed",
+      "duration": "0.000557",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayShuttleTests.OtherRouteCannotClaimTheSamePhysicalTrackInEitherDirection",
+      "result": "Passed",
+      "duration": "0.000348",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayShuttleTests.PendingExtensionAppliesOnlyAtFirstStationReturnAndPreservesSettings",
+      "result": "Passed",
+      "duration": "0.001055",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayShuttleTests.PreSlotSaveWithTwoParkedTrainsMigratesWithoutInventoryMutation",
+      "result": "Passed",
+      "duration": "0.000729",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayShuttleTests.RegisteredBrokenConnectionDoesNotSwitchToAlternativeTrack",
+      "result": "Passed",
+      "duration": "0.000375",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayShuttleTests.ReservedExtensionLosesToCommittedRouteWithoutChangingExistingPath",
+      "result": "Passed",
+      "duration": "0.000581",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayShuttleTests.ReturnJourneySaveRestoresDirectionProgressFuelAndServiceFlags",
+      "result": "Passed",
+      "duration": "0.000444",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayShuttleTests.SharedStationArbitrationIsIndependentOfTickPartition",
+      "result": "Passed",
+      "duration": "0.001715",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayShuttleTests.SharedStationHoldsSecondTrainOutsideAndStopRequestSurvivesReload",
+      "result": "Passed",
+      "duration": "0.000781",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayShuttleTests.SingleConnectionAllowsSameSocketBothWaysWithoutReturnTrack",
+      "result": "Passed",
+      "duration": "0.000206",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayShuttleTests.SlotLossDuringEntryKeepsPaidFuelAndResumesAfterStationRecovery",
+      "result": "Passed",
+      "duration": "0.000386",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayShuttleTests.ThreeRoundTripsConserveCargoAndChargeEachDepartureExactlyOnce",
+      "result": "Passed",
+      "duration": "0.000256",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayShuttleTests.TwoRoutesCreatedAtSameStationQueueWithoutDoubleService",
+      "result": "Passed",
+      "duration": "0.000361",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayTests.Acc015_UnloadOnlyDropsRemainingFiftyWhenTargetIsEighty",
+      "result": "Passed",
+      "duration": "0.001512",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayTests.Acc019_ThousandTargetLoadsAvailableThreeHundredThenRetriesNextVisit",
+      "result": "Passed",
+      "duration": "0.000509",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayTests.BaseNamesAreDistinctAndSurviveReloadAndDefinitionRename",
+      "result": "Passed",
+      "duration": "0.001200",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayTests.ChangedPendingPathFailsWithoutChangingValidActiveRoute",
+      "result": "Passed",
+      "duration": "0.000530",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayTests.CommitIsIdempotentAndDoesNotStartOrLoad",
+      "result": "Passed",
+      "duration": "0.000393",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayTests.CurvedCircuitEndsAtTheSameStationWithLargeAndPointOneSecondTicks",
+      "result": "Passed",
+      "duration": "0.001080",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayTests.DeliveryConservesStockAndNextStationStopDoesNotRepeatService",
+      "result": "Passed",
+      "duration": "0.000485",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayTests.DemolitionDoesNotReuseBaseOrStationNumbers",
+      "result": "Passed",
+      "duration": "0.000605",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayTests.DestinationStationLossStopsPaidSegmentAndResumeDoesNotChargeAgain",
+      "result": "Passed",
+      "duration": "0.000710",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayTests.EmptyCargoStillRunsAndMissingReturnCannotCommit",
+      "result": "Passed",
+      "duration": "0.000681",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayTests.EveryTransportStateRoundTripsWithoutTransfer(Stopped)",
+      "result": "Passed",
+      "duration": "0.000716",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayTests.EveryTransportStateRoundTripsWithoutTransfer(Moving)",
+      "result": "Passed",
+      "duration": "0.000618",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayTests.EveryTransportStateRoundTripsWithoutTransfer(Dwelling)",
+      "result": "Passed",
+      "duration": "0.000620",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayTests.EveryTransportStateRoundTripsWithoutTransfer(StopRequested)",
+      "result": "Passed",
+      "duration": "0.000625",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayTests.EveryTransportStateRoundTripsWithoutTransfer(FuelWait)",
+      "result": "Passed",
+      "duration": "0.000611",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayTests.EveryTransportStateRoundTripsWithoutTransfer(RouteError)",
+      "result": "Passed",
+      "duration": "0.000617",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayTests.FullDestinationRetainsCargoAndMissingFuelDoesNotDepart",
+      "result": "Passed",
+      "duration": "0.000430",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayTests.InvalidSavedAmountsAndDuplicateTrainsAreRejected",
+      "result": "Passed",
+      "duration": "0.000502",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayTests.LaterValidSegmentKeepsItsOriginalIndexAfterEarlierFailure",
+      "result": "Passed",
+      "duration": "0.000626",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayTests.LegacyBaseNamesMigrateDeterministicallyAndPersist",
+      "result": "Passed",
+      "duration": "0.000856",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayTests.MalformedBaseNamesRejectRestoreWithoutMutation(\"duplicate-number\")",
+      "result": "Passed",
+      "duration": "0.000546",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayTests.MalformedBaseNamesRejectRestoreWithoutMutation(\"duplicate-id\")",
+      "result": "Passed",
+      "duration": "0.000452",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayTests.MalformedBaseNamesRejectRestoreWithoutMutation(\"missing-base\")",
+      "result": "Passed",
+      "duration": "0.000441",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayTests.MalformedBaseNamesRejectRestoreWithoutMutation(\"empty-name\")",
+      "result": "Passed",
+      "duration": "0.000452",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayTests.MidSegmentErrorRecoveryKeepsPositionCargoAndPaidFuel",
+      "result": "Passed",
+      "duration": "0.000539",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayTests.MidSegmentErrorStillProtectsTrackAndStations",
+      "result": "Passed",
+      "duration": "0.000813",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayTests.MovingRestorePreservesFuelAndDoesNotDuplicateCargo",
+      "result": "Passed",
+      "duration": "0.000590",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayTests.MovingTrackRecoveryIsBlockedAndCargoResourceIsImmutable",
+      "result": "Passed",
+      "duration": "0.000430",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayTests.MultipleBrokenSegmentsAreReportedAndCommitLeavesStateUntouched",
+      "result": "Passed",
+      "duration": "0.000991",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayTests.MultipleStationErrorsBlockAffectedSegmentsWithoutInventingTrackFailures",
+      "result": "Passed",
+      "duration": "0.000467",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayTests.MultipleStationsAndRotatedPortsCompleteClosedCircuit(3,0)",
+      "result": "Passed",
+      "duration": "0.001207",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayTests.MultipleStationsAndRotatedPortsCompleteClosedCircuit(3,1)",
+      "result": "Passed",
+      "duration": "0.000789",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayTests.MultipleStationsAndRotatedPortsCompleteClosedCircuit(4,2)",
+      "result": "Passed",
+      "duration": "0.000931",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayTests.MultipleStationsAndRotatedPortsCompleteClosedCircuit(4,3)",
+      "result": "Passed",
+      "duration": "0.000913",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayTests.PendingAppliesOnlyAtFirstStationAndKeepsTrainIdentity",
+      "result": "Passed",
+      "duration": "0.000601",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayTests.PendingDoesNotReserveNewTrackAndCollisionAtBoundaryKeepsOriginalRoute",
+      "result": "Passed",
+      "duration": "0.001620",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayTests.PendingRejectsChangedAnchorAndMalformedSavedRevision",
+      "result": "Passed",
+      "duration": "0.000599",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayTests.PendingSaveCancelAndStaleDraftLeaveActiveRouteUntouched",
+      "result": "Passed",
+      "duration": "0.000670",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayTests.RouteLongerThanFullFuelTankIsRejectedBeforeCommit",
+      "result": "Passed",
+      "duration": "0.000684",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayTests.StationDirectionPreviewUsesTheInstalledPortPositions(0)",
+      "result": "Passed",
+      "duration": "0.000653",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayTests.StationDirectionPreviewUsesTheInstalledPortPositions(1)",
+      "result": "Passed",
+      "duration": "0.000316",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayTests.StationDirectionPreviewUsesTheInstalledPortPositions(2)",
+      "result": "Passed",
+      "duration": "0.000320",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayTests.StationDirectionPreviewUsesTheInstalledPortPositions(3)",
+      "result": "Passed",
+      "duration": "0.000309",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayTests.StationErrorAllowsFurtherTrackRecoveryButProtectsOccupiedStation",
+      "result": "Passed",
+      "duration": "0.000498",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayTests.StopRequestWinsAfterBoundaryApplication",
+      "result": "Passed",
+      "duration": "0.000459",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayTests.StructuredValidationDoesNotMutateRouteInventoryOrPriorResult",
+      "result": "Passed",
+      "duration": "0.000697",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayTests.StructuredValidationIdentifiesDuplicateVisitAndStation",
+      "result": "Passed",
+      "duration": "0.000530",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayTests.StructuredValidationMarksReturnLegAndPreservesCompletedLeg",
+      "result": "Passed",
+      "duration": "0.000530",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayTests.StructuredValidationRejectsInvalidOrIdenticalPorts(-1,1)",
+      "result": "Passed",
+      "duration": "0.000351",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayTests.StructuredValidationRejectsInvalidOrIdenticalPorts(0,4)",
+      "result": "Passed",
+      "duration": "0.000297",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayTests.StructuredValidationRejectsInvalidOrIdenticalPorts(1,1)",
+      "result": "Passed",
+      "duration": "0.000282",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayTests.StructuredValidationSeparatesBranchFromArrivalOverrun",
+      "result": "Passed",
+      "duration": "0.000497",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayTests.StructuredValidationSeparatesEmptyDraftAndInvalidQuantity",
+      "result": "Passed",
+      "duration": "0.000360",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayTests.StructuredValidationSeparatesInactiveStationFromMissingReference",
+      "result": "Passed",
+      "duration": "0.000415",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayTests.ThreeBaseDistributionPreservesRemainder(20,30,1000,30,50)",
+      "result": "Passed",
+      "duration": "0.001198",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayTests.ThreeBaseDistributionPreservesRemainder(30,40,25,25,45)",
+      "result": "Passed",
+      "duration": "0.000746",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayTests.ThreeBaseDistributionPreservesRemainder(30,40,1000,40,30)",
+      "result": "Passed",
+      "duration": "0.000758",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayTests.TrackSharingAndBranchesAreRejected",
+      "result": "Passed",
+      "duration": "0.000443",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayTests.UnassignedCargoCannotHideStockInSnapshot",
+      "result": "Passed",
+      "duration": "0.000484",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayTests.UnassignedCargoSurvivesJsonAndAllowsOnlyFirstAssignment(null)",
+      "result": "Passed",
+      "duration": "0.000687",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayTests.UnassignedCargoSurvivesJsonAndAllowsOnlyFirstAssignment(\"\")",
+      "result": "Passed",
+      "duration": "0.000526",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.RailwayTests.UnloadBeforeLoadAndLimitedSourceRespectVisitAmounts",
+      "result": "Passed",
+      "duration": "0.000400",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.ResponsiveHudBoundsTests.SavedHudFitsWideAndSmallWindowsWithExpandedCatalogueAndSelection(800,600)",
+      "result": "Passed",
+      "duration": "0.045625",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.ResponsiveHudBoundsTests.SavedHudFitsWideAndSmallWindowsWithExpandedCatalogueAndSelection(1280,720)",
+      "result": "Passed",
+      "duration": "0.044558",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.ResponsiveHudBoundsTests.SavedHudFitsWideAndSmallWindowsWithExpandedCatalogueAndSelection(1920,1080)",
+      "result": "Passed",
+      "duration": "0.044952",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.ResponsiveHudBoundsTests.SavedHudFitsWideAndSmallWindowsWithExpandedCatalogueAndSelection(2560,1080)",
+      "result": "Passed",
+      "duration": "0.045571",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.ResponsiveHudBoundsTests.SavedHudFitsWideAndSmallWindowsWithExpandedCatalogueAndSelection(3840,1080)",
+      "result": "Passed",
+      "duration": "0.040023",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.TerrainNavigationTests.DetoursThroughGapWithoutCrossingTerrainOrExceedingSpeed",
+      "result": "Passed",
+      "duration": "0.002211",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.TerrainNavigationTests.DisconnectedAndDiagonalOnlyCellsAreNotReachable",
+      "result": "Passed",
+      "duration": "0.000137",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.TerrainNavigationTests.ManyActorsReuseOneFieldAndNewGoalsRespectStepBudget",
+      "result": "Passed",
+      "duration": "0.001181",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.TerrainNavigationTests.RotatedGridAndReplacementMaskInvalidateDerivedRoutes",
+      "result": "Passed",
+      "duration": "0.000243",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.TerrainNavigationTests.ShortDiagonalStepCannotSlipBetweenBlockedCornerCells",
+      "result": "Passed",
+      "duration": "0.000098",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.TrainDefenseTests.AllThreeMountShapesAcceptedWithoutRotationShortcut",
+      "result": "Passed",
+      "duration": "0.018879",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.TrainDefenseTests.CaptureRestoresBatteryLevelAndCooldown",
+      "result": "Passed",
+      "duration": "0.002773",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.TrainDefenseTests.DepletedBatteryStopsNewAttacksAndPausedCombatSpendsNothing",
+      "result": "Passed",
+      "duration": "0.000227",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.TrainDefenseTests.InvalidBatteryRejected(double.NaN)",
+      "result": "Passed",
+      "duration": "0.000101",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.TrainDefenseTests.InvalidBatteryRejected(-1)",
+      "result": "Passed",
+      "duration": "0.000048",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.TrainDefenseTests.InvalidBatteryRejected(201)",
+      "result": "Passed",
+      "duration": "0.000046",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.TrainDefenseTests.MountedModuleHonorsInjectedMainLevelEvenWhenCalledDirectly",
+      "result": "Passed",
+      "duration": "0.000232",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.TrainDefenseTests.MovingWeaponQueriesCurrentPositionAndNeverRegistersAsEnemyTarget",
+      "result": "Passed",
+      "duration": "0.000494",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.TrainDefenseTests.OlderV2MissingArmamentDefaultsToEmptyMount",
+      "result": "Passed",
+      "duration": "0.000133",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.TrainDefenseTests.OnlyExactMountDimensionsAreAccepted(1,1)",
+      "result": "Passed",
+      "duration": "0.000066",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.TrainDefenseTests.OnlyExactMountDimensionsAreAccepted(3,3)",
+      "result": "Passed",
+      "duration": "0.000039",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.TrainDefenseTests.OnlyExactMountDimensionsAreAccepted(3,1)",
+      "result": "Passed",
+      "duration": "0.000041",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.TrainDefenseTests.PowerTransferConservesStoredEnergyAndRejectsInvalidRequests",
+      "result": "Passed",
+      "duration": "0.001189",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.TrainDefenseTests.ProjectileCompletesAfterBatteryDepletion",
+      "result": "Passed",
+      "duration": "0.000251",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.UpgradeQueryTests.AllUpgradeKindsRejectInactiveDestroyedAndMaximumWithoutMutation(0)",
+      "result": "Passed",
+      "duration": "0.018132",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.UpgradeQueryTests.AllUpgradeKindsRejectInactiveDestroyedAndMaximumWithoutMutation(1)",
+      "result": "Passed",
+      "duration": "0.000076",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.UpgradeQueryTests.AllUpgradeKindsRejectInactiveDestroyedAndMaximumWithoutMutation(2)",
+      "result": "Passed",
+      "duration": "0.000335",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.UpgradeQueryTests.BankQuoteAndRejectedCommitNeverDebit",
+      "result": "Passed",
+      "duration": "0.000263",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.UpgradeQueryTests.ClickRechecksFundsAndChangedCostPolicy",
+      "result": "Passed",
+      "duration": "0.000999",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.UpgradeQueryTests.ExplicitFreePolicyStillChecksBuildingAndLevelConditions",
+      "result": "Passed",
+      "duration": "0.000168",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.UpgradeQueryTests.InvalidOrMissingCostsAreNotVerificationFree",
+      "result": "Passed",
+      "duration": "0.000285",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.UpgradeQueryTests.LostOwnerAndChangedStockRejectPaidUpgradeWithoutMutation",
+      "result": "Passed",
+      "duration": "0.000264",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.UpgradeQueryTests.PaidQueryAggregatesDuplicateCostsAndCommitDebitsExactlyOnce",
+      "result": "Passed",
+      "duration": "0.000350",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.UpgradeQueryTests.PaidUpgradeUsesInstalledOwnerLedger",
+      "result": "Passed",
+      "duration": "0.000301",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.UpgradeQueryTests.PerformanceExemptionStillHonorsOwnMaximumAndActivity",
+      "result": "Passed",
+      "duration": "0.000092",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.UpgradeQueryTests.PerformancePurchaseRechecksLiveMainLevelAndPreservesFundsOnRejection",
+      "result": "Passed",
+      "duration": "0.000297",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Tests.UpgradeQueryTests.QueryDoesNotUpgradeOrScaleHealthAndCommandRechecksLevelLimit",
+      "result": "Passed",
+      "duration": "0.000217",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "name": "EternalSteam.Demo.Tests.HordeBuildingTests.AdapterDoesNotReferenceSimulationAssembly",
+      "result": "Passed",
+      "duration": "0.002154",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.LegacyBuildingTests.xml"
+    },
+    {
+      "name": "EternalSteam.Demo.Tests.HordeBuildingTests.AllCellsMatchOriginalPlacementFootprintRule(Lane)",
+      "result": "Passed",
+      "duration": "0.006694",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.LegacyBuildingTests.xml"
+    },
+    {
+      "name": "EternalSteam.Demo.Tests.HordeBuildingTests.AllCellsMatchOriginalPlacementFootprintRule(WideFront)",
+      "result": "Passed",
+      "duration": "0.006027",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.LegacyBuildingTests.xml"
+    },
+    {
+      "name": "EternalSteam.Demo.Tests.HordeBuildingTests.AllCellsMatchOriginalPlacementFootprintRule(Pincer)",
+      "result": "Passed",
+      "duration": "0.006127",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.LegacyBuildingTests.xml"
+    },
+    {
+      "name": "EternalSteam.Demo.Tests.HordeBuildingTests.FailedCreationRollsBackWorldLegacyListAndReservations(False)",
+      "result": "Passed",
+      "duration": "0.001512",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.LegacyBuildingTests.xml"
+    },
+    {
+      "name": "EternalSteam.Demo.Tests.HordeBuildingTests.FailedCreationRollsBackWorldLegacyListAndReservations(True)",
+      "result": "Passed",
+      "duration": "0.000188",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.LegacyBuildingTests.xml"
+    },
+    {
+      "name": "EternalSteam.Demo.Tests.HordeBuildingTests.InvalidDirectionRangeAndKindCannotLeaveState",
+      "result": "Passed",
+      "duration": "0.000274",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.LegacyBuildingTests.xml"
+    },
+    {
+      "name": "EternalSteam.Demo.Tests.HordeBuildingTests.OffsetGridPreservesDefaultCentersAndLegacyEvenCenters",
+      "result": "Passed",
+      "duration": "0.000366",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.LegacyBuildingTests.xml"
+    },
+    {
+      "name": "EternalSteam.Demo.Tests.HordeBuildingTests.PhaseAndCapacityAreRecheckedBeforeCommit",
+      "result": "Passed",
+      "duration": "0.000289",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.LegacyBuildingTests.xml"
+    },
+    {
+      "name": "EternalSteam.Demo.Tests.HordeBuildingTests.PlacementSharesOccupancyLifetimeAndStableDefinitionId",
+      "result": "Passed",
+      "duration": "0.000473",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.LegacyBuildingTests.xml"
+    },
+    {
+      "name": "LegacyCombatTests.AreaIncludesRadiusBoundaryAndSkipsAlreadyDeadSlots",
+      "result": "Passed",
+      "duration": "0.000720",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.LegacyCombatTests.xml"
+    },
+    {
+      "name": "LegacyCombatTests.CapacityIsIndependentOfStageLimits",
+      "result": "Passed",
+      "duration": "0.000357",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.LegacyCombatTests.xml"
+    },
+    {
+      "name": "LegacyCombatTests.CombatAssemblyDoesNotReferenceSimulationOrPresentation",
+      "result": "Passed",
+      "duration": "0.000267",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.LegacyCombatTests.xml"
+    },
+    {
+      "name": "LegacyCombatTests.CustomSpawnFollowsTerrainAndCanEscapeWithoutDefeat",
+      "result": "Passed",
+      "duration": "0.000359",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.LegacyCombatTests.xml"
+    },
+    {
+      "name": "LegacyCombatTests.CustomSpawnRejectsInvalidValuesWithoutConsumingSlots",
+      "result": "Passed",
+      "duration": "0.000118",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.LegacyCombatTests.xml"
+    },
+    {
+      "name": "LegacyCombatTests.EscapeStopsMovementImmediatelyAtDefeat",
+      "result": "Passed",
+      "duration": "0.000240",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.LegacyCombatTests.xml"
+    },
+    {
+      "name": "LegacyCombatTests.FrostFiltersSectorAndIntegratesPartialSlowExpiry",
+      "result": "Passed",
+      "duration": "0.000258",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.LegacyCombatTests.xml"
+    },
+    {
+      "name": "LegacyCombatTests.PiercingHitsEveryForwardTargetOnceIncludingRangeBoundary",
+      "result": "Passed",
+      "duration": "0.000701",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.LegacyCombatTests.xml"
+    },
+    {
+      "name": "LegacyCombatTests.RayUsesNearestAlongAndPreservesExclusiveFarBoundary",
+      "result": "Passed",
+      "duration": "0.000234",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.LegacyCombatTests.xml"
+    },
+    {
+      "name": "LegacyCombatTests.ResetReplaysSeedAndClearsIndex(Lane)",
+      "result": "Passed",
+      "duration": "0.000196",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.LegacyCombatTests.xml"
+    },
+    {
+      "name": "LegacyCombatTests.ResetReplaysSeedAndClearsIndex(WideFront)",
+      "result": "Passed",
+      "duration": "0.000066",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.LegacyCombatTests.xml"
+    },
+    {
+      "name": "LegacyCombatTests.ResetReplaysSeedAndClearsIndex(Pincer)",
+      "result": "Passed",
+      "duration": "0.000074",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.LegacyCombatTests.xml"
+    },
+    {
+      "name": "LegacyCombatTests.ReusedSlotStartsWithFreshHealthAndSlowState",
+      "result": "Passed",
+      "duration": "0.000128",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.LegacyCombatTests.xml"
+    },
+    {
+      "name": "LegacyCombatTests.WorldsAndDamageRemainIndependent",
+      "result": "Passed",
+      "duration": "0.000133",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.LegacyCombatTests.xml"
+    },
+    {
+      "name": "EternalSteam.Demo.Tests.HordeDeploymentTests.AimingBeyondMapClampsRangeWhileIdleOutsideMapIsHidden",
+      "result": "Passed",
+      "duration": "0.000727",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.LegacyDeploymentTests.xml"
+    },
+    {
+      "name": "EternalSteam.Demo.Tests.HordeDeploymentTests.CameraFramingRejectsNonfiniteViewportAndFitsBothMapSizes",
+      "result": "Passed",
+      "duration": "0.000593",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.LegacyDeploymentTests.xml"
+    },
+    {
+      "name": "EternalSteam.Demo.Tests.HordeDeploymentTests.CombatAndUiBlockingCannotCommit(False,False)",
+      "result": "Passed",
+      "duration": "0.000160",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.LegacyDeploymentTests.xml"
+    },
+    {
+      "name": "EternalSteam.Demo.Tests.HordeDeploymentTests.CombatAndUiBlockingCannotCommit(True,True)",
+      "result": "Passed",
+      "duration": "0.000013",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.LegacyDeploymentTests.xml"
+    },
+    {
+      "name": "EternalSteam.Demo.Tests.HordeDeploymentTests.DeploymentHasNoSimulationOrInputSystemDependency",
+      "result": "Passed",
+      "duration": "0.000325",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.LegacyDeploymentTests.xml"
+    },
+    {
+      "name": "EternalSteam.Demo.Tests.HordeDeploymentTests.FailedPlacementKeepsEditAndCancellationNeedsNoPointer",
+      "result": "Passed",
+      "duration": "0.000141",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.LegacyDeploymentTests.xml"
+    },
+    {
+      "name": "EternalSteam.Demo.Tests.HordeDeploymentTests.InvalidGridCannotBeginAndConfirmationRevalidatesThroughCommand",
+      "result": "Passed",
+      "duration": "0.000098",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.LegacyDeploymentTests.xml"
+    },
+    {
+      "name": "EternalSteam.Demo.Tests.HordeDeploymentTests.TwoClicksCommitSnappedPositionAndPointerDirection",
+      "result": "Passed",
+      "duration": "0.000192",
+      "evidence": "Docs/Measurements/2026-10-03-test-restructure/all-EternalSteam.LegacyDeploymentTests.xml"
+    }
+  ]
+}

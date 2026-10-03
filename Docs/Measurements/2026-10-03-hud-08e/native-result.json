@@ -1,0 +1,12 @@
+{
+  "result": "PASS",
+  "os": "macOS",
+  "nativeHangulCompositionObserved": true,
+  "compositionCommittedBeforeTabSwitch": true,
+  "tabReturnRestoresTextAndFocus": true,
+  "escapePreservesTypedText": true,
+  "backgroundKeyInputBlocked": true,
+  "menuCloseRestoresTextAndFocus": true,
+  "compositionEscapeNoMenuObserved": true,
+  "coverage": "Observed local macOS input source and Unity Editor; not all platforms or IMEs."
+}

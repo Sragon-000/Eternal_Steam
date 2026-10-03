@@ -747,7 +747,8 @@ namespace GiantGrey.TileWorldCreator
 
 		public void OnDrawGizmos()
 		{
-			if (configuration == null) return;
+			// Eternal Steam: map painting is an authoring tool; gameplay has its own bounded grid.
+			if (Application.isPlaying || configuration == null) return;
 
 #if TWC_DEBUG
 			for (int i = 0; i < configuration.blueprintLayerFolders.Count; i++)

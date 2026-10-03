@@ -18,14 +18,14 @@ namespace EternalSteam.OpenWorld
         public bool BlocksInput=>IsOpen||opacity>0||consumedFrame==Time.frameCount;
         public bool Composing {get;private set;}
         float opacity;
-        int consumedFrame=-1;
+        int consumedFrame=-1,compositionEndedFrame=-1;
         Keyboard keyboard;
         TMP_InputField rememberedInput;
-        bool restoreFocus;
+        bool restoreFocus,rememberedInputEnabled,inputSuspended;
         public bool HasUnsavedWork=>Hud.Input.IsEditing||(Hud.Input.Edits?.Count??0)>0||Hud.Sandbox.RailwayHud?.HasDraft==true;
         void OnEnable(){keyboard=Keyboard.current;if(keyboard!=null)keyboard.onIMECompositionChange+=Composition;}
-        void OnDisable(){if(keyboard!=null)keyboard.onIMECompositionChange-=Composition;Composing=false;IsOpen=false;opacity=0;if(Overlay!=null)Overlay.gameObject.SetActive(false);}
-        void Composition(UnityEngine.InputSystem.LowLevel.IMECompositionString value){Composing=value.Count>0;}
+        void OnDisable(){RestoreInput(false);if(keyboard!=null)keyboard.onIMECompositionChange-=Composition;Composing=false;IsOpen=false;opacity=0;if(Overlay!=null)Overlay.gameObject.SetActive(false);}
+        void Composition(UnityEngine.InputSystem.LowLevel.IMECompositionString value){if(Composing&&value.Count==0)compositionEndedFrame=Time.frameCount;Composing=value.Count>0;}
         void Awake(){Overlay.alpha=0;Overlay.gameObject.SetActive(false);}
         void Update()
         {
@@ -35,7 +35,7 @@ namespace EternalSteam.OpenWorld
         public void Escape()
         {
             consumedFrame=Time.frameCount;
-            if(Composing)return;
+            if(Composing||compositionEndedFrame==Time.frameCount)return;
             if(IsOpen&&LoadConfirmation.activeSelf){LoadConfirmation.SetActive(false);return;}
             if(IsOpen&&NewGameConfirmation.activeSelf){NewGameConfirmation.SetActive(false);return;}
             if(IsOpen&&Developer.activeSelf){Developer.SetActive(false);return;}
@@ -46,8 +46,9 @@ namespace EternalSteam.OpenWorld
             if(IsOpen==open)return;
             consumedFrame=Time.frameCount;
             if(open){
-                rememberedInput=EventSystem.current?.currentSelectedGameObject?.GetComponent<TMP_InputField>();
-                if(rememberedInput!=null)rememberedInput.DeactivateInputField();
+                // Keep the original field across close/reopen while the modal is still fading.
+                if(!inputSuspended){rememberedInput=EventSystem.current?.currentSelectedGameObject?.GetComponent<TMP_InputField>();
+                    if(rememberedInput!=null){rememberedInputEnabled=rememberedInput.enabled;rememberedInput.DeactivateInputField();rememberedInput.enabled=false;inputSuspended=true;}}
                 EventSystem.current?.SetSelectedGameObject(null);
                 Hud.Input.AbortPointer();Hud.Minimap.CancelInteraction();
                 LoadConfirmation.SetActive(false);NewGameConfirmation.SetActive(false);Developer.SetActive(false);
@@ -61,10 +62,20 @@ namespace EternalSteam.OpenWorld
             Overlay.alpha=opacity*opacity*(3-2*opacity);
             Overlay.interactable=IsOpen&&opacity>=1;
             Content.interactable=Content.blocksRaycasts=!LoadConfirmation.activeSelf&&!Developer.activeSelf;
-            if(!IsOpen&&opacity<=0){Overlay.gameObject.SetActive(false);if(restoreFocus){restoreFocus=false;if(rememberedInput!=null&&rememberedInput.gameObject.activeInHierarchy){EventSystem.current?.SetSelectedGameObject(rememberedInput.gameObject);rememberedInput.ActivateInputField();}}}
-            UpdateGeometry();
+            if(!IsOpen&&opacity<=0){Overlay.gameObject.SetActive(false);if(restoreFocus){restoreFocus=false;RestoreInput(true);}}
+            if(Overlay.gameObject.activeSelf)UpdateGeometry();
         }
-        void LateUpdate(){UpdateGeometry();}
+        void RestoreInput(bool focus)
+        {
+            if(!inputSuspended)return;
+            inputSuspended=false;
+            if(rememberedInput!=null){
+                rememberedInput.enabled=rememberedInputEnabled;
+                if(focus&&rememberedInputEnabled&&rememberedInput.gameObject.activeInHierarchy){EventSystem.current?.SetSelectedGameObject(rememberedInput.gameObject);rememberedInput.ActivateInputField();}
+            }
+            rememberedInput=null;
+        }
+        void LateUpdate(){if(Overlay.gameObject.activeSelf)UpdateGeometry();}
         void UpdateGeometry()
         {
             float scale=Mathf.Max(.01f,Hud.Layout.Canvas.scaleFactor);

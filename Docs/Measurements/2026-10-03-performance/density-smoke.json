@@ -1,0 +1,9 @@
+{
+  "scene": "Assets/EternalSteam/Scene/Tests/OpenWorldSandbox.unity",
+  "campaignAvailable": false,
+  "alive": 1000,
+  "defeated": false,
+  "pendingSimulationSeconds": 0.0,
+  "result": "PASS",
+  "researchExperiment": false
+}

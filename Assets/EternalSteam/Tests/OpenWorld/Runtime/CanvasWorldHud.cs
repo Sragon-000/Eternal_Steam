@@ -36,6 +36,7 @@ namespace EternalSteam.OpenWorld
         public string[] ResourcePriority=Array.Empty<string>();
         readonly Dictionary<string,TMP_Text> texts=new();readonly Dictionary<string,UnityEngine.UI.Button> buttons=new();readonly Dictionary<string,GameObject> sections=new();
         readonly List<RaycastResult> hits=new();readonly List<ProductionModuleDefinition> resources=new();readonly List<string> resourceNames=new();readonly StringBuilder buffer=new();
+        double nextRefresh;bool previousEditing,previousConstruction,previousModal;BuildingInstance previousSelection;
         OpenWorldHudActions actions;PointerEventData pointer;bool showAll=true,hasPriority;int category=-1;
         void Start()
         {
@@ -113,7 +114,7 @@ namespace EternalSteam.OpenWorld
         }
         public void Refresh()
         {
-            if(actions==null)return;bool editing=Input.IsEditing,locked=Sandbox.Content.Defeated||Sandbox.Persistence?.Blocked==true;
+            if(actions==null)return;nextRefresh=Time.unscaledTimeAsDouble+.1;bool editing=Input.IsEditing,locked=Sandbox.Content.Defeated||Sandbox.Persistence?.Blocked==true;
             Text("message",Sandbox.Message);Text("placement-hint",Input.PlacementHint);Show("placement-hint",!string.IsNullOrEmpty(Input.PlacementHint));Text("mode",actions.Mode);
             var clock=Sandbox.Clock;long seconds=(long)Math.Ceiling(clock.RemainingSeconds);
             Text("date",$"{clock.Day}일차 · {(clock.Phase==DayPhase.Day?"낮":"밤")}");Text("remaining",$"{(clock.Phase==DayPhase.Day?"밤":"낮")}까지 {seconds/60:00}:{seconds%60:00}");
@@ -247,7 +248,14 @@ namespace EternalSteam.OpenWorld
             bool modal=Sandbox.PauseMenu!=null&&Sandbox.PauseMenu.BlocksInput;
             Input.PointerOverUI=Layout.CompactDock?.Transitioning==true||modal||over||Minimap.Interacting||(Groups!=null&&Groups.Transitioning);Sandbox.CameraRig.BlockPointer=Input.PointerOverUI||Input.Dragging;
             Sandbox.CameraRig.BlockKeyboard=Layout.CompactDock?.Transitioning==true||modal||(Groups!=null&&Groups.Transitioning)||(Sandbox.RailwayHud?.Typing??false)||Amount.isFocused||Input.Dragging||Minimap.Interacting||(mouse!=null&&Minimap.gameObject.activeInHierarchy&&Minimap.ContainsScreenPoint(mouse.position.ReadValue()));
-            if(Sandbox.PauseMenu==null&&(Keyboard.current?.escapeKey.wasPressedThisFrame??false))EndTyping();Refresh();
+            if(Sandbox.PauseMenu==null&&(Keyboard.current?.escapeKey.wasPressedThisFrame??false))EndTyping();
+            bool construction=Groups?.ConstructionSelected??true;
+            var selection=Input.SelectedContent??Input.SelectedTower?.building;
+            if(Time.unscaledTimeAsDouble>=nextRefresh||previousEditing!=Input.IsEditing||previousConstruction!=construction||previousModal!=modal||previousSelection!=selection){
+                previousEditing=Input.IsEditing;previousConstruction=construction;previousModal=modal;previousSelection=selection;Refresh();
+            }
+            // The clock hand and input remain frame-driven; formatted labels refresh at 10 Hz.
+            var clock=Sandbox.Clock;if(ClockHand!=null&&clock!=null&&ClockHand.gameObject.activeInHierarchy)ClockHand.localRotation=Quaternion.Euler(0,0,-360*(float)((clock.Phase==DayPhase.Day?0:.5)+clock.PhaseProgress*.5));
         }
         void OnDisable(){if(Input!=null)Input.PointerOverUI=false;if(Sandbox?.CameraRig!=null){Sandbox.CameraRig.BlockPointer=false;Sandbox.CameraRig.BlockKeyboard=false;}Minimap?.CancelInteraction();}
     }

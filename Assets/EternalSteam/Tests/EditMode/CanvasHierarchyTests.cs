@@ -7,13 +7,14 @@ using UnityEngine.EventSystems;
 using EternalSteam.OpenWorld;
 namespace EternalSteam.Tests
 {
-    public sealed class CanvasHierarchyTests
+    [Category("CurrentScene")]
+public sealed class CanvasHierarchyTests
     {
-        [TestCase("StartRegionSandbox")]
-        [TestCase("OpenWorldSandbox")]
-        public void SavedResourceColumnsFitLongQuantitiesWithoutOverlap(string name)
+[Test]
+
+        public void SavedResourceColumnsFitLongQuantitiesWithoutOverlap()
         {
-            var scene=EditorSceneManager.OpenPreviewScene("Assets/EternalSteam/Scene/Tests/"+name+".unity");
+            var scene=CurrentSceneFixture.Open();var name=scene.name;
             try{
                 var hud=scene.GetRootGameObjects().SelectMany(r=>r.GetComponentsInChildren<CanvasWorldHud>(true)).Single();
                 var names=hud.Texts.Single(x=>x.Id=="resources").View;
@@ -25,14 +26,13 @@ namespace EternalSteam.Tests
                 var nameRight=content.rect.center.x+names.rectTransform.anchoredPosition.x+names.rectTransform.rect.xMax;
                 var valueLeft=content.rect.center.x+values.rectTransform.anchoredPosition.x+values.rectTransform.rect.xMin;
                 Assert.That(nameRight,Is.LessThan(valueLeft),name);
-            }finally{EditorSceneManager.ClosePreviewScene(scene);}
+            }finally{CurrentSceneFixture.Close(scene);}
         }
+[Test]
 
-        [TestCase("StartRegionSandbox")]
-        [TestCase("OpenWorldSandbox")]
-        public void SavedRailwayPanelClearsResourcePanel(string name)
+        public void SavedRailwayPanelClearsResourcePanel()
         {
-            var scene=EditorSceneManager.OpenPreviewScene("Assets/EternalSteam/Scene/Tests/"+name+".unity");
+            var scene=CurrentSceneFixture.Open();var name=scene.name;
             try{
                 var roots=scene.GetRootGameObjects();
                 var world=roots.SelectMany(r=>r.GetComponentsInChildren<CanvasWorldHud>(true)).Single();
@@ -40,20 +40,20 @@ namespace EternalSteam.Tests
                 var resource=world.Layout.ResourcePanel;
                 var leftStatus=(RectTransform)resource.parent;
                 var panel=(RectTransform)railway.Panel.transform;
-                // Preview scenes have no display; normalize the Canvas transform before comparing bounds.
+                // Layout checks normalize the current Canvas temporarily; normalize the Canvas transform before comparing bounds.
                 world.transform.localScale=Vector3.one;
                 // Compare the same canvas space after reparenting the railway panel into its workspace.
                 var corners=new Vector3[4];resource.GetWorldCorners(corners);
                 float resourceRight=world.transform.InverseTransformPoint(corners[2]).x;
                 panel.GetWorldCorners(corners);float panelLeft=world.transform.InverseTransformPoint(corners[0]).x;
                 Assert.That(panelLeft-resourceRight,Is.GreaterThanOrEqualTo(8f),name);
-            }finally{EditorSceneManager.ClosePreviewScene(scene);}
+            }finally{CurrentSceneFixture.Close(scene);}
         }
+[Test]
 
-        [TestCase("StartRegionSandbox")][TestCase("OpenWorldSandbox")]
-        public void SavedStationContextHasClickableNamesAndDetailEntry(string name)
+        public void SavedStationContextHasClickableNamesAndDetailEntry()
         {
-            var scene=EditorSceneManager.OpenPreviewScene("Assets/EternalSteam/Scene/Tests/"+name+".unity");
+            var scene=CurrentSceneFixture.Open();var name=scene.name;
             try{
                 var roots=scene.GetRootGameObjects();var h=roots.SelectMany(r=>r.GetComponentsInChildren<RailwayHud>(true)).Single();
                 Assert.That(h.StationContextPanel,Is.Not.Null);Assert.That(h.StationContextHeader,Is.Not.Null);Assert.That(h.StationRows.Length,Is.EqualTo(4));
@@ -62,44 +62,48 @@ namespace EternalSteam.Tests
                 }
                 var world=roots.SelectMany(r=>r.GetComponentsInChildren<CanvasWorldHud>(true)).Single();var entry=world.Buttons.Single(x=>x.Id=="station-railway").View;
                 Assert.That(entry.onClick.GetPersistentTarget(0),Is.EqualTo(world));Assert.That(entry.onClick.GetPersistentMethodName(0),Is.EqualTo("Execute"));
-            }finally{EditorSceneManager.ClosePreviewScene(scene);}
+            }finally{CurrentSceneFixture.Close(scene);}
         }
-        [TestCase("StartRegionSandbox")][TestCase("OpenWorldSandbox")]
-        public void SavedRailwayDiagnosticsHaveSelectableRows(string name)
+[Test]
+
+        public void SavedRailwayDiagnosticsHaveSelectableRows()
         {
-            var scene=EditorSceneManager.OpenPreviewScene("Assets/EternalSteam/Scene/Tests/"+name+".unity");
+            var scene=CurrentSceneFixture.Open();var name=scene.name;
             try{var h=scene.GetRootGameObjects().SelectMany(r=>r.GetComponentsInChildren<RailwayHud>(true)).Single();Assert.That(h.IssueHeader,Is.Not.Null);Assert.That(h.IssueRows.Length,Is.EqualTo(3));
                 foreach(var command in new[]{"issue:0","issue:1","issue:2","issue-prev","issue-next"}){var b=h.Commands.Single(x=>x.Command==command).Button;Assert.That(b.transform.IsChildOf(h.DraftStopsPanel.transform),Is.True);Assert.That(b.onClick.GetPersistentTarget(0),Is.EqualTo(h));Assert.That(b.onClick.GetPersistentMethodName(0),Is.EqualTo("Execute"));}
-            }finally{EditorSceneManager.ClosePreviewScene(scene);}
+            }finally{CurrentSceneFixture.Close(scene);}
         }
-        [TestCase("StartRegionSandbox")][TestCase("OpenWorldSandbox")]
-        public void SavedRailwayMapEditorHasFourPortMarkersAndSegmentRenderer(string name)
+[Test]
+
+        public void SavedRailwayMapEditorHasFourPortMarkersAndSegmentRenderer()
         {
-            var scene=EditorSceneManager.OpenPreviewScene("Assets/EternalSteam/Scene/Tests/"+name+".unity");
+            var scene=CurrentSceneFixture.Open();var name=scene.name;
             try{
                 var h=scene.GetRootGameObjects().SelectMany(r=>r.GetComponentsInChildren<RailwayHud>(true)).Single();var v=h.Sandbox.RailwayView;
                 Assert.That(h.SelectedSegment,Is.Not.Null);Assert.That(v.SelectedLegHighlight,Is.Not.Null);Assert.That(v.SelectedLegHighlight,Is.Not.EqualTo(v.RouteHighlight));Assert.That(v.SelectedLegHighlight.enabled,Is.False);
                 Assert.That(v.PortFrames.Length,Is.EqualTo(4));Assert.That(v.PortLabels.Length,Is.EqualTo(4));
                 for(int i=0;i<4;i++){Assert.That(v.PortFrames[i],Is.Not.Null);Assert.That(v.PortFrames[i].gameObject.activeSelf,Is.False);Assert.That(v.PortLabels[i],Is.Not.Null);Assert.That(v.PortLabels[i].GetComponentInParent<Canvas>(true).renderMode,Is.EqualTo(RenderMode.WorldSpace));Assert.That(v.PortLabels[i].transform.IsChildOf(v.PortFrames[i].transform),Is.True);}
                 foreach(var cmd in new[]{"map-arrival","map-departure","map-cancel"}){var b=h.Commands.Single(x=>x.Command==cmd).Button;Assert.That(b.onClick.GetPersistentTarget(0),Is.EqualTo(h));Assert.That(b.onClick.GetPersistentMethodName(0),Is.EqualTo("Execute"));}
-            }finally{EditorSceneManager.ClosePreviewScene(scene);}
+            }finally{CurrentSceneFixture.Close(scene);}
         }
-        [TestCase("StartRegionSandbox")][TestCase("OpenWorldSandbox")]
-        public void SavedRailwayOrderEditorHasRowsAndPersistentCommands(string name)
+[Test]
+
+        public void SavedRailwayOrderEditorHasRowsAndPersistentCommands()
         {
-            var scene=EditorSceneManager.OpenPreviewScene("Assets/EternalSteam/Scene/Tests/"+name+".unity");
+            var scene=CurrentSceneFixture.Open();var name=scene.name;
             try{
                 var h=scene.GetRootGameObjects().SelectMany(r=>r.GetComponentsInChildren<RailwayHud>(true)).Single();
                 Assert.That(h.DraftStopsPanel,Is.Not.Null);Assert.That(h.DraftStopsPanel.activeSelf,Is.False);Assert.That(h.DraftSelection,Is.Not.Null);Assert.That(h.DraftRows.Length,Is.EqualTo(4));
                 foreach(var command in new[]{"draft-row:0","draft-row:1","draft-row:2","draft-row:3","draft-prev","draft-next","down","first","open-loop","close-loop"}){
                     var b=h.Commands.Single(x=>x.Command==command).Button;Assert.That(b.transform.IsChildOf(h.DraftStopsPanel.transform),Is.True);Assert.That(b.onClick.GetPersistentTarget(0),Is.EqualTo(h));Assert.That(b.onClick.GetPersistentMethodName(0),Is.EqualTo("Execute"));Assert.That(b.GetComponent<UnityEngine.UI.Image>().raycastTarget,Is.True);
                 }
-            }finally{EditorSceneManager.ClosePreviewScene(scene);}
+            }finally{CurrentSceneFixture.Close(scene);}
         }
-        [TestCase("StartRegionSandbox")][TestCase("OpenWorldSandbox")]
-        public void RailwayConfirmationAndDiscardAreAuthoredWithPersistentCommands(string name)
+[Test]
+
+        public void RailwayConfirmationAndDiscardAreAuthoredWithPersistentCommands()
         {
-            var scene=EditorSceneManager.OpenPreviewScene("Assets/EternalSteam/Scene/Tests/"+name+".unity");
+            var scene=CurrentSceneFixture.Open();var name=scene.name;
             try{
                 var h=scene.GetRootGameObjects().SelectMany(r=>r.GetComponentsInChildren<RailwayHud>(true)).Single();
                 Assert.That(h.ConfirmPanel,Is.Not.Null);Assert.That(h.DiscardPanel,Is.Not.Null);Assert.That(h.CommandHints,Is.Not.Null);
@@ -110,13 +114,13 @@ namespace EternalSteam.Tests
                 }
                 Assert.That(h.Commands.Single(b=>b.Command=="commit").Button.transform.IsChildOf(h.ConfirmPanel.transform),Is.True);
                 Assert.That(h.Commands.Single(b=>b.Command=="keep").Button.transform.IsChildOf(h.DiscardPanel.transform),Is.True);
-            }finally{EditorSceneManager.ClosePreviewScene(scene);}
+            }finally{CurrentSceneFixture.Close(scene);}
         }
-        [TestCase("StartRegionSandbox")]
-        [TestCase("OpenWorldSandbox")]
-        public void SavedSceneOwnsCanvasControlsCallbacksAndConstructionObjects(string name)
+[Test]
+
+        public void SavedSceneOwnsCanvasControlsCallbacksAndConstructionObjects()
         {
-            var scene=EditorSceneManager.OpenPreviewScene("Assets/EternalSteam/Scene/Tests/"+name+".unity");
+            var scene=CurrentSceneFixture.Open();var name=scene.name;
             try {
                 var roots=scene.GetRootGameObjects();var hud=roots.SelectMany(r=>r.GetComponentsInChildren<CanvasWorldHud>(true)).Single();
                 Assert.That(hud.gameObject.activeSelf,Is.True);Assert.That(hud.GetComponent<Canvas>(),Is.Not.Null);Assert.That(hud.GetComponent<UnityEngine.UI.CanvasScaler>(),Is.Not.Null);Assert.That(hud.Raycaster,Is.Not.Null);
@@ -154,7 +158,7 @@ namespace EternalSteam.Tests
                     foreach(string key in new[]{"renderers","filters"}){var array=serialized.FindProperty(key);Assert.That(array.arraySize,Is.EqualTo(9));for(int i=0;i<9;i++)Assert.That(array.GetArrayElementAtIndex(i).objectReferenceValue,Is.Not.Null);}
                     Assert.That(view.GetComponentsInChildren<Collider>(true),Is.Empty);
                 }
-            } finally {EditorSceneManager.ClosePreviewScene(scene);}
+            } finally {CurrentSceneFixture.Close(scene);}
         }
     }
 }

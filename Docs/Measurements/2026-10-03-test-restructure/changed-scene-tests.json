@@ -1,0 +1,13 @@
+[
+  "Assets/EternalSteam/Tests/EditMode/RailwayServicePanelTests.cs",
+  "Assets/EternalSteam/Tests/EditMode/ConstructionHudWorkflowTests.cs",
+  "Assets/EternalSteam/Tests/EditMode/CompactConstructionDockTests.cs",
+  "Assets/EternalSteam/Tests/EditMode/HudModeGroupsTests.cs",
+  "Assets/EternalSteam/Tests/EditMode/RailwayEditorPanelTests.cs",
+  "Assets/EternalSteam/Tests/EditMode/ResponsiveHudBoundsTests.cs",
+  "Assets/EternalSteam/Tests/EditMode/RailwayOverviewTests.cs",
+  "Assets/EternalSteam/Tests/EditMode/CircularMinimapTests.cs",
+  "Assets/EternalSteam/Tests/EditMode/HudPauseMenuTests.cs",
+  "Assets/EternalSteam/Tests/EditMode/BaseResourceAccordionTests.cs",
+  "Assets/EternalSteam/Tests/EditMode/CanvasHierarchyTests.cs"
+]

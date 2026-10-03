@@ -1,0 +1,4 @@
+using System;using System.IO;using System.Linq;using UnityEditor;using UnityEngine;using GiantGrey.TileWorldCreator;using Newtonsoft.Json.Linq;
+public static class OptimizeEditorGizmos{
+ public static string Main(){if(Application.isPlaying)throw new Exception("Edit required");var rows=new JArray();foreach(var id in AssetDatabase.FindAssets("t:Configuration")){var path=AssetDatabase.GUIDToAssetPath(id);if(!path.StartsWith("Assets/EternalSteam/"))continue;var c=AssetDatabase.LoadAssetAtPath<Configuration>(path);if(c==null)continue;rows.Add(new JObject{{"path",path},{"showPaintGridBefore",c.showPaintGrid}});if(c.showPaintGrid){c.showPaintGrid=false;EditorUtility.SetDirty(c);}}AssetDatabase.SaveAssets();Directory.CreateDirectory("Docs/Measurements/2026-10-03-performance");File.WriteAllText("Docs/Measurements/2026-10-03-performance/gizmo-authoring.json",rows.ToString());return rows.ToString();}
+}

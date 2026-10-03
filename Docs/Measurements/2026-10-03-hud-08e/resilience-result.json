@@ -1,0 +1,14 @@
+{
+  "result": "PASS",
+  "saveWriteFailurePreservesModal": true,
+  "nightAndEnemySaveGuards": true,
+  "menuDuringGroupTransition": true,
+  "denseEnemies": 1000,
+  "forcedUpdateSamples": 120,
+  "updateMedianMs": 0.1469,
+  "updateP95Ms": 0.1598,
+  "updateMaxMs": 0.18080000000000002,
+  "scope": "Editor forced minimap Update only; excludes mesh submission and full frame. No target-device performance acceptance.",
+  "textureReused": true,
+  "researchExperiment": false
+}

@@ -1,0 +1,302 @@
+{
+  "scripts": 197,
+  "groups": {
+    "Assets/EternalSteam/Code/Economy": 9,
+    "Assets/EternalSteam/Code/Combat": 12,
+    "Assets/EternalSteam/Code/Contracts": 3,
+    "Assets/EternalSteam/Code/Railway": 8,
+    "Assets/EternalSteam/Code/Content": 3,
+    "Assets/EternalSteam/Code/Time": 1,
+    "Assets/EternalSteam/Code/LegacyDemo": 20,
+    "Assets/EternalSteam/Code/Movement": 1,
+    "Assets/EternalSteam/Code/Persistence": 2,
+    "Assets/EternalSteam/Code/Progression": 7,
+    "Assets/EternalSteam/Code/Editor": 2,
+    "Assets/EternalSteam/Code/Building": 10,
+    "Assets/EternalSteam/Code/Placement": 2,
+    "Assets/EternalSteam/Tests/PlayMode": 2,
+    "Assets/EternalSteam/Tests/EditMode": 30,
+    "Assets/EternalSteam/Tests/Templates": 2,
+    "Assets/EternalSteam/Tests/OpenWorld": 75,
+    "Assets/EternalSteam/Tests/Sandbox": 5,
+    "Assets/EternalSteam/Tests/Legacy": 3
+  },
+  "assemblies": [
+    {
+      "path": "Assets/EternalSteam/Code/EternalSteam.Runtime.asmdef",
+      "name": "EternalSteam.Runtime",
+      "references": [],
+      "includePlatforms": [],
+      "tests": false
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Economy/EternalSteam.Economy.asmdef",
+      "name": "EternalSteam.Economy",
+      "references": [
+        "EternalSteam.Runtime"
+      ],
+      "includePlatforms": [],
+      "tests": false
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Combat/EternalSteam.Combat.asmdef",
+      "name": "EternalSteam.Combat",
+      "references": [
+        "EternalSteam.Runtime"
+      ],
+      "includePlatforms": [],
+      "tests": false
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Railway/EternalSteam.Railway.asmdef",
+      "name": "EternalSteam.Railway",
+      "references": [
+        "EternalSteam.Runtime"
+      ],
+      "includePlatforms": [],
+      "tests": false
+    },
+    {
+      "path": "Assets/EternalSteam/Code/LegacyDemo/EternalSteam.LegacyDemo.asmdef",
+      "name": "EternalSteam.LegacyDemo",
+      "references": [
+        "Unity.InputSystem",
+        "EternalSteam.LegacyDefinitions",
+        "EternalSteam.LegacyDeployment",
+        "EternalSteam.LegacyPresentation",
+        "EternalSteam.Runtime",
+        "EternalSteam.LegacyBuildings",
+        "EternalSteam.LegacyCombat"
+      ],
+      "includePlatforms": [],
+      "tests": false
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Movement/EternalSteam.Movement.asmdef",
+      "name": "EternalSteam.Movement",
+      "references": [
+        "EternalSteam.Runtime"
+      ],
+      "includePlatforms": [],
+      "tests": false
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Progression/EternalSteam.Progression.asmdef",
+      "name": "EternalSteam.Progression",
+      "references": [
+        "EternalSteam.Runtime"
+      ],
+      "includePlatforms": [],
+      "tests": false
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Editor/EternalSteam.Editor.asmdef",
+      "name": "EternalSteam.Editor",
+      "references": [
+        "EternalSteam.Runtime",
+        "EternalSteam.Sandbox",
+        "EternalSteam.Combat",
+        "EternalSteam.Progression",
+        "EternalSteam.Economy",
+        "EternalSteam.Movement",
+        "EternalSteam.Presentation"
+      ],
+      "includePlatforms": [
+        "Editor"
+      ],
+      "tests": false
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Building/Presentation/EternalSteam.Presentation.asmdef",
+      "name": "EternalSteam.Presentation",
+      "references": [
+        "EternalSteam.Runtime"
+      ],
+      "includePlatforms": [],
+      "tests": false
+    },
+    {
+      "path": "Assets/EternalSteam/Code/LegacyDemo/Buildings/EternalSteam.LegacyBuildings.asmdef",
+      "name": "EternalSteam.LegacyBuildings",
+      "references": [
+        "EternalSteam.Runtime",
+        "EternalSteam.LegacyDefinitions",
+        "EternalSteam.LegacyDeployment",
+        "EternalSteam.LegacyPresentation",
+        "EternalSteam.LegacyCombat"
+      ],
+      "includePlatforms": [],
+      "tests": false
+    },
+    {
+      "path": "Assets/EternalSteam/Code/LegacyDemo/Combat/EternalSteam.LegacyCombat.asmdef",
+      "name": "EternalSteam.LegacyCombat",
+      "references": [
+        "EternalSteam.LegacyDefinitions"
+      ],
+      "includePlatforms": [],
+      "tests": false
+    },
+    {
+      "path": "Assets/EternalSteam/Code/LegacyDemo/Deployment/EternalSteam.LegacyDeployment.asmdef",
+      "name": "EternalSteam.LegacyDeployment",
+      "references": [
+        "EternalSteam.LegacyDefinitions"
+      ],
+      "includePlatforms": [],
+      "tests": false
+    },
+    {
+      "path": "Assets/EternalSteam/Code/LegacyDemo/Definitions/EternalSteam.LegacyDefinitions.asmdef",
+      "name": "EternalSteam.LegacyDefinitions",
+      "references": [],
+      "includePlatforms": [],
+      "tests": false
+    },
+    {
+      "path": "Assets/EternalSteam/Code/LegacyDemo/Presentation/EternalSteam.LegacyPresentation.asmdef",
+      "name": "EternalSteam.LegacyPresentation",
+      "references": [
+        "EternalSteam.LegacyDefinitions",
+        "EternalSteam.LegacyDeployment",
+        "Unity.InputSystem",
+        "EternalSteam.LegacyCombat"
+      ],
+      "includePlatforms": [],
+      "tests": false
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/PlayMode/EternalSteam.PlayModeTests.asmdef",
+      "name": "EternalSteam.PlayModeTests",
+      "references": [
+        "EternalSteam.Runtime",
+        "EternalSteam.Sandbox",
+        "EternalSteam.Combat",
+        "EternalSteam.Progression",
+        "EternalSteam.Economy",
+        "EternalSteam.Movement",
+        "EternalSteam.Presentation"
+      ],
+      "includePlatforms": [],
+      "tests": true
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/Sandbox/EternalSteam.Sandbox.asmdef",
+      "name": "EternalSteam.Sandbox",
+      "references": [
+        "EternalSteam.Runtime",
+        "Unity.InputSystem",
+        "EternalSteam.Combat",
+        "EternalSteam.Progression",
+        "EternalSteam.Economy",
+        "EternalSteam.Movement",
+        "EternalSteam.Presentation"
+      ],
+      "includePlatforms": [],
+      "tests": false
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/EditMode/EternalSteam.EditModeTests.asmdef",
+      "name": "EternalSteam.EditModeTests",
+      "references": [
+        "EternalSteam.Runtime",
+        "EternalSteam.Sandbox",
+        "EternalSteam.Combat",
+        "EternalSteam.Progression",
+        "EternalSteam.Economy",
+        "EternalSteam.Movement",
+        "EternalSteam.Presentation",
+        "EternalSteam.OpenWorldSandbox",
+        "Unity.TextMeshPro",
+        "UnityEngine.UI",
+        "EternalSteam.Railway",
+        "EternalSteam.LegacyCombat"
+      ],
+      "includePlatforms": [
+        "Editor"
+      ],
+      "tests": true
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/EternalSteam.OpenWorldSandbox.asmdef",
+      "name": "EternalSteam.OpenWorldSandbox",
+      "references": [
+        "EternalSteam.Runtime",
+        "EternalSteam.LegacyDefinitions",
+        "EternalSteam.LegacyDeployment",
+        "EternalSteam.LegacyBuildings",
+        "EternalSteam.LegacyCombat",
+        "EternalSteam.LegacyPresentation",
+        "Unity.InputSystem",
+        "EternalSteam.Combat",
+        "EternalSteam.Economy",
+        "EternalSteam.Progression",
+        "EternalSteam.Presentation",
+        "Unity.TextMeshPro",
+        "UnityEngine.UI",
+        "EternalSteam.Railway"
+      ],
+      "includePlatforms": [],
+      "tests": false
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Editor/EternalSteam.OpenWorldEditor.asmdef",
+      "name": "EternalSteam.OpenWorldEditor",
+      "references": [
+        "EternalSteam.OpenWorldSandbox",
+        "EternalSteam.Runtime",
+        "EternalSteam.LegacyDefinitions",
+        "EternalSteam.LegacyDeployment",
+        "EternalSteam.LegacyBuildings",
+        "EternalSteam.LegacyPresentation",
+        "EternalSteam.Combat",
+        "EternalSteam.Economy",
+        "EternalSteam.Progression",
+        "EternalSteam.Railway",
+        "GiantGrey.TileWorldCreator"
+      ],
+      "includePlatforms": [
+        "Editor"
+      ],
+      "tests": false
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/Legacy/Buildings/EternalSteam.LegacyBuildingTests.asmdef",
+      "name": "EternalSteam.LegacyBuildingTests",
+      "references": [
+        "EternalSteam.Runtime",
+        "EternalSteam.LegacyDefinitions",
+        "EternalSteam.LegacyBuildings"
+      ],
+      "includePlatforms": [
+        "Editor"
+      ],
+      "tests": true
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/Legacy/Combat/EternalSteam.LegacyCombatTests.asmdef",
+      "name": "EternalSteam.LegacyCombatTests",
+      "references": [
+        "EternalSteam.LegacyDefinitions",
+        "EternalSteam.LegacyCombat"
+      ],
+      "includePlatforms": [
+        "Editor"
+      ],
+      "tests": true
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/Legacy/EditMode/EternalSteam.LegacyDeploymentTests.asmdef",
+      "name": "EternalSteam.LegacyDeploymentTests",
+      "references": [
+        "EternalSteam.LegacyDefinitions",
+        "EternalSteam.LegacyDeployment",
+        "EternalSteam.LegacyPresentation"
+      ],
+      "includePlatforms": [
+        "Editor"
+      ],
+      "tests": true
+    }
+  ]
+}

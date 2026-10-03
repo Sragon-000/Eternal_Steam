@@ -67,7 +67,7 @@ namespace EternalSteam.OpenWorld
         {
             time+=dt;frame++;candidateCount=0;
             if(terrain!=null){navigation=terrain.Navigation;traversal=navigation.Grid;navigation.BeginStep();}
-            for(int i=0;i<states.Length;i++)
+            foreach(int i in enemies.ActiveIndices)
             {
                 ref readonly var enemy=ref enemies.GetEnemy(i);if(!enemy.alive)continue;
                 ref var state=ref states[i];if(state.Generation!=enemies.Generation(i))Spawn(i);
