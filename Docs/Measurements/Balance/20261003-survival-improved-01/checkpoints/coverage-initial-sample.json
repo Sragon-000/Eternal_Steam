@@ -1,0 +1,312 @@
+{
+  "sequence": 1,
+  "utc": "2026-10-03T12:32:21.5291080Z",
+  "kind": "begin",
+  "gameSeconds": 1956.713251285255,
+  "day": 5,
+  "phase": "Day",
+  "alive": 0,
+  "actors": [
+    {
+      "building": "e77e266f1c9b439d93aece15983612cf",
+      "definition": "defense.arc",
+      "position": {
+        "x": 31.1127,
+        "y": 0.411048144,
+        "z": 14.1421337
+      },
+      "range": 48.0,
+      "kinds": "All",
+      "operational": true,
+      "block": "None",
+      "combatPermitted": true,
+      "supplied": true,
+      "legacyCumulativeShots": null,
+      "nearestAliveDistance": null,
+      "groundInRange": 0,
+      "airInRange": 0,
+      "kindEligibleInRange": 0
+    },
+    {
+      "building": "a01874c1bb1e4d84bb86ff408065a984",
+      "definition": "defense.plasma_laser",
+      "position": {
+        "x": 19.7989922,
+        "y": 0.411048144,
+        "z": 26.8700562
+      },
+      "range": 54.0,
+      "kinds": "All",
+      "operational": true,
+      "block": "None",
+      "combatPermitted": true,
+      "supplied": true,
+      "legacyCumulativeShots": null,
+      "nearestAliveDistance": null,
+      "groundInRange": 0,
+      "airInRange": 0,
+      "kindEligibleInRange": 0
+    },
+    {
+      "building": "09fccb9ca6094338bf73fa427e67799f",
+      "definition": "defense.arc",
+      "position": {
+        "x": 29.6984863,
+        "y": 0.411048144,
+        "z": 32.52691
+      },
+      "range": 48.0,
+      "kinds": "All",
+      "operational": true,
+      "block": "None",
+      "combatPermitted": true,
+      "supplied": true,
+      "legacyCumulativeShots": null,
+      "nearestAliveDistance": null,
+      "groundInRange": 0,
+      "airInRange": 0,
+      "kindEligibleInRange": 0
+    },
+    {
+      "building": "4f4fb88785974732be4e464457e4faec",
+      "definition": "defense.plasma_laser",
+      "position": {
+        "x": 22.62742,
+        "y": 0.411048144,
+        "z": 38.1837654
+      },
+      "range": 54.0,
+      "kinds": "All",
+      "operational": true,
+      "block": "None",
+      "combatPermitted": true,
+      "supplied": true,
+      "legacyCumulativeShots": null,
+      "nearestAliveDistance": null,
+      "groundInRange": 0,
+      "airInRange": 0,
+      "kindEligibleInRange": 0
+    },
+    {
+      "building": "404bcfba3a25447c93a520853bbf5034",
+      "definition": "defense.tesla",
+      "position": {
+        "x": 12.7279243,
+        "y": 0.411048144,
+        "z": 31.1126976
+      },
+      "range": 15.0,
+      "kinds": "All",
+      "operational": true,
+      "block": "None",
+      "combatPermitted": true,
+      "supplied": true,
+      "legacyCumulativeShots": null,
+      "nearestAliveDistance": null,
+      "groundInRange": 0,
+      "airInRange": 0,
+      "kindEligibleInRange": 0
+    },
+    {
+      "building": "9390f04870574f398a69df37c5d4f614",
+      "definition": "defense.vulcan_aa",
+      "position": {
+        "x": 14.1421375,
+        "y": 0.411048144,
+        "z": 29.6984844
+      },
+      "range": 25.0,
+      "kinds": "Air",
+      "operational": true,
+      "block": "None",
+      "combatPermitted": true,
+      "supplied": true,
+      "legacyCumulativeShots": null,
+      "nearestAliveDistance": null,
+      "groundInRange": 0,
+      "airInRange": 0,
+      "kindEligibleInRange": 0
+    },
+    {
+      "building": "4c17b089c16f49fe97bef44d7709507a",
+      "definition": "defense.rail_aa",
+      "position": {
+        "x": 15.5563507,
+        "y": 0.411048144,
+        "z": 28.2842712
+      },
+      "range": 100.0,
+      "kinds": "All",
+      "operational": true,
+      "block": "None",
+      "combatPermitted": true,
+      "supplied": true,
+      "legacyCumulativeShots": null,
+      "nearestAliveDistance": null,
+      "groundInRange": 0,
+      "airInRange": 0,
+      "kindEligibleInRange": 0
+    },
+    {
+      "building": "829d7a732e3d430bb19ebbed30074b0c",
+      "definition": "defense.railgun",
+      "position": {
+        "x": 14.1421375,
+        "y": 0.411048144,
+        "z": 33.941124
+      },
+      "range": 60.0,
+      "kinds": "All",
+      "operational": true,
+      "block": "None",
+      "combatPermitted": true,
+      "supplied": true,
+      "legacyCumulativeShots": null,
+      "nearestAliveDistance": null,
+      "groundInRange": 0,
+      "airInRange": 0,
+      "kindEligibleInRange": 0
+    },
+    {
+      "building": "e311266a28294672b5551732efac0c3a",
+      "definition": "defense.sky_plasma",
+      "position": {
+        "x": 16.9705639,
+        "y": 0.411048144,
+        "z": 31.1126976
+      },
+      "range": 50.0,
+      "kinds": "Air",
+      "operational": true,
+      "block": "None",
+      "combatPermitted": true,
+      "supplied": true,
+      "legacyCumulativeShots": null,
+      "nearestAliveDistance": null,
+      "groundInRange": 0,
+      "airInRange": 0,
+      "kindEligibleInRange": 0
+    },
+    {
+      "building": "8e017862b8744f7984978e2c6ac4363f",
+      "definition": "defense.smart_missile",
+      "position": {
+        "x": 22.6274185,
+        "y": 0.411048144,
+        "z": 29.6984844
+      },
+      "range": 70.0,
+      "kinds": "All",
+      "operational": true,
+      "block": "None",
+      "combatPermitted": true,
+      "supplied": true,
+      "legacyCumulativeShots": null,
+      "nearestAliveDistance": null,
+      "groundInRange": 0,
+      "airInRange": 0,
+      "kindEligibleInRange": 0
+    },
+    {
+      "building": "2acb62d1e51d4ed7860d3fec67ed91fa",
+      "definition": "defense.emp",
+      "position": {
+        "x": 32.5269127,
+        "y": 0.411048174,
+        "z": 19.7989883
+      },
+      "range": 25.0,
+      "kinds": "All",
+      "operational": true,
+      "block": "None",
+      "combatPermitted": true,
+      "supplied": true,
+      "legacyCumulativeShots": null,
+      "nearestAliveDistance": null,
+      "groundInRange": 0,
+      "airInRange": 0,
+      "kindEligibleInRange": 0
+    },
+    {
+      "building": "f2ee88f04386458598440ee938c869c4",
+      "definition": "openworld.legacy.MachineGun",
+      "position": {
+        "x": 1.414215,
+        "y": 0.701048136,
+        "z": 22.6274166
+      },
+      "range": 22.0,
+      "kinds": "All",
+      "operational": true,
+      "block": "None",
+      "combatPermitted": true,
+      "supplied": true,
+      "legacyCumulativeShots": 0,
+      "nearestAliveDistance": null,
+      "groundInRange": 0,
+      "airInRange": 0,
+      "kindEligibleInRange": 0
+    },
+    {
+      "building": "bead9d4efcfb484b87b90acf1489962d",
+      "definition": "openworld.legacy.Cannon",
+      "position": {
+        "x": 2.82842851,
+        "y": 0.701048136,
+        "z": 21.2132034
+      },
+      "range": 22.0,
+      "kinds": "All",
+      "operational": true,
+      "block": "None",
+      "combatPermitted": true,
+      "supplied": true,
+      "legacyCumulativeShots": 0,
+      "nearestAliveDistance": null,
+      "groundInRange": 0,
+      "airInRange": 0,
+      "kindEligibleInRange": 0
+    },
+    {
+      "building": "eedafba92f1c4882b5eb04f0c4038537",
+      "definition": "openworld.legacy.Frost",
+      "position": {
+        "x": 4.242642,
+        "y": 0.701048136,
+        "z": 19.7989883
+      },
+      "range": 22.0,
+      "kinds": "All",
+      "operational": true,
+      "block": "None",
+      "combatPermitted": true,
+      "supplied": true,
+      "legacyCumulativeShots": 0,
+      "nearestAliveDistance": null,
+      "groundInRange": 0,
+      "airInRange": 0,
+      "kindEligibleInRange": 0
+    },
+    {
+      "building": "075964e46b9746f9a4d0121cb9eb9331",
+      "definition": "openworld.legacy.Arrow",
+      "position": {
+        "x": 5.65685558,
+        "y": 0.701048136,
+        "z": 18.3847752
+      },
+      "range": 22.0,
+      "kinds": "All",
+      "operational": true,
+      "block": "None",
+      "combatPermitted": true,
+      "supplied": true,
+      "legacyCumulativeShots": 0,
+      "nearestAliveDistance": null,
+      "groundInRange": 0,
+      "airInRange": 0,
+      "kindEligibleInRange": 0
+    }
+  ],
+  "limitation": "One-second range opportunities omit turn alignment, slow-status filtering and sub-sample movement; legacy counters are cumulative, not hit or kill counts."
+}

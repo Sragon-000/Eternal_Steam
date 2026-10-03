@@ -1,0 +1,18 @@
+{
+  "recordedUtc": "2026-10-03T12:34:04.751192+00:00",
+  "change": "Added passive legacy shot/range observations; game code, rules, layout and active main recorder assembly unchanged.",
+  "startGameSeconds": 1956.713251285255,
+  "startDay": 5,
+  "initialLegacyShots": {
+    "openworld.legacy.MachineGun": 0,
+    "openworld.legacy.Cannon": 0,
+    "openworld.legacy.Frost": 0,
+    "openworld.legacy.Arrow": 0
+  },
+  "limitation": "No retrospective individual shot times; current cumulative values preserved. Earlier event-only zeros are not authoritative legacy activity proof.",
+  "sources": {
+    "Tools/Testing/Balance/CombatCoverageProbe.cs": "d48fad9a61ab1de82692e1e8f242f145c573895f667f429d60b799bfd7efccde",
+    "Tools/Testing/Balance/summarize_combat_coverage.py": "7f14f48d8e7cae2890bcff3d07d3d4eb933b062a4c00ce95aaaa83fa7f2f608b",
+    "Tools/Testing/Balance/audit_live_checkpoint.py": "35bb76e57cc62f185b45b42919324cf8bcf86bc3b7763bf02775364e5aa4168d"
+  }
+}
