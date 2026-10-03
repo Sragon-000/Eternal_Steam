@@ -30,3 +30,4 @@
 - [현재 씬 중심 테스트 기준·전체 항목](Testing/README.md)
 - [2026-10-03 테스트 개편 검증](Validation/2026-10-03-test-restructure.md)
 - [개발일지](DevelopmentLog/README.md)
+- [정상 플레이 사전 로직 감사·관측 검증](Validation/2026-10-03-playthrough-preflight.md)

@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/Testing/RunCurrentSceneChecks.cs",
+      "entry": "RunCurrentSceneChecks.Main",
+      "args": "[\"EconomyObservation\",\"Docs/Measurements/2026-10-03-playthrough-preflight\"]"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 33,
+      "executeMs": 28,
+      "assemblyName": "PipelineRunScript_RunCurrentSceneChecks_0b09bb6753764a898e2a9ee16f1fe96c",
+      "success": true,
+      "result": "{\n  \"scene\": \"Assets/EternalSteam/Scene/Tests/OpenWorldSandbox.unity\",\n  \"sceneHandleUnchanged\": true,\n  \"dirty\": false,\n  \"savedSceneBytesUnchanged\": true,\n  \"category\": \"EconomyObservation\",\n  \"assemblies\": [\n    {\n      \"assembly\": \"EternalSteam.EditModeTests\",\n      \"total\": 7,\n      \"passed\": 7,\n      \"failed\": 0,\n      \"skipped\": 0,\n      \"inconclusive\": 0,\n      \"xml\": \"/Users/limseth/Projects/Eternal_Steam/Eternal_Steam/Docs/Measurements/2026-10-03-playthrough-preflight/run-20261003-105147-766/EconomyObservation-EternalSteam.EditModeTests.xml\"\n    },\n    {\n      \"assembly\": \"EternalSteam.LegacyBuildingTests\",\n      \"total\": 0,\n      \"passed\": 0,\n      \"failed\": 0,\n      \"skipped\": 0,\n      \"inconclusive\": 0,\n      \"xml\": \"/Users/limseth/Projects/Eternal_Steam/Eternal_Steam/Docs/Measurements/2026-10-03-playthrough-preflight/run-20261003-105147-766/EconomyObservation-EternalSteam.LegacyBuildingTests.xml\"\n    },\n    {\n      \"assembly\": \"EternalSteam.LegacyCombatTests\",\n      \"total\": 0,\n      \"passed\": 0,\n      \"failed\": 0,\n      \"skipped\": 0,\n      \"inconclusive\": 0,\n      \"xml\": \"/Users/limseth/Projects/Eternal_Steam/Eternal_Steam/Docs/Measurements/2026-10-03-playthrough-preflight/run-20261003-105147-766/EconomyObservation-EternalSteam.LegacyCombatTests.xml\"\n    },\n    {\n      \"assembly\": \"EternalSteam.LegacyDeploymentTests\",\n      \"total\": 0,\n      \"passed\": 0,\n      \"failed\": 0,\n      \"skipped\": 0,\n      \"inconclusive\": 0,\n      \"xml\": \"/Users/limseth/Projects/Eternal_Steam/Eternal_Steam/Docs/Measurements/2026-10-03-playthrough-preflight/run-20261003-105147-766/EconomyObservation-EternalSteam.LegacyDeploymentTests.xml\"\n    }\n  ],\n  \"errors\": []\n}"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

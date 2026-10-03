@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/Testing/Balance/BalanceRecorder.cs",
+      "entry": "BalanceRecorder.Describe"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 52,
+      "executeMs": 0,
+      "assemblyName": "PipelineRunScript_BalanceRecorder_17a8a678ce0a4176a1dd6bf1f9691364",
+      "success": true,
+      "result": "Ledger events + lifecycle/damage/enemy events + 1-second snapshots + milestone screenshots; normal campaign only."
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

@@ -1,0 +1,2241 @@
+{
+  "utc": "2026-10-03T10:47:58.1921260Z",
+  "currentScene": "Assets/EternalSteam/Scene/Tests/OpenWorldSandbox.unity",
+  "auditedSceneFile": "Assets/EternalSteam/Scene/Tests/StartRegionSandbox.unity",
+  "auditedSceneSha256": "e277a1084efd32ff8d4d9df75cf2e9a63ee434739af4b111e05c4951f252778c",
+  "sceneOpened": false,
+  "catalog": "Assets/EternalSteam/Content/Buildings/StartLoop/Catalog.asset",
+  "buildings": [
+    {
+      "id": "installation.main_base",
+      "name": "메인 기지",
+      "asset": "Assets/EternalSteam/Content/Buildings/StartLoop/MainBase.asset",
+      "validationErrors": [],
+      "placement": {
+        "Surface": 1,
+        "RequiredNexusLevel": 1,
+        "VerificationSettings": true,
+        "RequiresBuildArea": false,
+        "RequiresOperationalArea": false,
+        "RequiresOwnerBase": false,
+        "SnapCells": 4
+      },
+      "placementAsset": "Assets/EternalSteam/Content/Buildings/BasePlanning/Main.placement.asset",
+      "values": {
+        "Id": "installation.main_base",
+        "DisplayName": "메인 기지",
+        "Category": 2,
+        "Footprint": {
+          "x": 4,
+          "y": 4
+        },
+        "Recoverable": false,
+        "Placement": {
+          "instanceID": 52734
+        },
+        "ViewPrefab": {
+          "instanceID": 79762
+        },
+        "Modules": [
+          {
+            "instanceID": 49352
+          },
+          {
+            "instanceID": 51174
+          },
+          {
+            "instanceID": 53302
+          },
+          {
+            "instanceID": 50110
+          },
+          {
+            "instanceID": 51402
+          },
+          {
+            "instanceID": 48772
+          }
+        ]
+      },
+      "modules": [
+        {
+          "type": "EternalSteam.BuildingCombatDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/installation.nexus.combat.asset",
+          "values": {
+            "Role": 2,
+            "BlocksGround": true
+          }
+        },
+        {
+          "type": "EternalSteam.BaseModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/BasePlanning/Main.identity.asset",
+          "values": {
+            "Role": 1
+          }
+        },
+        {
+          "type": "EternalSteam.BuildAreaModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartLoop/MainForwardArea.asset",
+          "values": {
+            "Shape": 1,
+            "Radius": 11.0,
+            "Yaw": 45.0,
+            "FromFrontEdge": true,
+            "AlignForwardCells": true,
+            "CellSize": 2.0,
+            "RadiusPerLevel": 0.0
+          }
+        },
+        {
+          "type": "EternalSteam.HealthModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/BasePlanning/Main.health.asset",
+          "values": {
+            "Maximum": 100.0
+          }
+        },
+        {
+          "type": "EternalSteam.MainBaseUpgradeDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/BasePower/SharedMainUpgrade.asset",
+          "values": {}
+        },
+        {
+          "type": "EternalSteam.PowerModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/BasePower/BaseStorage.asset",
+          "values": {
+            "Role": 0,
+            "Capacity": 200.0,
+            "CapacityPerLevel": 20.0,
+            "Rate": 5.0,
+            "VerificationSettings": true,
+            "ExternalAttackAdapter": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "installation.nexus",
+      "name": "서브 기지",
+      "asset": "Assets/EternalSteam/Content/Buildings/BasePower/installation.nexus.asset",
+      "validationErrors": [],
+      "placement": {
+        "Surface": 1,
+        "RequiredNexusLevel": 1,
+        "VerificationSettings": true,
+        "RequiresBuildArea": false,
+        "RequiresOperationalArea": false,
+        "RequiresOwnerBase": false,
+        "SnapCells": 1
+      },
+      "placementAsset": "Assets/EternalSteam/Content/Buildings/BasePlanning/Sub.placement.asset",
+      "values": {
+        "Id": "installation.nexus",
+        "DisplayName": "서브 기지",
+        "Category": 2,
+        "Footprint": {
+          "x": 3,
+          "y": 3
+        },
+        "Recoverable": true,
+        "Placement": {
+          "instanceID": 49282
+        },
+        "ViewPrefab": {
+          "instanceID": 79964
+        },
+        "Modules": [
+          {
+            "instanceID": 49352
+          },
+          {
+            "instanceID": 51970
+          },
+          {
+            "instanceID": 53418
+          },
+          {
+            "instanceID": 49152
+          },
+          {
+            "instanceID": 51858
+          },
+          {
+            "instanceID": 48772
+          }
+        ]
+      },
+      "modules": [
+        {
+          "type": "EternalSteam.BuildingCombatDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/installation.nexus.combat.asset",
+          "values": {
+            "Role": 2,
+            "BlocksGround": true
+          }
+        },
+        {
+          "type": "EternalSteam.BaseModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/BasePlanning/Sub.identity.asset",
+          "values": {
+            "Role": 2
+          }
+        },
+        {
+          "type": "EternalSteam.BuildAreaModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/BasePlanning/Sub.area.asset",
+          "values": {
+            "Shape": 1,
+            "Radius": 11.0,
+            "Yaw": 45.0,
+            "FromFrontEdge": false,
+            "AlignForwardCells": false,
+            "CellSize": 2.0,
+            "RadiusPerLevel": 1.0
+          }
+        },
+        {
+          "type": "EternalSteam.HealthModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/BasePlanning/Sub.health.asset",
+          "values": {
+            "Maximum": 100.0
+          }
+        },
+        {
+          "type": "EternalSteam.UpgradeModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/BasePlanning/Sub.upgrade.asset",
+          "values": {
+            "MaximumLevel": 10,
+            "RequireNexus": true,
+            "DamagePerLevel": 0.0,
+            "HealthPerLevel": 0.20000000298023224
+          }
+        },
+        {
+          "type": "EternalSteam.PowerModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/BasePower/BaseStorage.asset",
+          "values": {
+            "Role": 0,
+            "Capacity": 200.0,
+            "CapacityPerLevel": 20.0,
+            "Rate": 5.0,
+            "VerificationSettings": true,
+            "ExternalAttackAdapter": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "defense.tesla",
+      "name": "테슬라 타워",
+      "asset": "Assets/EternalSteam/Content/Buildings/BasePower/defense.tesla.asset",
+      "validationErrors": [],
+      "placement": {
+        "Surface": 2,
+        "RequiredNexusLevel": 1,
+        "VerificationSettings": true,
+        "RequiresBuildArea": false,
+        "RequiresOperationalArea": true,
+        "RequiresOwnerBase": true,
+        "SnapCells": 1
+      },
+      "placementAsset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.tesla.placement.asset",
+      "values": {
+        "Id": "defense.tesla",
+        "DisplayName": "테슬라 타워",
+        "Category": 0,
+        "Footprint": {
+          "x": 1,
+          "y": 1
+        },
+        "Recoverable": true,
+        "Placement": {
+          "instanceID": 49736
+        },
+        "ViewPrefab": {
+          "instanceID": 79962
+        },
+        "Modules": [
+          {
+            "instanceID": 49306
+          },
+          {
+            "instanceID": 51060
+          },
+          {
+            "instanceID": 53428
+          },
+          {
+            "instanceID": 51736
+          },
+          {
+            "instanceID": 49338
+          },
+          {
+            "instanceID": 51504
+          }
+        ]
+      },
+      "modules": [
+        {
+          "type": "EternalSteam.WeaponModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/defense.tesla.weapon.asset",
+          "values": {
+            "Schedule": 0,
+            "Delivery": 3,
+            "Source": 0,
+            "Targets": 3,
+            "BaseDamage": 100.0,
+            "DamageCoefficient": 0.800000011920929,
+            "Range": 15.0,
+            "Interval": 4.0,
+            "Angle": 360.0,
+            "BurstDuration": 5.0,
+            "Rest": 2.0,
+            "Radius": 0.0,
+            "ProjectileSpeed": 30.0,
+            "ProjectileLifetime": 12.0,
+            "PierceWidth": 0.60000002384185791,
+            "MaximumTargets": 1,
+            "MaximumHits": 3,
+            "JumpRange": 8.0,
+            "JumpInterval": 0.5,
+            "ChainDuration": 5.0,
+            "Retention": 0.20000000298023224,
+            "Status": 0,
+            "StatusDuration": 3.0,
+            "StatusStrength": 0.20000000298023224,
+            "TickDamage": 10.0,
+            "SameTargetSeconds": 3.0
+          }
+        },
+        {
+          "type": "EternalSteam.PerformanceUpgradeDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/defense.tesla.upgrade.asset",
+          "values": {
+            "MaximumLevel": 10
+          }
+        },
+        {
+          "type": "EternalSteam.TurretRotationDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.tesla.rotation.asset",
+          "values": {
+            "DegreesPerSecond": 180.0,
+            "AlignmentTolerance": 1.0
+          }
+        },
+        {
+          "type": "EternalSteam.HealthModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.tesla.health.asset",
+          "values": {
+            "Maximum": 100.0
+          }
+        },
+        {
+          "type": "EternalSteam.BuildingCombatDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.tesla.combat.asset",
+          "values": {
+            "Role": 1,
+            "BlocksGround": true
+          }
+        },
+        {
+          "type": "EternalSteam.PowerModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/BasePower/DefenseConsumer.asset",
+          "values": {
+            "Role": 2,
+            "Capacity": 200.0,
+            "CapacityPerLevel": 20.0,
+            "Rate": 5.0,
+            "VerificationSettings": true,
+            "ExternalAttackAdapter": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "defense.plasma_laser",
+      "name": "플라즈마 레이저 포탑",
+      "asset": "Assets/EternalSteam/Content/Buildings/BasePower/defense.plasma_laser.asset",
+      "validationErrors": [],
+      "placement": {
+        "Surface": 2,
+        "RequiredNexusLevel": 3,
+        "VerificationSettings": true,
+        "RequiresBuildArea": false,
+        "RequiresOperationalArea": true,
+        "RequiresOwnerBase": true,
+        "SnapCells": 1
+      },
+      "placementAsset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.plasma_laser.placement.asset",
+      "values": {
+        "Id": "defense.plasma_laser",
+        "DisplayName": "플라즈마 레이저 포탑",
+        "Category": 0,
+        "Footprint": {
+          "x": 1,
+          "y": 1
+        },
+        "Recoverable": true,
+        "Placement": {
+          "instanceID": 52936
+        },
+        "ViewPrefab": {
+          "instanceID": 79868
+        },
+        "Modules": [
+          {
+            "instanceID": 52558
+          },
+          {
+            "instanceID": 52166
+          },
+          {
+            "instanceID": 50612
+          },
+          {
+            "instanceID": 48842
+          },
+          {
+            "instanceID": 51962
+          },
+          {
+            "instanceID": 51504
+          }
+        ]
+      },
+      "modules": [
+        {
+          "type": "EternalSteam.WeaponModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/defense.plasma_laser.weapon.asset",
+          "values": {
+            "Schedule": 1,
+            "Delivery": 0,
+            "Source": 1,
+            "Targets": 3,
+            "BaseDamage": 100.0,
+            "DamageCoefficient": 0.25,
+            "Range": 45.0,
+            "Interval": 0.5,
+            "Angle": 360.0,
+            "BurstDuration": 5.0,
+            "Rest": 2.0,
+            "Radius": 0.0,
+            "ProjectileSpeed": 30.0,
+            "ProjectileLifetime": 12.0,
+            "PierceWidth": 0.60000002384185791,
+            "MaximumTargets": 1,
+            "MaximumHits": 3,
+            "JumpRange": 8.0,
+            "JumpInterval": 0.5,
+            "ChainDuration": 5.0,
+            "Retention": 0.20000000298023224,
+            "Status": 1,
+            "StatusDuration": 3.0,
+            "StatusStrength": 0.20000000298023224,
+            "TickDamage": 10.0,
+            "SameTargetSeconds": 3.0
+          }
+        },
+        {
+          "type": "EternalSteam.PerformanceUpgradeDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/defense.plasma_laser.upgrade.asset",
+          "values": {
+            "MaximumLevel": 10
+          }
+        },
+        {
+          "type": "EternalSteam.TurretRotationDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.plasma_laser.rotation.asset",
+          "values": {
+            "DegreesPerSecond": 180.0,
+            "AlignmentTolerance": 1.0
+          }
+        },
+        {
+          "type": "EternalSteam.HealthModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.plasma_laser.health.asset",
+          "values": {
+            "Maximum": 100.0
+          }
+        },
+        {
+          "type": "EternalSteam.BuildingCombatDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.plasma_laser.combat.asset",
+          "values": {
+            "Role": 1,
+            "BlocksGround": true
+          }
+        },
+        {
+          "type": "EternalSteam.PowerModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/BasePower/DefenseConsumer.asset",
+          "values": {
+            "Role": 2,
+            "Capacity": 200.0,
+            "CapacityPerLevel": 20.0,
+            "Rate": 5.0,
+            "VerificationSettings": true,
+            "ExternalAttackAdapter": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "defense.vulcan_aa",
+      "name": "발칸 대공포",
+      "asset": "Assets/EternalSteam/Content/Buildings/BasePower/defense.vulcan_aa.asset",
+      "validationErrors": [],
+      "placement": {
+        "Surface": 2,
+        "RequiredNexusLevel": 5,
+        "VerificationSettings": true,
+        "RequiresBuildArea": false,
+        "RequiresOperationalArea": true,
+        "RequiresOwnerBase": true,
+        "SnapCells": 1
+      },
+      "placementAsset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.vulcan_aa.placement.asset",
+      "values": {
+        "Id": "defense.vulcan_aa",
+        "DisplayName": "발칸 대공포",
+        "Category": 0,
+        "Footprint": {
+          "x": 1,
+          "y": 1
+        },
+        "Recoverable": true,
+        "Placement": {
+          "instanceID": 50940
+        },
+        "ViewPrefab": {
+          "instanceID": 79940
+        },
+        "Modules": [
+          {
+            "instanceID": 50246
+          },
+          {
+            "instanceID": 50760
+          },
+          {
+            "instanceID": 52252
+          },
+          {
+            "instanceID": 49762
+          },
+          {
+            "instanceID": 50954
+          },
+          {
+            "instanceID": 51504
+          }
+        ]
+      },
+      "modules": [
+        {
+          "type": "EternalSteam.WeaponModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/defense.vulcan_aa.weapon.asset",
+          "values": {
+            "Schedule": 2,
+            "Delivery": 0,
+            "Source": 0,
+            "Targets": 2,
+            "BaseDamage": 100.0,
+            "DamageCoefficient": 0.15000000596046448,
+            "Range": 25.0,
+            "Interval": 0.20000000298023224,
+            "Angle": 360.0,
+            "BurstDuration": 5.0,
+            "Rest": 2.0,
+            "Radius": 0.0,
+            "ProjectileSpeed": 30.0,
+            "ProjectileLifetime": 12.0,
+            "PierceWidth": 0.60000002384185791,
+            "MaximumTargets": 1,
+            "MaximumHits": 3,
+            "JumpRange": 8.0,
+            "JumpInterval": 0.5,
+            "ChainDuration": 5.0,
+            "Retention": 0.20000000298023224,
+            "Status": 0,
+            "StatusDuration": 3.0,
+            "StatusStrength": 0.20000000298023224,
+            "TickDamage": 10.0,
+            "SameTargetSeconds": 3.0
+          }
+        },
+        {
+          "type": "EternalSteam.PerformanceUpgradeDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/defense.vulcan_aa.upgrade.asset",
+          "values": {
+            "MaximumLevel": 10
+          }
+        },
+        {
+          "type": "EternalSteam.TurretRotationDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.vulcan_aa.rotation.asset",
+          "values": {
+            "DegreesPerSecond": 180.0,
+            "AlignmentTolerance": 1.0
+          }
+        },
+        {
+          "type": "EternalSteam.HealthModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.vulcan_aa.health.asset",
+          "values": {
+            "Maximum": 100.0
+          }
+        },
+        {
+          "type": "EternalSteam.BuildingCombatDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.vulcan_aa.combat.asset",
+          "values": {
+            "Role": 1,
+            "BlocksGround": true
+          }
+        },
+        {
+          "type": "EternalSteam.PowerModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/BasePower/DefenseConsumer.asset",
+          "values": {
+            "Role": 2,
+            "Capacity": 200.0,
+            "CapacityPerLevel": 20.0,
+            "Rate": 5.0,
+            "VerificationSettings": true,
+            "ExternalAttackAdapter": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "defense.rail_aa",
+      "name": "레일 대공포",
+      "asset": "Assets/EternalSteam/Content/Buildings/BasePower/defense.rail_aa.asset",
+      "validationErrors": [],
+      "placement": {
+        "Surface": 2,
+        "RequiredNexusLevel": 7,
+        "VerificationSettings": true,
+        "RequiresBuildArea": false,
+        "RequiresOperationalArea": true,
+        "RequiresOwnerBase": true,
+        "SnapCells": 1
+      },
+      "placementAsset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.rail_aa.placement.asset",
+      "values": {
+        "Id": "defense.rail_aa",
+        "DisplayName": "레일 대공포",
+        "Category": 0,
+        "Footprint": {
+          "x": 1,
+          "y": 1
+        },
+        "Recoverable": true,
+        "Placement": {
+          "instanceID": 49386
+        },
+        "ViewPrefab": {
+          "instanceID": 79870
+        },
+        "Modules": [
+          {
+            "instanceID": 52294
+          },
+          {
+            "instanceID": 50348
+          },
+          {
+            "instanceID": 52356
+          },
+          {
+            "instanceID": 52238
+          },
+          {
+            "instanceID": 49212
+          },
+          {
+            "instanceID": 51504
+          }
+        ]
+      },
+      "modules": [
+        {
+          "type": "EternalSteam.WeaponModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/defense.rail_aa.weapon.asset",
+          "values": {
+            "Schedule": 0,
+            "Delivery": 2,
+            "Source": 0,
+            "Targets": 3,
+            "BaseDamage": 100.0,
+            "DamageCoefficient": 2.5,
+            "Range": 100.0,
+            "Interval": 5.0,
+            "Angle": 360.0,
+            "BurstDuration": 5.0,
+            "Rest": 2.0,
+            "Radius": 0.0,
+            "ProjectileSpeed": 30.0,
+            "ProjectileLifetime": 12.0,
+            "PierceWidth": 0.60000002384185791,
+            "MaximumTargets": 1,
+            "MaximumHits": 100000,
+            "JumpRange": 8.0,
+            "JumpInterval": 0.5,
+            "ChainDuration": 5.0,
+            "Retention": 0.20000000298023224,
+            "Status": 0,
+            "StatusDuration": 3.0,
+            "StatusStrength": 0.20000000298023224,
+            "TickDamage": 10.0,
+            "SameTargetSeconds": 3.0
+          }
+        },
+        {
+          "type": "EternalSteam.PerformanceUpgradeDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/defense.rail_aa.upgrade.asset",
+          "values": {
+            "MaximumLevel": 10
+          }
+        },
+        {
+          "type": "EternalSteam.TurretRotationDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.rail_aa.rotation.asset",
+          "values": {
+            "DegreesPerSecond": 180.0,
+            "AlignmentTolerance": 1.0
+          }
+        },
+        {
+          "type": "EternalSteam.HealthModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.rail_aa.health.asset",
+          "values": {
+            "Maximum": 100.0
+          }
+        },
+        {
+          "type": "EternalSteam.BuildingCombatDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.rail_aa.combat.asset",
+          "values": {
+            "Role": 1,
+            "BlocksGround": true
+          }
+        },
+        {
+          "type": "EternalSteam.PowerModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/BasePower/DefenseConsumer.asset",
+          "values": {
+            "Role": 2,
+            "Capacity": 200.0,
+            "CapacityPerLevel": 20.0,
+            "Rate": 5.0,
+            "VerificationSettings": true,
+            "ExternalAttackAdapter": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "defense.arc",
+      "name": "아크 블래스터",
+      "asset": "Assets/EternalSteam/Content/Buildings/BasePower/defense.arc.asset",
+      "validationErrors": [],
+      "placement": {
+        "Surface": 2,
+        "RequiredNexusLevel": 2,
+        "VerificationSettings": true,
+        "RequiresBuildArea": false,
+        "RequiresOperationalArea": true,
+        "RequiresOwnerBase": true,
+        "SnapCells": 1
+      },
+      "placementAsset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.arc.placement.asset",
+      "values": {
+        "Id": "defense.arc",
+        "DisplayName": "아크 블래스터",
+        "Category": 0,
+        "Footprint": {
+          "x": 2,
+          "y": 2
+        },
+        "Recoverable": true,
+        "Placement": {
+          "instanceID": 51612
+        },
+        "ViewPrefab": {
+          "instanceID": 79970
+        },
+        "Modules": [
+          {
+            "instanceID": 52236
+          },
+          {
+            "instanceID": 51886
+          },
+          {
+            "instanceID": 51064
+          },
+          {
+            "instanceID": 52846
+          },
+          {
+            "instanceID": 50932
+          },
+          {
+            "instanceID": 51504
+          }
+        ]
+      },
+      "modules": [
+        {
+          "type": "EternalSteam.WeaponModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/defense.arc.weapon.asset",
+          "values": {
+            "Schedule": 0,
+            "Delivery": 1,
+            "Source": 0,
+            "Targets": 3,
+            "BaseDamage": 100.0,
+            "DamageCoefficient": 1.5,
+            "Range": 40.0,
+            "Interval": 3.0,
+            "Angle": 360.0,
+            "BurstDuration": 5.0,
+            "Rest": 2.0,
+            "Radius": 8.0,
+            "ProjectileSpeed": 30.0,
+            "ProjectileLifetime": 12.0,
+            "PierceWidth": 0.60000002384185791,
+            "MaximumTargets": 1,
+            "MaximumHits": 3,
+            "JumpRange": 8.0,
+            "JumpInterval": 0.5,
+            "ChainDuration": 5.0,
+            "Retention": 0.20000000298023224,
+            "Status": 0,
+            "StatusDuration": 3.0,
+            "StatusStrength": 0.20000000298023224,
+            "TickDamage": 10.0,
+            "SameTargetSeconds": 3.0
+          }
+        },
+        {
+          "type": "EternalSteam.PerformanceUpgradeDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/defense.arc.upgrade.asset",
+          "values": {
+            "MaximumLevel": 7
+          }
+        },
+        {
+          "type": "EternalSteam.TurretRotationDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.arc.rotation.asset",
+          "values": {
+            "DegreesPerSecond": 180.0,
+            "AlignmentTolerance": 1.0
+          }
+        },
+        {
+          "type": "EternalSteam.HealthModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.arc.health.asset",
+          "values": {
+            "Maximum": 100.0
+          }
+        },
+        {
+          "type": "EternalSteam.BuildingCombatDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.arc.combat.asset",
+          "values": {
+            "Role": 1,
+            "BlocksGround": true
+          }
+        },
+        {
+          "type": "EternalSteam.PowerModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/BasePower/DefenseConsumer.asset",
+          "values": {
+            "Role": 2,
+            "Capacity": 200.0,
+            "CapacityPerLevel": 20.0,
+            "Rate": 5.0,
+            "VerificationSettings": true,
+            "ExternalAttackAdapter": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "defense.railgun",
+      "name": "레일건 터렛",
+      "asset": "Assets/EternalSteam/Content/Buildings/BasePower/defense.railgun.asset",
+      "validationErrors": [],
+      "placement": {
+        "Surface": 2,
+        "RequiredNexusLevel": 4,
+        "VerificationSettings": true,
+        "RequiresBuildArea": false,
+        "RequiresOperationalArea": true,
+        "RequiresOwnerBase": true,
+        "SnapCells": 1
+      },
+      "placementAsset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.railgun.placement.asset",
+      "values": {
+        "Id": "defense.railgun",
+        "DisplayName": "레일건 터렛",
+        "Category": 0,
+        "Footprint": {
+          "x": 2,
+          "y": 2
+        },
+        "Recoverable": true,
+        "Placement": {
+          "instanceID": 51676
+        },
+        "ViewPrefab": {
+          "instanceID": 79874
+        },
+        "Modules": [
+          {
+            "instanceID": 51216
+          },
+          {
+            "instanceID": 50688
+          },
+          {
+            "instanceID": 48606
+          },
+          {
+            "instanceID": 48906
+          },
+          {
+            "instanceID": 51678
+          },
+          {
+            "instanceID": 51504
+          }
+        ]
+      },
+      "modules": [
+        {
+          "type": "EternalSteam.WeaponModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/defense.railgun.weapon.asset",
+          "values": {
+            "Schedule": 0,
+            "Delivery": 2,
+            "Source": 0,
+            "Targets": 3,
+            "BaseDamage": 100.0,
+            "DamageCoefficient": 3.0,
+            "Range": 60.0,
+            "Interval": 5.0,
+            "Angle": 360.0,
+            "BurstDuration": 5.0,
+            "Rest": 2.0,
+            "Radius": 0.0,
+            "ProjectileSpeed": 30.0,
+            "ProjectileLifetime": 12.0,
+            "PierceWidth": 0.60000002384185791,
+            "MaximumTargets": 1,
+            "MaximumHits": 3,
+            "JumpRange": 8.0,
+            "JumpInterval": 0.5,
+            "ChainDuration": 5.0,
+            "Retention": 0.20000000298023224,
+            "Status": 0,
+            "StatusDuration": 3.0,
+            "StatusStrength": 0.20000000298023224,
+            "TickDamage": 10.0,
+            "SameTargetSeconds": 3.0
+          }
+        },
+        {
+          "type": "EternalSteam.PerformanceUpgradeDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/defense.railgun.upgrade.asset",
+          "values": {
+            "MaximumLevel": 7
+          }
+        },
+        {
+          "type": "EternalSteam.TurretRotationDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.railgun.rotation.asset",
+          "values": {
+            "DegreesPerSecond": 180.0,
+            "AlignmentTolerance": 1.0
+          }
+        },
+        {
+          "type": "EternalSteam.HealthModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.railgun.health.asset",
+          "values": {
+            "Maximum": 100.0
+          }
+        },
+        {
+          "type": "EternalSteam.BuildingCombatDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.railgun.combat.asset",
+          "values": {
+            "Role": 1,
+            "BlocksGround": true
+          }
+        },
+        {
+          "type": "EternalSteam.PowerModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/BasePower/DefenseConsumer.asset",
+          "values": {
+            "Role": 2,
+            "Capacity": 200.0,
+            "CapacityPerLevel": 20.0,
+            "Rate": 5.0,
+            "VerificationSettings": true,
+            "ExternalAttackAdapter": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "defense.sky_plasma",
+      "name": "스카이 플라즈마 포탑",
+      "asset": "Assets/EternalSteam/Content/Buildings/BasePower/defense.sky_plasma.asset",
+      "validationErrors": [],
+      "placement": {
+        "Surface": 2,
+        "RequiredNexusLevel": 4,
+        "VerificationSettings": true,
+        "RequiresBuildArea": false,
+        "RequiresOperationalArea": true,
+        "RequiresOwnerBase": true,
+        "SnapCells": 1
+      },
+      "placementAsset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.sky_plasma.placement.asset",
+      "values": {
+        "Id": "defense.sky_plasma",
+        "DisplayName": "스카이 플라즈마 포탑",
+        "Category": 0,
+        "Footprint": {
+          "x": 2,
+          "y": 2
+        },
+        "Recoverable": true,
+        "Placement": {
+          "instanceID": 49844
+        },
+        "ViewPrefab": {
+          "instanceID": 79972
+        },
+        "Modules": [
+          {
+            "instanceID": 49588
+          },
+          {
+            "instanceID": 52210
+          },
+          {
+            "instanceID": 51458
+          },
+          {
+            "instanceID": 50558
+          },
+          {
+            "instanceID": 53494
+          },
+          {
+            "instanceID": 51504
+          }
+        ]
+      },
+      "modules": [
+        {
+          "type": "EternalSteam.WeaponModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/defense.sky_plasma.weapon.asset",
+          "values": {
+            "Schedule": 0,
+            "Delivery": 1,
+            "Source": 0,
+            "Targets": 2,
+            "BaseDamage": 100.0,
+            "DamageCoefficient": 1.7999999523162842,
+            "Range": 50.0,
+            "Interval": 4.0,
+            "Angle": 360.0,
+            "BurstDuration": 5.0,
+            "Rest": 2.0,
+            "Radius": 7.0,
+            "ProjectileSpeed": 30.0,
+            "ProjectileLifetime": 12.0,
+            "PierceWidth": 0.60000002384185791,
+            "MaximumTargets": 1,
+            "MaximumHits": 3,
+            "JumpRange": 8.0,
+            "JumpInterval": 0.5,
+            "ChainDuration": 5.0,
+            "Retention": 0.20000000298023224,
+            "Status": 2,
+            "StatusDuration": 3.0,
+            "StatusStrength": 0.20000000298023224,
+            "TickDamage": 10.0,
+            "SameTargetSeconds": 3.0
+          }
+        },
+        {
+          "type": "EternalSteam.PerformanceUpgradeDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/defense.sky_plasma.upgrade.asset",
+          "values": {
+            "MaximumLevel": 7
+          }
+        },
+        {
+          "type": "EternalSteam.TurretRotationDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.sky_plasma.rotation.asset",
+          "values": {
+            "DegreesPerSecond": 180.0,
+            "AlignmentTolerance": 1.0
+          }
+        },
+        {
+          "type": "EternalSteam.HealthModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.sky_plasma.health.asset",
+          "values": {
+            "Maximum": 100.0
+          }
+        },
+        {
+          "type": "EternalSteam.BuildingCombatDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.sky_plasma.combat.asset",
+          "values": {
+            "Role": 1,
+            "BlocksGround": true
+          }
+        },
+        {
+          "type": "EternalSteam.PowerModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/BasePower/DefenseConsumer.asset",
+          "values": {
+            "Role": 2,
+            "Capacity": 200.0,
+            "CapacityPerLevel": 20.0,
+            "Rate": 5.0,
+            "VerificationSettings": true,
+            "ExternalAttackAdapter": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "defense.smart_missile",
+      "name": "스마트 미사일 발사대",
+      "asset": "Assets/EternalSteam/Content/Buildings/BasePower/defense.smart_missile.asset",
+      "validationErrors": [],
+      "placement": {
+        "Surface": 2,
+        "RequiredNexusLevel": 6,
+        "VerificationSettings": true,
+        "RequiresBuildArea": false,
+        "RequiresOperationalArea": true,
+        "RequiresOwnerBase": true,
+        "SnapCells": 1
+      },
+      "placementAsset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.smart_missile.placement.asset",
+      "values": {
+        "Id": "defense.smart_missile",
+        "DisplayName": "스마트 미사일 발사대",
+        "Category": 0,
+        "Footprint": {
+          "x": 3,
+          "y": 3
+        },
+        "Recoverable": true,
+        "Placement": {
+          "instanceID": 50780
+        },
+        "ViewPrefab": {
+          "instanceID": 79876
+        },
+        "Modules": [
+          {
+            "instanceID": 52348
+          },
+          {
+            "instanceID": 49606
+          },
+          {
+            "instanceID": 52572
+          },
+          {
+            "instanceID": 51256
+          },
+          {
+            "instanceID": 49712
+          },
+          {
+            "instanceID": 51504
+          }
+        ]
+      },
+      "modules": [
+        {
+          "type": "EternalSteam.WeaponModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/defense.smart_missile.weapon.asset",
+          "values": {
+            "Schedule": 0,
+            "Delivery": 1,
+            "Source": 0,
+            "Targets": 3,
+            "BaseDamage": 100.0,
+            "DamageCoefficient": 2.0,
+            "Range": 70.0,
+            "Interval": 6.0,
+            "Angle": 360.0,
+            "BurstDuration": 5.0,
+            "Rest": 2.0,
+            "Radius": 5.0,
+            "ProjectileSpeed": 30.0,
+            "ProjectileLifetime": 12.0,
+            "PierceWidth": 0.60000002384185791,
+            "MaximumTargets": 3,
+            "MaximumHits": 3,
+            "JumpRange": 8.0,
+            "JumpInterval": 0.5,
+            "ChainDuration": 5.0,
+            "Retention": 0.20000000298023224,
+            "Status": 0,
+            "StatusDuration": 3.0,
+            "StatusStrength": 0.20000000298023224,
+            "TickDamage": 10.0,
+            "SameTargetSeconds": 3.0
+          }
+        },
+        {
+          "type": "EternalSteam.PerformanceUpgradeDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/defense.smart_missile.upgrade.asset",
+          "values": {
+            "MaximumLevel": 3
+          }
+        },
+        {
+          "type": "EternalSteam.TurretRotationDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.smart_missile.rotation.asset",
+          "values": {
+            "DegreesPerSecond": 180.0,
+            "AlignmentTolerance": 1.0
+          }
+        },
+        {
+          "type": "EternalSteam.HealthModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.smart_missile.health.asset",
+          "values": {
+            "Maximum": 100.0
+          }
+        },
+        {
+          "type": "EternalSteam.BuildingCombatDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.smart_missile.combat.asset",
+          "values": {
+            "Role": 1,
+            "BlocksGround": true
+          }
+        },
+        {
+          "type": "EternalSteam.PowerModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/BasePower/DefenseConsumer.asset",
+          "values": {
+            "Role": 2,
+            "Capacity": 200.0,
+            "CapacityPerLevel": 20.0,
+            "Rate": 5.0,
+            "VerificationSettings": true,
+            "ExternalAttackAdapter": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "defense.emp",
+      "name": "EMP 펄스 타워",
+      "asset": "Assets/EternalSteam/Content/Buildings/BasePower/defense.emp.asset",
+      "validationErrors": [],
+      "placement": {
+        "Surface": 2,
+        "RequiredNexusLevel": 8,
+        "VerificationSettings": true,
+        "RequiresBuildArea": false,
+        "RequiresOperationalArea": true,
+        "RequiresOwnerBase": true,
+        "SnapCells": 1
+      },
+      "placementAsset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.emp.placement.asset",
+      "values": {
+        "Id": "defense.emp",
+        "DisplayName": "EMP 펄스 타워",
+        "Category": 0,
+        "Footprint": {
+          "x": 3,
+          "y": 3
+        },
+        "Recoverable": true,
+        "Placement": {
+          "instanceID": 51378
+        },
+        "ViewPrefab": {
+          "instanceID": 79974
+        },
+        "Modules": [
+          {
+            "instanceID": 49260
+          },
+          {
+            "instanceID": 51324
+          },
+          {
+            "instanceID": 51720
+          },
+          {
+            "instanceID": 52722
+          },
+          {
+            "instanceID": 50080
+          },
+          {
+            "instanceID": 51504
+          }
+        ]
+      },
+      "modules": [
+        {
+          "type": "EternalSteam.WeaponModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/defense.emp.weapon.asset",
+          "values": {
+            "Schedule": 0,
+            "Delivery": 4,
+            "Source": 0,
+            "Targets": 3,
+            "BaseDamage": 100.0,
+            "DamageCoefficient": 0.0,
+            "Range": 25.0,
+            "Interval": 10.0,
+            "Angle": 360.0,
+            "BurstDuration": 5.0,
+            "Rest": 2.0,
+            "Radius": 0.0,
+            "ProjectileSpeed": 30.0,
+            "ProjectileLifetime": 12.0,
+            "PierceWidth": 0.60000002384185791,
+            "MaximumTargets": 1,
+            "MaximumHits": 3,
+            "JumpRange": 8.0,
+            "JumpInterval": 0.5,
+            "ChainDuration": 5.0,
+            "Retention": 0.20000000298023224,
+            "Status": 3,
+            "StatusDuration": 2.0,
+            "StatusStrength": 0.20000000298023224,
+            "TickDamage": 10.0,
+            "SameTargetSeconds": 3.0
+          }
+        },
+        {
+          "type": "EternalSteam.PerformanceUpgradeDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/defense.emp.upgrade.asset",
+          "values": {
+            "MaximumLevel": 3
+          }
+        },
+        {
+          "type": "EternalSteam.TurretRotationDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.emp.rotation.asset",
+          "values": {
+            "DegreesPerSecond": 180.0,
+            "AlignmentTolerance": 1.0
+          }
+        },
+        {
+          "type": "EternalSteam.HealthModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.emp.health.asset",
+          "values": {
+            "Maximum": 100.0
+          }
+        },
+        {
+          "type": "EternalSteam.BuildingCombatDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.emp.combat.asset",
+          "values": {
+            "Role": 1,
+            "BlocksGround": true
+          }
+        },
+        {
+          "type": "EternalSteam.PowerModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/BasePower/DefenseConsumer.asset",
+          "values": {
+            "Role": 2,
+            "Capacity": 200.0,
+            "CapacityPerLevel": 20.0,
+            "Rate": 5.0,
+            "VerificationSettings": true,
+            "ExternalAttackAdapter": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "installation.outpost",
+      "name": "외부 전초",
+      "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/installation.outpost.asset",
+      "validationErrors": [],
+      "placement": {
+        "Surface": 1,
+        "RequiredNexusLevel": 1,
+        "VerificationSettings": true,
+        "RequiresBuildArea": false,
+        "RequiresOperationalArea": false,
+        "RequiresOwnerBase": true,
+        "SnapCells": 1
+      },
+      "placementAsset": "Assets/EternalSteam/Content/Buildings/StartRegion/outpost.placement.asset",
+      "values": {
+        "Id": "installation.outpost",
+        "DisplayName": "외부 전초",
+        "Category": 2,
+        "Footprint": {
+          "x": 2,
+          "y": 2
+        },
+        "Recoverable": true,
+        "Placement": {
+          "instanceID": 51772
+        },
+        "ViewPrefab": {
+          "instanceID": 79960
+        },
+        "Modules": [
+          {
+            "instanceID": 52580
+          },
+          {
+            "instanceID": 52246
+          },
+          {
+            "instanceID": 50850
+          }
+        ]
+      },
+      "modules": [
+        {
+          "type": "EternalSteam.BuildAreaModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/outpost.area.asset",
+          "values": {
+            "Shape": 1,
+            "Radius": 20.0,
+            "Yaw": 45.0,
+            "FromFrontEdge": false,
+            "AlignForwardCells": false,
+            "CellSize": 2.0,
+            "RadiusPerLevel": 0.0
+          }
+        },
+        {
+          "type": "EternalSteam.HealthModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/installation.outpost.health.asset",
+          "values": {
+            "Maximum": 50.0
+          }
+        },
+        {
+          "type": "EternalSteam.BuildingCombatDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/installation.outpost.combat.asset",
+          "values": {
+            "Role": 0,
+            "BlocksGround": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "installation.wall",
+      "name": "방벽",
+      "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/installation.wall.asset",
+      "validationErrors": [],
+      "placement": {
+        "Surface": 2,
+        "RequiredNexusLevel": 1,
+        "VerificationSettings": true,
+        "RequiresBuildArea": false,
+        "RequiresOperationalArea": false,
+        "RequiresOwnerBase": false,
+        "SnapCells": 1
+      },
+      "placementAsset": "Assets/EternalSteam/Content/Buildings/StartRegion/installation.wall.placement.asset",
+      "values": {
+        "Id": "installation.wall",
+        "DisplayName": "방벽",
+        "Category": 2,
+        "Footprint": {
+          "x": 1,
+          "y": 1
+        },
+        "Recoverable": true,
+        "Placement": {
+          "instanceID": 50138
+        },
+        "ViewPrefab": {
+          "instanceID": 79966
+        },
+        "Modules": [
+          {
+            "instanceID": 51930
+          },
+          {
+            "instanceID": 51248
+          }
+        ]
+      },
+      "modules": [
+        {
+          "type": "EternalSteam.HealthModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/installation.wall.health.asset",
+          "values": {
+            "Maximum": 100.0
+          }
+        },
+        {
+          "type": "EternalSteam.BuildingCombatDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/installation.wall.combat.asset",
+          "values": {
+            "Role": 3,
+            "BlocksGround": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "resource.copper",
+      "name": "구리 생성기",
+      "asset": "Assets/EternalSteam/Content/Buildings/BasePlanning/resource.copper.asset",
+      "validationErrors": [],
+      "placement": {
+        "Surface": 1,
+        "RequiredNexusLevel": 2,
+        "VerificationSettings": true,
+        "RequiresBuildArea": false,
+        "RequiresOperationalArea": true,
+        "RequiresOwnerBase": true,
+        "SnapCells": 1
+      },
+      "placementAsset": "Assets/EternalSteam/Content/Buildings/BasePlanning/resource.copper.placement.asset",
+      "values": {
+        "Id": "resource.copper",
+        "DisplayName": "구리 생성기",
+        "Category": 1,
+        "Footprint": {
+          "x": 1,
+          "y": 1
+        },
+        "Recoverable": true,
+        "Placement": {
+          "instanceID": 50682
+        },
+        "ViewPrefab": {
+          "instanceID": 79956
+        },
+        "Modules": [
+          {
+            "instanceID": 49006
+          },
+          {
+            "instanceID": 53266
+          },
+          {
+            "instanceID": 51506
+          }
+        ]
+      },
+      "modules": [
+        {
+          "type": "EternalSteam.ProductionModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/resource.copper.production.asset",
+          "values": {
+            "InputId": "",
+            "InputAmount": 0.0,
+            "OutputId": "copper",
+            "OutputAmount": 1.0,
+            "Interval": 5.0
+          }
+        },
+        {
+          "type": "EternalSteam.HealthModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/resource.copper.health.asset",
+          "values": {
+            "Maximum": 50.0
+          }
+        },
+        {
+          "type": "EternalSteam.BuildingCombatDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/resource.copper.combat.asset",
+          "values": {
+            "Role": 0,
+            "BlocksGround": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "resource.iron",
+      "name": "철 생성기",
+      "asset": "Assets/EternalSteam/Content/Buildings/BasePlanning/resource.iron.asset",
+      "validationErrors": [],
+      "placement": {
+        "Surface": 1,
+        "RequiredNexusLevel": 1,
+        "VerificationSettings": true,
+        "RequiresBuildArea": false,
+        "RequiresOperationalArea": true,
+        "RequiresOwnerBase": true,
+        "SnapCells": 1
+      },
+      "placementAsset": "Assets/EternalSteam/Content/Buildings/BasePlanning/resource.iron.placement.asset",
+      "values": {
+        "Id": "resource.iron",
+        "DisplayName": "철 생성기",
+        "Category": 1,
+        "Footprint": {
+          "x": 1,
+          "y": 1
+        },
+        "Recoverable": true,
+        "Placement": {
+          "instanceID": 50122
+        },
+        "ViewPrefab": {
+          "instanceID": 79878
+        },
+        "Modules": [
+          {
+            "instanceID": 52144
+          },
+          {
+            "instanceID": 50636
+          },
+          {
+            "instanceID": 53082
+          }
+        ]
+      },
+      "modules": [
+        {
+          "type": "EternalSteam.ProductionModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/resource.iron.production.asset",
+          "values": {
+            "InputId": "",
+            "InputAmount": 0.0,
+            "OutputId": "iron",
+            "OutputAmount": 1.0,
+            "Interval": 2.0
+          }
+        },
+        {
+          "type": "EternalSteam.HealthModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/resource.iron.health.asset",
+          "values": {
+            "Maximum": 50.0
+          }
+        },
+        {
+          "type": "EternalSteam.BuildingCombatDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/resource.iron.combat.asset",
+          "values": {
+            "Role": 0,
+            "BlocksGround": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "resource.nanometal",
+      "name": "나노메탈 생성기",
+      "asset": "Assets/EternalSteam/Content/Buildings/BasePlanning/resource.nanometal.asset",
+      "validationErrors": [],
+      "placement": {
+        "Surface": 1,
+        "RequiredNexusLevel": 7,
+        "VerificationSettings": true,
+        "RequiresBuildArea": false,
+        "RequiresOperationalArea": true,
+        "RequiresOwnerBase": true,
+        "SnapCells": 1
+      },
+      "placementAsset": "Assets/EternalSteam/Content/Buildings/BasePlanning/resource.nanometal.placement.asset",
+      "values": {
+        "Id": "resource.nanometal",
+        "DisplayName": "나노메탈 생성기",
+        "Category": 1,
+        "Footprint": {
+          "x": 1,
+          "y": 1
+        },
+        "Recoverable": true,
+        "Placement": {
+          "instanceID": 48558
+        },
+        "ViewPrefab": {
+          "instanceID": 79880
+        },
+        "Modules": [
+          {
+            "instanceID": 51410
+          },
+          {
+            "instanceID": 51890
+          },
+          {
+            "instanceID": 48604
+          }
+        ]
+      },
+      "modules": [
+        {
+          "type": "EternalSteam.ProductionModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/resource.nanometal.production.asset",
+          "values": {
+            "InputId": "",
+            "InputAmount": 0.0,
+            "OutputId": "nanometal",
+            "OutputAmount": 1.0,
+            "Interval": 120.0
+          }
+        },
+        {
+          "type": "EternalSteam.HealthModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/resource.nanometal.health.asset",
+          "values": {
+            "Maximum": 50.0
+          }
+        },
+        {
+          "type": "EternalSteam.BuildingCombatDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/resource.nanometal.combat.asset",
+          "values": {
+            "Role": 0,
+            "BlocksGround": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "resource.plasma_ore",
+      "name": "플라즈마 생성기",
+      "asset": "Assets/EternalSteam/Content/Buildings/BasePlanning/resource.plasma_ore.asset",
+      "validationErrors": [],
+      "placement": {
+        "Surface": 1,
+        "RequiredNexusLevel": 6,
+        "VerificationSettings": true,
+        "RequiresBuildArea": false,
+        "RequiresOperationalArea": true,
+        "RequiresOwnerBase": true,
+        "SnapCells": 1
+      },
+      "placementAsset": "Assets/EternalSteam/Content/Buildings/BasePlanning/resource.plasma_ore.placement.asset",
+      "values": {
+        "Id": "resource.plasma_ore",
+        "DisplayName": "플라즈마 생성기",
+        "Category": 1,
+        "Footprint": {
+          "x": 1,
+          "y": 1
+        },
+        "Recoverable": true,
+        "Placement": {
+          "instanceID": 52768
+        },
+        "ViewPrefab": {
+          "instanceID": 79884
+        },
+        "Modules": [
+          {
+            "instanceID": 48762
+          },
+          {
+            "instanceID": 52366
+          },
+          {
+            "instanceID": 52922
+          }
+        ]
+      },
+      "modules": [
+        {
+          "type": "EternalSteam.ProductionModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/resource.plasma_ore.production.asset",
+          "values": {
+            "InputId": "",
+            "InputAmount": 0.0,
+            "OutputId": "plasma_ore",
+            "OutputAmount": 1.0,
+            "Interval": 60.0
+          }
+        },
+        {
+          "type": "EternalSteam.HealthModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/resource.plasma_ore.health.asset",
+          "values": {
+            "Maximum": 50.0
+          }
+        },
+        {
+          "type": "EternalSteam.BuildingCombatDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/resource.plasma_ore.combat.asset",
+          "values": {
+            "Role": 0,
+            "BlocksGround": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "resource.titanium",
+      "name": "티타늄 생성기",
+      "asset": "Assets/EternalSteam/Content/Buildings/BasePlanning/resource.titanium.asset",
+      "validationErrors": [],
+      "placement": {
+        "Surface": 1,
+        "RequiredNexusLevel": 3,
+        "VerificationSettings": true,
+        "RequiresBuildArea": false,
+        "RequiresOperationalArea": true,
+        "RequiresOwnerBase": true,
+        "SnapCells": 1
+      },
+      "placementAsset": "Assets/EternalSteam/Content/Buildings/BasePlanning/resource.titanium.placement.asset",
+      "values": {
+        "Id": "resource.titanium",
+        "DisplayName": "티타늄 생성기",
+        "Category": 1,
+        "Footprint": {
+          "x": 1,
+          "y": 1
+        },
+        "Recoverable": true,
+        "Placement": {
+          "instanceID": 52732
+        },
+        "ViewPrefab": {
+          "instanceID": 79872
+        },
+        "Modules": [
+          {
+            "instanceID": 52502
+          },
+          {
+            "instanceID": 51610
+          },
+          {
+            "instanceID": 51898
+          }
+        ]
+      },
+      "modules": [
+        {
+          "type": "EternalSteam.ProductionModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/resource.titanium.production.asset",
+          "values": {
+            "InputId": "",
+            "InputAmount": 0.0,
+            "OutputId": "titanium",
+            "OutputAmount": 1.0,
+            "Interval": 10.0
+          }
+        },
+        {
+          "type": "EternalSteam.HealthModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/resource.titanium.health.asset",
+          "values": {
+            "Maximum": 50.0
+          }
+        },
+        {
+          "type": "EternalSteam.BuildingCombatDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/resource.titanium.combat.asset",
+          "values": {
+            "Role": 0,
+            "BlocksGround": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "resource.tungsten",
+      "name": "텅스텐 생성기",
+      "asset": "Assets/EternalSteam/Content/Buildings/BasePlanning/resource.tungsten.asset",
+      "validationErrors": [],
+      "placement": {
+        "Surface": 1,
+        "RequiredNexusLevel": 4,
+        "VerificationSettings": true,
+        "RequiresBuildArea": false,
+        "RequiresOperationalArea": true,
+        "RequiresOwnerBase": true,
+        "SnapCells": 1
+      },
+      "placementAsset": "Assets/EternalSteam/Content/Buildings/BasePlanning/resource.tungsten.placement.asset",
+      "values": {
+        "Id": "resource.tungsten",
+        "DisplayName": "텅스텐 생성기",
+        "Category": 1,
+        "Footprint": {
+          "x": 1,
+          "y": 1
+        },
+        "Recoverable": true,
+        "Placement": {
+          "instanceID": 49432
+        },
+        "ViewPrefab": {
+          "instanceID": 79882
+        },
+        "Modules": [
+          {
+            "instanceID": 52008
+          },
+          {
+            "instanceID": 51640
+          },
+          {
+            "instanceID": 52604
+          }
+        ]
+      },
+      "modules": [
+        {
+          "type": "EternalSteam.ProductionModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/resource.tungsten.production.asset",
+          "values": {
+            "InputId": "",
+            "InputAmount": 0.0,
+            "OutputId": "tungsten",
+            "OutputAmount": 1.0,
+            "Interval": 20.0
+          }
+        },
+        {
+          "type": "EternalSteam.HealthModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/resource.tungsten.health.asset",
+          "values": {
+            "Maximum": 50.0
+          }
+        },
+        {
+          "type": "EternalSteam.BuildingCombatDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/resource.tungsten.combat.asset",
+          "values": {
+            "Role": 0,
+            "BlocksGround": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "resource.uranium",
+      "name": "우라늄 생성기",
+      "asset": "Assets/EternalSteam/Content/Buildings/BasePlanning/resource.uranium.asset",
+      "validationErrors": [],
+      "placement": {
+        "Surface": 1,
+        "RequiredNexusLevel": 5,
+        "VerificationSettings": true,
+        "RequiresBuildArea": false,
+        "RequiresOperationalArea": true,
+        "RequiresOwnerBase": true,
+        "SnapCells": 1
+      },
+      "placementAsset": "Assets/EternalSteam/Content/Buildings/BasePlanning/resource.uranium.placement.asset",
+      "values": {
+        "Id": "resource.uranium",
+        "DisplayName": "우라늄 생성기",
+        "Category": 1,
+        "Footprint": {
+          "x": 1,
+          "y": 1
+        },
+        "Recoverable": true,
+        "Placement": {
+          "instanceID": 52148
+        },
+        "ViewPrefab": {
+          "instanceID": 79958
+        },
+        "Modules": [
+          {
+            "instanceID": 51154
+          },
+          {
+            "instanceID": 53400
+          },
+          {
+            "instanceID": 52562
+          }
+        ]
+      },
+      "modules": [
+        {
+          "type": "EternalSteam.ProductionModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/resource.uranium.production.asset",
+          "values": {
+            "InputId": "",
+            "InputAmount": 0.0,
+            "OutputId": "uranium",
+            "OutputAmount": 1.0,
+            "Interval": 45.0
+          }
+        },
+        {
+          "type": "EternalSteam.HealthModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/resource.uranium.health.asset",
+          "values": {
+            "Maximum": 50.0
+          }
+        },
+        {
+          "type": "EternalSteam.BuildingCombatDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/resource.uranium.combat.asset",
+          "values": {
+            "Role": 0,
+            "BlocksGround": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "resource.power_generator",
+      "name": "전력 발전기",
+      "asset": "Assets/EternalSteam/Content/Buildings/BasePower/Generator.asset",
+      "validationErrors": [],
+      "placement": {
+        "Surface": 1,
+        "RequiredNexusLevel": 1,
+        "VerificationSettings": true,
+        "RequiresBuildArea": false,
+        "RequiresOperationalArea": true,
+        "RequiresOwnerBase": true,
+        "SnapCells": 1
+      },
+      "placementAsset": "Assets/EternalSteam/Content/Buildings/BasePower/GeneratorPlacement.asset",
+      "values": {
+        "Id": "resource.power_generator",
+        "DisplayName": "전력 발전기",
+        "Category": 1,
+        "Footprint": {
+          "x": 1,
+          "y": 1
+        },
+        "Recoverable": true,
+        "Placement": {
+          "instanceID": 53140
+        },
+        "ViewPrefab": {
+          "instanceID": 79968
+        },
+        "Modules": [
+          {
+            "instanceID": 50636
+          },
+          {
+            "instanceID": 53082
+          },
+          {
+            "instanceID": 50322
+          }
+        ]
+      },
+      "modules": [
+        {
+          "type": "EternalSteam.HealthModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/resource.iron.health.asset",
+          "values": {
+            "Maximum": 50.0
+          }
+        },
+        {
+          "type": "EternalSteam.BuildingCombatDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/resource.iron.combat.asset",
+          "values": {
+            "Role": 0,
+            "BlocksGround": true
+          }
+        },
+        {
+          "type": "EternalSteam.PowerModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/BasePower/GeneratorProduction.asset",
+          "values": {
+            "Role": 1,
+            "Capacity": 200.0,
+            "CapacityPerLevel": 20.0,
+            "Rate": 20.0,
+            "VerificationSettings": true,
+            "ExternalAttackAdapter": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "railway.track",
+      "name": "선로 · 검증비 철 1",
+      "asset": "Assets/EternalSteam/Content/Buildings/Railway/railway.track.asset",
+      "validationErrors": [],
+      "placement": {
+        "Surface": 1,
+        "RequiredNexusLevel": 1,
+        "VerificationSettings": true,
+        "RequiresBuildArea": false,
+        "RequiresOperationalArea": false,
+        "RequiresOwnerBase": false,
+        "SnapCells": 1
+      },
+      "placementAsset": "Assets/EternalSteam/Content/Buildings/Railway/TrackPlacement.asset",
+      "values": {
+        "Id": "railway.track",
+        "DisplayName": "선로 · 검증비 철 1",
+        "Category": 2,
+        "Footprint": {
+          "x": 1,
+          "y": 1
+        },
+        "Recoverable": true,
+        "Placement": {
+          "instanceID": 51638
+        },
+        "ViewPrefab": {
+          "instanceID": 79886
+        },
+        "Modules": [
+          {
+            "instanceID": 49246
+          }
+        ]
+      },
+      "modules": [
+        {
+          "type": "EternalSteam.Railway.RailFacilityDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/Railway/TrackModule.asset",
+          "values": {
+            "Kind": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "railway.station",
+      "name": "기차역 · 검증비 철 10",
+      "asset": "Assets/EternalSteam/Content/Buildings/Railway/railway.station.asset",
+      "validationErrors": [],
+      "placement": {
+        "Surface": 1,
+        "RequiredNexusLevel": 1,
+        "VerificationSettings": true,
+        "RequiresBuildArea": false,
+        "RequiresOperationalArea": true,
+        "RequiresOwnerBase": true,
+        "SnapCells": 1
+      },
+      "placementAsset": "Assets/EternalSteam/Content/Buildings/Railway/StationPlacement.asset",
+      "values": {
+        "Id": "railway.station",
+        "DisplayName": "기차역 · 검증비 철 10",
+        "Category": 2,
+        "Footprint": {
+          "x": 2,
+          "y": 2
+        },
+        "Recoverable": true,
+        "Placement": {
+          "instanceID": 53416
+        },
+        "ViewPrefab": {
+          "instanceID": 79942
+        },
+        "Modules": [
+          {
+            "instanceID": 53420
+          }
+        ]
+      },
+      "modules": [
+        {
+          "type": "EternalSteam.Railway.RailFacilityDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/Railway/StationModule.asset",
+          "values": {
+            "Kind": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "railway.coal",
+      "name": "석탄 생성기 · 검증용",
+      "asset": "Assets/EternalSteam/Content/Buildings/Railway/railway.coal.asset",
+      "validationErrors": [],
+      "placement": {
+        "Surface": 1,
+        "RequiredNexusLevel": 1,
+        "VerificationSettings": true,
+        "RequiresBuildArea": true,
+        "RequiresOperationalArea": false,
+        "RequiresOwnerBase": false,
+        "SnapCells": 1
+      },
+      "placementAsset": "Assets/EternalSteam/Content/Buildings/DocumentContent/resource.iron.placement.asset",
+      "values": {
+        "Id": "railway.coal",
+        "DisplayName": "석탄 생성기 · 검증용",
+        "Category": 1,
+        "Footprint": {
+          "x": 1,
+          "y": 1
+        },
+        "Recoverable": true,
+        "Placement": {
+          "instanceID": 48588
+        },
+        "ViewPrefab": {
+          "instanceID": 79878
+        },
+        "Modules": [
+          {
+            "instanceID": 49426
+          },
+          {
+            "instanceID": 50636
+          },
+          {
+            "instanceID": 53082
+          }
+        ]
+      },
+      "modules": [
+        {
+          "type": "EternalSteam.ProductionModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/Railway/CoalProduction.asset",
+          "values": {
+            "InputId": "",
+            "InputAmount": 0.0,
+            "OutputId": "coal",
+            "OutputAmount": 1.0,
+            "Interval": 2.0
+          }
+        },
+        {
+          "type": "EternalSteam.HealthModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/resource.iron.health.asset",
+          "values": {
+            "Maximum": 50.0
+          }
+        },
+        {
+          "type": "EternalSteam.BuildingCombatDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/resource.iron.combat.asset",
+          "values": {
+            "Role": 0,
+            "BlocksGround": true
+          }
+        }
+      ]
+    }
+  ]
+}

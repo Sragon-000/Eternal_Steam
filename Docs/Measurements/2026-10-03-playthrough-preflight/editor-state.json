@@ -1,0 +1,29 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "return new {scene=UnityEngine.SceneManagement.SceneManager.GetActiveScene().path, playing=UnityEngine.Application.isPlaying, dirty=UnityEngine.SceneManagement.SceneManager.GetActiveScene().isDirty, saveRoot=System.Environment.GetEnvironmentVariable(\"ETERNAL_STEAM_SAVE_TEST_ROOT\"), paused=UnityEditor.EditorApplication.isPaused};"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "scene": "Assets/EternalSteam/Scene/Tests/OpenWorldSandbox.unity",
+        "playing": false,
+        "dirty": false,
+        "saveRoot": null,
+        "paused": false
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

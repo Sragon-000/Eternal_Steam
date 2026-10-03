@@ -1,0 +1,46 @@
+{
+  "scene": "Assets/EternalSteam/Scene/Tests/OpenWorldSandbox.unity",
+  "sceneHandleUnchanged": true,
+  "dirty": false,
+  "savedSceneBytesUnchanged": true,
+  "category": "EconomyObservation",
+  "assemblies": [
+    {
+      "assembly": "EternalSteam.EditModeTests",
+      "total": 7,
+      "passed": 7,
+      "failed": 0,
+      "skipped": 0,
+      "inconclusive": 0,
+      "xml": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam/Docs/Measurements/2026-10-03-playthrough-preflight/run-20261003-105147-766/EconomyObservation-EternalSteam.EditModeTests.xml"
+    },
+    {
+      "assembly": "EternalSteam.LegacyBuildingTests",
+      "total": 0,
+      "passed": 0,
+      "failed": 0,
+      "skipped": 0,
+      "inconclusive": 0,
+      "xml": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam/Docs/Measurements/2026-10-03-playthrough-preflight/run-20261003-105147-766/EconomyObservation-EternalSteam.LegacyBuildingTests.xml"
+    },
+    {
+      "assembly": "EternalSteam.LegacyCombatTests",
+      "total": 0,
+      "passed": 0,
+      "failed": 0,
+      "skipped": 0,
+      "inconclusive": 0,
+      "xml": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam/Docs/Measurements/2026-10-03-playthrough-preflight/run-20261003-105147-766/EconomyObservation-EternalSteam.LegacyCombatTests.xml"
+    },
+    {
+      "assembly": "EternalSteam.LegacyDeploymentTests",
+      "total": 0,
+      "passed": 0,
+      "failed": 0,
+      "skipped": 0,
+      "inconclusive": 0,
+      "xml": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam/Docs/Measurements/2026-10-03-playthrough-preflight/run-20261003-105147-766/EconomyObservation-EternalSteam.LegacyDeploymentTests.xml"
+    }
+  ],
+  "errors": []
+}

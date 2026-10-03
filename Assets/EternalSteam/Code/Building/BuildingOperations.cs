@@ -64,6 +64,14 @@ namespace EternalSteam
                 if(Eligible(provider,ownerId)&&provider.Module<IBuildArea>().Contains(center,halfSize,orientation))return true;
             return false;
         }
+        public event Action<BuildingInstance,bool> MembershipChanged;
+        public long ObservationErrors {get;private set;}
+        void ObserveMembership(BuildingInstance building,bool added)
+        {
+            var observers=MembershipChanged;if(observers==null)return;
+            foreach(Action<BuildingInstance,bool> observer in observers.GetInvocationList())
+                try{observer(building,added);}catch{ObservationErrors++;}
+        }
         public IReadOnlyList<BuildingInstance> Buildings=>buildings;
         public IReadOnlyDictionary<string,BaseContext> Bases => bases;
         public string SelectedBaseId { get; private set; }
@@ -81,7 +89,7 @@ namespace EternalSteam
                 bases.Add(identity.BaseId,new BaseContext(building));
                 building.AssignBase(identity.BaseId);SelectedBaseId=identity.BaseId;
             } else if(SelectedBaseId!=null) building.AssignBase(SelectedBaseId);
-            dirty=true;Revision++;
+            dirty=true;Revision++;ObserveMembership(building,true);
         }
         public void Remove(BuildingInstance building)
         {
@@ -89,7 +97,7 @@ namespace EternalSteam
             int areaIndex=areaProviders.IndexOf(building);if(areaIndex>=0){areaProviders.RemoveAt(areaIndex);areaStamps.RemoveAt(areaIndex);CoverageRevision++;}
             var identity=building.Module<IBaseIdentity>();
             if(identity!=null) { bases.Remove(identity.BaseId);if(SelectedBaseId==identity.BaseId){SelectedBaseId=null;foreach(var b in bases.Values){SelectedBaseId=b.Id;break;}} }
-            dirty=true;Revision++;
+            dirty=true;Revision++;ObserveMembership(building,false);
         }
         public void Refresh()
         {

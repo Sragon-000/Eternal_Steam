@@ -16,14 +16,19 @@ using Newtonsoft.Json.Linq;
 // UnityTest coroutines are deliberately not part of this runner.
 public static class RunCurrentSceneChecks
 {
-    const string Root="Docs/Measurements/2026-10-03-test-restructure/";
+    static string DefaultRoot=>"Docs/Measurements/CurrentScene/"+DateTime.UtcNow.ToString("yyyyMMdd-HHmmss-fff")+"/";
     static void Drain(IEnumerable sequence){var iterator=sequence.GetEnumerator();try{while(iterator.MoveNext()){if(iterator.Current is IEnumerator nested)DrainIterator(nested);else if(iterator.Current is IEnumerable child)Drain(child);}}finally{(iterator as IDisposable)?.Dispose();}}
     static void DrainIterator(IEnumerator iterator){try{while(iterator.MoveNext()){if(iterator.Current is IEnumerator child)DrainIterator(child);}}finally{(iterator as IDisposable)?.Dispose();}}
-    public static string Main(string category="CurrentScene")
+    public static string Main(string category="CurrentScene",string outputDirectory=null)
     {
+        string Root=outputDirectory??DefaultRoot;
+        var allowed=Path.GetFullPath("Docs/Measurements")+Path.DirectorySeparatorChar;
+        Root=Path.GetFullPath(Root)+Path.DirectorySeparatorChar;
+        if(!Root.StartsWith(allowed,StringComparison.Ordinal)||category.Any(c=>!char.IsLetterOrDigit(c)&&c!='.'))throw new Exception("Invalid evidence destination or category");
         if(Application.isPlaying)throw new Exception("Edit mode required");
         var scene=SceneManager.GetActiveScene();
         if(scene.isDirty||SceneManager.sceneCount!=1||string.IsNullOrEmpty(scene.path))throw new Exception("One clean saved current scene required");
+        if(File.Exists(Root+category+"-summary.json"))Root=Path.Combine(Root,"run-"+DateTime.UtcNow.ToString("yyyyMMdd-HHmmss-fff"))+Path.DirectorySeparatorChar;
         Directory.CreateDirectory(Root);
         var report=new JArray();var errors=new List<string>();
         var contextProperty=typeof(UnityEngine.TestTools.UnityTestAttribute).Assembly.GetType("UnityEngine.TestRunner.NUnitExtensions.Runner.UnityTestExecutionContext",true).GetProperty("CurrentContext");

@@ -1,0 +1,35 @@
+{
+  "utc": "2026-10-03T10:52:44.062331+00:00",
+  "baseCommit": "d4cc0045ba31cbee7fb35c3d7977f90ac54d4f20",
+  "files": [
+    {
+      "path": "Assets/EternalSteam/Code/Economy/ResourceBank.cs",
+      "sha256": "006016d2780646502b66a5500b983c0d2b629d2530b4db9d463cc2426f495d27"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Economy/BaseInventoryRegistry.cs",
+      "sha256": "635b36a32c98ac0b8a0cc363b58aeb2a5de46b81bea233b93cf9770bb72e2edc"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Building/BuildingOperations.cs",
+      "sha256": "9b22869f67131771ca29df8f6bf2110439aaafe38fe2919bf4500f9dc7c0d9d8"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/EditMode/ResourceObservationTests.cs",
+      "sha256": "90bbc97c70c720f2044cf13351ad77ee3cdb72450fe37163a28c142b3f208250"
+    },
+    {
+      "path": "Tools/Testing/Balance/BalanceRecorder.cs",
+      "sha256": "5269c063c888432ed26d3c93e59a8e1e6e6aa2be7913e9185502bd83b1fe62e5"
+    },
+    {
+      "path": "Tools/Testing/Balance/AuditCampaignAssets.cs",
+      "sha256": "68a873c8be32eb5a777d10f9295d1266b07602a2d2306e45fd09b55e53dd6b61"
+    }
+  ],
+  "fullTestsPassed": 292,
+  "observationTestsPassed": 7,
+  "normalRunStarted": false,
+  "recorderPlayIntegration": "NOT_RUN",
+  "nonCampaignGuard": "PASS"
+}

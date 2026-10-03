@@ -10,6 +10,14 @@ namespace EternalSteam
         readonly Dictionary<string,ResourceBank> banks=new(StringComparer.Ordinal);
         readonly Func<string,bool> available;
         readonly ResourceBank defaults;
+        public event Action<string,ResourceBank> Created;
+        public long ObservationErrors {get;private set;}
+        void ObserveCreated(string id,ResourceBank bank)
+        {
+            var observers=Created;if(observers==null)return;
+            foreach(Action<string,ResourceBank> observer in observers.GetInvocationList())
+                try{observer(id,bank);}catch{ObservationErrors++;}
+        }
         bool infiniteResources;
         public bool InfiniteResources {get=>infiniteResources;set{infiniteResources=value;foreach(var bank in banks.Values)bank.InfiniteResources=value;}}
         public BaseInventoryRegistry(ResourceBank defaults,Func<string,bool> available)
@@ -17,7 +25,7 @@ namespace EternalSteam
         public ResourceBank Ensure(string id)
         {
             if(string.IsNullOrWhiteSpace(id))throw new ArgumentException("기지 소속이 없습니다.");
-            if(!banks.TryGetValue(id,out var bank)) { bank=new ResourceBank{InfiniteResources=infiniteResources};bank.Restore(defaults.Capture().Select(s=>new ResourceBank.Stock{id=s.id,amount=0,capacity=s.capacity}).ToList());banks.Add(id,bank); }
+            if(!banks.TryGetValue(id,out var bank)) { bank=new ResourceBank{InfiniteResources=infiniteResources};bank.Restore(defaults.Capture().Select(s=>new ResourceBank.Stock{id=s.id,amount=0,capacity=s.capacity}).ToList());banks.Add(id,bank);ObserveCreated(id,bank); }
             return bank;
         }
         public ResourceBank Available(string id)=>id!=null&&available(id)?Ensure(id):null;
