@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/Testing/Balance/BalanceRecorder.cs",
+      "entry": "BalanceRecorder.Stop",
+      "args": "[\"recorder-integration-complete\"]"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 52,
+      "executeMs": 1,
+      "assemblyName": "PipelineRunScript_BalanceRecorder_aa658c901bc64c34bb716b4a0fe9dcd7",
+      "success": true,
+      "result": "{\n  \"root\": \"/Users/limseth/Projects/Eternal_Steam/Eternal_Steam/Docs/Measurements/Balance/20261003-recorder-integration\",\n  \"sequence\": 157,\n  \"stopped\": false,\n  \"stopRequested\": \"recorder-integration-complete\",\n  \"error\": null,\n  \"screenshotsPending\": 1,\n  \"day\": 1,\n  \"phase\": \"Day\"\n}"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

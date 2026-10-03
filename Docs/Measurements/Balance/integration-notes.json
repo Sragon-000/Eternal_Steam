@@ -1,0 +1,27 @@
+{
+  "recordedAt": "2026-10-03T11:11:06.034633+00:00",
+  "classification": "recorder-integration-not-survival",
+  "firstAttempt": {
+    "run": "20261003-recorder-integration",
+    "captureAndLifecycle": "PASS",
+    "production": "NOT_EXERCISED",
+    "reason": "Normal edit command accepted an iron producer outside the operational base area; observed OutsideArea. No stock injection.",
+    "toolCompileAttempt": "Initial eval used EternalSteam.WorldGridGeometry instead of EternalSteam.OpenWorld.WorldGridGeometry; compilation failed before execution, corrected."
+  },
+  "retry": {
+    "run": "20261003-recorder-production",
+    "method": "Normal free-policy main-base upgrade Lv3; complete footprint coverage checked before edit AddContent/Confirm. Real timeScale=1.",
+    "productionOutputIron": 15,
+    "ledgerAndSamples": "PASS"
+  },
+  "limits": [
+    "No survival, enemy, railway or balance conclusion from these QA runs.",
+    "Recorder CPU/GC overhead not benchmarked by an A/B run.",
+    "Screenshots inspected: integration/000002.png and production/000002.png; all 8 files hashed and requests reconciled."
+  ],
+  "sourceHashes": {
+    "Tools/Testing/Balance/BalanceRecorder.cs": "156d8d4020219d00db4cf5f908d3a490c328be568a60df47f0cccaaac557b7d6",
+    "Tools/Testing/Balance/VerifyRecorderProduction.cs": "d4085ff9132856e3732eec0294887102b5e42ca67622ffca65b0b535e9b9ca9d",
+    "Tools/Testing/Balance/audit_recording.py": "0000c4b66bf844a48795babd9de6392aec12d2b86fb97ccf7710cc37fbba96c6"
+  }
+}

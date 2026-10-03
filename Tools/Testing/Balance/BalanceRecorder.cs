@@ -18,8 +18,9 @@ public static class BalanceRecorder
  static MonoBehaviour Observer()=>Resources.FindObjectsOfTypeAll<MonoBehaviour>().FirstOrDefault(v=>v!=null&&v.GetType().Name=="BalanceRunObserver"&&v.gameObject.scene.IsValid());
  static object Call(MonoBehaviour recorder,string method,params object[] args)=>recorder.GetType().GetMethod(method).Invoke(recorder,args);
  public static string Describe()=>"Ledger events + lifecycle/damage/enemy events + 1-second snapshots + milestone screenshots; normal campaign only.";
- public static string Setup(string runName)
+ public static string Setup(string runName,string purpose="normal-survival")
  {
+  if(purpose!="normal-survival"&&purpose!="recorder-integration")throw new Exception("Unknown recording purpose");
   if(string.IsNullOrWhiteSpace(runName)||runName.Any(c=>!char.IsLetterOrDigit(c)&&c!='-'))throw new Exception("Use a unique letters/digits/hyphens run name");
   var scene=SceneManager.GetActiveScene();var s=UnityEngine.Object.FindFirstObjectByType<OpenWorldSandbox>();
   if(Application.isPlaying||scene.isDirty||SceneManager.sceneCount!=1||s==null||s.StartingBase==null||!s.BasePlanningRules)throw new Exception("A clean current campaign scene is required. No scene will be opened automatically.");
@@ -34,6 +35,7 @@ public static class BalanceRecorder
   metadata["regions"]=new JArray(s.Regions.Select(r=>new JObject{{"asset",AssetDatabase.GetAssetPath(r)},{"values",JObject.Parse(JsonUtility.ToJson(r))}}));
   metadata["enemyCombat"]=JObject.Parse(JsonUtility.ToJson(s.EnemyCombat));
   using(var hash=System.Security.Cryptography.SHA256.Create())metadata["sourceHashes"]=new JArray(Directory.GetFiles("Assets/EternalSteam","*.cs",SearchOption.AllDirectories).OrderBy(p=>p,StringComparer.Ordinal).Select(p=>new JObject{{"path",p},{"sha256",BitConverter.ToString(hash.ComputeHash(File.ReadAllBytes(p))).Replace("-","").ToLowerInvariant()}}));
+  metadata["purpose"]=purpose;metadata["normalPlay"]=purpose=="normal-survival";
   File.WriteAllText(root+"/configuration.json",metadata.ToString());return root;
  }
  public static string Start()

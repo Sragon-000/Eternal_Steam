@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/Testing/Balance/VerifyRecorderProduction.cs",
+      "entry": "VerifyRecorderProduction.Main"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 24,
+      "executeMs": 146,
+      "assemblyName": "PipelineRunScript_VerifyRecorderProduction_6fc73b0a5fc749838a3f4c56230c555f",
+      "success": true,
+      "result": "Normal free-policy upgrade to Lv3 and covered iron production placement; actual production must be observed separately."
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

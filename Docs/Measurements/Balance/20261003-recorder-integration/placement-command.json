@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "var s=UnityEngine.Object.FindFirstObjectByType<EternalSteam.OpenWorld.OpenWorldSandbox>(); if(System.Environment.GetEnvironmentVariable(\"ETERNAL_STEAM_SAVE_TEST_ROOT\")!=\"/Users/limseth/Projects/Eternal_Steam/Eternal_Steam/Docs/Measurements/Balance/20261003-recorder-integration/save\") throw new System.Exception(\"Wrong QA run\"); var input=s.GetComponent<EternalSteam.OpenWorld.OpenWorldInput>(); var d=s.ContentCatalog.Buildings.Single(x=>x.Id==\"resource.iron\"); s.Content.Bases.Select(s.Content.MainBase.Module<EternalSteam.IBaseIdentity>().BaseId); input.BeginEditing(); bool added=false; for(int z=15;z<=35&&!added;z++)for(int x=-8;x<=12&&!added;x++){var p=s.Content.GroundWorld.Grid.Center(new UnityEngine.Vector2Int(x,z),UnityEngine.Vector2Int.one);p.y=s.Ground.SampleHeight(p)+s.Ground.transform.position.y;added=input.Edits.AddContent(d,p,EternalSteam.OpenWorld.WorldGridGeometry.Rotation*UnityEngine.Vector3.forward,out _);} if(!added||!input.Confirm())throw new System.Exception(\"QA placement rejected: \"+s.Message); return new { buildings=s.Content.GroundWorld.Buildings.Count, infinite=s.Content.InfiniteResources };"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "buildings": 2,
+        "infinite": false
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

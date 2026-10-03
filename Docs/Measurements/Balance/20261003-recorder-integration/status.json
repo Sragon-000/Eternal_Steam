@@ -1,0 +1,11 @@
+{
+  "reason": "recorder-integration-complete",
+  "stopped": true,
+  "sequence": 160,
+  "error": null,
+  "screenshotsPending": 0,
+  "day": 1,
+  "phase": "Day",
+  "defeated": false,
+  "stage": "Gathering"
+}

@@ -1,0 +1,56 @@
+{
+  "run": "20261003-recorder-integration",
+  "purpose": "recorder-integration",
+  "normalPlay": false,
+  "passed": true,
+  "errors": [],
+  "counts": {
+    "inventory-observed": 2,
+    "building-added": 2,
+    "screenshot-request": 8,
+    "action": 2,
+    "sample": 139,
+    "screenshot-captured": 6,
+    "run-end": 1
+  },
+  "gameSeconds": 135.88117692340165,
+  "screenshots": [
+    {
+      "file": "screenshots/000001.png",
+      "sha256": "408fdf44cdcd0abbc82bfd88f714a666b03ffeab6f2d98b310a2594fed9f5e3d",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000002.png",
+      "sha256": "914172a828e6095d2b915e61ca3cfa4f1a3e5442f5e776d0e1d5a0dcde5543c4",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000003.png",
+      "sha256": "12ce3ee5211be7ce0e7e49d90541d76b5ae79a577d254d1fdc7cdf25cec60c3e",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000004.png",
+      "sha256": "995df24b2365374177bc07489aab7a6b2ea32cd4217008934acb26392a3081be",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000005.png",
+      "sha256": "a977628961071dac4e1ef481e5fded1a7bdbe6f69686a635e3455f8e3ef7b3f0",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000006.png",
+      "sha256": "b895323b49e3c6b90b44cec24eae1f6198ad5552dd19fe70b3c848f6cb334154",
+      "width": 2560,
+      "height": 1440
+    }
+  ],
+  "resourceOutput": {}
+}

@@ -1,0 +1,35 @@
+{
+  "run": "20261003-recorder-production",
+  "purpose": "recorder-integration",
+  "normalPlay": false,
+  "passed": true,
+  "errors": [],
+  "counts": {
+    "inventory-observed": 2,
+    "building-added": 2,
+    "screenshot-request": 5,
+    "action": 1,
+    "sample": 34,
+    "screenshot-captured": 2,
+    "resource": 15,
+    "run-end": 1
+  },
+  "gameSeconds": 31.13383053103462,
+  "screenshots": [
+    {
+      "file": "screenshots/000001.png",
+      "sha256": "22e9494fb7d5b7fc3349b695b01ad076fb3439058fcd8ce8e3feedcf44d861be",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "screenshots/000002.png",
+      "sha256": "e9e4375fcca7ab0a12b0664c48c482e9220ecd5b8dcf88517fdcc35c764eebd7",
+      "width": 2560,
+      "height": 1440
+    }
+  ],
+  "resourceOutput": {
+    "iron": 15.0
+  }
+}

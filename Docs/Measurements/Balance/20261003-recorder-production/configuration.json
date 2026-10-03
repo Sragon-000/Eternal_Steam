@@ -1,0 +1,3298 @@
+{
+  "run": "20261003-recorder-production",
+  "utc": "2026-10-03T11:06:48.0142770Z",
+  "scene": "Assets/EternalSteam/Scene/Tests/StartRegionSandbox.unity",
+  "unity": "6000.3.14f1",
+  "normalPlay": false,
+  "daySeconds": 300.0,
+  "nightSeconds": 180.0,
+  "constructionPolicy": "verification-free",
+  "upgradePolicy": "verification-free",
+  "assault": {
+    "MapId": "start-region",
+    "EnergyName": "시작 지역 에너지",
+    "Target": 1000000,
+    "EnergyPerCell": 10000,
+    "ExtractionPerSecond": 10,
+    "KillEnergy": 1000,
+    "FirstNightCount": 100,
+    "AdditionalPerDay": 25,
+    "BossHealth": 1000,
+    "SpawnInterval": 0.20000000298023224,
+    "Seed": 20260920,
+    "BossPosition": {
+      "x": 80.610000610351563,
+      "y": 0.36000001430511475,
+      "z": -155.55999755859375
+    },
+    "NormalSpawnSize": {
+      "x": 1,
+      "y": 1
+    },
+    "BossSpawnSize": {
+      "x": 3,
+      "y": 3
+    },
+    "BossWavePoints": [
+      {
+        "x": 84.8499984741211,
+        "y": 0.36000001430511475,
+        "z": -165.46000671386719
+      },
+      {
+        "x": -42.540985107421875,
+        "y": 0.86104816198349,
+        "z": -152.19281005859375
+      },
+      {
+        "x": -83.44000244140625,
+        "y": 0.36000001430511475,
+        "z": 127.27999877929688
+      },
+      {
+        "x": 145.66000366210938,
+        "y": 0.36000001430511475,
+        "z": 70.709999084472656
+      },
+      {
+        "x": 100.40914916992188,
+        "y": 0.86104816198349,
+        "z": -72.124885559082031
+      },
+      {
+        "x": 26.8700008392334,
+        "y": 0.36000001430511475,
+        "z": 110.30999755859375
+      },
+      {
+        "x": -42.117919921875,
+        "y": 0.86104816198349,
+        "z": 0.89481449127197266
+      },
+      {
+        "x": -10.218658447265625,
+        "y": 0.86104816198349,
+        "z": 23.992256164550781
+      }
+    ]
+  },
+  "catalog": [
+    {
+      "id": "installation.main_base",
+      "name": "메인 기지",
+      "asset": "Assets/EternalSteam/Content/Buildings/StartLoop/MainBase.asset",
+      "placement": {
+        "Surface": 1,
+        "RequiredNexusLevel": 1,
+        "VerificationSettings": true,
+        "RequiresBuildArea": false,
+        "RequiresOperationalArea": false,
+        "RequiresOwnerBase": false,
+        "SnapCells": 4
+      },
+      "placementAsset": "Assets/EternalSteam/Content/Buildings/BasePlanning/Main.placement.asset",
+      "definition": {
+        "Id": "installation.main_base",
+        "DisplayName": "메인 기지",
+        "Category": 2,
+        "Footprint": {
+          "x": 4,
+          "y": 4
+        },
+        "Recoverable": false,
+        "Placement": {
+          "instanceID": 52734
+        },
+        "ViewPrefab": {
+          "instanceID": 79762
+        },
+        "Modules": [
+          {
+            "instanceID": 49352
+          },
+          {
+            "instanceID": 51174
+          },
+          {
+            "instanceID": 53302
+          },
+          {
+            "instanceID": 50110
+          },
+          {
+            "instanceID": 51402
+          },
+          {
+            "instanceID": 48772
+          }
+        ]
+      },
+      "modules": [
+        {
+          "type": "EternalSteam.BuildingCombatDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/installation.nexus.combat.asset",
+          "values": {
+            "Role": 2,
+            "BlocksGround": true
+          }
+        },
+        {
+          "type": "EternalSteam.BaseModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/BasePlanning/Main.identity.asset",
+          "values": {
+            "Role": 1
+          }
+        },
+        {
+          "type": "EternalSteam.BuildAreaModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartLoop/MainForwardArea.asset",
+          "values": {
+            "Shape": 1,
+            "Radius": 11.0,
+            "Yaw": 45.0,
+            "FromFrontEdge": true,
+            "AlignForwardCells": true,
+            "CellSize": 2.0,
+            "RadiusPerLevel": 0.0
+          }
+        },
+        {
+          "type": "EternalSteam.HealthModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/BasePlanning/Main.health.asset",
+          "values": {
+            "Maximum": 100.0
+          }
+        },
+        {
+          "type": "EternalSteam.MainBaseUpgradeDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/BasePower/SharedMainUpgrade.asset",
+          "values": {}
+        },
+        {
+          "type": "EternalSteam.PowerModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/BasePower/BaseStorage.asset",
+          "values": {
+            "Role": 0,
+            "Capacity": 200.0,
+            "CapacityPerLevel": 20.0,
+            "Rate": 5.0,
+            "VerificationSettings": true,
+            "ExternalAttackAdapter": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "installation.nexus",
+      "name": "서브 기지",
+      "asset": "Assets/EternalSteam/Content/Buildings/BasePower/installation.nexus.asset",
+      "placement": {
+        "Surface": 1,
+        "RequiredNexusLevel": 1,
+        "VerificationSettings": true,
+        "RequiresBuildArea": false,
+        "RequiresOperationalArea": false,
+        "RequiresOwnerBase": false,
+        "SnapCells": 1
+      },
+      "placementAsset": "Assets/EternalSteam/Content/Buildings/BasePlanning/Sub.placement.asset",
+      "definition": {
+        "Id": "installation.nexus",
+        "DisplayName": "서브 기지",
+        "Category": 2,
+        "Footprint": {
+          "x": 3,
+          "y": 3
+        },
+        "Recoverable": true,
+        "Placement": {
+          "instanceID": 49282
+        },
+        "ViewPrefab": {
+          "instanceID": 79964
+        },
+        "Modules": [
+          {
+            "instanceID": 49352
+          },
+          {
+            "instanceID": 51970
+          },
+          {
+            "instanceID": 53418
+          },
+          {
+            "instanceID": 49152
+          },
+          {
+            "instanceID": 51858
+          },
+          {
+            "instanceID": 48772
+          }
+        ]
+      },
+      "modules": [
+        {
+          "type": "EternalSteam.BuildingCombatDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/installation.nexus.combat.asset",
+          "values": {
+            "Role": 2,
+            "BlocksGround": true
+          }
+        },
+        {
+          "type": "EternalSteam.BaseModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/BasePlanning/Sub.identity.asset",
+          "values": {
+            "Role": 2
+          }
+        },
+        {
+          "type": "EternalSteam.BuildAreaModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/BasePlanning/Sub.area.asset",
+          "values": {
+            "Shape": 1,
+            "Radius": 11.0,
+            "Yaw": 45.0,
+            "FromFrontEdge": false,
+            "AlignForwardCells": false,
+            "CellSize": 2.0,
+            "RadiusPerLevel": 1.0
+          }
+        },
+        {
+          "type": "EternalSteam.HealthModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/BasePlanning/Sub.health.asset",
+          "values": {
+            "Maximum": 100.0
+          }
+        },
+        {
+          "type": "EternalSteam.UpgradeModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/BasePlanning/Sub.upgrade.asset",
+          "values": {
+            "MaximumLevel": 10,
+            "RequireNexus": true,
+            "DamagePerLevel": 0.0,
+            "HealthPerLevel": 0.20000000298023224
+          }
+        },
+        {
+          "type": "EternalSteam.PowerModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/BasePower/BaseStorage.asset",
+          "values": {
+            "Role": 0,
+            "Capacity": 200.0,
+            "CapacityPerLevel": 20.0,
+            "Rate": 5.0,
+            "VerificationSettings": true,
+            "ExternalAttackAdapter": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "defense.tesla",
+      "name": "테슬라 타워",
+      "asset": "Assets/EternalSteam/Content/Buildings/BasePower/defense.tesla.asset",
+      "placement": {
+        "Surface": 2,
+        "RequiredNexusLevel": 1,
+        "VerificationSettings": true,
+        "RequiresBuildArea": false,
+        "RequiresOperationalArea": true,
+        "RequiresOwnerBase": true,
+        "SnapCells": 1
+      },
+      "placementAsset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.tesla.placement.asset",
+      "definition": {
+        "Id": "defense.tesla",
+        "DisplayName": "테슬라 타워",
+        "Category": 0,
+        "Footprint": {
+          "x": 1,
+          "y": 1
+        },
+        "Recoverable": true,
+        "Placement": {
+          "instanceID": 49736
+        },
+        "ViewPrefab": {
+          "instanceID": 79962
+        },
+        "Modules": [
+          {
+            "instanceID": 49306
+          },
+          {
+            "instanceID": 51060
+          },
+          {
+            "instanceID": 53428
+          },
+          {
+            "instanceID": 51736
+          },
+          {
+            "instanceID": 49338
+          },
+          {
+            "instanceID": 51504
+          }
+        ]
+      },
+      "modules": [
+        {
+          "type": "EternalSteam.WeaponModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/defense.tesla.weapon.asset",
+          "values": {
+            "Schedule": 0,
+            "Delivery": 3,
+            "Source": 0,
+            "Targets": 3,
+            "BaseDamage": 100.0,
+            "DamageCoefficient": 0.800000011920929,
+            "Range": 15.0,
+            "Interval": 4.0,
+            "Angle": 360.0,
+            "BurstDuration": 5.0,
+            "Rest": 2.0,
+            "Radius": 0.0,
+            "ProjectileSpeed": 30.0,
+            "ProjectileLifetime": 12.0,
+            "PierceWidth": 0.60000002384185791,
+            "MaximumTargets": 1,
+            "MaximumHits": 3,
+            "JumpRange": 8.0,
+            "JumpInterval": 0.5,
+            "ChainDuration": 5.0,
+            "Retention": 0.20000000298023224,
+            "Status": 0,
+            "StatusDuration": 3.0,
+            "StatusStrength": 0.20000000298023224,
+            "TickDamage": 10.0,
+            "SameTargetSeconds": 3.0
+          }
+        },
+        {
+          "type": "EternalSteam.PerformanceUpgradeDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/defense.tesla.upgrade.asset",
+          "values": {
+            "MaximumLevel": 10
+          }
+        },
+        {
+          "type": "EternalSteam.TurretRotationDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.tesla.rotation.asset",
+          "values": {
+            "DegreesPerSecond": 180.0,
+            "AlignmentTolerance": 1.0
+          }
+        },
+        {
+          "type": "EternalSteam.HealthModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.tesla.health.asset",
+          "values": {
+            "Maximum": 100.0
+          }
+        },
+        {
+          "type": "EternalSteam.BuildingCombatDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.tesla.combat.asset",
+          "values": {
+            "Role": 1,
+            "BlocksGround": true
+          }
+        },
+        {
+          "type": "EternalSteam.PowerModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/BasePower/DefenseConsumer.asset",
+          "values": {
+            "Role": 2,
+            "Capacity": 200.0,
+            "CapacityPerLevel": 20.0,
+            "Rate": 5.0,
+            "VerificationSettings": true,
+            "ExternalAttackAdapter": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "defense.plasma_laser",
+      "name": "플라즈마 레이저 포탑",
+      "asset": "Assets/EternalSteam/Content/Buildings/BasePower/defense.plasma_laser.asset",
+      "placement": {
+        "Surface": 2,
+        "RequiredNexusLevel": 3,
+        "VerificationSettings": true,
+        "RequiresBuildArea": false,
+        "RequiresOperationalArea": true,
+        "RequiresOwnerBase": true,
+        "SnapCells": 1
+      },
+      "placementAsset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.plasma_laser.placement.asset",
+      "definition": {
+        "Id": "defense.plasma_laser",
+        "DisplayName": "플라즈마 레이저 포탑",
+        "Category": 0,
+        "Footprint": {
+          "x": 1,
+          "y": 1
+        },
+        "Recoverable": true,
+        "Placement": {
+          "instanceID": 52936
+        },
+        "ViewPrefab": {
+          "instanceID": 79868
+        },
+        "Modules": [
+          {
+            "instanceID": 52558
+          },
+          {
+            "instanceID": 52166
+          },
+          {
+            "instanceID": 50612
+          },
+          {
+            "instanceID": 48842
+          },
+          {
+            "instanceID": 51962
+          },
+          {
+            "instanceID": 51504
+          }
+        ]
+      },
+      "modules": [
+        {
+          "type": "EternalSteam.WeaponModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/defense.plasma_laser.weapon.asset",
+          "values": {
+            "Schedule": 1,
+            "Delivery": 0,
+            "Source": 1,
+            "Targets": 3,
+            "BaseDamage": 100.0,
+            "DamageCoefficient": 0.25,
+            "Range": 45.0,
+            "Interval": 0.5,
+            "Angle": 360.0,
+            "BurstDuration": 5.0,
+            "Rest": 2.0,
+            "Radius": 0.0,
+            "ProjectileSpeed": 30.0,
+            "ProjectileLifetime": 12.0,
+            "PierceWidth": 0.60000002384185791,
+            "MaximumTargets": 1,
+            "MaximumHits": 3,
+            "JumpRange": 8.0,
+            "JumpInterval": 0.5,
+            "ChainDuration": 5.0,
+            "Retention": 0.20000000298023224,
+            "Status": 1,
+            "StatusDuration": 3.0,
+            "StatusStrength": 0.20000000298023224,
+            "TickDamage": 10.0,
+            "SameTargetSeconds": 3.0
+          }
+        },
+        {
+          "type": "EternalSteam.PerformanceUpgradeDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/defense.plasma_laser.upgrade.asset",
+          "values": {
+            "MaximumLevel": 10
+          }
+        },
+        {
+          "type": "EternalSteam.TurretRotationDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.plasma_laser.rotation.asset",
+          "values": {
+            "DegreesPerSecond": 180.0,
+            "AlignmentTolerance": 1.0
+          }
+        },
+        {
+          "type": "EternalSteam.HealthModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.plasma_laser.health.asset",
+          "values": {
+            "Maximum": 100.0
+          }
+        },
+        {
+          "type": "EternalSteam.BuildingCombatDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.plasma_laser.combat.asset",
+          "values": {
+            "Role": 1,
+            "BlocksGround": true
+          }
+        },
+        {
+          "type": "EternalSteam.PowerModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/BasePower/DefenseConsumer.asset",
+          "values": {
+            "Role": 2,
+            "Capacity": 200.0,
+            "CapacityPerLevel": 20.0,
+            "Rate": 5.0,
+            "VerificationSettings": true,
+            "ExternalAttackAdapter": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "defense.vulcan_aa",
+      "name": "발칸 대공포",
+      "asset": "Assets/EternalSteam/Content/Buildings/BasePower/defense.vulcan_aa.asset",
+      "placement": {
+        "Surface": 2,
+        "RequiredNexusLevel": 5,
+        "VerificationSettings": true,
+        "RequiresBuildArea": false,
+        "RequiresOperationalArea": true,
+        "RequiresOwnerBase": true,
+        "SnapCells": 1
+      },
+      "placementAsset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.vulcan_aa.placement.asset",
+      "definition": {
+        "Id": "defense.vulcan_aa",
+        "DisplayName": "발칸 대공포",
+        "Category": 0,
+        "Footprint": {
+          "x": 1,
+          "y": 1
+        },
+        "Recoverable": true,
+        "Placement": {
+          "instanceID": 50940
+        },
+        "ViewPrefab": {
+          "instanceID": 79940
+        },
+        "Modules": [
+          {
+            "instanceID": 50246
+          },
+          {
+            "instanceID": 50760
+          },
+          {
+            "instanceID": 52252
+          },
+          {
+            "instanceID": 49762
+          },
+          {
+            "instanceID": 50954
+          },
+          {
+            "instanceID": 51504
+          }
+        ]
+      },
+      "modules": [
+        {
+          "type": "EternalSteam.WeaponModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/defense.vulcan_aa.weapon.asset",
+          "values": {
+            "Schedule": 2,
+            "Delivery": 0,
+            "Source": 0,
+            "Targets": 2,
+            "BaseDamage": 100.0,
+            "DamageCoefficient": 0.15000000596046448,
+            "Range": 25.0,
+            "Interval": 0.20000000298023224,
+            "Angle": 360.0,
+            "BurstDuration": 5.0,
+            "Rest": 2.0,
+            "Radius": 0.0,
+            "ProjectileSpeed": 30.0,
+            "ProjectileLifetime": 12.0,
+            "PierceWidth": 0.60000002384185791,
+            "MaximumTargets": 1,
+            "MaximumHits": 3,
+            "JumpRange": 8.0,
+            "JumpInterval": 0.5,
+            "ChainDuration": 5.0,
+            "Retention": 0.20000000298023224,
+            "Status": 0,
+            "StatusDuration": 3.0,
+            "StatusStrength": 0.20000000298023224,
+            "TickDamage": 10.0,
+            "SameTargetSeconds": 3.0
+          }
+        },
+        {
+          "type": "EternalSteam.PerformanceUpgradeDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/defense.vulcan_aa.upgrade.asset",
+          "values": {
+            "MaximumLevel": 10
+          }
+        },
+        {
+          "type": "EternalSteam.TurretRotationDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.vulcan_aa.rotation.asset",
+          "values": {
+            "DegreesPerSecond": 180.0,
+            "AlignmentTolerance": 1.0
+          }
+        },
+        {
+          "type": "EternalSteam.HealthModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.vulcan_aa.health.asset",
+          "values": {
+            "Maximum": 100.0
+          }
+        },
+        {
+          "type": "EternalSteam.BuildingCombatDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.vulcan_aa.combat.asset",
+          "values": {
+            "Role": 1,
+            "BlocksGround": true
+          }
+        },
+        {
+          "type": "EternalSteam.PowerModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/BasePower/DefenseConsumer.asset",
+          "values": {
+            "Role": 2,
+            "Capacity": 200.0,
+            "CapacityPerLevel": 20.0,
+            "Rate": 5.0,
+            "VerificationSettings": true,
+            "ExternalAttackAdapter": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "defense.rail_aa",
+      "name": "레일 대공포",
+      "asset": "Assets/EternalSteam/Content/Buildings/BasePower/defense.rail_aa.asset",
+      "placement": {
+        "Surface": 2,
+        "RequiredNexusLevel": 7,
+        "VerificationSettings": true,
+        "RequiresBuildArea": false,
+        "RequiresOperationalArea": true,
+        "RequiresOwnerBase": true,
+        "SnapCells": 1
+      },
+      "placementAsset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.rail_aa.placement.asset",
+      "definition": {
+        "Id": "defense.rail_aa",
+        "DisplayName": "레일 대공포",
+        "Category": 0,
+        "Footprint": {
+          "x": 1,
+          "y": 1
+        },
+        "Recoverable": true,
+        "Placement": {
+          "instanceID": 49386
+        },
+        "ViewPrefab": {
+          "instanceID": 79870
+        },
+        "Modules": [
+          {
+            "instanceID": 52294
+          },
+          {
+            "instanceID": 50348
+          },
+          {
+            "instanceID": 52356
+          },
+          {
+            "instanceID": 52238
+          },
+          {
+            "instanceID": 49212
+          },
+          {
+            "instanceID": 51504
+          }
+        ]
+      },
+      "modules": [
+        {
+          "type": "EternalSteam.WeaponModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/defense.rail_aa.weapon.asset",
+          "values": {
+            "Schedule": 0,
+            "Delivery": 2,
+            "Source": 0,
+            "Targets": 3,
+            "BaseDamage": 100.0,
+            "DamageCoefficient": 2.5,
+            "Range": 100.0,
+            "Interval": 5.0,
+            "Angle": 360.0,
+            "BurstDuration": 5.0,
+            "Rest": 2.0,
+            "Radius": 0.0,
+            "ProjectileSpeed": 30.0,
+            "ProjectileLifetime": 12.0,
+            "PierceWidth": 0.60000002384185791,
+            "MaximumTargets": 1,
+            "MaximumHits": 100000,
+            "JumpRange": 8.0,
+            "JumpInterval": 0.5,
+            "ChainDuration": 5.0,
+            "Retention": 0.20000000298023224,
+            "Status": 0,
+            "StatusDuration": 3.0,
+            "StatusStrength": 0.20000000298023224,
+            "TickDamage": 10.0,
+            "SameTargetSeconds": 3.0
+          }
+        },
+        {
+          "type": "EternalSteam.PerformanceUpgradeDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/defense.rail_aa.upgrade.asset",
+          "values": {
+            "MaximumLevel": 10
+          }
+        },
+        {
+          "type": "EternalSteam.TurretRotationDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.rail_aa.rotation.asset",
+          "values": {
+            "DegreesPerSecond": 180.0,
+            "AlignmentTolerance": 1.0
+          }
+        },
+        {
+          "type": "EternalSteam.HealthModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.rail_aa.health.asset",
+          "values": {
+            "Maximum": 100.0
+          }
+        },
+        {
+          "type": "EternalSteam.BuildingCombatDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.rail_aa.combat.asset",
+          "values": {
+            "Role": 1,
+            "BlocksGround": true
+          }
+        },
+        {
+          "type": "EternalSteam.PowerModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/BasePower/DefenseConsumer.asset",
+          "values": {
+            "Role": 2,
+            "Capacity": 200.0,
+            "CapacityPerLevel": 20.0,
+            "Rate": 5.0,
+            "VerificationSettings": true,
+            "ExternalAttackAdapter": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "defense.arc",
+      "name": "아크 블래스터",
+      "asset": "Assets/EternalSteam/Content/Buildings/BasePower/defense.arc.asset",
+      "placement": {
+        "Surface": 2,
+        "RequiredNexusLevel": 2,
+        "VerificationSettings": true,
+        "RequiresBuildArea": false,
+        "RequiresOperationalArea": true,
+        "RequiresOwnerBase": true,
+        "SnapCells": 1
+      },
+      "placementAsset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.arc.placement.asset",
+      "definition": {
+        "Id": "defense.arc",
+        "DisplayName": "아크 블래스터",
+        "Category": 0,
+        "Footprint": {
+          "x": 2,
+          "y": 2
+        },
+        "Recoverable": true,
+        "Placement": {
+          "instanceID": 51612
+        },
+        "ViewPrefab": {
+          "instanceID": 79970
+        },
+        "Modules": [
+          {
+            "instanceID": 52236
+          },
+          {
+            "instanceID": 51886
+          },
+          {
+            "instanceID": 51064
+          },
+          {
+            "instanceID": 52846
+          },
+          {
+            "instanceID": 50932
+          },
+          {
+            "instanceID": 51504
+          }
+        ]
+      },
+      "modules": [
+        {
+          "type": "EternalSteam.WeaponModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/defense.arc.weapon.asset",
+          "values": {
+            "Schedule": 0,
+            "Delivery": 1,
+            "Source": 0,
+            "Targets": 3,
+            "BaseDamage": 100.0,
+            "DamageCoefficient": 1.5,
+            "Range": 40.0,
+            "Interval": 3.0,
+            "Angle": 360.0,
+            "BurstDuration": 5.0,
+            "Rest": 2.0,
+            "Radius": 8.0,
+            "ProjectileSpeed": 30.0,
+            "ProjectileLifetime": 12.0,
+            "PierceWidth": 0.60000002384185791,
+            "MaximumTargets": 1,
+            "MaximumHits": 3,
+            "JumpRange": 8.0,
+            "JumpInterval": 0.5,
+            "ChainDuration": 5.0,
+            "Retention": 0.20000000298023224,
+            "Status": 0,
+            "StatusDuration": 3.0,
+            "StatusStrength": 0.20000000298023224,
+            "TickDamage": 10.0,
+            "SameTargetSeconds": 3.0
+          }
+        },
+        {
+          "type": "EternalSteam.PerformanceUpgradeDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/defense.arc.upgrade.asset",
+          "values": {
+            "MaximumLevel": 7
+          }
+        },
+        {
+          "type": "EternalSteam.TurretRotationDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.arc.rotation.asset",
+          "values": {
+            "DegreesPerSecond": 180.0,
+            "AlignmentTolerance": 1.0
+          }
+        },
+        {
+          "type": "EternalSteam.HealthModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.arc.health.asset",
+          "values": {
+            "Maximum": 100.0
+          }
+        },
+        {
+          "type": "EternalSteam.BuildingCombatDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.arc.combat.asset",
+          "values": {
+            "Role": 1,
+            "BlocksGround": true
+          }
+        },
+        {
+          "type": "EternalSteam.PowerModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/BasePower/DefenseConsumer.asset",
+          "values": {
+            "Role": 2,
+            "Capacity": 200.0,
+            "CapacityPerLevel": 20.0,
+            "Rate": 5.0,
+            "VerificationSettings": true,
+            "ExternalAttackAdapter": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "defense.railgun",
+      "name": "레일건 터렛",
+      "asset": "Assets/EternalSteam/Content/Buildings/BasePower/defense.railgun.asset",
+      "placement": {
+        "Surface": 2,
+        "RequiredNexusLevel": 4,
+        "VerificationSettings": true,
+        "RequiresBuildArea": false,
+        "RequiresOperationalArea": true,
+        "RequiresOwnerBase": true,
+        "SnapCells": 1
+      },
+      "placementAsset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.railgun.placement.asset",
+      "definition": {
+        "Id": "defense.railgun",
+        "DisplayName": "레일건 터렛",
+        "Category": 0,
+        "Footprint": {
+          "x": 2,
+          "y": 2
+        },
+        "Recoverable": true,
+        "Placement": {
+          "instanceID": 51676
+        },
+        "ViewPrefab": {
+          "instanceID": 79874
+        },
+        "Modules": [
+          {
+            "instanceID": 51216
+          },
+          {
+            "instanceID": 50688
+          },
+          {
+            "instanceID": 48606
+          },
+          {
+            "instanceID": 48906
+          },
+          {
+            "instanceID": 51678
+          },
+          {
+            "instanceID": 51504
+          }
+        ]
+      },
+      "modules": [
+        {
+          "type": "EternalSteam.WeaponModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/defense.railgun.weapon.asset",
+          "values": {
+            "Schedule": 0,
+            "Delivery": 2,
+            "Source": 0,
+            "Targets": 3,
+            "BaseDamage": 100.0,
+            "DamageCoefficient": 3.0,
+            "Range": 60.0,
+            "Interval": 5.0,
+            "Angle": 360.0,
+            "BurstDuration": 5.0,
+            "Rest": 2.0,
+            "Radius": 0.0,
+            "ProjectileSpeed": 30.0,
+            "ProjectileLifetime": 12.0,
+            "PierceWidth": 0.60000002384185791,
+            "MaximumTargets": 1,
+            "MaximumHits": 3,
+            "JumpRange": 8.0,
+            "JumpInterval": 0.5,
+            "ChainDuration": 5.0,
+            "Retention": 0.20000000298023224,
+            "Status": 0,
+            "StatusDuration": 3.0,
+            "StatusStrength": 0.20000000298023224,
+            "TickDamage": 10.0,
+            "SameTargetSeconds": 3.0
+          }
+        },
+        {
+          "type": "EternalSteam.PerformanceUpgradeDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/defense.railgun.upgrade.asset",
+          "values": {
+            "MaximumLevel": 7
+          }
+        },
+        {
+          "type": "EternalSteam.TurretRotationDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.railgun.rotation.asset",
+          "values": {
+            "DegreesPerSecond": 180.0,
+            "AlignmentTolerance": 1.0
+          }
+        },
+        {
+          "type": "EternalSteam.HealthModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.railgun.health.asset",
+          "values": {
+            "Maximum": 100.0
+          }
+        },
+        {
+          "type": "EternalSteam.BuildingCombatDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.railgun.combat.asset",
+          "values": {
+            "Role": 1,
+            "BlocksGround": true
+          }
+        },
+        {
+          "type": "EternalSteam.PowerModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/BasePower/DefenseConsumer.asset",
+          "values": {
+            "Role": 2,
+            "Capacity": 200.0,
+            "CapacityPerLevel": 20.0,
+            "Rate": 5.0,
+            "VerificationSettings": true,
+            "ExternalAttackAdapter": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "defense.sky_plasma",
+      "name": "스카이 플라즈마 포탑",
+      "asset": "Assets/EternalSteam/Content/Buildings/BasePower/defense.sky_plasma.asset",
+      "placement": {
+        "Surface": 2,
+        "RequiredNexusLevel": 4,
+        "VerificationSettings": true,
+        "RequiresBuildArea": false,
+        "RequiresOperationalArea": true,
+        "RequiresOwnerBase": true,
+        "SnapCells": 1
+      },
+      "placementAsset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.sky_plasma.placement.asset",
+      "definition": {
+        "Id": "defense.sky_plasma",
+        "DisplayName": "스카이 플라즈마 포탑",
+        "Category": 0,
+        "Footprint": {
+          "x": 2,
+          "y": 2
+        },
+        "Recoverable": true,
+        "Placement": {
+          "instanceID": 49844
+        },
+        "ViewPrefab": {
+          "instanceID": 79972
+        },
+        "Modules": [
+          {
+            "instanceID": 49588
+          },
+          {
+            "instanceID": 52210
+          },
+          {
+            "instanceID": 51458
+          },
+          {
+            "instanceID": 50558
+          },
+          {
+            "instanceID": 53494
+          },
+          {
+            "instanceID": 51504
+          }
+        ]
+      },
+      "modules": [
+        {
+          "type": "EternalSteam.WeaponModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/defense.sky_plasma.weapon.asset",
+          "values": {
+            "Schedule": 0,
+            "Delivery": 1,
+            "Source": 0,
+            "Targets": 2,
+            "BaseDamage": 100.0,
+            "DamageCoefficient": 1.7999999523162842,
+            "Range": 50.0,
+            "Interval": 4.0,
+            "Angle": 360.0,
+            "BurstDuration": 5.0,
+            "Rest": 2.0,
+            "Radius": 7.0,
+            "ProjectileSpeed": 30.0,
+            "ProjectileLifetime": 12.0,
+            "PierceWidth": 0.60000002384185791,
+            "MaximumTargets": 1,
+            "MaximumHits": 3,
+            "JumpRange": 8.0,
+            "JumpInterval": 0.5,
+            "ChainDuration": 5.0,
+            "Retention": 0.20000000298023224,
+            "Status": 2,
+            "StatusDuration": 3.0,
+            "StatusStrength": 0.20000000298023224,
+            "TickDamage": 10.0,
+            "SameTargetSeconds": 3.0
+          }
+        },
+        {
+          "type": "EternalSteam.PerformanceUpgradeDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/defense.sky_plasma.upgrade.asset",
+          "values": {
+            "MaximumLevel": 7
+          }
+        },
+        {
+          "type": "EternalSteam.TurretRotationDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.sky_plasma.rotation.asset",
+          "values": {
+            "DegreesPerSecond": 180.0,
+            "AlignmentTolerance": 1.0
+          }
+        },
+        {
+          "type": "EternalSteam.HealthModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.sky_plasma.health.asset",
+          "values": {
+            "Maximum": 100.0
+          }
+        },
+        {
+          "type": "EternalSteam.BuildingCombatDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.sky_plasma.combat.asset",
+          "values": {
+            "Role": 1,
+            "BlocksGround": true
+          }
+        },
+        {
+          "type": "EternalSteam.PowerModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/BasePower/DefenseConsumer.asset",
+          "values": {
+            "Role": 2,
+            "Capacity": 200.0,
+            "CapacityPerLevel": 20.0,
+            "Rate": 5.0,
+            "VerificationSettings": true,
+            "ExternalAttackAdapter": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "defense.smart_missile",
+      "name": "스마트 미사일 발사대",
+      "asset": "Assets/EternalSteam/Content/Buildings/BasePower/defense.smart_missile.asset",
+      "placement": {
+        "Surface": 2,
+        "RequiredNexusLevel": 6,
+        "VerificationSettings": true,
+        "RequiresBuildArea": false,
+        "RequiresOperationalArea": true,
+        "RequiresOwnerBase": true,
+        "SnapCells": 1
+      },
+      "placementAsset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.smart_missile.placement.asset",
+      "definition": {
+        "Id": "defense.smart_missile",
+        "DisplayName": "스마트 미사일 발사대",
+        "Category": 0,
+        "Footprint": {
+          "x": 3,
+          "y": 3
+        },
+        "Recoverable": true,
+        "Placement": {
+          "instanceID": 50780
+        },
+        "ViewPrefab": {
+          "instanceID": 79876
+        },
+        "Modules": [
+          {
+            "instanceID": 52348
+          },
+          {
+            "instanceID": 49606
+          },
+          {
+            "instanceID": 52572
+          },
+          {
+            "instanceID": 51256
+          },
+          {
+            "instanceID": 49712
+          },
+          {
+            "instanceID": 51504
+          }
+        ]
+      },
+      "modules": [
+        {
+          "type": "EternalSteam.WeaponModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/defense.smart_missile.weapon.asset",
+          "values": {
+            "Schedule": 0,
+            "Delivery": 1,
+            "Source": 0,
+            "Targets": 3,
+            "BaseDamage": 100.0,
+            "DamageCoefficient": 2.0,
+            "Range": 70.0,
+            "Interval": 6.0,
+            "Angle": 360.0,
+            "BurstDuration": 5.0,
+            "Rest": 2.0,
+            "Radius": 5.0,
+            "ProjectileSpeed": 30.0,
+            "ProjectileLifetime": 12.0,
+            "PierceWidth": 0.60000002384185791,
+            "MaximumTargets": 3,
+            "MaximumHits": 3,
+            "JumpRange": 8.0,
+            "JumpInterval": 0.5,
+            "ChainDuration": 5.0,
+            "Retention": 0.20000000298023224,
+            "Status": 0,
+            "StatusDuration": 3.0,
+            "StatusStrength": 0.20000000298023224,
+            "TickDamage": 10.0,
+            "SameTargetSeconds": 3.0
+          }
+        },
+        {
+          "type": "EternalSteam.PerformanceUpgradeDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/defense.smart_missile.upgrade.asset",
+          "values": {
+            "MaximumLevel": 3
+          }
+        },
+        {
+          "type": "EternalSteam.TurretRotationDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.smart_missile.rotation.asset",
+          "values": {
+            "DegreesPerSecond": 180.0,
+            "AlignmentTolerance": 1.0
+          }
+        },
+        {
+          "type": "EternalSteam.HealthModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.smart_missile.health.asset",
+          "values": {
+            "Maximum": 100.0
+          }
+        },
+        {
+          "type": "EternalSteam.BuildingCombatDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.smart_missile.combat.asset",
+          "values": {
+            "Role": 1,
+            "BlocksGround": true
+          }
+        },
+        {
+          "type": "EternalSteam.PowerModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/BasePower/DefenseConsumer.asset",
+          "values": {
+            "Role": 2,
+            "Capacity": 200.0,
+            "CapacityPerLevel": 20.0,
+            "Rate": 5.0,
+            "VerificationSettings": true,
+            "ExternalAttackAdapter": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "defense.emp",
+      "name": "EMP 펄스 타워",
+      "asset": "Assets/EternalSteam/Content/Buildings/BasePower/defense.emp.asset",
+      "placement": {
+        "Surface": 2,
+        "RequiredNexusLevel": 8,
+        "VerificationSettings": true,
+        "RequiresBuildArea": false,
+        "RequiresOperationalArea": true,
+        "RequiresOwnerBase": true,
+        "SnapCells": 1
+      },
+      "placementAsset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.emp.placement.asset",
+      "definition": {
+        "Id": "defense.emp",
+        "DisplayName": "EMP 펄스 타워",
+        "Category": 0,
+        "Footprint": {
+          "x": 3,
+          "y": 3
+        },
+        "Recoverable": true,
+        "Placement": {
+          "instanceID": 51378
+        },
+        "ViewPrefab": {
+          "instanceID": 79974
+        },
+        "Modules": [
+          {
+            "instanceID": 49260
+          },
+          {
+            "instanceID": 51324
+          },
+          {
+            "instanceID": 51720
+          },
+          {
+            "instanceID": 52722
+          },
+          {
+            "instanceID": 50080
+          },
+          {
+            "instanceID": 51504
+          }
+        ]
+      },
+      "modules": [
+        {
+          "type": "EternalSteam.WeaponModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/defense.emp.weapon.asset",
+          "values": {
+            "Schedule": 0,
+            "Delivery": 4,
+            "Source": 0,
+            "Targets": 3,
+            "BaseDamage": 100.0,
+            "DamageCoefficient": 0.0,
+            "Range": 25.0,
+            "Interval": 10.0,
+            "Angle": 360.0,
+            "BurstDuration": 5.0,
+            "Rest": 2.0,
+            "Radius": 0.0,
+            "ProjectileSpeed": 30.0,
+            "ProjectileLifetime": 12.0,
+            "PierceWidth": 0.60000002384185791,
+            "MaximumTargets": 1,
+            "MaximumHits": 3,
+            "JumpRange": 8.0,
+            "JumpInterval": 0.5,
+            "ChainDuration": 5.0,
+            "Retention": 0.20000000298023224,
+            "Status": 3,
+            "StatusDuration": 2.0,
+            "StatusStrength": 0.20000000298023224,
+            "TickDamage": 10.0,
+            "SameTargetSeconds": 3.0
+          }
+        },
+        {
+          "type": "EternalSteam.PerformanceUpgradeDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/defense.emp.upgrade.asset",
+          "values": {
+            "MaximumLevel": 3
+          }
+        },
+        {
+          "type": "EternalSteam.TurretRotationDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.emp.rotation.asset",
+          "values": {
+            "DegreesPerSecond": 180.0,
+            "AlignmentTolerance": 1.0
+          }
+        },
+        {
+          "type": "EternalSteam.HealthModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.emp.health.asset",
+          "values": {
+            "Maximum": 100.0
+          }
+        },
+        {
+          "type": "EternalSteam.BuildingCombatDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/defense.emp.combat.asset",
+          "values": {
+            "Role": 1,
+            "BlocksGround": true
+          }
+        },
+        {
+          "type": "EternalSteam.PowerModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/BasePower/DefenseConsumer.asset",
+          "values": {
+            "Role": 2,
+            "Capacity": 200.0,
+            "CapacityPerLevel": 20.0,
+            "Rate": 5.0,
+            "VerificationSettings": true,
+            "ExternalAttackAdapter": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "installation.outpost",
+      "name": "외부 전초",
+      "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/installation.outpost.asset",
+      "placement": {
+        "Surface": 1,
+        "RequiredNexusLevel": 1,
+        "VerificationSettings": true,
+        "RequiresBuildArea": false,
+        "RequiresOperationalArea": false,
+        "RequiresOwnerBase": true,
+        "SnapCells": 1
+      },
+      "placementAsset": "Assets/EternalSteam/Content/Buildings/StartRegion/outpost.placement.asset",
+      "definition": {
+        "Id": "installation.outpost",
+        "DisplayName": "외부 전초",
+        "Category": 2,
+        "Footprint": {
+          "x": 2,
+          "y": 2
+        },
+        "Recoverable": true,
+        "Placement": {
+          "instanceID": 51772
+        },
+        "ViewPrefab": {
+          "instanceID": 79960
+        },
+        "Modules": [
+          {
+            "instanceID": 52580
+          },
+          {
+            "instanceID": 52246
+          },
+          {
+            "instanceID": 50850
+          }
+        ]
+      },
+      "modules": [
+        {
+          "type": "EternalSteam.BuildAreaModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/outpost.area.asset",
+          "values": {
+            "Shape": 1,
+            "Radius": 20.0,
+            "Yaw": 45.0,
+            "FromFrontEdge": false,
+            "AlignForwardCells": false,
+            "CellSize": 2.0,
+            "RadiusPerLevel": 0.0
+          }
+        },
+        {
+          "type": "EternalSteam.HealthModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/installation.outpost.health.asset",
+          "values": {
+            "Maximum": 50.0
+          }
+        },
+        {
+          "type": "EternalSteam.BuildingCombatDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/installation.outpost.combat.asset",
+          "values": {
+            "Role": 0,
+            "BlocksGround": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "installation.wall",
+      "name": "방벽",
+      "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/installation.wall.asset",
+      "placement": {
+        "Surface": 2,
+        "RequiredNexusLevel": 1,
+        "VerificationSettings": true,
+        "RequiresBuildArea": false,
+        "RequiresOperationalArea": false,
+        "RequiresOwnerBase": false,
+        "SnapCells": 1
+      },
+      "placementAsset": "Assets/EternalSteam/Content/Buildings/StartRegion/installation.wall.placement.asset",
+      "definition": {
+        "Id": "installation.wall",
+        "DisplayName": "방벽",
+        "Category": 2,
+        "Footprint": {
+          "x": 1,
+          "y": 1
+        },
+        "Recoverable": true,
+        "Placement": {
+          "instanceID": 50138
+        },
+        "ViewPrefab": {
+          "instanceID": 79966
+        },
+        "Modules": [
+          {
+            "instanceID": 51930
+          },
+          {
+            "instanceID": 51248
+          }
+        ]
+      },
+      "modules": [
+        {
+          "type": "EternalSteam.HealthModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/installation.wall.health.asset",
+          "values": {
+            "Maximum": 100.0
+          }
+        },
+        {
+          "type": "EternalSteam.BuildingCombatDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/installation.wall.combat.asset",
+          "values": {
+            "Role": 3,
+            "BlocksGround": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "resource.copper",
+      "name": "구리 생성기",
+      "asset": "Assets/EternalSteam/Content/Buildings/BasePlanning/resource.copper.asset",
+      "placement": {
+        "Surface": 1,
+        "RequiredNexusLevel": 2,
+        "VerificationSettings": true,
+        "RequiresBuildArea": false,
+        "RequiresOperationalArea": true,
+        "RequiresOwnerBase": true,
+        "SnapCells": 1
+      },
+      "placementAsset": "Assets/EternalSteam/Content/Buildings/BasePlanning/resource.copper.placement.asset",
+      "definition": {
+        "Id": "resource.copper",
+        "DisplayName": "구리 생성기",
+        "Category": 1,
+        "Footprint": {
+          "x": 1,
+          "y": 1
+        },
+        "Recoverable": true,
+        "Placement": {
+          "instanceID": 50682
+        },
+        "ViewPrefab": {
+          "instanceID": 79956
+        },
+        "Modules": [
+          {
+            "instanceID": 49006
+          },
+          {
+            "instanceID": 53266
+          },
+          {
+            "instanceID": 51506
+          }
+        ]
+      },
+      "modules": [
+        {
+          "type": "EternalSteam.ProductionModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/resource.copper.production.asset",
+          "values": {
+            "InputId": "",
+            "InputAmount": 0.0,
+            "OutputId": "copper",
+            "OutputAmount": 1.0,
+            "Interval": 5.0
+          }
+        },
+        {
+          "type": "EternalSteam.HealthModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/resource.copper.health.asset",
+          "values": {
+            "Maximum": 50.0
+          }
+        },
+        {
+          "type": "EternalSteam.BuildingCombatDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/resource.copper.combat.asset",
+          "values": {
+            "Role": 0,
+            "BlocksGround": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "resource.iron",
+      "name": "철 생성기",
+      "asset": "Assets/EternalSteam/Content/Buildings/BasePlanning/resource.iron.asset",
+      "placement": {
+        "Surface": 1,
+        "RequiredNexusLevel": 1,
+        "VerificationSettings": true,
+        "RequiresBuildArea": false,
+        "RequiresOperationalArea": true,
+        "RequiresOwnerBase": true,
+        "SnapCells": 1
+      },
+      "placementAsset": "Assets/EternalSteam/Content/Buildings/BasePlanning/resource.iron.placement.asset",
+      "definition": {
+        "Id": "resource.iron",
+        "DisplayName": "철 생성기",
+        "Category": 1,
+        "Footprint": {
+          "x": 1,
+          "y": 1
+        },
+        "Recoverable": true,
+        "Placement": {
+          "instanceID": 50122
+        },
+        "ViewPrefab": {
+          "instanceID": 79878
+        },
+        "Modules": [
+          {
+            "instanceID": 52144
+          },
+          {
+            "instanceID": 50636
+          },
+          {
+            "instanceID": 53082
+          }
+        ]
+      },
+      "modules": [
+        {
+          "type": "EternalSteam.ProductionModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/resource.iron.production.asset",
+          "values": {
+            "InputId": "",
+            "InputAmount": 0.0,
+            "OutputId": "iron",
+            "OutputAmount": 1.0,
+            "Interval": 2.0
+          }
+        },
+        {
+          "type": "EternalSteam.HealthModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/resource.iron.health.asset",
+          "values": {
+            "Maximum": 50.0
+          }
+        },
+        {
+          "type": "EternalSteam.BuildingCombatDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/resource.iron.combat.asset",
+          "values": {
+            "Role": 0,
+            "BlocksGround": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "resource.nanometal",
+      "name": "나노메탈 생성기",
+      "asset": "Assets/EternalSteam/Content/Buildings/BasePlanning/resource.nanometal.asset",
+      "placement": {
+        "Surface": 1,
+        "RequiredNexusLevel": 7,
+        "VerificationSettings": true,
+        "RequiresBuildArea": false,
+        "RequiresOperationalArea": true,
+        "RequiresOwnerBase": true,
+        "SnapCells": 1
+      },
+      "placementAsset": "Assets/EternalSteam/Content/Buildings/BasePlanning/resource.nanometal.placement.asset",
+      "definition": {
+        "Id": "resource.nanometal",
+        "DisplayName": "나노메탈 생성기",
+        "Category": 1,
+        "Footprint": {
+          "x": 1,
+          "y": 1
+        },
+        "Recoverable": true,
+        "Placement": {
+          "instanceID": 48558
+        },
+        "ViewPrefab": {
+          "instanceID": 79880
+        },
+        "Modules": [
+          {
+            "instanceID": 51410
+          },
+          {
+            "instanceID": 51890
+          },
+          {
+            "instanceID": 48604
+          }
+        ]
+      },
+      "modules": [
+        {
+          "type": "EternalSteam.ProductionModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/resource.nanometal.production.asset",
+          "values": {
+            "InputId": "",
+            "InputAmount": 0.0,
+            "OutputId": "nanometal",
+            "OutputAmount": 1.0,
+            "Interval": 120.0
+          }
+        },
+        {
+          "type": "EternalSteam.HealthModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/resource.nanometal.health.asset",
+          "values": {
+            "Maximum": 50.0
+          }
+        },
+        {
+          "type": "EternalSteam.BuildingCombatDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/resource.nanometal.combat.asset",
+          "values": {
+            "Role": 0,
+            "BlocksGround": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "resource.plasma_ore",
+      "name": "플라즈마 생성기",
+      "asset": "Assets/EternalSteam/Content/Buildings/BasePlanning/resource.plasma_ore.asset",
+      "placement": {
+        "Surface": 1,
+        "RequiredNexusLevel": 6,
+        "VerificationSettings": true,
+        "RequiresBuildArea": false,
+        "RequiresOperationalArea": true,
+        "RequiresOwnerBase": true,
+        "SnapCells": 1
+      },
+      "placementAsset": "Assets/EternalSteam/Content/Buildings/BasePlanning/resource.plasma_ore.placement.asset",
+      "definition": {
+        "Id": "resource.plasma_ore",
+        "DisplayName": "플라즈마 생성기",
+        "Category": 1,
+        "Footprint": {
+          "x": 1,
+          "y": 1
+        },
+        "Recoverable": true,
+        "Placement": {
+          "instanceID": 52768
+        },
+        "ViewPrefab": {
+          "instanceID": 79884
+        },
+        "Modules": [
+          {
+            "instanceID": 48762
+          },
+          {
+            "instanceID": 52366
+          },
+          {
+            "instanceID": 52922
+          }
+        ]
+      },
+      "modules": [
+        {
+          "type": "EternalSteam.ProductionModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/resource.plasma_ore.production.asset",
+          "values": {
+            "InputId": "",
+            "InputAmount": 0.0,
+            "OutputId": "plasma_ore",
+            "OutputAmount": 1.0,
+            "Interval": 60.0
+          }
+        },
+        {
+          "type": "EternalSteam.HealthModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/resource.plasma_ore.health.asset",
+          "values": {
+            "Maximum": 50.0
+          }
+        },
+        {
+          "type": "EternalSteam.BuildingCombatDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/resource.plasma_ore.combat.asset",
+          "values": {
+            "Role": 0,
+            "BlocksGround": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "resource.titanium",
+      "name": "티타늄 생성기",
+      "asset": "Assets/EternalSteam/Content/Buildings/BasePlanning/resource.titanium.asset",
+      "placement": {
+        "Surface": 1,
+        "RequiredNexusLevel": 3,
+        "VerificationSettings": true,
+        "RequiresBuildArea": false,
+        "RequiresOperationalArea": true,
+        "RequiresOwnerBase": true,
+        "SnapCells": 1
+      },
+      "placementAsset": "Assets/EternalSteam/Content/Buildings/BasePlanning/resource.titanium.placement.asset",
+      "definition": {
+        "Id": "resource.titanium",
+        "DisplayName": "티타늄 생성기",
+        "Category": 1,
+        "Footprint": {
+          "x": 1,
+          "y": 1
+        },
+        "Recoverable": true,
+        "Placement": {
+          "instanceID": 52732
+        },
+        "ViewPrefab": {
+          "instanceID": 79872
+        },
+        "Modules": [
+          {
+            "instanceID": 52502
+          },
+          {
+            "instanceID": 51610
+          },
+          {
+            "instanceID": 51898
+          }
+        ]
+      },
+      "modules": [
+        {
+          "type": "EternalSteam.ProductionModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/resource.titanium.production.asset",
+          "values": {
+            "InputId": "",
+            "InputAmount": 0.0,
+            "OutputId": "titanium",
+            "OutputAmount": 1.0,
+            "Interval": 10.0
+          }
+        },
+        {
+          "type": "EternalSteam.HealthModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/resource.titanium.health.asset",
+          "values": {
+            "Maximum": 50.0
+          }
+        },
+        {
+          "type": "EternalSteam.BuildingCombatDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/resource.titanium.combat.asset",
+          "values": {
+            "Role": 0,
+            "BlocksGround": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "resource.tungsten",
+      "name": "텅스텐 생성기",
+      "asset": "Assets/EternalSteam/Content/Buildings/BasePlanning/resource.tungsten.asset",
+      "placement": {
+        "Surface": 1,
+        "RequiredNexusLevel": 4,
+        "VerificationSettings": true,
+        "RequiresBuildArea": false,
+        "RequiresOperationalArea": true,
+        "RequiresOwnerBase": true,
+        "SnapCells": 1
+      },
+      "placementAsset": "Assets/EternalSteam/Content/Buildings/BasePlanning/resource.tungsten.placement.asset",
+      "definition": {
+        "Id": "resource.tungsten",
+        "DisplayName": "텅스텐 생성기",
+        "Category": 1,
+        "Footprint": {
+          "x": 1,
+          "y": 1
+        },
+        "Recoverable": true,
+        "Placement": {
+          "instanceID": 49432
+        },
+        "ViewPrefab": {
+          "instanceID": 79882
+        },
+        "Modules": [
+          {
+            "instanceID": 52008
+          },
+          {
+            "instanceID": 51640
+          },
+          {
+            "instanceID": 52604
+          }
+        ]
+      },
+      "modules": [
+        {
+          "type": "EternalSteam.ProductionModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/resource.tungsten.production.asset",
+          "values": {
+            "InputId": "",
+            "InputAmount": 0.0,
+            "OutputId": "tungsten",
+            "OutputAmount": 1.0,
+            "Interval": 20.0
+          }
+        },
+        {
+          "type": "EternalSteam.HealthModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/resource.tungsten.health.asset",
+          "values": {
+            "Maximum": 50.0
+          }
+        },
+        {
+          "type": "EternalSteam.BuildingCombatDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/resource.tungsten.combat.asset",
+          "values": {
+            "Role": 0,
+            "BlocksGround": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "resource.uranium",
+      "name": "우라늄 생성기",
+      "asset": "Assets/EternalSteam/Content/Buildings/BasePlanning/resource.uranium.asset",
+      "placement": {
+        "Surface": 1,
+        "RequiredNexusLevel": 5,
+        "VerificationSettings": true,
+        "RequiresBuildArea": false,
+        "RequiresOperationalArea": true,
+        "RequiresOwnerBase": true,
+        "SnapCells": 1
+      },
+      "placementAsset": "Assets/EternalSteam/Content/Buildings/BasePlanning/resource.uranium.placement.asset",
+      "definition": {
+        "Id": "resource.uranium",
+        "DisplayName": "우라늄 생성기",
+        "Category": 1,
+        "Footprint": {
+          "x": 1,
+          "y": 1
+        },
+        "Recoverable": true,
+        "Placement": {
+          "instanceID": 52148
+        },
+        "ViewPrefab": {
+          "instanceID": 79958
+        },
+        "Modules": [
+          {
+            "instanceID": 51154
+          },
+          {
+            "instanceID": 53400
+          },
+          {
+            "instanceID": 52562
+          }
+        ]
+      },
+      "modules": [
+        {
+          "type": "EternalSteam.ProductionModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/resource.uranium.production.asset",
+          "values": {
+            "InputId": "",
+            "InputAmount": 0.0,
+            "OutputId": "uranium",
+            "OutputAmount": 1.0,
+            "Interval": 45.0
+          }
+        },
+        {
+          "type": "EternalSteam.HealthModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/resource.uranium.health.asset",
+          "values": {
+            "Maximum": 50.0
+          }
+        },
+        {
+          "type": "EternalSteam.BuildingCombatDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/resource.uranium.combat.asset",
+          "values": {
+            "Role": 0,
+            "BlocksGround": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "resource.power_generator",
+      "name": "전력 발전기",
+      "asset": "Assets/EternalSteam/Content/Buildings/BasePower/Generator.asset",
+      "placement": {
+        "Surface": 1,
+        "RequiredNexusLevel": 1,
+        "VerificationSettings": true,
+        "RequiresBuildArea": false,
+        "RequiresOperationalArea": true,
+        "RequiresOwnerBase": true,
+        "SnapCells": 1
+      },
+      "placementAsset": "Assets/EternalSteam/Content/Buildings/BasePower/GeneratorPlacement.asset",
+      "definition": {
+        "Id": "resource.power_generator",
+        "DisplayName": "전력 발전기",
+        "Category": 1,
+        "Footprint": {
+          "x": 1,
+          "y": 1
+        },
+        "Recoverable": true,
+        "Placement": {
+          "instanceID": 53140
+        },
+        "ViewPrefab": {
+          "instanceID": 79968
+        },
+        "Modules": [
+          {
+            "instanceID": 50636
+          },
+          {
+            "instanceID": 53082
+          },
+          {
+            "instanceID": 50322
+          }
+        ]
+      },
+      "modules": [
+        {
+          "type": "EternalSteam.HealthModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/resource.iron.health.asset",
+          "values": {
+            "Maximum": 50.0
+          }
+        },
+        {
+          "type": "EternalSteam.BuildingCombatDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/resource.iron.combat.asset",
+          "values": {
+            "Role": 0,
+            "BlocksGround": true
+          }
+        },
+        {
+          "type": "EternalSteam.PowerModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/BasePower/GeneratorProduction.asset",
+          "values": {
+            "Role": 1,
+            "Capacity": 200.0,
+            "CapacityPerLevel": 20.0,
+            "Rate": 20.0,
+            "VerificationSettings": true,
+            "ExternalAttackAdapter": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "railway.track",
+      "name": "선로 · 검증비 철 1",
+      "asset": "Assets/EternalSteam/Content/Buildings/Railway/railway.track.asset",
+      "placement": {
+        "Surface": 1,
+        "RequiredNexusLevel": 1,
+        "VerificationSettings": true,
+        "RequiresBuildArea": false,
+        "RequiresOperationalArea": false,
+        "RequiresOwnerBase": false,
+        "SnapCells": 1
+      },
+      "placementAsset": "Assets/EternalSteam/Content/Buildings/Railway/TrackPlacement.asset",
+      "definition": {
+        "Id": "railway.track",
+        "DisplayName": "선로 · 검증비 철 1",
+        "Category": 2,
+        "Footprint": {
+          "x": 1,
+          "y": 1
+        },
+        "Recoverable": true,
+        "Placement": {
+          "instanceID": 51638
+        },
+        "ViewPrefab": {
+          "instanceID": 79886
+        },
+        "Modules": [
+          {
+            "instanceID": 49246
+          }
+        ]
+      },
+      "modules": [
+        {
+          "type": "EternalSteam.Railway.RailFacilityDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/Railway/TrackModule.asset",
+          "values": {
+            "Kind": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "railway.station",
+      "name": "기차역 · 검증비 철 10",
+      "asset": "Assets/EternalSteam/Content/Buildings/Railway/railway.station.asset",
+      "placement": {
+        "Surface": 1,
+        "RequiredNexusLevel": 1,
+        "VerificationSettings": true,
+        "RequiresBuildArea": false,
+        "RequiresOperationalArea": true,
+        "RequiresOwnerBase": true,
+        "SnapCells": 1
+      },
+      "placementAsset": "Assets/EternalSteam/Content/Buildings/Railway/StationPlacement.asset",
+      "definition": {
+        "Id": "railway.station",
+        "DisplayName": "기차역 · 검증비 철 10",
+        "Category": 2,
+        "Footprint": {
+          "x": 2,
+          "y": 2
+        },
+        "Recoverable": true,
+        "Placement": {
+          "instanceID": 53416
+        },
+        "ViewPrefab": {
+          "instanceID": 79942
+        },
+        "Modules": [
+          {
+            "instanceID": 53420
+          }
+        ]
+      },
+      "modules": [
+        {
+          "type": "EternalSteam.Railway.RailFacilityDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/Railway/StationModule.asset",
+          "values": {
+            "Kind": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "railway.coal",
+      "name": "석탄 생성기 · 검증용",
+      "asset": "Assets/EternalSteam/Content/Buildings/Railway/railway.coal.asset",
+      "placement": {
+        "Surface": 1,
+        "RequiredNexusLevel": 1,
+        "VerificationSettings": true,
+        "RequiresBuildArea": true,
+        "RequiresOperationalArea": false,
+        "RequiresOwnerBase": false,
+        "SnapCells": 1
+      },
+      "placementAsset": "Assets/EternalSteam/Content/Buildings/DocumentContent/resource.iron.placement.asset",
+      "definition": {
+        "Id": "railway.coal",
+        "DisplayName": "석탄 생성기 · 검증용",
+        "Category": 1,
+        "Footprint": {
+          "x": 1,
+          "y": 1
+        },
+        "Recoverable": true,
+        "Placement": {
+          "instanceID": 48588
+        },
+        "ViewPrefab": {
+          "instanceID": 79878
+        },
+        "Modules": [
+          {
+            "instanceID": 49426
+          },
+          {
+            "instanceID": 50636
+          },
+          {
+            "instanceID": 53082
+          }
+        ]
+      },
+      "modules": [
+        {
+          "type": "EternalSteam.ProductionModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/Railway/CoalProduction.asset",
+          "values": {
+            "InputId": "",
+            "InputAmount": 0.0,
+            "OutputId": "coal",
+            "OutputAmount": 1.0,
+            "Interval": 2.0
+          }
+        },
+        {
+          "type": "EternalSteam.HealthModuleDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/resource.iron.health.asset",
+          "values": {
+            "Maximum": 50.0
+          }
+        },
+        {
+          "type": "EternalSteam.BuildingCombatDefinition",
+          "asset": "Assets/EternalSteam/Content/Buildings/DocumentContent/resource.iron.combat.asset",
+          "values": {
+            "Role": 0,
+            "BlocksGround": true
+          }
+        }
+      ]
+    }
+  ],
+  "status": "prepared-not-started",
+  "hudCatalog": [
+    {
+      "definition": "installation.nexus",
+      "tool": "Content",
+      "kind": "MachineGun",
+      "category": "Installation"
+    },
+    {
+      "definition": "defense.tesla",
+      "tool": "Content",
+      "kind": "MachineGun",
+      "category": "Defense"
+    },
+    {
+      "definition": "defense.plasma_laser",
+      "tool": "Content",
+      "kind": "MachineGun",
+      "category": "Defense"
+    },
+    {
+      "definition": "defense.vulcan_aa",
+      "tool": "Content",
+      "kind": "MachineGun",
+      "category": "Defense"
+    },
+    {
+      "definition": "defense.rail_aa",
+      "tool": "Content",
+      "kind": "MachineGun",
+      "category": "Defense"
+    },
+    {
+      "definition": "defense.arc",
+      "tool": "Content",
+      "kind": "MachineGun",
+      "category": "Defense"
+    },
+    {
+      "definition": "defense.railgun",
+      "tool": "Content",
+      "kind": "MachineGun",
+      "category": "Defense"
+    },
+    {
+      "definition": "defense.sky_plasma",
+      "tool": "Content",
+      "kind": "MachineGun",
+      "category": "Defense"
+    },
+    {
+      "definition": "defense.smart_missile",
+      "tool": "Content",
+      "kind": "MachineGun",
+      "category": "Defense"
+    },
+    {
+      "definition": "defense.emp",
+      "tool": "Content",
+      "kind": "MachineGun",
+      "category": "Defense"
+    },
+    {
+      "definition": "installation.outpost",
+      "tool": "Content",
+      "kind": "MachineGun",
+      "category": "Installation"
+    },
+    {
+      "definition": "installation.wall",
+      "tool": "Content",
+      "kind": "MachineGun",
+      "category": "Installation"
+    },
+    {
+      "definition": "resource.copper",
+      "tool": "Content",
+      "kind": "MachineGun",
+      "category": "Resource"
+    },
+    {
+      "definition": "resource.iron",
+      "tool": "Content",
+      "kind": "MachineGun",
+      "category": "Resource"
+    },
+    {
+      "definition": "resource.nanometal",
+      "tool": "Content",
+      "kind": "MachineGun",
+      "category": "Resource"
+    },
+    {
+      "definition": "resource.plasma_ore",
+      "tool": "Content",
+      "kind": "MachineGun",
+      "category": "Resource"
+    },
+    {
+      "definition": "resource.titanium",
+      "tool": "Content",
+      "kind": "MachineGun",
+      "category": "Resource"
+    },
+    {
+      "definition": "resource.tungsten",
+      "tool": "Content",
+      "kind": "MachineGun",
+      "category": "Resource"
+    },
+    {
+      "definition": "resource.uranium",
+      "tool": "Content",
+      "kind": "MachineGun",
+      "category": "Resource"
+    },
+    {
+      "definition": "resource.power_generator",
+      "tool": "Content",
+      "kind": "MachineGun",
+      "category": "Resource"
+    },
+    {
+      "definition": null,
+      "tool": "Tower",
+      "kind": "MachineGun",
+      "category": "Defense"
+    },
+    {
+      "definition": null,
+      "tool": "Tower",
+      "kind": "Cannon",
+      "category": "Defense"
+    },
+    {
+      "definition": null,
+      "tool": "Tower",
+      "kind": "Frost",
+      "category": "Defense"
+    },
+    {
+      "definition": null,
+      "tool": "Tower",
+      "kind": "Arrow",
+      "category": "Defense"
+    },
+    {
+      "definition": null,
+      "tool": "Foundation",
+      "kind": "MachineGun",
+      "category": "Installation"
+    },
+    {
+      "definition": "railway.station",
+      "tool": "Explore",
+      "kind": "MachineGun",
+      "category": "Installation"
+    },
+    {
+      "definition": "railway.track",
+      "tool": "Explore",
+      "kind": "MachineGun",
+      "category": "Installation"
+    },
+    {
+      "definition": "railway.coal",
+      "tool": "Explore",
+      "kind": "MachineGun",
+      "category": "Resource"
+    }
+  ],
+  "regions": [
+    {
+      "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/region.start.asset",
+      "values": {
+        "Id": "region.start",
+        "DisplayName": "스타트 지역 A",
+        "Bounds": {
+          "serializedVersion": "2",
+          "x": -341.09771728515625,
+          "y": -348.87588500976563,
+          "width": 353.82562255859375,
+          "height": 707.6512451171875
+        },
+        "ResourceId": "verification.iron",
+        "VerificationSettings": true
+      }
+    },
+    {
+      "asset": "Assets/EternalSteam/Content/Buildings/StartRegion/region.adjacent.asset",
+      "values": {
+        "Id": "region.adjacent",
+        "DisplayName": "인접 지역 B",
+        "Bounds": {
+          "serializedVersion": "2",
+          "x": 12.7279052734375,
+          "y": -348.87588500976563,
+          "width": 353.82562255859375,
+          "height": 707.6512451171875
+        },
+        "ResourceId": "verification.copper",
+        "VerificationSettings": true
+      }
+    }
+  ],
+  "enemyCombat": {
+    "AttackInterval": 1.0,
+    "AttackReach": 1.0,
+    "SearchRadius": 10.0,
+    "SearchInterval": 0.25
+  },
+  "sourceHashes": [
+    {
+      "path": "Assets/EternalSteam/Code/Building/BaseModuleDefinition.cs",
+      "sha256": "e04ca51f354d59c073c0e52a6537a52034104e405ffcd502aef30aa11faae45e"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Building/BuildAreaModuleDefinition.cs",
+      "sha256": "e0d18531b4fa145909487e55aa7b53909de8724335b37c8d1da6f7a888bd2dad"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Building/BuildingCatalog.cs",
+      "sha256": "3474fe5d4c350f88a630dba13039fb7a07a214b8df1d857d9b233e84b533eff3"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Building/BuildingCombatDefinition.cs",
+      "sha256": "7ee53746918fb799f06da2511414f03eaa6696660db6f95c6bb0985a1a067561"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Building/BuildingDefinition.cs",
+      "sha256": "5bde7fc9f9b7e963bb2cae507a8fb2f254db0c0df1c55609dde111ed3a0e44e4"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Building/BuildingModuleDefinition.cs",
+      "sha256": "33c41543af5ad83a3de168f17eff5692dc47b635e1b43577d30f3f4934a168cd"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Building/BuildingOperations.cs",
+      "sha256": "9b22869f67131771ca29df8f6bf2110439aaafe38fe2919bf4500f9dc7c0d9d8"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Building/BuildingTargetRegistry.cs",
+      "sha256": "67f736bc5e422f1fbb84f8ea5b56617819cd216a391555477a417fef9586d184"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Building/Presentation/BuildingView.cs",
+      "sha256": "13ae63731addc5cbef4306e9b6162b425e71f5446a0c96756bb0462686a48221"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Building/TurretRotationDefinition.cs",
+      "sha256": "3d2aaff81f30be678ebb8d1ab9c8ab7aece05641a4cb9a2f555349596fa50827"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Combat/AreaAttackDefinition.cs",
+      "sha256": "7c2922fc1e61f0e71c2077aed893fd9c221a7666c3ce7299575fcc82326bd13d"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Combat/AttackExecutionDefinition.cs",
+      "sha256": "1119f021331bf81b786f24a55c8ba5fb0f4986067c6dcd359eb48f396f2af6ee"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Combat/AttackModuleDefinition.cs",
+      "sha256": "19e004ad4d2cda174ba60fa61455bdce936dde74848c81621553cafa3ef409e2"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Combat/ChainAttackDefinition.cs",
+      "sha256": "279e48cc23de707ae2ae255ca2a1d53b41b177701948be0a8e25804239367eca"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Combat/HealthModuleDefinition.cs",
+      "sha256": "7b2db73a92e9ce93c2ffe9207a2a8518fe684e6be2ed2f817624343e87a41f5c"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Combat/HitEffectDefinition.cs",
+      "sha256": "13a012f2bc87121ba3c0a94c4cb05bc47cb7fc20d1cb7a305dbb6f65b1582217"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Combat/PiercingAttackDefinition.cs",
+      "sha256": "7129da3989779a406f91f50cc585d5ff2782c619a026533e7aa2bae6895aed0e"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Combat/ProjectileAttackDefinition.cs",
+      "sha256": "16f366367d42cf708e22ac490d0ef498e7ed21ecb017e67b4cff571697d276a7"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Combat/StatusEffectDefinition.cs",
+      "sha256": "47e094d80787ea7be81d2ab781ad523563ce2813f414bdb99e00f3b56b9c63ec"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Combat/Targets.cs",
+      "sha256": "e78d9dc73de85f6bf159c411689a1322eb9ed1054025bb95fa0043442f8f68bc"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Combat/WeaponEffects.cs",
+      "sha256": "b16154f043e65df81b7b634d0318759b0c29fa58a22df36b9ab1ff7b2fd6da24"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Combat/WeaponModuleDefinition.cs",
+      "sha256": "b80c4d38b247279f599dd52bd00413f05257885ab2fa655ce564d4981e7a948e"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Content/BuildingPlacementDefinition.cs",
+      "sha256": "61115d3f91777ed82e15261fa9e1b289cc503b4cce1e0856b863e5bb1609e74a"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Content/EnemyCombatSettings.cs",
+      "sha256": "aea50250cbe0d37b74713addc05b903d0c8f733ab220aff21bdc3be9f02d8137"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Content/RegionDefinition.cs",
+      "sha256": "67bf204487b2ada9629741b0fcf09ee188331ea8bb084f72a25df27195c32065"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Contracts/BuildingCapabilities.cs",
+      "sha256": "dd7aac90a782e601d01e7f1209f1a0b85537f3592ed94a0ca56a3ab1cd7887d1"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Contracts/StatContracts.cs",
+      "sha256": "58cf8b812fe3d1a6577c2a1ce557defaddf18a82b5fee756ab86e5147d44f62a"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Contracts/TargetContracts.cs",
+      "sha256": "985a887fd22f05aebed2ec9260358c313b6c831fcf2b249da1357ad82fb16815"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Economy/BaseInventoryRegistry.cs",
+      "sha256": "635b36a32c98ac0b8a0cc363b58aeb2a5de46b81bea233b93cf9770bb72e2edc"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Economy/BasePowerSimulation.cs",
+      "sha256": "a30a444924a93d821893220e72e824bd05570e842c87932b96ebd217f77aab54"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Economy/ConstructionCostTable.cs",
+      "sha256": "a005122451316d8c296691f9a50036a7bd9e30a6b861c70e671b3de1ab82206f"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Economy/ConstructionPurchase.cs",
+      "sha256": "8d7177e6391e916287ec84a6996ad5cc0a0d6ed553df4c811dd553ec3e35ad9d"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Economy/PowerModuleDefinition.cs",
+      "sha256": "e7cc207127402cced63677e68325c927277cb40b89a4a5fa4a7b79af9e8c5184"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Economy/ProductionModuleDefinition.cs",
+      "sha256": "e1cd64af4745ebfd26901508f94b122f052e3f25ff88bd44ebd18c7e90bc5161"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Economy/ResourceBank.cs",
+      "sha256": "006016d2780646502b66a5500b983c0d2b629d2530b4db9d463cc2426f495d27"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Economy/StorageModuleDefinition.cs",
+      "sha256": "2a435cadce41e574207abcc38706b813c528df9c068202b96f01c77db746a1d7"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Economy/UpgradePurchase.cs",
+      "sha256": "c3b83c60b91ee23cc9ba998c5b013989dead70494294682b58686d65dfeaff55"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Editor/ExtensionAssets.cs",
+      "sha256": "83338ee3fdad59f2ca2bf7906de78c350d8f9fcbc5b3ccf0ead497f6b5c81541"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Editor/FoundationAssets.cs",
+      "sha256": "94540ae58d84bde80858b9a49ea4a1aa168750fdac82e3bfa3c4b5ae4874317f"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/LegacyDemo/Buildings/HordeBuildingPlacement.cs",
+      "sha256": "666b29ff703be52203273073be4299ed3308e431aa3fb266ee3c33f8dbfc24c5"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/LegacyDemo/Buildings/HordeTower.cs",
+      "sha256": "0055546ca7a7ba703540575352dfd7712a6cfb4c6fb7bdb72f57a2f5bb3e7281"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/LegacyDemo/Buildings/HordeTowerCombat.cs",
+      "sha256": "bfe9ec90d3a07dc7db908f3ca76258b49ebac00ad833ec3bcb9762d72f81f89a"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/LegacyDemo/Buildings/HordeTowerEffects.cs",
+      "sha256": "a3e4987a4b387ad4b4aa7e583bdc4338cb0deaa2a7de49c24462ddaafc1ecf22"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/LegacyDemo/Buildings/HordeTowerFactory.cs",
+      "sha256": "8f6d19bb6d130df970bbeb67c826db83e0152948ab0b9c978b7cfc311e9da17d"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/LegacyDemo/Combat/HordeAttackResolver.cs",
+      "sha256": "0b5a756ce6167a1f2508b426ca9f116d59250381dec48ccb3845fc5984a8e6ce"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/LegacyDemo/Combat/HordeEnemyWorld.cs",
+      "sha256": "9864e83153e108e25bbf0bccf80646df497d2a57a7019b3fd7ebdc907f97b89b"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/LegacyDemo/Definitions/HordeMapLayout.cs",
+      "sha256": "c32714599ea35b2e739faf51eff7761444814f70c00c57f5ee242497b9d3c511"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/LegacyDemo/Definitions/HordeTowerKind.cs",
+      "sha256": "a10eefeb6255aa79fee92bec4376aac7f6db7f5185934feb22e80d1fe07003ad"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/LegacyDemo/Deployment/HordeDeploymentGeometry.cs",
+      "sha256": "1fb3eafdd5aa647f3730dec8abcdd14a140bdcfe4d159fb33c6ce2ec6244c2d6"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/LegacyDemo/Deployment/HordePlacementController.cs",
+      "sha256": "7c2086647253f70a88c2535321d0a40e44a23e3464c30a1beed6ec02d6a847c8"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/LegacyDemo/HordeBuildGrid.cs",
+      "sha256": "bb00f69a9327b5e280906adc86db0aaaa3622f1809834576615c91b21f9cfbdb"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/LegacyDemo/HordeProgress.cs",
+      "sha256": "5517b9a658df3fba2c63b52f58bc6176fdded808e27623c499da8a8020c6fd41"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/LegacyDemo/HordeSimulation.cs",
+      "sha256": "3ff829a69aac7ccd2bcb619be000b725fb716540d72c6cb3f59fb7c1ca4b8169"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/LegacyDemo/Presentation/HordeCameraFraming.cs",
+      "sha256": "949c4c82d6666cd0a2ed1e32114c2eec787e3a702556b7077ce875f9435191dd"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/LegacyDemo/Presentation/HordeEnemyRenderer.cs",
+      "sha256": "49b7930deb40b317d2ae2d4c99887f2ca88e2ad17dae6ce1f5bca75df501b107"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/LegacyDemo/Presentation/HordePlacementView.cs",
+      "sha256": "929130a98e84eaefb7a77667f0a8ec94b523c4338f4b65afea78b9b86e6e40bb"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/LegacyDemo/Presentation/HordePointerInput.cs",
+      "sha256": "157c6eaaeedf489b9a1983fa372ba169170dd12869f3b732874c36645d65c2cf"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/LegacyDemo/Presentation/HordeVisualPrimitives.cs",
+      "sha256": "ee61fe16ccfafc821d712e122a636eb15b60789d62e2fc941463441c8511a45b"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/LegacyDemo/UI/HordeHud.cs",
+      "sha256": "9fe92eb59e40d6bbb2fb7d6c96a757e0b5c063dde3e0f6a6e58911ea9efed540"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Movement/ObstacleModuleDefinition.cs",
+      "sha256": "e48cfed469033bfb0063381cab24c3d56488bc3ff40b114ae4d9eb3517840cae"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Persistence/JsonSaveStore.cs",
+      "sha256": "118032c6254f124662809c5bd836dcba964c105dee2b56d9f70ea3f2d52e8ff7"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Persistence/SavedState.cs",
+      "sha256": "2e0b563acd87bf450954bf6f7896168d0e6bf5024cad5f780f9fc65a89a15bd2"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Placement/BuildGrid.cs",
+      "sha256": "f3c61df5c0e06f1e8882c80c7bd44667a71cbc56c309d602880e7a10c4d571f0"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Placement/BuildingWorld.cs",
+      "sha256": "ec05a65f2fc58aa67bb1f4c78e6e6434f76000df428177062b50480d8e9c738a"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Progression/CampaignProgression.cs",
+      "sha256": "6d97cd13f847abc9cb5e410f847df6d95219a0071d2430dc085cab890a26078c"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Progression/MainBaseUpgradeDefinition.cs",
+      "sha256": "0be3e076398666051c23afa931ad4892052dcf3e2e4a031d614704685484e4f8"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Progression/MapEnergyState.cs",
+      "sha256": "6749ecab891184f8688e6051313cd56a0e9dc268a1878ab04443051a41f57d8f"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Progression/NexusModuleDefinition.cs",
+      "sha256": "70725fa59d95ca20312c297ad4289d0ae76a146abd9092b02d57afd4872043c2"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Progression/NightSpawnPlanner.cs",
+      "sha256": "64c829a01864413b3845d32ee7c092d0cdf575c5e3dae4c3f8a333d32074890a"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Progression/PerformanceUpgradeDefinition.cs",
+      "sha256": "24894cb340dc47219b824ce89dbddc5047aa087e0c305d8ad3a9b45c36424d52"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Progression/UpgradeModuleDefinition.cs",
+      "sha256": "2b183cbe74c698745f9f4c854b64e69c9f3cd7ac2b876a105df48a84f0c6fc1d"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Railway/RailConnections.cs",
+      "sha256": "f475e2ae1305baaf352947f7688b7495593ad6b9797ee523243a255960676ede"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Railway/RailFacilityDefinition.cs",
+      "sha256": "ccf8b8f9758ccfa514d9e4507e19c503eb1cdd3f25a7b98ac51cbc6daabd808e"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Railway/RailPathPlanner.cs",
+      "sha256": "8f7ad059b3116fd2b1278852568af9d0beb70e696151894ff45d9db530c5a3ed"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Railway/RailwayNetwork.cs",
+      "sha256": "bddc261e5c096e345b9fb4825313e85a65b374d1c2967efe9117d54a4c730121"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Railway/RailwayRevisions.cs",
+      "sha256": "5e42ef712a8ffe7e51b53a5a970012a3b93d17500521da91992759b16f874b60"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Railway/RailwayShuttle.cs",
+      "sha256": "5eddc34ea8ac6f221462ac6cb48f641de1b70f683e020a3359ac8287a15e4f7a"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Railway/RailwayStationSlots.cs",
+      "sha256": "5cac6ac1fbf8effe3cfccede9008caffdac26486086ee5b88684d4e589288ae2"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Railway/TrainArmament.cs",
+      "sha256": "be3c9477c11328f59ff7dc71678012829fd2acd859feb65f96098448cb4ed239"
+    },
+    {
+      "path": "Assets/EternalSteam/Code/Time/GameClock.cs",
+      "sha256": "ff0aef4b0f7f185d9ad87cfddb993de5142fd87550c09f166f06e69eb99b647b"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/EditMode/ActiveEnemyIterationTests.cs",
+      "sha256": "c062ca6e50d513e404c14e8469f3f5e25a45a0254d094ea633d40c3701a81bc5"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/EditMode/ArchitectureTests.cs",
+      "sha256": "f0013fbcaadc03e9db7543a254a8cb4ea8df0434a5917fd7f7eb949d0ae7c6fd"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/EditMode/BaseResourceAccordionTests.cs",
+      "sha256": "241c23cd3c22622d6900ef16410bcca8924bb2328635deda4a9210095ae330f2"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/EditMode/BuildAreaCoverageTests.cs",
+      "sha256": "3346b6417f7041043d332f2b0aa02ef62874ac25734881cb0b4c10f804dcccb3"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/EditMode/CanvasHierarchyTests.cs",
+      "sha256": "fab2ab8fdfad4223995691595d6f04cbc9ac3d2e8681f490e2032f11cdd670fa"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/EditMode/CircularMinimapTests.cs",
+      "sha256": "6ad37a135b376f6e705508021747a0c1c69d88b69de420f194886a749acf5a0e"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/EditMode/CompactConstructionDockTests.cs",
+      "sha256": "f9e3305c8a20fe685135d6b076fb8a0fa55e33679541f0fad18fd215abc55e57"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/EditMode/ConstructionCostTests.cs",
+      "sha256": "f0020e5f5cec2b3c4f009bd5fe37274b8ab21fd5f78f0690291dbd9529908272"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/EditMode/ConstructionHudWorkflowTests.cs",
+      "sha256": "24a5a3c61b3bc39ee9388019f0d697192ced0d80d3702fb0303bd5899fd0356a"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/EditMode/CurrentSceneFixture.cs",
+      "sha256": "b40991b8774a038cb652e5f638a4716414dc18bf7c9037bef3d3315797f3873d"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/EditMode/DefenseCatalogParityTests.cs",
+      "sha256": "79f730d99999c48ed5459e713feb97cd386e3da44d24c6a6cc6dadcbdeb64006"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/EditMode/DocumentContractTests.cs",
+      "sha256": "9a8116d43ec19688e10444de98ee02c82504f19ed4729c6901af75f66bd32a7f"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/EditMode/ExtensionTests.cs",
+      "sha256": "4e9a65ead1f9ff74dc9a6faab4cc5391fc1c00fcc55ce055a3225ddc14ce99c6"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/EditMode/FoundationTests.cs",
+      "sha256": "ba043aeb18ab08747e84188cf3a27c852652c69971f948017a83fecf7bc49811"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/EditMode/HudLayoutTests.cs",
+      "sha256": "ba28b6ad4d14c387bbae89505f2944099db2f7b7c47dbb93a2884d4c782514e0"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/EditMode/HudModeGroupsTests.cs",
+      "sha256": "2c4d9c0dd5abc1ca7a0768f100dd38cfe3020885c3e8f5e12d2918d6122f5d80"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/EditMode/HudPauseMenuTests.cs",
+      "sha256": "a9e31ee9511f35270379af7c5566224237c1aa915ef5e5db7a32393d946c3821"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/EditMode/MapAssaultBoundaryTests.cs",
+      "sha256": "87c826b12ff3762c9a7ee10cf29f84eb904ceb893eca7769baef6a9c3a088259"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/EditMode/MapClearEnemyTests.cs",
+      "sha256": "81eed59626436008cc5121e5173b2bdb8a57d8dde44af5fdf218525a4c3a4b5e"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/EditMode/RailConnectionTransactionTests.cs",
+      "sha256": "83680aae74229d1fc3b05e03bc02945532dc7780e5c099a4384cb289d474feed"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/EditMode/RailPathPlannerTests.cs",
+      "sha256": "bd7de0bf8ed4a8b6dd4915d09284f8c172a06756fabe71c8928d8f1996fa3811"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/EditMode/RailwayEditorPanelTests.cs",
+      "sha256": "d1b08a33f76fbc3cbc9aaed8a962071f3889dd55eff6cb827a93e1f421766ad0"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/EditMode/RailwayMigrationTests.cs",
+      "sha256": "68863783cc22a9d24b5c1345bdc24f58ebeb210883949570e59bb5a066015134"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/EditMode/RailwayOverviewTests.cs",
+      "sha256": "f7df8f1d3eb7ebe4ea99c8d2aea7bf506406fb7e5967d33aaf2ac458e0f72fa1"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/EditMode/RailwayServicePanelTests.cs",
+      "sha256": "abb9c5996351f7d08a5266ab0574263390d3e8e9f8f8f55603adfe7d5d881c6c"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/EditMode/RailwayShuttleTests.cs",
+      "sha256": "5e7a4d83c452349918ae99302f8a7810ec2e4e8d48cfcf5a2fbce363d449fe3b"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/EditMode/RailwayTests.cs",
+      "sha256": "610c2227e402bf39aeaa37edc608538a55a07f5fc44f977cabee831d7827e807"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/EditMode/ResourceObservationTests.cs",
+      "sha256": "90bbc97c70c720f2044cf13351ad77ee3cdb72450fe37163a28c142b3f208250"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/EditMode/ResponsiveHudBoundsTests.cs",
+      "sha256": "5aa68ba885c56083997720b2dfbc7f6b4674a43b30a0455efdeee47bb5b1cef1"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/EditMode/TerrainNavigationTests.cs",
+      "sha256": "e3ad2f3f9555213b6d0d26555095b6ecb24cd0c18fa41eb0eb5272d08e6cde5f"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/EditMode/TrainDefenseTests.cs",
+      "sha256": "f1d4cbaab5305f610a4b080fc0b5593b6e4feb2afce96baac55ea91edf5e753b"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/EditMode/UpgradeQueryTests.cs",
+      "sha256": "52983f03d907c213ed46b1bca224031d07afae2f4673f30626d682b4ab570610"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/Legacy/Buildings/HordeBuildingTests.cs",
+      "sha256": "e8ad457389003fd1a3887d0a77808ba3d97962534f72aed513fdb3ff4b2d6e4e"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/Legacy/Combat/LegacyCombatTests.cs",
+      "sha256": "292e2e9434161effbee1095ff577431b43405105455b3a6adbf20777958009e2"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/Legacy/EditMode/HordeDeploymentTests.cs",
+      "sha256": "b8268abe956cf8dcf7973d116539061b7e99982833da471cfd0831bd3326ff48"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Editor/DocumentContentGuard.cs",
+      "sha256": "04a568bf35d5342cd5523265bb8640983f0e5f5ceb87493897d81eaf6e32a874"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Editor/MeetingConstructionSetup.cs",
+      "sha256": "fa23fa26af82a7b845514b27670956c8029aaf7bcb044f63744d4dc4c69a40f9"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Editor/OpenWorldAuthoringWindow.cs",
+      "sha256": "d86e38403b76a08fa8c63dcd4f03a0462fb43cdf56003eb9561171fff9830042"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Editor/StartRegion500MapAuthoring.cs",
+      "sha256": "ecd0df1d05cecb0064849dc1c86cb0d25781fe30989d1b0f5666f7753a6b689c"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Editor/WorldAuthoring.cs",
+      "sha256": "7ee52900f6daa99ea60feddd79ef5262de415a5006228b128405cacca569bba4"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/BasePowerView.cs",
+      "sha256": "8c9639e8f09c79ff3b0acdfa48c636ff29e77b4730882c2c403d4fd3d8dce483"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/BaseResourceAccordion.cs",
+      "sha256": "e15a0a9f07efc2bcc58dd237a2024ea63086e1c4eaeb03641f5c6aa8a19ff1b5"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/BuildAreaHologramView.cs",
+      "sha256": "706689b3232c9b63f14024e840307014e592bd3e85afce74a039dc5af6f478dd"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/BuildingHitView.cs",
+      "sha256": "0210972ac82e5fed94f761d5372ee7bac6d161c63ba07535cdf7553758ca69ea"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/BuildingInventoryView.cs",
+      "sha256": "9ba9c8b0fd1f40d2e8ae87990a8e795eddf321a88a1891d992cceec7f1fffc8f"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/BuildingOperationStatus.cs",
+      "sha256": "a519c2ee6cfe2f108bc919966ae593633fb51ec634be6f556df2aaf29ccadced"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/BuildingRectangleSelection.cs",
+      "sha256": "682c2a7f051cc7d552891efa98b46990c3afeef1e15deff5bf9ae860338e6fe2"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/CanvasClockDial.cs",
+      "sha256": "f14f1e097aa715af305159a16acacdeb08ed784f5b1efe3d79c5103aff0ff143"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/CanvasHudLayout.cs",
+      "sha256": "dcb2b9eda95a47cf1fdbd43de11c509cdb756374decb5015aaefb08a0122d765"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/CanvasWorldHud.cs",
+      "sha256": "b6f7b520ec7375bb5d67e0eb125a0095745f3b37fd081f4ff9b5e4c725ded5ea"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/CanvasWorldMinimap.cs",
+      "sha256": "4b0f100048cf26797aca2e28e47d23a2b25956a71caccc8adae3967ffcd8c040"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/CompactConstructionDock.cs",
+      "sha256": "ff92e03a5a004e23f287ff27a6ed062037bd6c63d970c13547d40a7a8d94ce8c"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/ConstructionDragEditor.cs",
+      "sha256": "7ded95d86576a35f61feca2d8cf10a20ebf27c975478fe8d1c8b3c7025a1b2bb"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/ConstructionVisual.cs",
+      "sha256": "9b6e6d26c5dac97bead5f40c6bc852fb2d29150dd31a52a2667b04a61a31eb85"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/DayNightDial.cs",
+      "sha256": "69288270b59467f22a67ad14e605007849828da8280d766495de41da585351ee"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/EnemyBuildingCombat.cs",
+      "sha256": "7adea1cb4c39afc1b6819dce299a348882960b883e62f34243806a0345396d29"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/EnemySpawnLayout.cs",
+      "sha256": "2ba662092cba2bcae2f2ac427aabf98ed4b75617342bc576819fb4d8916c360c"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/EnemySpawnStream.cs",
+      "sha256": "2b9303945c8ce1c3c271c877879fb26866ad1a45a6a8cd5be66c3cae36a75b3d"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/FoundationPlacement.cs",
+      "sha256": "fe7f483ffbbd8323c135a24d802a6d31007b1acb75f59334062c18f1929d8a30"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/FreeCameraRig.cs",
+      "sha256": "27600a77fffecbd55632e8aec353dfcf655b9436795a144cfe44ed74f1508eac"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/GameplayHudWorkspace.cs",
+      "sha256": "69bc249b2ec9cfb3df64876c93898926d554c4413fb441ef89cb4f46ae29a314"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/HordeTargetAdapter.cs",
+      "sha256": "58f7b782ab5bd5ccf529818f5d6b6103a214e2caafc5dc589ddd1bc005ea9894"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/HudModeGroups.cs",
+      "sha256": "305c5eeb0bd921a9ce425bff8d21098a1389207cfb10e1e96ae4a8186b6793d6"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/HudPauseMenu.cs",
+      "sha256": "783b4b473965a32c320e49b2ec859b1d654da7488507dc67463e826342fb8b06"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/MapAssaultController.cs",
+      "sha256": "1ef5665cb2a47d31512966f55825533d0ef21883711218c61bcf6103aacbde2d"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/MapAssaultSettings.cs",
+      "sha256": "8e177db0203c68d52d62c5d4ad8dea7b5720112d534b7b1ca87ea1720b128278"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/MapCoverage.cs",
+      "sha256": "69973f3fb4da9fd0b08b81a73394b420b3444a56558b53a35219dc1b8071ab57"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/MapProgressView.cs",
+      "sha256": "493f272a8379329249fb6be92950b4352fa07e0cd7f9969a9870f57f37ee7116"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/MinimapElement.cs",
+      "sha256": "b0d740b9b429c708ed06e9d27c1788be9fdb91067a9fc81a32b5a96e599b4a39"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/MinimapProjection.cs",
+      "sha256": "1335be72806a1d24fe39535563ecbffb791a3a7ca3aeec4ce6ced77779bce3f1"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/MobileDefenseRuntime.cs",
+      "sha256": "9a862c0470b06d66d8164c1ed9792b2174f07f6c2f43cedcca6124ddce17d668"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/NexusDestinationQuery.cs",
+      "sha256": "c39f848596209ce1d3c1ac8d8b9266baee444645adeab40933df4b25427c0a53"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/NexusGridView.cs",
+      "sha256": "131bb9682222d18e943b9cee472cbf3be62468253cff1276c4fa3013252aa8ad"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/OpenWorldContent.cs",
+      "sha256": "0363a04d612f1151907f759014147b85301c856a1f122ea1fd686cb39c914592"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/OpenWorldHud.cs",
+      "sha256": "e62f3fa5bb2b415e63865bcb474b747fea36ea4d6b11934ce8c9dede0963d637"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/OpenWorldHudActions.cs",
+      "sha256": "7a41318ed63e6531c6357f39329b0f423dbc0838af5056f38d0d031f0c9d513c"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/OpenWorldInput.cs",
+      "sha256": "33d3b030a5779d5679c154919a2fcabe0f0dd8d98f766537ff2263862f36104f"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/OpenWorldMinimap.cs",
+      "sha256": "f5d1f83f421c20c0b01268210a61245660e91d959475095c03bb5a0ae9afba06"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/OpenWorldSandbox.cs",
+      "sha256": "e1c201c5b0f600e438c6ea206284c66251560b9346cd18a5f5642bd34272a13d"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/OperationStatusView.cs",
+      "sha256": "52be745fb57d32c33e52d6d722fc846cba894eda1e73e3c8c792e1c8361d751a"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/RailRouteMarker.cs",
+      "sha256": "11df72745c8b56f8c1e05f805ab7207ecc226225ac024f1e85c42ff1d344d02a"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/RailTrackView.cs",
+      "sha256": "f993c406926c42935d825ebf9f626502ed6c620841f6af37c1f2c79b2b478c06"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/RailwayConnectionHud.cs",
+      "sha256": "1c33797c45c71b907cdd1af5adc0c0d3d758c47b473e2f9b319cefbe3128d058"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/RailwayConstruction.cs",
+      "sha256": "95f3c03e37fd08d37d26cfa68ab0dccb8b1384e2b09f8c733137f8a8ab1430e2"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/RailwayController.cs",
+      "sha256": "b77543822daef2804807d9fe2782d8395fe897410371d009409e96d5d2e8e03e"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/RailwayEditorPanel.cs",
+      "sha256": "e0a6e6f8403090744daa15b61b3c3e9858d4ef9c5c1494e27b74a706d603b3ec"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/RailwayHud.cs",
+      "sha256": "b1955ed5f88b536bb90fb9f54062183df17522c5e2407185c6f2574369860d92"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/RailwayOverview.cs",
+      "sha256": "8e81a9be8fe85daca26631cafd1ba7f9a4242f5ed076eea24aca897fa089414f"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/RailwaySceneView.cs",
+      "sha256": "709cb25c89a7d97bba49c7bb9e71a49ba5fc9b4fa79ab0bec4fe397fafa95c27"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/RailwayServicePanel.cs",
+      "sha256": "2b0e2ed640add4ec4e76a03f9259478e1fe78096818a14c3956d34780e6b7f1a"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/ResourceStockView.cs",
+      "sha256": "54753d100008312931aeb7c9ed390c15e9a3c578a84dc53271cca5ae34cef0a7"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/SceneFoundation.cs",
+      "sha256": "abb154ea540f3753fa795abe2541717b57be3dc7dc22b7a345644e312d93a674"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/SceneStartingBase.cs",
+      "sha256": "f8dbe782d0f94d4bfbbaf963a9444732de964d75b724a6086c4902f78dedb625"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/SceneTower.cs",
+      "sha256": "60f52353127ce7a43724a8c865a1603758035d50b4b071bb4e28c97cb60044e4"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/SelectedBuildingView.cs",
+      "sha256": "7e09ae1e76e1f85afae53341442e1632e2c2ff510212fcc5ba7f2b014c218f3f"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/SingleMapPersistence.cs",
+      "sha256": "7be9242cdd9275373cde6c296e93b7f3a93afa09b39a5e24ceccbb4e412a239f"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/SingleMapSnapshot.cs",
+      "sha256": "d6b82995e060faa4890e21ab2eb526c1427dfcb1932028cc3c90764d0b69dc20"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/SpawnAreaValidator.cs",
+      "sha256": "4b4b683095808013fbcbabeef6c6a0c9cf9d69b29a498c05ac3365fc5bbc4b5e"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/SpawnAreaView.cs",
+      "sha256": "d19bc13c67698196655eee8a6a0f501e1932bff22a95ff80174e9649f476b651"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/SpawnQuantityInput.cs",
+      "sha256": "cf9b483ba78a2eb371f74533793f7824a72af7a6cd7006324b08bbc40d4618d4"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/TerrainFlowNavigation.cs",
+      "sha256": "42de2875f956d3e470c37eec7adeb6d0fe28cfe4194ebd705bce3b9ea70431b8"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/TileWorldGround.cs",
+      "sha256": "b61760f6da3911e1638b83205d229fc9b0971d0df7463f3446d725f67503c602"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/TrainConsistView.cs",
+      "sha256": "58df1694b396d3c910eccfd66aa8536a1eac34f701bf2a1553ce7f0d85b9e84b"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/TrainDefenseController.cs",
+      "sha256": "f58524390f4c1b8c84692a7c0fa44498509a5eea04c97db3b6ee92a57ba5bece"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/TrainDefenseView.cs",
+      "sha256": "456f0c261351a36d02dd724a64e1578171f6f7c4e403ed1e27bbb58ed10dac55"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/WallPlacementStroke.cs",
+      "sha256": "5fc911f25e210e8ce62712b811e6c9f2610d79d08e21e4ac0021868011610e8b"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/WorldClockView.cs",
+      "sha256": "56ade346935e33ad814807f50de4e04c5fedee915ea0f853f81c82fad12a209f"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/WorldEditSession.cs",
+      "sha256": "9a052f9c770b4eddeee3e17596953e54efe76e2f4b47e687f071e3da72c053f7"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/WorldGridGeometry.cs",
+      "sha256": "4a8bdd8c935cbaedc38187a3cdac2503deadd190b8cd8d120757c2e509be8790"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/OpenWorld/Runtime/WorldGridView.cs",
+      "sha256": "5f1a0879ef4868ef640679d1fe776d5cfad5c9b4c263d1b00b10d98de387acb9"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/PlayMode/ExtensionPlayTests.cs",
+      "sha256": "39fccc31876b64ce8e9370fea222c35ebdad3227f2e39097fa7da1245892debb"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/PlayMode/FoundationPlayTests.cs",
+      "sha256": "b60f7ba28197df7019c50e21fc2db334fd5a41a04c5ac2bf27b2158156b3ef1c"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/Sandbox/Runtime/FoundationHud.cs",
+      "sha256": "eec1c0435936a49d5deca0c7b91cffdc5a8f788fba8284b845aad94e74556e29"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/Sandbox/Runtime/FoundationSandbox.cs",
+      "sha256": "c5d88838bec63bd97d0b62277dc4cfbb62404e5eba81c5194b666c40cd40e912"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/Sandbox/Runtime/SandboxInput.cs",
+      "sha256": "d5fe52860f41b894c569c1e5c2fcfb95ba03616ca6ac1839423941252e6b3d41"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/Sandbox/Runtime/SandboxPresentation.cs",
+      "sha256": "fd826697031e0378fbe1638a5af1980d3a2c5152147a7285658d599a0e192db2"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/Sandbox/Runtime/SandboxSession.cs",
+      "sha256": "6bf360b8684555d99d12921d38a48489cb166f23f954b0754e6c365d6971b6ce"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/Templates/TutorialInfo/Scripts/Editor/ReadmeEditor.cs",
+      "sha256": "d2023934bc2be23af69cd930ade85eff41c5db0a6f6666b05324b975befdb5b5"
+    },
+    {
+      "path": "Assets/EternalSteam/Tests/Templates/TutorialInfo/Scripts/Readme.cs",
+      "sha256": "c09c93844f93eb252a6fb39c222d169c63a63e96008fd040b9e7628c3e7ccc2e"
+    }
+  ],
+  "purpose": "recorder-integration"
+}

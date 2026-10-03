@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "command": "command run_script",
+  "data": {
+    "command": "run_script",
+    "parameters": {
+      "file": "Tools/Testing/Balance/BalanceRecorder.cs",
+      "entry": "BalanceRecorder.Stop",
+      "args": "[\"recorder-production-verified\"]"
+    },
+    "result": {
+      "diagnostics": [],
+      "compileMs": 52,
+      "executeMs": 1,
+      "assemblyName": "PipelineRunScript_BalanceRecorder_301f09e982d54409a13cd9952775f84c",
+      "success": true,
+      "result": "{\n  \"root\": \"/Users/limseth/Projects/Eternal_Steam/Eternal_Steam/Docs/Measurements/Balance/20261003-recorder-production\",\n  \"sequence\": 59,\n  \"stopped\": false,\n  \"stopRequested\": \"recorder-production-verified\",\n  \"error\": null,\n  \"screenshotsPending\": 1,\n  \"day\": 1,\n  \"phase\": \"Day\"\n}"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/limseth/Projects/Eternal_Steam/Eternal_Steam"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}
